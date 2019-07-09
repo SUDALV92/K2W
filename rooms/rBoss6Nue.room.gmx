@@ -54,7 +54,7 @@ background_vspeed[0] = -1.5;</code>
   <instances>
     <instance objName="objPlayerStart" x="704" y="314" name="inst_4E4FD0E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objNueGradius" x="704" y="304" name="inst_81CA9965" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objNightmare" x="112" y="304" name="inst_0CA6BB3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objHoujuuNuea" x="112" y="304" name="inst_B613833A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

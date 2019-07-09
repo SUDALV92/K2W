@@ -28,14 +28,18 @@
             <string>hp=40;
 fullhp=40;
 image_speed=1/5;
-alarm[0]=100;
-alarm[2] = 300;
+if(instance_exists(objNueGradius))
+{
+    alarm[0]=100;
+    alarm[2] = 300;
+}
 A=0;
 a=0;
 start=0;
 score = 500 + hp; //DeadSplit support
 alarm[3] = 400; //shifting
 targetY = ystart;
+
 </string>
           </argument>
         </arguments>
@@ -160,7 +164,7 @@ if(abs(y-targetY) &lt; 50)
  alarm[3] = 1;
 else
 {
- alarm[3] = 400;
+ alarm[3] = 200;
 }
 </string>
           </argument>
@@ -224,7 +228,7 @@ alarm[2] = 200;
 for(i=1;i&lt;=16;i+=1)
 {
  a=instance_create(x,y,objNueTan1)
- a.direction = direction + i * 60;
+ a.direction = direction + i * 30;
  a.speed = 2;
 }
 

@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="419" name="datafiles">
-    <datafiles number="419" name="Music">
+  <datafiles number="420" name="datafiles">
+    <datafiles number="420" name="Music">
       <datafile>
         <name>Title.ogg</name>
         <exists>-1</exists>
@@ -450,7 +450,7 @@
       <datafile>
         <name>BossRushBreakingOut.ogg</name>
         <exists>-1</exists>
-        <size>19028336</size>
+        <size>8424170</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -703,8 +703,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="419" name="SFX">
-      <datafiles number="419" name="Common">
+    <datafiles number="420" name="SFX">
+      <datafiles number="420" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1131,7 +1131,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="419" name="Stage">
+      <datafiles number="420" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1456,8 +1456,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="419" name="Boss">
-        <datafiles number="419" name="Solgryn">
+      <datafiles number="420" name="Boss">
+        <datafiles number="420" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -4671,6 +4671,7 @@
           <object>objects\objNueTan7Core</object>
           <object>objects\objNueTan7</object>
           <object>objects\objNueTanFX</object>
+          <object>objects\objNueFade</object>
           <object>objects\objNueGradius</object>
         </objects>
         <object>objects\objPortalShard</object>

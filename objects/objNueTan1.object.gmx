@@ -50,7 +50,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction+=random_range(-7,7);
+            <string>direction+=random_range(-4,4);
 if A=1{image_alpha-=0.05;}
 </string>
           </argument>

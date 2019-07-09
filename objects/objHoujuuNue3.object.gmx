@@ -25,10 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=20;
-fullhp=20;
+            <string>hp=40;
+fullhp=40;
 image_speed=1/5;
-alarm[0]=120;
+if(instance_exists(objNueGradius))
+{
+ alarm[0]=120;
+}
 a=0;
 A=0;
 start=0;
@@ -214,7 +217,7 @@ if(abs(y-targetY) &lt; 50)
  alarm[3] = 1;
 else
 {
- alarm[3] = 400;
+ alarm[3] = 200;
 }
 </string>
           </argument>
@@ -581,7 +584,7 @@ if((abs(y-targetY) &lt; 50) &amp;&amp; vspeed &lt;= 1)
           <argument>
             <kind>1</kind>
             <string>if start=1{if A=0{image_alpha=0.5;
-alarm[11]=24; hp-=1;
+alarm[11]=12; hp-=1;
 score = 300 + hp; //DeadSplit support
 audio_play_sound(global.sndBossHit,0,0); A=1;}}
 with(other){instance_destroy();}

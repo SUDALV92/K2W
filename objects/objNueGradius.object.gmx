@@ -85,10 +85,36 @@ U=scrButtonCheck(global.upButton);
 D=scrButtonCheck(global.downButton);
 if !U and !D {image_index=0;}
 
-if scrButtonCheck(global.upButton){image_index=1; y-=4;}
-if scrButtonCheck(global.downButton){image_index=2; y+=4;}
-if scrButtonCheck(global.leftButton){x-=4;}
-if scrButtonCheck(global.rightButton){x+=4;}
+if scrButtonCheck(global.upButton)
+{
+ image_index=1; 
+ if(scrButtonCheck(global.jumpButton))
+  y -= 2;
+ else
+  y-=4;
+}
+if scrButtonCheck(global.downButton)
+{
+ image_index=2; 
+ if(scrButtonCheck(global.jumpButton))
+  y += 2;
+ else
+  y+=4;
+}
+if scrButtonCheck(global.leftButton)
+{
+ if(scrButtonCheck(global.jumpButton))
+  x -= 2;
+ else
+  x-=4;
+}
+if scrButtonCheck(global.rightButton)
+{
+ if(scrButtonCheck(global.jumpButton))
+  x += 2;
+ else
+  x+=4;
+}
 
 
 with(objHoujuuNuea)
@@ -243,6 +269,53 @@ T = 1;
             <kind>1</kind>
             <string>if(!global.godMode)
  instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="51">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_all();
+game_load("savestate");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="49">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_save("savestate");
 </string>
           </argument>
         </arguments>

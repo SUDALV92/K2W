@@ -31,6 +31,7 @@ alarm[0]=8;
 //else{hspeed=3;}
 hspeed = 3;
 a=random_range(45,135);
+timer = irandom_range(150,250);
 </string>
           </argument>
         </arguments>
@@ -82,6 +83,13 @@ alarm[0]=8;
           <argument>
             <kind>1</kind>
             <string>if self.x&gt;1000{instance_destroy();}
+
+if(timer &gt; 0)
+ timer--;
+else
+{
+    event_user(0);
+}
 </string>
           </argument>
         </arguments>
@@ -104,9 +112,32 @@ alarm[0]=8;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>event_user(0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>audio_play_sound(global.sndExplosion,0,0);
 instance_create(x,y,objExplosionB); 
-for(var angle = 0;angle &lt; 360;angle+=10)
+for(var angle = 0;angle &lt; 360;angle+=12)
 {
  b = instance_create(x,y,objNueTan5);
  b.direction = angle;
@@ -142,6 +173,39 @@ instance_destroy();
     }
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+var seconds = timer div 50;
+var decimals = timer % 50;
+switch(image_index)
+{
+ case 0: textColor = c_red; break;
+ case 1: textColor = c_blue; break;
+ case 2: textColor = c_green; break;
+}
+draw_set_halign(fa_center);
+scrDrawTextOutline(x,y+25,string(seconds) + "." + string(decimals),textColor,c_black);
 </string>
           </argument>
         </arguments>

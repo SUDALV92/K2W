@@ -28,9 +28,11 @@
             <string>if sprite_index=sprNueLaser{image_xscale=0.2}
 image_alpha = 0.5;
 isKiller = false;
+isDestroyed = false;
 alarm[11] = 25;
 alarm[0]=125;
 a=0;
+loop = 1;
 </string>
           </argument>
         </arguments>
@@ -53,26 +55,9 @@ a=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(global.sndLaser);
-audio_play_sound(global.sndLaser,0,0);
+            <string>objNightmare.L = 1;
 isKiller = true;
 image_alpha = 1;
-
-/*yy = 16;
-delayed = false;
-repeat(19)
-{
- laser = instance_create(400,yy,objNueLaser4);
- laser.image_yscale = 25;
- laser.image_angle = 90;
- if(delayed)
-  laser.alarm[0] = 250;
- delayed = !delayed;
- yy+=32;
-}*/
-laser = instance_create(400,yy,objNueLaser4);
- laser.image_yscale = 25;
- laser.image_angle = 90;
 </string>
           </argument>
         </arguments>
@@ -96,6 +81,12 @@ laser = instance_create(400,yy,objNueLaser4);
           <argument>
             <kind>1</kind>
             <string>speed=0;
+with(objNueLaser4)
+{
+ image_alpha = 0.5;
+ isKiller = false;
+ vspeed = 0;
+}
 </string>
           </argument>
         </arguments>
@@ -119,6 +110,7 @@ laser = instance_create(400,yy,objNueLaser4);
           <argument>
             <kind>1</kind>
             <string>alarm[1]=1;
+loop++;
 </string>
           </argument>
         </arguments>
@@ -144,7 +136,20 @@ laser = instance_create(400,yy,objNueLaser4);
             <string>self.x=xstart;
 self.y=ystart;
 speed=0;
+if(instance_exists(objNueGradius))
+{
+with(objNueLaser4)
+{
+ image_alpha = 0.5;
+ isKiller = false;
+ vspeed = 0;
+}
+if a=3 or a=4
+ sprite_index = sprNueTan2;
+else
+ sprite_index = sprNueTan1;
 alarm[9]=50;
+}
 </string>
           </argument>
         </arguments>
@@ -167,7 +172,9 @@ alarm[9]=50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if a=1
+            <string>if(instance_exists(objNueGradius))
+{
+if a=1
 {move_towards_point(x-196,y-64,2)}
 if a=2
 {move_towards_point(x-196,y+64,2)}
@@ -176,7 +183,9 @@ if a=3
 if a=4
 {move_towards_point(x+196,y+64,2)}
 objNightmare.D=1;
+objNightmare.L=1;
 alarm[8]=206;
+}
 </string>
           </argument>
         </arguments>
@@ -202,7 +211,20 @@ alarm[8]=206;
             <string>self.x=xstart;
 self.y=ystart;
 speed=0;
+if(instance_exists(objNueGradius))
+{
+with(objNueLaser4)
+{
+ image_alpha = 0.5;
+ isKiller = false;
+ vspeed = 0;
+}
+if a=1 or a=2
+ sprite_index = sprNueTan2;
+else
+ sprite_index = sprNueTan1;
 alarm[7]=50;
+}
 </string>
           </argument>
         </arguments>
@@ -225,7 +247,9 @@ alarm[7]=50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if a=1
+            <string>if(instance_exists(objNueGradius))
+{
+if a=1
 {move_towards_point(x+196,y-32,2)}
 if a=2
 {move_towards_point(x+196,y+32,2)}
@@ -234,7 +258,9 @@ if a=3
 if a=4
 {move_towards_point(x-196,y+32,2)}
 objNightmare.D=1;
+objNightmare.L=1;
 alarm[6]=200;
+}
 </string>
           </argument>
         </arguments>
@@ -260,7 +286,20 @@ alarm[6]=200;
             <string>self.x=xstart;
 self.y=ystart;
 speed=0;
+if(instance_exists(objNueGradius))
+{
+with(objNueLaser4)
+{
+ image_alpha = 0.5;
+ isKiller = false;
+ vspeed = 0;
+}
+if a=3 or a=4
+ sprite_index = sprNueTan2;
+else
+ sprite_index = sprNueTan1;
 alarm[5]=50;
+}
 </string>
           </argument>
         </arguments>
@@ -283,16 +322,23 @@ alarm[5]=50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if a=1
-{move_towards_point(x+196,y+32,2)}
-if a=2
-{move_towards_point(x+196,y-32,2)}
-if a=3
-{move_towards_point(x-196,y+32,2)}
-if a=4
-{move_towards_point(x-196,y-32,2)}
+            <string>if(instance_exists(objNueGradius))
+{
+if(loop != 3)
+{
+    if a=1
+    {move_towards_point(x+196,y+32,2)}
+    if a=2
+    {move_towards_point(x+196,y-32,2)}
+    if a=3
+    {move_towards_point(x-196,y+32,2)}
+    if a=4
+    {move_towards_point(x-196,y-32,2)}
+    alarm[4]=200;
+objNightmare.L=1;
+}
 objNightmare.D=1;
-alarm[4]=200;
+}
 </string>
           </argument>
         </arguments>
@@ -318,7 +364,37 @@ alarm[4]=200;
             <string>self.x=xstart;
 self.y=ystart;
 speed=0;
-alarm[3]=50;
+if(instance_exists(objNueGradius))
+{
+if(loop == 3)
+{
+    with(objNueLaser4)
+    {     
+     vspeed = 0;
+     image_alpha = 1;
+     CanMoving = false;
+    }
+    sprite_index=sprNueLaser;
+    image_xscale = 1;
+    image_yscale = 1;
+    alarm[3] = 50;
+    objNightmare.L = 1;
+}
+else
+{
+    with(objNueLaser4)
+    {
+     image_alpha = 0.5;
+     isKiller = false;
+     vspeed = 0;
+    }
+    if a=3 or a=4
+     sprite_index = sprNueTan2;
+    else
+     sprite_index = sprNueTan1;
+    alarm[3]=50;
+}
+}
 </string>
           </argument>
         </arguments>
@@ -341,14 +417,18 @@ alarm[3]=50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if a=1 or a=2
+            <string>if(instance_exists(objNueGradius))
+{
+if a=1 or a=2
 {direction=0
 speed=2}
 if a=3 or a=4
 {direction=180
 speed=2}
 objNightmare.D=1;
+objNightmare.L=1;
 alarm[2]=198;
+}
 </string>
           </argument>
         </arguments>
@@ -371,11 +451,34 @@ alarm[2]=198;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index=sprNueTan1;
+            <string>if(instance_exists(objNueGradius))
+{
+sprite_index=sprNueTan1;
+image_xscale = 1.4;
+image_yscale = 1.4;
+if a=3 or a=4
+ sprite_index = sprNueTan2;
+else
+ sprite_index = sprNueTan1;
 alarm[1]=50;
+}
 </string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>124</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_path_end</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="3" enumb="0">
@@ -395,28 +498,34 @@ alarm[1]=50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_xscale&lt;1{image_xscale+=0.05;}
+            <string>if(isDestroyed)
+{
+ alarm[0] = 0;
+ alarm[1] = 0;
+ image_alpha -= 0.02;
+ isKiller = false;
+ if(image_alpha &lt; 0.1)
+  instance_destroy();
+}
+
+if image_xscale&lt;1{image_xscale+=0.05;}
+if(x &gt;= 866 &amp;&amp; hspeed &gt; 0)
+{
+ x = -sprite_width;
+}
+if(x &lt;= 0 &amp;&amp; hspeed &lt; 0)
+{
+ x = 866+sprite_width; 
+}
+if(y &gt;= 624 &amp;&amp; vspeed &gt; 0)
+{
+ y = -sprite_width;
+}
+if(y &lt;= 0 &amp;&amp; vspeed &lt; 0)
+{
+ y = 624+sprite_width;
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>112</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_wrap</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
           </argument>
         </arguments>
       </action>

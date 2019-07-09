@@ -25,16 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=20;
-fullhp=20;
+            <string>hp=50;
+fullhp=50;
 image_speed=1/5;
-alarm[0]=50;
+if(instance_exists(objNueGradius))
+{
+ alarm[0]=50;
+}
 start=0;
 A=0;
 image_alpha = 0;
 fadeout = true;
 achievement = true;
 score = 100 + hp; //DeadSplit support
+alarm[3] = 400; //shifting
+targetY = ystart;
 </string>
           </argument>
         </arguments>
@@ -110,9 +115,9 @@ score = 100 + hp; //DeadSplit support
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(global.sndTDeath,0,0);
-wc=instance_create(x,y,objWarp);
-wc.roomTo = rStage6BossRush;
-wc.autosave = true;
+fade = instance_create(-32,-32,objNueFade);
+fade.warpX = x;
+fade.warpY = y;
 global.bossRush[2] = true;
 global.bossRushRerun[2] = true;
 if(!global.gameClear)
@@ -152,6 +157,35 @@ if(achievement)
             <kind>1</kind>
             <string>A=0;
 image_alpha=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>targetY = irandom_range(64,544);
+if(abs(y-targetY) &lt; 50)
+ alarm[3] = 1;
+else
+{
+ alarm[3] = 200;
+}
 </string>
           </argument>
         </arguments>
@@ -203,7 +237,7 @@ image_alpha=1;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>choose(self.y+180,self.y-180)</string>
+            <string>irandom_range(48,560)</string>
           </argument>
         </arguments>
       </action>
@@ -223,7 +257,7 @@ image_alpha=1;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>100</string>
+            <string>80</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -282,6 +316,17 @@ alarm[1]=170;
     }
     else fadeout = false;
 }
+//смещение
+if(targetY &lt; y)
+ vspeed = -lerp(5,0,targetY/y);
+else
+ vspeed = lerp(5,0,y/targetY);
+
+if((abs(y-targetY) &lt; 50) &amp;&amp; vspeed &lt;= 1)
+{
+ vspeed = 0;
+ targetY = y;
+}
 </string>
           </argument>
         </arguments>
@@ -305,10 +350,34 @@ alarm[1]=170;
           <argument>
             <kind>1</kind>
             <string>if start=1{if A=0{image_alpha=0.5;
-alarm[11]=25; hp-=1; 
+alarm[11]=12; hp-=1; 
 score = 100 + hp; //DeadSplit support
 audio_play_sound(global.sndBossHit,0,0); A=1;}}
 with(other){instance_destroy();}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_sprite_ext(sprButton,0,780,y-32,1,2,0,c_white,0.2);
 </string>
           </argument>
         </arguments>

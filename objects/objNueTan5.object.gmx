@@ -98,7 +98,8 @@ if A=1{image_alpha-=0.05;}
           <argument>
             <kind>1</kind>
             <string>if A=0 &amp;&amp; !global.godMode{
-with(objPlayer){scrKillPlayer();}}
+instance_destroy(other);
+}
 </string>
           </argument>
         </arguments>

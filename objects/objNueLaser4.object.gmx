@@ -3,7 +3,7 @@
   <spriteName>sprNueLaser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>image_alpha = 0.5;
 isKiller = false;
-alarm[0] = 100;
 isDestroyed = false;
+CanMoving = true;
 </string>
           </argument>
         </arguments>
@@ -75,9 +75,10 @@ alarm[0] = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha = 0;
+            <string>image_alpha = 0.5;
 isKiller = false;
-alarm[2] = 150;
+vspeed = 0;
+alarm[0] = 50;
 </string>
           </argument>
         </arguments>
@@ -104,6 +105,7 @@ alarm[2] = 150;
 isKiller = true;
 audio_stop_sound(global.sndLaser);
 audio_play_sound(global.sndLaser,0,0);
+alarm[1] = 200;
 </string>
           </argument>
         </arguments>
@@ -130,17 +132,22 @@ audio_play_sound(global.sndLaser,0,0);
 {
  alarm[0] = 0;
  alarm[1] = 0;
- image_alpha -= 0.1;
+ image_alpha -= 0.02;
  isKiller = false;
  if(image_alpha &lt; 0.1)
   instance_destroy();
 }
-else
+if(y &gt;= 624 &amp;&amp; vspeed &gt; 0)
 {
- if(instance_exists(objNueGradius))
- {
-  
- }
+ y = -sprite_width;
+}
+if(y &lt;= 0 &amp;&amp; vspeed &lt; 0)
+{
+ y = 624+sprite_width;
+}
+if(!CanMoving)
+{
+ speed = 0;
 }
 </string>
           </argument>
@@ -166,6 +173,31 @@ else
             <kind>1</kind>
             <string>if(isKiller &amp;&amp; !global.godMode)
  instance_destroy(other);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_blend_mode(bm_add);
+draw_self();
+draw_set_blend_mode(bm_normal);
 </string>
           </argument>
         </arguments>

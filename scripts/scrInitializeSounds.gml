@@ -133,6 +133,7 @@ global.sndStage1 = audio_create_stream("Music\Stage1.ogg");
 global.sndBoss1 = audio_create_stream("Music\Boss1.ogg");
 global.sndBlackjack = audio_create_stream("Music\Blackjack.ogg");
 global.sndStage2 = audio_create_stream("Music\Stage2.ogg");
+global.sndStage2GuyTower = audio_create_stream("Music\Stage2GuyTower.ogg");
 global.sndCBA = audio_create_stream("Music\CBA.ogg");
 global.sndBoss2 = audio_create_stream("Music\Boss2.ogg");
 global.sndSpiralTemplate = audio_create_stream("Music\SpiralTemplate.ogg");

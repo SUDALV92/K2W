@@ -213,6 +213,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSymetryTrapDown" x="224" y="96" name="inst_79514BB8" locked="0" code="trap = 27;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSymetryTrapDown" x="256" y="64" name="inst_07401F97" locked="0" code="trap = 27;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSymetryTrapDown" x="288" y="32" name="inst_F4540EB8" locked="0" code="trap = 27;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="768" y="496" name="inst_7218E598" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="576" y="512" w="32" h="32" xo="0" yo="0" id="10046229" name="inst_1E73F9C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

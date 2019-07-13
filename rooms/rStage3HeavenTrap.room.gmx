@@ -153,6 +153,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBettySnowGenerator" x="-32" y="0" name="inst_4E553A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="32" y="576" name="inst_49BBD9E0" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="368" y="560" name="inst_CAA9DBA3" locked="0" code="sprite_index = sprBettySave;&#xA;image_speed = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="96" y="560" name="inst_62FA0A6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10042301" name="inst_5536A659" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

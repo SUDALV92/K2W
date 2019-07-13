@@ -36,9 +36,10 @@ switch (room)                       //determines which song to play
     case rStage2RunTerminal:
     case rStage2BestGuy: 
         roomSong = global.sndStage2; break;
-    case rBoss1Save:
     case rStage2GuyTower:
     case rStage2GuyTower2:
+         roomSong = global.sndStage2GuyTower; break;
+    case rBoss1Save:    
     case rBoss2Save:
     case rBoss3Save:
     case rStage4KTGB:

@@ -216,7 +216,11 @@ alarm[0] = mainTextScrollSpd;
   mainText2StartPos = 1;
  }
 
- //event_user(0);
+ if(scrButtonCheck(global.shootButton) &amp;&amp; global.stageUnlocked[selectedStage])
+ {
+  instance_destroy(objPlayer);
+  room_goto(global.stageRoom[selectedStage]);
+ }
 }
 else
 {
@@ -274,7 +278,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//mainTextLength = string_length(mainText);
+            <string>/*
+//mainTextLength = string_length(mainText);
 if(mainTextLength &gt; mainDisplayWidth)
 {
  mainText += "     ";
@@ -293,7 +298,7 @@ if(mainText3Length &gt; mainDisplayWidth)
 {
  mainText3 += "     ";
  mainText3Length = string_length(mainText3);
-}
+}*/
 </string>
           </argument>
         </arguments>

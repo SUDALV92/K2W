@@ -224,6 +224,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBftrap1" x="512" y="544" name="inst_7E8DEC20" locked="0" code="trap = 28;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="800" y="480" name="inst_7F867A9D" locked="0" code="trg = 29;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBftrap1" x="688" y="544" name="inst_DCEF5894" locked="0" code="trap = 29;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="64" y="112" name="inst_B4B41748" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10047625" name="inst_120C464B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

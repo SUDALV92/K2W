@@ -53,7 +53,7 @@ global.saveGameClear = false;
 global.saveExtraClear = false;
 
 //actuals
-global.portalAvailable = false;
+global.portalAvailable = true;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {

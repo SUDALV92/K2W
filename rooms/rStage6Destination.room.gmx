@@ -208,6 +208,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeLeft" x="288" y="464" name="inst_8FF43918" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="416" y="528" name="inst_5DCB1067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFlickeringDarkness" x="-32" y="-32" name="inst_CC023CC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="768" y="192" name="inst_1669DB79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLeeheTileset" x="0" y="32" w="32" h="32" xo="0" yo="0" id="10051191" name="inst_CC655642" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -173,6 +173,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeLeft" x="352" y="704" name="inst_46B610D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="480" y="672" name="inst_3FDEF378" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBettySnowGenerator" x="-32" y="640" name="inst_162C88BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="96" y="1152" name="inst_EAD80A19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="32" y="1184" w="32" h="32" xo="0" yo="32" id="10041594" name="inst_D5BDB12C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

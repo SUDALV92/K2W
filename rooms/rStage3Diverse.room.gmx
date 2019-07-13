@@ -212,6 +212,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objMiniUp" x="336" y="464" name="inst_F9318C21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="288" y="512" name="inst_A6BDA162" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="288" y="544" name="inst_E6082890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="80" y="304" name="inst_5F23A4DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="64" y="352" w="32" h="32" xo="0" yo="0" id="10041985" name="inst_12FBF268" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

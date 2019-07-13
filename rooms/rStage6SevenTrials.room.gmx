@@ -294,6 +294,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objMiniDown" x="520" y="40" name="inst_893EB762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="280" y="432" name="inst_8C0C23C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="312" y="432" name="inst_D4A9AAE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="64" y="536" name="inst_2E4C65E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBakaTileset" x="736" y="304" w="32" h="32" xo="0" yo="32" id="10050111" name="inst_DD1E8DFB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

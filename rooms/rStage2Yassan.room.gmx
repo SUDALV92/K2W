@@ -400,6 +400,7 @@
     <instance objName="objBlockFake" x="768" y="544" name="inst_BC428578" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="736" y="576" name="inst_B83E1778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="768" y="576" name="inst_07526E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="80" y="560" name="inst_D4017806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background3" x="80" y="240" w="32" h="32" xo="64" yo="32" id="10004007" name="tile_B1DD2670" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

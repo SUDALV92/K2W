@@ -204,6 +204,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeUp" x="672" y="544" name="inst_6FA81F3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="704" y="576" name="inst_1F68E754" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLocusTrapUp" x="384" y="0" name="inst_B2C39E8B" locked="0" code="trap = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="64" y="560" name="inst_403C11EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10048010" name="inst_8A523531" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

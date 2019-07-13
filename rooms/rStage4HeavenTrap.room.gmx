@@ -159,6 +159,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5SpikeUp" x="576" y="320" name="inst_B478D6BA" locked="0" code="step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeUp" x="640" y="416" name="inst_E41FC155" locked="0" code="step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="224" y="384" name="inst_83429524" locked="0" code="step = 5;&#xA;trg = 5;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="32" y="384" name="inst_F7B6DDBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSecret5Tileset" x="0" y="320" w="32" h="32" xo="0" yo="0" id="10044569" name="inst_686428C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

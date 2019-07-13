@@ -187,6 +187,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5SpikeDown" x="192" y="32" name="inst_828A49D9" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeDown" x="160" y="32" name="inst_10B3CF16" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="736" y="416" name="inst_2B1C9B2A" locked="0" code="trg = 3;&#xA;step = 4;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="72" y="560" name="inst_D732ED94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSecret5Tileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10043838" name="inst_F5F45919" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

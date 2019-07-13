@@ -230,6 +230,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSkyrBlockenable" x="640" y="32" name="inst_B2E084E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSkybBlockenable" x="736" y="32" name="inst_8F74892C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBettySnowGenerator" x="-64" y="0" name="inst_589DC82E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="96" y="64" name="inst_BEE712D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10041351" name="inst_3307E778" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -88,6 +88,7 @@ background_alpha=0;</code>
     <instance objName="objSpikeUp" x="672" y="544" name="inst_E7FD751B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="704" y="544" name="inst_002141F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="736" y="544" name="inst_7736D0C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="401" y="-8" name="inst_E0ED9035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="64" y="416" w="32" h="32" xo="0" yo="0" id="10052271" name="inst_7610DDEC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

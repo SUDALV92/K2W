@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="421" name="datafiles">
-    <datafiles number="421" name="Music">
+  <datafiles number="424" name="datafiles">
+    <datafiles number="424" name="Music">
       <datafile>
         <name>Title.ogg</name>
         <exists>-1</exists>
@@ -127,7 +127,7 @@
       <datafile>
         <name>Stage2.ogg</name>
         <exists>-1</exists>
-        <size>6976332</size>
+        <size>23144124</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -140,6 +140,23 @@
           </Config>
         </ConfigOptions>
         <filename>Stage2.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>Stage2GuyTower.ogg</name>
+        <exists>-1</exists>
+        <size>8463123</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Stage2GuyTower.ogg</filename>
       </datafile>
       <datafile>
         <name>CBA.ogg</name>
@@ -703,8 +720,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="421" name="SFX">
-      <datafiles number="421" name="Common">
+    <datafiles number="424" name="SFX">
+      <datafiles number="424" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1131,7 +1148,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="421" name="Stage">
+      <datafiles number="424" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1456,8 +1473,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="421" name="Boss">
-        <datafiles number="421" name="Solgryn">
+      <datafiles number="424" name="Boss">
+        <datafiles number="424" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>

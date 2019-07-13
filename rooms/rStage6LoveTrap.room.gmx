@@ -177,6 +177,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objMiniUp" x="544" y="80" name="inst_DEF07BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="256" y="64" name="inst_F1181D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="512" y="64" name="inst_2ADA134C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="400" y="312" name="inst_D349200C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLeeheTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10051951" name="inst_1D823CBE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

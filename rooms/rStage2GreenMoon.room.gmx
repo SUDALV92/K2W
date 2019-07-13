@@ -225,6 +225,7 @@
     <instance objName="objBlockFake" x="672" y="256" name="inst_5A039AA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="704" y="256" name="inst_337FF393" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="704" y="416" name="inst_2CAB1B2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="82" y="503" name="inst_9A76149C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10037423" name="inst_E651B483" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

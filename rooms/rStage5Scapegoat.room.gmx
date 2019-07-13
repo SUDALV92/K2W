@@ -244,6 +244,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeDown" x="624" y="384" name="inst_2F007D6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="736" y="544" name="inst_66CAA5C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="736" y="512" name="inst_DE0CFE15" locked="0" code="trg = 31;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="80" y="144" name="inst_B7FC877F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10045986" name="inst_323DB344" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

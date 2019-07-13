@@ -48,7 +48,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_set_target (global.shadow);
+            <string>if(!surface_exists(global.shadow))
+ global.shadow = surface_create(view_wview,view_hview);
+ 
+surface_set_target (global.shadow);
 draw_set_color(c_white);
 draw_rectangle(0,0,view_wview,view_hview,false);
 surface_reset_target();

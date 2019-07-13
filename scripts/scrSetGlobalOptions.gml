@@ -23,7 +23,8 @@ global.directionalTapFix = true;    //sets whether to change the behavior of tap
 global.playerAnimationFix = true;  //sets whether to fix the weird player animation inconsistencies when moving around
 
 global.secretItemTotal = 15;     //sets how many secret items for the game to save/load
-global.bossItemTotal = 8;       //sets how many boss items for the game to save/load
+global.achievementTotal = 35;
+global.stagesTotal = 200;
 global.autosaveSecretItems = false; //sets whether to save secret items immediately when you grab them or if you have to hit a save
 
 global.controllerEnabled = true;    //sets whether controllers are supported

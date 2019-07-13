@@ -29,6 +29,7 @@
 hcollision = false;
 vcollision = false;
 collision = false;
+isBouncing = true;
 </string>
           </argument>
         </arguments>
@@ -93,7 +94,8 @@ collision = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrBounceMoveSolid();
+            <string>if(isBouncing)
+ scrBounceMoveSolid();
 
 </string>
           </argument>

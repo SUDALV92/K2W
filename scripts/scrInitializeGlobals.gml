@@ -20,7 +20,7 @@ global.solgrynSkip = false;
 global.extraSkip = false;
 global.extraMusicLoop = 0;
 global.skin = 0; //default player skin, 1 = dotkid
-global.achievementTotal = 35;
+
 
 for(var i = 0; i < global.achievementTotal; i++)
 {
@@ -44,12 +44,27 @@ for (var i = global.secretItemTotal-1; i >= 0; i--)
     global.tempItem[i] = false;
 }
 
+//useless for K2W
 global.gameClear = false;
 global.extra = false;
 global.extraClear = false;
 global.extra = false;
 global.saveGameClear = false;
 global.saveExtraClear = false;
+
+//actuals
+global.portalAvailable = false;
+
+for(var i = global.stagesTotal; i >= 0; i--)
+{
+ if(i < 69)
+  global.stageUnlocked[i] = true;
+ else
+  global.stageUnlocked[i] = false;
+ global.stageName[i] = "???";
+ global.stageRoom[i] = 0;
+}
+scrInitializeStages();
 
 for(var i = 0; i < 16; i++)
 {

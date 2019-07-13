@@ -46,7 +46,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>130</string>
+            <string>260</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -88,8 +88,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>direction+=3.5;
-speed+=0.08;
+            <string>//direction+=3.5;
+//speed+=0.08;
 </string>
           </argument>
         </arguments>

@@ -443,7 +443,7 @@ else
 
 if(f5pressed)
 {
-    if((global.gameClear &amp;&amp; instance_exists(objPlayer)))
+    if((global.portalAvailable &amp;&amp; instance_exists(objPlayer)))
     {
         for (var i = global.secretItemTotal-1; i &gt;= 0; i--)
         {
@@ -596,7 +596,7 @@ if(f5pressed)
             audio_sound_gain(global.currentMusic,global.currentGain,0);
             objWorld.alarm[0] = -1;   //reset alarm that pauses music
         } 
-        room_goto(rPortal);
+        room_goto(rStage6BossRush);
         if(global.grav == -1)
             scrFlipGrav(true);
         with(objPlayer)
@@ -796,6 +796,13 @@ switch(room)
  case rPortal:
  case rExBoss1:
   global.extraSkip = false;
+  break;
+}
+
+switch(room)
+{
+ case rStage6BossRush:
+  global.portalAvailable = true;
   break;
 }
 </string>

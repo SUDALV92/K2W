@@ -7,7 +7,414 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mainDisplayWidth = 23;
+mainText = "";
+mainTextLength = string_length(mainText);
+mainTextStartPos = 1;
+mainTextScrollDelay = 50;
+
+mainText2 = "";
+mainText2Length = string_length(mainText2);
+mainText2StartPos = 1;
+mainText2ScrollDelay = 50;
+
+mainText3 = "Touch to use the portal system";
+mainText3Length = string_length(mainText3);
+mainText3StartPos = 1;
+mainText3ScrollDelay = 50;
+
+mainTextScrollSpd = 8;
+alarm[0] = mainTextScrollSpd;
+
+energy = 0;
+event_user(0);
+
+
+selectedStage = 0;
+upDelay = 0;
+downDelay = 0;
+upDelayDecreaser = 0;
+downDelayDecreaser = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(mainTextScrollDelay &gt; 0)
+{
+    mainTextScrollDelay--;
+}
+else
+{
+    mainTextStartPos += 1;
+    if(mainTextStartPos &gt; mainTextLength)
+     mainTextStartPos = 1;
+}
+
+if(mainText2ScrollDelay &gt; 0)
+{
+ mainText2ScrollDelay--;
+}
+else
+{
+ mainText2StartPos += 1;
+ if(mainText2StartPos &gt; mainText2Length)
+  mainText2StartPos = 1;
+}
+ 
+if(mainText3ScrollDelay &gt; 0)
+{
+ mainText3ScrollDelay--;
+}
+else
+{
+ mainText3StartPos += 1;
+ if(mainText3StartPos &gt; mainText3Length)
+  mainText3StartPos = 1;
+}
+ 
+alarm[0] = mainTextScrollSpd;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x,y,objPlayer))
+{ 
+ var temp = "Select destination point";
+ if(mainText != temp)
+ {
+  mainText = temp;
+  mainTextLength = string_length(mainText);
+  mainTextScrollDelay = 10;
+  mainTextStartPos = 1;
+ }
+ 
+ if(scrButtonCheck(global.upButton))
+ {
+  if(upDelay == 0)
+  {
+   upDelay = 10 - upDelayDecreaser;   
+   upDelayDecreaser += 0.2;
+   downDelay = 0;
+   downDelayDecreaser = 0;
+   
+   if(selectedStage &gt; 0)
+    selectedStage--;    
+  }
+  if(upDelay &gt; 0)
+   upDelay--;
+  else
+   upDelay = 0;
+ }
+ else
+ {
+  upDelay = 0;
+  upDelayDecreaser = 0;
+ }
+ if(scrButtonCheck(global.downButton))
+ {
+  if(downDelay == 0)
+  {
+   downDelay = 10 - downDelayDecreaser;
+   downDelayDecreaser += 0.2;
+   upDelay = 0;
+   upDelayDecreaser = 0;
+   
+   if(selectedStage &lt; global.stagesTotal)
+    selectedStage++;
+  }
+  if(downDelay &gt; 0)
+   downDelay--;
+  else
+   downDelay = 0;
+ }
+ else
+ {
+  downDelay = 0;
+  downDelayDecreaser = 0;
+ }
+ 
+ 
+ if(global.stageUnlocked[selectedStage])
+ {
+  stageName = global.stageName[selectedStage];
+  temp = "UNLOCKED";  
+ }
+ else
+ {
+  stageName = "???";
+  temp = "More power required";
+ }
+ if(mainText3 != temp)
+ {
+  mainText3 = temp;
+  mainText3Length = string_length(mainText3);
+  mainText3ScrollDelay = 10;
+  mainText3StartPos = 1;
+ }
+ 
+ temp = stageName;
+ if(mainText2 != temp)
+ {
+  mainText2 = temp;
+  mainText2Length = string_length(mainText2);
+  mainText2ScrollDelay = 10;
+  mainText2StartPos = 1;
+ }
+
+ //event_user(0);
+}
+else
+{
+ temp = "Welcome to Boss Rush";
+ if(mainText != temp)
+ {
+  mainText = temp;
+  mainTextLength = string_length(mainText);
+  mainTextScrollDelay = 10;
+  mainTextStartPos = 1;
+ }
+  
+ if (global.controllerMode)
+  key = scrGetControllerBind(global.alignRightButton[1]);
+ else
+  key = scrGetKeybind(global.alignRightButton[0]);
+ temp = "Press " + key + " to return here";
+ if(mainText2 != temp)
+ {
+  mainText2 = temp;
+  mainText2Length = string_length(mainText2);
+  mainText2ScrollDelay = 10;
+  mainText2StartPos = 1;
+ }
+ 
+ temp = "Touch to use the portal system";
+ if(mainText3 != temp)
+ {
+  mainText3 = temp;
+  mainText3Length = string_length(mainText3);
+  mainText3ScrollDelay = 10;
+  mainText3StartPos = 1;
+ }
+ //event_user(0);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//mainTextLength = string_length(mainText);
+if(mainTextLength &gt; mainDisplayWidth)
+{
+ mainText += "     ";
+ mainTextLength = string_length(mainText);
+} 
+
+//mainText2Length = string_length(mainText2);
+if(mainText2Length &gt; mainDisplayWidth)
+{
+ mainText2 += "     ";
+ mainText2Length = string_length(mainText2);
+}
+
+//mainText3Length = string_length(mainText3);
+if(mainText3Length &gt; mainDisplayWidth)
+{
+ mainText3 += "     ";
+ mainText3Length = string_length(mainText3);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_set_font(fJoystix10);
+draw_set_valign(fa_top);
+draw_set_halign(fa_center);
+draw_set_color(c_green);
+if(mainTextLength &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText,mainTextLength-4,5) != "     ")
+    {
+     mainNewText = mainText + "     ";
+     mainTextLength = string_length(mainNewText);
+    }
+    currentString = string_copy(mainNewText,mainTextStartPos,mainDisplayWidth);
+    
+    var notFilled = true;
+    while(notFilled)
+    {
+        currentLength = string_length(currentString);
+        if(currentLength &lt; mainDisplayWidth)
+        {
+         currentString += string_copy(mainNewText,1,mainDisplayWidth - currentLength);
+        }
+        else
+        {
+         notFilled = false;
+        }
+    }    
+}
+else
+{
+    currentString = mainText;
+}
+draw_text(x+118,y+8,currentString);
+
+//main text 2
+if(mainText2Length &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText2,mainText2Length-4,5) != "     ")
+    {
+     mainNewText2 = mainText2 + "     ";
+     mainText2Length = string_length(mainNewText2);
+    }
+    currentString = string_copy(mainNewText2,mainText2StartPos,mainDisplayWidth);
+    
+    var notFilled = true;
+    while(notFilled)
+    {
+        currentLength = string_length(currentString);
+        if(currentLength &lt; mainDisplayWidth)
+        {
+         currentString += string_copy(mainNewText2,1,mainDisplayWidth - currentLength);
+        }
+        else
+        {
+         notFilled = false;
+        }
+    }    
+}
+else
+{
+    currentString = mainText2;
+}
+draw_text(x+118,y+24,currentString);
+
+//main text 3
+if(mainText3Length &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText3,mainText3Length-4,5) != "     ")
+    {
+     mainNewText3 = mainText3 + "     ";
+     mainText3Length = string_length(mainNewText3);
+    }
+    currentString = string_copy(mainNewText3,mainText3StartPos,mainDisplayWidth);
+    
+    var notFilled = true;
+    while(notFilled)
+    {
+        currentLength = string_length(currentString);
+        if(currentLength &lt; mainDisplayWidth)
+        {
+         currentString += string_copy(mainNewText3,1,mainDisplayWidth - currentLength);
+        }
+        else
+        {
+         notFilled = false;
+        }
+    }    
+}
+else
+{
+    currentString = mainText3;
+}
+draw_text(x+118,y+40,currentString);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

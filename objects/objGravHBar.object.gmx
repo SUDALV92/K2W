@@ -49,8 +49,15 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=0{image_yscale=objGravityMan.hp/objGravityMan.fullhp;
-if objGravityMan.hp=0{instance_destroy(); with(objGravityMan){instance_destroy();}}}
+            <string>if A=0
+{
+ image_yscale=objGravityMan.hp/objGravityMan.fullhp;
+ if objGravityMan.hp=0
+ {
+  instance_destroy(); 
+  with(objGravityMan){instance_destroy();}
+ }
+}
 </string>
           </argument>
         </arguments>

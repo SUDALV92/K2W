@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="420" name="datafiles">
-    <datafiles number="420" name="Music">
+  <datafiles number="421" name="datafiles">
+    <datafiles number="421" name="Music">
       <datafile>
         <name>Title.ogg</name>
         <exists>-1</exists>
@@ -467,7 +467,7 @@
       <datafile>
         <name>BossRushPopularity.ogg</name>
         <exists>-1</exists>
-        <size>1825948</size>
+        <size>16396134</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -703,8 +703,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="420" name="SFX">
-      <datafiles number="420" name="Common">
+    <datafiles number="421" name="SFX">
+      <datafiles number="421" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1131,7 +1131,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="420" name="Stage">
+      <datafiles number="421" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1456,8 +1456,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="420" name="Boss">
-        <datafiles number="420" name="Solgryn">
+      <datafiles number="421" name="Boss">
+        <datafiles number="421" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3633,11 +3633,8 @@
       <background>background\background98</background>
       <background>background\background99</background>
       <background>background\background100</background>
-      <background>background\background105</background>
-      <background>background\background106</background>
       <background>background\background107</background>
       <background>background\background108</background>
-      <background>background\background109</background>
       <background>background\background110</background>
       <background>background\background111</background>
       <background>background\background124</background>
@@ -3725,6 +3722,8 @@
         <background>background\bgDestinationGridD</background>
         <background>background\bgDestinationGridE</background>
         <background>background\bgNueGrid</background>
+        <background>background\background109</background>
+        <background>background\bgGraivtyManTileset</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -3767,6 +3766,7 @@
     <scripts name="world">
       <script>scripts\scrInitializeGlobals.gml</script>
       <script>scripts\scrInitializeSounds.gml</script>
+      <script>scripts\scrInitializeStages.gml</script>
       <script>scripts\scrDeadSplitUpdate.gml</script>
       <script>scripts\scrSetGlobalOptions.gml</script>
       <script>scripts\scrSaveConfig.gml</script>
@@ -3827,6 +3827,7 @@
     <font>fonts\fDefault5</font>
     <font>fonts\fDefault8</font>
     <font>fonts\fGeezer</font>
+    <font>fonts\fJoystix10</font>
   </fonts>
   <objects name="objects">
     <object>objects\objWorld</object>
@@ -4635,6 +4636,7 @@
           <object>objects\objGravKBar</object>
           <object>objects\objGSausage</object>
           <object>objects\objGStone</object>
+          <object>objects\objGStoneCore</object>
           <object>objects\objGWater1</object>
           <object>objects\objGWater2</object>
         </objects>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>A=0;
+boss6var = 0;
 </string>
           </argument>
         </arguments>
@@ -49,6 +50,13 @@
           <argument>
             <kind>1</kind>
             <string>if A=2{if image_alpha&lt;1{image_alpha+=0.05;}}
+if(boss6var == 2)
+{
+ if(image_alpha &gt; 0)
+  image_alpha -= 0.02;
+ else
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>

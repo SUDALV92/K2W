@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="424" name="datafiles">
-    <datafiles number="424" name="Music">
+  <datafiles number="425" name="datafiles">
+    <datafiles number="425" name="Music">
       <datafile>
         <name>Title.ogg</name>
         <exists>-1</exists>
@@ -501,7 +501,7 @@
       <datafile>
         <name>Boss6.ogg</name>
         <exists>-1</exists>
-        <size>8367581</size>
+        <size>7133250</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -720,8 +720,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="424" name="SFX">
-      <datafiles number="424" name="Common">
+    <datafiles number="425" name="SFX">
+      <datafiles number="425" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1148,7 +1148,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="424" name="Stage">
+      <datafiles number="425" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1473,8 +1473,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="424" name="Boss">
-        <datafiles number="424" name="Solgryn">
+      <datafiles number="425" name="Boss">
+        <datafiles number="425" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -2851,6 +2851,12 @@
         <sprite>sprites\sprDCSpikeLeftPart</sprite>
         <sprite>sprites\sprDCSpikeRightPart</sprite>
       </sprites>
+      <sprites name="Boss6">
+        <sprite>sprites\sprBlockBigKidA</sprite>
+        <sprite>sprites\sprBlockBigKidB</sprite>
+        <sprite>sprites\sprBlockBigKidC</sprite>
+        <sprite>sprites\sprInflukaFX</sprite>
+      </sprites>
     </sprites>
     <sprites name="Engine">
       <sprites name="world">
@@ -3741,6 +3747,8 @@
         <background>background\bgNueGrid</background>
         <background>background\background109</background>
         <background>background\bgGraivtyManTileset</background>
+        <background>background\bgBoss6</background>
+        <background>background\bgBoss6Tileset</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -3817,6 +3825,7 @@
       <script>scripts\scrMakeShapes.gml</script>
       <script>scripts\scrMakeCircle.gml</script>
       <script>scripts\scrBounceMoveSolid.gml</script>
+      <script>scripts\scrCreateBigKidCherry.gml</script>
     </scripts>
     <scripts name="Extra">
       <script>scripts\scrCreateWarp.gml</script>
@@ -4753,9 +4762,11 @@
         <object>objects\obj6BBg</object>
         <object>objects\obj6BDr</object>
         <object>objects\obj6Bst</object>
+        <object>objects\objInflukaFX</object>
         <object>objects\objGiantblood</object>
         <object>objects\objGiantkCherry</object>
         <object>objects\objGiantkCherryR</object>
+        <object>objects\objB6Gradius</object>
         <object>objects\objGiantkid</object>
         <object>objects\objGiantkidb1</object>
         <object>objects\objGiantkidb2</object>

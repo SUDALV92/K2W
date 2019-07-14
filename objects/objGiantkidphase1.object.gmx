@@ -29,10 +29,16 @@
 hp=100; fullhp=100; delay=-1;
 audio_play_sound(global.sndGiandkid,0,0);
 alarm[0] = 180;
+shooting = false;
+i = 0;
 alarm[4] = 1;
+alarm[3] = 280;
 K=0;
 a=0;
 E=0;
+bulletSpeed = -2;
+bulletsCount = 2;
+lastBullet = noone;
 if(global.extra &amp;&amp;
 !(global.bossRushRerun[0] &amp;&amp; 
 global.bossRushRerun[1] &amp;&amp; 
@@ -89,8 +95,7 @@ audio_stop_sound(global.currentMusic);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-objPlayer.frozen=true;
+            <string>//objPlayer.frozen=true;
 </string>
           </argument>
         </arguments>
@@ -119,217 +124,26 @@ instance_create(96+a,448,objSpikeUp); a+=32;} K=1;}
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objGiantkidb2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>288</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>304</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>33</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objGiantkidb1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>288</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>304</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>33</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objGiantkidb2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>288</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>304</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>33</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>2</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
-        <id>201</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>10</kind>
-            <object>objGiantkidb1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>288</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>304</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>33</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>shooting = true;
+</string>
           </argument>
         </arguments>
       </action>
@@ -353,6 +167,64 @@ instance_create(96+a,448,objSpikeUp); a+=32;} K=1;}
             <kind>1</kind>
             <string>if delay&gt;0{delay-=1;}
 if delay=0{image_index=0; delay=-1;}
+with(objGiantkidb1)
+{
+ if(hspeed != other.bulletSpeed)
+  hspeed = other.bulletSpeed;
+}
+with(objGiantkidb2)
+{
+ if(hspeed != other.bulletSpeed)
+  hspeed = other.bulletSpeed;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Shooting
+if(shooting &amp;&amp; instance_exists(objPlayer))
+{
+ bulletKind = 0;
+ if(i &lt; bulletsCount-1)
+ {
+   bulletKind = 0; //killer
+ }
+ else
+ {
+   bulletKind = 1; //water
+ }
+ if(lastBullet == noone || lastBullet.x &lt;= 224)
+ {
+  if(bulletKind == 0)
+  {
+   lastBullet = instance_create(288,304,objGiantkidb1);
+  }
+  else
+  {
+   lastBullet = instance_create(288,304,objGiantkidb2);
+  }
+  if(i &lt; bulletsCount-1)
+   i++;
+  else
+   i = 0;
+ }
+}
 </string>
           </argument>
         </arguments>
@@ -451,46 +323,88 @@ if delay=-1
 {
     audio_play_sound(global.sndBossHit,0,0);
     
-    if hp&lt;81
+    count = 0;
+    if(hp &lt;= 100 &amp;&amp; hp &gt; 90)
     {
-        a1=instance_create(816,random_range(154,454),objGiantkCherry);
-        a1.speed=3;
-        a1.direction=180;
+     count = 1; bulletSpeed = -2; bulletsCount = 2;
     }
-    if hp&lt;61
+    if(hp == 90)
     {
-        a2=instance_create(random_range(96,320),-16,objGiantkCherry);
-        a2.speed=3;
-        a2.direction=270;
+     audio_play_sound(global.sndTrap,0,0);
     }
-    if hp&lt;41
+    if(hp &lt;= 90 &amp;&amp; hp &gt; 80)
     {
-        a3=instance_create(random_range(96,320),624,objGiantkCherry);
-        a3.speed=3;
-        a3.direction=90;
+     count = 1; bulletSpeed = -3; bulletsCount = 2;
     }
-    if hp&lt;21
+    if(hp &lt;= 80 &amp;&amp; hp &gt; 60)
     {
-        a4=instance_create(-16,random_range(154,454),objGiantkCherry);
-        a4.speed=3;
-        a4.direction=0;
+     count = 2; bulletSpeed = -3; bulletsCount = 2;
     }
-    if hp&lt;31
+    if(hp == 70)
     {
-        if E=0
-        {
-            a5=instance_create(288,304,objGiantkCherryR);
-            a5.speed=3;
-            a5.direction=choose(45,135,235,315); 
-            E=1;
-        }
+     a5=instance_create(288,304,objGiantkCherryR);
+     a5.speed=3;
+     a5.direction = choose(random_range(30,60),random_range(120,150),random_range(210,240),random_range(300,330));     
+    }
+    if(hp &lt;= 60 &amp;&amp; hp &gt; 50)
+    {
+     count = 3; bulletSpeed = -3; bulletsCount = 2;
+    }
+    if(hp == 50)
+    {
+     audio_play_sound(global.sndTrap,0,0);
+    }    
+    if(hp &lt;= 50 &amp;&amp; hp &gt; 40)
+    {
+     count = 3; bulletSpeed = -4; bulletsCount = 2;
+    }
+    if(hp == 40)
+    {
+     audio_play_sound(global.sndTrap,0,0);
+    }    
+    if(hp &lt;= 40 &amp;&amp; hp &gt; 20)
+    {
+     count = 3; bulletSpeed = -4; bulletsCount = 3;
+    }
+    if(hp == 30)
+    {
+     a5=instance_create(288,304,objGiantkCherryR);
+     a5.speed=3;
+     a5.direction = choose(random_range(30,60),random_range(120,150),random_range(210,240),random_range(300,330));     
+    }
+    if(hp &lt;= 20 &amp;&amp; hp &gt; 10)
+    {
+     count = 4; bulletSpeed = -4; bulletsCount = 3;
+    }
+    if(hp == 10)
+    {
+     audio_play_sound(global.sndTrap,0,0);
+    }
+    if(hp &lt;= 10 &amp;&amp; hp &gt; 0)
+    {
+     count = 4; bulletSpeed = -5; bulletsCount = 3;
+    }
+    repeat(count)
+    {
+     for(var j = 0; j &lt; 4; j++)
+     {
+      sides[j] = false;
+     }
+     rng = irandom(3);
+     sides[rng] = true;
+     scrCreateBigKidCherry(sides[0],sides[1],sides[2],sides[3]);         
     }
     hp-=1; delay=6; image_index=1;
     score = hp; //DeadSplit support
 }
 
-if hp&lt;=0{instance_destroy();
-with(objHPXLBar){instance_destroy();}}
+if hp&lt;=0
+{
+ instance_destroy();
+ instance_destroy(objInflukaFX);
+ with(objHPXLBar){instance_destroy();
+}
+}
 </string>
           </argument>
         </arguments>

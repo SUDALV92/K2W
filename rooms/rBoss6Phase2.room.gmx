@@ -255,8 +255,8 @@
     <instance objName="obj6BBlock" x="7968" y="320" name="inst_628F51D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6BBlock" x="7968" y="352" name="inst_A97E6172" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6BBlock" x="7968" y="384" name="inst_7688EA5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj6BBlock" x="7968" y="416" name="inst_B24F64BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj6BBlock" x="7968" y="448" name="inst_78AE1081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="7968" y="416" name="inst_B24F64BA" locked="0" code="instance_destroy();&#xA;a=instance_create(self.x,self.y,obj6BlockDeath);&#xA;a.sprite_index=sprite_index;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="7968" y="448" name="inst_78AE1081" locked="0" code="instance_destroy();&#xA;a=instance_create(self.x,self.y,obj6BlockDeath);&#xA;a.sprite_index=sprite_index;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6CBlock" x="7136" y="464" name="inst_C24E618D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6CBlock" x="6944" y="464" name="inst_67A1AB35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6DBlock" x="6976" y="464" name="inst_4ACE0993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -1185,13 +1185,10 @@
     <instance objName="objSpikeRight" x="6192" y="384" name="inst_8D9055CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="5664" y="448" name="inst_F93502B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="5728" y="448" name="inst_2432F9C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayerStart" x="7920" y="-64" name="inst_A16F38DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3584" y="480" name="inst_BA698161" locked="0" code="" scaleX="138" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="8000" y="-112" name="inst_90595E9C" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2592" y="480" name="inst_ED621821" locked="0" code="" scaleX="30" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="480" name="inst_CB731173" locked="0" code="" scaleX="69" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objArr" x="64" y="48" name="inst_E523D5E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="0" y="-32" name="inst_B5879DC1" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="0" y="608" name="inst_311CBDC9" locked="0" code="roomTo = rBoss6Death;&#xA;" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3808" y="-160" name="inst_22D28D87" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="3712" y="0" name="inst_E13847D3" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
@@ -1205,6 +1202,8 @@
     <instance objName="obj6BBlock" x="7968" y="-96" name="inst_67B10C50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj6BBlock" x="7968" y="-128" name="inst_BDCDA3E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="2528" y="608" name="inst_2B21486D" locked="0" code="" scaleX="34" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="0" y="-48" name="inst_792C6E6F" locked="0" code="" scaleX="250" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objB6Gradius" x="8032" y="448" name="inst_710A6A5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background124" x="7319" y="213" w="211" h="299" xo="0" yo="0" id="10024332" name="inst_5CCC7DCA" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

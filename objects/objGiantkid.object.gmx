@@ -130,6 +130,8 @@ global.bossRushRerun[4] = true;
             <kind>1</kind>
             <string>objPlayer.frozen=false;
 scrPlayMusic(global.sndBoss6,1);
+with(objInflukaFX)
+ A = 1;
 </string>
           </argument>
         </arguments>

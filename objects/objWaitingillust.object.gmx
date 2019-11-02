@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rTitle);
+            <string>room_goto(rIntro);
 </string>
           </argument>
         </arguments>

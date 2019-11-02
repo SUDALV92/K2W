@@ -93,6 +93,7 @@ if (loadFile)
         global.saveRoom = ds_map_find_value(saveMap,"saveRoom");
         global.savePlayerX = ds_map_find_value(saveMap,"savePlayerX");
         global.savePlayerY = ds_map_find_value(saveMap,"savePlayerY");
+        global.savePlayerType = ds_map_find_value(saveMap,"savePlayerType");
         global.saveGrav = ds_map_find_value(saveMap,"saveGrav");
         for (var i = 0; i < 5; i++)
         {
@@ -194,7 +195,8 @@ if(global.currentSegmentID != global.saveCurrentSegmentID)
  global.currentSegmentID = -1;
 }
 
-instance_create(global.savePlayerX,global.savePlayerY,objPlayer);
+if(global.savePlayerType == 0)
+ instance_create(global.savePlayerX,global.savePlayerY,objPlayer);
 
 scrLoadAchievements();
 

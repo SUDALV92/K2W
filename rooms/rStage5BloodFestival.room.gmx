@@ -200,8 +200,8 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objFreeTrigger" x="544" y="312" name="inst_B1652011" locked="0" code="trg = 24;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBftrap1" x="608" y="320" name="inst_2CA3A7D6" locked="0" code="trap =24;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="608" y="344" name="inst_27C75BDF" locked="0" code="trg = 25;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBftrap3" x="640" y="288" name="inst_44239EDF" locked="0" code="trap = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBftrap3" x="640" y="320" name="inst_6D1AF112" locked="0" code="trap = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBftrap3" x="640" y="288" name="inst_44239EDF" locked="0" code="trap = 25;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBftrap3" x="640" y="320" name="inst_6D1AF112" locked="0" code="trap = 25;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBftrap2" x="400" y="256" name="inst_623689B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBftrap1" x="224" y="448" name="inst_FD9A7472" locked="0" code="trap = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBftrap2" x="288" y="224" name="inst_1AA022C4" locked="0" code="trap = 26;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

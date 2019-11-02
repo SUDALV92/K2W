@@ -28,13 +28,39 @@
             <string>image_speed = 1/3;
 switch(room)
 {
+    case rIntro2: image_alpha = 0.5; break;
     case rExBoss1:
-    case rBoss6Crimson: sprite_index=sprCrimSpikeUp; break;    
-    case rBoss6Phase2: sprite_index=spr6BSpikeUp; break;
+    case rBoss6Crimson: sprite_index=sprCrimSpikeUp; break;
     
     default: image_index=irandom(11); break;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>switch(sprite_index)
+{
+ case sprLineSpike: sprite_index = sprSpikeUp; image_speed = 1/3; image_index=irandom(11); break;
+}
 </string>
           </argument>
         </arguments>

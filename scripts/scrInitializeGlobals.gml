@@ -8,6 +8,7 @@ global.timeMicro = 0;
 global.saveRoom = "";
 global.savePlayerX = 0;
 global.savePlayerY = 0;
+global.savePlayerType = 0; //0 = objPlayer, 1 = objB6Gradius, -1 = nothing
 global.grav = 1;
 global.saveGrav = 1;
 global.TitleCard = 1;

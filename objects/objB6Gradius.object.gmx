@@ -30,6 +30,18 @@ image_index=0;
 image_xscale = -1;
 delay=0;
 T=0;
+moving = false;
+for(var i = 0; i &lt;= 3; i++)
+{
+ moveX[i] = ds_queue_create();
+ moveY[i] = ds_queue_create();
+}
+
+if (global.autosave) //save the game if currently set to autosave
+{
+    scrSaveGame(true);
+    global.autosave = false;
+}
 </string>
           </argument>
         </arguments>
@@ -56,6 +68,37 @@ T=0;
 audio_play_sound(global.sndExplosion,0,0);
 instance_create(x,y,objExplosionB); 
 with(objPlayer){scrKillPlayer();}
+instance_destroy(objGradiusOption);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//moving with camera 
+hspeed = -1;
+
+//
+moving = false;
+T = 1;
+instance_create(x,y,objGradiusOption);
+instance_create(x,y,objGradiusOption);
 </string>
           </argument>
         </arguments>
@@ -84,47 +127,66 @@ if delay&gt;0{delay-=1;}
 
 U=scrButtonCheck(global.upButton);
 D=scrButtonCheck(global.downButton);
+L = scrButtonCheck(global.leftButton);
+R = scrButtonCheck(global.rightButton)
+J = scrButtonCheck(global.jumpButton);
 if !U and !D {image_index=0;}
 
-if scrButtonCheck(global.upButton)
+moving = false;
+
+if U
 {
  image_index=1; 
- if(scrButtonCheck(global.jumpButton))
+ moving = true;
+ if(J)
   y -= 2;
  else
   y-=4;
 }
-if scrButtonCheck(global.downButton)
+if D
 {
  image_index=2; 
- if(scrButtonCheck(global.jumpButton))
+ moving = true;
+ if(J)
   y += 2;
  else
   y+=4;
 }
-if scrButtonCheck(global.leftButton)
+if L
 {
- if(scrButtonCheck(global.jumpButton))
-  x -= 2;
+ moving = true;
+ if(J)
+  x -= 1;
  else
-  x-=4;
+  x-=3; 
 }
-if scrButtonCheck(global.rightButton)
+if R
 {
- if(scrButtonCheck(global.jumpButton))
-  x += 2;
+ moving = true;
+ if(J)
+  x += 1;
  else
   x+=4;
 }
+
+
+
 
 if delay=0
 {
  if scrButtonCheck(global.shootButton)
  {
   audio_play_sound(global.sndShoot,0,0);
-  a=instance_create(x+28,y,objBullet);
+  a=instance_create(x+28*image_xscale,y-6,objGradiusLaser);
   a.hspeed=16*image_xscale; 
-  delay=4;
+  a=instance_create(x+28*image_xscale,y+6,objGradiusLaser);
+  a.hspeed=16*image_xscale; 
+  with(objGradiusOption)
+  {
+   a=instance_create(x+14*other.image_xscale,y,objGradiusLaser);
+   a.hspeed=16*other.image_xscale; 
+  }
+  delay=5;
  }
 }
 }
@@ -132,8 +194,134 @@ if delay=0
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if instance_number(objGradiusOption)&gt;0
+{
+ if(moving)
+ {
+  ds_queue_enqueue(moveX[0],x-view_xview[0]);
+  ds_queue_enqueue(moveY[0],y);
+ }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="objPlayerKiller">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!global.godMode)
+ instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBoss6BSoftBlock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!other.destroyed &amp;&amp; !global.godMode)
+{
+ instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj6DBlock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!global.godMode)
+ instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj6CBlock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!global.godMode)
+ instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj6BBlock">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -179,6 +367,58 @@ if delay=0
     instance_destroy();
 }
 hspeed = -3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(room == rBoss6Phase2)
+{
+ hspeed = -6;
+ alarm[0] = 50; 
+ 
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_self();
+draw_sprite_ext(sprGradiusExhaus,0,x-17*image_xscale,y,image_xscale,image_yscale,image_angle,c_white,random_range(0.1,1));
 </string>
           </argument>
         </arguments>

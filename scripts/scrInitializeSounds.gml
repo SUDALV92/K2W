@@ -124,6 +124,7 @@ global.sndThunder = audio_create_stream("SFX\Boss\sndThunder.ogg");
 global.sndSmokeLow = audio_create_stream("SFX\Boss\sndSmokelow.ogg");
 
 // load music
+global.sndIntro = audio_create_stream("Music\Intro.ogg");
 global.sndTitle = audio_create_stream("Music\Title.ogg");
 global.sndOptions = audio_create_stream("Music\Options.ogg");
 global.sndPortal = audio_create_stream("Music\Portal.ogg");

@@ -3,12 +3,12 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="425" name="datafiles">
-    <datafiles number="425" name="Music">
+  <datafiles number="432" name="datafiles">
+    <datafiles number="432" name="Music">
       <datafile>
-        <name>Title.ogg</name>
+        <name>Intro.ogg</name>
         <exists>-1</exists>
-        <size>3019980</size>
+        <size>2031613</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -20,7 +20,7 @@
             <CopyToMask>9223372036854775807</CopyToMask>
           </Config>
         </ConfigOptions>
-        <filename>Title.ogg</filename>
+        <filename>Intro.ogg</filename>
       </datafile>
       <datafile>
         <name>Options.ogg</name>
@@ -518,7 +518,7 @@
       <datafile>
         <name>Boss6B.ogg</name>
         <exists>-1</exists>
-        <size>10466575</size>
+        <size>3279449</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -720,8 +720,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="425" name="SFX">
-      <datafiles number="425" name="Common">
+    <datafiles number="432" name="SFX">
+      <datafiles number="432" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1148,7 +1148,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="425" name="Stage">
+      <datafiles number="432" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1473,8 +1473,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="425" name="Boss">
-        <datafiles number="425" name="Solgryn">
+      <datafiles number="432" name="Boss">
+        <datafiles number="432" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -2816,13 +2816,15 @@
         <sprite>sprites\sprShatteredBlock</sprite>
         <sprite>sprites\sprBettyPlatform</sprite>
       </sprites>
-      <sprite>sprites\sprSecret5Portal</sprite>
-      <sprite>sprites\sprSecret5PortalFX</sprite>
-      <sprite>sprites\sprBlockS5A</sprite>
-      <sprite>sprites\sprBlockS5B</sprite>
-      <sprite>sprites\sprBlockS5C</sprite>
-      <sprite>sprites\sprBlockS5D</sprite>
-      <sprite>sprites\sprBlockS5E</sprite>
+      <sprites name="S5">
+        <sprite>sprites\sprSecret5PortalFX</sprite>
+        <sprite>sprites\sprBlockS5A</sprite>
+        <sprite>sprites\sprBlockS5B</sprite>
+        <sprite>sprites\sprBlockS5C</sprite>
+        <sprite>sprites\sprSecret5Portal</sprite>
+        <sprite>sprites\sprBlockS5D</sprite>
+        <sprite>sprites\sprBlockS5E</sprite>
+      </sprites>
       <sprite>sprites\sprShinySpark</sprite>
       <sprite>sprites\sprBlockKoalaA</sprite>
       <sprite>sprites\sprBlockKoalaB</sprite>
@@ -2853,9 +2855,31 @@
       </sprites>
       <sprites name="Boss6">
         <sprite>sprites\sprBlockBigKidA</sprite>
+        <sprite>sprites\sprBlockBigKidA2</sprite>
         <sprite>sprites\sprBlockBigKidB</sprite>
         <sprite>sprites\sprBlockBigKidC</sprite>
+        <sprite>sprites\sprBlockBigKidC2</sprite>
         <sprite>sprites\sprInflukaFX</sprite>
+        <sprite>sprites\sprGradiusOption</sprite>
+        <sprite>sprites\sprGradiusLaser</sprite>
+        <sprite>sprites\sprBlockBoss6B</sprite>
+        <sprite>sprites\sprBlockBoss6BCenter</sprite>
+        <sprite>sprites\sprGradiusEnemyWeapon</sprite>
+        <sprite>sprites\sprGradiusRock</sprite>
+        <sprite>sprites\sprGradiusSteelRock</sprite>
+      </sprites>
+      <sprites name="MStage">
+        <sprite>sprites\sprBlockMStageA</sprite>
+        <sprite>sprites\sprBlockMStageA2</sprite>
+        <sprite>sprites\sprBlockMStageB</sprite>
+        <sprite>sprites\sprBlockMStageB2</sprite>
+        <sprite>sprites\sprBlockMStageC</sprite>
+        <sprite>sprites\sprBlockMStageC2</sprite>
+        <sprite>sprites\sprMStageSoftBlock</sprite>
+        <sprite>sprites\sprMStageSoftBlockLeft</sprite>
+        <sprite>sprites\sprMStageSoftBlockRight</sprite>
+        <sprite>sprites\sprMStageSoftBlockUp</sprite>
+        <sprite>sprites\sprMStageSoftBlockDown</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3312,6 +3336,7 @@
       <sprite>sprites\sprFreudia</sprite>
       <sprite>sprites\sprFreudiaJan</sprite>
       <sprite>sprites\sprFreudiaTan</sprite>
+      <sprite>sprites\sprGradiusExhaus</sprite>
       <sprite>sprites\sprGradius</sprite>
       <sprite>sprites\sprGrolla</sprite>
       <sprite>sprites\sprGrollaTan1</sprite>
@@ -3600,6 +3625,18 @@
       <sprite>sprites\sprExKTGFakeBlock</sprite>
       <sprite>sprites\sprExKTGDeathBlock</sprite>
     </sprites>
+    <sprites name="Intro">
+      <sprite>sprites\sprIntroHouseInside</sprite>
+      <sprite>sprites\sprIntroHouse</sprite>
+      <sprite>sprites\sprIntroTrees</sprite>
+      <sprite>sprites\sprWhiteLine</sprite>
+      <sprite>sprites\sprWhiteStick</sprite>
+      <sprite>sprites\sprGridSource</sprite>
+      <sprite>sprites\sprLineSpike</sprite>
+      <sprite>sprites\sprIntroBlockH</sprite>
+      <sprite>sprites\sprIntroBlockV</sprite>
+      <sprite>sprites\sprIntroBlockC</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Common">
@@ -3747,8 +3784,16 @@
         <background>background\bgNueGrid</background>
         <background>background\background109</background>
         <background>background\bgGraivtyManTileset</background>
+      </backgrounds>
+      <backgrounds name="Boss6">
         <background>background\bgBoss6</background>
         <background>background\bgBoss6Tileset</background>
+        <background>background\bgBoss6BGrid</background>
+        <background>background\bgMStageTileset</background>
+      </backgrounds>
+      <backgrounds name="Intro">
+        <background>background\bgIntroGRID</background>
+        <background>background\bgLineBlockTileset</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -3853,6 +3898,7 @@
     <font>fonts\fDefault5</font>
     <font>fonts\fDefault8</font>
     <font>fonts\fGeezer</font>
+    <font>fonts\fJoystix8</font>
     <font>fonts\fJoystix10</font>
   </fonts>
   <objects name="objects">
@@ -3979,6 +4025,21 @@
       <object>objects\objBossTitle</object>
       <object>objects\objPortal</object>
       <object>objects\objBlack</object>
+    </objects>
+    <objects name="Intro">
+      <object>objects\objIntro</object>
+      <object>objects\objIntroHouseInside</object>
+      <object>objects\objIntroComputer</object>
+      <object>objects\objIntroHouse</object>
+      <object>objects\objIntroTrees</object>
+      <object>objects\objWarping</object>
+      <object>objects\objIntroTitle</object>
+      <object>objects\objIntroWhiteLine</object>
+      <object>objects\objIntroWhiteStick</object>
+      <object>objects\objIntroBlock</object>
+      <object>objects\objGridSource</object>
+      <object>objects\objIntroGravitySpike</object>
+      <object>objects\objIntroOrangeCherry</object>
     </objects>
     <objects name="Title">
       <object>objects\objSavefilecrashed</object>
@@ -4759,6 +4820,14 @@
     </objects>
     <objects name="Boss6">
       <objects name="Main">
+        <objects name="MovingObjects">
+          <object>objects\objBoss6MovingObject</object>
+          <object>objects\objBoss6MOSpikeUp</object>
+          <object>objects\objBoss6MOSpikeDown</object>
+          <object>objects\objBoss6MOSpikeLeft</object>
+          <object>objects\objBoss6MOSpikeRight</object>
+          <object>objects\objBoss6MOBlock</object>
+        </objects>
         <object>objects\obj6BBg</object>
         <object>objects\obj6BDr</object>
         <object>objects\obj6Bst</object>
@@ -4767,6 +4836,16 @@
         <object>objects\objGiantkCherry</object>
         <object>objects\objGiantkCherryR</object>
         <object>objects\objB6Gradius</object>
+        <object>objects\objGradiusOption</object>
+        <object>objects\objGradiusLaser</object>
+        <object>objects\objBoss6EnemyBullet</object>
+        <object>objects\objGradiusEnemyWeapon</object>
+        <object>objects\objGradiusRock</object>
+        <object>objects\objGradiusSteelRock</object>
+        <object>objects\objBoss6FallingSpikes</object>
+        <object>objects\objFallingSpike</object>
+        <object>objects\objGradiusVolcano</object>
+        <object>objects\objBoss6ChaseBG</object>
         <object>objects\objGiantkid</object>
         <object>objects\objGiantkidb1</object>
         <object>objects\objGiantkidb2</object>
@@ -4789,16 +4868,16 @@
       <objects name="Terrain">
         <object>objects\obj6BBlock</object>
         <object>objects\obj6BlockDeath</object>
-        <object>objects\obj6BlockDisable1</object>
-        <object>objects\obj6BlockDisable2</object>
         <object>objects\obj6CBlock</object>
         <object>objects\obj6DBlock</object>
-        <object>objects\obj6BLTrap</object>
+        <object>objects\objBoss6BSoftBlockRight</object>
+        <object>objects\objBoss6BSoftBlockLeft</object>
+        <object>objects\objBoss6BSoftBlockUp</object>
+        <object>objects\objBoss6BSoftBlockDown</object>
+        <object>objects\objBoss6BSoftBlock</object>
         <object>objects\obj6BDTrap</object>
         <object>objects\obj6BTrap1</object>
         <object>objects\obj6BTrap2</object>
-        <object>objects\obj6BTrap3</object>
-        <object>objects\obj6BTrap4</object>
         <object>objects\objBForest1</object>
         <object>objects\objBForest2</object>
         <object>objects\objGiantSpike</object>
@@ -5122,6 +5201,10 @@
     </rooms>
     <room>rooms\rTemplate</room>
     <room>rooms\rStage0</room>
+    <rooms name="Intro">
+      <room>rooms\rIntro</room>
+      <room>rooms\rIntro2</room>
+    </rooms>
     <rooms name="Stage1">
       <room>rooms\rStage1Chocko</room>
       <room>rooms\rStage1GGM</room>

@@ -105,7 +105,7 @@ gravity_direction = direction;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha == 1
+            <string>if image_alpha == 1 &amp;&amp; !global.godMode
 {
     with(other)
     {

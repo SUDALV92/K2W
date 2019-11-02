@@ -443,7 +443,7 @@ else
 
 if(f5pressed)
 {
-    if((global.portalAvailable &amp;&amp; instance_exists(objPlayer)))
+    if((global.portalAvailable))
     {
         for (var i = global.secretItemTotal-1; i &gt;= 0; i--)
         {

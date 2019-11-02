@@ -9,8 +9,25 @@ var secretItemCollected = false;
 if (savePosition)
 {    
     global.saveRoom = room_get_name(room);
-    global.savePlayerX = objPlayer.x;    
-    global.savePlayerY = objPlayer.y;
+    if(instance_exists(objPlayer))
+    {
+     global.savePlayerX = objPlayer.x;    
+     global.savePlayerY = objPlayer.y;
+     global.savePlayerType = 0;
+    }
+    else if(instance_exists(objB6Gradius))
+    {
+     global.savePlayerX = objB6Gradius.x;    
+     global.savePlayerY = objB6Gradius.y;
+     global.savePlayerType = 1;
+    }
+    else
+    {
+     global.savePlayerX = 99999;    
+     global.savePlayerY = 99999;
+     global.savePlayerType = -1;
+    }
+    
     global.saveGrav = global.grav;
     
     //check if player is saving inside of a wall or in the ceiling when the player's position is floored to prevent save locking
@@ -96,6 +113,7 @@ ds_map_add(saveMap,"timeMicro",global.timeMicro);
 ds_map_add(saveMap,"saveRoom",global.saveRoom);
 ds_map_add(saveMap,"savePlayerX",global.savePlayerX);
 ds_map_add(saveMap,"savePlayerY",global.savePlayerY);
+ds_map_add(saveMap,"savePlayerType",global.savePlayerType);
 ds_map_add(saveMap,"saveGrav",global.saveGrav);
 
 for (var i = 0; i < global.secretItemTotal; i++)

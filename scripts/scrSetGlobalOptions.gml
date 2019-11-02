@@ -1,13 +1,14 @@
 ///sets configurable global options
 
-global.gameVersion = "v1.2";
+global.gameVersion = "v2.0";
 
-global.roomCaptionDef = "I Wanna Kill The Kamilia 2 Remake";  //sets default window caption (only works with the Professional version of Studio)
+global.roomCaptionDef = "I Wanna Kill The Kamilia 2 Warped";  //sets default window caption (only works with the Professional version of Studio)
 global.roomCaptionLast = global.roomCaptionDef;
 global.godMode = false;
 window_set_caption(global.roomCaptionDef);
 
-global.md5StrAdd = "Kamilia Studio Have Strong MD5 Hash ы";  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
+var salt = logn(7,2019);
+global.md5StrAdd = "Waaaaaaaaarped"+string(salt);  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
 
 global.startRoom = rStage0;    //sets which room to begin with
 

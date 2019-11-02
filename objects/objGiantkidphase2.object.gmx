@@ -79,7 +79,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed=-2;
+            <string>hspeed=-1;
 alarm[1]=30;
 </string>
           </argument>
@@ -109,12 +109,19 @@ alarm[1]=30;
 }
 if Q=0
 {
-    if !instance_exists(objPlayer)
+    if !instance_exists(objB6Gradius)
     {
         sprite_index=sprGiantkidnogun;
         hspeed=0; 
         Q=1;
     }
+}
+if(room == rBoss6Phase2)
+{
+ if(audio_sound_get_track_position(global.currentMusic) &gt;= 75)
+ {
+  audio_sound_set_track_position(global.currentMusic, 7.72);
+ }
 }
 </string>
           </argument>

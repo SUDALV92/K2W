@@ -5,6 +5,10 @@ var loop = true;
 
 switch (room)                       //determines which song to play
 {
+    case rIntro:
+    case rIntro2:
+        roomSong = -2;
+        break;
     case rTitle:
         roomSong = -1;
         break;

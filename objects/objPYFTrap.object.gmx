@@ -28,6 +28,7 @@
             <string>image_speed = 1/3;
 image_index=irandom(11);
 go = false;
+triggered = false;
 </string>
           </argument>
         </arguments>
@@ -89,7 +90,15 @@ switch(trap)
   alarm[0] = 16;
   break;
  case 24:
-  vspeed = -2;
+  if(!triggered)
+  {
+   vspeed = -2;
+   triggered = true;
+  }
+  else
+  {
+   vspeed = 2;
+  }
   alarm[0] = 8;
   break;
  case 25:

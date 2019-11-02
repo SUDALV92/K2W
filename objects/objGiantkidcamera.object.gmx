@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){ self.y=objPlayer.y;}
+            <string>if instance_exists(objB6Gradius){ self.y=objB6Gradius.y;}
 </string>
           </argument>
         </arguments>
@@ -48,13 +48,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if self.x&gt;0
+            <string>if x&gt;0
 {
-    if objGiantkidphase2.A == 1
+    if true
     {
-        if instance_exists(objPlayer)
+        if instance_exists(objB6Gradius)
         {
-            self.x-=2;
+            x-=1;
+            //x = objB6Gradius.x;
         }
     }
 }
@@ -80,9 +81,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer)
+            <string>if instance_exists(objB6Gradius)
 {
-    self.y=floor(objPlayer.y);
+    self.y=floor(objB6Gradius.y);
+    x = objB6Gradius.x;
 }
 </string>
           </argument>

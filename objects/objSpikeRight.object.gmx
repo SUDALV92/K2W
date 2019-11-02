@@ -29,7 +29,6 @@
 switch(room)
 {    
     case rStage4KTGB: visible=0; break;    
-    case rBoss6Phase2: sprite_index=spr6BSpikeRight; break;
     
     default: image_index=irandom(11); break;
 }

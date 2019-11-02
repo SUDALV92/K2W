@@ -32,7 +32,6 @@ buffer_get_surface(buff, surf, 0, 0, 0);
 
 t = 0;
 type = "";
-audio_play_sound(global.sndTVstatic,0,0);
 </string>
           </argument>
         </arguments>
@@ -81,9 +80,13 @@ buffer_delete(buff);
           <argument>
             <kind>1</kind>
             <string>if( t &lt; 1 ) {
-    t += 1/10;
+    t += 1/50;
 } else {
     instance_destroy();
+}
+if(surface_exists(surf))
+{
+ surface_copy(surf, 0, 0, application_surface);
 }
 </string>
           </argument>

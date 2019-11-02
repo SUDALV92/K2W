@@ -28,8 +28,6 @@
             <string>image_speed = 1/3;
 switch(room)
 {      
-    case rBoss6Phase2: sprite_index=spr6BSpikeDown; break;
-    
     default: image_index=irandom(11); break;
 }
 </string>

@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="432" name="datafiles">
-    <datafiles number="432" name="Music">
+  <datafiles number="451" name="datafiles">
+    <datafiles number="451" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -533,9 +533,43 @@
         <filename>Boss6B.ogg</filename>
       </datafile>
       <datafile>
+        <name>Boss6B2.ogg</name>
+        <exists>-1</exists>
+        <size>3422708</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Boss6B2.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>GradiusGameOver.ogg</name>
+        <exists>-1</exists>
+        <size>421906</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>GradiusGameOver.ogg</filename>
+      </datafile>
+      <datafile>
         <name>Stage7.ogg</name>
         <exists>-1</exists>
-        <size>8162402</size>
+        <size>10456930</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -720,8 +754,8 @@
         <filename>Collapse2.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="432" name="SFX">
-      <datafiles number="432" name="Common">
+    <datafiles number="451" name="SFX">
+      <datafiles number="451" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1148,7 +1182,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="432" name="Stage">
+      <datafiles number="451" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1473,8 +1507,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="432" name="Boss">
-        <datafiles number="432" name="Solgryn">
+      <datafiles number="451" name="Boss">
+        <datafiles number="451" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -2785,6 +2819,125 @@
           </ConfigOptions>
           <filename>sndThunder.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndTetranDead.ogg</name>
+          <exists>-1</exists>
+          <size>131416</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndTetranDead.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndGradiusShootSolid.ogg</name>
+          <exists>-1</exists>
+          <size>20480</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndGradiusShootSolid.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndGradiusShootDamage.ogg</name>
+          <exists>-1</exists>
+          <size>19448</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndGradiusShootDamage.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndGradiusRockDead.ogg</name>
+          <exists>-1</exists>
+          <size>36214</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndGradiusRockDead.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndGradiusDeath.ogg</name>
+          <exists>-1</exists>
+          <size>81759</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndGradiusDeath.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndLaserCharging.ogg</name>
+          <exists>-1</exists>
+          <size>94449</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndLaserCharging.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndLaserBeam.ogg</name>
+          <exists>-1</exists>
+          <size>77770</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndLaserBeam.ogg</filename>
+        </datafile>
       </datafiles>
     </datafiles>
   </datafiles>
@@ -2867,19 +3020,19 @@
         <sprite>sprites\sprGradiusEnemyWeapon</sprite>
         <sprite>sprites\sprGradiusRock</sprite>
         <sprite>sprites\sprGradiusSteelRock</sprite>
+        <sprite>sprites\sprBoss6Cross</sprite>
+        <sprite>sprites\sprTetranBody</sprite>
+        <sprite>sprites\sprTetranEye</sprite>
+        <sprite>sprites\sprTetranShield</sprite>
+        <sprite>sprites\sprTetranHand</sprite>
+        <sprite>sprites\sprTetranExplosion</sprite>
+        <sprite>sprites\sprLaserCharging</sprite>
+        <sprite>sprites\sprLaserBeam</sprite>
+        <sprite>sprites\sprTetranBlueBall</sprite>
       </sprites>
       <sprites name="MStage">
-        <sprite>sprites\sprBlockMStageA</sprite>
-        <sprite>sprites\sprBlockMStageA2</sprite>
-        <sprite>sprites\sprBlockMStageB</sprite>
-        <sprite>sprites\sprBlockMStageB2</sprite>
-        <sprite>sprites\sprBlockMStageC</sprite>
-        <sprite>sprites\sprBlockMStageC2</sprite>
         <sprite>sprites\sprMStageSoftBlock</sprite>
-        <sprite>sprites\sprMStageSoftBlockLeft</sprite>
-        <sprite>sprites\sprMStageSoftBlockRight</sprite>
-        <sprite>sprites\sprMStageSoftBlockUp</sprite>
-        <sprite>sprites\sprMStageSoftBlockDown</sprite>
+        <sprite>sprites\sprMStageLaser</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3633,9 +3786,12 @@
       <sprite>sprites\sprWhiteStick</sprite>
       <sprite>sprites\sprGridSource</sprite>
       <sprite>sprites\sprLineSpike</sprite>
+      <sprite>sprites\sprIntroBlockACentered</sprite>
+      <sprite>sprites\sprIntroBlockA</sprite>
       <sprite>sprites\sprIntroBlockH</sprite>
       <sprite>sprites\sprIntroBlockV</sprite>
       <sprite>sprites\sprIntroBlockC</sprite>
+      <sprite>sprites\sprIntroBlockCSingle</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -3789,11 +3945,17 @@
         <background>background\bgBoss6</background>
         <background>background\bgBoss6Tileset</background>
         <background>background\bgBoss6BGrid</background>
-        <background>background\bgMStageTileset</background>
+        <background>background\bgLifeForceTileset</background>
       </backgrounds>
       <backgrounds name="Intro">
         <background>background\bgIntroGRID</background>
         <background>background\bgLineBlockTileset</background>
+        <background>background\background125</background>
+        <background>background\bgIntroVerticalBlock</background>
+      </backgrounds>
+      <backgrounds name="MStage">
+        <background>background\bgMStageTileset</background>
+        <background>background\bgMStageGRID</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -3900,6 +4062,9 @@
     <font>fonts\fGeezer</font>
     <font>fonts\fJoystix8</font>
     <font>fonts\fJoystix10</font>
+    <font>fonts\fJoystix30</font>
+    <font>fonts\fJoystix20</font>
+    <font>fonts\fJoystix14</font>
   </fonts>
   <objects name="objects">
     <object>objects\objWorld</object>
@@ -4040,6 +4205,16 @@
       <object>objects\objGridSource</object>
       <object>objects\objIntroGravitySpike</object>
       <object>objects\objIntroOrangeCherry</object>
+      <object>objects\objIntroFakeBlock</object>
+      <object>objects\objIntroScreenFreeze</object>
+      <object>objects\objIntroTrapLeft</object>
+      <object>objects\objIntroBullet</object>
+      <object>objects\objIntroDestroyableBlock</object>
+      <object>objects\objIntroTrapDown</object>
+      <object>objects\objIntroBlockTrap</object>
+      <object>objects\objIntroText</object>
+      <object>objects\objIntroNueLaser</object>
+      <object>objects\objIntroNueLaser2</object>
     </objects>
     <objects name="Title">
       <object>objects\objSavefilecrashed</object>
@@ -4844,6 +5019,23 @@
         <object>objects\objGradiusSteelRock</object>
         <object>objects\objBoss6FallingSpikes</object>
         <object>objects\objFallingSpike</object>
+        <object>objects\objBoss6TrapDown</object>
+        <object>objects\objBoss6Laser</object>
+        <object>objects\objBoss6Laser2</object>
+        <object>objects\objBoss6Laser2B</object>
+        <object>objects\objBoss6Laser3</object>
+        <object>objects\objBoss6Cross</object>
+        <object>objects\objTetranHP</object>
+        <object>objects\objTetran</object>
+        <object>objects\objTetranEye</object>
+        <object>objects\objTetranShield</object>
+        <object>objects\objTetranHand</object>
+        <object>objects\objTetranExplosion</object>
+        <object>objects\objTetranAfterDeathCharge</object>
+        <object>objects\objLaserCharging</object>
+        <object>objects\objLaserBeam</object>
+        <object>objects\objTetranAnchor</object>
+        <object>objects\objTetranBlueBall</object>
         <object>objects\objGradiusVolcano</object>
         <object>objects\objBoss6ChaseBG</object>
         <object>objects\objGiantkid</object>
@@ -4897,6 +5089,8 @@
       <object>objects\objLightEffect</object>
       <object>objects\objMagic1</object>
       <object>objects\objS7Block</object>
+      <object>objects\objStage7Controller</object>
+      <object>objects\objMLaser</object>
     </objects>
     <objects name="Boss7">
       <objects name="FX">
@@ -5204,6 +5398,9 @@
     <rooms name="Intro">
       <room>rooms\rIntro</room>
       <room>rooms\rIntro2</room>
+      <room>rooms\rIntro3</room>
+      <room>rooms\rIntro4</room>
+      <room>rooms\rIntro5</room>
     </rooms>
     <rooms name="Stage1">
       <room>rooms\rStage1Chocko</room>
@@ -5313,9 +5510,9 @@
       <room>rooms\rBoss6GravityMan</room>
       <room>rooms\rBoss6Phase1</room>
       <room>rooms\rBoss6Phase2</room>
-      <room>rooms\rBoss6Death</room>
     </rooms>
     <rooms name="Stage7">
+      <room>rooms\rBoss6Death</room>
       <room>rooms\rStage7</room>
       <room>rooms\rStage7B</room>
       <room>rooms\rBoss7Phase1</room>

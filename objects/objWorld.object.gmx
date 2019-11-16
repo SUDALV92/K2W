@@ -609,6 +609,46 @@ if(f5pressed)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///music loops
+switch(room)
+{
+ case rBoss6Phase2:
+      if(global.currentMusicID == global.sndBoss6B)
+      {
+       if(audio_sound_get_track_position(global.currentMusic) &gt;= 75)
+       {
+        audio_sound_set_track_position(global.currentMusic, 7.72);
+       }
+      }
+      break;
+ case rBoss6Death:
+ case rStage7:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 111.712)
+      {
+       audio_sound_set_track_position(global.currentMusic, 0.934);
+      }
+      break;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="7" enumb="10">
       <action>
@@ -776,8 +816,9 @@ switch(room)
     case rStage7:
         if(!instance_exists(objSmoothCameraPersistent)) 
         {
-            camera = instance_create(0,0,objSmoothCameraPersistent);
-            camera.snapDiv = 10;   
+            camera = instance_create(0,304,objSmoothCameraPersistent);
+            camera.snapDiv = 10;  
+            camera.yaxis = false; 
         }
         else
         {

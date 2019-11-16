@@ -27,15 +27,22 @@
             <kind>1</kind>
             <string>scrPlayMusic(global.sndIntro,0);
 i=0;
+j = 0;
 warp = false;
 background_alpha[0] = 0;
 background_yscale = 2;
 t = 0;
 backgroundPulse = false;
 bgPulseI = 0;
+freezeX = 0;
+freezeY = 0;
+dollTempSpeed = 0;
+dollX = 0;
+dollY = 0;
+blockCrashed = false;
 
-i = 600;
-t = 600;
+//i = 1680;
+//t = 1680;
 
 </string>
           </argument>
@@ -179,7 +186,7 @@ if(warp)
   with(objGridSource)
   {
     if(image_angle == 270)
-     image_xscale += 0.1;
+     image_xscale += 0.08;
   }
  }
  if(i &gt;= 811 &amp;&amp; i &lt;= 900)
@@ -187,7 +194,7 @@ if(warp)
   with(objGridSource)
   {
     if(image_angle == 0)
-     image_xscale += 0.1;
+     image_xscale += 0.08;
   }
  }
  if(i == 910)
@@ -263,6 +270,8 @@ if(warp)
  if(i == 1150)
  {  
   instance_create(0,0,objExTransition);
+  text = instance_create(300,100,objIntroText);
+  text.text = "GAME DESIGN#SUDALV";
   with(objSpikeUp)
   {
    image_speed = 0.4;
@@ -281,19 +290,28 @@ if(warp)
  {
   with(objPlayerDoll) event_user(0); //jump
  }
+ if(i == 1250)
+ {
+  instance_destroy(objIntroText);
+ }
  if(i == 1300)
  {
   objPlayerDoll.hspeed = 0;
   with(objBlack) boss6var = 2;
   
   instance_create(0,0,objExTransition);
+  text = instance_create(300,100,objIntroText);
+  text.text = "BASED ON";
+  text2 = instance_create(300,150,objIntroText);
+  text2.text = "I WANNA KILL THE#KAMILIA 2 REMAKE";
+  text2.font = fJoystix20;
   with(objIntroBlock)
   {
    visible = true;
    image_speed = 0.4;
   }
  }
- if(i == 1380)
+ if(i == 1360)
  {
   cherry = instance_create(900,300,objIntroOrangeCherry);
   cherry.image_xscale = 2;
@@ -301,7 +319,11 @@ if(warp)
   cherry.hspeed = -15;
   cherry.friction = 0.4;
  }
- if(i == 1430)
+ if(i == 1420)
+ {
+  instance_destroy(objIntroText);
+ }
+ if(i == 1410)
  {
   var temp = 0;
   repeat(12)
@@ -316,8 +338,10 @@ if(warp)
  if(i == 1440)
  {
   instance_create(0,0,objExTransition);
+  text = instance_create(270,100,objIntroText);
+  text.text = "ORIGINAL GAME#INFLUKA";
  }
- if(i == 1490)
+ if(i == 1470)
  {
   with(objIntroOrangeCherry)
   {
@@ -326,27 +350,28 @@ if(warp)
    image_angle = direction;
   }
  }
- if(i == 1530)
+ if(i == 1495)
  {
+  
   with(objIntroOrangeCherry)
   {
    direction = point_direction(x,y,objPlayerDoll.x,objPlayerDoll.y);
    image_angle = direction;
-   speed = -5;
+   speed = -7;
    gravity_direction = direction;
    gravity = 0.4;
    curving = 0;
-  }
-  
+  }  
  }
- if(i == 1560)
+ if(i == 1530)
  {
+  instance_destroy(objIntroText);
   objPlayerDoll.hspeed = -3;
   with(objPlayerDoll) event_user(0);
  }
- if(i == 1580)
+ if(i == 1550)
  {
-    objPlayerDoll.hspeed = 1;
+    objPlayerDoll.hspeed = 3;
     with(objPlayerDoll) event_user(0);
  }
  if(i == 1600)
@@ -355,18 +380,473 @@ if(warp)
   view_hborder[0] = 400;
   view_vborder[0] = 304;
  }
- if(i &gt; 1600 &amp;&amp; i &lt; 1700)
+ if(i &gt; 1600 &amp;&amp; i &lt; 1680)
  {
+  background_visible[4] = true;
+  background_alpha[4] += 0.01;
   view_wview[0] -= 6;
   view_hview[0] = view_wview[0]*19/25;
  }
- if(i == 1700)
+ if(i == 1650)
+ {
+  with(objPlayerDoll) event_user(0);
+ }
+ if(i == 1680)
+ {
+  room_goto(rIntro3);
+ }
+ //scene 3
+ if(i == 1681)
+ {
+  objPlayerDoll.hspeed = 3;
+ }
+ if(i == 1710)
+ {
+  with(objPlayerDoll) event_user(0); //jump
+ }
+ if(i == 1728)
+ {
+  with(objPlayerDoll) event_user(0); //djump
+ }
+ if(i == 1795)
+ {
+  with(objIntroTrapLeft)
+  {
+   go = true;
+  }
+ }
+ if(i == 1805)
+ {
+  objPlayerDoll.hspeed = 0;
+  objIntroTrapLeft.go = false;
+  freezeX = 400;
+  freezeY = 304;
+  event_user(0);
+ }
+ if(i == 1825)
+ {
+  event_user(1);
+  objPlayerDoll.hspeed = -3;
+  objIntroTrapLeft.go = true;
+  objIntroFakeBlock.go = true;
+ }
+ if(i == 1860)
+ {
+  with(objPlayerDoll) event_user(0); //jump
+ }
+ if(i == 1875)
+ {
+  with(objPlayerDoll) event_user(0); //djump
+ }
+ if(i == 1938)
+ {
+  freezeX = 0;
+  freezeY = 304;
+  objPlayerDoll.hspeed = 0;
+  dollTempSpeed = objPlayerDoll.speed;
+  dollX = objPlayerDoll.x;
+  dollY = objPlayerDoll.y;
+  
+  event_user(0);
+ }
+ if(i == 1960)
+ {
+  event_user(1);
+  objPlayerDoll.x = dollX;
+  objPlayerDoll.y = dollY;
+  objPlayerDoll.speed = dollTempSpeed;
+  objPlayerDoll.hspeed = 3;
+  view_yview[0] = 304;
+  instance_destroy(objIntroFakeBlock);
+  random_set_seed(1);
+ }
+ if(i &gt; 1970 &amp;&amp; i &lt; 2080 &amp;&amp; i % 4 == 0)
+ {
+  bullet = instance_create(irandom_range(-100,100),280,objIntroBullet);
+  bullet.speed = 6;
+  bullet.direction = 300;
+  bullet.curving = random_range(-1,1); 
+  
+  bullet = instance_create(irandom_range(300,500),280,objIntroBullet);
+  bullet.speed = 6;
+  bullet.direction = 240;
+  bullet.curving = random_range(-1,1); 
+ }
+ if(i == 2018)
+ {
+  objPlayerDoll.hspeed = -3;  
+ }
+ if(i == 2023)
+ {
+  with(objPlayerDoll) event_user(0);  
+ }
+ if(i == 2027)
+ {
+  objPlayerDoll.hspeed = 3;
+ }
+ if(i == 2051)
+ {
+  objPlayerDoll.hspeed = -3;
+ }
+ if(i == 2060)
+ {
+  with(objPlayerDoll) event_user(0);  
+ }
+ if(i == 2077)
+ {
+  freezeX = 150;
+  freezeY = 200;
+  event_user(0);
+  with(objIntroBullet) speed = 0;
+  dollX = objPlayerDoll.x;
+  dollY = objPlayerDoll.y;
+  dollTempSpeed = speed;
+  objPlayerDoll.gravity = 0;
+  objPlayerDoll.speed = 0;
+  objPlayerDoll.image_speed = 0;
+ }
+ if(i == 2090)
+ {
+  event_user(1);
+  with(objIntroBullet)
+  {
+   gravity = 0.4;
+   gravity_direction = point_direction(objPlayerDoll.x,objPlayerDoll.y,x,y);
+   curving = 0;
+  }
+  
+  with(objPlayerDoll)
+  {
+   x = other.dollX;
+   y = other.dollY;
+   speed = other.dollTempSpeed;
+   gravity = 0.4;
+   image_speed = 0.2;
+   hspeed = 0;
+  }
+ }
+ if(i == 2095 || i == 2100 || i == 2110 || i == 2117 || i == 2134 || i == 2151 || i == 2169 || i == 2176)// || i == 2192 || i == 2209)
+ {
+  bullet = instance_create(-32,objPlayerDoll.y,objIntroBullet);
+  bullet.hspeed = 5;
+  bullet.gravity = 0.5;
+  bullet.gravity_direction = 0;
+ }
+ if(i == 2110)
+ {
+  objPlayerDoll.hspeed = 3;
+ }
+ if(i == 2123)
+ {
+  with(objPlayerDoll) event_user(0);
+ }
+ if(i == 2179)
+ {
+  //objPlayerDoll.hspeed = 0.1;
+  freezeX = 400;
+  freezeY = 304;
+  event_user(0);
+ }
+ if(i == 2195)
+ {  
+  event_user(1);
+  freezeX = 400;
+  freezeY = 304;
+  event_user(0);
+ }
+ if(i == 2210)
+ {
+  event_user(1);
+  freezeX = 300;
+  freezeY = 150;
+  event_user(0);
+ }
+ if(i == 2220)
+ {
+  room_goto(rIntro4);
+ }
+ if(i == 2230)
+ {
+  text = instance_create(180,50,objIntroText);
+  text.text = "ENGINE#GAME MAKER STUDIO";
+  text.font = fJoystix14;
+ }
+ if(i == 2365) 
+ {
+  instance_destroy(objIntroText);
+  objPlayerDoll.hspeed = 0;
+  trap1 = instance_create(view_xview[0],-32,objIntroTrapDown);
+  trap1.gravity = 0.9;
+  
+  trap2 = instance_create(view_xview[0],-64,objIntroBlockTrap);
+  trap2.gravity = 0.9;
+  
+  trap3 = instance_create(view_xview[0]+view_wview[0]-32,-32,objIntroTrapDown);
+  trap3.gravity = 0.9;
+  
+  trap4 = instance_create(view_xview[0]+view_wview[0]-32,-64,objIntroBlockTrap);
+  trap4.gravity = 0.9;
+ }
+ if(blockCrashed)
+ {
+  j = i;
+ }
+ if(j != 0 &amp;&amp; i == j)
+ {
+  view_visible[0] = false;
+  view_visible[1] = true;
+ }
+ if(i == 2422)
+ {
+  view_visible[1] = false;
+  view_visible[3] = true;
+ }
+ if(i == 2459)
+ {
+  view_visible[3] = false;
+  view_visible[2] = true;
+ }
+ if(i == 2530)
+ {
+  view_visible[1] = false;
+  view_visible[2] = false;  
+  room_goto(rIntro5);
+ }
+ if(i == 2531)
+ {
+  
+  text = instance_create(300,100,objIntroText);
+  text.text = "INTRO THEME";
+  text.font = fJoystix20;
+  text2 = instance_create(300,150,objIntroText);
+  text2.text = "DATABASE";
+  text2.font = fJoystix30;
+  text3 = instance_create(300,200,objIntroText);
+  text3.text = "BY MAN WITH A MISSION#FEAT. TAKUMA";
+  text3.font = fJoystix20;
+ }
+ if(i &gt; 2531 &amp;&amp; i &lt; 2552)
+ {
+  background_hspeed[0] = -1.5;
+  background_vspeed[0] = -objPlayerDoll.vspeed;
+  background_vspeed[1] = -objPlayerDoll.vspeed;
+  background_vspeed[2] = -objPlayerDoll.vspeed;
+ }
+ if(i == 2560)
+ {
+  background_vspeed[0] = -9;
+  background_vspeed[1] = -9;
+  background_vspeed[2] = -9;
+  objPlayerDoll.vspeed = 0;
+  objPlayerDoll.gravity = 0;
+  objPlayerDoll.frozen = true;
+  objPlayerDoll.sprite_index = sprPlayerFall;
+ }
+ if(i == 2700)
+ {
+  instance_destroy(objIntroText);
+  with(objPlayerDoll)
+  {
+   move_towards_point(100,250,5);
+  }
+ }
+ if(i == 2790)
+ {
+  objPlayerDoll.speed = 0;
+  text = instance_create(500,200,objIntroText);
+  text.text = "SUBPRODUCER#REDIRE";
+ }
+ if(i == 2990)
+ {
+  instance_destroy(objIntroText);
+  with(objPlayerDoll)
+  {
+   move_towards_point(700,200,8.5);
+  }
+ }
+ if(i == 3050)
+ {
+  objPlayerDoll.speed = 0;
+  text = instance_create(370,130,objIntroText);
+  text.text = "SPECIAL THANKS";
+ }
+ if(i == 3100)
+ {
+  text = instance_create(370,200,objIntroText);
+  text.text = "KAYIN (IWBTG)";
+  text.font = fJoystix20;
+ }
+ if(i == 3220)
+ {
+  text = instance_create(370,250,objIntroText);
+  text.text = "KTK2 TEAM (ORIGINAL K2)";
+  text.font = fJoystix20;
+ }
+ if(i == 3330)
+ {
+  text = instance_create(370,300,objIntroText);
+  text.text = "K2R TEAM (REMAKE DEV HELP)";
+  text.font = fJoystix20;
+ }
+ if(i == 3440)
+ {
+  text = instance_create(370,350,objIntroText);
+  text.text = "YOYOYODUDE (PROJECT TEMPLATE)";
+  text.font = fJoystix20;
+ }
+ if(i == 3600)
+ {
+  instance_destroy(objIntroText);
+ }
+ if(i == 3610)
+ {
+  laser = instance_create(-800,590,objIntroNueLaser);
+  laser.hspeed = 20;
+ }
+ if(i &gt;= 3650 &amp;&amp; i &lt;= 3850 &amp;&amp; i % 10 == 0)
+ {
+  var rng = irandom_range(100,700);
+  instance_create(rng,590,objCyberBulletFX);
+  bullet = instance_create(rng,590,objIntroBullet);
+  bullet.image_alpha = 0;
+  bullet.mode = 2;
+  bullet.direction = random_range(70,110);
+  bullet.speed = 9;
+ }
+ if(i == 3650)
+ {
+  objPlayerDoll.maxSpeed = 3;
+  objPlayerDoll.gravity_direction = 135;
+  objPlayerDoll.gravity = 0.2;
+ }
+ if(i == 3700)
+ {
+  objPlayerDoll.gravity_direction = 180;
+ }
+ if(i == 3810)
+ {
+  objPlayerDoll.gravity_direction = 225;
+ }
+ if(i == 3850)
+ {
+  objPlayerDoll.gravity_direction = 270;
+ }
+ if(i == 3880)
+ {
+  laser = instance_create(48,-832,objIntroNueLaser2);
+  laser.vspeed = 20;
+  laser2 = instance_create(752,-832,objIntroNueLaser2);
+  laser2.vspeed = 20;
+  laser2.mode = 2;
+ }
+ if(i == 3900)
+ {
+  objPlayerDoll.gravity_direction = 0;  
+ }
+ if(i == 3930)
+ {
+  laser.hspeed = 3;
+  laser2.hspeed = -3;
+ }
+ if(i == 4010)
+ {
+  objPlayerDoll.maxSpeed = 9;
+  objPlayerDoll.gravity_direction = 0;
+  objPlayerDoll.gravity = 0;
+  objPlayerDoll.speed = 0;
+  laser.hspeed = 0;
+  laser.fadeout = true;
+  laser2.hspeed = 0;
+  laser2.fadeout = true;
+ }
+ if(i == 4010)
+ {
+  laser = instance_create(-832,objPlayerDoll.y,objIntroNueLaser2);
+  laser.image_angle = 90;
+  laser.hspeed = 32;  
+ }
+ if(i == 4025)
+ {
+  objPlayerDoll.vspeed = - 10;
+ }
+ if(i == 4029)
+ {
+  objPlayerDoll.vspeed = 0;
+ }
+ if(i == 4030)
+ {
+  laser.fadeout = true;
+ }
+ if(i == 4035)
+ {  
+  laser = instance_create(objPlayerDoll.x,-832,objIntroNueLaser2);
+  laser.vspeed = 32;
+ }
+ if(i == 4052)
+ {
+  objPlayerDoll.hspeed = 10;
+ }
+ if(i == 4056)
  {
   objPlayerDoll.hspeed = 0;
  }
+ if(i == 4065)
+ {
+  laser.fadeout = true;
+ }
+ if(i == 4070)
+ {
+  laser = instance_create(-832,objPlayerDoll.y,objIntroNueLaser2);
+  laser.image_angle = 90;
+  laser.hspeed = 32;  
+ }
+ if(i == 4092)
+ {
+  objPlayerDoll.vspeed = 10;
+ }
+ if(i == 4096)
+ {
+  objPlayerDoll.vspeed = 0;
+ }
+ if(i == 4100)
+ {
+  laser.fadeout = true;
+ }
+ if(i == 4105)
+ {  
+  laser = instance_create(objPlayerDoll.x,-832,objIntroNueLaser2);
+  laser.vspeed = 32;
+ }
+ if(i == 4123)
+ {
+  objPlayerDoll.hspeed = -10;
+ }
+ if(i == 4127)
+ {
+  objPlayerDoll.hspeed = 0;
+ }
+ if(i == 4150)
+ {
+  laser.fadeout = true;
+ }
+ if(i == 4155)
+ {
+  objPlayerDoll.vspeed = 9;
+  background_vspeed[0] = -1.5;
+  background_vspeed[1] = 0;
+  background_vspeed[2] = 0;
+  background_visible[3] = true;
+ }
+ if(i &gt; 4200)
+ {
+  background_alpha[3] += 0.005;
+ }
+ if(i == 4500)
+ {
+  room_goto(rTitle);
+ }
  i++;
 }
-
 </string>
           </argument>
         </arguments>
@@ -388,7 +868,7 @@ if(warp)
           <argument>
             <kind>1</kind>
             <string>///music sync
-if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 5 ) 
+if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 10 ) 
 {
  audio_sound_set_track_position(global.currentMusic, t/50);
 }
@@ -434,6 +914,61 @@ if(backgroundPulse)
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//unfreeze screen
+instance_destroy(objIntroScreenFreeze);
+background_hspeed[0] = -1.5;
+background_vspeed[0] = -1.5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///screen freeze
+freeze = instance_create(x,y,objIntroScreenFreeze);
+freeze.xx = freezeX;
+freeze.yy = freezeY;
+with(freeze) event_user(0);
+background_hspeed[0] = 0;
+background_vspeed[0] = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
@@ -455,6 +990,9 @@ if(backgroundPulse)
 {
  case rIntro:
  case rIntro2:
+ case rIntro3:
+ case rIntro4:
+ case rIntro5:
   break;
  default:
   instance_destroy();
@@ -481,8 +1019,10 @@ if(backgroundPulse)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_right);
-scrDrawTextOutline(800,50,string(i),c_white,c_black);
+            <string>//draw_set_halign(fa_right);
+//scrDrawTextOutline(view_wview[0],view_yview[0]+50,string(i),c_white,c_black);
+/*if(scrButtonCheckPressed(global.jumpButton))
+ scrDrawTextOutline(view_wview[0],view_yview[0]+70,"jump",c_white,c_black);*/
 </string>
           </argument>
         </arguments>

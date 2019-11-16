@@ -7,6 +7,9 @@ switch (room)                       //determines which song to play
 {
     case rIntro:
     case rIntro2:
+    case rIntro3:
+    case rIntro4:
+    case rIntro5:
         roomSong = -2;
         break;
     case rTitle:
@@ -143,6 +146,7 @@ switch (room)                       //determines which song to play
         roomSong = global.sndBossRushPopularity; break;
     case rBoss6Phase2:
         roomSong = global.sndBoss6B; break;
+    case rBoss6Death:
     case rStage7:
         roomSong = global.sndStage7; break;
     case rBoss7Phase1:

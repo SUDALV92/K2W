@@ -48,7 +48,7 @@ else {instance_destroy();}
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>200</string>
+            <string>50</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -74,11 +74,13 @@ else {instance_destroy();}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objPlayer.frozen=0;
+            <string>//objPlayer.frozen=0;
 with(objStageMessage){instance_destroy();}
 with(objNumberMessage){instance_destroy();}
 with(objClearMessage){instance_destroy();}
-objStage7Door.hspeed=2;
+instance_destroy(objPlayer);
+room_goto(rBoss6Death);
+//objStage7Door.hspeed=2;
 </string>
           </argument>
         </arguments>

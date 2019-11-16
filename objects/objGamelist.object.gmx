@@ -3,7 +3,7 @@
   <spriteName>sprGamelist</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100</depth>
+  <depth>-101</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -139,7 +139,9 @@
         case rBoss6Phase1: 
              image_index = 66; break;
         
-        case rStage7: image_index = 68; break;
+        case rBoss6Death:
+        case rStage7: 
+             image_index = 68; break;
         
         case rExtraStage1: 
         case rExtraStage2:

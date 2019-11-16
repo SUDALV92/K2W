@@ -42,6 +42,10 @@ if (global.autosave) //save the game if currently set to autosave
     scrSaveGame(true);
     global.autosave = false;
 }
+sfxDelay = 0;
+sfxDelay2 = 0;
+landing = false;
+landingI = 0;
 </string>
           </argument>
         </arguments>
@@ -65,7 +69,7 @@ if (global.autosave) //save the game if currently set to autosave
           <argument>
             <kind>1</kind>
             <string>instance_create(x,y,objPlayer);
-audio_play_sound(global.sndExplosion,0,0);
+audio_play_sound(global.sndGradiusDeath,0,0);
 instance_create(x,y,objExplosionB); 
 with(objPlayer){scrKillPlayer();}
 instance_destroy(objGradiusOption);
@@ -124,6 +128,8 @@ instance_create(x,y,objGradiusOption);
             <string>if T=1{
 
 if delay&gt;0{delay-=1;}
+sfxDelay--;
+sfxDelay2--;
 
 U=scrButtonCheck(global.upButton);
 D=scrButtonCheck(global.downButton);
@@ -169,26 +175,39 @@ if R
   x+=4;
 }
 
-
-
-
 if delay=0
 {
  if scrButtonCheck(global.shootButton)
  {
-  audio_play_sound(global.sndShoot,0,0);
-  a=instance_create(x+28*image_xscale,y-6,objGradiusLaser);
+  a=instance_create(x+28*image_xscale,y,objGradiusLaser);
   a.hspeed=16*image_xscale; 
-  a=instance_create(x+28*image_xscale,y+6,objGradiusLaser);
-  a.hspeed=16*image_xscale; 
+  //a=instance_create(x+28*image_xscale,y+6,objGradiusLaser);
+  //a.hspeed=16*image_xscale; 
   with(objGradiusOption)
   {
    a=instance_create(x+14*other.image_xscale,y,objGradiusLaser);
    a.hspeed=16*other.image_xscale; 
   }
-  delay=5;
+  delay=2;
  }
 }
+if(x &lt; view_xview[0] || x &gt; view_xview[0] + view_wview[0])
+ instance_destroy();
+}
+if(landing)
+{
+ if(landingI % 10 == 0)
+ {
+  explosion = instance_create(x+irandom_range(-10,10),y+irandom_range(-10,10),objExplosionB); 
+  explosion.image_xscale = 0.2;
+  explosion.image_yscale = 0.2;
+ }
+ if(landingI == 50)
+ {
+  instance_create(x,y-16,objPlayer);
+  with(objPlayer){vspeed = -6;}
+ }
+ landingI++;
 }
 </string>
           </argument>
@@ -290,8 +309,14 @@ if delay=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.godMode)
- instance_destroy();
+            <string>if(landing)
+{  
+  audio_play_sound(global.sndGradiusDeath,0,0);
+  instance_create(x,y,objExplosionB);   
+  instance_destroy(id,false);
+}
+else if(!global.godMode)
+  instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -314,8 +339,14 @@ if delay=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.godMode)
- instance_destroy();
+            <string>if(landing)
+{  
+  audio_play_sound(global.sndGradiusDeath,0,0);
+  instance_create(x,y,objExplosionB);   
+  instance_destroy(id,false);
+}
+else if(!global.godMode)
+  instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -338,8 +369,73 @@ if delay=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!global.godMode)
- instance_destroy();
+            <string>if(landing)
+{  
+  audio_play_sound(global.sndGradiusDeath,0,0);
+  instance_create(x,y,objExplosionB);   
+  instance_destroy(id,false);
+}
+else if(!global.godMode)
+  instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objTetranAfterDeathCharge">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound(global.sndGradiusDeath,0,0);
+landing = true;
+vspeed = -2;
+gravity = 0.2;
+hspeed = -4;
+global.godMode = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objBlock">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(landing)
+{  
+  audio_play_sound(global.sndGradiusDeath,0,0);
+  instance_create(x,y,objExplosionB);   
+  instance_destroy(id,false);
+}
+else if(!global.godMode)
+  instance_destroy();
+
 </string>
           </argument>
         </arguments>
@@ -367,6 +463,60 @@ if delay=0
     instance_destroy();
 }
 hspeed = -3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sfxDelay2 &lt;= 0)
+{
+ audio_play_sound(global.sndGradiusShootDamage,0,0);
+ sfxDelay2 = 5;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(sfxDelay &lt;= 0)
+{
+ audio_play_sound(global.sndGradiusShootSolid,0,0);
+ sfxDelay = 5;
+}
 </string>
           </argument>
         </arguments>

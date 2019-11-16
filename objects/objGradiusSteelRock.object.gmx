@@ -87,8 +87,14 @@ if(other.y &gt; y + 4)
 if(other.y &lt; y - 4)
  vspeed += 0.1;
 
-if(hp &gt; 0)
+if(hp &gt; 1)
+{
  hp--;
+ with(objB6Gradius)
+ {
+  event_user(0);
+ }
+}
 else
  event_user(0);
  
@@ -169,6 +175,8 @@ instance_destroy(other);
             <string>///destroyed
 isKiller = false;
 image_speed = 0.1;
+audio_stop_sound(global.sndGradiusRockDead);
+audio_play_sound(global.sndGradiusRockDead,0,0);
 </string>
           </argument>
         </arguments>

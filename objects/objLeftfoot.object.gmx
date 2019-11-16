@@ -25,9 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed=20; direction=choose(45,135,225,315);
-gravity=0.1; gravity_direction=270;
-image_xscale=-1; x=80; y=500;
+            <string>speed=8; direction=irandom_range(45,135);
+gravity=0.4; gravity_direction=270;
+image_xscale=-1; //x=80; y=500;
 A=0;
 B=0;
 </string>

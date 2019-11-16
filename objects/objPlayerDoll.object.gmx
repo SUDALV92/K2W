@@ -32,6 +32,8 @@ djump = true;
 isWarping = false;
 warpI = 0;
 unWarping = false;
+frozen = false;
+maxSpeed = 20;
 </string>
           </argument>
         </arguments>
@@ -54,7 +56,12 @@ unWarping = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(hspeed &gt; 0)
+            <string>if(speed &gt; maxSpeed)
+ speed = maxSpeed;
+
+if(frozen) exit;
+
+if(hspeed &gt; 0)
 {
     sprite_index = sprPlayerRunning;
     image_xscale = 1;
@@ -165,6 +172,32 @@ if(unWarping)
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objPlayerKiller">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>repeat(10)
+{
+ instance_create(x,y,objBlood);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="objExtraExplosion">
       <action>
         <libid>1</libid>
@@ -233,6 +266,31 @@ if (!place_free(x+hspeed,y+vspeed)) {hspeed = 0;}
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///vjump
+if(vspeed &lt; 0)
+ vspeed *= 0.45;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -251,7 +309,7 @@ if (!place_free(x+hspeed,y+vspeed)) {hspeed = 0;}
           <argument>
             <kind>1</kind>
             <string>///Jump
-if (!place_free(x,y+vspeed))
+if (place_meeting(x,y+1,objBlock))
 {
  vspeed = -8.5;
 }

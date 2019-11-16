@@ -78,8 +78,8 @@ if(instance_place(x,y-16,objBlock))
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
-audio_stop_sound(global.sndSmokeLow);
-audio_play_sound(global.sndSmokeLow,1,0);
+audio_stop_sound(global.sndGradiusRockDead);
+audio_play_sound(global.sndGradiusRockDead,0,0);
 instance_create(x+16,y+16,objExplosionA);
 </string>
           </argument>

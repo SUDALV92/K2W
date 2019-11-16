@@ -30,6 +30,8 @@
 snapDiv = 4; //determines how fast the camera snaps to the player (higher numbers follow the player slower), can be changed in creation code
 shake = false;
 shakeIntensity = 0;
+xaxis = true;
+yaxis = true;
 
 if (instance_exists(objPlayer))
 {
@@ -64,14 +66,18 @@ if (instance_exists(objPlayer))
     {
         if(shakeIntensity &gt; 0)
         {
+            if(xaxis)
             x += ((objPlayer.x - x) / snapDiv) + choose(random(shakeIntensity), random(-shakeIntensity));
+            if(yaxis)
             y += ((objPlayer.y - y) / snapDiv) + choose(random(shakeIntensity), random(-shakeIntensity));
         }
     }
     else
     {
-        x += (objPlayer.x - x) / snapDiv;
-        y += (objPlayer.y - y) / snapDiv;
+        if(xaxis)
+         x += (objPlayer.x - x) / snapDiv;
+        if(yaxis)
+         y += (objPlayer.y - y) / snapDiv;
     }
 }
 

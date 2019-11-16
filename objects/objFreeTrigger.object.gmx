@@ -1420,9 +1420,8 @@ switch(room)
     }
     case rBoss6Phase2:
     {
-        with(obj6BTrap2) go = true;
-        with(objFreeTrigger)
-            instance_destroy();
+        instance_create(0,0,objStage6Clear);
+        objPlayer.frozen = true;
         break;
     }
     default: d = 0; break;

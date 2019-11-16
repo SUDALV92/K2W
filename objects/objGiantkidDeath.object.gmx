@@ -40,6 +40,16 @@ if(global.tempTrigger[0] == 1)
         achievement.index = 55;
     }
 }
+
+//k2w logic
+audio_play_sound(global.sndDeath,0,0);
+instance_create(x,128,objGkidhead);
+instance_create(x,336,objGkidbody);
+instance_create(x-100,336,objLeftarm);
+instance_create(x+100,336,objRightarm);
+instance_create(x-100,430,objLeftfoot);
+instance_create(x+100,430,objRightfoot);
+instance_destroy();
 </string>
           </argument>
         </arguments>

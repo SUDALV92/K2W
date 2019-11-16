@@ -8,15 +8,29 @@ if (instance_exists(objPlayer) && !global.godMode)
         switch(room)
         {
             case rBoss6GravityMan:
-            f = true;
-            break;
+             audio_pause_sound(global.currentMusic);
+             audio_play_sound(global.sndGravDeath,0,0);
+             with (objPlayer)
+             {
+              instance_create(x,y,objBloodEmitter);
+              instance_destroy();
+             }
+             f = true;
+             break;
+            case rBoss6Phase2:
+             if(instance_exists(objArr) && objArr.visible) //смерть после прохождения градиуса
+              break;
+              
+             audio_pause_sound(global.currentMusic);
+             global.gameOverMusic = audio_play_sound(global.sndGradiusGameOver,0,0);
+             with (objPlayer)
+             {              
+              instance_destroy();
+             }
+             f = true;
+             break;
         }
-        if(f)
-        {
-            audio_pause_sound(global.currentMusic);
-            audio_play_sound(global.sndGravDeath,0,0);
-        }
-        else
+        if(!f)
         {
             global.deathSound = audio_play_sound(global.sndDeath,0,false);
         
@@ -36,12 +50,13 @@ if (instance_exists(objPlayer) && !global.godMode)
                     global.gameOverMusic = audio_play_sound(global.sndGameOver,1,false);
                 }                
             }
-        }
-        with (objPlayer)
-        {
+            with (objPlayer)
+            {
             instance_create(x,y,objBloodEmitter);
             instance_destroy();
+            }
         }
+        
         with(objExBoss3_Gradius)
         {
          instance_destroy();

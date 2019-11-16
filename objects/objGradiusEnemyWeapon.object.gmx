@@ -132,8 +132,10 @@ if(shootDelay &gt; 0)
             <kind>1</kind>
             <string>instance_destroy(other);
 hp--;
-audio_stop_sound(global.sndHit);
-audio_play_sound(global.sndHit,0,0);
+with(objB6Gradius)
+{
+ event_user(1);
+}
 
 if(hp &lt;= 0)
 {

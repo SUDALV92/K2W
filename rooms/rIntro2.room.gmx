@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>background_alpha[4] = 0;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -35,13 +35,13 @@
     <background visible="-1" foreground="-1" name="background69" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="bgIntroGRID" x="14" y="42" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="background4" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="-1" name="background5" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="" xview="0" yview="0" wview="800" hview="608" xport="0" yport="0" wport="800" hport="608" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="&lt;undefined&gt;" xview="0" yview="0" wview="800" hview="608" xport="0" yport="0" wport="800" hport="608" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -51,55 +51,55 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objIntroBlock" x="0" y="480" name="inst_E1EF0E8A" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="480" name="inst_E1EF0E8A" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="32" y="448" name="inst_98FE20CF" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="64" y="448" name="inst_BDC681AB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="96" y="448" name="inst_BB409A82" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="128" y="544" name="inst_E5DEB9DE" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="576" name="inst_15C68B76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="32" y="576" name="inst_821527E5" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="64" y="576" name="inst_F1CC85AC" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="96" y="576" name="inst_41773489" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="128" y="576" name="inst_2A6B2520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="160" y="576" name="inst_6B66DF9B" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="192" y="576" name="inst_0EB3C360" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="224" y="576" name="inst_E16E3199" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="256" y="576" name="inst_27698012" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="288" y="576" name="inst_C6E3CDAC" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="320" y="576" name="inst_82D2BDD1" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="352" y="576" name="inst_37AC2BB9" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="384" y="576" name="inst_D0945E94" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="416" y="576" name="inst_3BEC60AB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="448" y="576" name="inst_6709C9FF" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="512" y="576" name="inst_4E426458" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="480" y="576" name="inst_E1781D62" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="544" y="576" name="inst_DD1C9E54" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="576" y="576" name="inst_749B96D8" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="608" y="576" name="inst_5782F58D" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="640" y="576" name="inst_CD2A1FDB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="672" y="576" name="inst_B5060919" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="704" y="576" name="inst_04F5F0D4" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="736" y="576" name="inst_4E94D972" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="768" y="576" name="inst_1C03E0CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="544" name="inst_A5DB3419" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="512" name="inst_8BBC5A4D" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="608" name="inst_15C68B76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="32" y="608" name="inst_821527E5" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="64" y="608" name="inst_F1CC85AC" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="96" y="608" name="inst_41773489" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="128" y="608" name="inst_2A6B2520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="160" y="608" name="inst_6B66DF9B" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="192" y="608" name="inst_0EB3C360" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="224" y="608" name="inst_E16E3199" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="256" y="608" name="inst_27698012" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="288" y="608" name="inst_C6E3CDAC" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="320" y="608" name="inst_82D2BDD1" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="352" y="608" name="inst_37AC2BB9" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="384" y="608" name="inst_D0945E94" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="416" y="608" name="inst_3BEC60AB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="448" y="608" name="inst_6709C9FF" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="512" y="608" name="inst_4E426458" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="480" y="608" name="inst_E1781D62" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="544" y="608" name="inst_DD1C9E54" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="576" y="608" name="inst_749B96D8" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="608" y="608" name="inst_5782F58D" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="640" y="608" name="inst_CD2A1FDB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="672" y="608" name="inst_B5060919" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="704" y="608" name="inst_04F5F0D4" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="736" y="608" name="inst_4E94D972" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="768" y="608" name="inst_1C03E0CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="544" name="inst_A5DB3419" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="512" name="inst_8BBC5A4D" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="128" y="480" name="inst_74830493" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="128" y="512" name="inst_1A7D3313" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="128" y="448" name="inst_C20892C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="448" name="inst_12CD097B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="416" name="inst_C691986E" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="384" name="inst_7F68312A" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="352" name="inst_2C897A5B" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="320" name="inst_85509367" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="288" name="inst_68D54CB1" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="256" name="inst_86BE58E1" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="224" name="inst_EB71F9B6" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="192" name="inst_85324A55" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="160" name="inst_1840FD87" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="128" name="inst_E215B8B9" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="96" name="inst_B0E19EFB" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="448" name="inst_12CD097B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="416" name="inst_C691986E" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="384" name="inst_7F68312A" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="352" name="inst_2C897A5B" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="320" name="inst_85509367" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="288" name="inst_68D54CB1" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="256" name="inst_86BE58E1" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="224" name="inst_EB71F9B6" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="192" name="inst_85324A55" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="160" name="inst_1840FD87" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="128" name="inst_E215B8B9" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="96" name="inst_B0E19EFB" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="0" y="64" name="inst_DD45FC94" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroBlock" x="0" y="32" name="inst_089778BD" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="32" name="inst_089778BD" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="0" y="0" name="inst_E07D268C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="768" y="544" name="inst_FF85B696" locked="0" code="sprite_index = sprLineSpike;&#xA;image_speed = 0;&#xA;image_index = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="736" y="544" name="inst_3EFEDDAF" locked="0" code="sprite_index = sprLineSpike;&#xA;image_speed = 0;&#xA;image_index = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -110,6 +110,51 @@
     <instance objName="objBlack" x="-96" y="0" name="inst_95FF4687" locked="0" code="depth = 1000002;&#xA;" scaleX="4" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="448" name="inst_7397DEBB" locked="0" code="depth = 1000002;&#xA;" scaleX="5" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="576" name="inst_203C151D" locked="0" code="depth = 1000002;&#xA;" scaleX="25" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="0" name="inst_A60EACE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="64" name="inst_E269171F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="32" name="inst_06BB4A04" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="64" name="inst_D197CD46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="96" name="inst_B02670EB" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="128" name="inst_FD0F7C03" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="160" name="inst_BACEBC4B" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="192" name="inst_D88433A2" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="224" name="inst_9C424424" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="256" name="inst_4C161392" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="288" name="inst_68D9D362" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="320" name="inst_D89F3BD7" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="352" name="inst_6444765E" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="384" name="inst_728FAD56" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="416" name="inst_7F4A9381" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="448" name="inst_5E4664FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="480" name="inst_A3941886" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="512" name="inst_86FA637A" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="544" name="inst_77E3032F" locked="0" code="sprite_index = sprIntroBlockV;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="-32" y="576" name="inst_57E06B7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="0" y="576" name="inst_4FC59379" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="32" y="576" name="inst_501FF86E" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="64" y="576" name="inst_C42DF759" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="96" y="576" name="inst_FD811088" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="128" y="576" name="inst_3FFE6356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="160" y="576" name="inst_B8D859CB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="192" y="576" name="inst_AA764184" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="224" y="576" name="inst_A21411BB" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="256" y="576" name="inst_1A6F1EED" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="288" y="576" name="inst_3A0DB433" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="320" y="576" name="inst_C1C4172E" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="352" y="576" name="inst_E946B708" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="384" y="576" name="inst_677C5280" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="416" y="576" name="inst_362142DC" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="448" y="576" name="inst_964D158B" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="480" y="576" name="inst_9CEB1400" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="512" y="576" name="inst_9F270186" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="544" y="576" name="inst_B7C65A88" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="576" y="576" name="inst_94C83D7F" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="608" y="576" name="inst_BFB963C0" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="640" y="576" name="inst_6BAFA40B" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="672" y="576" name="inst_D731DAA9" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="704" y="576" name="inst_8274F253" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="736" y="576" name="inst_F5BEBC00" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroBlock" x="768" y="576" name="inst_91163FD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLineBlockTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10054802" name="inst_BCAF92A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

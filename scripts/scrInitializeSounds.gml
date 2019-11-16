@@ -122,6 +122,13 @@ global.sndFLaser = audio_create_stream("SFX\Boss\sndFLaser.ogg");
 global.sndMaggic = audio_create_stream("SFX\Boss\sndMaggic.ogg");
 global.sndThunder = audio_create_stream("SFX\Boss\sndThunder.ogg");
 global.sndSmokeLow = audio_create_stream("SFX\Boss\sndSmokelow.ogg");
+global.sndTetranDead = audio_create_stream("SFX\Boss\sndTetranDead.ogg");
+global.sndGradiusShootSolid = audio_create_stream("SFX\Boss\sndGradiusShootSolid.ogg");
+global.sndGradiusShootDamage = audio_create_stream("SFX\Boss\sndGradiusShootDamage.ogg");
+global.sndGradiusRockDead = audio_create_stream("SFX\Boss\sndGradiusRockDead.ogg");
+global.sndGradiusDeath = audio_create_stream("SFX\Boss\sndGradiusDeath.ogg");
+global.sndLaserCharging = audio_create_stream("SFX\Boss\sndLaserCharging.ogg");
+global.sndLaserBeam = audio_create_stream("SFX\Boss\sndLaserBeam.ogg");
 
 // load music
 global.sndIntro = audio_create_stream("Music\Intro.ogg");
@@ -156,6 +163,8 @@ global.sndBossRushBreakingOut = audio_create_stream("Music\BossRushBreakingOut.o
 global.sndBossRushPopularity = audio_create_stream("Music\BossRushPopularity.ogg");
 global.sndBoss6 = audio_create_stream("Music\Boss6.ogg");
 global.sndBoss6B = audio_create_stream("Music\Boss6B.ogg");
+global.sndBoss6B2 = audio_create_stream("Music\Boss6B2.ogg");
+global.sndGradiusGameOver = audio_create_stream("Music\GradiusGameOver.ogg");
 global.sndStage7 = audio_create_stream("Music\Stage7.ogg");
 global.sndBoss7A = audio_create_stream("Music\Boss7A.ogg");
 global.sndBoss7B = audio_create_stream("Music\Boss7B.ogg");

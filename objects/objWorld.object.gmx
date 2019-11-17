@@ -410,6 +410,14 @@ if(keyboard_check_released(vk_end))
 {
  global.worldSpeed = 150;
 }
+if(keyboard_check_pressed(vk_tab))
+{
+ with(objPlayer)
+ {
+  x = mouse_x;
+  y = mouse_y;
+ }
+}
 </string>
           </argument>
         </arguments>

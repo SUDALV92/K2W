@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="451" name="datafiles">
-    <datafiles number="451" name="Music">
+  <datafiles number="453" name="datafiles">
+    <datafiles number="453" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -753,9 +753,26 @@
         </ConfigOptions>
         <filename>Collapse2.ogg</filename>
       </datafile>
+      <datafile>
+        <name>LastWind.ogg</name>
+        <exists>-1</exists>
+        <size>221793</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>LastWind.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="451" name="SFX">
-      <datafiles number="451" name="Common">
+    <datafiles number="453" name="SFX">
+      <datafiles number="453" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1182,7 +1199,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="451" name="Stage">
+      <datafiles number="453" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1507,8 +1524,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="451" name="Boss">
-        <datafiles number="451" name="Solgryn">
+      <datafiles number="453" name="Boss">
+        <datafiles number="453" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3033,6 +3050,8 @@
       <sprites name="MStage">
         <sprite>sprites\sprMStageSoftBlock</sprite>
         <sprite>sprites\sprMStageLaser</sprite>
+        <sprite>sprites\sprMBlock</sprite>
+        <sprite>sprites\sprLastBlock</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3956,6 +3975,9 @@
       <backgrounds name="MStage">
         <background>background\bgMStageTileset</background>
         <background>background\bgMStageGRID</background>
+      </backgrounds>
+      <backgrounds name="LastBoss">
+        <background>background\bgLastTileset</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -5083,6 +5105,7 @@
       <object>objects\objMTrap2</object>
       <object>objects\objMTrap3</object>
       <object>objects\objMTrap4</object>
+      <object>objects\objMTrap5</object>
       <object>objects\objCStar</object>
       <object>objects\objCStarcre</object>
       <object>objects\objGiantSave</object>
@@ -5091,6 +5114,9 @@
       <object>objects\objS7Block</object>
       <object>objects\objStage7Controller</object>
       <object>objects\objMLaser</object>
+      <object>objects\objMLaserBlocker</object>
+      <object>objects\objLastBlock</object>
+      <object>objects\objMtoLastTransition</object>
     </objects>
     <objects name="Boss7">
       <objects name="FX">

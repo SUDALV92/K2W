@@ -1469,7 +1469,9 @@ switch(room)
             }
             case 2:
             {
-                with(objMTrap1) if(trap == 2) go = true;
+                with(objMTrap1) if(trap == 2 || trap == 18 || trap == 19 || trap == 20) go = true;
+                with(objMTrap2) if(trap == 18 || trap == 19 || trap == 20) go = true;
+                with(objMTrap5) if(trap == 18) go = true;
                 break;
             }
             case 3:
@@ -1479,7 +1481,9 @@ switch(room)
             }
             case 4:
             {
-                with(objMTrap2) if(trap == 4) go = true;
+                with(objMTrap2) if(trap == 4 || trap == 22) go = true;
+                with(objMTrap1) if(trap == 22) go = true;
+                with(objMTrap5) if(trap == 22) go = true;
                 break;
             }
             case 5:
@@ -1493,7 +1497,7 @@ switch(room)
                 if(condition)
                 {
                     with(objMTrap1) if(trap == 6) go = true;
-                    with(objMTrap2) if(trap == 6) go = true;
+                    with(objMTrap2) if(trap == 6 || trap == 21) go = true;
                 }
                 else
                 {
@@ -1503,7 +1507,7 @@ switch(room)
             }
             case 7:
             {
-                with(objMTrap1) if(trap == 7) go = true;
+                with(objMTrap1) if(trap == 7 || trap == 21) go = true;
                 with(objMTrap2) if(trap == 7) go = true;
                 audio_play_sound(global.sndTrap,0,0); 
                 with(objS7Block) A=1; 
@@ -1552,6 +1556,12 @@ switch(room)
             case 16:
             {
                 with(objMTrap1) if(trap == 16) go = true;
+                break;
+            }
+            case 17:
+            {
+                with(objPlayer) frozen = true;
+                instance_create(view_xview[0],-100,objMtoLastTransition);
                 break;
             }
         }

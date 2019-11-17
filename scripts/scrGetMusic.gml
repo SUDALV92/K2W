@@ -149,6 +149,8 @@ switch (room)                       //determines which song to play
     case rBoss6Death:
     case rStage7:
         roomSong = global.sndStage7; break;
+    case rStage7B:
+         roomSong = global.sndLastWind; break;
     case rBoss7Phase1:
     case rBoss7Phase2:
         roomSong = global.sndBoss7A; break;

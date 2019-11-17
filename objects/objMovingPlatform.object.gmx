@@ -31,16 +31,19 @@ bounce = true;  //set the platform to bounce against walls
 switch(room)
 {
  case rStage3500:
-    case rStage3Uhuhu:
-    case rStage3Skyclad:
-    case rStage3CQ:
-    case rStage3Rukimin:
-    case rStage3Diverse:
-    case rStage3HeavenTrap:
-    case rStage3SeeTheMoon:
-    case rStage3WhiteCherry:
+ case rStage3Uhuhu:
+ case rStage3Skyclad:
+ case rStage3CQ:
+ case rStage3Rukimin:
+ case rStage3Diverse:
+ case rStage3HeavenTrap:
+ case rStage3SeeTheMoon:
+ case rStage3WhiteCherry:
  case rStage3TimeMachine:
   sprite_index = sprBettyPlatform;
+  break;
+ case rStage7:
+  sprite_index = sprPinkPlatform;
   break;
 }
 </string>

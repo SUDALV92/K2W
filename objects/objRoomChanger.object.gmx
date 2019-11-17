@@ -645,7 +645,7 @@ switch(room)
             }
         }
         break;
-    case rBoss6Death: 
+    case rBoss6Death:         
         global.lastRunStart[12] = global.time; 
         global.currentSegmentID = irandom(1000000);
         global.currentSegmentIndex = 12;
@@ -688,7 +688,8 @@ switch(room)
                     achievement.index = 38;
                 }
             }
-        }        
+        }    
+        
         break;
     case rStage7: global.lastRunEnd[12] = global.time; 
         global.lastRunStart[13] = global.time; 

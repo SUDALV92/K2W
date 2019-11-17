@@ -87,6 +87,10 @@ switch(trap)
     case 14: vspeed = -4; break;
     case 16: vspeed = 2; alarm[0] = 16; go = false; break;
     case 17: image_angle -= 1; break;
+    case 18: vspeed = 2; alarm[0] = 16; go = false; break;
+    case 20: hspeed = -2; alarm[0] = 16; go = false; break;
+    case 21: vspeed = 2; break;
+    case 22: vspeed = 2; alarm[0] = 16; go = false; break;
     default: break;
 }
 

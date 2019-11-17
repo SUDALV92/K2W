@@ -30,8 +30,7 @@
     
 len = 64;
 dir = 0;
-background_hspeed[0] = -0.5;
-background_vspeed[0] = -0.5;
+setDir = true;
 </string>
           </argument>
         </arguments>
@@ -69,7 +68,7 @@ with(objMLaser)
 {
  y = 378 + lengthdir_y(272,other.dir);
 }
-dir-= 0.2;
+dir-= 0.3;
 </string>
           </argument>
         </arguments>
@@ -96,23 +95,30 @@ dir-= 0.2;
 {
  case rBoss6Death:
  case rStage7:
+  background_hspeed[0] = -0.5;
+  background_vspeed[0] = -0.5;
+  if(!instance_exists(objMLaser))
+  {
+   for(var temp = -32; temp &lt; room_width; temp += 32)
+   {
+    instance_create(temp,608,objMLaser);
+   }
+  }
+
+  if(instance_exists(objPlayer) &amp;&amp; setDir)
+  {
+   if(objPlayer.y &lt; 110)
+    dir = 90;
+   else
+    dir = radtodeg(arcsin((378-objPlayer.y)/272)) - 10;
+  }
+  setDir = true;
   break;
  default:
   instance_destroy();
 }
 
-if(!instance_exists(objMLaser))
-{
- for(var temp = 0; temp &lt; 800; temp += 32)
- {
-  instance_create(temp,608,objMLaser);
- }
-}
 
-if(instance_exists(objPlayer))
-{
- dir = radtodeg(arcsin((378-objPlayer.y)/272));
-}
 </string>
           </argument>
         </arguments>

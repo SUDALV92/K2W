@@ -67,6 +67,13 @@ if (other.x &lt; 0 || other.x &gt; room_width || other.y &lt; 0 || other.y &gt; 
     }
     else        //using smooth transition, wrap around the screen then warp
     {
+        switch(room)
+        {
+         case rBoss6Death:
+          with(objStage7Controller)
+           setDir = false;
+          break;
+        }
         if (other.x &lt; 0)
         {
             other.x += room_width;

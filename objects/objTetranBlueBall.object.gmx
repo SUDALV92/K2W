@@ -50,7 +50,7 @@ image_yscale = 4;
           <argument>
             <kind>1</kind>
             <string>scrBounceMoveSolid();
-if(sprite_index == sprTetranExplosion)
+if(sprite_index == objTetranBlueBall)
 {
  if(place_meeting(x,y,objB6Gradius))
   instance_destroy(objB6Gradius);

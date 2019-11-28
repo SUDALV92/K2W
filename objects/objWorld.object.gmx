@@ -34,6 +34,7 @@ speedrunFlag = -1;
 oldScore = 0;
 oldPlayerExists = 0;
 deadSplitFlag = 0;
+
 </string>
           </argument>
         </arguments>
@@ -652,6 +653,37 @@ switch(room)
        audio_sound_set_track_position(global.currentMusic, 0.934);
       }
       break;
+ case rBoss7Phase1:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 107.841)
+      {
+       audio_sound_set_track_position(global.currentMusic, 5.906);
+      }
+      break;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///sfxDelay
+for(var temp = 0; temp &lt; sfxCount; temp++)
+{
+ global.sfxDelay[temp]--;
 }
 </string>
           </argument>

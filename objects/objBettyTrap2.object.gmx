@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>go = false;
+image_speed = 1/3;
+trap = 1;
 </string>
           </argument>
         </arguments>
@@ -73,8 +75,17 @@
             <kind>1</kind>
             <string>if(go == false) exit;
 
-vspeed = -2;
-alarm[0] = 16;
+switch(trap)
+{
+ case 1:
+  vspeed = -2;
+  alarm[0] = 16;
+  break;
+ case 2:
+  vspeed = -2;
+  alarm[0] = 8;
+  break;
+}
 
 go = false;
 </string>

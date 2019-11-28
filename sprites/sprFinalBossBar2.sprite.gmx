@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>767</bbox_right>
+  <bbox_right>153</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>15</bbox_bottom>
   <HTile>0</HTile>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>768</width>
+  <width>154</width>
   <height>16</height>
   <frames>
     <frame index="0">images\sprFinalBossBar2_0.png</frame>

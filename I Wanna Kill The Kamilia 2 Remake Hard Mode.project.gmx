@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="453" name="datafiles">
-    <datafiles number="453" name="Music">
+  <datafiles number="455" name="datafiles">
+    <datafiles number="455" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -586,7 +586,7 @@
       <datafile>
         <name>Boss7A.ogg</name>
         <exists>-1</exists>
-        <size>9243661</size>
+        <size>6250606</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -771,8 +771,8 @@
         <filename>LastWind.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="453" name="SFX">
-      <datafiles number="453" name="Common">
+    <datafiles number="455" name="SFX">
+      <datafiles number="455" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1199,7 +1199,7 @@
           <filename>sndFuckYea.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="453" name="Stage">
+      <datafiles number="455" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1524,8 +1524,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="453" name="Boss">
-        <datafiles number="453" name="Solgryn">
+      <datafiles number="455" name="Boss">
+        <datafiles number="455" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -2996,10 +2996,13 @@
         <sprite>sprites\sprBlockS5E</sprite>
       </sprites>
       <sprite>sprites\sprShinySpark</sprite>
-      <sprite>sprites\sprBlockKoalaA</sprite>
-      <sprite>sprites\sprBlockKoalaB</sprite>
-      <sprite>sprites\sprBlockKoalaC</sprite>
-      <sprite>sprites\sprKoalaMiku</sprite>
+      <sprites name="Koala">
+        <sprite>sprites\sprBlockKoalaA</sprite>
+        <sprite>sprites\sprBlockKoalaC</sprite>
+        <sprite>sprites\sprBlockKoalaB</sprite>
+        <sprite>sprites\sprKoalaMiku</sprite>
+        <sprite>sprites\sprPlatformKoala</sprite>
+      </sprites>
       <sprite>sprites\sprBlockRukito</sprite>
       <sprites name="Cyber">
         <sprite>sprites\sprBlockCyberA</sprite>
@@ -3011,6 +3014,7 @@
         <sprite>sprites\sprCyberBulletC</sprite>
         <sprite>sprites\sprCyberBulletD</sprite>
         <sprite>sprites\sprCyberBulletE</sprite>
+        <sprite>sprites\sprPlatformCyber</sprite>
       </sprites>
       <sprites name="Stage6">
         <sprite>sprites\sprBlockBakaA</sprite>
@@ -3022,6 +3026,8 @@
         <sprite>sprites\sprComputer</sprite>
         <sprite>sprites\sprDCSpikeLeftPart</sprite>
         <sprite>sprites\sprDCSpikeRightPart</sprite>
+        <sprite>sprites\sprBlockBossRush</sprite>
+        <sprite>sprites\sprPlatformBossRush</sprite>
       </sprites>
       <sprites name="Boss6">
         <sprite>sprites\sprBlockBigKidA</sprite>
@@ -3052,6 +3058,10 @@
         <sprite>sprites\sprMStageLaser</sprite>
         <sprite>sprites\sprMBlock</sprite>
         <sprite>sprites\sprLastBlock</sprite>
+      </sprites>
+      <sprites name="Boss7">
+        <sprite>sprites\sprBlock7</sprite>
+        <sprite>sprites\sprPlatform7</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3692,7 +3702,6 @@
       <sprite>sprites\sprArr</sprite>
       <sprite>sprites\sprArr2</sprite>
       <sprite>sprites\sprCStar</sprite>
-      <sprite>sprites\sprFBBackground</sprite>
       <sprite>sprites\sprFinalline</sprite>
       <sprite>sprites\sprFinalsave</sprite>
       <sprite>sprites\sprLightEffect</sprite>
@@ -3883,6 +3892,7 @@
       <background>background\background117</background>
       <background>background\background118</background>
       <background>background\background119</background>
+      <background>background\bgBoss7GRID</background>
     </backgrounds>
     <backgrounds name="Extra">
       <background>background\bgExBoss1GMan</background>
@@ -4126,6 +4136,7 @@
         <object>objects\objBlock1CHM</object>
         <object>objects\objBossBlock</object>
         <object>objects\objSaveBlocker</object>
+        <object>objects\objBlockBoss7A</object>
       </objects>
       <objects name="slopes">
         <object>objects\objSlope</object>

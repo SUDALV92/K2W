@@ -45,6 +45,10 @@ switch(room)
  case rStage7:
   sprite_index = sprPinkPlatform;
   break;
+ case rBoss7Phase1:
+ case rBoss7Phase2:
+  sprite_index = sprPlatform7;
+  break;
 }
 </string>
           </argument>

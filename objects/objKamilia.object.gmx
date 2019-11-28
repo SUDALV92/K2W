@@ -34,6 +34,12 @@ adelay=0;
 bombX = 0;
 global.tempTrigger[0] = 1;
 score = 1; //DeadSplit support
+with(objFinalBossBar2)
+{
+ visible = true;
+}
+attack1 = false;
+i = 1;
 </string>
           </argument>
         </arguments>
@@ -169,7 +175,41 @@ alarm[11]=3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=1
+            <string>///attack1
+if(attack1)
+{
+ if(i % 15 == 0)
+  instance_create(i*10,150,objKamiliaAttack1);
+ i++;
+ if(i &gt; 60)
+  attack1 = false;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if !instance_exists(objPlayer)
+{
+    speed=0; gravity=0; timeline_speed=0;
+    A = 0;
+}
+if A=1
 {
     if adelay&gt;0
     {   
@@ -178,18 +218,15 @@ alarm[11]=3;
     if adelay=0
     {
         var temp = bombX;
-        while(abs(bombX - temp) &lt; 100)
+        while(abs(bombX - temp) &lt; 200)
         {
             bombX = random_range(40,760);
         }
         a1=instance_create(bombX,-100,objChaosTan2); 
-        adelay=4;
+        adelay=5;
     }
 }
-if !instance_exists(objPlayer)
-{
-    speed=0; gravity=0; timeline_speed=0;
-}
+
 </string>
           </argument>
         </arguments>

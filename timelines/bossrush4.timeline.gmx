@@ -356,8 +356,7 @@ alarm[0]=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objMagicCircle.K=0;
-objMagicCircle.ASD=1;
+            <string>with(objMagicCircle) event_user(0);
 A=0;
 //objFinalBossBar2.image_xscale-=0.2;
 </string>

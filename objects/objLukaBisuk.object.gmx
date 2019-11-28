@@ -30,8 +30,8 @@ switch(room)
 {
     case rBoss7Phase1: 
         speed = 12; 
-        alarm[0]=60;
-        alarm[1]=120;
+        alarm[0]=600;
+        alarm[1]=660;
         break;
     case rBoss7Phase2:
         speed = 12;

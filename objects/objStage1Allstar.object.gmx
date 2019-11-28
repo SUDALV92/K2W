@@ -61,6 +61,73 @@
 aa=0;
 b=0;
 B=0;
+Bi = 0;
+xx = 840;
+xDirection = 1;
+dir = random(360);
+lasersOffset = 32;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Gustav final lasers 2
+for(var i = 140+lasersOffset;i&lt;=958;i+=256)
+{
+ lock = instance_create(i,496,objGustavLock);
+ lock.alarm[0] = 50;
+}
+alarm[2] = 70;
+lasersOffset +=32;
+if(lasersOffset &gt; 96)
+ lasersOffset = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Gustav final lasers 1
+for(var i = 12 + lasersOffset;i&lt;=780;i+=256)
+{
+ lock = instance_create(i,496,objGustavLock);
+ lock.alarm[0] = 50;
+}
+alarm[1] = 70;
+
 </string>
           </argument>
         </arguments>
@@ -83,25 +150,31 @@ B=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=1{
-audio_play_sound(global.sndTanmak,0,0);
-repeat(12){
-a=instance_create(objMagicCircle.x,objMagicCircle.y,objCrazySpikeA);
-a.speed=8;
-a.direction=aa+b;
-b+=30;}
-repeat(12){
-a=instance_create(objMagicCircle.x,objMagicCircle.y,objCrazySpikeA);
-a.speed=8;
-a.direction=15+aa-b;
-b+=30;}
-aa+=10;
-alarm[0]=20;}
+            <string>if A=1
+{
+ if(instance_exists(objPlayer))
+ {
+    a=instance_create(xx + lengthdir_x(200,dir),-32,objCrazySpike);
+    dir+=40;
+    a.speed=random_range(3,8);
+    if(xDirection == 1)
+     a.direction = 225;
+    else
+     a.direction = 315;
+    a.depth = -6;
+    //xx-=4*xDirection;
+    alarm[0]=2;
+ }
+}
 
 if B=1{
-instance_create(0,0,objFadelightlow);
-instance_create(objMagicCircle.x,objMagicCircle.y,objGuyBullet);
-alarm[0]=20;}
+if((Bi &gt;= 0 &amp;&amp; Bi &lt;= 60 &amp;&amp; Bi % 20 == 0) || (Bi &gt; 100 &amp;&amp; Bi % 5 == 0))
+{
+ instance_create(0,0,objFadelightlow);
+ instance_create(objMagicCircle.x,objMagicCircle.y,objGuyBullet);
+}
+Bi++;
+alarm[0]=1;}
 </string>
           </argument>
         </arguments>
@@ -127,6 +200,8 @@ alarm[0]=20;}
             <string>if(!instance_exists(objPlayer))
 {
     timeline_speed = 0;
+    A = 0;
+    B = 0;
 }
 </string>
           </argument>

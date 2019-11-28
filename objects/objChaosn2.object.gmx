@@ -33,6 +33,8 @@ e=0;
 xs=0;
 ys=0;
 a=0;
+dir = 0;
+len = 300;
 </string>
           </argument>
         </arguments>
@@ -58,7 +60,7 @@ a=0;
             <string>speed=0;
 xs=self.x;
 ys=self.y;
-a=1;
+dir = direction;
 </string>
           </argument>
         </arguments>
@@ -82,13 +84,13 @@ a=1;
           <argument>
             <kind>1</kind>
             <string>cc=0;
-if delay=0{
+/*if delay=0{
 repeat(2){
 a1=instance_create(x,y,objChaost);
 a1.image_index=1;
 a1.speed=4;
 a1.direction=e+cc;
-cc+=180;} e+=17; delay=4;}
+cc+=180;} e+=17; delay=4;}*/
 a=instance_create(x,y,objChaosnEffect);
 a.sprite_index=sprite_index;
 delay-=1;
@@ -116,7 +118,10 @@ alarm[0]=3;
           <argument>
             <kind>1</kind>
             <string>image_angle+=4;
-if a=1{direction=point_direction(xs,ys,400,304)+0.5; speed=1;}
+x = 400 + lengthdir_x(len, dir);
+y = 304 + lengthdir_y(len,dir);
+len -= 1.1;
+dir += 2;
 </string>
           </argument>
         </arguments>

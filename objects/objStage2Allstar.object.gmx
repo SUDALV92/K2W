@@ -60,7 +60,43 @@
             <string>A=0;
 B=0;
 C=0;
-a=0;
+a=random(360);
+spikeI = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>spike = instance_create(392+16*spikeI,496,objBettyTrap2);
+spike.sprite_index = sprMiniUp;
+spike.trap = 2;
+spike.go = true;
+
+spike2 = instance_create(392-16*spikeI,496,objBettyTrap2);
+spike2.sprite_index = sprMiniUp;
+spike2.trap = 2;
+spike2.go = true;
+
+spikeI++;
+if(spikeI &lt; 23)
+ alarm[3] = 10;
 </string>
           </argument>
         </arguments>
@@ -111,186 +147,6 @@ a=0;
       </action>
       <action>
         <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objPochiTan3</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random_range(0.5,3)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(360)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objPochiTan1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random_range(0.5,3)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(360)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objPochiTan1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random_range(0.5,3)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(360)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objPochiTan2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random_range(0.5,3)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(360)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objPochiTan2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random_range(0.5,3)</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>random(360)</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -306,6 +162,46 @@ a=0;
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(global.sndPochi,0,0);
+repeat(2)
+{
+ tan1 = instance_create(x,y,objPochiTan1);
+ tan1.speed = random_range(4,7);
+ tan1.direction = random(360);
+ if(instance_exists(objPlayer))
+  if(objPlayer.x &gt; 400)
+   tan1.curving = 0.9;
+  else
+   tan1.curving = -0.9;
+ else
+  tan1.curving = choose(-0.9,0.9);
+}
+repeat(2)
+{
+ tan1 = instance_create(x,y,objPochiTan2);
+ tan1.speed = random_range(4,7)
+ tan1.direction = random(360);
+ if(instance_exists(objPlayer))
+  if(objPlayer.x &gt; 400)
+   tan1.curving = 0.9;
+  else
+   tan1.curving = -0.9;
+ else
+  tan1.curving = choose(-0.9,0.9);
+}
+repeat(1)
+{
+ tan1 = instance_create(x,y,objPochiTan3);
+ tan1.speed = random_range(4,7)
+ tan1.direction = random(360);
+ if(instance_exists(objPlayer))
+  if(objPlayer.x &gt; 400)
+   tan1.curving = 0.9;
+  else
+   tan1.curving = -0.9;
+ else
+  tan1.curving = choose(-0.9,0.9);
+}
+
 </string>
           </argument>
         </arguments>

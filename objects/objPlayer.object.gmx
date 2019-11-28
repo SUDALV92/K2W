@@ -288,10 +288,17 @@ if (h != 0)  //player is moving
         }
         else    //touching a slip block, use acceleration
         {
-            hspeed += (slipBlockTouching.slip) * h;
+            if(slipBlockTouching.slip == 0)
+            {
+             hspeed = maxSpeed * h;
+            }
+            else
+            {
+             hspeed += (slipBlockTouching.slip) * h;
             
-            if (abs(hspeed) &gt; maxSpeed)
+             if (abs(hspeed) &gt; maxSpeed)
                 hspeed = maxSpeed * h;
+            }
         }
         
         sprite_index = spriteRunning;
@@ -304,19 +311,24 @@ else    //player is not moving
         hspeed = 0;
     else    //touching a slip block, slow down
     {
-        if (hspeed &gt; 0)
+        if(slipBlockTouching.slip == 0)
+         hspeed = 0;
+        else
         {
-            hspeed -= slipBlockTouching.slip;
-            
-            if (hspeed &lt;= 0)
-                hspeed = 0;
-        }
-        else if (hspeed &lt; 0)
-        {
-            hspeed += slipBlockTouching.slip;
-            
-            if (hspeed &gt;= 0)
-                hspeed = 0;
+            if (hspeed &gt; 0)
+            {
+                hspeed -= slipBlockTouching.slip;
+                
+                if (hspeed &lt;= 0)
+                    hspeed = 0;
+            }
+            else if (hspeed &lt; 0)
+            {
+                hspeed += slipBlockTouching.slip;
+                
+                if (hspeed &gt;= 0)
+                    hspeed = 0;
+            }
         }
     }
   

@@ -589,9 +589,7 @@ asd=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objMagicCircle.K=0;
-objMagicCircle.ASD=1;
-//objFinalBossBar2.image_xscale-=0.2;
+            <string>with(objMagicCircle) event_user(0);
 with(objDeadItems)
 {
  instance_destroy();

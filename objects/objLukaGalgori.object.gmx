@@ -51,6 +51,7 @@
             <kind>1</kind>
             <string>alarm[0]=500;
 alarm[1]=5;
+gravDir = 180;
 </string>
           </argument>
         </arguments>
@@ -73,7 +74,7 @@ alarm[1]=5;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>180</string>
+            <string>gravDir</string>
           </argument>
           <argument>
             <kind>0</kind>

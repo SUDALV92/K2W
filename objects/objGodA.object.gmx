@@ -11,33 +11,63 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>305</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_timeline_set</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>14</kind>
-            <timeline>GodBosstl</timeline>
+            <kind>1</kind>
+            <string>alarm[0] = 1;
+xx = irandom_range(32,768);
+oldXX = -1000;
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>if(instance_exists(objPlayer))
+{    
+    audio_play_sound(global.sndTanmak,0,0);
+    
+    repeat(2)    
+    {
+        while(abs(xx-oldXX) &lt; 128)
+         xx = irandom_range(16,784);
+        
+        bullet = instance_create(xx,64,objGodTan);
+        bullet.gravity = 0.1;
+        bullet.vspeed = -2;
+        
+        oldXX = xx;
+    }
+    alarm[0] = 10;
+}
+</string>
           </argument>
         </arguments>
       </action>

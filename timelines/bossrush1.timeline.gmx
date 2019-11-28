@@ -21,9 +21,15 @@
             <kind>1</kind>
             <string>if(instance_exists(objPlayer))
 {
- cherry = instance_create(objMagicCircle.x,objMagicCircle.y,objGrayCherry1);
- cherry.direction = point_direction(objMagicCircle.x,objMagicCircle.y,objPlayer.x,objPlayer.y);
- cherry.speed = 20;
+ dir = point_direction(objMagicCircle.x,objMagicCircle.y,objPlayer.x,objPlayer.y);
+ repeat(24)
+ {
+  cherry = instance_create(objMagicCircle.x,objMagicCircle.y,objGrayCherry1);
+  cherry.direction = dir
+  cherry.speed = 5;
+  cherry.grow = 0.02;
+  dir += 360/24;
+ }
 }
 audio_play_sound(global.sndShot1,0,0);
 </string>
@@ -88,7 +94,7 @@ alarm[0]=12;
     </event>
   </entry>
   <entry>
-    <step>120</step>
+    <step>21</step>
     <event>
       <action>
         <libid>1</libid>
@@ -106,7 +112,15 @@ alarm[0]=12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>A=0;
+            <string>if(objStickyKeysA.x &gt; 400)
+{
+ xx = -200;
+ xDirection = -1;
+}
+else
+{
+ xx = 1000;
+}
 </string>
           </argument>
         </arguments>
@@ -114,7 +128,7 @@ alarm[0]=12;
     </event>
   </entry>
   <entry>
-    <step>150</step>
+    <step>100</step>
     <event>
       <action>
         <libid>1</libid>
@@ -132,512 +146,7 @@ alarm[0]=12;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>a=random_range(-270,270)
-audio_play_sound(global.sndTanmak,0,0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>423</id>
-        <kind>5</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>b+=18;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>190</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>a=random_range(-270,270);
-audio_play_sound(global.sndTanmak,0,0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>423</id>
-        <kind>5</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>b+=18;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>240</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>a=random_range(-270,270);
-audio_play_sound(global.sndTanmak,0,0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>423</id>
-        <kind>5</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>20</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak1</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objFlandreTanmak2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>self.y</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>b</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>b+=18;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>424</id>
-        <kind>2</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>245</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>B=1;
-alarm[0]=10;
+            <string>A = 0;
 </string>
           </argument>
         </arguments>
@@ -645,7 +154,7 @@ alarm[0]=10;
     </event>
   </entry>
   <entry>
-    <step>290</step>
+    <step>230</step>
     <event>
       <action>
         <libid>1</libid>
@@ -664,6 +173,17 @@ alarm[0]=10;
           <argument>
             <kind>1</kind>
             <string>B=0;
+a = point_direction(400,304,objPlayer.x,objPlayer.y);
+if(objPlayer.x &lt; 400)
+ gustavCurving = random_range(-1,-0.5);
+else
+ gustavCurving = random_range(0.5,1);
+ 
+with(objCrazySpike)
+{
+ if(x &lt; 0)
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -699,7 +219,7 @@ alarm[0]=10;
     </event>
   </entry>
   <entry>
-    <step>300</step>
+    <step>240</step>
     <event>
       <action>
         <libid>1</libid>
@@ -717,7 +237,7 @@ alarm[0]=10;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>18</string>
+            <string>30</string>
           </argument>
         </arguments>
       </action>
@@ -845,42 +365,6 @@ alarm[0]=10;
       </action>
       <action>
         <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objSpikegustav</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>400</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>304</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>8</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>20+a</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -895,7 +379,12 @@ alarm[0]=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>a+=20;
+            <string>a+=15;
+with(objSpikegustav) 
+{
+ curving = other.gustavCurving;
+ mode = 2;
+}
 </string>
           </argument>
         </arguments>
@@ -917,7 +406,7 @@ alarm[0]=10;
     </event>
   </entry>
   <entry>
-    <step>400</step>
+    <step>250</step>
     <event>
       <action>
         <libid>1</libid>
@@ -935,8 +424,90 @@ alarm[0]=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objMagicCircle.K=0;
-objMagicCircle.ASD=1;
+            <string>alarm[1] = 50;
+alarm[2] = 70;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>300</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>B=1;
+alarm[0]=10;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>550</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>B = 0;
+alarm[1] = 0;
+alarm[2] = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </entry>
+  <entry>
+    <step>600</step>
+    <event>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(objMagicCircle) event_user(0);
 //objFinalBossBar2.image_xscale-=0.2;
 </string>
           </argument>

@@ -28,13 +28,16 @@
             <string>image_speed=0;
 objFinalBossBar2.A=1;
 a=0; b=1; c=2; d=3; e=4;
-A=choose(a,b,c,d,e);
+A=b//choose(a,b,c,d,e);
 K=1;
 ASD=0;
 BY=0;
 image_index=A;
 alarm[0]=100;
 time = 4550;
+index = 0;
+yShift = 0;
+event_user(1);
 </string>
           </argument>
         </arguments>
@@ -92,6 +95,63 @@ audio_play_sound(global.sndWarp,0,0);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>K = 0;
+ASD = 1;
+alarm[1] = 0;
+yShift = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.sfxDelay[0] &lt;= 0)
+{
+ audio_play_sound(global.sndExplosion,0,0);
+ global.sfxDelay[0] = 10;
+}
+explosion = instance_create(x+irandom_range(-85,85),y+irandom_range(-85,85),objExplosionB);
+explosion.image_xscale = 0.4;
+explosion.image_yscale = 0.4;
+alarm[1] = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -142,30 +202,214 @@ score = A+5; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if K=0{
-if !instance_exists(objStage1Allstar)or !instance_exists(objStage2Allstar)
-or !instance_exists(objStage3Allstar)or !instance_exists(objStage4Allstar)
-or !instance_exists(objStage5Allstar)
+            <string>if K=0
 {
- A=choose(a,b,c,d,e); 
- K=1;
- score = A+5; //DeadSplit support
+    if !instance_exists(objStage1Allstar)or !instance_exists(objStage2Allstar)
+    or !instance_exists(objStage3Allstar)or !instance_exists(objStage4Allstar)
+    or !instance_exists(objStage5Allstar)
+    {
+     A=choose(a,b,c,d,e); 
+     K=1;     
+     score = A+5; //DeadSplit support
+    }
+    else {instance_destroy();}
 }
-else {instance_destroy();}}
 if K=1{if A=-1{K=0;}}
-if ASD=1{if K=1{
-if A!=-1{audio_play_sound(global.sndWarp,0,0); image_index=0;
-instance_create(0,0,objFadelight);
-instance_create(0,0,objNanigore);
-image_index=A; alarm[0]=50; K=2;}}}
-y=ystart+lengthdir_y(10,BY); BY+=2;
-if(instance_exists(objFinalBossBar2))
+if ASD=1
 {
-    objFinalBossBar2.image_xscale = time/4550;
+ if K=1
+ {
+    if A!=-1
+    {
+     audio_play_sound(global.sndWarp,0,0); 
+     image_index=0;
+     instance_create(0,0,objFadelight);
+     instance_create(0,0,objNanigore);
+     event_user(1);
+     alarm[0]=50; K=2;
+    }
+ }
 }
+y=ystart+yShift+lengthdir_y(10,BY); BY+=2;
+
 if(instance_exists(objPlayer))
 {
     time--;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>index++;
+switch(A)
+{
+ case 0:
+  background_index[0] = bg93HM;
+  background_index[1] = bg95HM;
+  background_vspeed[1] = -1;
+  with(objBlockBoss7A)
+   {
+    slip = 0;
+    if(type == 2)
+     sprite_index = sprBlock1DHM;
+    else 
+    {
+     sprite_index = -1;
+     if(type == 1)
+     {
+      instance_create(x,y,objBlock1BHM);
+      instance_create(x+16,y,objBlock1BHM);
+      instance_create(x,y,objBlock1CHM);
+     }
+     else if(type == 3)
+     {
+      instance_create(x,y,objBlock1AHM);
+      instance_create(x+16,y,objBlock1AHM);
+      instance_create(x,y,objBlock1CHM);
+     }
+    }
+   }
+   with(objMovingPlatform)
+   {
+    sprite_index = sprPinkPlatform;
+   }
+  break;
+ case 1:
+  background_index[0] = bgBetty;
+  background_index[1] = bgBettyGrid;
+  background_vspeed[1] = -1;
+  instance_destroy(objBlock1AHM);
+  instance_destroy(objBlock1BHM);
+  instance_destroy(objBlock1CHM);
+  with(objBlockBoss7A)
+   {
+    slip = 0.1;
+    if(type == 1 || type == 3)
+     sprite_index = sprBlockBettyB;
+    else
+     sprite_index = sprBlockBettyA;
+   }
+   with(objMovingPlatform)
+   {
+    sprite_index = sprBettyPlatform;
+   }
+  break;
+ case 2:
+  background_index[0] = bgKoalaBG;
+  background_index[1] = bgKoalaGrid;
+  background_vspeed[1] = -1;
+  instance_destroy(objBlock1AHM);
+  instance_destroy(objBlock1BHM);
+  instance_destroy(objBlock1CHM);
+  with(objBlockBoss7A)
+   {
+     slip = 0;
+     sprite_index = sprBlockKoalaA;
+   }
+   with(objMovingPlatform)
+   {
+    sprite_index = sprPlatformKoala;
+   }
+  break;
+ case 3:
+  background_index[0] = bgCyber;
+  background_index[1] = bgCyberGrid;
+  background_vspeed[1] = -1;
+  instance_destroy(objBlock1AHM);
+  instance_destroy(objBlock1BHM);
+  instance_destroy(objBlock1CHM);
+  with(objBlockBoss7A)
+   {
+     slip = 0;
+     sprite_index = sprBlockCyberA;
+   }
+   with(objMovingPlatform)
+   {
+    sprite_index = sprPlatformCyber;
+   }
+  break;
+ case 4:
+  background_index[0] = bgBossRush;
+  background_vspeed[1] = -1;
+  instance_destroy(objBlock1AHM);
+  instance_destroy(objBlock1BHM);
+  instance_destroy(objBlock1CHM);
+  with(objBlockBoss7A)
+   {
+     slip = 0;
+     sprite_index = sprBlockBossRush;
+   }
+   with(objMovingPlatform)
+   {
+    sprite_index = sprPlatformBossRush;
+   }
+  break;       
+}
+image_index=A;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///color destroy event
+alarm[1] = 1;
+alarm[2] = 100;
+with(objFinalBossBar2)
+{
+ if(index == other.index)
+ {
+  event_user(0);
+ }
+}
+
+background_index[0] = bgBoss7GRID;
+background_index[1] = -1
+instance_destroy(objBlock1AHM);
+instance_destroy(objBlock1BHM);
+instance_destroy(objBlock1CHM);
+with(objBlockBoss7A)
+{
+ slip = 0;
+ sprite_index = sprBlock7;
+}
+with(objMovingPlatform)
+{
+ sprite_index = sprPlatform7;
 }
 </string>
           </argument>

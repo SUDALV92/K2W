@@ -273,7 +273,8 @@ instance_create(x-131,y-137,objKamiliaMeteo);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+attack1 = true;
 score = 3; //DeadSplit support
 </string>
           </argument>
@@ -300,7 +301,7 @@ score = 3; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
 </string>
           </argument>
         </arguments>
@@ -326,7 +327,7 @@ score = 3; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
 </string>
           </argument>
         </arguments>
@@ -352,7 +353,7 @@ score = 3; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
 </string>
           </argument>
         </arguments>
@@ -378,7 +379,7 @@ score = 3; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
 </string>
           </argument>
         </arguments>
@@ -404,7 +405,7 @@ score = 3; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
+            <string>//if instance_exists(objPlayer){instance_create(objPlayer.x,150,objKamiliaAttack1);}
 image_index=0;
 gravity=0.3;
 gravity_direction=270;
@@ -464,6 +465,7 @@ A=1;
             <kind>1</kind>
             <string>speed=0;
 gravity=0;
+//with(objChaosTan1) alarm[0] = 1;
 score = 4; //DeadSplit support
 </string>
           </argument>

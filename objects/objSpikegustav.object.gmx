@@ -29,6 +29,8 @@
 image_speed=1/3;
 image_angle=direction;
 a=0;
+curving = 5;
+mode = 1;
 </string>
           </argument>
         </arguments>
@@ -52,7 +54,16 @@ a=0;
           <argument>
             <kind>1</kind>
             <string>image_angle=direction;
-if a&gt;2{direction=point_direction(xstart,ystart,x,y)+5} a+=1;
+if(mode == 1)
+{
+ if a&gt;2
+ {
+  direction=point_direction(xstart,ystart,x,y)+curving
+ } 
+ a+=1;
+}
+else
+ direction += curving;
 </string>
           </argument>
         </arguments>

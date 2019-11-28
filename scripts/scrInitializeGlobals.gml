@@ -65,7 +65,13 @@ for(var i = global.stagesTotal; i >= 0; i--)
  global.stageName[i] = "???";
  global.stageRoom[i] = 0;
 }
+
 scrInitializeStages();
+sfxCount = 10;
+for(var temp = 0; temp < sfxCount; temp++)
+{
+ global.sfxDelay[temp] = 0;
+}
 
 for(var i = 0; i < 16; i++)
 {

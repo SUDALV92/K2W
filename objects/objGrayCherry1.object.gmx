@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed=1/10;
+grow = 0.01;
 </string>
           </argument>
         </arguments>
@@ -48,8 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_xscale += 0.01;
-image_yscale += 0.01;
+            <string>image_xscale += grow;
+image_yscale += grow;
 </string>
           </argument>
         </arguments>

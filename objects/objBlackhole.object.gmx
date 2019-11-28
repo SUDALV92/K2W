@@ -58,55 +58,16 @@ a=irandom(360);
 b=a;
 t=0;
 W=0;
+if(room != rBoss7Phase1)
+{
+ alarm[0] = 6;
+ alarm[1] = 500;
+}
+else
+{
+ alarm[1] = 200;
+}
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>500</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -349,11 +310,12 @@ if t&gt;6{t=0;}
 image_angle+=4;
 if image_alpha&gt;0.99
 {
-if instance_exists(objPlayer){
-if room!=rBoss7Phase1
+if instance_exists(objPlayer)
 {
-if place_meeting(objPlayer.x,objPlayer.y,objBlock){objPlayer.y-=0.5;}
-if self.x&gt;objPlayer.x{objPlayer.x+=2;} if self.x&lt;objPlayer.x{objPlayer.x-=2;}}}}
+ if place_meeting(objPlayer.x,objPlayer.y,objBlock){objPlayer.y-=0.5;}
+ if self.x&gt;objPlayer.x{objPlayer.x+=2;} 
+ if self.x&lt;objPlayer.x{objPlayer.x-=2;}
+}}
 if W=1{image_alpha-=0.03;}
 if image_alpha&lt;0{instance_destroy();}
 </string>

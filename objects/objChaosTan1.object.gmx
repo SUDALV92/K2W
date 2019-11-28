@@ -52,6 +52,8 @@ if room== rBoss7Phase2
           <argument>
             <kind>1</kind>
             <string>image_angle+=b;
+if(speed &lt; 2)
+ speed = 2;
 </string>
           </argument>
         </arguments>

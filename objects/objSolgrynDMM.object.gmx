@@ -34,6 +34,7 @@ speed=0;
 direction=random(360);
 image_angle=direction;
 alarm[0]=120;
+newGrav = 0.03;
 </string>
           </argument>
         </arguments>
@@ -57,7 +58,7 @@ alarm[0]=120;
           <argument>
             <kind>1</kind>
             <string>image_alpha=1;
-gravity = 0.03;
+gravity = newGrav;
 gravity_direction = direction;
 //speed=1;
 </string>
@@ -117,6 +118,35 @@ gravity_direction = direction;
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="objPlayer">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(room == rBoss7Phase1)
+{
+    if image_alpha == 1
+    {
+        scrKillPlayer();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="7">
       <action>
         <libid>1</libid>
@@ -160,6 +190,31 @@ gravity_direction = direction;
             <string>if sprite_index!=sprSolgrynDMADeath{
 image_speed=1/2;
 image_index=0; sprite_index=sprSolgrynDMADeath;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//draw_sprite_ext(sprite_index,image_index-2,x-hspeed*2,y-vspeed*2,image_xscale,image_yscale,image_angle,image_blend,image_alpha);
+
+draw_self();
 </string>
           </argument>
         </arguments>

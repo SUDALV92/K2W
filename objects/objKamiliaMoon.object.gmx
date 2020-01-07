@@ -78,8 +78,22 @@ if(instance_exists(objLastTimer))
 {
     objLastTimer.Timer = floor((4510 - i)/45.1)
     if(objLastTimer.Timer == 0)
+    {
         with(objLastTimer)
             instance_destroy();
+        with(objKamiliaIntro)
+        {
+         depth = 1200000;
+         if(invincible)
+          escape = true;
+        }
+        with(objChaost)
+        {
+         destroying = true;
+         speed = 0;
+        }
+        audio_play_sound(global.sndEnep,0,0);
+    }
 }
 
 if(!instance_exists(objPlayer) &amp;&amp; down &amp;&amp; !killedByMoon)

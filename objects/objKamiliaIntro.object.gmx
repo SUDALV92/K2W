@@ -36,6 +36,7 @@ i = 0;
 hp = 20;
 delay = 0;
 spikeDirection = 1;
+invincible = false;
 </string>
           </argument>
         </arguments>
@@ -86,8 +87,23 @@ spikeDirection = 1;
             
             spike.speed = irandom_range(9,11);
             spike.gravity = 0.2;
-        }
+        }        
         i++;
+    }
+    if(invincible &amp;&amp; !escape)
+    {
+     if(instance_number(objChaost) &lt; 100)
+     {
+      if(i % 10 == 0)
+      {
+       bullet = instance_create(x,y,objChaost);
+       bullet.mode = 3;
+       bullet.image_index = irandom(4);
+       bullet.direction = random(360);
+       bullet.speed = random_range(1,2)
+      }
+     }
+     i++;
     }
     if(escape)
     {
@@ -97,11 +113,8 @@ spikeDirection = 1;
         {
             with(objKamiliaSpike)
             {
-                mute = true;
                 instance_destroy();
-            }
-            instance_destroy(objHPMBarfull);
-            audio_play_sound(global.sndSmokeLow,1,0);
+            }            
             gravity = 0;
             objKamiliaMoon.vspeed = vspeed;
             objKamiliaMoon.down = false;
@@ -135,7 +148,7 @@ spikeDirection = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(action)
+            <string>if(action &amp;&amp; !invincible)
 {
     with(other){instance_destroy();}
     if delay=0
@@ -145,8 +158,24 @@ spikeDirection = 1;
         score = hp; //DeadSplit support
         if(hp &lt; 1)
         {
-            escape = true;
+            //escape = true;
             action = false;
+            instance_destroy(objHPMBarfull);
+            instance_destroy(objHPMBar);
+            invincible = true;
+            with(objBlockBoss7A)
+            {
+             if(type == 11)
+             {
+              solid = false;
+              gravity = 0.4;
+             }
+            }
+            audio_play_sound(global.sndBreak,0,0);
+            with(objLastTimer)
+            {
+             visible = true;
+            }
         }
     }
 }

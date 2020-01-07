@@ -37,7 +37,9 @@ delay=0;
 destroy = false;
 hp = 20;
 alarm[2] = 80;
-attackDelay = 30;
+attackDelay = 16;
+attackSpeed = 6;
+attackCurving = 0.6;
 </string>
           </argument>
         </arguments>
@@ -89,8 +91,9 @@ alarm[3]=1;
     alarm[2] = attackDelay;
     bullet = instance_create(x,y,objChaost);
     bullet.image_index = 1;
-    bullet.speed = 2;
+    bullet.speed = attackSpeed;
     bullet.direction = random(360);
+    bullet.curving = choose(-attackCurving,attackCurving);
 }
 </string>
           </argument>
@@ -274,7 +277,7 @@ else
     {
         destroy = true;
     }
-    repeat(5)
+    repeat(0)
     {
      bullet = instance_create(x,y,objChaost);
      bullet.direction = random(360);//irandom_range(40,140);

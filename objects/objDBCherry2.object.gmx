@@ -54,7 +54,8 @@ gravity_direction=270;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y+vspeed,objBlock) &amp;&amp; instance_exists(objDestinationB) &amp;&amp; objDestinationB.A == 1)
+            <string>if(place_meeting(x,y+vspeed,objBlock) &amp;&amp; 
+(instance_exists(objDestinationB) &amp;&amp; objDestinationB.A == 1 || room == rBoss7Phase1))
 {
  i = -0.5;
  repeat(2)

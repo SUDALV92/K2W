@@ -162,43 +162,43 @@ if(spikeI &lt; 23)
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(global.sndPochi,0,0);
-repeat(2)
+repeat(1)
 {
  tan1 = instance_create(x,y,objPochiTan1);
- tan1.speed = random_range(4,7);
+ tan1.speed = random_range(5,7);
  tan1.direction = random(360);
- if(instance_exists(objPlayer))
+ /*if(instance_exists(objPlayer))
   if(objPlayer.x &gt; 400)
    tan1.curving = 0.9;
   else
    tan1.curving = -0.9;
- else
+ else*/
   tan1.curving = choose(-0.9,0.9);
 }
 repeat(2)
 {
  tan1 = instance_create(x,y,objPochiTan2);
- tan1.speed = random_range(4,7)
+ tan1.speed = random_range(5,7)
  tan1.direction = random(360);
- if(instance_exists(objPlayer))
+ /*if(instance_exists(objPlayer))
   if(objPlayer.x &gt; 400)
    tan1.curving = 0.9;
   else
    tan1.curving = -0.9;
- else
+ else*/
   tan1.curving = choose(-0.9,0.9);
 }
 repeat(1)
 {
  tan1 = instance_create(x,y,objPochiTan3);
- tan1.speed = random_range(4,7)
+ tan1.speed = random_range(5,7)
  tan1.direction = random(360);
- if(instance_exists(objPlayer))
+ /*if(instance_exists(objPlayer))
   if(objPlayer.x &gt; 400)
    tan1.curving = 0.9;
   else
    tan1.curving = -0.9;
- else
+ else*/
   tan1.curving = choose(-0.9,0.9);
 }
 

@@ -29,39 +29,12 @@
 z=0;
 a=0;
 C=0;
+i=0;
+purpleCurving = choose(-1,1);
+increment = 1;
+amplitude = 80;
+propellexOldX = 0;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>305</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_timeline_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>14</kind>
-            <timeline>bossrush5</timeline>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -445,10 +418,142 @@ alarm[0]=40;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!instance_exists(objPlayer))
+            <string>if(!instance_exists(objPlayer)) exit;
+
+if(i == 0)
 {
-    timeline_speed = 0;
+ self.x=objMagicCircle.x;
+ self.y=objMagicCircle.y;
 }
+if(i &gt;= 10 &amp;&amp; i &lt;= 150 &amp;&amp; i % 10 == 0)
+{
+    instance_create(x,y,objDBCherry2);
+}
+if(i &gt;= 50 &amp;&amp; i &lt;= 200 &amp;&amp; i % 50 == 0)
+{
+    if(propellexOldX == 0)
+    {
+     if(objPlayer.x &lt;= 400)
+      propellexOldX = -1;
+     else
+      propellexOldX = 1; 
+    }
+    
+    if(propellexOldX == -1)
+    {
+        d2=instance_create(848,objPlayer.y,objGPropeller);
+        d2.direction=180;
+        d2.gravity_direction = 0;
+        d2.gravity = 0.3;
+        d2.speed=20;
+        propellexOldX = 1;
+    }
+    else
+    {
+        d4=instance_create(-48,objPlayer.y,objGPropeller);
+        d4.direction=0;
+        d4.gravity_direction = 180;
+        d4.gravity = 0.3;
+        d4.speed=20;
+        propellexOldX = -1;
+    }
+}
+
+if(i == 250 || i == 400 || i == 550)
+{
+ dir = -80;
+ repeat(5)
+ {
+  tan7 = instance_create(x,y,objNueTan7Core);
+  tan7.gravity_direction = point_direction(x,y,objPlayer.x,objPlayer.y) + dir;
+  tan7.gravity = 0.1;
+  
+  dir += 40;
+ }
+}
+if(i == 250)
+{
+ var temp = 0;
+ if(choose(0,1))
+ {
+     repeat(5)
+     {
+      a1=instance_create(820,352 + temp*32,objCGCherry1);
+      a1.speed=2;
+      a1.direction=180;
+      temp++;
+     }
+ }
+ else
+ {
+    repeat(5)
+    {
+     a3 = instance_create(-20,352 + temp*32,objCGCherry1);
+     a3.speed=2;
+     a3.direction=0;
+     temp++;
+    }
+ }
+}
+if(i == 450)
+{
+     var temp = -2;
+     repeat(5)
+     {
+        a4=instance_create(objPlayer.x + temp*32,-20,objCGCherry1);
+        a4.speed=2;
+        a4.direction=270;
+        temp++;
+     }
+}
+
+if(i &gt;= 600 &amp;&amp; i &lt;= 950 &amp;&amp; i % 30 == 0)
+{
+    angle = random(360);
+    if(purpleCurving == 1)
+     purpleCurving = -1;
+    else
+     purpleCurving = 1;
+
+    repeat(10)
+    {
+    d1=instance_create(x,y,objDPCherry1);
+    d1.speed=6;
+    d1.direction=angle;
+    d1.curving = purpleCurving;
+    d1.mode = 2;
+    angle+=36;
+    }
+}
+if(i == 700 || i == 750 || i == 800 || i == 850)
+{
+    if(objPlayer.x &gt; 400)
+     xx = -20;
+    else
+     xx = 820;
+    
+    var factor = -1;
+    increment = choose(1,2,3,4);
+    repeat(2)
+    {
+        a=instance_create(xx,objPlayer.y-40,objCRCherry2);
+        a.speed=4;
+        a.increment = increment;
+        a.amplitude = amplitude;
+        a.factor = factor;
+        a.direction=point_direction(xx,objPlayer.y-40,objPlayer.x,objPlayer.y-40);
+        
+        factor+=2;
+    }
+}
+
+if(i == 1000)
+{
+ instance_destroy(objCRCherry2);
+ instance_destroy(objDPCherry1);
+ with(objMagicCircle) event_user(0);
+}
+i++
 </string>
           </argument>
         </arguments>

@@ -58,11 +58,12 @@ cFactor = 255;
     {
         cFactor -= 5.1;
         image_speed += 0.01;
-        image_blend = make_colour_rgb(255,cFactor,cFactor);
+        background_vspeed[0] -= 0.04;
+        background_blend[0] = make_colour_rgb(255,cFactor,cFactor);
     }
     else
     {
-        image_blend = c_red;
+        background_blend[0] = c_red;
     }
 }
 if(black)

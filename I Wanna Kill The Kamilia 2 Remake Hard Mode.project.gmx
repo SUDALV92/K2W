@@ -5172,6 +5172,7 @@
       <object>objects\objFinalBossBar</object>
       <object>objects\objFinalBossBar2</object>
       <object>objects\objFLaser</object>
+      <object>objects\objFLaser2</object>
       <object>objects\objKamilia</object>
       <object>objects\objKamilia99</object>
       <object>objects\objKamiliaAA</object>
@@ -5416,8 +5417,6 @@
     <timeline>timelines\bossrush1</timeline>
     <timeline>timelines\bossrush2</timeline>
     <timeline>timelines\bossrush3</timeline>
-    <timeline>timelines\bossrush4</timeline>
-    <timeline>timelines\bossrush5</timeline>
     <timeline>timelines\maintl</timeline>
     <timeline>timelines\timelinelsb</timeline>
     <timeline>timelines\endingtl</timeline>

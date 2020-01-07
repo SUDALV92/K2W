@@ -28,7 +28,7 @@
             <string>switch(room)
 {
  case rBoss7Phase2:
-      direction = random_range(240,300);
+      direction = random_range(230,310);
       speed = 1;
       gravity_direction = direction;
       gravity = 0.1;

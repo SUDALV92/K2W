@@ -37,7 +37,9 @@ K=1;
 delay=0;
 destroy = false;
 hp = 20;
-attackDelay = 120;
+attackDelay = 90;
+attackSpeed = 2;
+attackDensity = 8;
 </string>
           </argument>
         </arguments>
@@ -87,13 +89,15 @@ alarm[3]=1;
             <string>if(!destroy &amp;&amp; instance_exists(objPlayer))
 {
     alarm[2] = attackDelay;
-    var rng = irandom(360);
-    for(var angle = rng; angle&lt;=rng+360; angle+=36)
+    var rngAngle = irandom(360);
+    repeat(attackDensity)
     {
         bullet = instance_create(x,y,objChaost);
         bullet.image_index = 3;
-        bullet.speed = 2;
-        bullet.direction = angle;
+        bullet.speed = attackSpeed;
+        bullet.direction = rngAngle;
+        bullet.blockCollision = true;
+        rngAngle += 360/attackDensity;
     }
     
 }
@@ -279,7 +283,7 @@ else
     {
         destroy = true;
     }
-    repeat(5)
+    repeat(0)
     {
      bullet = instance_create(x,y,objChaost);
      bullet.direction = random(360);//irandom_range(40,140);

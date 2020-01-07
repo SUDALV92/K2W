@@ -28,7 +28,7 @@
             <string>image_speed=0;
 objFinalBossBar2.A=1;
 a=0; b=1; c=2; d=3; e=4;
-A=b//choose(a,b,c,d,e);
+A=choose(a,b,c,d,e);
 K=1;
 ASD=0;
 BY=0;

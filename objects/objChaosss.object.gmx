@@ -30,6 +30,8 @@ image_angle=irandom(360);
 image_index=choose(0,1,2,3,4);
 alarm[11]=1;
 A=0;
+mode = 1;
+curving = 0;
 </string>
           </argument>
         </arguments>
@@ -52,7 +54,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=1{alarm[0]=40;}
+            <string>if A=1{alarm[0]=15;}
 </string>
           </argument>
         </arguments>
@@ -75,7 +77,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>speed=5;
+            <string>speed=10;
 if instance_exists(objPlayer){
 direction=point_direction(x,y,objPlayer.x,objPlayer.y);}
 </string>
@@ -101,7 +103,7 @@ direction=point_direction(x,y,objPlayer.x,objPlayer.y);}
           <argument>
             <kind>1</kind>
             <string>speed=0;
-alarm[1]=20;
+alarm[1]=5;
 </string>
           </argument>
         </arguments>
@@ -125,6 +127,16 @@ alarm[1]=20;
           <argument>
             <kind>1</kind>
             <string>image_angle-=5;
+if(mode == 2)
+{
+ if(friction &gt; 0 &amp;&amp; speed &lt; 1)
+ {
+  friction = 0;
+  gravity_direction = direction;
+  gravity = random_range(0.1,0.5);
+ }
+}
+direction += curving;
 </string>
           </argument>
         </arguments>

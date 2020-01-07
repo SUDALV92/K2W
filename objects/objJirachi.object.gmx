@@ -52,26 +52,28 @@ image_speed=1/10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(room)
+            <string>a=instance_create(x,y,objJirachistar);
+a.speed=2;
+if(instance_exists(objPlayer))
 {
-    case rBoss7Phase2: break;
+    a.direction=point_direction(a.x,a.y,objPlayer.x,objPlayer.y);
+    a.sonic = true;
+    a.sonicX = objPlayer.x;
+    a.sonicY = objPlayer.y;
+    a.alarm[0] = 0;
+    a.gravity = 0.3;
+}
+else
+    a.direction = random(360);
+    
+switch(room)
+{
+    case rBoss7Phase2: 
+     //alarm[1] = 100;
+     break;
     default:
-    {
-    a=instance_create(x,y,objJirachistar);
-    a.speed=2;
-    if(instance_exists(objPlayer))
-    {
-        a.direction=point_direction(a.x,a.y,objPlayer.x,objPlayer.y);
-        a.sonic = true;
-        a.sonicX = objPlayer.x;
-        a.sonicY = objPlayer.y;
-        a.alarm[0] = 0;
-        a.gravity = 0.3;
-    }
-    else
-        a.direction = random(360);
-    alarm[1]=60;
-    }
+     alarm[1]=60;
+     break;
 }
 </string>
           </argument>

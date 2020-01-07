@@ -101,7 +101,7 @@
 b=0;
 switch(room)
 {
-    case rBoss7Phase2: N = 5; break;
+    case rBoss7Phase2: N = 6; break;
     default: N = 20;
 }
 </string>
@@ -142,7 +142,7 @@ if(instance_exists(objPlayer))
              bullet.speed = 6;
              bullet.direction = b+36;
              
-             b+=72; 
+             b+=360/N; 
             }
             
             break;

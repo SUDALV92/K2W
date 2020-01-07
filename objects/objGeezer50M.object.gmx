@@ -81,9 +81,20 @@ else direction = 270;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-if objPlayer.x&gt;self.x {direction=285;}
-else {direction=255;}}
+            <string>if instance_exists(objPlayer)
+{
+ if(room == rBoss7Phase1)
+ {
+  dir1 = 275;
+  dir2 = 265;
+ }
+ else
+ {
+  dir1 = 285;
+  dir2 = 255;
+ }
+ if objPlayer.x&gt;self.x {direction=dir1;}
+ else {direction=dir2;}}
 </string>
           </argument>
         </arguments>

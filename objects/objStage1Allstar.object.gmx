@@ -168,7 +168,7 @@ alarm[1] = 70;
 }
 
 if B=1{
-if((Bi &gt;= 0 &amp;&amp; Bi &lt;= 60 &amp;&amp; Bi % 20 == 0) || (Bi &gt; 100 &amp;&amp; Bi % 5 == 0))
+if((Bi &gt; 0 &amp;&amp; Bi &lt;= 50 &amp;&amp; Bi % 20 == 0) || (Bi &gt; 100 &amp;&amp; Bi % 5 == 0))
 {
  instance_create(0,0,objFadelightlow);
  instance_create(objMagicCircle.x,objMagicCircle.y,objGuyBullet);

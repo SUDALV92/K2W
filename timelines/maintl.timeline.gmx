@@ -936,7 +936,10 @@ score = 10; //DeadSplit support
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(400,304,objFLaser);
+            <string>flaser2 = instance_create(400,304,objFLaser2);
+flaser2.hdir = 1;
+flaser2 = instance_create(400,304,objFLaser2);
+flaser2.hdir = -1;
 audio_play_sound(global.sndFLaser,0,0);
 </string>
           </argument>
@@ -945,7 +948,7 @@ audio_play_sound(global.sndFLaser,0,0);
     </event>
   </entry>
   <entry>
-    <step>830</step>
+    <step>890</step>
     <event>
       <action>
         <libid>1</libid>

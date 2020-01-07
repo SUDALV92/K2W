@@ -27,7 +27,7 @@
   cherry = instance_create(objMagicCircle.x,objMagicCircle.y,objGrayCherry1);
   cherry.direction = dir
   cherry.speed = 5;
-  cherry.grow = 0.02;
+  cherry.grow = 0.015;
   dir += 360/24;
  }
 }
@@ -461,7 +461,7 @@ alarm[0]=10;
     </event>
   </entry>
   <entry>
-    <step>550</step>
+    <step>540</step>
     <event>
       <action>
         <libid>1</libid>
@@ -489,7 +489,7 @@ alarm[2] = 0;
     </event>
   </entry>
   <entry>
-    <step>600</step>
+    <step>590</step>
     <event>
       <action>
         <libid>1</libid>

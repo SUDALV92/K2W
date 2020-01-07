@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-3</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -109,13 +109,29 @@ gravity_direction=180;
 
 prevDirection = 0;
 
-if A=0{if B=1{A=1; alarm[0]=250;}}
+if A=0
+{
+ if B=1
+ {
+  A=1; 
+    switch(room)
+    {
+     case rBoss7Phase1:
+      alarm[0]=200;
+      break;
+     default:
+      alarm[0]=250;
+      break;
+    }
+ }
+}
 if delay=0
 {
     if A=1
     {
     dead = instance_create(self.x+97,self.y-16,objDeadItems);
     dead.direction = random(360);
+    dead.xFactor = 1;
     while(abs(dead.direction - prevDirection) &lt; 8)
     {
         dead.direction = random(360);
@@ -124,12 +140,13 @@ if delay=0
     
     dead = instance_create(self.x+35,self.y-16,objDeadItems); 
     dead.direction = random(360);
+    dead.xFactor = 1;
     while(abs(dead.direction - prevDirection) &lt; 8)
     {
         dead.direction = random(360);
     }
     prevDirection = dead.direction;
-    delay=8;
+    delay=16;
     }
 }
 </string>

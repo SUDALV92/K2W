@@ -1112,7 +1112,7 @@ with(objBettyTrap2)
     </event>
   </entry>
   <entry>
-    <step>500</step>
+    <step>550</step>
     <event>
       <action>
         <libid>1</libid>
@@ -1160,7 +1160,7 @@ with(objBettyTrap2)
             <kind>1</kind>
             <string>if(instance_exists(objPlayer))
 {
-    if(x &gt; 400)
+    if(objPlayer.x &gt; 400)
      instance_create(objPlayer.x+150,624,objLukaBisuk);
     else
      instance_create(objPlayer.x-150,624,objLukaBisuk);
@@ -1175,7 +1175,7 @@ with(objBettyTrap2)
     </event>
   </entry>
   <entry>
-    <step>650</step>
+    <step>700</step>
     <event>
       <action>
         <libid>1</libid>
@@ -1202,7 +1202,7 @@ alarm[2]=3;
     </event>
   </entry>
   <entry>
-    <step>1350</step>
+    <step>1250</step>
     <event>
       <action>
         <libid>1</libid>

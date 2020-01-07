@@ -28,39 +28,9 @@
             <string>A=0;
 a=0;
 b=0;
+i=0;
+inversedWalls = false;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>305</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_timeline_set</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>14</kind>
-            <timeline>bossrush4</timeline>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -326,9 +296,142 @@ b=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!instance_exists(objPlayer))
+            <string>if(!instance_exists(objPlayer)) exit;
+
+if(i == 0)
 {
-    timeline_speed = 0;
+    x=objMagicCircle.x;
+    y=objMagicCircle.y;
+    k=-0.15;
+    repeat(23)
+    {     
+     k0=instance_create(random_range(40,760),random_range(96,448),objSolgrynOC);
+     k0.image_alpha=1+k;
+     k0.image_xscale=0; k0.image_yscale=0;
+     k-=0.07;
+    }
+}
+if(i == 50)
+{
+ instance_create(64,496,objLaserLSA);
+ instance_create(736,496,objLaserLSA);
+ audio_play_sound(global.sndSolgrynLS,0,0);
+}
+if(i &gt;= 60 &amp;&amp; i &lt;= 510 &amp;&amp; (i-60) mod 150 == 0)
+{
+ instance_create(objPlayer.x,608,objHydroPump);
+}
+if(i == 550)
+{
+ repeat(80)
+ {
+  instance_create(random_range(100,700),random_range(30,448),objSolgrynDMM);
+ }
+ with(objSolgrynDMM)
+ {
+  newGrav = 0.06;
+  sprite_index = sprCyberBulletB;
+  image_xscale = 1;
+  image_yscale = 1;
+ }
+}
+if(i &gt;= 750 &amp;&amp; i &lt;= 870 &amp;&amp; i % 17 == 0)
+{
+ var bullet = instance_create(objPlayer.x,-16,objKeaTan7);
+ bullet.speed = 10;
+ bullet.direction = 270;
+}
+if(i == 750 &amp;&amp; objPlayer.x &gt; 400)
+{
+ inversedWalls = true;
+}
+if(i == 800)
+{
+ if(inversedWalls)
+  event_user(1);
+ else
+  event_user(0);
+}
+if(i == 900)
+{
+ if(inversedWalls)
+  event_user(0);
+ else
+  event_user(1);
+}
+if(i == 950)
+{
+ instance_destroy(objLaserLSA);
+ with(objMagicCircle) event_user(0);
+}
+i++;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///right wall
+yy = 10;
+repeat(30)
+{
+ wall = instance_create(820,yy,objCyberBullet2);
+ wall.hspeed = -19;
+ wall.gravity_direction = 0;
+ wall.gravity = 0.4;
+ wall.sprite_index = sprCyberBulletD;
+ 
+ yy+=20;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///left wall
+yy = 10;
+repeat(30)
+{
+ wall = instance_create(-20,yy,objCyberBullet2);
+ wall.hspeed = 19;
+ wall.gravity_direction = 180;
+ wall.gravity = 0.4;
+ wall.sprite_index = sprCyberBulletC;
+ 
+ yy+=20;
 }
 </string>
           </argument>

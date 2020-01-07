@@ -38,7 +38,9 @@ delay=0;
 destroy = false;
 hp = 20;
 angle = random(360);
-attackDelay = 20;
+attackDelay = 8;
+attackRotation = 35;
+attackSpeed = 6;
 </string>
           </argument>
         </arguments>
@@ -88,10 +90,10 @@ alarm[3]=1;
             <string>if(!destroy &amp;&amp; instance_exists(objPlayer))
 {
     alarm[2] = attackDelay;
-    angle+=25;
+    angle += attackRotation;
     bullet = instance_create(x,y,objChaost);
     bullet.image_index = 2;
-    bullet.speed = 2;
+    bullet.speed = attackSpeed;
     bullet.direction = angle;
 }
 </string>
@@ -267,7 +269,7 @@ else
     {
         destroy = true;
     }
-    repeat(5)
+    repeat(0)
     {
      bullet = instance_create(x,y,objChaost);
      bullet.direction = random(360);//irandom_range(40,140);

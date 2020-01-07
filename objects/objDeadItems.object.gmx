@@ -31,6 +31,7 @@ image_angle=irandom(360);
 speed=random_range(3,6);
 mode = 1;
 curving = choose(-1,1);
+xFactor = -1;
 </string>
           </argument>
         </arguments>
@@ -59,7 +60,7 @@ if(mode == 1)
  if(speed &gt; 3)
   speed = 3;
  direction += curving;
- x -= 3;
+ x += 3*xFactor;
 }
 </string>
           </argument>

@@ -365,7 +365,8 @@ audio_play_sound(global.sndWarp,0,0);
             <string>if A=0{instance_create(x+random_range(-150,150),y+random_range(-230,230),objExploblue);}
 if A=1{image_xscale+=0.025; image_yscale+=0.025; image_alpha-=0.02;
 objKamiliaNext.image_alpha+=0.05;
-objFBBackground.image_alpha+=0.05;
+//objFBBackground.image_alpha+=0.05;
+background_visible[0] = false;
 objFinalBossBar.image_alpha+=0.02;}
 if image_alpha&lt;=0{instance_destroy();}
 </string>

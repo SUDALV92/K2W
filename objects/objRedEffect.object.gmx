@@ -50,7 +50,7 @@ image_alpha=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha&lt;0.3{image_alpha+=0.02}
+            <string>if image_alpha&lt;0.5{image_alpha+=0.005}
 </string>
           </argument>
         </arguments>

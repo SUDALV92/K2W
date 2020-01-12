@@ -133,6 +133,19 @@ if(achievement)
      achievement.index = 65;
  }
 }
+for(var i = 40; i &lt; 45; i++)
+{
+ if(!global.energy[i])
+ {
+  energy = instance_create(x,y,objEnergy);
+  energy.energyID = i;
+  energy.direction = random(360);
+  energy.speed = 6;
+  energy.persistent = true;
+  energy.friction = 0.2;
+  energy.alarm[0] = 20;
+ }
+}
 </string>
           </argument>
         </arguments>

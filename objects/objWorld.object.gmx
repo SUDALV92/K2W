@@ -592,7 +592,6 @@ if(f5pressed)
             case rBoss7Phase1:
             case rBoss7Phase2:
             case rBoss7Phase4:
-            case rBoss7Death:
                 global.lastRunStart[13] = -1; global.lastRunEnd[13] = -1; break;
         }
         global.currentSegmentIndex = -1;
@@ -612,6 +611,7 @@ if(f5pressed)
         {
             instance_destroy();
         }
+        instance_create(96,256,objPlayer);
     }
 }
 </string>
@@ -657,6 +657,25 @@ switch(room)
       if(audio_sound_get_track_position(global.currentMusic) &gt;= 107.841)
       {
        audio_sound_set_track_position(global.currentMusic, 5.906);
+      }
+      break;
+ case rBoss7Phase4:
+ case rEscapeA:
+ case rEscapeB:
+ case rEscapeC:
+      if(global.currentMusicID == global.sndBoss7B)
+      {
+          if(audio_sound_get_track_position(global.currentMusic) &gt;= 198.265)
+          {
+           audio_sound_set_track_position(global.currentMusic, 8.408);
+          }
+      }
+      if(global.currentMusicID == global.sndExtra)
+      {
+          if(audio_sound_get_track_position(global.currentMusic) &lt; 59.3)
+          {
+           audio_sound_set_track_position(global.currentMusic, 59.3);
+          }
       }
       break;
 }
@@ -757,7 +776,6 @@ switch(room)  //DeadSplit support
  case rBoss6GravityMan:
  case rBoss6Phase1:
  case rBoss7Phase2:
- case rExBoss1:
   deadSplitFlag = true;
   alarm[2] = 50;
   break;
@@ -793,25 +811,10 @@ switch(room)
     case rBoss7Phase2:
     case rBoss7Phase4:
     case rEnding:
-    case rExBoss1:
-    case rExBoss2:
-    case rExBoss3:
-    case rExBoss4:
     case rExtraEscapeEntrance:
-    case rExtraStage3:
     case rExtraEnding:
         global.noPause = true; 
-        break;
-    case rBoss7Death: 
-        global.noPause = true;
-        global.gameClear = true; 
-        break;
-    case rPortal: 
-        global.extra = true; 
-        global.noPause = false; 
-        if(global.currentSegmentIndex != 15)
-         global.currentSegmentIndex = -1;
-        break;
+        break;    
     default: 
         global.noPause = false; 
         break;
@@ -835,10 +838,7 @@ switch(room) //check inf jump ability
       instance_create(0,0,objShadow);
     case rBoss3Avoid4:
     case rBoss4Avoid:
-    case rBoss6Nue:
-    case rPortal:
-        global.infJump = true;
-        
+        global.infJump = true;        
         break;
     default: global.infJump = false; break;
 }
@@ -872,13 +872,6 @@ switch(room)
                 instance_destroy();
 }
 
-switch(room)
-{
- case rPortal:
- case rExBoss1:
-  global.extraSkip = false;
-  break;
-}
 
 switch(room)
 {

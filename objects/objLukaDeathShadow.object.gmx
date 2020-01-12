@@ -29,7 +29,18 @@
 {
 objPlayer.x=160;
 objPlayer.y=288;
-objPlayer.frozen=1;
+}
+for(var i = 10; i &lt; 15; i++)
+{
+ if(!global.energy[i])
+ {
+  energy = instance_create(x,y,objEnergy);
+  energy.energyID = i;
+  energy.direction = random(360);
+  energy.speed = 6;
+  energy.friction = 0.2;
+  energy.alarm[0] = 20;
+ }
 }
 </string>
           </argument>
@@ -190,7 +201,6 @@ objPlayer.frozen=1;
           <argument>
             <kind>1</kind>
             <string>instance_create(400,440,objClearMessage);
-
 </string>
           </argument>
         </arguments>

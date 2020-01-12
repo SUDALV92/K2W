@@ -7,8 +7,8 @@ global.roomCaptionLast = global.roomCaptionDef;
 global.godMode = false;
 window_set_caption(global.roomCaptionDef);
 
-var salt = logn(7,2019);
-global.md5StrAdd = "Waaaaaaaaarped"+string(salt);  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
+var mess = logn(7,2019);
+global.md5StrAdd = "Waaaaaaaaarped"+string(mess);  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
 
 global.startRoom = rStage0;    //sets which room to begin with
 
@@ -25,7 +25,7 @@ global.playerAnimationFix = true;  //sets whether to fix the weird player animat
 
 global.secretItemTotal = 15;     //sets how many secret items for the game to save/load
 global.achievementTotal = 35;
-global.stagesTotal = 200;
+global.stagesTotal = 100;
 global.autosaveSecretItems = false; //sets whether to save secret items immediately when you grab them or if you have to hit a save
 
 global.controllerEnabled = true;    //sets whether controllers are supported

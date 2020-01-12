@@ -19,7 +19,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer)
+            <string>///160
+if instance_exists(objPlayer)
 {
 c=0;
 A=irandom_range(1,10);
@@ -70,7 +71,18 @@ alarm[0]=10;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>A=0;
+            <string>
+with(objEyeTanTypeB)
+{
+ ASD = 1;
+}
+with(objKamiliaPhase4Laser)
+{
+ destroying = true;
+ if(mode == 6)
+  mode = 0;
+}
+A=0;
 </string>
           </argument>
         </arguments>

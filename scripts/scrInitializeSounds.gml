@@ -23,7 +23,9 @@ global.sndShoot = audio_create_stream("SFX\Common\sndShoot.ogg");
 global.sndDeath = audio_create_stream("SFX\Common\sndDeath.ogg");
 global.sndWallJump = audio_create_stream("SFX\Common\sndWJump.ogg");
 global.sndBossHit = audio_create_stream("SFX\Common\sndBosshit.ogg");
+global.sndBossHitLow = audio_create_stream("SFX\Common\sndBosshitlow.ogg");
 global.sndFuckYea = audio_create_stream("SFX\Common\sndFuckYea.ogg");
+global.sndEnergyCollect = audio_create_stream("SFX\Common\sndEnergyCollect.ogg");
 
 global.sndWarp = audio_create_stream("SFX\Stage\sndWarp.ogg");
 global.sndTribute = audio_create_stream("SFX\Stage\sndTribute.ogg");
@@ -129,6 +131,10 @@ global.sndGradiusRockDead = audio_create_stream("SFX\Boss\sndGradiusRockDead.ogg
 global.sndGradiusDeath = audio_create_stream("SFX\Boss\sndGradiusDeath.ogg");
 global.sndLaserCharging = audio_create_stream("SFX\Boss\sndLaserCharging.ogg");
 global.sndLaserBeam = audio_create_stream("SFX\Boss\sndLaserBeam.ogg");
+global.sndReaper = audio_create_stream("SFX\Boss\sndReaper.ogg");
+global.sndBladeExpand = audio_create_stream("SFX\Boss\sndBladeExpand.ogg");
+global.sndTanmakLow = audio_create_stream("SFX\Boss\sndTanmakLow.ogg");
+global.sndContraExplosion = audio_create_stream("SFX\Boss\sndContraExplosion.ogg");
 
 // load music
 global.sndIntro = audio_create_stream("Music\Intro.ogg");

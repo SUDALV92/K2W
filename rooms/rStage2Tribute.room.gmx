@@ -135,7 +135,6 @@
     <instance objName="objBlock" x="0" y="128" name="inst_E24B692C" locked="0" code="" scaleX="3" scaleY="14.9677419662476" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="96" name="inst_D8B110B8" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="32" name="inst_AAA0A879" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraItem" x="349" y="325" name="inst_56D8295D" locked="0" code="itemID = 3;&#xA;image_index = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrwarp2" x="224" y="416" name="inst_B3BD1AA2" locked="0" code="if(global.extra)&#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="objTrwarp2" x="512" y="416" name="inst_FE24AD66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTrwarp2" x="672" y="352" name="inst_E3664D87" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>

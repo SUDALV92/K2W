@@ -80,7 +80,6 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="672" y="96" name="inst_E75AABB0" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="-32" y="0" name="inst_DF22F61C" locked="0" code="roomTo = rStage4ShinySparkB;&#xA;warpX = 746;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="800" y="544" name="inst_F36B678A" locked="0" code="roomTo = rStage4Conscience;&#xA;warpX = 16;&#xA;warpY = 80;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraItem" x="288" y="192" name="inst_698CA57C" locked="0" code="if(!global.tempTrigger[3])&#xA;{&#xA;    instance_destroy();&#xA;}&#xA;itemID = 7;&#xA;image_index = 7;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -81,7 +81,7 @@ speed = random_range(3,4);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room==rBoss6Crimson || room == rExBoss1)
+            <string>if (room==rBoss6Crimson)
 {
    //x = xstart + lengthdir_x(len,angle);
    //y = ystart + lengthdir_y(len,angle);

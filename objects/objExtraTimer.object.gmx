@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timerMax = 6000;
+            <string>timerMax = 5200;
 time = timerMax;
 scale = 5;
 image_alpha = 0;
@@ -40,35 +40,13 @@ clear = false;
 i = 0;
 loopMusic = 0;
 musicLoopDelay = 0;
+outroTimer = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="1" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.extraMusicLoop = 59.3;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -108,183 +86,51 @@ musicLoopDelay = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(clear &amp;&amp; room == rExtraStage3)
+            <string>x = view_xview - 10;
+y = view_yview - 10;
+if(!instance_exists(objPlayer))
 {
-    if(i == 0)
-    {
-     doll = instance_create(817,566,objPlayerDoll);
-     doll.hspeed = -3;
-    }
-    if(i == 30)
-    {
-     doll.vspeed = -8.5;
-     audio_play_sound(global.sndJump,0,0);
-    }
-    if(i == 50)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -7;
-      doll.djump = false;
-      audio_play_sound(global.sndDJump,0,0);
-     }
-    }
-    if(i == 60)
-    {
-     doll.vspeed *= 0.45;
-    }
-    if(i == 74)
-    {
-     doll.hspeed = 3;
-     if(doll.djump)
-     {
-      doll.vspeed = -8.5;
-      audio_play_sound(global.sndJump,0,0);
-     }
-    }
-    if(i == 88)
-    {
-     doll.hspeed = 3;
-    }
-    if(i == 92)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -7;
-      doll.djump = false;
-      audio_play_sound(global.sndDJump,0,0);
-     }
-    }    
-    if(i == 115)
-    {
-     doll.hspeed = 0;
-    }
-    if(i == 120)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -8.5;
-      audio_play_sound(global.sndJump,0,0);      
-     }
-    }
-    if(i == 140)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -7;
-      doll.djump = false;
-      audio_play_sound(global.sndDJump,0,0);
-     }
-    }
-    if(i == 145)
-    {
-     doll.hspeed = 3;
-    }
-    if(i == 150)
-    {
-     doll.hspeed = 0;
-    }
-    if(i == 160)
-    {
-     doll.hspeed = -3;
-     if(doll.djump)
-     { 
-      doll.vspeed = -8.5;
-      audio_play_sound(global.sndJump,0,0);
-     }      
-    }
-    if(i == 165)
-    {
-     doll.hspeed = 0;
-    }
-    if(i == 174)
-    {
-     doll.vspeed *= 0.45;
-     doll.hspeed = 3;
-    }
-    if(i == 184)
-    {
-     doll.hspeed = 0;
-    }
-    if(i == 194)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -8.5;
-      audio_play_sound(global.sndJump,0,0);
-     }
-    }
-    if(i == 214)
-    {
-     if(doll.djump)
-     {
-      doll.vspeed = -7;
-      doll.djump = false;
-      audio_play_sound(global.sndDJump,0,0);
-     }
-    }
-    if(i &gt;= 160 &amp;&amp; i mod 5 == 0)
-    {
-     if(i == 160)
-      audio_play_sound(global.sndSolgrynPShoot,0,0);  
-     instance_create(irandom_range(0,800),500,objExtraExplosion);
-    }
-    i++;
+ if(image_alpha &lt; 1)
+ {
+    image_alpha += 0.01;
+ }
+ else if(clear &amp;&amp; outroTimer &gt; 100)
+ {
+  room_goto(rEnding);
+ }
+ else
+ {
+  outroTimer++;
+ }
 }
 else
 {
-    x = view_xview - 10;
-    y = view_yview - 10;
-    if(!instance_exists(objPlayer))
-    {
-     image_alpha += 0.01;
-    }
-    else
-    {
-     time--;
-    }
-    
-    if(scale &gt; 1)
-    {
-        scale -= 0.04;
-    }
-    else
-    {
-        scale = 1;
-    }
-    
-    
-    if(time &lt;= 300)
-    {
-        if(image_alpha &lt; 0.5)
-        {
-            image_alpha += 0.01;
-        }
-    }
-    
-    if(time &lt;= 0 &amp;&amp; time &gt; -400 &amp;&amp; time mod 10 == 0)
-    {
-     if(time == 0) 
-      audio_play_sound(global.sndSolgrynPShoot,0,0);  
-     instance_create(irandom_range(view_xview[0],view_xview[0] + 800),irandom_range(0,608),objExtraExplosion);
-    }
+ time--;
 }
-if(global.extraSkip)
+
+if(scale &gt; 1)
 {
-    if(audio_is_playing(global.currentMusic) &amp;&amp; musicLoopDelay &lt;= 0)
-    {
-     if(audio_sound_get_track_position(global.currentMusic) &lt; global.extraMusicLoop)
-     {
-      audio_sound_set_track_position(global.currentMusic,global.extraMusicLoop);
-      musicLoopDelay = 50;
-     }
-    }
-    musicLoopDelay--;
+    scale -= 0.04;
 }
 else
-{ 
- alarm[0] = 200;
- global.extraSkip = true;
+{
+    scale = 1;
+}
+
+
+if(time &lt;= 300)
+{
+    if(image_alpha &lt; 0.5)
+    {
+        image_alpha += 0.01;
+    }
+}
+
+if(time &lt;= 0 &amp;&amp; time &gt; -400 &amp;&amp; time mod 10 == 0 &amp;&amp; !clear)
+{
+ if(time == 0) 
+  audio_play_sound(global.sndSolgrynPShoot,0,0);  
+ instance_create(irandom_range(view_xview[0],view_xview[0] + 800),irandom_range(0,608),objExtraExplosion);
 }
 </string>
           </argument>
@@ -310,13 +156,10 @@ else
             <kind>1</kind>
             <string>switch(room)
 {
-    case rExtraStage1:
-    case rExtraStage2:
-    case rExtraStageWrong:
+    case rEscapeA:
+    case rEscapeB:
+    case rEscapeC:
         clear = false;
-        break;
-    case rExtraStage3:
-        clear = true; 
         break;
     default:
         instance_destroy();
@@ -344,7 +187,7 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_set_font(fDefault20);
+draw_set_font(fJoystix20);
 draw_set_colour(c_white);
 draw_set_halign(fa_left);
 var t = time/50;

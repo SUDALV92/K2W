@@ -101,6 +101,10 @@ if (loadFile)
             global.saveBossRushRerun[i] = ds_map_find_value(saveMap,"saveBossRushRerun["+string(i)+"]");
         }
         
+        for(var i = 0; i < 100; i++)
+        {
+            global.saveEnergy[i] = ds_map_find_value(saveMap,"energy["+string(i)+"]");
+        }
         if (is_string(global.saveRoom))   //check if the saved room loaded properly
         {
             if (!room_exists(asset_get_index(global.saveRoom)))  //check if the room index in the save is valid
@@ -175,6 +179,11 @@ for (var i = 0; i < 5; i++)
 {
     global.bossRush[i] = global.saveBossRush[i];
     global.bossRushRerun[i] = global.saveBossRushRerun[i];
+}
+
+for(var i = 0; i < 100; i++)
+{
+    global.energy[i] = global.saveEnergy[i];
 }
 
 global.gameClear = global.saveGameClear;

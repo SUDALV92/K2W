@@ -93,8 +93,8 @@ with(objChaost){instance_destroy();}
 
 instance_create(x,y,objKamiliaFace);
 //objKamiliaFace.image_index=2;
-hp=80;
-fullhp=80;
+hp=100;
+fullhp=100;
 alarm[11]=3;
 attdelay=0;
 QS=0;
@@ -384,7 +384,7 @@ switch(blockType)
             <kind>1</kind>
             <string>if instance_exists(objPlayer)
 {
-    room_goto(rBoss7Phase4);
+    room_goto(rBoss7Phase4Pre);
 }
 </string>
           </argument>

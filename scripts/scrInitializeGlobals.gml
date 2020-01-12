@@ -55,15 +55,22 @@ global.saveExtraClear = false;
 
 //actuals
 global.portalAvailable = true;
+global.finalBossFaded = false;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {
- if(i < 69)
+ if(i < 75)
   global.stageUnlocked[i] = true;
  else
   global.stageUnlocked[i] = false;
  global.stageName[i] = "???";
  global.stageRoom[i] = 0;
+}
+
+for(var i = 0; i < 100; i++)
+{
+ global.energy[i] = false;
+ global.saveEnergy[i] = false;
 }
 
 scrInitializeStages();

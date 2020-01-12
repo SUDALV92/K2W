@@ -50,8 +50,57 @@ image_alpha=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha&gt;=1{image_xscale=objKamiliaNext.hp/objKamiliaNext.fullhp;
-if objKamiliaNext.hp&lt;=0{instance_destroy(); with(objKamiliaNext){instance_destroy();}}}
+            <string>if(objKamiliaNext.timeline_index != -1 &amp;&amp; image_alpha &lt; 1)
+{
+ image_alpha += 0.05;
+}
+if image_alpha&gt;=1{image_xscale=objKamiliaNext.hp/objKamiliaNext.fullhp;
+if objKamiliaNext.hp&lt;=0
+{
+ instance_destroy(); 
+ background_vspeed[0] = -10;
+ with(objKamiliaNext)
+ {
+    death = true;
+    i = 0;
+    audio_sound_gain(global.currentMusic,0,2000);
+    with(objEyeTanTypeB)
+    {
+     ASD = 1;
+    }
+    with(objKamiliaPhase4Laser)
+    {
+     destroying = true;
+     if(mode == 6)
+      mode = 0;
+    }
+    A=0;
+     for(var i = 50; i &lt; 55; i++)
+     {
+         if(!global.energy[i])
+         {
+          energy = instance_create(192,208,objEnergy);
+          energy.energyID = i;
+          energy.direction = random(360);
+          energy.speed = 6;
+          energy.friction = 0.2;
+          energy.alarm[0] = 20;
+         }
+     }
+     for(var i = 55; i &lt; 60; i++)
+     {
+         if(!global.energy[i])
+         {
+          energy = instance_create(604,208,objEnergy);
+          energy.energyID = i;
+          energy.direction = random(360);
+          energy.speed = 6;
+          energy.friction = 0.2;
+          energy.alarm[0] = 20;
+         }
+     }
+ } 
+}}
 </string>
           </argument>
         </arguments>

@@ -74,6 +74,11 @@ if (savePosition)
         global.saveBossRush[i] = global.bossRush[i];
         global.saveBossRushRerun[i] = global.bossRushRerun[i];
     }
+    
+    for(var i = 0; i < 100; i++)
+    {
+        global.saveEnergy[i] = global.energy[i];
+    }
         
     global.saveGameClear = global.gameClear;
     global.saveExtra = global.extra;
@@ -127,7 +132,10 @@ for (var i = 0; i < 5; i++)
     ds_map_add(saveMap,"saveBossRushRerun["+string(i)+"]",global.saveBossRushRerun[i]);
 }
 
-
+for(var i = 0; i < 100; i++)
+{
+    ds_map_add(saveMap,"energy["+string(i)+"]",global.saveEnergy[i]);
+}
 
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 ds_map_add(saveMap,"saveExtra",global.saveExtra);

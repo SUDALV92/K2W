@@ -87,7 +87,6 @@
     <instance objName="objBlock" x="736" y="1184" name="inst_9D87E1BC" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="0" name="inst_922D15D6" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objKtgFloatingText" x="416" y="768" name="inst_045AB17D" locked="0" code="s=&quot;There is nothing over here.#Turn Back&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExKTGCamera" x="-96" y="832" name="inst_70C41A2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

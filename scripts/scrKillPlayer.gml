@@ -56,12 +56,7 @@ if (instance_exists(objPlayer) && !global.godMode)
             instance_destroy();
             }
         }
-        
-        with(objExBoss3_Gradius)
-        {
-         instance_destroy();
-        }
-        
+                
         instance_create(0,0,objGameOver);
         
         global.death += 1; //increment deaths

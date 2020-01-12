@@ -2452,6 +2452,19 @@ objGeezerPlatform.sprite_index=sprGeezerGhost1;
 
 audio_play_sound(global.sndExplosion2,0,0);
 audio_stop_sound(global.sndTVstatic);
+
+for(var i = 15; i &lt; 20; i++)
+{
+ if(!global.energy[i])
+ {
+  energy = instance_create(x,y,objEnergy);
+  energy.energyID = i;
+  energy.direction = random(360);
+  energy.speed = 6;
+  energy.friction = 0.2;
+  energy.alarm[0] = 20;
+ }
+}
 </string>
           </argument>
         </arguments>
@@ -2558,6 +2571,7 @@ abc.a=3;
           <argument>
             <kind>1</kind>
             <string>instance_create(400,440,objClearMessage);
+
 </string>
           </argument>
         </arguments>

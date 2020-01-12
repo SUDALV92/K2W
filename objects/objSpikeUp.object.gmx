@@ -29,7 +29,6 @@
 switch(room)
 {
     case rIntro2: image_alpha = 0.5; break;
-    case rExBoss1:
     case rBoss6Crimson: sprite_index=sprCrimSpikeUp; break;
     
     default: image_index=irandom(11); break;

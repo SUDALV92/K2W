@@ -56,27 +56,6 @@
     <instance objName="objBlock" x="-32" y="0" name="inst_6B135BA2" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="0" name="inst_C66D0279" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="32" name="inst_73ED8547" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="272" name="inst_861D48E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="304" name="inst_B440084B" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="336" name="inst_BDFA1DEC" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="368" name="inst_642A12BD" locked="0" code="image_index = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="400" name="inst_C24B87E9" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="432" name="inst_D15FD077" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="464" name="inst_D8268389" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraEscapeStarter" x="0" y="-64" name="inst_BA598C64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="496" name="inst_19C21213" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="528" name="inst_2AF5F918" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="0" y="560" name="inst_B4D0BA17" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="272" name="inst_E7943EC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="304" name="inst_1B1FFD4F" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="336" name="inst_53703EB3" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="368" name="inst_3534B696" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="400" name="inst_514239C8" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="432" name="inst_E4AFCC81" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="464" name="inst_365FBA42" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="496" name="inst_A907FBF0" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="528" name="inst_3E7EA6BF" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExEntranceBlock" x="768" y="560" name="inst_3EF7F61A" locked="0" code="image_index = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="571" name="inst_2969C310" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="-32" name="inst_F5ED728B" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="-64" y="0" name="inst_A81D97B4" locked="0" code="" scaleX="2" scaleY="19" colour="4294967295" rotation="0"/>

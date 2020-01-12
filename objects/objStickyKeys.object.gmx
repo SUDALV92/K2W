@@ -28,6 +28,7 @@
             <string>image_alpha=0;
 alarm[0]=100;
 A=0;
+energyReleased = false;
 </string>
           </argument>
         </arguments>
@@ -106,6 +107,22 @@ depth=0;
           <argument>
             <kind>1</kind>
             <string>if image_alpha&lt;1{image_alpha+=0.2;}
+if(!energyReleased &amp;&amp; y &gt; 500)
+{
+    for(var i = 0; i &lt; 5; i++)
+    {
+     if(!global.energy[i])
+     {
+      energy = instance_create(x,y,objEnergy);
+      energy.energyID = i;
+      energy.direction = random(360);
+      energy.speed = 6;
+      energy.friction = 0.2;
+      energy.alarm[0] = 20;
+     }
+    }
+    energyReleased = true;
+}
 </string>
           </argument>
         </arguments>

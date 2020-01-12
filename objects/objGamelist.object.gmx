@@ -49,7 +49,6 @@
         case rStage6BossRush:
         case rBoss6Phase2:
         case rStage7B:
-        case rExtraStageEntrance:
           image_index = 10; break;
           
         case rBoss1Volcano: image_index = 11; break;
@@ -142,24 +141,6 @@
         case rBoss6Death:
         case rStage7: 
              image_index = 68; break;
-        
-        case rExtraStage1: 
-        case rExtraStage2:
-        case rExtraStage3:
-             image_index = 69; break;
-             
-        case rExStage1:
-        case rExStage2:
-        case rExStage3:             
-        case rExStage4A:
-        case rExStage5:
-        case rExStage6:
-             image_index = 70; break;
-        
-        case rExBoss1:
-        case rExBoss2:
-        case rExBoss3:
-             image_index = 71; break;      
              
         default: instance_destroy(); break;
     }

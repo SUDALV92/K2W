@@ -31,6 +31,225 @@ image_speed=0;
 image_angle=random(360);
 b=choose(-5,5);
 ASD=0;
+laserIndex = 0;
+mode = 1;
+curving = 0;
+len = 0;
+dir = 0;
+i = 0;
+
+//говнокод, но мне лень думать
+position1 = ds_queue_create();
+position2 = ds_queue_create();
+position3 = ds_queue_create();
+position4 = ds_queue_create();
+position5 = ds_queue_create();
+position6 = ds_queue_create();
+position7 = ds_queue_create();
+tail = array_create(7);
+for(var temp = 0; temp &lt; 7; temp++)
+{
+ tail[temp] = noone;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///mode 2
+if(mode == 2)
+{
+    laser = instance_create(x,y,objKamiliaPhase4Laser);
+    laser.sprite_index = sprNueLaser3;
+    laser.image_yscale = 0.5;
+    laser.image_xscale = 3;
+    laser.parent = id;
+    laser.mode = 5;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///mode 3
+if(mode == 3)
+{
+    laser = instance_create(x,y,objKamiliaPhase4Laser);
+    laser.sprite_index = sprNueLaser3;
+    laser.image_angle = image_angle;
+    laser.image_yscale = 0.5;
+    laser.mode = 4;
+    laser.parent = id;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///mode 4
+if(mode == 4)
+{
+ var tempAngle = random(360);
+ repeat(6)
+ {
+  laser = instance_create(x,y,objKamiliaPhase4Laser);
+  laser.image_angle = tempAngle;
+  laser.image_xscale = 25;
+  laser.killer = false;
+  laser.image_alpha = 0.5;
+  laser.i = 40;
+  laser.shootPhase = 1;
+  laser.image_index = laserIndex;
+  laser.mode = 6;
+  if(laserIndex == 0)
+   laser.rotation = 1;
+  else
+   laser.rotation = -1;
+  tempAngle+=360/6;
+ }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///mode 9
+if(mode == 9)
+{
+ if(instance_exists(objPlayer))
+ {
+  direction = point_direction(x,y,objPlayer.x,objPlayer.y);
+ }
+ else
+ {
+  direction = 270;  
+ }
+ gravity_direction = direction;
+ gravity = 0.5;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//пофиг вообще
+if(mode == 7)
+{
+    if(i &gt; 0)
+    {
+     tail[0].x = ds_queue_dequeue(position1);
+     tail[0].y = ds_queue_dequeue(position1);
+    }
+    if(i &gt; 1)
+    {
+     tail[1].x = ds_queue_dequeue(position2);
+     tail[1].y = ds_queue_dequeue(position2);
+    }
+    if(i &gt; 2)
+    {
+     tail[2].x = ds_queue_dequeue(position3);
+     tail[2].y = ds_queue_dequeue(position3);
+    }
+    if(i &gt; 3)
+    {
+     tail[3].x = ds_queue_dequeue(position4);
+     tail[3].y = ds_queue_dequeue(position4);
+    }
+    if(i &gt; 4)
+    {
+     tail[4].x = ds_queue_dequeue(position5);
+     tail[4].y = ds_queue_dequeue(position5);
+    }
+    if(i &gt; 5)
+    {
+     tail[5].x = ds_queue_dequeue(position6);
+     tail[5].y = ds_queue_dequeue(position6);
+    }
+    if(i &gt; 6)
+    {
+     tail[6].x = ds_queue_dequeue(position7);
+     tail[6].y = ds_queue_dequeue(position7);
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -53,9 +272,100 @@ ASD=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_angle+=b;
+            <string>switch(mode)
+{
+ case 2:
+  if(speed &gt; 3)
+   image_angle+=b;
+  break;
+ case 4:
+  break;
+ default:
+  image_angle+=b;
+}
+if(mode == 5)
+{
+ if(speed &lt; 1 &amp;&amp; ASD == 0)
+ {
+  var rngAngle = random(360);
+  repeat(6)
+  {
+   b1=instance_create(x,y,objEyeTanTypeB);
+   b1.image_xscale = 0.25;
+   b1.image_yscale = 0.25;
+   b1.image_index=image_index;
+   b1.direction = rngAngle;
+   b1.x+=lengthdir_x(5,rngAngle);
+   b1.y+=lengthdir_y(5,rngAngle);
+   b1.gravity_direction = rngAngle;
+   b1.gravity = 0.1;
+   rngAngle+=360/6;
+  }
+  instance_destroy();
+ }
+}
+if(mode == 6)
+{
+ speed+=0.1;
+ if(image_index == 0)
+  curving += 0.02;
+ else
+  curving -= 0.02;
+  
+ direction += curving;
+}
+if(mode == 7)
+{
+ //спать хочу 
+ ds_queue_enqueue(position1,x,y);
+ ds_queue_enqueue(position2,x,y);
+ ds_queue_enqueue(position3,x,y);
+ ds_queue_enqueue(position4,x,y);
+ ds_queue_enqueue(position5,x,y);
+ ds_queue_enqueue(position6,x,y);
+ ds_queue_enqueue(position7,x,y);
+
+ scrBounceMoveSolid();
+ i++;
+}
+if(mode == 8)
+{
+ x = xstart + lengthdir_x(len,dir);
+ y = ystart + lengthdir_y(len,dir);
+ if(image_index == 0)
+  dir += 0.6;
+ else
+  dir -= 0.6;
+  
+ len += 3;
+}
+if(mode == 9)
+{
+ if(y &gt;= 488 &amp;&amp; ASD == 0)
+ {
+  repeat(2)
+  {
+   b1 = instance_create(x,y,objEyeTanTypeB);
+   b1.gravity = 0.2;
+   b1.direction = irandom_range(60,120);
+   b1.speed = random_range(5,10);
+   b1.image_index = image_index;
+  }
+  instance_destroy();
+ }
+}
+ 
 if ASD=1{image_alpha-=0.1;}
 if image_alpha&lt;0{instance_destroy();}
+switch(mode)
+{
+ case 8:
+  if(x &lt; -100 || x &gt; 900 || y &lt; -100 || y &gt; 708)
+   instance_destroy();
+ default:
+  if(x &lt; 0 || x &gt; 800 || y &lt; 0 || y &gt; 608)
+   instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -78,7 +388,7 @@ if image_alpha&lt;0{instance_destroy();}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha=1
+            <string>if image_alpha&gt;=1
 {
     with(objPlayer)
     {
@@ -90,20 +400,34 @@ if image_alpha&lt;0{instance_destroy();}
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///mode 7
+var n = 0;
+repeat(7)
+{
+ tail[n] = instance_create(x,y,objEyeTanTypeB);
+ tail[n].image_index = image_index;
+ n++;
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="8" enumb="0">

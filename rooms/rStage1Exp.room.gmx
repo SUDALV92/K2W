@@ -156,7 +156,6 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objExpTrap1" x="640" y="704" name="inst_BA4E91A1" locked="0" code="trap = 8;&#xA;sprite_index = sprSpikeUp;&#xA;if(global.tempTrigger[0])&#xA;    instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="0" name="inst_850D2872" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="0" name="inst_31EEB09D" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraItem" x="64" y="448" name="inst_DFA9CA6C" locked="0" code="itemID = 2;&#xA;image_index = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="64" y="672" name="inst_85C2EEED" locked="0" code="leaveRoom = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="32" y="0" name="inst_503D4E85" locked="0" code="" scaleX="23" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExpTrap2" x="640" y="480" name="inst_8318082A" locked="0" code="sprite_index = sprBlock1DHM;&#xA;trap = 9;&#xA;if(!global.extra)&#xA;    instance_destroy();&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

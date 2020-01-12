@@ -8,7 +8,7 @@
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
+  <colour>16777215</colour>
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
@@ -31,9 +31,9 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="-1" name="&lt;undefined&gt;" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="background69" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgBoss6BGrid" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,8 +51,32 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objEnding" x="0" y="0" name="inst_A4A5D4E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPictures" x="350" y="80" name="inst_82181830" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="208" y="416" name="inst_1131EBE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="304" y="416" name="inst_149CA21A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="336" y="416" name="inst_22ADE7C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="368" y="416" name="inst_A7E53B8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="400" y="416" name="inst_138EB855" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="432" y="416" name="inst_DAB1F6CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="464" y="416" name="inst_36EED382" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="496" y="416" name="inst_AD7A5102" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="528" y="416" name="inst_E43F6A7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj6BBlock" x="560" y="416" name="inst_10BCDC0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objESa1" x="352" y="352" name="inst_AEF83DEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMTrap5" x="224" y="272" name="inst_C8C412D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="50"/>
+    <instance objName="objMTrap5" x="272" y="400" name="inst_623106F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="70"/>
+    <instance objName="objSpikeUp" x="208" y="288" name="inst_AA025CDD" locked="0" code="image_speed = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="10"/>
+    <instance objName="objSpikeUp" x="272" y="384" name="inst_189EC4EF" locked="0" code="image_speed = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="200"/>
+    <instance objName="objMTrap5" x="288" y="304" name="inst_DF044D10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="300"/>
+    <instance objName="objEnding" x="-32" y="-32" name="inst_882B059A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objESa2" x="128" y="448" name="inst_C07865D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objESa3" x="176" y="432" name="inst_900F30C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="10"/>
+    <instance objName="objESa3" x="192" y="432" name="inst_8E84A95E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="40"/>
+    <instance objName="objESa3" x="160" y="432" name="inst_5CA96361" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="60"/>
+    <instance objName="objEndingHole" x="400" y="304" name="inst_2805AFCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWhite" x="0" y="0" name="inst_C033CA57" locked="0" code="" scaleX="25" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objWhite" x="0" y="128" name="inst_B0CF3CCF" locked="0" code="" scaleX="5" scaleY="15" colour="4294967295" rotation="0"/>
+    <instance objName="objWhite" x="640" y="128" name="inst_26D37577" locked="0" code="" scaleX="5" scaleY="15" colour="4294967295" rotation="0"/>
+    <instance objName="objWhite" x="48" y="480" name="inst_F5350AE1" locked="0" code="" scaleX="19.5" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

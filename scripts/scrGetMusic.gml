@@ -154,32 +154,18 @@ switch (room)                       //determines which song to play
     case rBoss7Phase1:
     case rBoss7Phase2:
         roomSong = global.sndBoss7A; break;
-    case rBoss7Death:
-        roomSong = global.sndDefeated; loop = false; break;
+    case rBoss7Phase4:
+         roomSong = global.sndBoss7B; break;
+    case rEscapeA:
+    case rEscapeB:
+    case rEscapeC:
+         roomSong = global.sndExtra; break;
     case rEnding:
-        roomSong = global.sndEnding; loop = false; break;
-    case rPortal:
-        roomSong = global.sndPortal; break;
-    case rExStage1:
-    case rExStage2:
-    case rExStage3:
-         roomSong = global.sndCollapse1; break;
-    case rExStage4A:
-    case rExStage4B:
-    case rExStage5:
-    case rExStage6:
-         roomSong = global.sndCollapse2; break;
-    case rExBoss1:
-    case rExBoss2:
-    case rExBoss3:
-    case rExBoss4:
-        roomSong = global.sndExtraBoss; break;
-    case rExtraEscapeEntrance:
-    case rExtraStage1:
-    case rExtraStage2:
-    case rExtraStage3:
-    case rExtraStageWrong:
-        roomSong = global.sndExtra; break;
+    case rEnding2:
+    case rEnding3:
+    case rEnding4:
+    case rEnding5:
+        roomSong = global.sndEnding; break;
     default:                        //default option in case the room does not have a song set
         roomSong = -1;
         break;

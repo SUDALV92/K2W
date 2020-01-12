@@ -4,13 +4,15 @@
   <width>800</width>
   <height>608</height>
   <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
-  <colour>0</colour>
+  <colour>83</colour>
   <showcolour>-1</showcolour>
-  <code>objFBBackground.image_alpha=0;</code>
+  <code>background_vspeed[3] = -0.5;
+background_vspeed[0] = -0.5;
+background_alpha[0] = 0.6;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -31,10 +33,10 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="background5" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bgBoss7GRID2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="-1" name="background5" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="-1" name="bgBoss7GRID2" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,9 +53,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objFBBackground" x="400" y="320" name="inst_D09A53C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKamiliaDeath" x="400" y="328" name="inst_324CAB45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLastTimer" x="768" y="592" name="inst_6F2057C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKamiliaNext" x="384" y="304" name="inst_A14226DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="-32" name="inst_29C17AA9" locked="0" code="" scaleX="25" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objFinalshake" x="0" y="80" name="inst_E888DBAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -62,19 +61,22 @@
     <instance objName="objFinalBossBar" x="16" y="40" name="inst_ADA965D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlack" x="0" y="544" name="inst_7A29288E" locked="0" code="" scaleX="25" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="64" name="inst_9E4BCF90" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="0" y="272" name="inst_EB04F91B" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="496" name="inst_6CBF2AAF" locked="0" code="" scaleX="25" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="272" name="inst_7233C764" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="64" name="inst_3F471463" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="32" name="inst_21020384" locked="0" code="" scaleX="27" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDarkEffect" x="0" y="0" name="inst_FC3BA503" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="-32" y="320" name="inst_94E1C1F4" locked="0" code="roomTo = rEscapeA;&#xA;" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="0" y="272" name="inst_472AA2E2" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="0" y="464" name="inst_B6703BAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockBoss7A" x="0" y="368" name="inst_364F5CB0" locked="0" code="sprite_index = sprBlack;&#xA;depth = 1000000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockBoss7A" x="0" y="400" name="inst_D170CB35" locked="0" code="sprite_index = sprBlack;&#xA;depth = 1000000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockBoss7A" x="0" y="432" name="inst_155455AD" locked="0" code="sprite_index = sprBlack;&#xA;depth = 1000000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background119" x="0" y="272" w="32" h="32" xo="0" yo="0" id="10031424" name="inst_3163E512" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background119" x="0" y="304" w="32" h="32" xo="0" yo="0" id="10031425" name="inst_96D17ADE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background119" x="0" y="336" w="32" h="32" xo="0" yo="0" id="10031426" name="inst_77C456AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background119" x="0" y="368" w="32" h="32" xo="0" yo="0" id="10031427" name="inst_979CF42E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background119" x="0" y="400" w="32" h="32" xo="0" yo="0" id="10031428" name="inst_7FF45846" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background119" x="0" y="432" w="32" h="32" xo="0" yo="0" id="10031429" name="inst_6DB08C4C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background119" x="0" y="304" w="32" h="32" xo="0" yo="0" id="10031426" name="inst_77C456AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background119" x="0" y="336" w="32" h="32" xo="0" yo="0" id="10031427" name="inst_979CF42E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background119" x="0" y="464" w="32" h="32" xo="0" yo="0" id="10031430" name="inst_DBAFFCF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background119" x="0" y="496" w="32" h="32" xo="0" yo="0" id="10031431" name="inst_D289320A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background119" x="32" y="496" w="32" h="32" xo="0" yo="0" id="10031432" name="inst_9C299E30" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

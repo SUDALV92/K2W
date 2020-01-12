@@ -37,6 +37,9 @@ hp = 20;
 delay = 0;
 spikeDirection = 1;
 invincible = false;
+spikesUp = false;
+spikeI=0;
+spikesActivated = false;
 </string>
           </argument>
         </arguments>
@@ -71,6 +74,35 @@ invincible = false;
         }
         if(delay &gt; 0)
             delay--;
+            
+        if(i &gt;= 150 &amp;&amp; i % 5 == 0)
+        {
+         if(objPlayer.y &gt; 480 &amp;&amp; !spikesUp)
+         {
+          spikesActivated = true;
+         }
+         if(spikesActivated)
+         {
+            spike = instance_create(392+16*spikeI,496,objBettyTrap2);
+            spike.sprite_index = sprMiniUp;
+            spike.trap = 3;
+            spike.go = true;
+            
+            spike2 = instance_create(392-16*spikeI,496,objBettyTrap2);
+            spike2.sprite_index = sprMiniUp;
+            spike2.trap = 3;
+            spike2.go = true;
+            
+            spikeI++;
+            if(spikeI == 23)
+            {
+             spikesActivated = false;
+             spikesUp = true;
+             spikeI = 0;
+            }
+          
+         }
+        }
         
         if(i % 20 == 0)
         {
@@ -175,6 +207,11 @@ invincible = false;
             with(objLastTimer)
             {
              visible = true;
+            }
+            with(objBettyTrap2)
+            {
+             alarm[1] = 1;
+             alarm[0] = 0;
             }
         }
     }

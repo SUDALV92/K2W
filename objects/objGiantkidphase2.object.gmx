@@ -189,7 +189,19 @@ if delay&gt;0{delay-=1;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x,y,objGiantkidDeath);
+            <string>for(var i = 45; i &lt; 47; i++)
+{
+ if(!global.energy[i])
+ {
+  energy = instance_create(x,y,objEnergy);
+  energy.energyID = i;
+  energy.direction = random(360);
+  energy.speed = 6;
+  energy.friction = 0.2;
+  energy.alarm[0] = 20;
+ }
+}
+instance_create(x,y,objGiantkidDeath);
 instance_create(x,other.y,objGiantkidbloodcre);
 instance_destroy();
 </string>

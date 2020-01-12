@@ -75,7 +75,6 @@
     <instance objName="objBlock" x="7264" y="128" name="inst_947B7239" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7584" y="64" name="inst_8ECEF59A" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7712" y="64" name="inst_D7481770" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraItem" x="7924" y="162" name="inst_214AA7FF" locked="0" code="itemID = 10;&#xA;image_index = 10;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7806" y="576" name="inst_B3D06512" locked="0" code="" scaleX="6.125" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

@@ -52,6 +52,11 @@
 if image_alpha&lt;1 {image_alpha+=0.04;}}
 
 else {if image_alpha&gt;0 {image_alpha-=0.04;}}
+
+if(room == rEscapeA)
+{
+ image_alpha = 1;
+}
 </string>
           </argument>
         </arguments>

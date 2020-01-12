@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="455" name="datafiles">
-    <datafiles number="455" name="Music">
+  <datafiles number="465" name="datafiles">
+    <datafiles number="465" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -603,7 +603,7 @@
       <datafile>
         <name>Boss7B.ogg</name>
         <exists>-1</exists>
-        <size>4557591</size>
+        <size>11160797</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -654,7 +654,7 @@
       <datafile>
         <name>Ending.ogg</name>
         <exists>-1</exists>
-        <size>16400419</size>
+        <size>12771849</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -771,8 +771,8 @@
         <filename>LastWind.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="455" name="SFX">
-      <datafiles number="455" name="Common">
+    <datafiles number="465" name="SFX">
+      <datafiles number="465" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1182,6 +1182,23 @@
           <filename>sndBosshit.ogg</filename>
         </datafile>
         <datafile>
+          <name>sndBosshitlow.ogg</name>
+          <exists>-1</exists>
+          <size>47275</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndBosshitlow.ogg</filename>
+        </datafile>
+        <datafile>
           <name>sndFuckYea.ogg</name>
           <exists>-1</exists>
           <size>8873</size>
@@ -1198,8 +1215,25 @@
           </ConfigOptions>
           <filename>sndFuckYea.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndEnergyCollect.ogg</name>
+          <exists>-1</exists>
+          <size>8953</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndEnergyCollect.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="455" name="Stage">
+      <datafiles number="465" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1524,8 +1558,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="455" name="Boss">
-        <datafiles number="455" name="Solgryn">
+      <datafiles number="465" name="Boss">
+        <datafiles number="465" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -2955,6 +2989,74 @@
           </ConfigOptions>
           <filename>sndLaserBeam.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndReaper.ogg</name>
+          <exists>-1</exists>
+          <size>127964</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndReaper.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndBladeExpand.ogg</name>
+          <exists>-1</exists>
+          <size>26841</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndBladeExpand.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndTanmakLow.ogg</name>
+          <exists>-1</exists>
+          <size>31142</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndTanmakLow.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndContraExplosion.ogg</name>
+          <exists>-1</exists>
+          <size>26779</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndContraExplosion.ogg</filename>
+        </datafile>
       </datafiles>
     </datafiles>
   </datafiles>
@@ -3062,6 +3164,13 @@
       <sprites name="Boss7">
         <sprite>sprites\sprBlock7</sprite>
         <sprite>sprites\sprPlatform7</sprite>
+        <sprite>sprites\sprNueLaser2</sprite>
+        <sprite>sprites\sprNueLaser3</sprite>
+      </sprites>
+      <sprites name="Ending">
+        <sprite>sprites\sprEndingBed</sprite>
+        <sprite>sprites\sprKidHouseNight</sprite>
+        <sprite>sprites\sprEndingHole</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3738,33 +3847,6 @@
       <sprite>sprites\sprCrazySpikeBold</sprite>
       <sprite>sprites\sprJirachistarBold</sprite>
     </sprites>
-    <sprites name="Ending">
-      <sprite>sprites\sprRemakeArt</sprite>
-      <sprite>sprites\sprPictures1</sprite>
-      <sprite>sprites\sprEndinglist1</sprite>
-      <sprite>sprites\sprEndinglist2</sprite>
-      <sprite>sprites\sprEndinglist3</sprite>
-      <sprite>sprites\sprEndinglist4</sprite>
-      <sprite>sprites\sprEndinglist5</sprite>
-      <sprite>sprites\sprEndinglist6</sprite>
-      <sprite>sprites\sprEndinglist8</sprite>
-      <sprite>sprites\sprEndinglist9</sprite>
-      <sprite>sprites\sprEndingm1</sprite>
-      <sprite>sprites\sprEndingm2</sprite>
-      <sprite>sprites\sprEndingm3</sprite>
-      <sprite>sprites\sprEndingm4</sprite>
-      <sprite>sprites\sprEndingm5</sprite>
-      <sprite>sprites\sprEndingm6</sprite>
-      <sprite>sprites\sprEndingm7</sprite>
-      <sprite>sprites\sprEndingm8</sprite>
-      <sprite>sprites\sprEndingm10</sprite>
-      <sprite>sprites\sprEndingm11</sprite>
-      <sprite>sprites\sprEndingm12</sprite>
-      <sprite>sprites\sprEndingm13</sprite>
-      <sprite>sprites\sprEndingm14</sprite>
-      <sprite>sprites\sprEndlinglist7</sprite>
-      <sprite>sprites\sprRemakeStuff</sprite>
-    </sprites>
     <sprites name="Extra">
       <sprite>sprites\sprChaseTiles</sprite>
       <sprite>sprites\sprWhiteCircle</sprite>
@@ -3988,6 +4070,10 @@
       </backgrounds>
       <backgrounds name="LastBoss">
         <background>background\bgLastTileset</background>
+        <background>background\bgBoss7GRID2</background>
+      </backgrounds>
+      <backgrounds name="Ending">
+        <background>background\bgNight</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -4092,6 +4178,7 @@
     <font>fonts\fDefault5</font>
     <font>fonts\fDefault8</font>
     <font>fonts\fGeezer</font>
+    <font>fonts\fJoystix5</font>
     <font>fonts\fJoystix8</font>
     <font>fonts\fJoystix10</font>
     <font>fonts\fJoystix30</font>
@@ -5198,36 +5285,34 @@
       <object>objects\objStage5Allstar</object>
       <object>objects\objKamiliaSpike</object>
       <object>objects\objKamiliaMoon</object>
+      <object>objects\objKamiliaPhase4Laser</object>
     </objects>
     <objects name="Ending">
       <object>objects\objEnding</object>
-      <object>objects\objEndingg</object>
-      <object>objects\objEndinglist1</object>
-      <object>objects\objEndinglist2</object>
-      <object>objects\objEndinglist3</object>
-      <object>objects\objEndinglist4</object>
-      <object>objects\objEndinglist5</object>
-      <object>objects\objEndinglist6</object>
-      <object>objects\objEndinglist7</object>
-      <object>objects\objEndinglist8</object>
-      <object>objects\objEndinglist9</object>
-      <object>objects\objEndingm1</object>
-      <object>objects\objEndingm2</object>
-      <object>objects\objEndingm3</object>
-      <object>objects\objEndingm4</object>
-      <object>objects\objEndingm5</object>
-      <object>objects\objEndingm6</object>
-      <object>objects\objEndingm7</object>
-      <object>objects\objEndingm8</object>
-      <object>objects\objEndingm9</object>
-      <object>objects\objEndingm10</object>
-      <object>objects\objEndingm11</object>
-      <object>objects\objEndingm12</object>
-      <object>objects\objEndingm13</object>
-      <object>objects\objEndingm14</object>
-      <object>objects\objPictures</object>
+      <object>objects\objEndingHole</object>
+      <object>objects\objWhite</object>
       <object>objects\objEndingText</object>
-      <object>objects\objRemakeStuff</object>
+      <objects name="EndingSceneA">
+        <object>objects\objESa1</object>
+        <object>objects\objESa2</object>
+        <object>objects\objESa3</object>
+      </objects>
+      <objects name="EndingSceneB">
+        <object>objects\objESb1</object>
+        <object>objects\objESb2</object>
+      </objects>
+      <objects name="EndingSceneC">
+        <object>objects\objESc2</object>
+      </objects>
+      <objects name="EndingSceneD">
+        <object>objects\objESd1</object>
+        <object>objects\objESd2</object>
+      </objects>
+      <objects name="EndingSceneE">
+        <object>objects\objESe1</object>
+        <object>objects\objESe2</object>
+        <object>objects\objESe3</object>
+      </objects>
     </objects>
     <objects name="Portal">
       <object>objects\objPtmess1</object>
@@ -5249,140 +5334,15 @@
       <object>objects\objSegmentTime</object>
     </objects>
     <objects name="Extra">
-      <objects name="ExtraBoss">
-        <object>objects\objExBoss1Red</object>
-        <object>objects\objExBoss1Yellow</object>
-        <object>objects\objExBoss1_Crimson</object>
-        <object>objects\objExtraBossFadeOut</object>
-        <object>objects\objExtraBossFadeIn</object>
-        <object>objects\objExBoss1_Blackhole</object>
-        <object>objects\objExBoss1_Flame</object>
-        <object>objects\objExBoss1_Flandre</object>
-        <object>objects\objExBoss1_FlandreBullet</object>
-        <object>objects\objExBoss1_RoomChanger</object>
-        <object>objects\objExBoss1_GMan</object>
-        <object>objects\objExBoss1_Luka</object>
-        <object>objects\objExBoss1_LukaFire1</object>
-        <object>objects\objExBoss1_LukaFire2</object>
-        <object>objects\objExBoss1_Miku</object>
-        <object>objects\objExBoss1_Pochi</object>
-        <object>objects\objExBoss1_PochiBullet</object>
-        <object>objects\objExBoss1_RedCherry</object>
-        <object>objects\objExBoss1_RedCherryE</object>
-        <object>objects\objExBoss1_Room</object>
-        <object>objects\objExBoss2_BlueCherry</object>
-        <object>objects\objExBoss2_Crystal</object>
-        <object>objects\objExBoss2_CrystalSideBlock</object>
-        <object>objects\objExBoss2_DestGun1</object>
-        <object>objects\objExBoss2_DestGun2</object>
-        <object>objects\objExBoss2_DestGun3</object>
-        <object>objects\objExBoss2_DestGun4</object>
-        <object>objects\objExBoss2_Flame</object>
-        <object>objects\objExBoss2_FlameWall</object>
-        <object>objects\objExBoss2_Geezer</object>
-        <object>objects\objExBoss2_GeezerFace</object>
-        <object>objects\objExBoss2_GeezerFaceIcon</object>
-        <object>objects\objExBoss2_Goomba</object>
-        <object>objects\objExBoss2_Lava</object>
-        <object>objects\objExBoss2_MetroidEnemy</object>
-        <object>objects\objExBoss2_MetroidEnemy2</object>
-        <object>objects\objExBoss2_PinkCherry</object>
-        <object>objects\objExBoss2_RedCherry</object>
-        <object>objects\objExBoss2_YellowCherry</object>
-        <object>objects\objExBoss3_BounceBall</object>
-        <object>objects\objExBoss3_Fader</object>
-        <object>objects\objExBoss3_Gradius</object>
-        <object>objects\objExBoss3_HPBar</object>
-        <object>objects\objExBoss3_Koishi</object>
-        <object>objects\objExBoss3_KoishiBullet1</object>
-        <object>objects\objExBoss3_KoishiBullet2</object>
-        <object>objects\objExBoss4</object>
-        <object>objects\objExBoss3_Nue</object>
-        <object>objects\objExBoss3_NueBall1</object>
-        <object>objects\objExBoss3_NueBall2</object>
-        <object>objects\objExBoss3_Sanae</object>
-        <object>objects\objExBoss3_SanaeBullet</object>
-        <object>objects\objExBoss3_SolgrynBall1</object>
-        <object>objects\objExBoss3_SolgrynBall1_Tail</object>
-        <object>objects\objExBoss3_SolgrynBullet</object>
-        <object>objects\objExBoss3_SolgrynSpawner</object>
-        <object>objects\objExBoss3_UFOGreen</object>
-        <object>objects\objExBoss3_UFOGreenBullet</object>
-        <object>objects\objExBoss3_UFOGreenLaser</object>
-        <object>objects\objExBoss3_UFOGreenLaserFade</object>
-        <object>objects\objExBoss3_UFOGreenLaserSide</object>
-        <object>objects\objExBoss3_UFORainbow</object>
-        <object>objects\objExBoss3_UFORainbowBullet</object>
-        <object>objects\objFlash</object>
-      </objects>
-      <objects name="ExtraStage">
-        <object>objects\objExtraRoomChanger</object>
-        <object>objects\objExStageController</object>
-        <object>objects\objExStageController2</object>
-        <object>objects\objExStageController3</object>
-        <object>objects\objExStageController4</object>
-        <object>objects\objExStageController5</object>
-        <object>objects\objExStageController6</object>
-        <object>objects\objExStageController7</object>
-        <object>objects\objExStage2Up</object>
-        <object>objects\objExStage2Down</object>
-        <object>objects\objExStage2Left</object>
-        <object>objects\objExStage2Right</object>
-        <object>objects\objExStage2Block</object>
-        <object>objects\objExTributeWarp</object>
-        <object>objects\objExExperienceSwitch</object>
-        <object>objects\objExStage3Block</object>
-        <object>objects\objExStage3Up</object>
-        <object>objects\objExStage3Left</object>
-        <object>objects\objExGalaxyBlock</object>
-        <object>objects\objExHTBlockVertical</object>
-        <object>objects\objExHTBlockHorizontal</object>
-        <object>objects\objExHTBlock</object>
-        <object>objects\objExStage4Up</object>
-        <object>objects\objExStage4Down</object>
-        <object>objects\objExStage4Left</object>
-        <object>objects\objExStage4Right</object>
-        <object>objects\objExStage5Block</object>
-        <object>objects\objExStage5Up</object>
-        <object>objects\objExStage5Down</object>
-        <object>objects\objExStage5Left</object>
-        <object>objects\objExStage5Right</object>
-        <object>objects\objExStage6Block</object>
-        <object>objects\objExKtgPlatform</object>
-        <object>objects\objExStage6Up</object>
-        <object>objects\objExStage6Down</object>
-        <object>objects\objExStage6Left</object>
-        <object>objects\objExStage6Right</object>
-        <object>objects\objExTransition</object>
-        <object>objects\objExTransitionOld</object>
-      </objects>
-      <object>objects\objExtraItem</object>
-      <object>objects\objExtraItemE</object>
+      <object>objects\objExTransition</object>
       <object>objects\objExtraTimer</object>
       <object>objects\objExtraStarter</object>
-      <object>objects\objExtraItemSpawner</object>
-      <object>objects\objExtraStageStarter</object>
       <object>objects\objFinalSaveCrashed</object>
-      <object>objects\objExEscapeTrap2</object>
-      <object>objects\objExEscapeTrap3</object>
-      <object>objects\objExEscapeTrap4</object>
-      <object>objects\objCheckpoint</object>
       <object>objects\objExtraFadeIn</object>
       <object>objects\objExtraEnding</object>
-      <object>objects\objExtraBlocksSpawner</object>
-      <object>objects\objExtraEndingBlockThrower</object>
       <object>objects\objExtraShake</object>
-      <object>objects\objTile</object>
       <object>objects\objExtraExplosion</object>
-      <object>objects\objExtraWarp</object>
-      <object>objects\objElectricity</object>
-      <object>objects\objExEntranceBlock</object>
-      <object>objects\objExtraEscapeStarter</object>
-      <object>objects\objBlackFadeout</object>
-      <object>objects\objExtraLightning</object>
-      <object>objects\objExtraWrongWay</object>
-      <object>objects\objExtraCloud</object>
-      <object>objects\objExKTGCamera</object>
+      <object>objects\objEnergy</object>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -5413,13 +5373,14 @@
     <timeline>timelines\stage5Bosstl</timeline>
     <timeline>timelines\CrimsonTl</timeline>
     <timeline>timelines\GravitymanTl</timeline>
-    <timeline>timelines\bosslastrush</timeline>
-    <timeline>timelines\bossrush1</timeline>
-    <timeline>timelines\bossrush2</timeline>
-    <timeline>timelines\bossrush3</timeline>
-    <timeline>timelines\maintl</timeline>
-    <timeline>timelines\timelinelsb</timeline>
-    <timeline>timelines\endingtl</timeline>
+    <timelines name="FinalBoss">
+      <timeline>timelines\bossrush1</timeline>
+      <timeline>timelines\bossrush2</timeline>
+      <timeline>timelines\bossrush3</timeline>
+      <timeline>timelines\maintl</timeline>
+      <timeline>timelines\timelinelsb</timeline>
+      <timeline>timelines\bosslastrush</timeline>
+    </timelines>
   </timelines>
   <rooms name="rooms">
     <rooms name="init">
@@ -5553,22 +5514,21 @@
       <room>rooms\rStage7B</room>
       <room>rooms\rBoss7Phase1</room>
       <room>rooms\rBoss7Phase2</room>
+      <room>rooms\rBoss7Phase4Pre</room>
       <room>rooms\rBoss7Phase4</room>
-      <room>rooms\rBoss7Death</room>
+      <room>rooms\rEscapeA</room>
+      <room>rooms\rEscapeB</room>
+      <room>rooms\rEscapeC</room>
     </rooms>
-    <room>rooms\rEnding</room>
-    <room>rooms\rPortal</room>
+    <rooms name="Ending">
+      <room>rooms\rEnding</room>
+      <room>rooms\rEnding2</room>
+      <room>rooms\rEnding3</room>
+      <room>rooms\rEnding4</room>
+      <room>rooms\rEnding5</room>
+      <room>rooms\rEndingTemplate</room>
+    </rooms>
     <rooms name="Extra">
-      <rooms name="ExtraStage">
-        <room>rooms\rExStage1</room>
-        <room>rooms\rExStage2</room>
-        <room>rooms\rExStage3</room>
-        <room>rooms\rExStage4A</room>
-        <room>rooms\rExStage4B</room>
-        <room>rooms\rExStage5</room>
-        <room>rooms\rExStage6</room>
-        <room>rooms\rExStage7</room>
-      </rooms>
       <room>rooms\rExtraChocko</room>
       <room>rooms\rExtraKTGA</room>
       <room>rooms\rExtraKTGB</room>
@@ -5582,15 +5542,7 @@
       <room>rooms\rExtraKTGK</room>
       <room>rooms\rExtraSymetry</room>
       <room>rooms\rExtraRainbowMiku</room>
-      <room>rooms\rExtraStageEntrance</room>
-      <room>rooms\rExBoss1</room>
-      <room>rooms\rExBoss2</room>
-      <room>rooms\rExBoss3</room>
-      <room>rooms\rExBoss4</room>
       <room>rooms\rExtraEscapeEntrance</room>
-      <room>rooms\rExtraStage1</room>
-      <room>rooms\rExtraStage2</room>
-      <room>rooms\rExtraStage3</room>
       <room>rooms\rExtraEnding</room>
       <room>rooms\rExtraStageWrong</room>
     </rooms>

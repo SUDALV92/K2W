@@ -105,6 +105,12 @@ if (loadFile)
         {
             global.saveEnergy[i] = ds_map_find_value(saveMap,"energy["+string(i)+"]");
         }
+        for(var i = global.stagesTotal; i >= 0; i--)
+        {
+            global.saveStageUnlocked[i] = ds_map_find_value(saveMap,"stageUnlocked["+string(i)+"]");
+        }
+        global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");
+        
         if (is_string(global.saveRoom))   //check if the saved room loaded properly
         {
             if (!room_exists(asset_get_index(global.saveRoom)))  //check if the room index in the save is valid
@@ -185,6 +191,11 @@ for(var i = 0; i < 100; i++)
 {
     global.energy[i] = global.saveEnergy[i];
 }
+for(var i = global.stagesTotal; i >= 0; i--)
+{
+ global.stageUnlocked[i] = global.saveStageUnlocked[i];
+}
+global.autoFire = global.saveAutoFire;
 
 global.gameClear = global.saveGameClear;
 global.extra = global.saveExtra;

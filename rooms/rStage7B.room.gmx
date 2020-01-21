@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -102,7 +102,7 @@
     <instance objName="objLastBlock" x="96" y="160" name="inst_11623F1A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="32" y="160" name="inst_CA70325A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="32" y="128" name="inst_D4E3EA4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objLastBlock" x="160" y="128" name="inst_26C0AEA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objLastBlock" x="192" y="128" name="inst_26C0AEA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="64" y="64" name="inst_A5C9241F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="224" y="192" name="inst_DC9E95CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="224" y="128" name="inst_6C917A57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -218,6 +218,8 @@
     <instance objName="objLastBlock" x="448" y="416" name="inst_185673C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objLastBlock" x="448" y="448" name="inst_22F19686" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="352" name="inst_82CDE11E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="160" y="128" name="inst_4FDE2EF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="688" y="112" name="inst_71CABEC4" locked="0" code="energyID = 92;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLastTileset" x="0" y="480" w="32" h="32" xo="0" yo="0" id="10057124" name="inst_F0060842" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

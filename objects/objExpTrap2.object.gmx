@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>go = false;
+image_speed = 1/2;
 </string>
           </argument>
         </arguments>
@@ -105,6 +106,7 @@ go = false;
 switch(sprite_index)
 {
  case sprBlock1CHM:
+ case sprBlock1BHM:
   draw_sprite(sprBlock1EHM,0,x,y);
   break;
 }

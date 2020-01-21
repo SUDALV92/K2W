@@ -77,7 +77,14 @@
     case rStage6LoveTrap:
      sprite_index = sprBlockBakaA;
      break;
+    case rExtraKTGE:
+     sprite_index = sprBlockS5A;
+     break;
+    case rExtraStageMaze:
+     sprite_index = sprIntroBlockCSingle;
+     break;
 }
+trap = 0;
 </string>
           </argument>
         </arguments>
@@ -102,14 +109,20 @@
             <kind>1</kind>
             <string>if (!visible &amp;&amp; distance_to_object(objPlayer) &lt;= 1)
 {
-    audio_stop_sound(global.sndTrap);
-    audio_play_sound(global.sndTrap,0,false);
+    if(global.sfxDelay[1] &lt;= 0)
+    {
+     audio_play_sound(global.sndTrap,0,false);
+     global.sfxDelay[1] = 1;
+    }
     visible = true;
 }
 if (!visible &amp;&amp; distance_to_object(objPlayerClone) &lt;= 1)
 {
-    audio_stop_sound(global.sndTrap);
-    audio_play_sound(global.sndTrap,0,false);
+    if(global.sfxDelay[1] &lt;= 0)
+    {
+     audio_play_sound(global.sndTrap,0,false);
+     global.sfxDelay[1] = 1;
+    }
     visible = true;
 }
 </string>

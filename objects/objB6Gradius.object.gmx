@@ -242,35 +242,6 @@ if(landing)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objEnergy">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.energy[other.energyID] = true;
-if(global.sfxDelay[2] &lt;= 0)
-{
- audio_play_sound(global.sndEnergyCollect,0,0);
- global.sfxDelay[2] = 1;
-}
-instance_destroy(other);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objPlayerKiller">
       <action>
         <libid>1</libid>
@@ -290,6 +261,45 @@ instance_destroy(other);
             <kind>1</kind>
             <string>if(!global.godMode)
  instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objEnergy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(other.active)
+{
+    if(other.energyID != -1)
+        global.energy[other.energyID] = true;
+        
+    if(global.sfxDelay[2] &lt;= 0)
+    {
+     audio_play_sound(global.sndEnergyCollect,0,0);
+     global.sfxDelay[2] = 1;
+    }
+    instance_destroy(other);
+    with(objWorld)
+    {
+     drawEnergy = true;
+     alarm[3] = 100;
+    }
+}
 </string>
           </argument>
         </arguments>

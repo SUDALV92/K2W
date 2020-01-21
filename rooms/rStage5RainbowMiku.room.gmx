@@ -10,8 +10,8 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code>background_hspeed[1]=-1.5;
-background_vspeed[1]=-1.5;</code>
+  <code>background_vspeed[1] = -0.5;
+background_hspeed[1] = -0.5;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -125,7 +125,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeDown" x="7488" y="32" name="inst_9A4F1E62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="7488" y="96" name="inst_5174C255" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="0" name="inst_A9573D11" locked="0" code="" scaleX="241" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="288" y="224" name="inst_DD47728A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="256" y="192" name="inst_DD47728A" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="224" name="inst_206E69EC" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="224" name="inst_8BC744EE" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="736" y="224" name="inst_09B36C48" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -235,8 +235,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objPlayerStart" x="304" y="192" name="inst_755E975D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3776" y="288" name="inst_573306BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3840" y="224" name="inst_B24C13EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="-32" y="0" name="inst_1FD45BA6" locked="0" code="if(!global.extra)&#xA; instance_destroy();&#xA;smoothTransition = true;&#xA;roomTo = rExtraRainbowMiku;&#xA;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="-32" y="-272" name="inst_74888DE8" locked="0" code="" scaleX="1" scaleY="7.5" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="-32" y="0" name="inst_1FD45BA6" locked="0" code="smoothTransition = true;&#xA;roomTo = rExtraRainbowMiku;" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="-32" y="-32" name="inst_5796D032" locked="0" code="roomTo = rExtraRainbowMiku;&#xA;warpX = 7986;&#xA;warpY = -16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7232" y="128" name="inst_16A423B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7264" y="32" name="inst_E30DDD64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -335,6 +334,11 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objRMTrapRight" x="6304" y="288" name="inst_EBA3B803" locked="0" code="trap = 28;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="2432" y="288" name="inst_E4A41A6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="2432" y="320" name="inst_72E82527" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="32" y="80" name="inst_F0C93D5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="320" y="192" name="inst_097AFCB4" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="288" y="224" name="inst_E40A5410" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="304" y="208" name="inst_20D58595" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="0" y="-32" name="inst_7F8D4283" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="288" y="224" w="32" h="32" xo="0" yo="0" id="10046534" name="inst_95857FBB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -1074,6 +1078,10 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgRukitoTileset" x="3840" y="288" w="32" h="32" xo="0" yo="0" id="10047301" name="inst_AA13A189" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="5216" y="128" w="32" h="32" xo="0" yo="0" id="10047302" name="inst_3ED19CAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="5248" y="128" w="32" h="32" xo="0" yo="0" id="10047303" name="inst_6459F312" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoTileset" x="256" y="192" w="32" h="32" xo="0" yo="0" id="10060608" name="inst_CFBC7381" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoTileset" x="256" y="224" w="32" h="32" xo="0" yo="0" id="10060609" name="inst_2A5CAF7A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoTileset" x="320" y="192" w="32" h="32" xo="0" yo="0" id="10060610" name="inst_B9CEC11A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoTileset" x="320" y="224" w="32" h="32" xo="0" yo="0" id="10060611" name="inst_785B4F70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

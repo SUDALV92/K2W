@@ -803,12 +803,6 @@ A1.a=5;
           <argument>
             <kind>1</kind>
             <string>scrStopMusic(global.currentMusic);
-if(instance_exists(objPlayer))
-{
-    objPlayer.x=400;
-    objPlayer.y=380;
-    //objPlayer.frozen=1;
-}
 </string>
           </argument>
         </arguments>

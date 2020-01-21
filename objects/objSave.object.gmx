@@ -271,6 +271,12 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == grav
         alarm[0] = 30;  //set alarm so the player can save again
         image_index = 1;
         image_speed = 0.017;
+        switch(room)
+        {
+         case rStage7:
+          global.stageUnlocked[72] = true;
+          break;
+        }
         scrSaveGame(true);
     }
     

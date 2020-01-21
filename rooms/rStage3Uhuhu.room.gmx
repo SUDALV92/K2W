@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -175,6 +175,8 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlockFake" x="288" y="384" name="inst_90352EF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="640" y="64" name="inst_7D42A6CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="64" y="544" name="inst_363DC679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="384" y="32" name="inst_0D0901AE" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="240" y="240" name="inst_FA35C5B6" locked="0" code="energyID = 70;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10041169" name="inst_06E29636" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -35,7 +35,7 @@ for(var i = 0; i < 11; i++)
  global.crashPortal[i] = 0;
  global.caution[i] = 0;
  global.checkpoint[i] = 0;
- global.tempTrigger[10] = 0;
+ global.tempTrigger[i] = 0;
 }
 
 for (var i = global.secretItemTotal-1; i >= 0; i--)
@@ -56,13 +56,22 @@ global.saveExtraClear = false;
 //actuals
 global.portalAvailable = true;
 global.finalBossFaded = false;
+global.selectedStage = 0;
+global.autoFire = true;
+global.saveAutoFire = true;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {
- if(i < 75)
+ if(i <= 68)
+ {
   global.stageUnlocked[i] = true;
+  global.saveStageUnlocked[i] = true;
+ }
  else
+ {
   global.stageUnlocked[i] = false;
+  global.saveStageUnlocked[i] = false;
+ }
  global.stageName[i] = "???";
  global.stageRoom[i] = 0;
 }
@@ -134,7 +143,7 @@ global.controllerDelay = -1;    //handles delay between switching between keyboa
 randomize();    //make sure the game starts with a random seed for RNG
 
 global.guyBlocks = 0;
-for (var i = 0; i < 10; i++)
+for (var i = 0; i < 20; i++)
 {
     global.GeezerBlockDestroyed[i] = false;
 }

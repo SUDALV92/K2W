@@ -100,8 +100,7 @@
         case rExtraKTGF:
         case rExtraKTGG:
         case rExtraKTGI:
-        case rExtraKTGJ:
-        case rExtraKTGK:       
+        case rExtraKTGJ:      
           image_index = 43; break;
         case rBoss4Phase1: image_index = 44; break;
 

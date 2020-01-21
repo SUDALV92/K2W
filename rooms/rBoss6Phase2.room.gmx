@@ -1743,6 +1743,8 @@
     <instance objName="objBoss6MOBlock" x="4896" y="528" name="inst_E1D1C9D5" locked="0" code="top = ystart-96;&#xA;bottom = ystart;&#xA;groupSPD = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBoss6MOBlock" x="4896" y="560" name="inst_B6F5C5BA" locked="0" code="top = ystart-96;&#xA;bottom = ystart;&#xA;groupSPD = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBoss6MOBlock" x="4896" y="592" name="inst_F2A7C2A8" locked="0" code="top = ystart-96;&#xA;bottom = ystart;&#xA;groupSPD = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="3968" y="320" name="inst_12795C63" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="3456" y="32" name="inst_B02FFAEA" locked="0" code="energyID = 89;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLifeForceTileset" x="7968" y="480" w="32" h="32" xo="0" yo="0" id="10053361" name="inst_7F61575B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

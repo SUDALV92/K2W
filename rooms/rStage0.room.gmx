@@ -72,6 +72,8 @@
     <instance objName="objMoon" x="1056" y="480" name="inst_F6678FE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="2432" y="96" name="inst_BD62D5FC" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="objSmoothCamera" x="224" y="32" name="inst_CD6118F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="96" y="32" name="inst_7AD7B16A" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="1344" y="448" name="inst_D1E18E5D" locked="0" code="energyID = 60;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgPortalTileset" x="128" y="0" w="32" h="32" xo="0" yo="0" id="10052388" name="inst_8B24183E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

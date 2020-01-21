@@ -89,7 +89,7 @@ background_hspeed[1]+=0.1;</code>
     <instance objName="objBlock" x="160" y="480" name="inst_CDCE349D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="384" name="inst_EC62EC8C" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="160" y="64" name="inst_944BD1F6" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="320" y="32" name="inst_C9BF1CC8" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="320" y="64" name="inst_C9BF1CC8" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="192" y="192" name="inst_1F347F7F" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="192" name="inst_48A1ECCE" locked="0" code="" scaleX="1" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="224" y="448" name="inst_473FD148" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -206,6 +206,9 @@ background_hspeed[1]+=0.1;</code>
     <instance objName="objBlockFake" x="704" y="448" name="inst_3E1223E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="128" y="32" name="inst_5CE44D57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="16" y="512" name="inst_9CDCF64F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="320" y="32" name="inst_71DCB4E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="96" y="128" name="inst_672C1A80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="368" y="432" name="inst_6E1AEB8C" locked="0" code="energyID = 68;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="0" y="448" w="32" h="32" xo="0" yo="0" id="10038887" name="inst_2CD178F5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -331,7 +334,6 @@ background_hspeed[1]+=0.1;</code>
     <tile bgName="bgBlock1AHM" x="192" y="128" w="32" h="32" xo="0" yo="0" id="10039026" name="inst_9FE68B7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBlock1AHM" x="320" y="128" w="32" h="32" xo="0" yo="0" id="10039030" name="inst_A5CCF0C5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBlock1AHM" x="320" y="96" w="32" h="32" xo="0" yo="0" id="10039031" name="inst_DB7DC505" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBlock1AHM" x="320" y="32" w="32" h="32" xo="0" yo="0" id="10039033" name="inst_B09B05DC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBlock1AHM" x="320" y="64" w="32" h="32" xo="0" yo="0" id="10039034" name="inst_40EF7BCA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBlock1AHM" x="288" y="64" w="32" h="32" xo="0" yo="0" id="10039035" name="inst_99DB8860" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBlock1AHM" x="256" y="64" w="32" h="32" xo="0" yo="0" id="10039036" name="inst_61A0784F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

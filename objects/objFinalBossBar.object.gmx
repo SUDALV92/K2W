@@ -75,28 +75,34 @@ if objKamiliaNext.hp&lt;=0
       mode = 0;
     }
     A=0;
-     for(var i = 50; i &lt; 55; i++)
+    var rngAngle = random(360);
+     for(var temp = 50; temp &lt; 55; temp++)
      {
-         if(!global.energy[i])
+         if(!global.energy[temp])
          {
           energy = instance_create(192,208,objEnergy);
-          energy.energyID = i;
-          energy.direction = random(360);
-          energy.speed = 6;
+          energy.energyID = temp;
+          energy.direction = rngAngle;
+          energy.speed = 10;
           energy.friction = 0.2;
           energy.alarm[0] = 20;
+          energy.active = true;
+          rngAngle += 360/5;
          }
      }
-     for(var i = 55; i &lt; 60; i++)
+     rngAngle = random(360);
+     for(var temp = 55; temp &lt; 60; temp++)
      {
-         if(!global.energy[i])
+         if(!global.energy[temp])
          {
           energy = instance_create(604,208,objEnergy);
-          energy.energyID = i;
-          energy.direction = random(360);
-          energy.speed = 6;
+          energy.energyID = temp;
+          energy.direction = rngAngle;
+          energy.speed = 10;
           energy.friction = 0.2;
           energy.alarm[0] = 20;
+          energy.active = true;
+          rngAngle += 360/5;
          }
      }
  } 

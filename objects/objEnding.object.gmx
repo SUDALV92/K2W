@@ -33,6 +33,7 @@ delta = 0;
 i = -200;
 textAlpha = 0;
 textDelta = 0;
+instance_destroy(objPlayer);
 </string>
           </argument>
         </arguments>
@@ -84,6 +85,32 @@ if(i == 600)
   case rEnding4: room_goto(rEnding5); break;
  }
 }
+if(i &gt;= 400 &amp;&amp; room == rEnding5)
+{
+ if(scrButtonCheckPressed(global.jumpButton))
+ {
+  if(image_alpha &lt; 0)
+  { 
+   image_alpha = 0;
+   textAlpha = 1;
+  }
+   
+  delta = 0.01;
+  textDelta = -0.02;
+ }
+ if(image_alpha &gt;= 1)
+ {
+  instance_destroy(objPlayer);
+  global.stageUnlocked[76] = true;
+  room_goto(rHomeBad);
+ }
+}
+if(i &gt;= 1000 &amp;&amp; room == rHomeBad)
+{
+ delta = -0.01;
+ if(image_alpha &lt;= 0)
+  instance_destroy();
+}
 i++;
 </string>
           </argument>
@@ -119,6 +146,16 @@ i++;
  case rEnding5:
   image_alpha = 1;
   i = 0;
+  break;
+ case rHomeBad:
+  image_alpha = 1;
+  textAlpha = 0;
+  i = 1000;
+  with(objEndingHomeController)
+  {
+   alarm[0] = irandom_range(150,220);
+   alarm[1] = irandom_range(150,220);
+  }
   break;
  default: instance_destroy();
 }

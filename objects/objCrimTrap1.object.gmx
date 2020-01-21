@@ -82,8 +82,14 @@ switch(trap)
     case 9: vspeed = -8; break;
     case 10: vspeed = -4; alarm[0] = 8; break;
     case 11: vspeed = -8; alarm[0] = 4; break;
-    case 13: vspeed = -2; break;
+    //case 13: vspeed = -2; break;
     case 14: vspeed = -4; break;
+    case 16: vspeed = -2; break;
+    case 18: vspeed = -2; break;
+    case 19: vspeed = 8; break;
+    case 20: vspeed = -2; break;
+    case 24: vspeed = -2; break;
+    case 26: hspeed = -4; break;
 }
 
 go = false;

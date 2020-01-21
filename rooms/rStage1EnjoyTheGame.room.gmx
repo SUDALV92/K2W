@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -313,6 +313,10 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock1CHM" x="256" y="416" name="inst_124A888E" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1CHM" x="160" y="416" name="inst_D959C57C" locked="0" code="trap = 14;&#xA;" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="81" y="567" name="inst_8DB55314" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="736" y="240" name="inst_C2CC1EF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="752" y="80" name="inst_681426B6" locked="0" code="energyID = 61;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="704" y="96" name="inst_89A23CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="704" y="32" name="inst_95954F40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10035242" name="inst_1D72E590" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -269,17 +269,20 @@ alarm[1]=120;
 if !instance_exists(objCrimsonA) and !instance_exists(objCrimsonB)
 and!instance_exists(objCrimsonC) and !instance_exists(objCrimsonD)
 {
+    var rngAngle = random(360);
     for(var i = 25; i &lt; 30; i++)
     {
       if(!global.energy[i])
       {
           energy = instance_create(400,304,objEnergy);
           energy.energyID = i;
-          energy.direction = random(360);
+          energy.direction = rngAngle;
           energy.persistent = true;
-          energy.speed = 6;
+          energy.speed = 10;
           energy.friction = 0.2;
           energy.alarm[0] = 20;
+          energy.active = true;
+          rngAngle += 360/5;
       }
     }
     instance_destroy();

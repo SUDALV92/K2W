@@ -36,7 +36,7 @@ mainText2Length = string_length(mainText2);
 mainText2StartPos = 1;
 mainText2ScrollDelay = 50;
 
-mainText3 = "Touch to use the portal system";
+mainText3 = "";
 mainText3Length = string_length(mainText3);
 mainText3StartPos = 1;
 mainText3ScrollDelay = 50;
@@ -44,13 +44,18 @@ mainText3ScrollDelay = 50;
 mainTextScrollSpd = 8;
 alarm[0] = mainTextScrollSpd;
 
+binData = "";
+repeat(50)
+{
+ binData += string(choose(0,1));
+}
+binI=0;
+
 energy = 0;
 event_user(0);
 
-
-selectedStage = 0;
-upDelay = 0;
-downDelay = 0;
+upDelay = 0; //actually down delay
+downDelay = 0; //actually up delay Kappa
 upDelayDecreaser = 0;
 downDelayDecreaser = 0;
 
@@ -143,7 +148,7 @@ alarm[0] = mainTextScrollSpd;
   mainTextStartPos = 1;
  }
  
- if(scrButtonCheck(global.upButton))
+ if(scrButtonCheck(global.downButton))
  {
   if(upDelay == 0)
   {
@@ -152,8 +157,8 @@ alarm[0] = mainTextScrollSpd;
    downDelay = 0;
    downDelayDecreaser = 0;
    
-   if(selectedStage &gt; 0)
-    selectedStage--;    
+   if(global.selectedStage &gt; 0)
+    global.selectedStage--;    
   }
   if(upDelay &gt; 0)
    upDelay--;
@@ -165,7 +170,7 @@ alarm[0] = mainTextScrollSpd;
   upDelay = 0;
   upDelayDecreaser = 0;
  }
- if(scrButtonCheck(global.downButton))
+ if(scrButtonCheck(global.upButton))
  {
   if(downDelay == 0)
   {
@@ -173,9 +178,18 @@ alarm[0] = mainTextScrollSpd;
    downDelayDecreaser += 0.2;
    upDelay = 0;
    upDelayDecreaser = 0;
+   var maxStage = 0;
+    for(var i = 0; i &lt; global.stagesTotal; i++)
+    {
+     if(!global.stageUnlocked[i])
+     {
+      maxStage = i;
+      break;
+     }
+    }
    
-   if(selectedStage &lt; global.stagesTotal)
-    selectedStage++;
+   if(global.selectedStage &lt; maxStage)
+    global.selectedStage++;
   }
   if(downDelay &gt; 0)
    downDelay--;
@@ -189,15 +203,23 @@ alarm[0] = mainTextScrollSpd;
  }
  
  
- if(global.stageUnlocked[selectedStage])
+ if(global.stageUnlocked[global.selectedStage])
  {
-  stageName = global.stageName[selectedStage];
+  stageName = global.stageName[global.selectedStage];
   temp = "UNLOCKED";  
  }
  else
  {
-  stageName = "???";
-  temp = "More power required";
+  switch(global.selectedStage)
+  {
+   case 77: 
+    stageName = "Extra stage";
+    temp = "95% energy required";
+    break;
+   default:
+    stageName = "???";
+    temp = "LOCKED";
+  }
  }
  if(mainText3 != temp)
  {
@@ -216,15 +238,15 @@ alarm[0] = mainTextScrollSpd;
   mainText2StartPos = 1;
  }
 
- if(scrButtonCheck(global.shootButton) &amp;&amp; global.stageUnlocked[selectedStage])
+ if(scrButtonCheck(global.shootButton) &amp;&amp; global.stageUnlocked[global.selectedStage])
  {
   instance_destroy(objPlayer);
-  room_goto(global.stageRoom[selectedStage]);
+  room_goto(global.stageRoom[global.selectedStage]);
  }
 }
 else
 {
- temp = "Welcome to Boss Rush";
+ temp = "WARP ENGINE";
  if(mainText != temp)
  {
   mainText = temp;
@@ -246,7 +268,7 @@ else
   mainText2StartPos = 1;
  }
  
- temp = "Touch to use the portal system";
+ temp = "Touch to use";
  if(mainText3 != temp)
  {
   mainText3 = temp;
@@ -256,49 +278,10 @@ else
  }
  //event_user(0);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-//mainTextLength = string_length(mainText);
-if(mainTextLength &gt; mainDisplayWidth)
-{
- mainText += "     ";
- mainTextLength = string_length(mainText);
-} 
-
-//mainText2Length = string_length(mainText2);
-if(mainText2Length &gt; mainDisplayWidth)
-{
- mainText2 += "     ";
- mainText2Length = string_length(mainText2);
-}
-
-//mainText3Length = string_length(mainText3);
-if(mainText3Length &gt; mainDisplayWidth)
-{
- mainText3 += "     ";
- mainText3Length = string_length(mainText3);
-}*/
+if(binI mod 10 == 0)
+  binData += string(choose(0,1));
+  
+binI++;
 </string>
           </argument>
         </arguments>
@@ -322,7 +305,7 @@ if(mainText3Length &gt; mainDisplayWidth)
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_set_font(fJoystix10);
+draw_set_font(fJoystix8);
 draw_set_valign(fa_top);
 draw_set_halign(fa_center);
 draw_set_color(c_green);
@@ -383,7 +366,8 @@ else
 {
     currentString = mainText2;
 }
-draw_text(x+118,y+24,currentString);
+draw_set_halign(fa_left);
+draw_text(x+15,y+24,currentString);
 
 //main text 3
 if(mainText3Length &gt; mainDisplayWidth)
@@ -413,7 +397,20 @@ else
 {
     currentString = mainText3;
 }
+draw_set_halign(fa_center);
 draw_text(x+118,y+40,currentString);
+
+draw_set_font(fJoystix12);
+draw_set_halign(fa_left);
+var binLength = string_length(binData);
+var row = 5;
+for(var temp = binLength-1; temp &gt;= 0; temp-=5)
+{
+ draw_text(x+165,y+77+(13*row),string_copy(binData,temp-5,5));
+ row--;
+ if(row &lt; 0)
+  break;
+}
 </string>
           </argument>
         </arguments>

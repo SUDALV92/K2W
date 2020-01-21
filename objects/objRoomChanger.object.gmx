@@ -76,6 +76,12 @@ if(autosave)
 if(global.grav == -1)
     scrFlipGrav(true);
     
+switch(roomTo)
+{
+ case rBoss6Phase2:
+  global.stageUnlocked[70] = true;
+  break;
+}
 room_goto(roomTo);
 </string>
           </argument>
@@ -691,7 +697,9 @@ switch(room)
         }    
         
         break;
-    case rStage7: global.lastRunEnd[12] = global.time; 
+    case rStage7:
+        global.stageUnlocked[73] = true;
+        global.lastRunEnd[12] = global.time; 
         global.lastRunStart[13] = global.time; 
         global.currentSegmentID = irandom(1000000);
         global.currentSegmentIndex = 13;

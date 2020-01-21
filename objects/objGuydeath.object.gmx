@@ -116,6 +116,21 @@
             <kind>1</kind>
             <string>audio_play_sound(global.sndWindow,0,0);
 audio_play_sound(global.sndGuy2,0,0);
+var rngAngle = random(360);
+for(var i = 5; i &lt; 10; i++)
+{
+ if(!global.energy[i])
+ {
+  energy = instance_create(x,y,objEnergy);
+  energy.energyID = i;
+  energy.direction = rngAngle;
+  energy.speed = 6;
+  energy.friction = 0.2;
+  energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/5;
+ }
+}
 </string>
           </argument>
         </arguments>

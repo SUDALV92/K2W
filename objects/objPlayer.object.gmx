@@ -369,10 +369,14 @@ if(shootDelay &gt; 0)
  
 if (!frozen)    //check if frozen before doing anything
 {
-    if (shootDelay &lt;= 0 &amp;&amp; scrButtonCheck(global.shootButton) &amp;&amp; global.skin != 1)
+    if (global.autoFire &amp;&amp; shootDelay &lt;= 0 &amp;&amp; scrButtonCheck(global.shootButton) &amp;&amp; global.skin != 1)
     {
         scrPlayerShoot();
         shootDelay = 7;
+    }
+    else if(!global.autoFire &amp;&amp; scrButtonCheckPressed(global.shootButton) &amp;&amp; global.skin != 1)
+    {
+        scrPlayerShoot();
     }
     if (scrButtonCheckPressed(global.jumpButton))
         scrPlayerJump();
@@ -584,13 +588,10 @@ if (cleaning)
 
 image_xscale = xSize * sign(image_xscale);
 
-if(global.extra &amp;&amp; scrButtonCheck(global.suicideButton))
+if(scrButtonCheckPressed(global.suicideButton))
 {
-    showItems = true;
-}
-else
-{
-    showItems = false;
+    global.autoFire = !global.autoFire;
+    audio_play_sound(global.sndWeaponCHange,0,0); 
 }
 </string>
           </argument>
@@ -1015,35 +1016,6 @@ if(global.extra &amp;&amp; scrButtonCheckReleased(global.skipButton) &amp;&amp; 
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objEnergy">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.energy[other.energyID] = true;
-if(global.sfxDelay[2] &lt;= 0)
-{
- audio_play_sound(global.sndEnergyCollect,0,0);
- global.sfxDelay[2] = 1;
-}
-instance_destroy(other);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objPlayerKiller">
       <action>
         <libid>1</libid>
@@ -1062,6 +1034,55 @@ instance_destroy(other);
           <argument>
             <kind>1</kind>
             <string>scrKillPlayer();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objEnergy">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(other.active)
+{
+    if(other.energyID != -1)
+        global.energy[other.energyID] = true;
+        
+    if(global.sfxDelay[2] &lt;= 0)
+    {
+     audio_play_sound(global.sndEnergyCollect,0,0);
+     global.sfxDelay[2] = 1;
+    }
+    instance_destroy(other);
+    with(objWorld)
+    {
+     drawEnergy = true;
+     alarm[3] = 100;
+    }
+    var totalEnergy = 0;
+    for(var temp = 0; temp &lt; 100; temp++)
+    {
+     if(global.energy[temp])
+      totalEnergy++;
+    }
+    if(totalEnergy &gt;= 95)
+    {
+     global.stageUnlocked[77] = true;
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -1134,8 +1155,11 @@ else    //flipped
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(global.sndTrap);
-audio_play_sound(global.sndTrap,0,false);
+            <string>if(global.sfxDelay[1] &lt;= 0)
+{
+ audio_play_sound(global.sndTrap,0,false);
+ global.sfxDelay[1] = 1;
+}
 instance_destroy(other);
 </string>
           </argument>
@@ -1470,7 +1494,27 @@ game_load("savestate");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrSaveGame(true);
+            <string>for(var i = 0; i &lt; 11; i++)
+{
+ global.bossRush[i] = 1;
+ global.bossRushRerun[i] = 1; 
+ global.crashPortal[i] = 1;
+ global.caution[i] = 0;
+ global.checkpoint[i] = 0;
+ global.tempTrigger[i] = 0;
+}
+for(var i = global.stagesTotal; i &gt;= 0; i--)
+{
+ if(i &lt;= 77)
+ {
+  global.stageUnlocked[i] = true;
+ }
+}
+
+for(var i = 0; i &lt; 95; i++)
+{
+ global.energy[i] = true;
+}
 </string>
           </argument>
         </arguments>

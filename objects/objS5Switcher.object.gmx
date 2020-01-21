@@ -93,6 +93,10 @@ flash = false;
   {
    if(step == other.step) enabled = true;
   }
+  with(objEnergyTrigger)
+  {
+   if(step == other.step) enabled = true;
+  }
   objS5Step.step++;
   audio_play_sound(global.sndSecre5Switch,0,0);
   flash = true;

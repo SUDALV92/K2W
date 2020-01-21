@@ -92,14 +92,9 @@
             warp.warpY = 544;
             break;
         case 7:
-            if(!instance_exists(objExtraItem) &amp;&amp; !global.secretItem[5])
-            {
-                item = instance_create(391,1017,objExtraItem);
-                item.itemID = 5;
-                item.image_index = 5;
-                audio_play_sound(global.sndTrap,0,false);
-            }
-            break;
+             instance_destroy(objSave);
+             audio_play_sound(global.sndTrap,0,0);
+             break;
     }
     
     A=1;

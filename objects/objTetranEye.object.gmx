@@ -112,16 +112,19 @@ else
   with(objArr) visible = true;
   instance_create(x,y,objTetranExplosion);
   scrStopMusic();
+  var rngAngle = random(360);
   for(var i = 47; i &lt; 50; i++)
     {
      if(!global.energy[i])
      {
       energy = instance_create(x,y,objEnergy);
       energy.energyID = i;
-      energy.direction = random(360);
-      energy.speed = 6;
+      energy.direction = rngAngle;
+      energy.speed = 10;
       energy.friction = 0.2;
       energy.alarm[0] = 20;
+      energy.active = true;
+      rngAngle += 360/3;
      }
     }
   instance_destroy();

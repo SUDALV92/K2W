@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="465" name="datafiles">
-    <datafiles number="465" name="Music">
+  <datafiles number="471" name="datafiles">
+    <datafiles number="471" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -669,7 +669,7 @@
         <filename>Ending.ogg</filename>
       </datafile>
       <datafile>
-        <name>Extra.ogg</name>
+        <name>Escape.ogg</name>
         <exists>-1</exists>
         <size>4721298</size>
         <exportAction>2</exportAction>
@@ -683,75 +683,7 @@
             <CopyToMask>9223372036854775807</CopyToMask>
           </Config>
         </ConfigOptions>
-        <filename>Extra.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>Relax.ogg</name>
-        <exists>-1</exists>
-        <size>5306067</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Relax.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>ExtraBoss.ogg</name>
-        <exists>-1</exists>
-        <size>11523752</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>ExtraBoss.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>Collapse1.ogg</name>
-        <exists>-1</exists>
-        <size>20646660</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Collapse1.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>Collapse2.ogg</name>
-        <exists>-1</exists>
-        <size>8583257</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Collapse2.ogg</filename>
+        <filename>Escape.ogg</filename>
       </datafile>
       <datafile>
         <name>LastWind.ogg</name>
@@ -770,9 +702,26 @@
         </ConfigOptions>
         <filename>LastWind.ogg</filename>
       </datafile>
+      <datafile>
+        <name>ExtraStage.ogg</name>
+        <exists>-1</exists>
+        <size>25258384</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>ExtraStage.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="465" name="SFX">
-      <datafiles number="465" name="Common">
+    <datafiles number="471" name="SFX">
+      <datafiles number="471" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1232,8 +1181,42 @@
           </ConfigOptions>
           <filename>sndEnergyCollect.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndEnergyAppear.ogg</name>
+          <exists>-1</exists>
+          <size>43759</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndEnergyAppear.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndWeaponChange.ogg</name>
+          <exists>-1</exists>
+          <size>13789</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndWeaponChange.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="465" name="Stage">
+      <datafiles number="471" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1558,8 +1541,8 @@
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="465" name="Boss">
-        <datafiles number="465" name="Solgryn">
+      <datafiles number="471" name="Boss">
+        <datafiles number="471" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3097,7 +3080,6 @@
         <sprite>sprites\sprBlockS5D</sprite>
         <sprite>sprites\sprBlockS5E</sprite>
       </sprites>
-      <sprite>sprites\sprShinySpark</sprite>
       <sprites name="Koala">
         <sprite>sprites\sprBlockKoalaA</sprite>
         <sprite>sprites\sprBlockKoalaC</sprite>
@@ -3105,7 +3087,6 @@
         <sprite>sprites\sprKoalaMiku</sprite>
         <sprite>sprites\sprPlatformKoala</sprite>
       </sprites>
-      <sprite>sprites\sprBlockRukito</sprite>
       <sprites name="Cyber">
         <sprite>sprites\sprBlockCyberA</sprite>
         <sprite>sprites\sprBlockCyberB</sprite>
@@ -3171,6 +3152,17 @@
         <sprite>sprites\sprEndingBed</sprite>
         <sprite>sprites\sprKidHouseNight</sprite>
         <sprite>sprites\sprEndingHole</sprite>
+        <sprite>sprites\sprEndingFullBed</sprite>
+      </sprites>
+      <sprite>sprites\sprBlockRukito</sprite>
+      <sprite>sprites\sprShinySpark</sprite>
+      <sprite>sprites\sprEnergy</sprite>
+      <sprites name="ExtraStage">
+        <sprite>sprites\sprExtraStageEnergySpawner</sprite>
+        <sprite>sprites\sprRedEnergy</sprite>
+        <sprite>sprites\sprExtraStageEnergyBlock</sprite>
+        <sprite>sprites\sprExtraStageEnergyBlock2</sprite>
+        <sprite>sprites\sprExtraStageEnergyBlock3</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3257,6 +3249,7 @@
       </sprites>
       <sprites name="triggers">
         <sprite>sprites\sprTriggerMask</sprite>
+        <sprite>sprites\sprTriggerMaskCentered</sprite>
         <sprite>sprites\sprButton</sprite>
         <sprite>sprites\sprSpikeTriggerDown</sprite>
         <sprite>sprites\sprSpikeTriggerLeft</sprite>
@@ -3902,6 +3895,7 @@
       <sprite>sprites\sprIntroBlockV</sprite>
       <sprite>sprites\sprIntroBlockC</sprite>
       <sprite>sprites\sprIntroBlockCSingle</sprite>
+      <sprite>sprites\sprIntroBlockB</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -4166,6 +4160,7 @@
   <shaders name="shaders">
     <shader type="GLSLES">shaders\GrayscaleShader.shader</shader>
     <shader type="GLSLES">shaders\shdTransition.shader</shader>
+    <shader type="GLSLES">shaders\shdSaturation.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -4181,6 +4176,7 @@
     <font>fonts\fJoystix5</font>
     <font>fonts\fJoystix8</font>
     <font>fonts\fJoystix10</font>
+    <font>fonts\fJoystix12</font>
     <font>fonts\fJoystix30</font>
     <font>fonts\fJoystix20</font>
     <font>fonts\fJoystix14</font>
@@ -4267,6 +4263,7 @@
       </objects>
     </objects>
     <objects name="misc">
+      <object>objects\objSegmentTime</object>
       <object>objects\objBackgroundsz</object>
       <object>objects\objWater</object>
       <object>objects\objWater2</object>
@@ -4671,6 +4668,7 @@
         <object>objects\objKtgBlock3</object>
         <object>objects\objKtgBlock</object>
         <object>objects\objKtgBlockDeath</object>
+        <object>objects\objKtgBlockDead</object>
         <object>objects\objKtgKiller1</object>
         <object>objects\objKtgBullet</object>
         <object>objects\objKtgKiller3</object>
@@ -5314,24 +5312,13 @@
         <object>objects\objESe3</object>
       </objects>
     </objects>
-    <objects name="Portal">
-      <object>objects\objPtmess1</object>
-      <object>objects\objPtmess1b</object>
-      <object>objects\objPtmess2</object>
-      <object>objects\objPtmess2b</object>
-      <object>objects\objPtmess3</object>
-      <object>objects\objPtmess3b</object>
-      <object>objects\objPtmess4</object>
-      <object>objects\objPtmess4b</object>
-      <object>objects\objPtmess5</object>
-      <object>objects\objPtmess5b</object>
-      <object>objects\objPtmess6</object>
-      <object>objects\objPtmess6b</object>
-      <object>objects\objPtmess7</object>
-      <object>objects\objPtmess7b</object>
-      <object>objects\objPtmessE</object>
-      <object>objects\objPtmessEX</object>
-      <object>objects\objSegmentTime</object>
+    <objects name="EndingHome">
+      <object>objects\objEndingHome</object>
+      <object>objects\objEndingHomeController</object>
+      <object>objects\objEndingBulletSpawner</object>
+      <object>objects\objEndingHomeBullet</object>
+      <object>objects\objEndingHomeBed</object>
+      <object>objects\objEndingHomeComputer</object>
     </objects>
     <objects name="Extra">
       <object>objects\objExTransition</object>
@@ -5343,6 +5330,17 @@
       <object>objects\objExtraShake</object>
       <object>objects\objExtraExplosion</object>
       <object>objects\objEnergy</object>
+      <object>objects\objEnergyTrigger</object>
+      <object>objects\objExKTGCamera</object>
+    </objects>
+    <objects name="ExtraStage">
+      <object>objects\objExtraStageBallSpawner</object>
+      <object>objects\objExtraStageRedEnergy</object>
+      <object>objects\objExtraStageFlameSpawner</object>
+      <object>objects\objExtraStageFlameBullet</object>
+      <object>objects\objExtraStageEnergyBlock</object>
+      <object>objects\objGlitch</object>
+      <object>objects\objExtraStageTrapUp</object>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -5526,10 +5524,9 @@
       <room>rooms\rEnding3</room>
       <room>rooms\rEnding4</room>
       <room>rooms\rEnding5</room>
-      <room>rooms\rEndingTemplate</room>
+      <room>rooms\rHomeBad</room>
     </rooms>
-    <rooms name="Extra">
-      <room>rooms\rExtraChocko</room>
+    <rooms name="Secrets">
       <room>rooms\rExtraKTGA</room>
       <room>rooms\rExtraKTGB</room>
       <room>rooms\rExtraKTGC</room>
@@ -5539,12 +5536,12 @@
       <room>rooms\rExtraKTGG</room>
       <room>rooms\rExtraKTGI</room>
       <room>rooms\rExtraKTGJ</room>
-      <room>rooms\rExtraKTGK</room>
       <room>rooms\rExtraSymetry</room>
       <room>rooms\rExtraRainbowMiku</room>
-      <room>rooms\rExtraEscapeEntrance</room>
-      <room>rooms\rExtraEnding</room>
-      <room>rooms\rExtraStageWrong</room>
+    </rooms>
+    <rooms name="Extra">
+      <room>rooms\rExtraStageMaze</room>
+      <room>rooms\rExtraStageKTG</room>
     </rooms>
   </rooms>
   <help>

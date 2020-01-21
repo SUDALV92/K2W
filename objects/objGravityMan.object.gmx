@@ -90,17 +90,20 @@ if(i &lt; 3300)
      achievement.index = 64;
  }
 }
-for(var i = 35; i &lt; 40; i++)
+var rngAngle = random(360);
+for(var temp = 35; temp &lt; 40; temp++)
 {
- if(!global.energy[i])
+ if(!global.energy[temp])
  {
   energy = instance_create(x,y,objEnergy);
-  energy.energyID = i;
-  energy.direction = random(360);
-  energy.speed = 6;
+  energy.energyID = temp;
+  energy.direction = rngAngle;
+  energy.speed = 10;
   energy.persistent = true;
   energy.friction = 0.2;
   energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/5;
  }
 }
 </string>

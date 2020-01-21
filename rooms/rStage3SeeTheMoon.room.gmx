@@ -77,7 +77,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeUp" x="608" y="352" name="inst_87377FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="640" y="256" name="inst_CF68E303" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStmtrap1" x="-32" y="0" name="inst_03CEE949" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="-32" y="384" name="inst_97CABA79" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-64" y="384" name="inst_97CABA79" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="256" name="inst_4A11A93E" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="352" name="inst_5940C7B3" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="0" name="inst_B28A38E1" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
@@ -115,7 +115,6 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objFreeTrigger" x="480" y="248" name="inst_0930A029" locked="0" code="trg = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="512" y="344" name="inst_3B80FB92" locked="0" code="trg = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="480" y="440" name="inst_C2834C5A" locked="0" code="trg = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSlipBlock" x="0" y="480" name="inst_D06994D2" locked="0" code="" scaleX="9" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="128" y="448" name="inst_5B80E9D1" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="128" y="320" name="inst_8577C1F4" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="192" y="224" name="inst_F1F1849A" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
@@ -145,11 +144,28 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objMovingPlatform" x="704" y="256" name="inst_C463D9EE" locked="0" code="hspeed = -3;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBettySnowGenerator" x="-32" y="32" name="inst_17BE68BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="64" y="416" name="inst_72D364E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="320" y="544" name="inst_B8E73DAC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockInvis" x="288" y="544" name="inst_16161759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSlipBlock" x="0" y="480" name="inst_27891D3E" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="544" name="inst_1333010B" locked="0" code="" scaleX="10" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="256" y="512" name="inst_D244A3C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="224" y="512" name="inst_03EFC154" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="192" y="512" name="inst_9268BF8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="160" y="512" name="inst_5A865810" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="128" y="512" name="inst_EDB16917" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="96" y="512" name="inst_AAF80726" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="64" y="512" name="inst_00AB976B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="32" y="512" name="inst_3A790039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="0" y="512" name="inst_752F8322" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="-32" y="480" name="inst_27DC21B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="-32" y="384" name="inst_97D6BA9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="-32" y="512" name="inst_773F0430" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlockFake" x="-32" y="480" name="inst_9945482C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="320" y="480" name="inst_F23D8526" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="64" y="448" name="inst_DA1536EF" locked="0" code="energyID = 72;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="bgBettyTileset" x="0" y="480" w="32" h="32" xo="0" yo="32" id="10042484" name="inst_D7506356" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="32" y="480" w="32" h="32" xo="0" yo="32" id="10042485" name="inst_CF6CB9F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="64" y="480" w="32" h="32" xo="0" yo="32" id="10042486" name="inst_5DC78A04" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBettyTileset" x="64" y="480" w="32" h="32" xo="0" yo="32" id="10042484" name="inst_D7506356" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="96" y="480" w="32" h="32" xo="0" yo="32" id="10042487" name="inst_4BD39EFA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="128" y="448" w="32" h="32" xo="0" yo="32" id="10042488" name="inst_B1244C21" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="160" y="448" w="32" h="32" xo="0" yo="32" id="10042489" name="inst_CC9BEBFE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -246,7 +262,6 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgBettyTileset" x="64" y="256" w="32" h="32" xo="0" yo="0" id="10042583" name="inst_0DDE6990" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="64" y="288" w="32" h="32" xo="0" yo="0" id="10042584" name="inst_D390381E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="64" y="320" w="32" h="32" xo="0" yo="0" id="10042585" name="inst_C1014FA7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10042586" name="inst_AA1CA246" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="0" y="544" w="32" h="32" xo="0" yo="0" id="10042587" name="inst_3B29C995" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10042588" name="inst_9395C7AD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="32" y="576" w="32" h="32" xo="0" yo="0" id="10042589" name="inst_2DE8AE89" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -258,16 +273,11 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgBettyTileset" x="224" y="576" w="32" h="32" xo="0" yo="0" id="10042595" name="inst_6D9EBA73" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="256" y="576" w="32" h="32" xo="0" yo="0" id="10042596" name="inst_EDE18D12" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="256" y="544" w="32" h="32" xo="0" yo="0" id="10042597" name="inst_2324156F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="256" y="512" w="32" h="32" xo="0" yo="0" id="10042598" name="inst_7643AC04" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="256" y="480" w="32" h="32" xo="0" yo="0" id="10042599" name="inst_F911D6F6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="224" y="480" w="32" h="32" xo="0" yo="0" id="10042600" name="inst_5256BEB5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="192" y="480" w="32" h="32" xo="0" yo="0" id="10042601" name="inst_A4FCA068" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="160" y="480" w="32" h="32" xo="0" yo="0" id="10042602" name="inst_15B7A2A6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="128" y="480" w="32" h="32" xo="0" yo="0" id="10042603" name="inst_527F8558" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="128" y="512" w="32" h="32" xo="0" yo="0" id="10042604" name="inst_AE3E3283" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="96" y="512" w="32" h="32" xo="0" yo="0" id="10042605" name="inst_958FAFEA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="64" y="512" w="32" h="32" xo="0" yo="0" id="10042606" name="inst_F933F075" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="32" y="512" w="32" h="32" xo="0" yo="0" id="10042607" name="inst_2DABC0B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="32" y="544" w="32" h="32" xo="0" yo="0" id="10042608" name="inst_6AA8A067" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="64" y="544" w="32" h="32" xo="0" yo="0" id="10042609" name="inst_27A31263" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="96" y="544" w="32" h="32" xo="0" yo="0" id="10042610" name="inst_6129F72F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -275,9 +285,6 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgBettyTileset" x="160" y="544" w="32" h="32" xo="0" yo="0" id="10042612" name="inst_CC0A837E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="192" y="544" w="32" h="32" xo="0" yo="0" id="10042613" name="inst_A175EDDD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="224" y="544" w="32" h="32" xo="0" yo="0" id="10042614" name="inst_FE089383" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="224" y="512" w="32" h="32" xo="0" yo="0" id="10042615" name="inst_DE9FF353" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="192" y="512" w="32" h="32" xo="0" yo="0" id="10042616" name="inst_659667B2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBettyTileset" x="160" y="512" w="32" h="32" xo="0" yo="0" id="10042617" name="inst_69EF1058" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="256" y="384" w="32" h="32" xo="0" yo="0" id="10042618" name="inst_D0917DD8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="256" y="352" w="32" h="32" xo="0" yo="0" id="10042619" name="inst_F0672C1B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="352" y="256" w="32" h="32" xo="0" yo="0" id="10042620" name="inst_5F7A4106" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -399,6 +406,8 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgBettyTileset" x="640" y="480" w="32" h="32" xo="0" yo="32" id="10042737" name="inst_E469A7EF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="672" y="480" w="32" h="32" xo="0" yo="32" id="10042738" name="inst_FAC7A8F0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBettyTileset" x="448" y="448" w="32" h="32" xo="0" yo="0" id="10042739" name="inst_423F9DEE" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBettyTileset" x="32" y="480" w="32" h="32" xo="0" yo="32" id="10057236" name="inst_7312C074" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgBettyTileset" x="0" y="480" w="32" h="32" xo="0" yo="32" id="10057237" name="inst_9E018F3B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

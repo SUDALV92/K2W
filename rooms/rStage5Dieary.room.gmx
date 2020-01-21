@@ -197,7 +197,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="160" y="336" name="inst_5DFB4B33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="336" name="inst_1A1FB081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="96" y="96" name="inst_10C99817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="-320" y="-176" name="inst_DFE83966" locked="0" code="sprite_index = sprDiearyWater;&#xA;" scaleX="50" scaleY="40" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="-368" y="-272" name="inst_DFE83966" locked="0" code="sprite_index = sprDiearyWater;&#xA;" scaleX="50" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="464" y="32" name="inst_356DE164" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="464" y="64" name="inst_FA2D7EAB" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="496" y="160" name="inst_27424678" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
@@ -238,6 +238,8 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlockInvis" x="656" y="496" name="inst_7BCC35DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="544" y="512" name="inst_8C7A5D4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="544" y="480" name="inst_F6249559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="688" y="320" name="inst_FE71BEB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="544" y="112" name="inst_D74B9A13" locked="0" code="energyID = 83;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="160" y="336" w="32" h="32" xo="0" yo="0" id="10047849" name="inst_A571B073" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

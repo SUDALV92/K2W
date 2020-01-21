@@ -2453,16 +2453,19 @@ objGeezerPlatform.sprite_index=sprGeezerGhost1;
 audio_play_sound(global.sndExplosion2,0,0);
 audio_stop_sound(global.sndTVstatic);
 
+var rngAngle = random(360);
 for(var i = 15; i &lt; 20; i++)
 {
  if(!global.energy[i])
  {
   energy = instance_create(x,y,objEnergy);
   energy.energyID = i;
-  energy.direction = random(360);
+  energy.direction = rngAngle;
   energy.speed = 6;
   energy.friction = 0.2;
   energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/5;
  }
 }
 </string>

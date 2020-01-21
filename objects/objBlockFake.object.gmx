@@ -98,6 +98,9 @@
     case rStage6LoveTrap:
      sprite_index = sprBlockBakaA;
      break;
+    case rExtraKTGE:
+     sprite_index = sprBlockS5A;
+     break;
 }
 </string>
           </argument>
@@ -121,8 +124,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(global.sndTrap);
-audio_play_sound(global.sndTrap,0,false);
+            <string>if(global.sfxDelay[1] &lt;= 0)
+{
+ audio_play_sound(global.sndTrap,0,false);
+ global.sfxDelay[1] = 1;
+}
 instance_destroy();
 </string>
           </argument>

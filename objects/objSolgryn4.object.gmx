@@ -451,16 +451,19 @@ if hp&gt;0
 }
 
 if eB=0{if hp=0{
+var rngAngle = random(360);
 for(var i = 20; i &lt; 25; i++)
 {
  if(!global.energy[i])
  {
   energy = instance_create(x,y,objEnergy);
   energy.energyID = i;
-  energy.direction = random(360);
+  energy.direction = rngAngle;
   energy.speed = 6;
   energy.friction = 0.2;
   energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/5;
  }
 }
 with(objSolgrynLast){instance_destroy();}

@@ -79,7 +79,13 @@ if (savePosition)
     {
         global.saveEnergy[i] = global.energy[i];
     }
-        
+    
+    for(var i = global.stagesTotal; i >= 0; i--)
+    {
+     global.saveStageUnlocked[i] = global.stageUnlocked[i];
+    }
+    global.saveAutoFire = global.autoFire;    
+    
     global.saveGameClear = global.gameClear;
     global.saveExtra = global.extra;
     global.saveExtraClear = global.extraClear;
@@ -136,6 +142,11 @@ for(var i = 0; i < 100; i++)
 {
     ds_map_add(saveMap,"energy["+string(i)+"]",global.saveEnergy[i]);
 }
+for(var i = global.stagesTotal; i >= 0; i--)
+{
+    ds_map_add(saveMap,"stageUnlocked["+string(i)+"]",global.saveStageUnlocked[i]);
+}
+ds_map_add(saveMap,"autoFire",global.saveAutoFire);
 
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 ds_map_add(saveMap,"saveExtra",global.saveExtra);

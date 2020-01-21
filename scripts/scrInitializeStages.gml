@@ -74,3 +74,5 @@ global.stageName[72] = "[7-2] M-Stage 2"; global.stageRoom[72] = rStage7;
 global.stageName[73] = "[7-B] Kamilia"; global.stageRoom[73] = rStage7B;
 global.stageName[74] = "[7-B2] Kamilia phase 2"; global.stageRoom[74] = rBoss7Phase2;
 global.stageName[75] = "[7-B3] Kamilia phase 4"; global.stageRoom[75] = rBoss7Phase4Pre;
+global.stageName[76] = "WARP TO HOME"; global.stageRoom[76] = rHomeBad;
+global.stageName[77] = "Extra stage"; global.stageRoom[77] = rExtraStageMaze;

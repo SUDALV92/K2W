@@ -187,18 +187,7 @@ lasersOffset = 0;
           <argument>
             <kind>1</kind>
             <string>scrStopMusic();
-for(var i = 5; i &lt; 10; i++)
-{
- if(!global.energy[i])
- {
-  energy = instance_create(x,y,objEnergy);
-  energy.energyID = i;
-  energy.direction = random(360);
-  energy.speed = 6;
-  energy.friction = 0.2;
-  energy.alarm[0] = 20;
- }
-}
+
 </string>
           </argument>
         </arguments>

@@ -32,6 +32,7 @@ switch(room)
         speed = 12; 
         alarm[0]=600;
         alarm[1]=660;
+        depth = -100;
         break;
     case rBoss7Phase2:
         speed = 12;

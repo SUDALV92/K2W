@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1600</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -422,6 +422,8 @@
     <instance objName="objBlockFake" x="480" y="384" name="inst_058AB118" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="512" y="384" name="inst_EDA36027" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="145" y="536" name="inst_8D476031" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="1376" y="256" name="inst_195620E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="1040" y="336" name="inst_DF64C311" locked="0" code="energyID = 65;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="0" y="512" w="32" h="32" xo="0" yo="0" id="10037050" name="inst_C6D139FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

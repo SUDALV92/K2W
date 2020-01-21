@@ -25,21 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(objPlayer))
-{
-objPlayer.x=160;
-objPlayer.y=288;
-}
+            <string>var rngAngle = random(360);
 for(var i = 10; i &lt; 15; i++)
 {
  if(!global.energy[i])
  {
-  energy = instance_create(x,y,objEnergy);
+  energy = instance_create(x+20,y-200,objEnergy);
   energy.energyID = i;
-  energy.direction = random(360);
+  energy.direction = rngAngle;
   energy.speed = 6;
   energy.friction = 0.2;
   energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/5;
  }
 }
 </string>

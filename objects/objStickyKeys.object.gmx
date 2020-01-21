@@ -109,16 +109,18 @@ depth=0;
             <string>if image_alpha&lt;1{image_alpha+=0.2;}
 if(!energyReleased &amp;&amp; y &gt; 500)
 {
+    var rngAngle = random(360);
     for(var i = 0; i &lt; 5; i++)
     {
      if(!global.energy[i])
      {
       energy = instance_create(x,y,objEnergy);
       energy.energyID = i;
-      energy.direction = random(360);
-      energy.speed = 6;
+      energy.direction = rngAngle + i*360/5;
+      energy.speed = 10;
       energy.friction = 0.2;
       energy.alarm[0] = 20;
+      energy.active = true;
      }
     }
     energyReleased = true;

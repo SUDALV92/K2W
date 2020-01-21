@@ -94,8 +94,8 @@ switch(trap)
   alarm[0] = 8;
   break;
  case 28:
-  hspeed = -1;
-  alarm[0] = 64;
+  hspeed = -1.23076923076923;
+  alarm[0] = 52;
   break;
  case 43:
   hspeed = 2;

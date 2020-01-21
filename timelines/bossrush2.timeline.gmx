@@ -1160,7 +1160,7 @@ with(objBettyTrap2)
             <kind>1</kind>
             <string>if(instance_exists(objPlayer))
 {
-    if(objPlayer.x &gt; 400)
+    if(objPlayer.x &lt; 400)
      instance_create(objPlayer.x+150,624,objLukaBisuk);
     else
      instance_create(objPlayer.x-150,624,objLukaBisuk);

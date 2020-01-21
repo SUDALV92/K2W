@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -54,14 +54,10 @@ background_vspeed[0] = -1.5;</code>
   <instances>
     <instance objName="objCrimson" x="32" y="32" name="inst_3A9A0EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="624" y="528" name="inst_9F8C7836" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="416" y="544" name="inst_176AC0B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="448" y="544" name="inst_80BC98A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="480" y="544" name="inst_6E811114" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="480" y="416" name="inst_7CE827CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="512" y="416" name="inst_9FF92837" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="384" y="416" name="inst_8E7BA8DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="416" y="416" name="inst_5F42CD3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="320" y="384" name="inst_5AACEAA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="32" y="544" name="inst_F576361B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="64" y="544" name="inst_37027E32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="96" y="544" name="inst_0D3D0EF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,26 +73,18 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeUp" x="352" y="224" name="inst_55DA0236" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="384" y="256" name="inst_79EABFA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="448" y="224" name="inst_E035DA3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="352" y="96" name="inst_C5373AEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="448" y="96" name="inst_A8E00C9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="672" y="64" name="inst_F921AF7B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="320" y="320" name="inst_B12DF447" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="352" y="320" name="inst_01680A7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="96" y="416" name="inst_4D3D9012" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="128" y="416" name="inst_CC3344E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="224" y="32" name="inst_20C0466A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="192" y="32" name="inst_860AD067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="320" y="32" name="inst_3034A7FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="352" y="32" name="inst_2A87D237" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="448" y="352" name="inst_2D2B172A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="544" y="352" name="inst_B1461FE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="256" y="160" name="inst_FEC9E84C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="608" y="128" name="inst_85EDF213" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="608" y="160" name="inst_5109DDB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="640" y="192" name="inst_5437AE44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="640" y="224" name="inst_7A4A1966" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="640" y="256" name="inst_5E3F6AD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeLeft" x="384" y="160" name="inst_F8927770" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="64" y="96" name="inst_A9CB495F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="512" y="256" name="inst_2D058444" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="544" y="288" name="inst_9E02C1E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -156,7 +144,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objCrimTrap2" x="32" y="448" name="inst_3EB2062F" locked="0" code="trap = 1;&#xA;visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap2" x="64" y="352" name="inst_34DFBEBA" locked="0" code="trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap2" x="32" y="256" name="inst_80580E52" locked="0" code="trap = 1;&#xA;visible = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCrimTrap2" x="96" y="128" name="inst_4803C392" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="96" y="128" name="inst_4803C392" locked="0" code="trap = 2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap2" x="384" y="0" name="inst_5114B580" locked="0" code="trap = 10;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap2" x="480" y="0" name="inst_25AD347D" locked="0" code="trap = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap2" x="512" y="0" name="inst_91BC27BE" locked="0" code="trap = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -178,28 +166,53 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objFreeTrigger" x="160" y="256" name="inst_A9AD0714" locked="0" code="trg = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="672" y="32" name="inst_5932BC8A" locked="0" code="trg = 9;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="768" y="32" name="inst_0F585F66" locked="0" code="roomTo = rStage6Destination;&#xA;warpX = 784;&#xA;warpY = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="640" y="96" name="inst_4070AAD8" locked="0" code="trg = 12;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap4" x="256" y="384" name="inst_A0FFDA4B" locked="0" code="trap = 13;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="256" y="416" name="inst_5F6A49C6" locked="0" code="trg = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap1" x="480" y="224" name="inst_F11B78E2" locked="0" code="trap = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="192" y="96" name="inst_E59F650F" locked="0" code="trg = 14;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="192" y="96" name="inst_E59F650F" locked="0" code="trg = 14;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap1" x="192" y="128" name="inst_CF9502F4" locked="0" code="trap = 14;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="320" y="544" name="inst_F3AA05DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="256" y="352" name="inst_4ED56099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="480" y="320" name="inst_C91463F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="64" y="480" name="inst_93DDF8B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="160" y="480" name="inst_1E505829" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="96" y="160" name="inst_BDC1DB7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="64" y="32" name="inst_FD2BC1A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeLeft" x="32" y="32" name="inst_838E4104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="256" y="96" name="inst_32CD7527" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="288" y="96" name="inst_5A68497D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="480" y="128" name="inst_034BC326" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="768" y="64" name="inst_46C9BDE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFlickeringDarkness" x="-32" y="-32" name="inst_661B7B78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="448" y="320" name="inst_B5B4F1BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="416" y="32" name="inst_010D7992" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="640" y="544" name="inst_C7374F69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="624" y="32" name="inst_49DA64CA" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="496" y="496" name="inst_8EBECC21" locked="0" code="energyID = 86;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="624" y="32" name="inst_33219F13" locked="0" code="trg = 15;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="480" y="480" name="inst_820E1772" locked="0" code="trg = 16;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="416" y="544" name="inst_BFCDF0A5" locked="0" code="trap = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="480" y="544" name="inst_3D8F5A56" locked="0" code="trap = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="288" y="480" name="inst_A6682CAB" locked="0" code="trg = 17;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap4" x="160" y="480" name="inst_BC6A567C" locked="0" code="trap = 17;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="320" y="352" name="inst_844EC08D" locked="0" code="trg = 18;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="320" y="384" name="inst_67D65D21" locked="0" code="trap = 18;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="320" y="544" name="inst_3417CEDC" locked="0" code="trap = 18;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="320" y="320" name="inst_7729C1E9" locked="0" code="trap = 18;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="448" y="416" name="inst_697B8C5D" locked="0" code="trg = 19;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="448" y="320" name="inst_B7ACCF5D" locked="0" code="trap = 19;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="448" y="352" name="inst_B10957C2" locked="0" code="trap = 19;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="448" y="384" name="inst_B8304D9A" locked="0" code="trg = 20;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="384" y="416" name="inst_CFEB5E30" locked="0" code="trap = 20;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="320" y="160" name="inst_B0ECD981" locked="0" code="trg = 21;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap4" x="256" y="160" name="inst_DE8BBC6B" locked="0" code="trap = 21;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap3" x="384" y="160" name="inst_C6A612C7" locked="0" code="trap = 21;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="96" y="448" name="inst_8A876A58" locked="0" code="trg = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="128" y="448" name="inst_168CE4A2" locked="0" code="trg = 22;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="128" y="416" name="inst_7BF84DC1" locked="0" code="trap = 22;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="96" y="416" name="inst_2C530915" locked="0" code="trap = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="96" y="160" name="inst_DEBEC53F" locked="0" code="trap = 24;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="32" y="320" name="inst_9B3BF079" locked="0" code="trg = 24;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="32" y="192" name="inst_57567102" locked="0" code="trg = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap3" x="32" y="32" name="inst_E77FC55C" locked="0" code="trap = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap4" x="64" y="32" name="inst_3ACEF6E1" locked="0" code="trap = 25;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="192" y="96" name="inst_A7A9ABB0" locked="0" code="trg = 26;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap2" x="192" y="32" name="inst_5F016674" locked="0" code="trap = 26;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCrimTrap1" x="352" y="96" name="inst_9A3B2D7E" locked="0" code="trap = 26;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBakaTileset" x="32" y="0" w="32" h="32" xo="32" yo="0" id="10049506" name="inst_57127E3C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

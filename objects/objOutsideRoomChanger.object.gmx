@@ -33,6 +33,7 @@ event_inherited();
 smoothTransition = false;   //sets whether the player wraps around the screen for a smooth transition to the next room (this requires the room sizes to be the same)
 phaseSave = false;
 roomHeight = room_height;
+transitionVShift = 0;
 </string>
           </argument>
         </arguments>
@@ -72,7 +73,7 @@ if (other.x &lt; 0 || other.x &gt; room_width || other.y &lt; 0 || other.y &gt; 
          case rBoss6Death:
           with(objStage7Controller)
            setDir = false;
-          break;
+          break;         
         }
         if (other.x &lt; 0)
         {
@@ -90,6 +91,7 @@ if (other.x &lt; 0 || other.x &gt; room_width || other.y &lt; 0 || other.y &gt; 
         {
             other.y -= roomHeight;
         }
+        other.y += transitionVShift;
         room_goto(roomTo);
     }
 }

@@ -34,7 +34,30 @@ speedrunFlag = -1;
 oldScore = 0;
 oldPlayerExists = 0;
 deadSplitFlag = 0;
-
+drawEnergy = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>drawEnergy = false;
 </string>
           </argument>
         </arguments>
@@ -256,9 +279,7 @@ if (global.gameStarted)
     
     if (!global.gamePaused) //check if the game is currently paused
     {
-        if (scrButtonCheckPressed(global.restartButton) &amp;&amp; 
-        room != rExtraEnding &amp;&amp;
-        room != rEnding)
+        if (scrButtonCheckPressed(global.restartButton) &amp;&amp; room != rEnding)
         {
             //stop death sound/music
             audio_stop_sound(global.deathSound);
@@ -266,6 +287,11 @@ if (global.gameStarted)
             audio_stop_sound(global.sndGameList);
             audio_stop_sound(global.curDanmaku);
             scrStopSFX();
+            instance_destroy(objEnergy);
+            for(var temp = 0; temp &lt; 100; temp++)
+            {
+             global.energy[temp] = global.saveEnergy[temp];
+            }
             score = 0; //DeadSplit support
             
             //resume room music
@@ -359,7 +385,18 @@ else
 
 if (f2pressed)
 {
-    scrRestartGame();
+    switch(room)
+    {
+     case rInit:
+     case rIntro:
+     case rIntro2:
+     case rIntro3:
+     case rIntro4:
+     case rIntro5:
+      break;
+     default:
+      scrRestartGame();
+    }
     exit;
 }
 
@@ -402,6 +439,10 @@ if(keyboard_check_released(ord("G")))
 if(keyboard_check_released(vk_pageup))
 {
  room_goto_previous();
+}
+if(keyboard_check_released(vk_pagedown))
+{
+ room_goto_next();
 }
 if(keyboard_check_released(vk_home))
 {
@@ -461,9 +502,6 @@ if(f5pressed)
         
         switch(room)
         {
-            case rExtraEnding:
-             exit;
-             break;
             case rStage0:
             case rStage1Chocko:
             case rStage1GGM:
@@ -595,6 +633,15 @@ if(f5pressed)
                 global.lastRunStart[13] = -1; global.lastRunEnd[13] = -1; break;
         }
         global.currentSegmentIndex = -1;
+        instance_destroy(objEnergy);
+        for(var temp = 0; temp &lt; 100; temp++)
+        {
+         global.energy[temp] = global.saveEnergy[temp];
+        }
+        for(var i = global.stagesTotal; i &gt;= 0; i--)
+        {
+         global.stageUnlocked[i] = global.saveStageUnlocked[i];
+        }
         audio_stop_sound(global.sndGameOver);
         scrStopSFX();
         ///return to old gain if music is being faded out
@@ -709,6 +756,42 @@ for(var temp = 0; temp &lt; sfxCount; temp++)
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///initialize everything
+BGM = 0;
+scrInitializeSounds();
+
+//initialize all variables
+scrInitializeGlobals();
+
+//load the current config file, sets default config if it doesn't exist
+scrLoadConfig();
+
+with(objWaitingillust)
+{
+ alarm[0] = 50;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -810,9 +893,15 @@ switch(room)
     case rBoss7Phase1:
     case rBoss7Phase2:
     case rBoss7Phase4:
+    case rBoss7Phase4Pre:
+    case rEscapeA:
+    case rEscapeB:
+    case rEscapeC:
     case rEnding:
-    case rExtraEscapeEntrance:
-    case rExtraEnding:
+    case rEnding2:
+    case rEnding3:
+    case rEnding4:
+    case rEnding5:
         global.noPause = true; 
         break;    
     default: 
@@ -924,16 +1013,7 @@ instance_create(view_xview[0]+view_wview[0],0,objGamelist);
           <argument>
             <kind>1</kind>
             <string>///initialize everything
-BGM = 0;
-scrInitializeSounds();
-
-//initialize all variables
-scrInitializeGlobals();
-
-//load the current config file, sets default config if it doesn't exist
-scrLoadConfig();
-
-objWaitingillust.alarm[0] = 50;
+event_user(1);
 </string>
           </argument>
         </arguments>
@@ -975,12 +1055,12 @@ if (global.gamePaused)  //check if game is paused to draw the pause screen
     draw_set_color(c_white);
     
     draw_set_halign(fa_center);
-    draw_set_font(fDefault30);
+    draw_set_font(fJoystix30);
     
     draw_text(display_get_gui_width()/2,display_get_gui_height()/2 - 24,"PAUSE");
     
     draw_set_halign(fa_left);
-    draw_set_font(fDefault18);
+    draw_set_font(fJoystix20);
     
     var t = global.time;
     var timeText = string(t div 3600) + ":";
@@ -993,9 +1073,29 @@ if (global.gamePaused)  //check if game is paused to draw the pause screen
     t = t mod 10;
     timeText += string(floor(t));
     
-    draw_text(40,500,"Volume: " + string(global.volumeLevel) + "%");
-    draw_text(40,525,"Deaths: " + string(global.death));
-    draw_text(40,550,"Time: " + timeText);
+    scrDrawTextOutline(40,475,"Volume: " + string(global.volumeLevel) + "%",c_white,c_black);
+    scrDrawTextOutline(40,500,"Deaths: " + string(global.death),c_white,c_black);
+    scrDrawTextOutline(40,525,"  Time: " + timeText,c_white,c_black);
+    var totalEnergy = 0;
+    for(var temp = 0; temp &lt; 100; temp++)
+    {
+     if(global.energy[temp])
+      totalEnergy++;
+    }
+    scrDrawTextOutline(40,550,"Energy: " + string(totalEnergy) + "%",c_white,c_black);
+}
+else if(drawEnergy)
+{
+    var totalEnergy = 0;
+    for(var temp = 0; temp &lt; 100; temp++)
+    {
+     if(global.energy[temp])
+      totalEnergy++;
+    }
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+    draw_set_font(fJoystix20);
+    scrDrawTextOutline(40,550,"Energy: " + string(totalEnergy) + "%",c_white,c_black);
 }
 </string>
           </argument>

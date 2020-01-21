@@ -54,7 +54,9 @@ image_speed = 1/3;
 
 switch(trap)
 {
-    case 4: hspeed = -2;
+    case 4: hspeed = -2; break;
+    case 21: hspeed = -5; break;
+    case 25: vspeed = 2; break;
 }
 
 go = false;

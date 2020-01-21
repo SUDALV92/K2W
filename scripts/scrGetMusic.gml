@@ -20,7 +20,6 @@ switch (room)                       //determines which song to play
         roomSong = global.sndOptions;
         break;
     case rStage1Chocko:
-    case rExtraChocko:
     case rStage1GGM:
     case rStage1EnjoyTheGame:
     case rStage1CTB1:
@@ -61,8 +60,7 @@ switch (room)                       //determines which song to play
     case rExtraKTGF:
     case rExtraKTGG:
     case rExtraKTGI:
-    case rExtraKTGJ:
-    case rExtraKTGK:    
+    case rExtraKTGJ:  
         roomSong = global.sndNone; break;
     case rBoss2Guy:
         roomSong = global.sndBoss2; break;
@@ -165,7 +163,10 @@ switch (room)                       //determines which song to play
     case rEnding3:
     case rEnding4:
     case rEnding5:
+    case rHomeBad:
         roomSong = global.sndEnding; break;
+    case rExtraStageMaze:
+        roomSong = global.sndExtraStage; break;
     default:                        //default option in case the room does not have a song set
         roomSong = -1;
         break;

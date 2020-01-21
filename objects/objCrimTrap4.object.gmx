@@ -58,6 +58,9 @@ switch(trap)
     case 7: hspeed = 5; break;
     case 8: hspeed = 5; break;
     case 13: vspeed = 2; break;
+    case 17: hspeed = 10; break;
+    case 21: hspeed = 5; break;
+    case 25: vspeed = 2; break;
 }
 
 go = false;

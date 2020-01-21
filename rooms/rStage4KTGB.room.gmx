@@ -59,7 +59,6 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="352" y="1184" name="inst_1CE4F4A3" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="608" name="inst_E5CB6EE3" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="576" name="inst_FE5027D6" locked="0" code="" scaleX="26" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="-32" y="576" name="inst_FD83BD2F" locked="0" code="if(global.extra)&#xA;{&#xA;    instance_destroy();&#xA;}" scaleX="1" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="objGeezerwarp" x="696" y="1104" name="inst_2B3EE399" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKtgBlockDeath" x="208" y="1200" name="inst_BFE61BBE" locked="0" code="ID = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKtgBlockDeath" x="240" y="1200" name="inst_00E771C1" locked="0" code="ID = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -71,7 +70,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objSpikeUp" x="96" y="1120" name="inst_5AA150F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="128" y="1152" name="inst_685AF31D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCamera" x="736" y="1376" name="inst_9245E6CE" locked="0" code="leaveRoom = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objOutsideRoomChanger" x="-32" y="608" name="inst_E3987075" locked="0" code="if(!global.extra)&#xA;{&#xA;    instance_destroy();&#xA;}&#xA;smoothTransition = true;&#xA;roomTo = rExtraKTGA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="-32" y="608" name="inst_E3987075" locked="0" code="smoothTransition = true;&#xA;roomTo = rExtraKTGA;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="788" y="1399" name="inst_DC28294E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="0" name="inst_01027241" locked="0" code="" scaleX="1" scaleY="18" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="576" name="inst_8BC20A22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

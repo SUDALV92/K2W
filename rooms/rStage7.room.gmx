@@ -119,7 +119,6 @@
     <instance objName="objSpikeUp" x="32" y="288" name="inst_6F590072" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="64" y="288" name="inst_B3B4ADBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="128" y="320" name="inst_1C312FF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="416" y="384" name="inst_1E29B6BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="128" y="128" name="inst_780C3D4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="192" y="128" name="inst_63C865F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="352" y="192" name="inst_EC5CB344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -637,6 +636,10 @@
     <instance objName="objBlock" x="2368" y="32" name="inst_F319A55B" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="2384" y="48" name="inst_3073C21F" locked="0" code="depth = 1000000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="3216" y="512" name="inst_9A0B49F7" locked="0" code="trg = 17;&#xA;" scaleX="0.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objMTrap2" x="416" y="384" name="inst_550A8567" locked="0" code="trap = 30;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="384" y="384" name="inst_2823693F" locked="0" code="trg = 30;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergyTrigger" x="384" y="384" name="inst_AC2B4154" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="512" y="448" name="inst_77C400BE" locked="0" code="energyID = 91;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgMStageTileset" x="0" y="96" w="32" h="32" xo="0" yo="0" id="10055777" name="inst_478F1F1F" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

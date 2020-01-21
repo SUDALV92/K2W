@@ -189,16 +189,19 @@ if delay&gt;0{delay-=1;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var i = 45; i &lt; 47; i++)
+            <string>var rngAngle = random(360);
+for(var i = 45; i &lt; 47; i++)
 {
  if(!global.energy[i])
  {
   energy = instance_create(x,y,objEnergy);
   energy.energyID = i;
-  energy.direction = random(360);
-  energy.speed = 6;
+  energy.direction = rngAngle;
+  energy.speed = 10;
   energy.friction = 0.2;
   energy.alarm[0] = 20;
+  energy.active = true;
+  rngAngle += 360/2;
  }
 }
 instance_create(x,y,objGiantkidDeath);

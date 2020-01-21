@@ -110,12 +110,10 @@ i = irandom_range(-7,-2);
         }
         if(ok)
         {
-            visible = true;            
-            instance_create(320,320,objSave);
-            instance_create(480,320,objSave);
+            global.stageUnlocked[69] = true;
         }
         else instance_destroy();
-        if(global.gameClear)
+        if(global.stageUnlocked[71])
         {
             state = 1;
         }

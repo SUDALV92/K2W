@@ -653,6 +653,13 @@ switch(room)
                   audio_play_sound(global.sndTrap,0,0);
                  }
                  break;
+            case 4:
+                 instance_destroy(objSave);
+                 with(objFreeTrigger)
+                 {
+                  if(trg == 2 || trg == 3) step++;
+                 }
+                 break;
         };
         break;
     case rStage4GB:
@@ -753,7 +760,10 @@ switch(room)
              {
               path_start(pathS5HeavenTrap,16,0,0);
               audio_play_sound(global.sndTrap,0,0);
-             }
+             }             
+             break;
+            case 6:
+             instance_destroy(objSave);
              break;
         }
         break;
@@ -814,10 +824,18 @@ switch(room)
      }
      break;
     case rStage4KTGA:
-     with(objWarp)
+     switch(trg)
      {
-      path_start(pathS5KTG,16,0,0);
-      audio_play_sound(global.sndTrap,0,0);
+      case 1:
+         with(objWarp)
+         {
+          path_start(pathS5KTG,16,0,0);
+          audio_play_sound(global.sndTrap,0,0);
+         }
+         break;
+      case 2: 
+           instance_destroy(objSave);
+           break;
      }
      break;
     default: d = 0; break;
@@ -1111,7 +1129,9 @@ switch(room)
              with(objBftrap3) if(trap == other.trg) go = true;
              with(objBftrap4) if(trap == other.trg) go = true;
              break;
-            
+            case 30:
+             with(objBftrap2) if(trap == 26) go = true;
+             break;
         }
         break;
     case rStage5Dieary:
@@ -1189,7 +1209,11 @@ switch(room)
           case 43:           
            if(condition)
            {
-               with(objPYFTrap) if(trap == other.trg) go = true;
+               with(objPYFTrap)
+               {                
+                if(trap == other.trg) go = true;
+                if(trap == 24 &amp;&amp; !triggered) go = true;
+               }
                with(objPYFTrapDown) if(trap == other.trg) go = true;
                with(objPYFTrapLeft) if(trap == other.trg) go = true;
                with(objPYFTrapRight) if(trap == other.trg) go = true;
@@ -1395,6 +1419,34 @@ switch(room)
                 else { d = 0; }
                 break;
             }
+            case 15:
+            {
+                instance_destroy(objSave);
+                audio_play_sound(global.sndTrap,0,0);
+                with(objFreeTrigger) condition = 2;
+                break;
+            }
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 24:
+            case 25:
+            case 26:
+            {
+                if(condition == 2)
+                {
+                    with(objCrimTrap1) if(other.trg == trap) go = true;
+                    with(objCrimTrap2) if(other.trg == trap) go = true;
+                    with(objCrimTrap3) if(other.trg == trap) go = true;
+                    with(objCrimTrap4) if(other.trg == trap) go = true;
+                }
+                else { d = 0; }                
+            }
         }
         break;
     }
@@ -1564,6 +1616,11 @@ switch(room)
                 instance_create(view_xview[0],-100,objMtoLastTransition);
                 break;
             }
+            case 30:
+            {
+                with(objMTrap2) if(trap == other.trg) go = true;
+                break;
+            }
         }
         break;
     }    
@@ -1605,6 +1662,102 @@ if(room == rBoss6Nue)
 {
  d = 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///extra Maze
+d = 1;
+switch(room)
+{
+ case rExtraStageMaze:
+      switch(trg)
+      {
+       case 1:
+            with(objBlockInvis) 
+             if(other.trg == trap) 
+             {
+              visible = true;
+              instance_create(x,y,objGlitch);
+             }
+            with(objExtraStageEnergyBlock) 
+              if(other.trg == trap) 
+              {
+               visible = true;
+               instance_create(x,y,objGlitch);
+              }
+            instance_create(x,y,objGlitch);
+            break;
+       case 2:
+            with(objExtraStageEnergyBlock) 
+              if(other.trg == trap) 
+              {
+               visible = true;
+               instance_create(x,y,objGlitch);
+              }
+            with(objExtraStageTrapUp)
+            {
+             if(other.trg == trap)
+             {
+              instance_create(x,y,objGlitch);
+              instance_destroy();
+             }
+            }
+            instance_create(x,y,objGlitch);
+            break;
+       case 3:
+            with(objExtraStageEnergyBlock) 
+              if(other.trg == trap) 
+              {
+               visible = true;
+               instance_create(x,y,objGlitch);
+              }
+            with(objExtraStageTrapUp)
+            {
+             if(other.trg == trap)
+             {
+              instance_create(x,y,objGlitch);
+              visible = true;
+             }
+            }
+            with(objBlockInvis) 
+             if(other.trg == trap) 
+             {
+              visible = true;
+              instance_create(x,y,objGlitch);
+             }
+            instance_create(x,y,objGlitch);
+            break;
+       case 4:
+            with(objExtraStageEnergyBlock) 
+              if(other.trg == trap) 
+              {
+               visible = true;
+               instance_create(x,y,objGlitch);
+              }
+            instance_create(x,y,objGlitch);
+            break;
+      }
+      break;
+}
+if(d == 1)
+    instance_destroy();
 </string>
           </argument>
         </arguments>

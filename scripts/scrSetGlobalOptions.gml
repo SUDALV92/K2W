@@ -7,8 +7,8 @@ global.roomCaptionLast = global.roomCaptionDef;
 global.godMode = false;
 window_set_caption(global.roomCaptionDef);
 
-var mess = logn(7,2019);
-global.md5StrAdd = "Waaaaaaaaarped"+string(mess);  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
+var mess = ord('R')+ord('P')+ord('E')+ord('D');
+global.md5StrAdd = "WAAAAAA"+string(mess);  //sets what to add to the end of md5 input string to make the save harder to mess with, can be changed to anything, should be set to something unique and hard to predict (like setting a password)
 
 global.startRoom = rStage0;    //sets which room to begin with
 

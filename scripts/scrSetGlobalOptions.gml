@@ -5,6 +5,7 @@ global.gameVersion = "v2.0";
 global.roomCaptionDef = "I Wanna Kill The Kamilia 2 Warped";  //sets default window caption (only works with the Professional version of Studio)
 global.roomCaptionLast = global.roomCaptionDef;
 global.godMode = false;
+global.debug = false;
 window_set_caption(global.roomCaptionDef);
 
 var mess = ord('R')+ord('P')+ord('E')+ord('D');

@@ -385,18 +385,7 @@ else
 
 if (f2pressed)
 {
-    switch(room)
-    {
-     case rInit:
-     case rIntro:
-     case rIntro2:
-     case rIntro3:
-     case rIntro4:
-     case rIntro5:
-      break;
-     default:
-      scrRestartGame();
-    }
+    scrRestartGame();
     exit;
 }
 
@@ -452,13 +441,17 @@ if(keyboard_check_released(vk_end))
 {
  global.worldSpeed = 150;
 }
-if(keyboard_check_pressed(vk_tab))
+if(keyboard_check(vk_tab))
 {
  with(objPlayer)
  {
   x = mouse_x;
   y = mouse_y;
  }
+}
+if(keyboard_check_released(vk_backspace))
+{
+ global.debug = !global.debug;
 }
 </string>
           </argument>
@@ -902,6 +895,7 @@ switch(room)
     case rEnding3:
     case rEnding4:
     case rEnding5:
+    case rExtraStageKTGSray:
         global.noPause = true; 
         break;    
     default: 
@@ -1153,6 +1147,31 @@ if(global.timerEnabled &amp;&amp; global.currentSegmentIndex != -1)
  
  scrDrawTextOutline(drawX,588,string(timer),c_white,c_black);
  //scrDrawTextOutline(100,100,string(instance_number(objGrollaTan2)),c_white,c_black);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///debug
+if(global.debug)
+{
+ scrDrawTextOutline(10,10,"Real FPS: " + string(fps_real),c_white,c_black);
 }
 </string>
           </argument>

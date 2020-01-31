@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="471" name="datafiles">
-    <datafiles number="471" name="Music">
+  <datafiles number="517" name="datafiles">
+    <datafiles number="517" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -719,9 +719,77 @@
         </ConfigOptions>
         <filename>ExtraStage.ogg</filename>
       </datafile>
+      <datafile>
+        <name>DjSray.ogg</name>
+        <exists>-1</exists>
+        <size>10838787</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>DjSray.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>MarioPhase1.ogg</name>
+        <exists>-1</exists>
+        <size>1023684</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>MarioPhase1.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>MarioPhase2.ogg</name>
+        <exists>-1</exists>
+        <size>285270</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>MarioPhase2.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>MarioPhase3.ogg</name>
+        <exists>-1</exists>
+        <size>371506</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>MarioPhase3.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="471" name="SFX">
-      <datafiles number="471" name="Common">
+    <datafiles number="517" name="SFX">
+      <datafiles number="517" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1216,7 +1284,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="471" name="Stage">
+      <datafiles number="517" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1540,9 +1608,26 @@
           </ConfigOptions>
           <filename>sndSecret5Switch.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndMarioPipeDown.ogg</name>
+          <exists>-1</exists>
+          <size>32538</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndMarioPipeDown.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="471" name="Boss">
-        <datafiles number="471" name="Solgryn">
+      <datafiles number="517" name="Boss">
+        <datafiles number="517" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3040,6 +3125,552 @@
           </ConfigOptions>
           <filename>sndContraExplosion.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndSrayLeft1.ogg</name>
+          <exists>-1</exists>
+          <size>12883</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayLeft1.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayLeft2.ogg</name>
+          <exists>-1</exists>
+          <size>15449</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayLeft2.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayUp1.ogg</name>
+          <exists>-1</exists>
+          <size>15826</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayUp1.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayUp2.ogg</name>
+          <exists>-1</exists>
+          <size>10731</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayUp2.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayRight1.ogg</name>
+          <exists>-1</exists>
+          <size>16534</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayRight1.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayRight2.ogg</name>
+          <exists>-1</exists>
+          <size>14906</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayRight2.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayDown1.ogg</name>
+          <exists>-1</exists>
+          <size>14947</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayDown1.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayDown2.ogg</name>
+          <exists>-1</exists>
+          <size>14017</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayDown2.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndSrayAww.ogg</name>
+          <exists>-1</exists>
+          <size>102104</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndSrayAww.ogg</filename>
+        </datafile>
+        <datafiles number="517" name="ExtraBoss2">
+          <datafile>
+            <name>sndMarioThankYou.ogg</name>
+            <exists>-1</exists>
+            <size>26100</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioThankYou.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioWahoo.ogg</name>
+            <exists>-1</exists>
+            <size>21932</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioWahoo.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioOoh.ogg</name>
+            <exists>-1</exists>
+            <size>8574</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioOoh.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioMmm.ogg</name>
+            <exists>-1</exists>
+            <size>31562</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioMmm.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioAchachacha.ogg</name>
+            <exists>-1</exists>
+            <size>30039</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioAchachacha.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioNewRecord.ogg</name>
+            <exists>-1</exists>
+            <size>46984</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioNewRecord.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioDie.ogg</name>
+            <exists>-1</exists>
+            <size>15348</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioDie.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioDancerDeath.ogg</name>
+            <exists>-1</exists>
+            <size>10353</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioDancerDeath.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioWaha.ogg</name>
+            <exists>-1</exists>
+            <size>24860</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioWaha.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioHereICome.ogg</name>
+            <exists>-1</exists>
+            <size>34944</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioHereICome.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioPowerUp.ogg</name>
+            <exists>-1</exists>
+            <size>48754</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioPowerUp.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioIsteric.ogg</name>
+            <exists>-1</exists>
+            <size>35539</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioIsteric.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioLucky.ogg</name>
+            <exists>-1</exists>
+            <size>24011</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioLucky.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioGotcha.ogg</name>
+            <exists>-1</exists>
+            <size>21188</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioGotcha.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioBowserFire.ogg</name>
+            <exists>-1</exists>
+            <size>11244</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioBowserFire.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioImMovingNow.ogg</name>
+            <exists>-1</exists>
+            <size>36182</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioImMovingNow.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioFireball1.ogg</name>
+            <exists>-1</exists>
+            <size>7678</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioFireball1.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioWhatATastyTreat.ogg</name>
+            <exists>-1</exists>
+            <size>44335</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioWhatATastyTreat.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioFireball2.ogg</name>
+            <exists>-1</exists>
+            <size>10571</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioFireball2.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioHaaa.ogg</name>
+            <exists>-1</exists>
+            <size>27931</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioHaaa.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioBrothers.ogg</name>
+            <exists>-1</exists>
+            <size>56829</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioBrothers.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndYoshiJump.ogg</name>
+            <exists>-1</exists>
+            <size>46364</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndYoshiJump.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioForBoshy.ogg</name>
+            <exists>-1</exists>
+            <size>206364</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioForBoshy.ogg</filename>
+          </datafile>
+        </datafiles>
       </datafiles>
     </datafiles>
   </datafiles>
@@ -3163,6 +3794,40 @@
         <sprite>sprites\sprExtraStageEnergyBlock</sprite>
         <sprite>sprites\sprExtraStageEnergyBlock2</sprite>
         <sprite>sprites\sprExtraStageEnergyBlock3</sprite>
+        <sprite>sprites\sprExtraStageKTGCanon</sprite>
+        <sprite>sprites\sprExtraStageKTGBullet</sprite>
+        <sprites name="Sray">
+          <sprite>sprites\sprSray</sprite>
+          <sprite>sprites\sprAllBlocks</sprite>
+          <sprite>sprites\sprSrayDialog</sprite>
+        </sprites>
+        <sprites name="Boshy">
+          <sprite>sprites\sprCheetahmenMarioCloud</sprite>
+          <sprite>sprites\sprCheetahmenMarioCloudShit</sprite>
+          <sprite>sprites\sprMarioBackgroundInferno</sprite>
+          <sprite>sprites\sprMarioBowser</sprite>
+          <sprite>sprites\sprMarioCoin</sprite>
+          <sprite>sprites\sprMarioDying</sprite>
+          <sprite>sprites\sprMarioEgg</sprite>
+          <sprite>sprites\sprMarioEggFire</sprite>
+          <sprite>sprites\sprMarioFire</sprite>
+          <sprite>sprites\sprMarioFireball</sprite>
+          <sprite>sprites\sprMarioFloorDown</sprite>
+          <sprite>sprites\sprMarioFloorStatic</sprite>
+          <sprite>sprites\sprMarioFloorUp</sprite>
+          <sprite>sprites\sprMarioGoomba</sprite>
+          <sprite>sprites\sprMarioHammer</sprite>
+          <sprite>sprites\sprMarioHammerThrower</sprite>
+          <sprite>sprites\sprMarioJumping</sprite>
+          <sprite>sprites\sprMarioLava</sprite>
+          <sprite>sprites\sprMarioPlant</sprite>
+          <sprite>sprites\sprMarioStopped</sprite>
+          <sprite>sprites\sprMarioTubeEnter</sprite>
+          <sprite>sprites\sprMarioTubePart</sprite>
+          <sprite>sprites\sprMarioWalking</sprite>
+          <sprite>sprites\sprMarioYoshy</sprite>
+          <sprite>sprites\sprMarioKoopa</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3840,7 +4505,7 @@
       <sprite>sprites\sprCrazySpikeBold</sprite>
       <sprite>sprites\sprJirachistarBold</sprite>
     </sprites>
-    <sprites name="Extra">
+    <sprites name="ExtraOld">
       <sprite>sprites\sprChaseTiles</sprite>
       <sprite>sprites\sprWhiteCircle</sprite>
       <sprite>sprites\sprExtraItem</sprite>
@@ -4069,6 +4734,10 @@
       <backgrounds name="Ending">
         <background>background\bgNight</background>
       </backgrounds>
+      <backgrounds name="ExtraStage">
+        <background>background\bgIntroTileset16</background>
+        <background>background\bgExtraStageMario</background>
+      </backgrounds>
     </backgrounds>
   </backgrounds>
   <paths name="paths">
@@ -4145,6 +4814,7 @@
       <script>scripts\scrMakeCircle.gml</script>
       <script>scripts\scrBounceMoveSolid.gml</script>
       <script>scripts\scrCreateBigKidCherry.gml</script>
+      <script>scripts\scrGenerateUniqueValues.gml</script>
     </scripts>
     <scripts name="Extra">
       <script>scripts\scrCreateWarp.gml</script>
@@ -4177,9 +4847,10 @@
     <font>fonts\fJoystix8</font>
     <font>fonts\fJoystix10</font>
     <font>fonts\fJoystix12</font>
-    <font>fonts\fJoystix30</font>
-    <font>fonts\fJoystix20</font>
     <font>fonts\fJoystix14</font>
+    <font>fonts\fJoystix20</font>
+    <font>fonts\fJoystix30</font>
+    <font>fonts\fJoystix42</font>
   </fonts>
   <objects name="objects">
     <object>objects\objWorld</object>
@@ -5341,6 +6012,40 @@
       <object>objects\objExtraStageEnergyBlock</object>
       <object>objects\objGlitch</object>
       <object>objects\objExtraStageTrapUp</object>
+      <objects name="KTG">
+        <object>objects\objExtraStageKTGCanon</object>
+        <object>objects\objExtraStageKTGBullet</object>
+        <object>objects\objExtraStageKTGController</object>
+        <object>objects\objExtraStageKTGminiTrapUp</object>
+        <object>objects\objExtraStageKTGminiTrapDown</object>
+        <object>objects\objSray</object>
+        <object>objects\objSrayMovement</object>
+        <object>objects\objSrayMovementTimer</object>
+        <object>objects\objSrayPlayerMovement</object>
+        <object>objects\objSrayDialog</object>
+      </objects>
+      <objects name="Boshy">
+        <object>objects\objExtraStageBoshyCloud</object>
+        <object>objects\objExtraStageBoshyCloudShit</object>
+        <object>objects\objExtraStageBoshyWarp</object>
+        <object>objects\objExtraStageBoshyInferno</object>
+        <object>objects\objExtraStageBoshyMarioFloor</object>
+        <object>objects\objExtraStageBoshyMarioLava</object>
+        <object>objects\objExtraStageBoshyMario</object>
+        <object>objects\objExtraStageBoshyHPBar</object>
+        <object>objects\objExtraStageBoshyMarioDancer</object>
+        <object>objects\objExtraStageBoshyBloodEmitter</object>
+        <object>objects\objExtraStageBoshyKoopa</object>
+        <object>objects\objExtraStageBoshyBowser</object>
+        <object>objects\objExtraStageBoshyFire</object>
+        <object>objects\objExtraStageBoshyFireball</object>
+        <object>objects\objExtraStageBoshyCoin</object>
+        <object>objects\objExtraStageBoshyHammerThrower</object>
+        <object>objects\objExtraStageBoshyHammer</object>
+        <object>objects\objExtraStageBoshyYoshy</object>
+        <object>objects\objExtraStageBoshyEgg</object>
+        <object>objects\objExtraStageBoshyEggFire</object>
+      </objects>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -5542,6 +6247,8 @@
     <rooms name="Extra">
       <room>rooms\rExtraStageMaze</room>
       <room>rooms\rExtraStageKTG</room>
+      <room>rooms\rExtraStageKTGSray</room>
+      <room>rooms\rExtraStageBoshy</room>
     </rooms>
   </rooms>
   <help>

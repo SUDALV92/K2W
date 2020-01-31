@@ -166,7 +166,10 @@ switch (room)                       //determines which song to play
     case rHomeBad:
         roomSong = global.sndEnding; break;
     case rExtraStageMaze:
+    case rExtraStageKTG:
         roomSong = global.sndExtraStage; break;
+    case rExtraStageBoshy:
+        roomSong = global.sndMarioPhase1; break;
     default:                        //default option in case the room does not have a song set
         roomSong = -1;
         break;

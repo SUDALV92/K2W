@@ -29,6 +29,16 @@ if (instance_exists(objPlayer) && !global.godMode)
              }
              f = true;
              break;
+            case rExtraStageKTGSray:
+             audio_pause_sound(global.currentMusic);
+             audio_play_sound(global.sndSrayAww,0,0);
+             with (objPlayer)
+             {
+              instance_create(x,y,objBloodEmitter);
+              instance_destroy();
+             }
+             f = true;
+             break;
         }
         if(!f)
         {

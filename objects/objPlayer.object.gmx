@@ -55,6 +55,7 @@ infJump = false; //draw text
 infJumpAlpha = 0;
 counter = 0;
 shootDelay = 5;
+invertedControls = false;
 
 scrSetPlayerMask(); //set the player's hitbox
 
@@ -251,7 +252,12 @@ switch(room)
             <string>//check left/right button presses
 var L = (scrButtonCheck(global.leftButton) || (global.directionalTapFix &amp;&amp; scrButtonCheckPressed(global.leftButton)));
 var R = (scrButtonCheck(global.rightButton) || (global.directionalTapFix &amp;&amp; scrButtonCheckPressed(global.rightButton)));
-
+if(invertedControls)
+{
+ var temp = L;
+ L = R;
+ R = temp;
+}
 var h = 0;
 
 if (!frozen)    //don't move if frozen

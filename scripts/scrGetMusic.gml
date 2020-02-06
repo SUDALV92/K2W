@@ -167,6 +167,7 @@ switch (room)                       //determines which song to play
         roomSong = global.sndEnding; break;
     case rExtraStageMaze:
     case rExtraStageKTG:
+    case rExtraStageDestinationChase:
         roomSong = global.sndExtraStage; break;
     case rExtraStageBoshy:
         roomSong = global.sndMarioPhase1; break;

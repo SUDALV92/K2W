@@ -3,7 +3,7 @@
   <spriteName>sprMarioEggFire</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>alarm[0] = 2;
 f = false;
+image_xscale = 1.5;
+image_yscale = 0.2;
 </string>
           </argument>
         </arguments>

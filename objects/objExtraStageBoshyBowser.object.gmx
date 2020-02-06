@@ -3,7 +3,7 @@
   <spriteName>sprMarioBowser</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -28,7 +28,9 @@
             <string>image_speed = 0.1;
 alarm[0] = 20;
 defY = y;
-fireSpeed = 3;
+fireSpeed = 4;
+image_xscale = 1.5;
+image_yscale = 1.5;
 </string>
           </argument>
         </arguments>
@@ -53,7 +55,7 @@ fireSpeed = 3;
             <kind>1</kind>
             <string>var fire = instance_create(x,y,objExtraStageBoshyFire);
 audio_play_sound(global.sndMarioBowserFire,0,0);
-if(image_xscale == 1)
+if(image_xscale &gt; 0)
  fire.hspeed = fireSpeed;
 else
  fire.hspeed = -fireSpeed;

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -67,12 +67,12 @@ else
  }
  else f = false;
 }
-if(i mod 25 == 0)
+if(i mod 30 == 0)
 {
  hammer = instance_create(x,y,objExtraStageBoshyHammer); 
 }
 i++;
-if(x &gt; 850)
+if(x &gt; 850 || x &lt; -50)
 {
  instance_destroy();
 }
@@ -99,7 +99,10 @@ if(x &gt; 850)
           <argument>
             <kind>1</kind>
             <string>vspeed = -7;
-hspeed = random_range(1,3);
+if(image_xscale &gt; 0)
+ hspeed = random_range(1,3);
+else
+ hspeed = random_range(-3,-1);
 </string>
           </argument>
         </arguments>

@@ -4,7 +4,7 @@
   <width>800</width>
   <height>608</height>
   <vsnap>8</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -54,7 +54,7 @@ background_hspeed[1] = -1.5;</code>
   <instances>
     <instance objName="objBlock" x="-32" y="0" name="inst_3B006590" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="0" name="inst_CF57C13B" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="objExtraStageBoshyInferno" x="-160" y="416" name="inst_109D72A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objExtraStageBoshyInferno" x="-160" y="416" name="inst_109D72A8" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageBoshyMarioFloor" x="0" y="544" name="inst_4898AC96" locked="0" code="" scaleX="1.25" scaleY="1.25" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="51" y="534" name="inst_C6367BDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageBoshyMarioLava" x="0" y="560" name="inst_033577BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -86,6 +86,7 @@ background_hspeed[1] = -1.5;</code>
     <instance objName="objExtraStageBoshyMarioLava" x="780" y="560" name="inst_A9ACE559" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageBoshyMario" x="825" y="480" name="inst_C8712EB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageBoshyHPBar" x="16" y="8" name="inst_BDF7D528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objExtraStageBoshyTubeWarp" x="832" y="496" name="inst_A37D3ED3" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

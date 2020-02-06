@@ -442,7 +442,7 @@ background_hspeed[0] = -1.5;</code>
     <instance objName="objBlock" x="2976" y="640" name="inst_EAE2A133" locked="0" code="" scaleX="5" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageBoshyCloud" x="2480" y="672" name="inst_A93FED60" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="2368" y="928" name="inst_E406060E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="2400" y="896" name="inst_2B2DAC0B" locked="0" code="trg = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="2400" y="768" name="inst_2B2DAC0B" locked="0" code="trg = 5;&#xA;" scaleX="25" scaleY="7.5" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3200" y="832" name="inst_E82C86FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3200" y="896" name="inst_6C366C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3136" y="640" name="inst_CECE9D73" locked="0" code="" scaleX="2" scaleY="6" colour="4294967295" rotation="0"/>
@@ -454,6 +454,7 @@ background_hspeed[0] = -1.5;</code>
     <instance objName="objMiniUp" x="2448" y="912" name="inst_CE269E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="2688" y="1040" name="inst_D2BE22FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="2624" y="1040" name="inst_ECC8C77F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="2400" y="224" name="inst_17D07043" locked="0" code="roomTo = rExtraStageDestinationChase;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background125" x="2400" y="608" w="32" h="32" xo="32" yo="32" id="10062745" name="inst_99DEFC39" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

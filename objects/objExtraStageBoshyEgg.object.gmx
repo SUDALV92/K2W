@@ -3,7 +3,7 @@
   <spriteName>sprMarioEgg</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>gravity = 0.4;
+image_xscale = 1.5;
+image_yscale = 1.5;
 </string>
           </argument>
         </arguments>
@@ -48,9 +50,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mFireL = instance_create(x,y+3,objExtraStageBoshyEggFire);
+            <string>mFireL = instance_create(x,other.y,objExtraStageBoshyEggFire);
 mFireL.direction = 180;
-instance_create(x,y+3,objExtraStageBoshyEggFire);
+instance_create(x,other.y,objExtraStageBoshyEggFire);
 instance_destroy();
 </string>
           </argument>

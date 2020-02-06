@@ -95,6 +95,10 @@ if (loadFile)
         global.savePlayerY = ds_map_find_value(saveMap,"savePlayerY");
         global.savePlayerType = ds_map_find_value(saveMap,"savePlayerType");
         global.saveGrav = ds_map_find_value(saveMap,"saveGrav");
+        for (var i = 0; i < global.secretItemTotal; i++)
+        {
+            global.saveSecretItem[i] = ds_map_find_value(saveMap,"saveSecretItem["+string(i)+"]");
+        }
         for (var i = 0; i < 5; i++)
         {
             global.saveBossRush[i] = ds_map_find_value(saveMap,"saveBossRush["+string(i)+"]");
@@ -109,7 +113,7 @@ if (loadFile)
         {
             global.saveStageUnlocked[i] = ds_map_find_value(saveMap,"stageUnlocked["+string(i)+"]");
         }
-        global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");
+        
         
         if (is_string(global.saveRoom))   //check if the saved room loaded properly
         {
@@ -121,11 +125,9 @@ if (loadFile)
             saveValid = false;
         }
         
-        for (var i = 0; i < global.secretItemTotal; i++)
-        {
-            global.saveSecretItem[i] = ds_map_find_value(saveMap,"saveSecretItem["+string(i)+"]");
-        }
-                
+        
+        
+        global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");        
         global.saveGameClear = ds_map_find_value(saveMap,"saveGameClear");
         global.saveExtra = ds_map_find_value(saveMap,"saveExtra");
         global.saveExtraClear = ds_map_find_value(saveMap,"saveExtraClear");

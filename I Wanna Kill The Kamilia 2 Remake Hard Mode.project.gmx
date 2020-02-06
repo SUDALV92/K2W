@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="517" name="datafiles">
-    <datafiles number="517" name="Music">
+  <datafiles number="518" name="datafiles">
+    <datafiles number="518" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -788,8 +788,8 @@
         <filename>MarioPhase3.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="517" name="SFX">
-      <datafiles number="517" name="Common">
+    <datafiles number="518" name="SFX">
+      <datafiles number="518" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1284,7 +1284,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="517" name="Stage">
+      <datafiles number="518" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1626,8 +1626,8 @@
           <filename>sndMarioPipeDown.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="517" name="Boss">
-        <datafiles number="517" name="Solgryn">
+      <datafiles number="518" name="Boss">
+        <datafiles number="518" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3278,7 +3278,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="517" name="ExtraBoss2">
+        <datafiles number="518" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -3669,6 +3669,23 @@
               </Config>
             </ConfigOptions>
             <filename>sndMarioForBoshy.ogg</filename>
+          </datafile>
+          <datafile>
+            <name>sndMarioNoProblem.ogg</name>
+            <exists>-1</exists>
+            <size>39807</size>
+            <exportAction>2</exportAction>
+            <exportDir></exportDir>
+            <overwrite>0</overwrite>
+            <freeData>-1</freeData>
+            <removeEnd>0</removeEnd>
+            <store>0</store>
+            <ConfigOptions>
+              <Config name="Default">
+                <CopyToMask>9223372036854775807</CopyToMask>
+              </Config>
+            </ConfigOptions>
+            <filename>sndMarioNoProblem.ogg</filename>
           </datafile>
         </datafiles>
       </datafiles>
@@ -6045,6 +6062,7 @@
         <object>objects\objExtraStageBoshyYoshy</object>
         <object>objects\objExtraStageBoshyEgg</object>
         <object>objects\objExtraStageBoshyEggFire</object>
+        <object>objects\objExtraStageBoshyTubeWarp</object>
       </objects>
     </objects>
     <objects name="killers">
@@ -6249,6 +6267,7 @@
       <room>rooms\rExtraStageKTG</room>
       <room>rooms\rExtraStageKTGSray</room>
       <room>rooms\rExtraStageBoshy</room>
+      <room>rooms\rExtraStageDestinationChase</room>
     </rooms>
   </rooms>
   <help>

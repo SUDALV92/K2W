@@ -40,25 +40,25 @@ for(var i = 0; i < 11; i++)
 
 for (var i = global.secretItemTotal-1; i >= 0; i--)
 {
-    global.secretItem[i] = false;
-    global.saveSecretItem[i] = false;
-    global.tempItem[i] = false;
+    global.secretItem[i] = 0;
+    global.saveSecretItem[i] = 0;
+    global.tempItem[i] = 0;
 }
 
 //useless for K2W
-global.gameClear = false;
-global.extra = false;
-global.extraClear = false;
-global.extra = false;
-global.saveGameClear = false;
-global.saveExtraClear = false;
+global.gameClear = 0;
+global.extra = 0;
+global.extraClear = 0;
+global.extra = 0;
+global.saveGameClear = 0;
+global.saveExtraClear = 0;
 
 //actuals
-global.portalAvailable = true;
-global.finalBossFaded = false;
+global.portalAvailable = 1;
+global.finalBossFaded = 0;
 global.selectedStage = 0;
-global.autoFire = true;
-global.saveAutoFire = true;
+global.autoFire = 1;
+global.saveAutoFire = 1;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {

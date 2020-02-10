@@ -326,7 +326,8 @@ if (global.gameStarted)
             global.time += global.timeMicro div 1000000;
             global.timeMicro = global.timeMicro mod 1000000;
         }
-        room_speed = global.worldSpeed;
+        if(room_speed != global.worldSpeed)
+         room_speed = global.worldSpeed;
     }
     else    //game is paused, check for volume controls
     {

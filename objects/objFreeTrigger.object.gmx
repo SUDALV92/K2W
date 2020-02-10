@@ -1802,6 +1802,10 @@ switch(room)
        event_user(0);
       }
       break;
+ case rExtraStageDestinationChase:
+      with(objExtraStageDestinationTrap1) go = true;
+      with(objExtraStageDestinationTrap2) go = true;
+      break;
 }
 if(d == 1)
     instance_destroy();

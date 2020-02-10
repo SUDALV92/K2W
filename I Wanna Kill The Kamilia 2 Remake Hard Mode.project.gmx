@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="518" name="datafiles">
-    <datafiles number="518" name="Music">
+  <datafiles number="519" name="datafiles">
+    <datafiles number="519" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -787,9 +787,26 @@
         </ConfigOptions>
         <filename>MarioPhase3.ogg</filename>
       </datafile>
+      <datafile>
+        <name>Bananas.ogg</name>
+        <exists>-1</exists>
+        <size>5809448</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Bananas.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="518" name="SFX">
-      <datafiles number="518" name="Common">
+    <datafiles number="519" name="SFX">
+      <datafiles number="519" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1284,7 +1301,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="518" name="Stage">
+      <datafiles number="519" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1626,8 +1643,8 @@
           <filename>sndMarioPipeDown.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="518" name="Boss">
-        <datafiles number="518" name="Solgryn">
+      <datafiles number="519" name="Boss">
+        <datafiles number="519" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3278,7 +3295,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="518" name="ExtraBoss2">
+        <datafiles number="519" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -3845,6 +3862,10 @@
           <sprite>sprites\sprMarioYoshy</sprite>
           <sprite>sprites\sprMarioKoopa</sprite>
         </sprites>
+        <sprites name="Bananas">
+          <sprite>sprites\sprExtraStageDestinationRinLen</sprite>
+          <sprite>sprites\sprExtraStageDestinationBananas</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -3913,6 +3934,7 @@
         <sprite>sprites\sprSkyCherry</sprite>
         <sprite>sprites\sprWhiteCherry</sprite>
         <sprite>sprites\sprYellowCherry</sprite>
+        <sprite>sprites\sprDarkOrangeCherry</sprite>
       </sprites>
       <sprites name="platforms">
         <sprite>sprites\sprPlatform</sprite>
@@ -4754,6 +4776,10 @@
       <backgrounds name="ExtraStage">
         <background>background\bgIntroTileset16</background>
         <background>background\bgExtraStageMario</background>
+        <background>background\bgExtraBananasGRID</background>
+        <background>background\bgDestinationBlockA</background>
+        <background>background\bgDestinationBlockB</background>
+        <background>background\bgDestinationBlockC</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -6064,6 +6090,18 @@
         <object>objects\objExtraStageBoshyEggFire</object>
         <object>objects\objExtraStageBoshyTubeWarp</object>
       </objects>
+      <objects name="Destination">
+        <object>objects\objExtraStageDestinationTrap1</object>
+        <object>objects\objExtraStageDestinationTrap2</object>
+        <object>objects\objExtraStageDestinationTrap3</object>
+        <object>objects\objExtraStageDestinationButton</object>
+        <object>objects\objExtraStageDestinationRinLen</object>
+        <object>objects\objExtraStageDestinationAppleSmall</object>
+        <object>objects\objExtraStageDestinationApplePredictor</object>
+        <object>objects\objExtraStageDestinationAppleBig</object>
+        <object>objects\objExtraStageDestinationAppleCore</object>
+        <object>objects\objExtraStageDestinationAppleCore2</object>
+      </objects>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -6268,6 +6306,7 @@
       <room>rooms\rExtraStageKTGSray</room>
       <room>rooms\rExtraStageBoshy</room>
       <room>rooms\rExtraStageDestinationChase</room>
+      <room>rooms\rExtraStageDestinationBananas</room>
     </rooms>
   </rooms>
   <help>

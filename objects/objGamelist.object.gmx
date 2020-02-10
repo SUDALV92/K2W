@@ -141,6 +141,9 @@
         case rStage7: 
              image_index = 68; break;
              
+        case rExtraStageDestinationChase:
+        case rExtraStageDestinationBananas:
+             image_index = 60; break;
         default: instance_destroy(); break;
     }
 

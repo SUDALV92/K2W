@@ -1030,30 +1030,7 @@ if(infJump)
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="53">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>scrSaveGame(true);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="51">
+    <event eventtype="9" enumb="51">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1077,7 +1054,7 @@ game_load("savestate");
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="49">
+    <event eventtype="9" enumb="49">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -1095,6 +1072,29 @@ game_load("savestate");
           <argument>
             <kind>1</kind>
             <string>game_save("savestate");
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="53">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scrSaveGame(true);
 </string>
           </argument>
         </arguments>

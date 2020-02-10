@@ -220,3 +220,4 @@ global.sndDjSray = audio_create_stream("Music\DjSray.ogg");
 global.sndMarioPhase1 = audio_create_stream("Music\MarioPhase1.ogg");
 global.sndMarioPhase2 = audio_create_stream("Music\MarioPhase2.ogg");
 global.sndMarioPhase3 = audio_create_stream("Music\MarioPhase3.ogg");
+global.sndBananas = audio_create_stream("Music\Bananas.ogg");

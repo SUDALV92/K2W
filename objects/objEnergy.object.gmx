@@ -105,7 +105,7 @@ if(instance_exists(objGradius))
             <string>if(room == rBoss3Avoid4)
  scrBounceMoveSolid();
  
-image_alpha += 0.02;
+image_alpha += 0.03;
 </string>
           </argument>
         </arguments>

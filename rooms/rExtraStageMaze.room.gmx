@@ -455,6 +455,7 @@ background_hspeed[0] = -1.5;</code>
     <instance objName="objMiniUp" x="2688" y="1040" name="inst_D2BE22FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="2624" y="1040" name="inst_ECC8C77F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="2400" y="224" name="inst_17D07043" locked="0" code="roomTo = rExtraStageDestinationChase;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="2400" y="1616" name="inst_79C9AAC6" locked="0" code="roomTo = rExtraStageDieary;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background125" x="2400" y="608" w="32" h="32" xo="32" yo="32" id="10062745" name="inst_99DEFC39" depth="1002" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

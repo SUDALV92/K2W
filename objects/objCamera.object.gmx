@@ -102,8 +102,15 @@ else if(instance_exists(objPlayer))
     }
     else
     {
+        var oldX = view_xview[0];
         view_xview[0] = floor(xFollow/view_wview[0])*view_wview[0];
+        var oldY = view_yview[0];
         view_yview[0] = floor(yFollow/view_hview[0])*view_hview[0];
+        if(oldX != view_xview[0] || oldY != view_yview[0])
+        {
+         instance_destroy(objGamelist); 
+         instance_create(view_xview[0]+view_wview[0],0,objGamelist);
+        }
     }
 }
 </string>

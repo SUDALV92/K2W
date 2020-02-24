@@ -49,6 +49,10 @@ global.sndExtraExplosion = audio_create_stream("SFX\Stage\sndExtraExplosion.ogg"
 global.sndElectricShock = audio_create_stream("SFX\Stage\sndElectricShock.ogg");
 global.sndSecre5Switch = audio_create_stream("SFX\Stage\sndSecret5Switch.ogg");
 global.sndMarioPipeDown = audio_create_stream("SFX\Stage\sndMarioPipeDown.ogg");
+global.sndDiearyExplosion = audio_create_stream("SFX\Stage\sndDiearyExplosion.ogg");
+global.sndClock1 = audio_create_stream("SFX\Stage\sndClock1.ogg");
+global.sndClock2 = audio_create_stream("SFX\Stage\sndClock2.ogg");
+global.sndClock3 = audio_create_stream("SFX\Stage\sndClock3.ogg");
 
 global.sndFlash = audio_create_stream("SFX\Boss\sndFlash.ogg");
 global.sndSmoke = audio_create_stream("SFX\Boss\sndSmoke.ogg");
@@ -221,3 +225,5 @@ global.sndMarioPhase1 = audio_create_stream("Music\MarioPhase1.ogg");
 global.sndMarioPhase2 = audio_create_stream("Music\MarioPhase2.ogg");
 global.sndMarioPhase3 = audio_create_stream("Music\MarioPhase3.ogg");
 global.sndBananas = audio_create_stream("Music\Bananas.ogg");
+global.sndBokuBoku = audio_create_stream("Music\BokuBoku.ogg");
+global.sndFinalDeadRoom = audio_create_stream("Music\Distrust.ogg");

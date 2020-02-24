@@ -719,6 +719,12 @@ switch(room)
           }
       }
       break;
+ case rExtraStageFinalDeadRoom:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 150.150)
+      {
+       audio_sound_set_track_position(global.currentMusic, 52.386);
+      }
+      break;
 }
 </string>
           </argument>
@@ -897,6 +903,9 @@ switch(room)
     case rEnding4:
     case rEnding5:
     case rExtraStageKTGSray:
+    case rExtraStageDestinationBananas:
+    case rExtraStageBloodFestivalBoss:
+    case rExtraStageFinalDeadRoom:
         global.noPause = true; 
         break;    
     default: 
@@ -961,6 +970,9 @@ switch(room)
 {
  case rStage6BossRush:
   global.portalAvailable = true;
+  break;
+ case rExtraStageFinalDeadRoom:
+  global.noShoot = true;
   break;
 }
 </string>

@@ -1,4 +1,4 @@
-if (instance_number(objBullet) < 4)
+if (instance_number(objBullet) < 4 && !global.noShoot)
 {
     instance_create(x,y,objBullet);
     switch(room)

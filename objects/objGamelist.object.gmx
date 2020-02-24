@@ -101,6 +101,8 @@
         case rExtraKTGG:
         case rExtraKTGI:
         case rExtraKTGJ:      
+        case rExtraStageKTG:
+        case rExtraStageKTGSray:
           image_index = 43; break;
         case rBoss4Phase1: image_index = 44; break;
 
@@ -109,11 +111,23 @@
         case rStage5Symetry: image_index = 47; break;
         case rStage5RainbowMiku: image_index = 48; break;
         case rStage5Unknown: image_index = 49; break;
-        case rStage5BloodFestival: image_index = 50; break;
-        case rStage5Dieary: image_index = 51; break;
+        case rStage5BloodFestival: 
+        case rExtraStageBloodFestivalStage:
+             image_index = 50; break;
+        case rStage5Dieary: 
+        case rExtraStageDieary:        
+         image_index = 51; break;
+        case rExtraStageMaze:
+             if(x &gt; 2500)
+              image_index = 54;
+             else
+              image_index = 51;
+             break;
         case rStage5PYF: image_index = 52; break;
         case rStage5Locus: image_index = 53; break;
-        case rStage5Boshy: image_index = 54; break;
+        case rStage5Boshy: 
+        case rExtraStageBoshy:
+         image_index = 54; break;
         case rBoss5Phase1: image_index = 56; break;
         
         case rStage6GR: image_index = 57; break;

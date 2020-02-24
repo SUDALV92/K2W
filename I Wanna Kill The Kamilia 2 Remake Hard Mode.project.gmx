@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="519" name="datafiles">
-    <datafiles number="519" name="Music">
+  <datafiles number="536" name="datafiles">
+    <datafiles number="536" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -804,9 +804,43 @@
         </ConfigOptions>
         <filename>Bananas.ogg</filename>
       </datafile>
+      <datafile>
+        <name>BokuBoku.ogg</name>
+        <exists>-1</exists>
+        <size>7922682</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>BokuBoku.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>Distrust.ogg</name>
+        <exists>-1</exists>
+        <size>8662473</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Distrust.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="519" name="SFX">
-      <datafiles number="519" name="Common">
+    <datafiles number="536" name="SFX">
+      <datafiles number="536" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1301,7 +1335,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="519" name="Stage">
+      <datafiles number="536" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1642,9 +1676,77 @@
           </ConfigOptions>
           <filename>sndMarioPipeDown.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndDiearyExplosion.ogg</name>
+          <exists>-1</exists>
+          <size>69028</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndDiearyExplosion.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndClock1.ogg</name>
+          <exists>-1</exists>
+          <size>30272</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndClock1.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndClock2.ogg</name>
+          <exists>-1</exists>
+          <size>27737</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndClock2.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndClock3.ogg</name>
+          <exists>-1</exists>
+          <size>34420</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndClock3.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="519" name="Boss">
-        <datafiles number="519" name="Solgryn">
+      <datafiles number="536" name="Boss">
+        <datafiles number="536" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3295,7 +3397,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="519" name="ExtraBoss2">
+        <datafiles number="536" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -3830,6 +3932,7 @@
         <sprite>sprites\sprExtraStageEnergyBlock3</sprite>
         <sprite>sprites\sprExtraStageKTGCanon</sprite>
         <sprite>sprites\sprExtraStageKTGBullet</sprite>
+        <sprite>sprites\sprExtraStageDiearyExplosion</sprite>
         <sprites name="Sray">
           <sprite>sprites\sprSray</sprite>
           <sprite>sprites\sprAllBlocks</sprite>
@@ -3865,6 +3968,20 @@
         <sprites name="Bananas">
           <sprite>sprites\sprExtraStageDestinationRinLen</sprite>
           <sprite>sprites\sprExtraStageDestinationBananas</sprite>
+        </sprites>
+        <sprites name="BloodFestival">
+          <sprite>sprites\sprSuperLowGravity</sprite>
+          <sprite>sprites\sprNoDJump</sprite>
+          <sprite>sprites\sprResetPhysics</sprite>
+          <sprite>sprites\sprHighGravity</sprite>
+          <sprite>sprites\sprLowGravity</sprite>
+          <sprite>sprites\sprExtraStageBloodFestivalMiku</sprite>
+        </sprites>
+        <sprites name="FinalDeadRoom">
+          <sprite>sprites\sprFinalDeadRoomDigit</sprite>
+          <sprite>sprites\sprFinalDeadRoomHand</sprite>
+          <sprite>sprites\sprFinalDeadRoomCircle</sprite>
+          <sprite>sprites\sprFinalDeadRoomPointer</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -3914,6 +4031,7 @@
       </sprites>
       <sprites name="killers">
         <sprite>sprites\sprSpikeUp</sprite>
+        <sprite>sprites\sprSpikeDarkUp</sprite>
         <sprite>sprites\sprSpikeDown</sprite>
         <sprite>sprites\sprSpikeDownR</sprite>
         <sprite>sprites\sprSpikeLeft</sprite>
@@ -4042,24 +4160,6 @@
       <sprite>sprites\sprCaution</sprite>
       <sprite>sprites\sprSpeed2</sprite>
       <sprite>sprites\sprSpeed3</sprite>
-    </sprites>
-    <sprites name="Portal">
-      <sprite>sprites\sprPtmess1</sprite>
-      <sprite>sprites\sprPtmess1b</sprite>
-      <sprite>sprites\sprPtmess2</sprite>
-      <sprite>sprites\sprPtmess2b</sprite>
-      <sprite>sprites\sprPtmess3</sprite>
-      <sprite>sprites\sprPtmess3b</sprite>
-      <sprite>sprites\sprPtmess4</sprite>
-      <sprite>sprites\sprPtmess4b</sprite>
-      <sprite>sprites\sprPtmess5</sprite>
-      <sprite>sprites\sprPtmess5b</sprite>
-      <sprite>sprites\sprPtmess6</sprite>
-      <sprite>sprites\sprPtmess6b</sprite>
-      <sprite>sprites\sprPtmess7</sprite>
-      <sprite>sprites\sprPtmess7b</sprite>
-      <sprite>sprites\sprPtmessE</sprite>
-      <sprite>sprites\sprPtmessEX</sprite>
     </sprites>
     <sprites name="S1">
       <sprite>sprites\sprExptrap1</sprite>
@@ -4780,6 +4880,10 @@
         <background>background\bgDestinationBlockA</background>
         <background>background\bgDestinationBlockB</background>
         <background>background\bgDestinationBlockC</background>
+        <background>background\bgBokuBokuGRID</background>
+        <background>background\bgBokuBokuTileset</background>
+        <background>background\bgFinalDeadRoomTileset</background>
+        <background>background\bgFinalDeadRoomGRID</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -4858,6 +4962,7 @@
       <script>scripts\scrBounceMoveSolid.gml</script>
       <script>scripts\scrCreateBigKidCherry.gml</script>
       <script>scripts\scrGenerateUniqueValues.gml</script>
+      <script>scripts\scrRandomAppleColor.gml</script>
     </scripts>
     <scripts name="Extra">
       <script>scripts\scrCreateWarp.gml</script>
@@ -6048,13 +6153,29 @@
       <object>objects\objExKTGCamera</object>
     </objects>
     <objects name="ExtraStage">
-      <object>objects\objExtraStageBallSpawner</object>
-      <object>objects\objExtraStageRedEnergy</object>
-      <object>objects\objExtraStageFlameSpawner</object>
-      <object>objects\objExtraStageFlameBullet</object>
-      <object>objects\objExtraStageEnergyBlock</object>
-      <object>objects\objGlitch</object>
-      <object>objects\objExtraStageTrapUp</object>
+      <objects name="Dieary">
+        <object>objects\objExtraStageBallSpawner</object>
+        <object>objects\objExtraStageRedEnergy</object>
+        <object>objects\objExtraStageFlameSpawner</object>
+        <object>objects\objExtraStageFlameBullet</object>
+        <object>objects\objExtraStageEnergyBlock</object>
+        <object>objects\objGlitch</object>
+        <object>objects\objExtraStageTrapUp</object>
+        <object>objects\objExtraStageDiearyMovableSpike</object>
+        <object>objects\objExtraStageDiearyBomb</object>
+        <object>objects\objExtraStageDiearyExplosion</object>
+      </objects>
+      <objects name="BloodFestival">
+        <object>objects\objExtraStageBloodFestivalLowGravity</object>
+        <object>objects\objExtraStageBloodFestivalGravity</object>
+        <object>objects\objExtraStageBloodFestivalHighGravity</object>
+        <object>objects\objExtraStageBloodFestivalNormalPhysics</object>
+        <object>objects\objExtraStageBloodFestivalNoDJump</object>
+        <object>objects\objExtraStageBloodFestivalMiku</object>
+        <object>objects\objExtraStageBloodFestivalApple</object>
+        <object>objects\objExtraStageBloodFestivalBigApple</object>
+        <object>objects\objExtraStageBloodFestivalCore</object>
+      </objects>
       <objects name="KTG">
         <object>objects\objExtraStageKTGCanon</object>
         <object>objects\objExtraStageKTGBullet</object>
@@ -6102,6 +6223,10 @@
         <object>objects\objExtraStageDestinationAppleCore</object>
         <object>objects\objExtraStageDestinationAppleCore2</object>
       </objects>
+      <objects name="FinalDeadRoom">
+        <object>objects\objFinalDeadRoomClock</object>
+        <object>objects\objFinalDeadRoomControl</object>
+      </objects>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -6119,6 +6244,7 @@
       <object>objects\objCherryBounceLat</object>
       <object>objects\objCherryBounceVert</object>
       <object>objects\objKillerBlock</object>
+      <object>objects\objBulletTailFX</object>
     </objects>
   </objects>
   <timelines name="timelines">
@@ -6307,6 +6433,10 @@
       <room>rooms\rExtraStageBoshy</room>
       <room>rooms\rExtraStageDestinationChase</room>
       <room>rooms\rExtraStageDestinationBananas</room>
+      <room>rooms\rExtraStageDieary</room>
+      <room>rooms\rExtraStageBloodFestivalStage</room>
+      <room>rooms\rExtraStageBloodFestivalBoss</room>
+      <room>rooms\rExtraStageFinalDeadRoom</room>
     </rooms>
   </rooms>
   <help>

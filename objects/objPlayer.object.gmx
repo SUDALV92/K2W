@@ -53,6 +53,8 @@ itemsDir = 0;
 itemsAlpha = 0;
 infJump = false; //draw text
 infJumpAlpha = 0;
+clockControl = false;
+clockControlAlpha = 0;
 counter = 0;
 shootDelay = 5;
 invertedControls = false;
@@ -63,6 +65,12 @@ if (global.autosave) //save the game if currently set to autosave
 {
     scrSaveGame(true);
     global.autosave = false;
+}
+switch(room)
+{
+ case rExtraStageFinalDeadRoom:
+  clockControl = true;
+  break;
 }
 </string>
           </argument>
@@ -1024,7 +1032,49 @@ if(infJump)
  draw_set_colour(c_white);
  draw_text_ext_colour(x,y-40,"Infinite jump",0,300,c_white,c_white,c_white,c_white,infJumpAlpha);
 }
-
+if(clockControl)
+{
+ if(counter &lt;= 50)
+  clockControlAlpha += 0.02;
+ if(counter &gt; 100 &amp;&amp; counter &lt;= 150)
+  clockControlAlpha -= 0.02;
+ 
+ if(counter &gt; 150)
+ {
+  clockControl = false;
+  counter = 0;
+ }
+  
+ counter++;
+ draw_set_halign(fa_center);
+ draw_set_font(fDefault12);
+ draw_set_colour(c_white);
+ draw_text_ext_colour(x,y-40,"Control: up down shoot",0,300,c_white,c_white,c_white,c_white,clockControlAlpha);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="55">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rExtraStageFinalDeadRoom);
+instance_destroy();
 </string>
           </argument>
         </arguments>

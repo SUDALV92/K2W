@@ -50,18 +50,26 @@ trap = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
-audio_play_sound(global.sndGradiusShootDamage,0,0);
-hp--;
+            <string>if(hp &gt; 0)
+{
+ instance_destroy(other);
+ audio_play_sound(global.sndGradiusShootDamage,0,0);
+ hp--;
+}
 if(hp == 10)
 {
  sprite_index = sprExtraStageEnergyBlock2;
 }
-else if(hp &lt;= 0)
+else if(hp == 0)
 {
  sprite_index = sprExtraStageEnergyBlock3;
  image_index = 2;
  image_speed = 0;
+ hp = -1;
+ with(objGlitchController)
+ {
+  energyBlocksCrashed+=4;
+ }
 }
 </string>
           </argument>

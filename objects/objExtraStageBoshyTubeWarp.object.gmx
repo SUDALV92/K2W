@@ -129,6 +129,7 @@ alarm[2] = 32;
 other.x++;
 if(!triggered)
 {
+ audio_play_sound(global.sndMarioPipeDown,0,0);
  alarm[0] = 100;
  triggered = true;
 }

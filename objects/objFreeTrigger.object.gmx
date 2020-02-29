@@ -1690,6 +1690,7 @@ switch(room)
       switch(trg)
       {
        case 1:
+       case 4:
             with(objBlockInvis) 
              if(other.trg == trap) 
              {
@@ -1719,6 +1720,14 @@ switch(room)
               instance_destroy();
              }
             }
+            with(objExtraStageLaser)
+            {
+             if(other.trg == trap)
+             {
+              instance_create(x,y,objGlitch);
+              visible = true;
+             }
+            }
             instance_create(x,y,objGlitch);
             break;
        case 3:
@@ -1742,15 +1751,6 @@ switch(room)
               visible = true;
               instance_create(x,y,objGlitch);
              }
-            instance_create(x,y,objGlitch);
-            break;
-       case 4:
-            with(objExtraStageEnergyBlock) 
-              if(other.trg == trap) 
-              {
-               visible = true;
-               instance_create(x,y,objGlitch);
-              }
             instance_create(x,y,objGlitch);
             break;
        case 5:

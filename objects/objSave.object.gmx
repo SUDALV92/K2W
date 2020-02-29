@@ -32,6 +32,7 @@ angle = 0;
 touch = false;
 Z = false;
 showSkipText = false;
+data = 0;
 
 switch(room)
 {
@@ -275,6 +276,24 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == grav
         {
          case rStage7:
           global.stageUnlocked[72] = true;
+          break;
+         case rExtraStageMaze:
+          if(data == 1)
+          {
+           global.stageUnlocked[78] = true;
+          }
+          break;
+         case rExtraStageKTG:
+          global.stageUnlocked[79] = true;
+          break;
+         case rExtraStageBloodFestivalStage:
+          global.stageUnlocked[81] = true;
+          break;
+         case rExtraStageDestinationChase:
+          if(data == 1)
+          {
+           global.stageUnlocked[80] = true;
+          }
           break;
         }
         scrSaveGame(true);

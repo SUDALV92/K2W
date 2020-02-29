@@ -178,7 +178,13 @@ alarm[0] = mainTextScrollSpd;
    downDelayDecreaser += 0.2;
    upDelay = 0;
    upDelayDecreaser = 0;
-   var maxStage = 0;
+   if(global.stageUnlocked[77])
+   {
+    maxStage = 82;
+   }
+   else
+   {
+    var maxStage = 0;
     for(var i = 0; i &lt; global.stagesTotal; i++)
     {
      if(!global.stageUnlocked[i])
@@ -187,6 +193,7 @@ alarm[0] = mainTextScrollSpd;
       break;
      }
     }
+   }
    
    if(global.selectedStage &lt; maxStage)
     global.selectedStage++;
@@ -216,6 +223,7 @@ alarm[0] = mainTextScrollSpd;
     stageName = "Extra stage";
     temp = "95% energy required";
     break;
+   
    default:
     stageName = "???";
     temp = "LOCKED";

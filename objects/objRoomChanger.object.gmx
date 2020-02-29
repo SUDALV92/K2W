@@ -34,6 +34,7 @@ autosave = false;
 tempTrigger = -1;
 smoothTransition = false;
 enabled = true;
+data = 0;
 </string>
           </argument>
         </arguments>
@@ -736,6 +737,16 @@ switch(room)
             }
         }
         break;
+    case rExtraStageKTG:
+         global.stageUnlocked[79] = true;
+         break;
+    case rExtraStageDestinationChase:
+         global.stageUnlocked[80] = true;
+         break;
+    case rExtraStageBloodFestivalStage:
+         global.stageUnlocked[81] = true;
+         break;
+    
 }    
     
 room_goto(roomTo);

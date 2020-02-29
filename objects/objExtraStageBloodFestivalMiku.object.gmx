@@ -520,7 +520,7 @@ if(t &gt;= 6130 &amp;&amp; t &lt; 6250)
   }
  }
 }
-if(t == 6250)
+if(t == 6250) //конец бла-бла-бла (взрыв)
 {
  instance_destroy(core);
  with(objExtraStageBloodFestivalApple)
@@ -535,10 +535,341 @@ if(t == 6250)
   apple = instance_create(400,304,objExtraStageBloodFestivalApple);
   apple.sprite_index = scrRandomAppleColor();
   apple.direction = random(360);
-  apple.image_xscale = random_range(0.4,1.05);
+  apple.image_xscale = random_range(0.6,1);
   apple.image_yscale = apple.image_xscale;
-  apple.speed = random_range(3,5);
+  apple.speed = random_range(3,6);
  }
+}
+if(t == 6480)
+{
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 8;
+ apple.sprite_index = scrRandomAppleColor();
+ apple.alarm[3] = 10;
+ apple.direction = point_direction(x,y,objPlayer.x,objPlayer.y)-30;
+ apple.speed = 10;
+ 
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 8;
+ apple.sprite_index = scrRandomAppleColor();
+ apple.alarm[3] = 10;
+ apple.direction = point_direction(x,y,objPlayer.x,objPlayer.y)+30;
+ apple.speed = 10;
+}
+if(t == 6750)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  mode = 8;
+  state = 1;
+  alarm[3] = 0;
+  outsideDelete = true;
+  direction = point_direction(objPlayer.x,objPlayer.y,x,y);
+  speed = 4;
+  gravity = 0;
+ }
+}
+if(t == 6800)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  speed = 0;
+  outsideDelete = true;
+  mode = 0;
+  friction = 0;
+ }
+}
+if(t == 6820)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  angle = random(360);
+  repeat(5)
+  {
+   apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+   apple.gravity_direction = angle;
+   apple.gravity = 0.1;
+   angle+=360/5;
+  }
+  instance_destroy();
+ }
+}
+if(t == 6880)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  gravity = 0;
+  speed = 0;
+ }
+}
+if(t == 6890)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  if(y &gt; 576 || y &lt; 32 || x &lt; 32 || x &gt; 768)
+   gravity_direction = point_direction(objPlayer.x,objPlayer.y,x,y);
+  else
+   gravity_direction = random(360);
+  gravity = 0.1;
+ }
+}
+if(t &gt;= 7050 &amp;&amp; t &lt;= 7500 &amp;&amp; t % 5 == 0)
+{
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 9;
+ apple.hspeed = -8;
+ apple.vspeed = -10;
+ apple.alarm[2] = irandom_range(10,70);
+ apple.sprite_index = scrRandomAppleColor();
+ 
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 9;
+ apple.hspeed = -8;
+ apple.vspeed = 12;
+ if(t % 10 == 0)
+  apple.alarm[2] = irandom_range(10,70);
+ else
+  apple.mode = 0;
+ apple.sprite_index = scrRandomAppleColor();
+ 
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 9;
+ apple.hspeed = -8;
+ apple.vspeed = -10;
+ apple.alarm[2] = 80;
+ apple.state = 1;
+ apple.sprite_index = scrRandomAppleColor();
+ 
+ apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+ apple.mode = 9;
+ apple.hspeed = -8;
+ apple.vspeed = 12;
+ apple.alarm[2] = 80;
+ apple.state = 1;
+ apple.sprite_index = scrRandomAppleColor();
+}
+if(t &gt;= 7600 &amp;&amp; t &lt; 7780 &amp;&amp; t % 5 == 0) //закутки
+{
+ apple = instance_create(832,irandom(608),objExtraStageBloodFestivalApple);
+ apple.mode = 10;
+ apple.xspeed = -6;
+ apple.hspeed = -6;
+ apple.curving = 4;
+ apple.sprite_index = scrRandomAppleColor();
+}
+if(t == 7830)
+{
+ state = 0;
+}
+if(t &gt; 7830 &amp;&amp; t &lt; 8050 &amp;&amp; t % 5 == 0)
+{
+ apple = instance_create(850,536,objExtraStageBloodFestivalApple);
+ apple.mode = 11;
+ apple.sprite_index = scrRandomAppleColor();
+ apple.hspeed = -10;
+ apple.state = 1;
+ apple.alarm[0] = 50;
+ if(state == 0 &amp;&amp; t % 20 == 0)
+ {
+  apple.alarm[2] = irandom_range(1,10); //jump
+  state = -1;
+ }
+ 
+ apple = instance_create(850,72,objExtraStageBloodFestivalApple);
+ apple.mode = 11;
+ apple.sprite_index = scrRandomAppleColor();
+ apple.hspeed = -10;
+ apple.state = -1;
+ apple.alarm[0] = 50;
+ if(state == 1 &amp;&amp; t % 20 == 0)
+ {
+  apple.alarm[2] = irandom_range(1,10); //jump
+  state = 0;
+ }
+ if(state == -1) //костыль, чтобы второе яблоко тут же не сработало
+ {
+  state = 1;
+ }
+}
+if(t == 8050)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  if(mode == 11 &amp;&amp; state == 1)
+  {
+   vspeed = 3;
+  }
+  if(mode == 11 &amp;&amp; state == -1)
+  {
+   vspeed = -3;
+  }
+ }
+}
+if(t == 8100)
+{
+ dir = 45;
+ repeat(4)
+ {
+  apple = instance_create(400,304,objExtraStageBloodFestivalApple);
+  apple.image_alpha = 0.1;
+  apple.len = 420;
+  apple.maxLen = 420;
+  apple.dir = dir;
+  apple.image_xscale = 2;
+  apple.image_yscale = 2;
+  apple.sprite_index = scrRandomAppleColor();
+  apple.mode = 12;
+  apple.x = 400 + lengthdir_x(apple.len,apple.dir);
+  apple.y = 304 + lengthdir_y(apple.len,apple.dir);
+  
+  dir+=90;
+ }
+}
+/*if(t &gt;= 8100 &amp;&amp; t &lt; 8650)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  dir += 0.5;
+ }
+}*/
+if(t == 8650)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  finalSpawn = false;
+  if(mode == 13)
+  {
+   move_towards_point(400,304,2);
+  }
+ }
+ centerApple = instance_create(400,304,objExtraStageBloodFestivalApple);
+ centerApple.image_xscale = 0;
+ centerApple.image_yscale = 0;
+ centerApple.sprite_index = scrRandomAppleColor();
+ centerApple.depth = -1;
+}
+if(t &gt;= 8650 &amp;&amp; t &lt; 8850 &amp;&amp; t % 50 == 0)
+{
+ if(t == 8650)
+  alpha = 0.5;
+ else if(t == 8700)
+  alpha = 1;
+ repeat(15)
+ {
+  apple = instance_create(irandom_range(-100,900),640,objExtraStageBloodFestivalApple);
+  apple.sprite_index = scrRandomAppleColor();
+  apple.mode = 13;
+  apple.image_xscale = 0.8;
+  apple.image_yscale = 0.8;
+  apple.direction = point_direction(apple.x,apple.y,400,304);
+  apple.speed = 2;
+  apple.image_alpha = alpha;
+ }
+ repeat(15)
+ {
+  apple = instance_create(irandom_range(-100,900),-32,objExtraStageBloodFestivalApple);
+  apple.sprite_index = scrRandomAppleColor();
+  apple.mode = 13;
+  apple.image_xscale = 0.8;
+  apple.image_yscale = 0.8;
+  apple.direction = point_direction(apple.x,apple.y,400,304);
+  apple.speed = 2;
+  apple.image_alpha = alpha;
+ }
+ repeat(15)
+ {
+  apple = instance_create(-32,irandom_range(-100,700),objExtraStageBloodFestivalApple);
+  apple.sprite_index = scrRandomAppleColor();
+  apple.mode = 13;
+  apple.image_xscale = 0.8;
+  apple.image_yscale = 0.8;
+  apple.direction = point_direction(apple.x,apple.y,400,304);
+  apple.speed = 2;
+  apple.image_alpha = alpha;
+ }
+ repeat(15)
+ {
+  apple = instance_create(832,irandom_range(-100,700),objExtraStageBloodFestivalApple);
+  apple.sprite_index = scrRandomAppleColor();
+  apple.mode = 13;
+  apple.direction = point_direction(apple.x,apple.y,400,304);
+  apple.speed = 1;
+ }
+}
+if(t &gt;= 8650 &amp;&amp; t &lt; 8850)
+{
+ with(objExtraStageBloodFestivalApple)
+ {
+  dir += 3;
+  if(maxLen &gt; 5)
+   maxLen-=0.5;
+ }
+ centerApple.image_xscale += 0.02;
+ centerApple.image_yscale += 0.02;
+ 
+}
+if(t &gt;= 8850 &amp;&amp; t &lt; 8880)
+{
+ centerApple.image_xscale -= 0.1;
+ centerApple.image_yscale -= 0.1;
+ centerApple.blend = true;
+}
+if(t == 8880)
+{
+ instance_destroy(centerApple);
+ with(objExtraStageBloodFestivalApple)
+ {
+  direction = point_direction(400,304,x,y);
+  speed = random_range(1,3);
+  if(mode == 12)
+   instance_destroy();
+ }
+ repeat(30)
+ {
+  apple = instance_create(irandom_range(395,405),irandom_range(299,309),objExtraStageBloodFestivalApple);
+  apple.image_xscale = 0.5;
+  apple.image_yscale = 0.5;
+  apple.sprite_index = scrRandomAppleColor();
+  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.speed = random_range(1,4);
+ }
+ repeat(30)
+ {
+  apple = instance_create(irandom_range(390,410),irandom_range(294,314),objExtraStageBloodFestivalApple);
+  apple.image_xscale = 0.5;
+  apple.image_yscale = 0.5;
+  apple.sprite_index = scrRandomAppleColor();
+  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.speed = random_range(1,4);
+ }
+ repeat(30)
+ {
+  apple = instance_create(irandom_range(395,415),irandom_range(289,319),objExtraStageBloodFestivalApple);
+  apple.image_xscale = 0.5;
+  apple.image_yscale = 0.5;
+  apple.sprite_index = scrRandomAppleColor();
+  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.speed = random_range(1,4);
+ }
+}
+if(t == 9100)
+{
+    if(!global.energy[98])
+    {
+      energy = instance_create(x,y,objEnergy);
+      energy.energyID = 98;
+      energy.direction = 170;
+      energy.speed = 10;
+      energy.friction = 0.2;
+      energy.alarm[0] = 20;
+      energy.active = true;
+    }
+    global.extraBossCleared[3] = 1;
+    warp = instance_create(x,y,objWarp);
+    warp.autosave = true;
+    warp.roomTo = rExtraStageMaze;
+    audio_play_sound(global.sndDeath,0,0);
+    instance_destroy();
 }
 t++;
 </string>
@@ -566,29 +897,6 @@ if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 10 
 {     
  audio_sound_set_track_position(global.currentMusic, t/50);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(50,50,string(t));
 </string>
           </argument>
         </arguments>

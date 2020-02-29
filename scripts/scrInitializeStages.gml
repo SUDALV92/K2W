@@ -76,3 +76,9 @@ global.stageName[74] = "[7-B2] Kamilia phase 2"; global.stageRoom[74] = rBoss7Ph
 global.stageName[75] = "[7-B3] Kamilia phase 4"; global.stageRoom[75] = rBoss7Phase4Pre;
 global.stageName[76] = "WARP TO HOME"; global.stageRoom[76] = rHomeBad;
 global.stageName[77] = "Extra stage"; global.stageRoom[77] = rExtraStageMaze;
+global.stageName[78] = "Ex BOSHY Boss"; global.stageRoom[78] = rExtraStageBoshy;
+global.stageName[79] = "Ex KTG Boss"; global.stageRoom[79] = rExtraStageKTGSray;
+global.stageName[80] = "Ex Destination"; global.stageRoom[80] = rExtraStageDestinationBananas;
+global.stageName[81] = "Ex Blood Fetival Boss"; global.stageRoom[81] = rExtraStageBloodFestivalBoss;
+global.stageName[82] = "The Hands of Time"; global.stageRoom[82] = rExtraStageFinalDeadRoom;
+global.stageName[83] = "Shutdown"; global.stageRoom[83] = rStage6BossRush;

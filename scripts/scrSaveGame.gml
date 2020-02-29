@@ -80,6 +80,11 @@ if (savePosition)
         global.saveEnergy[i] = global.energy[i];
     }
     
+    for(var i = 0; i < 4; i++)
+    {
+     global.saveExtraBossCleared[i] = global.extraBossCleared[i];
+    }
+    
     for(var i = global.stagesTotal; i >= 0; i--)
     {
      global.saveStageUnlocked[i] = global.stageUnlocked[i];
@@ -141,6 +146,10 @@ for (var i = 0; i < 5; i++)
 for(var i = 0; i < 100; i++)
 {
     ds_map_add(saveMap,"energy["+string(i)+"]",global.saveEnergy[i]);
+}
+for(var i = 0; i < 4; i++)
+{
+ ds_map_add(saveMap,"extraBossCleared["+string(i)+"]",global.saveExtraBossCleared[i]);
 }
 for(var i = global.stagesTotal; i >= 0; i--)
 {

@@ -725,6 +725,22 @@ switch(room)
        audio_sound_set_track_position(global.currentMusic, 52.386);
       }
       break;
+ case rExtraStageMaze:
+      if(global.currentMusicID == global.sndExtraStage)
+      {
+          if(audio_sound_get_track_position(global.currentMusic) &gt;= 398.832)
+          {
+           audio_sound_set_track_position(global.currentMusic, 1.301);
+          }
+      }
+      if(global.currentMusicID == global.sndExtraStageGlitched)
+      {
+          if(audio_sound_get_track_position(global.currentMusic) &gt;= 203.937)
+          {
+           audio_sound_set_track_position(global.currentMusic, 68.936);
+          }
+      }
+      break;
 }
 </string>
           </argument>
@@ -970,9 +986,13 @@ switch(room)
 {
  case rStage6BossRush:
   global.portalAvailable = true;
+  global.noShoot = false;
   break;
  case rExtraStageFinalDeadRoom:
   global.noShoot = true;
+  break;
+ default:
+  global.noShoot = false;
   break;
 }
 </string>

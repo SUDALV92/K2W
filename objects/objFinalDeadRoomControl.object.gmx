@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(scrButtonCheckPressed(global.upButton))
+            <string>if(objFinalDeadRoomClock.phase &lt; -1) exit;
+
+if(scrButtonCheckPressed(global.upButton))
 {
  with(objFinalDeadRoomClock)
  {
@@ -37,15 +39,17 @@
     pointer = 0;
    }
   }
-  else
+  else if(phase == 0)
   {
-   if(pointer == handL &amp;&amp; cells[handR] != -1)
-   {
-    pointer = handR;
+   if(pointer == handL)
+   {    
+    if(cells[handR] != -1)
+     pointer = handR;
    }
-   else
-   {
-    pointer = handL;
+   else if(pointer == handR)
+   {    
+    if(cells[handL] != -1)
+     pointer = handL;
    }
   }
  }
@@ -62,15 +66,17 @@ if(scrButtonCheckPressed(global.downButton))
     pointer = 11;
    }
   }
-  else
+  else if(phase == 0)
   {
-   if(pointer == handL &amp;&amp; cells[handR] != -1)
+   if(pointer == handL)
    {    
-    pointer = handR;
+    if(cells[handR] != -1)
+     pointer = handR;
    }
-   else
-   {
-    pointer = handL;
+   else if(pointer == handR)
+   {    
+    if(cells[handL] != -1)
+     pointer = handL;
    }
   }
  }

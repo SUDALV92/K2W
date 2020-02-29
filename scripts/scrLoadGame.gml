@@ -109,6 +109,10 @@ if (loadFile)
         {
             global.saveEnergy[i] = ds_map_find_value(saveMap,"energy["+string(i)+"]");
         }
+        for(var i = 0; i < 4; i++)
+        {
+         global.saveExtraBossCleared[i] = ds_map_find_value(saveMap,"extraBossCleared["+string(i)+"]");
+        }
         for(var i = global.stagesTotal; i >= 0; i--)
         {
             global.saveStageUnlocked[i] = ds_map_find_value(saveMap,"stageUnlocked["+string(i)+"]");
@@ -155,7 +159,7 @@ if (loadFile)
         saveValid = false;
     }
     
-    if (!saveValid) //check if the save is invalid
+    /*if (!saveValid) //check if the save is invalid
     {
         //save is invalid, restart the game
         
@@ -164,7 +168,7 @@ if (loadFile)
         scrRestartGame();
         
         exit;
-    }
+    }*/
 }
 
 //set game variables and set the player's position
@@ -192,6 +196,10 @@ for (var i = 0; i < 5; i++)
 for(var i = 0; i < 100; i++)
 {
     global.energy[i] = global.saveEnergy[i];
+}
+for(var i = 0; i < 4; i++)
+{
+ global.extraBossCleared[i] = global.saveExtraBossCleared[i];
 }
 for(var i = global.stagesTotal; i >= 0; i--)
 {

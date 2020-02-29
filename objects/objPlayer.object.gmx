@@ -71,6 +71,9 @@ switch(room)
  case rExtraStageFinalDeadRoom:
   clockControl = true;
   break;
+ default:
+  clockControl = false;
+  break;
 }
 </string>
           </argument>

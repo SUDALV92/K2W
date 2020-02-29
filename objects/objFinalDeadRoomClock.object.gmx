@@ -25,10 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//random_set_seed(1);
+            <string>random_set_seed(1); //а вы думали я с рандомом тестировал?
 for(var i = 0; i &lt; 12; i++)
 {
  cells[i] = -1;
+ drawCells[i] = false;
 }
 N = irandom(11);
 value = irandom_range(1,6);
@@ -71,16 +72,13 @@ while(fillN &lt; 12)
      }
     }
 }
-handL = 0;
+handL = 3;
 handLAngle = 0;
-handR = 0;
-handRAngle = 0;
-pointer = 0;
-targetL = 0;
-targetR = 0;
-rotation = 0;
+handR = 3;
+handRAngle = 180;
+pointer = 9;
 rotateDone[1] = false;
-phase = -1; //-1 = init; 0 = idle; 1 = set direction; 2 = to target; 3,4 = from target by value
+phase = -5; //-5,-4,-3,-2 = intro; -1 = init; 0 = idle; 1 = set direction; 2 = to target; 3,4 = from target by value
 t = 0;
 </string>
           </argument>
@@ -106,6 +104,112 @@ t = 0;
             <kind>1</kind>
             <string>switch(phase)
 {
+ case -5: //intro wait
+  if(t == 50)
+  {
+   t = 0;
+   phase = -4;
+   audio_play_sound(global.sndClock1,0,0);
+   break;
+  }
+  t++;
+  break;
+ case -4: //intro step 1
+  repeat(3)
+  {
+      diffL = angle_difference(handLAngle,pointer*30)
+      if(diffL &gt; 0)
+      {
+       handLAngle--;
+      }
+      else if(diffL &lt; 0)
+      {
+       handLAngle++;
+      }
+      else 
+       rotateDone[0] = true;
+       
+      diffR = angle_difference(handRAngle,pointer*30);
+      if(diffR &lt; 0)
+      {
+       handRAngle++;
+      }
+      else if(diffR &gt; 0)
+      {
+       handRAngle--;
+      }
+      else 
+       rotateDone[1] = true;
+  }
+  if(rotateDone[0] &amp;&amp; rotateDone[1])
+  {
+   phase = -3;
+   rotateDone[0] = false;
+   rotateDone[1] = false;
+   pointer = 3;
+  }
+  break;
+ case -3: //intro step 2 (wait)
+  if(t == 30)
+  {
+   t = 0;
+   phase = -2;
+   audio_play_sound(global.sndClock2,0,0);
+   break;
+  }
+  t++;
+  break;
+ case -2: //intro step 3 (to start)
+  repeat(3)
+  {
+      diffL = angle_difference(handLAngle,handL*30)
+      if(diffL &gt; 0 || diffL == -180)
+      {
+       handLAngle--;
+      }
+      else if(diffL &lt; 0)
+      {
+       handLAngle++;
+      }
+      else 
+       rotateDone[0] = true;
+       
+      diffR = angle_difference(handRAngle,handR*30);
+      if(diffR &lt; 0)
+      {
+       handRAngle++;
+      }
+      else if(diffR &gt; 0)
+      {
+       handRAngle--;
+      }
+      else 
+       rotateDone[1] = true;
+       
+      switch(handRAngle)
+      {
+       case 271: drawCells[9] = true; break;
+       case 300: drawCells[10] = true; drawCells[8] = true; break;
+       case 330: drawCells[11] = true; drawCells[7] = true; break;
+       case 360: drawCells[0] = true; drawCells[6] = true; break;
+       case 390: drawCells[1] = true; drawCells[5] = true; break;
+       case 420: drawCells[2] = true; drawCells[4] = true; break;
+       case 450: drawCells[3] = true; break;
+      }
+  }
+  if(rotateDone[0] &amp;&amp; rotateDone[1])
+  {
+   audio_play_sound(global.sndClock3,0,0);
+   phase = -1;   
+   handLAngle = handL * 30;
+   handRAngle = handR * 30;
+   with(objFinalDeadRoomLaser)
+   {
+    go = true;
+    visible = true;
+   }
+  }
+  break;
  case -1: //init state
   handL = pointer;
   handR = pointer;
@@ -161,6 +265,29 @@ t = 0;
    phase = 2;
    rotateDone[0] = false;
    rotateDone[1] = false;
+   clear = true;
+   for(var i = 0; i &lt; 11; i++)
+    {
+     if(cells[i] != -1)
+     {
+      clear = false;
+      break;
+     }
+    }
+   if(clear)
+   {
+     //CLEAR
+     instance_destroy(objFinalDeadRoomControl);
+     with(objFinalDeadRoomLaser)
+     {
+      instance_destroy();
+     }
+     background_hspeed[0] = 0;
+     background_vspeed[0] = 0;
+     scrStopMusic();
+     audio_play_sound(global.sndClockBell,0,0);
+     phase = 4;
+    }
   }
   break;
  case 2: //wait
@@ -169,6 +296,7 @@ t = 0;
    t = 0;
    phase = 3;
    audio_play_sound(global.sndClock2,0,0);
+   break;
   }
   t++;
   break;
@@ -214,22 +342,59 @@ t = 0;
     {
      if(cells[i] != -1)
      {
-      death = true;
+      scrKillPlayer();
       break;
      }
-    }
-    if(death)
-     scrKillPlayer();
-    else
-    {
-     //CLEAR
-     instance_destroy();
-    }
+    }   
    }
    handLAngle = handL * 30;
    handRAngle = handR * 30;
   }
   break;
+ case 4:
+      if(t &gt; 0)
+      {
+       background_alpha[0] -= 0.01;
+      }
+      if(t == 100)
+      {
+        if(!global.energy[99])
+        {
+          energy = instance_create(x,y,objEnergy);
+          energy.energyID = 99;
+          energy.direction = random_range(20,160);
+          energy.speed = 10;
+          energy.friction = 0.2;
+          energy.alarm[0] = 20;
+          energy.active = true;
+        }
+      }
+      if(t &gt; 100)
+      {
+       image_alpha -= 0.02;
+      }
+      if(t == 200)
+      {
+       black = instance_create(0,0,objBlack);
+       black.image_xscale = 30;
+       black.image_yscale = 30;
+       black.image_alpha = 0;
+       black.A = 2;
+       black.depth = -100;
+      }
+      if(t == 350)
+      {
+       global.autosave = true;
+       global.selectedStage = 83;       
+       
+       with(objPlayer)
+       {
+        instance_destroy();
+       }
+       room_goto(rStage6BossRush);
+      }
+      t++;
+      break;
 }
 </string>
           </argument>
@@ -261,12 +426,18 @@ for(var temp = 0; temp &lt; 12; temp++)
   case -1:
    break;
   default:
-   draw_sprite_ext(sprFinalDeadRoomDigit,cells[temp]-1,x+lengthdir_x(170,temp*30),y+lengthdir_y(170,temp*30),1,1,0,c_white,1);
+   if(drawCells[temp])
+    draw_sprite_ext(sprFinalDeadRoomDigit,cells[temp]-1,x+lengthdir_x(170,temp*30),y+lengthdir_y(170,temp*30),1,1,0,c_white,1);
  }
 }
-draw_sprite_ext(sprFinalDeadRoomHand,0,x,y,1,1,handLAngle-90,c_white,1);
-draw_sprite_ext(sprFinalDeadRoomHand,0,x,y,1,1,handRAngle-90,c_white,1);
-draw_sprite_ext(sprFinalDeadRoomPointer,0,x,y,1,1,pointer*30,c_white,1);
+if(phase &lt; 4)
+{
+ draw_sprite_ext(sprFinalDeadRoomHand,0,x,y,1,1,handLAngle-90,c_white,1);
+ draw_sprite_ext(sprFinalDeadRoomHand,0,x,y,1,1,handRAngle-90,c_white,1);
+
+ if(phase &gt;= -1)
+  draw_sprite_ext(sprFinalDeadRoomPointer,0,x,y,1,1,pointer*30,c_white,1);
+}
 
 /*scrDrawTextOutline(50,50,"handL = " + string(handL),c_white,c_black);
 scrDrawTextOutline(50,70,"handR = " + string(handR),c_white,c_black);

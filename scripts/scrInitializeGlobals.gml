@@ -82,6 +82,12 @@ for(var i = 0; i < 100; i++)
  global.saveEnergy[i] = false;
 }
 
+for(var i = 0; i < 4; i++)
+{
+ global.extraBossCleared[i] = 0;
+ global.saveExtraBossCleared[i] = 0;
+}
+
 scrInitializeStages();
 sfxCount = 10;
 for(var temp = 0; temp < sfxCount; temp++)

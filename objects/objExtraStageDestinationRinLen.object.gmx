@@ -855,6 +855,7 @@ if(t == 9800)
       energy.alarm[0] = 20;
       energy.active = true;
     }
+    global.extraBossCleared[2] = 1;
     warp = instance_create(xx,yy,objWarp);
     warp.autosave = true;
     warp.roomTo = rExtraStageMaze;

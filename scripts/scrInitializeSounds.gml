@@ -53,6 +53,7 @@ global.sndDiearyExplosion = audio_create_stream("SFX\Stage\sndDiearyExplosion.og
 global.sndClock1 = audio_create_stream("SFX\Stage\sndClock1.ogg");
 global.sndClock2 = audio_create_stream("SFX\Stage\sndClock2.ogg");
 global.sndClock3 = audio_create_stream("SFX\Stage\sndClock3.ogg");
+global.sndClockBell = audio_create_stream("SFX\Stage\sndClockBell.ogg");
 
 global.sndFlash = audio_create_stream("SFX\Boss\sndFlash.ogg");
 global.sndSmoke = audio_create_stream("SFX\Boss\sndSmoke.ogg");
@@ -220,6 +221,7 @@ global.sndDefeated = audio_create_stream("Music\Defeated.ogg");
 global.sndEnding = audio_create_stream("Music\Ending.ogg");
 global.sndExtra = audio_create_stream("Music\Escape.ogg");
 global.sndExtraStage = audio_create_stream("Music\ExtraStage.ogg");
+global.sndExtraStageGlitched = audio_create_stream("Music\ExtraStageGlitched.ogg");
 global.sndDjSray = audio_create_stream("Music\DjSray.ogg");
 global.sndMarioPhase1 = audio_create_stream("Music\MarioPhase1.ogg");
 global.sndMarioPhase2 = audio_create_stream("Music\MarioPhase2.ogg");

@@ -113,6 +113,7 @@
         case rStage5Unknown: image_index = 49; break;
         case rStage5BloodFestival: 
         case rExtraStageBloodFestivalStage:
+        case rExtraStageBloodFestivalBoss:
              image_index = 50; break;
         case rStage5Dieary: 
         case rExtraStageDieary:        
@@ -158,6 +159,9 @@
         case rExtraStageDestinationChase:
         case rExtraStageDestinationBananas:
              image_index = 60; break;
+        
+        case rExtraStageFinalDeadRoom:
+             image_index = 69; break;
         default: instance_destroy(); break;
     }
 
@@ -335,6 +339,15 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprGamelist,image_index,view_xview[0] + x,view_yview[0] + y);
+cardName = "";
+switch(image_index)
+{
+ case 69: cardName = "The hands of time"; break;
+}
+draw_set_font(fJoystix10);
+draw_set_halign(fa_center);
+draw_set_valign(fa_bottom);
+scrDrawTextOutline(view_xview[0] + x - 100,view_yview[0] + y - 10,cardName,c_white,c_black);
 </string>
           </argument>
         </arguments>

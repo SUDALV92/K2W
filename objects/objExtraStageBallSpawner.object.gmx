@@ -29,6 +29,7 @@
 image_yscale = 0;
 hspd = 0;
 i=0;
+glitched = false;
 </string>
           </argument>
         </arguments>
@@ -59,7 +60,10 @@ if(i &lt; 50)
 }
 if(i == 50)
 {
- energy = instance_create(x,y-4,objExtraStageRedEnergy);
+ if(glitched)
+  energy = instance_create(x,y-4,objExtraStageRedEnergyGlitched);
+ else
+  energy = instance_create(x,y-4,objExtraStageRedEnergy);
  energy.hspeed = hspd;
  image_xscale = 1;
  image_yscale = 1;

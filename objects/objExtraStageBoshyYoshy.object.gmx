@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 0.4;
 alarm[0] = irandom_range(20,40);
+nosound = false;
 image_xscale = 1.5;
 image_yscale = 1.5;
 </string>
@@ -53,7 +54,9 @@ image_yscale = 1.5;
             <kind>1</kind>
             <string>gravity_direction = 90;
 gravity = 0.4;
-audio_play_sound(global.sndYoshiJump,0,0);
+
+if(!nosound)
+ audio_play_sound(global.sndYoshiJump,0,0);
 instance_create(x,y,objExtraStageBoshyEgg);
 </string>
           </argument>

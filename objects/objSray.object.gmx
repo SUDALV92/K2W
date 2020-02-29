@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprSray</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -495,6 +495,7 @@ if(dead &amp;&amp; i == (deadI + 205))
       energy.alarm[0] = 20;
       energy.active = true;
     }
+    global.extraBossCleared[1] = 1;
     warp = instance_create(x,y+61,objWarp);
     warp.roomTo = rExtraStageMaze;
     warp.autosave = true;    

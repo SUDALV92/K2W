@@ -812,11 +812,13 @@ if(instance_exists(objPlayer))
      yoshy = instance_create(820,100,objExtraStageBoshyYoshy);
      yoshy.hspeed = -8;
      yoshy.image_xscale = -1.5;
+     yoshy.nosound = true;
     }
     else
     {
      yoshy = instance_create(-10,100,objExtraStageBoshyYoshy);
      yoshy.hspeed = 8;
+     yoshy.nosound = true;
     }
    }
    j++; 
@@ -919,6 +921,7 @@ if(phase == 103 &amp;&amp; !phase3Damaged)
       energy.alarm[0] = 20;
       energy.active = true;
     }
+  global.extraBossCleared[0] = 1;
   objExtraStageBoshyTubeWarp.alarm[1] = 1;
   instance_destroy();
   //CheetahmenWarpToBoss.alarm[2] = 1;

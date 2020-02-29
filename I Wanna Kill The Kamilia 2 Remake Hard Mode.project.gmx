@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="536" name="datafiles">
-    <datafiles number="536" name="Music">
+  <datafiles number="538" name="datafiles">
+    <datafiles number="538" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -838,9 +838,26 @@
         </ConfigOptions>
         <filename>Distrust.ogg</filename>
       </datafile>
+      <datafile>
+        <name>ExtraStageGlitched.ogg</name>
+        <exists>-1</exists>
+        <size>10199848</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>ExtraStageGlitched.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="536" name="SFX">
-      <datafiles number="536" name="Common">
+    <datafiles number="538" name="SFX">
+      <datafiles number="538" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1335,7 +1352,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="536" name="Stage">
+      <datafiles number="538" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1744,9 +1761,26 @@
           </ConfigOptions>
           <filename>sndClock3.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndClockBell.ogg</name>
+          <exists>-1</exists>
+          <size>233011</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndClockBell.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="536" name="Boss">
-        <datafiles number="536" name="Solgryn">
+      <datafiles number="538" name="Boss">
+        <datafiles number="538" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3397,7 +3431,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="536" name="ExtraBoss2">
+        <datafiles number="538" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -5073,6 +5107,7 @@
         <object>objects\objWarpStart</object>
         <object>objects\objRoomChanger</object>
         <object>objects\objWarp</object>
+        <object>objects\objWarpGlitch</object>
         <object>objects\objWarpNext</object>
         <object>objects\objWarpAutosaveNext</object>
         <object>objects\objOutsideRoomChanger</object>
@@ -6156,6 +6191,7 @@
       <objects name="Dieary">
         <object>objects\objExtraStageBallSpawner</object>
         <object>objects\objExtraStageRedEnergy</object>
+        <object>objects\objExtraStageRedEnergyGlitched</object>
         <object>objects\objExtraStageFlameSpawner</object>
         <object>objects\objExtraStageFlameBullet</object>
         <object>objects\objExtraStageEnergyBlock</object>
@@ -6164,6 +6200,8 @@
         <object>objects\objExtraStageDiearyMovableSpike</object>
         <object>objects\objExtraStageDiearyBomb</object>
         <object>objects\objExtraStageDiearyExplosion</object>
+        <object>objects\objExtraStageLaser</object>
+        <object>objects\objGlitchController</object>
       </objects>
       <objects name="BloodFestival">
         <object>objects\objExtraStageBloodFestivalLowGravity</object>
@@ -6226,6 +6264,7 @@
       <objects name="FinalDeadRoom">
         <object>objects\objFinalDeadRoomClock</object>
         <object>objects\objFinalDeadRoomControl</object>
+        <object>objects\objFinalDeadRoomLaser</object>
       </objects>
     </objects>
     <objects name="killers">

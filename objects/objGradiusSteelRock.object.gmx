@@ -98,7 +98,7 @@ if(hp &gt; 1)
 else
  event_user(0);
  
-instance_destroy(other);
+scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>
@@ -123,7 +123,7 @@ instance_destroy(other);
             <kind>1</kind>
             <string>if(isKiller &amp;&amp; !global.godMode)
 {
- instance_destroy(other);
+ scrObjectDestroy(other);
 }
 </string>
           </argument>

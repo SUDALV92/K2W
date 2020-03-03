@@ -59,7 +59,7 @@ extraChaos5Ready = 0;
 t = instance_create(0,0,objExTransition);
 t.persistent = true;
 
-instance_destroy(objPlayer);
+scrObjectDestroy(objPlayer);
 global.autosave = true;
 room_goto(rExStage1);
 </string>

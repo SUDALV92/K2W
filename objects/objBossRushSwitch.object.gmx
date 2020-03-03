@@ -60,7 +60,7 @@ image_speed = 0;
  global.bossRush[3] = false;
  global.bossRush[4] = false;
  global.bossRushSkip = true;
- instance_destroy(objPlayer);
+ scrObjectDestroy(objPlayer);
  room_restart();
 }
 else
@@ -71,7 +71,7 @@ else
  global.bossRush[3] = true;
  global.bossRush[4] = true;
  global.bossRushSkip = false;
- instance_destroy(objPlayer);
+ scrObjectDestroy(objPlayer);
  room_restart();
 }
 </string>

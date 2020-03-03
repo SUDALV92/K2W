@@ -54,6 +54,8 @@ global.sndClock1 = audio_create_stream("SFX\Stage\sndClock1.ogg");
 global.sndClock2 = audio_create_stream("SFX\Stage\sndClock2.ogg");
 global.sndClock3 = audio_create_stream("SFX\Stage\sndClock3.ogg");
 global.sndClockBell = audio_create_stream("SFX\Stage\sndClockBell.ogg");
+global.sndShutdownLoading = audio_create_stream("SFX\Stage\sndShutdownLoading.ogg");
+global.sndShake = audio_create_stream("SFX\Stage\sndShake.ogg");
 
 global.sndFlash = audio_create_stream("SFX\Boss\sndFlash.ogg");
 global.sndSmoke = audio_create_stream("SFX\Boss\sndSmoke.ogg");
@@ -229,3 +231,5 @@ global.sndMarioPhase3 = audio_create_stream("Music\MarioPhase3.ogg");
 global.sndBananas = audio_create_stream("Music\Bananas.ogg");
 global.sndBokuBoku = audio_create_stream("Music\BokuBoku.ogg");
 global.sndFinalDeadRoom = audio_create_stream("Music\Distrust.ogg");
+global.sndShutdownInterrupted = audio_create_stream("Music\ShutdownInterrupted.ogg");
+global.sndAbyss = audio_create_stream("Music\LunarAbyss.ogg");

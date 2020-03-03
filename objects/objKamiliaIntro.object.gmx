@@ -192,8 +192,8 @@ spikesActivated = false;
         {
             //escape = true;
             action = false;
-            instance_destroy(objHPMBarfull);
-            instance_destroy(objHPMBar);
+            scrObjectDestroy(objHPMBarfull);
+            scrObjectDestroy(objHPMBar);
             invincible = true;
             with(objBlockBoss7A)
             {

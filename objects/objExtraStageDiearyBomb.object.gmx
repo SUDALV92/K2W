@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 instance_create(x,y,objExtraStageDiearyExplosion);
 instance_destroy();
 </string>

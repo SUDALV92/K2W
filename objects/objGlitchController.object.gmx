@@ -93,7 +93,7 @@ if(energyBlocksCrashed == 4)
   {
    instance_change(objBlock,false);
   }
-  instance_destroy(objSave);
+  scrObjectDestroy(objSave);
   block = instance_create(2400,832,objBlock);
   block.image_yscale = 4;
   placed = false;

@@ -108,7 +108,7 @@ else if(instance_exists(objPlayer))
         view_yview[0] = floor(yFollow/view_hview[0])*view_hview[0];
         if(oldX != view_xview[0] || oldY != view_yview[0])
         {
-         instance_destroy(objGamelist); 
+         scrObjectDestroy(objGamelist); 
          instance_create(view_xview[0]+view_wview[0],0,objGamelist);
         }
     }

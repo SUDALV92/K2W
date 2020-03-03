@@ -44,8 +44,14 @@ switch(room)
   image_alpha = 0;
   enabled = false;
   break;
+ case rPreAbyss:
+  sprite_index = sprK3WarpA;
+  image_speed=0;
+  visible = false;
+  break;
 }
 step = 0; //secret5
+i = 0; //abyss
 </string>
           </argument>
         </arguments>
@@ -93,6 +99,13 @@ switch(room)
    instance_create(x,y,objSecret5PortalFX);
   }
   break;
+ case rPreAbyss:
+    if(i % 40 == 0)
+    {
+      instance_create(x,y,objK3WarpFX1);
+    }
+    i++;
+    break;
 }
 </string>
           </argument>

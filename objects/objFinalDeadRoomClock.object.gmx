@@ -277,7 +277,7 @@ t = 0;
    if(clear)
    {
      //CLEAR
-     instance_destroy(objFinalDeadRoomControl);
+     scrObjectDestroy(objFinalDeadRoomControl);
      with(objFinalDeadRoomLaser)
      {
       instance_destroy();

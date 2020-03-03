@@ -50,6 +50,8 @@ repeat(50)
  binData += string(choose(0,1));
 }
 binI=0;
+shutdown = false;
+t = 0;
 
 energy = 0;
 event_user(0);
@@ -58,6 +60,13 @@ upDelay = 0; //actually down delay
 downDelay = 0; //actually up delay Kappa
 upDelayDecreaser = 0;
 downDelayDecreaser = 0;
+
+totalEnergy = 0;
+for(var temp = 0; temp &lt; 100; temp++)
+{
+  if(global.energy[temp])
+   totalEnergy++;
+}
 
 </string>
           </argument>
@@ -137,8 +146,9 @@ alarm[0] = mainTextScrollSpd;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,objPlayer))
-{ 
+            <string>if(place_meeting(x,y,objPlayer) || shutdown)
+{
+ global.noShoot = true;
  var temp = "Select destination point";
  if(mainText != temp)
  {
@@ -148,7 +158,7 @@ alarm[0] = mainTextScrollSpd;
   mainTextStartPos = 1;
  }
  
- if(scrButtonCheck(global.downButton))
+ if(scrButtonCheck(global.downButton) &amp;&amp; !shutdown)
  {
   if(upDelay == 0)
   {
@@ -170,7 +180,7 @@ alarm[0] = mainTextScrollSpd;
   upDelay = 0;
   upDelayDecreaser = 0;
  }
- if(scrButtonCheck(global.upButton))
+ if(scrButtonCheck(global.upButton) &amp;&amp; !shutdown)
  {
   if(downDelay == 0)
   {
@@ -180,7 +190,7 @@ alarm[0] = mainTextScrollSpd;
    upDelayDecreaser = 0;
    if(global.stageUnlocked[77])
    {
-    maxStage = 82;
+    maxStage = 83;
    }
    else
    {
@@ -223,7 +233,13 @@ alarm[0] = mainTextScrollSpd;
     stageName = "Extra stage";
     temp = "95% energy required";
     break;
-   
+   case 83:
+    stageName = "SHUTDOWN";
+    if(totalEnergy &lt; 100)
+     temp = "100% energy required";
+    else
+     temp = "CHARGED";
+    break;
    default:
     stageName = "???";
     temp = "LOCKED";
@@ -246,14 +262,23 @@ alarm[0] = mainTextScrollSpd;
   mainText2StartPos = 1;
  }
 
- if(scrButtonCheck(global.shootButton) &amp;&amp; global.stageUnlocked[global.selectedStage])
+ if(scrButtonCheck(global.shootButton) &amp;&amp; !shutdown)
  {
-  instance_destroy(objPlayer);
-  room_goto(global.stageRoom[global.selectedStage]);
+  if(global.stageUnlocked[global.selectedStage] &amp;&amp; global.selectedStage != 83)
+  {
+   scrObjectDestroy(objPlayer);
+   room_goto(global.stageRoom[global.selectedStage]);
+  }
+  if(global.selectedStage == 83 &amp;&amp; totalEnergy == 100)
+  {   
+   audio_sound_gain(global.currentMusic,0,2000);
+   instance_change(objComputerShutdown,true);
+  }
  }
 }
 else
 {
+ global.noShoot = false;
  temp = "WARP ENGINE";
  if(mainText != temp)
  {
@@ -287,7 +312,9 @@ else
  //event_user(0);
 }
 if(binI mod 10 == 0)
+{
   binData += string(choose(0,1));
+}
   
 binI++;
 </string>

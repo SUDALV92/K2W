@@ -63,7 +63,7 @@ if (warpX == 0 &amp;&amp; warpY == 0)
 {
     if(!smoothTransition)
     {
-        instance_destroy(other,false);
+        scrObjectDestroy(other,false);
     }
 }
 else
@@ -112,7 +112,7 @@ if (warpX == 0 &amp;&amp; warpY == 0)
 {
     if(!smoothTransition)
     {
-        instance_destroy(other,false);
+        scrObjectDestroy(other,false);
     }
 }
 else

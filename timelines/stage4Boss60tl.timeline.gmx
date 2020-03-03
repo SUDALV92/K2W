@@ -2436,7 +2436,7 @@ a.timer=25;
             <kind>1</kind>
             <string>objGeezer.A=1;
 with(objGeezerBEffect){instance_destroy();}
-instance_destroy(objGeezerBackground);
+scrObjectDestroy(objGeezerBackground);
 background_alpha[0]=0;
 background_alpha[1]=0;
 background_alpha[2]=0;

@@ -81,4 +81,4 @@ global.stageName[79] = "Ex KTG Boss"; global.stageRoom[79] = rExtraStageKTGSray;
 global.stageName[80] = "Ex Destination"; global.stageRoom[80] = rExtraStageDestinationBananas;
 global.stageName[81] = "Ex Blood Fetival Boss"; global.stageRoom[81] = rExtraStageBloodFestivalBoss;
 global.stageName[82] = "The Hands of Time"; global.stageRoom[82] = rExtraStageFinalDeadRoom;
-global.stageName[83] = "Shutdown"; global.stageRoom[83] = rStage6BossRush;
+global.stageName[83] = "Shutdown";

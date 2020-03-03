@@ -53,7 +53,7 @@
  if(scrButtonCheckPressed(global.jumpButton))
  {
   image_index = 1;
-  instance_destroy(objPlayer);
+  scrObjectDestroy(objPlayer);
  }
 }
 else if(!instance_exists(objPlayer) &amp;&amp; image_index == 1)

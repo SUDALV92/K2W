@@ -33,7 +33,7 @@ delta = 0;
 i = -200;
 textAlpha = 0;
 textDelta = 0;
-instance_destroy(objPlayer);
+scrObjectDestroy(objPlayer);
 </string>
           </argument>
         </arguments>
@@ -100,7 +100,7 @@ if(i &gt;= 400 &amp;&amp; room == rEnding5)
  }
  if(image_alpha &gt;= 1)
  {
-  instance_destroy(objPlayer);
+  scrObjectDestroy(objPlayer);
   global.stageUnlocked[76] = true;
   room_goto(rHomeBad);
  }

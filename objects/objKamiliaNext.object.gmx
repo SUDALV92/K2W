@@ -209,7 +209,7 @@ if A=9
     
     if(true)
     {
-     instance_destroy(objKamiliaAttack2);
+     scrObjectDestroy(objKamiliaAttack2);
      instance_create(192,208,objKamiliaAttack2);
      instance_create(604,208,objKamiliaAttack2);
      audio_play_sound(global.sndTanmakLow,0,0);
@@ -227,7 +227,7 @@ if A=9
 if A=8
 {
 audio_play_sound(global.sndTanmakLow,0,0);
-instance_destroy(objKamiliaAttack2);
+scrObjectDestroy(objKamiliaAttack2);
 instance_create(192,208,objKamiliaAttack2);
 instance_create(604,208,objKamiliaAttack2);
 
@@ -263,7 +263,7 @@ if A=7
 {
     audio_play_sound(global.sndTanmakLow,0,0);
     var laserIndex = choose(0,1);
-    instance_destroy(objKamiliaAttack2);
+    scrObjectDestroy(objKamiliaAttack2);
     instance_create(192,208,objKamiliaAttack2);
     instance_create(604,208,objKamiliaAttack2);
     a1=instance_create(192,208,objEyeTanTypeB);
@@ -283,7 +283,7 @@ if A=7
 if A=6
 {
     audio_play_sound(global.sndTanmakLow,0,0);
-    instance_destroy(objKamiliaAttack2);
+    scrObjectDestroy(objKamiliaAttack2);
     instance_create(192,208,objKamiliaAttack2);
     instance_create(604,208,objKamiliaAttack2);
 
@@ -322,7 +322,7 @@ if A=5
      audio_play_sound(global.sndTanmakLow,0,0);
      global.sfxDelay[0] = 6;
     }
-    instance_destroy(objKamiliaAttack2);
+    scrObjectDestroy(objKamiliaAttack2);
     instance_create(192,208,objKamiliaAttack2);
     instance_create(604,208,objKamiliaAttack2);
     
@@ -348,7 +348,7 @@ if A=5
 if A=4
 {
     audio_play_sound(global.sndTanmakLow,0,0);
-    instance_destroy(objKamiliaAttack2);
+    scrObjectDestroy(objKamiliaAttack2);
     instance_create(192,208,objKamiliaAttack2);
     instance_create(604,208,objKamiliaAttack2);
     
@@ -381,7 +381,7 @@ if A=3
      audio_play_sound(global.sndTanmakLow,0,0);
      global.sfxDelay[0] = 6;
     }
-    instance_destroy(objKamiliaAttack2);
+    scrObjectDestroy(objKamiliaAttack2);
     instance_create(192,208,objKamiliaAttack2);
     instance_create(604,208,objKamiliaAttack2);
     if(!instance_exists(objKamiliaPhase4Laser))

@@ -53,7 +53,7 @@ image_yscale = 4;
 if(sprite_index == objTetranBlueBall)
 {
  if(place_meeting(x,y,objB6Gradius))
-  instance_destroy(objB6Gradius);
+  scrObjectDestroy(objB6Gradius);
 }
 </string>
           </argument>
@@ -77,7 +77,7 @@ if(sprite_index == objTetranBlueBall)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 with(objB6Gradius)
 {
  event_user(0);

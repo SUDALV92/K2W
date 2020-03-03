@@ -296,9 +296,9 @@ switch(A)
   background_index[0] = bgBetty;
   background_index[1] = bgBettyGrid;
   background_vspeed[1] = -1;
-  instance_destroy(objBlock1AHM);
-  instance_destroy(objBlock1BHM);
-  instance_destroy(objBlock1CHM);
+  scrObjectDestroy(objBlock1AHM);
+  scrObjectDestroy(objBlock1BHM);
+  scrObjectDestroy(objBlock1CHM);
   with(objBlockBoss7A)
    {
     slip = 0.1;
@@ -316,9 +316,9 @@ switch(A)
   background_index[0] = bgKoalaBG;
   background_index[1] = bgKoalaGrid;
   background_vspeed[1] = -1;
-  instance_destroy(objBlock1AHM);
-  instance_destroy(objBlock1BHM);
-  instance_destroy(objBlock1CHM);
+  scrObjectDestroy(objBlock1AHM);
+  scrObjectDestroy(objBlock1BHM);
+  scrObjectDestroy(objBlock1CHM);
   with(objBlockBoss7A)
    {
      slip = 0;
@@ -333,9 +333,9 @@ switch(A)
   background_index[0] = bgCyber;
   background_index[1] = bgCyberGrid;
   background_vspeed[1] = -1;
-  instance_destroy(objBlock1AHM);
-  instance_destroy(objBlock1BHM);
-  instance_destroy(objBlock1CHM);
+  scrObjectDestroy(objBlock1AHM);
+  scrObjectDestroy(objBlock1BHM);
+  scrObjectDestroy(objBlock1CHM);
   with(objBlockBoss7A)
    {
      slip = 0;
@@ -349,9 +349,9 @@ switch(A)
  case 4:
   background_index[0] = bgBossRush;
   background_vspeed[1] = -1;
-  instance_destroy(objBlock1AHM);
-  instance_destroy(objBlock1BHM);
-  instance_destroy(objBlock1CHM);
+  scrObjectDestroy(objBlock1AHM);
+  scrObjectDestroy(objBlock1BHM);
+  scrObjectDestroy(objBlock1CHM);
   with(objBlockBoss7A)
    {
      slip = 0;
@@ -399,9 +399,9 @@ with(objFinalBossBar2)
 
 background_index[0] = bgBoss7GRID;
 background_index[1] = -1
-instance_destroy(objBlock1AHM);
-instance_destroy(objBlock1BHM);
-instance_destroy(objBlock1CHM);
+scrObjectDestroy(objBlock1AHM);
+scrObjectDestroy(objBlock1BHM);
+scrObjectDestroy(objBlock1CHM);
 with(objBlockBoss7A)
 {
  slip = 0;

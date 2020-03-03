@@ -55,7 +55,7 @@ go = false;
  image_alpha = random_range(0.7,1.1)
  go = false;
  if(place_meeting(x,y,objB6Gradius))
-  instance_destroy(objB6Gradius);
+  scrObjectDestroy(objB6Gradius);
 }
 
 if(go)

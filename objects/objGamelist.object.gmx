@@ -49,6 +49,7 @@
         case rStage6BossRush:
         case rBoss6Phase2:
         case rStage7B:
+        case rPreAbyss:
           image_index = 10; break;
           
         case rBoss1Volcano: image_index = 11; break;
@@ -162,6 +163,8 @@
         
         case rExtraStageFinalDeadRoom:
              image_index = 69; break;
+        case rRedLunarAbyss:
+             image_index = 70; break;
         default: instance_destroy(); break;
     }
 
@@ -171,6 +174,7 @@
     alarm[0]=51;
     alarm[2]=1;
     A = 0;
+    audio_stop_sound(global.sndGameList);
     position = true;
 }
 else
@@ -321,7 +325,7 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -343,6 +347,7 @@ cardName = "";
 switch(image_index)
 {
  case 69: cardName = "The hands of time"; break;
+ case 70: cardName = "Bottomless Abyss"; break;
 }
 draw_set_font(fJoystix10);
 draw_set_halign(fa_center);

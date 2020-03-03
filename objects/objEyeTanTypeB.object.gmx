@@ -46,7 +46,7 @@ position4 = ds_queue_create();
 position5 = ds_queue_create();
 position6 = ds_queue_create();
 position7 = ds_queue_create();
-tail = array_create(7);
+tail = scrArrayCreate(7);
 for(var temp = 0; temp &lt; 7; temp++)
 {
  tail[temp] = noone;

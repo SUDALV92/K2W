@@ -1076,7 +1076,7 @@ A = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(objGodA);
+            <string>scrObjectDestroy(objGodA);
 with(objBettyTrap2) 
  vspeed = 2;
 </string>
@@ -1104,7 +1104,7 @@ with(objBettyTrap2)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(objBettyTrap2);
+            <string>scrObjectDestroy(objBettyTrap2);
 </string>
           </argument>
         </arguments>

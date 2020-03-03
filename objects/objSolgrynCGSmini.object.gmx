@@ -169,7 +169,7 @@ if hp&lt;0{instance_destroy();}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(id,false);
+            <string>scrObjectDestroy(id,false);
 </string>
           </argument>
         </arguments>

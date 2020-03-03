@@ -76,7 +76,7 @@ move_wrap(false,true,sprite_height);
             <kind>1</kind>
             <string>if A=0 &amp;&amp; !global.godMode
 {
- instance_destroy(other);
+ scrObjectDestroy(other);
 }
 </string>
           </argument>

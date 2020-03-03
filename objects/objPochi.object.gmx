@@ -785,7 +785,7 @@ if(A == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 if(!instance_exists(objEnergy) &amp;&amp; !global.energy[74])
 {
     energy = instance_create(x,y,objEnergy);

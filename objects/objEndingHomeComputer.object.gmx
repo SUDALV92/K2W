@@ -135,7 +135,7 @@ alarm[0] = mainTextScrollSpd;
 { 
  if(scrButtonCheck(global.shootButton))
  {
-  instance_destroy(objPlayer);
+  scrObjectDestroy(objPlayer);
   room_goto(rStage6BossRush);
  }
 }

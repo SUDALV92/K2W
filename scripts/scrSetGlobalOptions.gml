@@ -6,6 +6,7 @@ global.roomCaptionDef = "I Wanna Kill The Kamilia 2 Warped";  //sets default win
 global.roomCaptionLast = global.roomCaptionDef;
 global.godMode = false;
 global.debug = false;
+global.debugMode = false;
 window_set_caption(global.roomCaptionDef);
 
 var mess = ord('R')+ord('P')+ord('E')+ord('D');

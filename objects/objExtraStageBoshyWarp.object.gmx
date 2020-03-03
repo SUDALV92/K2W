@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>audio_play_sound(global.sndMarioPipeDown,0,0);
 alarm[0] = 100;
-instance_destroy(other);
+scrObjectDestroy(other);
 global.stageUnlocked[78] = true;
 </string>
           </argument>

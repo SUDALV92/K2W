@@ -548,7 +548,7 @@ if(y &lt;= 0 &amp;&amp; vspeed &lt; 0)
           <argument>
             <kind>1</kind>
             <string>if(isKiller &amp;&amp; !global.godMode)
- instance_destroy(other);
+ scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>

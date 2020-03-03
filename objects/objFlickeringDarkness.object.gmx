@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_xscale=50;
-image_yscale=50;
+image_yscale=500;
 delay = 0;
 p = 0;
+time = 10;
 </string>
           </argument>
         </arguments>
@@ -55,7 +56,7 @@ p = 0;
 
 if p=0{
 if delay=0{
-image_alpha=random_range(0.1,0.4); delay=10;}}
+image_alpha=random_range(0.1,0.4); delay=time;}}
 else {image_alpha=0;}
 
 x = view_xview[0] - 100;

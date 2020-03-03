@@ -649,6 +649,45 @@ for (var i = global.secretItemTotal-1; i &gt;= 0; i--)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///abyss lines
+switch(room)
+{
+ case rPreAbyss:
+  scrObjectDestroy(oRedLineImpulse);
+  line1 = instance_place(x,y+10,oRedLightLine);
+  if(instance_exists(line1))
+  {
+   flash1 = scrRedCreateActiveImpulse( line1, x-line1.x, c_teal, 1 );
+   flash1.image_xscale = 2;
+  }
+  line2 = instance_place(x,y+37,oRedLightLine);
+  if(instance_exists(line2))
+  {
+   flash2 = scrRedCreateActiveImpulse( line2, x-line2.x, c_teal, 1 );
+   flash2.image_xscale = 2;
+  }
+  break;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="objPlayerKiller">
       <action>
@@ -700,7 +739,7 @@ for (var i = global.secretItemTotal-1; i &gt;= 0; i--)
      audio_play_sound(global.sndEnergyCollect,0,0);
      global.sfxDelay[2] = 1;
     }
-    instance_destroy(other);
+    scrObjectDestroy(other);
     with(objWorld)
     {
      drawEnergy = true;
@@ -794,7 +833,7 @@ else    //flipped
  audio_play_sound(global.sndTrap,0,false);
  global.sfxDelay[1] = 1;
 }
-instance_destroy(other);
+scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>

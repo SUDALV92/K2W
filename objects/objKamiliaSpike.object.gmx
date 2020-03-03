@@ -110,7 +110,7 @@ if(y &gt; 100 &amp;&amp; mode == 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(false);
+            <string>scrObjectDestroy(false);
 </string>
           </argument>
         </arguments>

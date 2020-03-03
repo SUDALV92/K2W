@@ -361,7 +361,7 @@ if(i == 900)
 }
 if(i == 950)
 {
- instance_destroy(objLaserLSA);
+ scrObjectDestroy(objLaserLSA);
  with(objMagicCircle) event_user(0);
 }
 i++;

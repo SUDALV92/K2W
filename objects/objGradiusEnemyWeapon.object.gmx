@@ -130,7 +130,7 @@ if(shootDelay &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 hp--;
 with(objB6Gradius)
 {

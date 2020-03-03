@@ -248,7 +248,7 @@ if delay=0
      audio_play_sound(global.sndEnergyCollect,0,0);
      global.sfxDelay[2] = 1;
     }
-    instance_destroy(other);
+    scrObjectDestroy(other);
     with(objWorld)
     {
      drawEnergy = true;

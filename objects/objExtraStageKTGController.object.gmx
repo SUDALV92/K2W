@@ -91,7 +91,7 @@ with(objExtraStageKTGBullet)
 //if(minSpeed != -2)
 if(!racePrevent)
  bullet.hspeed = irandom_range(-maxSpeed,-(maxSpeed-2));
-else instance_destroy(bullet,false);
+else scrObjectDestroy(bullet,false);
 
 alarm[1] = irandom_range(spawnMin,spawnMax);
 </string>
@@ -131,7 +131,7 @@ with(objExtraStageKTGBullet)
 if(!racePrevent)
 //if(minSpeed != 2)
  bullet.hspeed = irandom_range(maxSpeed-2,maxSpeed);
-else instance_destroy(bullet, false);
+else scrObjectDestroy(bullet, false);
 
 alarm[0] = irandom_range(spawnMin,spawnMax);
 </string>
@@ -207,9 +207,9 @@ if(t == 500)
 }
 if(t == 0)
 {
- instance_destroy(objGravityUp);
- instance_destroy(objGravityDown);
- instance_destroy(objExtraStageKTGminiTrapUp);
+ scrObjectDestroy(objGravityUp);
+ scrObjectDestroy(objGravityDown);
+ scrObjectDestroy(objExtraStageKTGminiTrapUp);
  if (global.grav == -1)
  {
   scrFlipGrav(false); 

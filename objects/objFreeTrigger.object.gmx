@@ -654,7 +654,7 @@ switch(room)
                  }
                  break;
             case 4:
-                 instance_destroy(objSave);
+                 scrObjectDestroy(objSave);
                  with(objFreeTrigger)
                  {
                   if(trg == 2 || trg == 3) step++;
@@ -763,7 +763,7 @@ switch(room)
              }             
              break;
             case 6:
-             instance_destroy(objSave);
+             scrObjectDestroy(objSave);
              break;
         }
         break;
@@ -834,7 +834,7 @@ switch(room)
          }
          break;
       case 2: 
-           instance_destroy(objSave);
+           scrObjectDestroy(objSave);
            break;
      }
      break;
@@ -1421,7 +1421,7 @@ switch(room)
             }
             case 15:
             {
-                instance_destroy(objSave);
+                scrObjectDestroy(objSave);
                 audio_play_sound(global.sndTrap,0,0);
                 with(objFreeTrigger) condition = 2;
                 break;
@@ -1626,7 +1626,7 @@ switch(room)
     }    
     case rEscapeC:
     {
-        instance_destroy(objPlayer);
+        scrObjectDestroy(objPlayer);
         audio_sound_gain(global.currentMusic,0,2000);
         with(objExtraTimer)
         {

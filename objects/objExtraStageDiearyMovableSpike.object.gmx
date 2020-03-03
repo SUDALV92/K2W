@@ -76,7 +76,7 @@ image_speed = 1/3;
           <argument>
             <kind>1</kind>
             <string>hspeed = sign(other.hspeed) * 1.7;
-instance_destroy(other);
+scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>

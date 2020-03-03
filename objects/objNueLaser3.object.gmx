@@ -107,7 +107,7 @@ audio_play_sound(global.sndLaser,0,0);
           <argument>
             <kind>1</kind>
             <string>if(isKiller &amp;&amp; !global.godMode)
- instance_destroy(other);
+ scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>

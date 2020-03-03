@@ -106,7 +106,7 @@ solid = true;
  destroyed = true;
  solid = false;
  alarm[0] = 400;
- instance_destroy(other);
+ scrObjectDestroy(other);
 }
 </string>
           </argument>

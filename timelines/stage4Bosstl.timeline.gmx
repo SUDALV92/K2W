@@ -1444,7 +1444,7 @@ A.direction = 180;
 A.image_xscale = -1;
 
 
-instance_destroy(objGeezer3);
+scrObjectDestroy(objGeezer3);
 </string>
           </argument>
         </arguments>

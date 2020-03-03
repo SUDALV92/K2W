@@ -92,7 +92,7 @@
             warp.warpY = 544;
             break;
         case 7:
-             instance_destroy(objSave);
+             scrObjectDestroy(objSave);
              audio_play_sound(global.sndTrap,0,0);
              break;
     }

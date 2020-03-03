@@ -96,7 +96,7 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 with(objB6Gradius)
 {
  event_user(0);

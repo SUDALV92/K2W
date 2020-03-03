@@ -100,7 +100,7 @@ room_goto(rExtraStageFinalDeadRoom);
             <string>with(other)
 instance_destroy();
 
-instance_destroy(objGlitchController);
+scrObjectDestroy(objGlitchController);
 
 for(var i = 0; i &lt; 25; i++)
 {

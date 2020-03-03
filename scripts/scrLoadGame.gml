@@ -55,7 +55,7 @@ if (loadFile)
         //destroy the map
         ds_map_destroy(timeMap);
     }
-    if (!saveValid) //check if the save is invalid
+    /*if (!saveValid) //check if the save is invalid
     {
         //save is invalid, restart the game
         
@@ -64,7 +64,7 @@ if (loadFile)
         scrRestartGame();
         
         exit;
-    }
+    }*/
 
     //load the save map
     var saveMap;

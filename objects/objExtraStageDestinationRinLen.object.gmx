@@ -272,7 +272,7 @@ if(t == 2760 || t == 2810 || t == 2860)
 }
 if(t == 2920)
 {
- instance_destroy(objExtraStageDestinationApplePredictor);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
  with(objExtraStageDestinationAppleBig)
  {
      angle = point_direction(x,y,objPlayer.x,objPlayer.y);
@@ -301,7 +301,7 @@ if(t &gt; 3000 &amp;&amp; t &lt; 3145)
 }
 if(t == 3150)
 {
- instance_destroy(core2);
+ scrObjectDestroy(core2);
  with(objExtraStageDestinationAppleSmall)
  {
   speed = 0;
@@ -502,7 +502,7 @@ if(t == 5630 || t == 5680 || t == 5730 || t == 5780 || t == 5810 || t == 5860 ||
 }
 if(t == 5960)
 {
- instance_destroy(objExtraStageDestinationApplePredictor);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
  with(objExtraStageDestinationAppleBig)
  {
      angle = random(360);
@@ -843,8 +843,8 @@ if(t == 9670)
 }
 if(t == 9800)
 {
-    instance_destroy(objExtraStageDestinationAppleSmall);
-    instance_destroy(objExtraStageDestinationAppleBig);
+    scrObjectDestroy(objExtraStageDestinationAppleSmall);
+    scrObjectDestroy(objExtraStageDestinationAppleBig);
     if(!global.energy[97])
     {
       energy = instance_create(xx,yy,objEnergy);

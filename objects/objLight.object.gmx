@@ -112,7 +112,7 @@ draw_set_blend_mode(bm_normal);
  
  if(size &gt;= 2000)
  {
-  instance_destroy(objShadow);
+  scrObjectDestroy(objShadow);
   instance_destroy();
  } 
 }

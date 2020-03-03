@@ -1477,7 +1477,7 @@ if(loop == 2)
  
  objViridian.alarm[1]=25;
  instance_create(0,0,objFadelight);
- instance_destroy(objSakuyared);
+ scrObjectDestroy(objSakuyared);
 }
 </string>
           </argument>

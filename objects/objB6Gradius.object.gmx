@@ -72,7 +72,7 @@ landingI = 0;
 audio_play_sound(global.sndGradiusDeath,0,0);
 instance_create(x,y,objExplosionB); 
 with(objPlayer){scrKillPlayer();}
-instance_destroy(objGradiusOption);
+scrObjectDestroy(objGradiusOption);
 </string>
           </argument>
         </arguments>
@@ -293,7 +293,7 @@ if(landing)
      audio_play_sound(global.sndEnergyCollect,0,0);
      global.sfxDelay[2] = 1;
     }
-    instance_destroy(other);
+    scrObjectDestroy(other);
     with(objWorld)
     {
      drawEnergy = true;
@@ -352,7 +352,7 @@ if(landing)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
-  instance_destroy(id,false);
+  scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
   instance_destroy();
@@ -382,7 +382,7 @@ else if(!global.godMode)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
-  instance_destroy(id,false);
+  scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
   instance_destroy();
@@ -412,7 +412,7 @@ else if(!global.godMode)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
-  instance_destroy(id,false);
+  scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
   instance_destroy();
@@ -470,7 +470,7 @@ global.godMode = false;
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
-  instance_destroy(id,false);
+  scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
   instance_destroy();

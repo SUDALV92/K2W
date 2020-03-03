@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="538" name="datafiles">
-    <datafiles number="538" name="Music">
+  <datafiles number="542" name="datafiles">
+    <datafiles number="542" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -855,9 +855,43 @@
         </ConfigOptions>
         <filename>ExtraStageGlitched.ogg</filename>
       </datafile>
+      <datafile>
+        <name>LunarAbyss.ogg</name>
+        <exists>-1</exists>
+        <size>12039077</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>LunarAbyss.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>ShutdownInterrupted.ogg</name>
+        <exists>-1</exists>
+        <size>5354559</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>ShutdownInterrupted.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="538" name="SFX">
-      <datafiles number="538" name="Common">
+    <datafiles number="542" name="SFX">
+      <datafiles number="542" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1352,7 +1386,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="538" name="Stage">
+      <datafiles number="542" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1778,9 +1812,43 @@
           </ConfigOptions>
           <filename>sndClockBell.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndShutdownLoading.ogg</name>
+          <exists>-1</exists>
+          <size>31587</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndShutdownLoading.ogg</filename>
+        </datafile>
+        <datafile>
+          <name>sndShake.ogg</name>
+          <exists>-1</exists>
+          <size>37433</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndShake.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="538" name="Boss">
-        <datafiles number="538" name="Solgryn">
+      <datafiles number="542" name="Boss">
+        <datafiles number="542" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3431,7 +3499,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="538" name="ExtraBoss2">
+        <datafiles number="542" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -4016,6 +4084,39 @@
           <sprite>sprites\sprFinalDeadRoomHand</sprite>
           <sprite>sprites\sprFinalDeadRoomCircle</sprite>
           <sprite>sprites\sprFinalDeadRoomPointer</sprite>
+        </sprites>
+        <sprites name="RedAbyss">
+          <sprite>sprites\sprRedAbyssBackground</sprite>
+          <sprite>sprites\sprRedAbyssColoredFruit</sprite>
+          <sprite>sprites\sprRedAbyssDagger</sprite>
+          <sprite>sprites\sprRedAbyssFruit</sprite>
+          <sprite>sprites\sprRedAbyssGrad</sprite>
+          <sprite>sprites\sprRedAbyssLeheeFruit</sprite>
+          <sprite>sprites\sprRedAbyssRedBackground</sprite>
+          <sprite>sprites\sprRedAbyssSpawner</sprite>
+          <sprite>sprites\sprRedAbyssSphere</sprite>
+          <sprite>sprites\sprRedAbyssSpikeBottom</sprite>
+          <sprite>sprites\sprRedAbyssSpikeDown</sprite>
+          <sprite>sprites\sprRedAbyssSpikeLeft</sprite>
+          <sprite>sprites\sprRedAbyssSpikeLeft3</sprite>
+          <sprite>sprites\sprRedAbyssSpikeRi3ght</sprite>
+          <sprite>sprites\sprRedAbyssSpikeRight</sprite>
+          <sprite>sprites\sprRedAbyssSpikeTop</sprite>
+          <sprite>sprites\sprRedAbyssSpikeUp</sprite>
+          <sprite>sprites\sprRedBgIntensityMask</sprite>
+          <sprite>sprites\sprRedCornerBlock</sprite>
+          <sprite>sprites\sprRedDualityHitbox</sprite>
+          <sprite>sprites\sprRedHorizontalBlock</sprite>
+          <sprite>sprites\sprRedLeftBlock</sprite>
+          <sprite>sprites\sprRedLightArea</sprite>
+          <sprite>sprites\sprRedLightLine</sprite>
+          <sprite>sprites\sprRedLightParticle</sprite>
+          <sprite>sprites\sprRedOverlapMask</sprite>
+          <sprite>sprites\sprRedRightBlock</sprite>
+          <sprite>sprites\sprRedSpikeBullet</sprite>
+          <sprite>sprites\sprRedTrailFruit</sprite>
+          <sprite>sprites\sprRedVerticalBlock</sprite>
+          <sprite>sprites\sprRedAbyssButton</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -4918,6 +5019,7 @@
         <background>background\bgBokuBokuTileset</background>
         <background>background\bgFinalDeadRoomTileset</background>
         <background>background\bgFinalDeadRoomGRID</background>
+        <background>background\tRedAbyssTileset</background>
       </backgrounds>
     </backgrounds>
   </backgrounds>
@@ -4946,6 +5048,21 @@
     </paths>
     <paths name="Rukito">
       <path>paths\pathRukitoScapegoat</path>
+    </paths>
+    <paths name="RedAbyss">
+      <path>paths\pRedS16B</path>
+      <path>paths\pRedS16BBL</path>
+      <path>paths\pRedS16BBR</path>
+      <path>paths\pRedS16BL</path>
+      <path>paths\pRedS16BLL</path>
+      <path>paths\pRedS16BR</path>
+      <path>paths\pRedS16L</path>
+      <path>paths\pRedS16R</path>
+      <path>paths\pRedS16T</path>
+      <path>paths\pRedS16TL</path>
+      <path>paths\pRedS16TR</path>
+      <path>paths\pRedS16TTL</path>
+      <path>paths\pRedS16TTR</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -4997,6 +5114,8 @@
       <script>scripts\scrCreateBigKidCherry.gml</script>
       <script>scripts\scrGenerateUniqueValues.gml</script>
       <script>scripts\scrRandomAppleColor.gml</script>
+      <script>scripts\scrObjectDestroy.gml</script>
+      <script>scripts\scrArrayCreate.gml</script>
     </scripts>
     <scripts name="Extra">
       <script>scripts\scrCreateWarp.gml</script>
@@ -5007,12 +5126,184 @@
       <script>scripts\scrExTrapsChange5.gml</script>
       <script>scripts\scrExTrapsChange6.gml</script>
       <script>scripts\scrExHTBlockSetVisibility.gml</script>
+      <scripts name="RedAbyss">
+        <script>scripts\scrRedActivateBullets.gml</script>
+        <script>scripts\scrRedAttachCustomSpawner.gml</script>
+        <script>scripts\scrRedAttachSpawner.gml</script>
+        <script>scripts\scrRedAttachTimedSpawner.gml</script>
+        <script>scripts\scrRedAttachTrail.gml</script>
+        <script>scripts\scrRedBulletFadeOut.gml</script>
+        <script>scripts\scrRedChangeInstanceAlpha.gml</script>
+        <script>scripts\scrRedChangeInstanceColor.gml</script>
+        <script>scripts\scrRedChangeInstanceXScale.gml</script>
+        <script>scripts\scrRedChangeInstanceYScale.gml</script>
+        <script>scripts\scrRedCheckShader.gml</script>
+        <script>scripts\scrRedCheckSurface.gml</script>
+        <script>scripts\scrRedCreateActiveImpulse.gml</script>
+        <script>scripts\scrRedCreateBloomLine.gml</script>
+        <script>scripts\scrRedCreateCenterImpulse.gml</script>
+        <script>scripts\scrRedCreateCircle.gml</script>
+        <script>scripts\scrRedCreateCircleAdditionalParams.gml</script>
+        <script>scripts\scrRedCreateCustomSpawner.gml</script>
+        <script>scripts\scrRedCreateEdgeWalls.gml</script>
+        <script>scripts\scrRedCreateFadingImpulse.gml</script>
+        <script>scripts\scrRedCreateFloorIndicator.gml</script>
+        <script>scripts\scrRedCreateLineSurface.gml</script>
+        <script>scripts\scrRedCreateLWallIndicator.gml</script>
+        <script>scripts\scrRedCreateMovingImpulse.gml</script>
+        <script>scripts\scrRedCreateRWallIndicator.gml</script>
+        <script>scripts\scrRedCreateSpawner.gml</script>
+        <script>scripts\scrRedCreateTimedSpawner.gml</script>
+        <script>scripts\scrRedDeactivateBullets.gml</script>
+        <script>scripts\scrRedDestroy.gml</script>
+        <script>scripts\scrRedDirToPlayer.gml</script>
+        <script>scripts\scrRedDirToPlayerFeet.gml</script>
+        <script>scripts\scrRedFindSpikeWaveOffset.gml</script>
+        <script>scripts\scrRedFlashScreen.gml</script>
+        <script>scripts\scrRedGetBCLine.gml</script>
+        <script>scripts\scrRedGetBFLine.gml</script>
+        <script>scripts\scrRedGetLCLine.gml</script>
+        <script>scripts\scrRedGetLFLine.gml</script>
+        <script>scripts\scrRedGetPlayerLeft.gml</script>
+        <script>scripts\scrRedGetPlayerRight.gml</script>
+        <script>scripts\scrRedGetPlayerX.gml</script>
+        <script>scripts\scrRedGetPlayerY.gml</script>
+        <script>scripts\scrRedGetRCLine.gml</script>
+        <script>scripts\scrRedGetRFLine.gml</script>
+        <script>scripts\scrRedInitializeCircle.gml</script>
+        <script>scripts\scrRedMoveInstance.gml</script>
+        <script>scripts\scrRedMoveInstanceX.gml</script>
+        <script>scripts\scrRedMoveInstanceY.gml</script>
+        <script>scripts\scrRedRotateInstance.gml</script>
+        <script>scripts\scrRedRotateInstanceImage.gml</script>
+        <script>scripts\scrRedS1IntroStep.gml</script>
+        <script>scripts\scrRedS2BloomStep.gml</script>
+        <script>scripts\scrRedS2CreateCenterImpulse.gml</script>
+        <script>scripts\scrRedS2SpawnFloorLines.gml</script>
+        <script>scripts\scrRedS3JitterStep.gml</script>
+        <script>scripts\scrRedS3SpawnJitterBullets.gml</script>
+        <script>scripts\scrRedS4ClearWallImpulses.gml</script>
+        <script>scripts\scrRedS4CreateFloorImpulse.gml</script>
+        <script>scripts\scrRedS4CreateSlicedCircle.gml</script>
+        <script>scripts\scrRedS4CreateSlidingSpike.gml</script>
+        <script>scripts\scrRedS4CreateWallImpulse.gml</script>
+        <script>scripts\scrRedS4GetWallImpulsePos.gml</script>
+        <script>scripts\scrRedS4SlicedCirclesStep.gml</script>
+        <script>scripts\scrRedS4SpawnCirlce.gml</script>
+        <script>scripts\scrRedS4SpawnLeheeCircle.gml</script>
+        <script>scripts\scrRedS5FlashFruit.gml</script>
+        <script>scripts\scrRedS5SpawnBurstBullet.gml</script>
+        <script>scripts\scrRedS5TwinDownpourStep.gml</script>
+        <script>scripts\scrRedS6CreateLaunchImpulse.gml</script>
+        <script>scripts\scrRedS6CreateMovingImpulse.gml</script>
+        <script>scripts\scrRedS6CreateTargetSpike.gml</script>
+        <script>scripts\scrRedS6SpawnAntitargetCircle.gml</script>
+        <script>scripts\scrRedS6SpawnSpiralBullet.gml</script>
+        <script>scripts\scrRedS6SpawnWaveSpike.gml</script>
+        <script>scripts\scrRedS6WarmWelcomeStep.gml</script>
+        <script>scripts\scrRedS7ClaustrophobiaStep.gml</script>
+        <script>scripts\scrRedS7InitWallImpulses.gml</script>
+        <script>scripts\scrRedS7MoveWall.gml</script>
+        <script>scripts\scrRedS7MoveWallBack.gml</script>
+        <script>scripts\scrRedS7SpawnCircle.gml</script>
+        <script>scripts\scrRedS7SpawnSpikeFan.gml</script>
+        <script>scripts\scrRedS7SpawnSpikeSpiral.gml</script>
+        <script>scripts\scrRedS7SpawnTargetBullets.gml</script>
+        <script>scripts\scrRedS7SpawnTargetCircle.gml</script>
+        <script>scripts\scrRedS8RedMarchStep.gml</script>
+        <script>scripts\scrRedS8SendSpikesAway.gml</script>
+        <script>scripts\scrRedS8SlowSpikeWall.gml</script>
+        <script>scripts\scrRedS8SpawnAntitargetCircle.gml</script>
+        <script>scripts\scrRedS8SpawnFastAntitargetCircle.gml</script>
+        <script>scripts\scrRedS8SpawnFastTargetCircle.gml</script>
+        <script>scripts\scrRedS8SpawnSpikeTopWall.gml</script>
+        <script>scripts\scrRedS8SpawnTargetCircle.gml</script>
+        <script>scripts\scrRedS9DualityStep.gml</script>
+        <script>scripts\scrRedS9Shake.gml</script>
+        <script>scripts\scrRedS9SpawnDualBullet.gml</script>
+        <script>scripts\scrRedS9SwitchMovePointsX.gml</script>
+        <script>scripts\scrRedS9SwitchMovePointsY.gml</script>
+        <script>scripts\scrRedS10SpawnDiagonal.gml</script>
+        <script>scripts\scrRedS10StartSpawn.gml</script>
+        <script>scripts\scrRedS10WaterfallStep.gml</script>
+        <script>scripts\scrRedS11CreateTideSpawner.gml</script>
+        <script>scripts\scrRedS11SpawnTideBullet.gml</script>
+        <script>scripts\scrRedS11TideStep.gml</script>
+        <script>scripts\scrRedS12CreateRedCircle.gml</script>
+        <script>scripts\scrRedS12RelapseStep.gml</script>
+        <script>scripts\scrRedS12SpawnBarrageBullet.gml</script>
+        <script>scripts\scrRedS12SpawnBurstBullet.gml</script>
+        <script>scripts\scrRedS13CorruptedInfinityStep.gml</script>
+        <script>scripts\scrRedS13CreateHSpikeWall.gml</script>
+        <script>scripts\scrRedS13CreateVSpikeWall.gml</script>
+        <script>scripts\scrRedS13MoveInstanceCircle.gml</script>
+        <script>scripts\scrRedS13SpawnAntiTargetBullet.gml</script>
+        <script>scripts\scrRedS13SpawnBarrageBullet.gml</script>
+        <script>scripts\scrRedS13SpawnBulletCircle.gml</script>
+        <script>scripts\scrRedS13SpawnCornerCircle.gml</script>
+        <script>scripts\scrRedS13SpawnTargetSpike.gml</script>
+        <script>scripts\scrRedS14CreateSpikeLine.gml</script>
+        <script>scripts\scrRedS14IrrevocableDamageStep.gml</script>
+        <script>scripts\scrRedS14MoveSources.gml</script>
+        <script>scripts\scrRedS14SpawnBurstBullets.gml</script>
+        <script>scripts\scrRedS14SpawnCircleBullets.gml</script>
+        <script>scripts\scrRedS14SpawnPolygon.gml</script>
+        <script>scripts\scrRedS14SpawnTargetSpikes.gml</script>
+        <script>scripts\scrRedS14StopTimedSpikes.gml</script>
+        <script>scripts\scrRedS15CreateCircleSpike.gml</script>
+        <script>scripts\scrRedS15CreateSpikeWall.gml</script>
+        <script>scripts\scrRedS15SpawnFinalBarrage.gml</script>
+        <script>scripts\scrRedS15SpawnMiddleBarrage.gml</script>
+        <script>scripts\scrRedS15SpawnSpikeRandomWall.gml</script>
+        <script>scripts\scrRedS15SpawnSpiralBullet.gml</script>
+        <script>scripts\scrRedS15TwistedMazeStep.gml</script>
+        <script>scripts\scrRedS16AgonyStep.gml</script>
+        <script>scripts\scrRedS16CreateEdgeInstance.gml</script>
+        <script>scripts\scrRedS16CreatePathSpawner.gml</script>
+        <script>scripts\scrRedS16OscillateSpawner.gml</script>
+        <script>scripts\scrRedS16SpawnBarrageBullet.gml</script>
+        <script>scripts\scrRedS16SpawnBarrageSpike.gml</script>
+        <script>scripts\scrRedS16SpawnBorderSpike.gml</script>
+        <script>scripts\scrRedS16SpawnCircle.gml</script>
+        <script>scripts\scrRedS16SpawnTargetLine.gml</script>
+        <script>scripts\scrRedS16SpawnTargetLineCircle.gml</script>
+        <script>scripts\scrRedS16SpawnTargetSpike.gml</script>
+        <script>scripts\scrRedS16SpawnTrailBullet.gml</script>
+        <script>scripts\scrRedS17BottomStep.gml</script>
+        <script>scripts\scrRedS17CreateExplosion.gml</script>
+        <script>scripts\scrRedS17CreateFinalImpulse.gml</script>
+        <script>scripts\scrRedS17SpawnBarrageBullet.gml</script>
+        <script>scripts\scrRedS17SpawnTeardrops.gml</script>
+        <script>scripts\scrRedSetBulletsActivation.gml</script>
+        <script>scripts\scrRedSetColor.gml</script>
+        <script>scripts\scrRedSetFruitColor.gml</script>
+        <script>scripts\scrRedSetPolarCoordinates.gml</script>
+        <script>scripts\scrRedSetScale.gml</script>
+        <script>scripts\scrRedSetZoom.gml</script>
+        <script>scripts\scrRedShakeViewAngle.gml</script>
+        <script>scripts\scrRedShakeViewX.gml</script>
+        <script>scripts\scrRedShakeViewY.gml</script>
+        <script>scripts\scrRedSpawnSectorBullet.gml</script>
+        <script>scripts\scrRedTweenBackForth.gml</script>
+        <script>scripts\scrRedTweenBackIn.gml</script>
+        <script>scripts\scrRedTweenExpIn.gml</script>
+        <script>scripts\scrRedTweenExpInOut.gml</script>
+        <script>scripts\scrRedTweenExpOut.gml</script>
+        <script>scripts\scrRedTweenLinear.gml</script>
+        <script>scripts\scrRedTweenSineIn.gml</script>
+        <script>scripts\scrRedTweenSineInOut.gml</script>
+        <script>scripts\scrRedTweenSineOut.gml</script>
+        <script>scripts\scrRedWrapInstance.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\GrayscaleShader.shader</shader>
     <shader type="GLSLES">shaders\shdTransition.shader</shader>
     <shader type="GLSLES">shaders\shdSaturation.shader</shader>
+    <shader type="GLSLES">shaders\sdrRedBulbShader.shader</shader>
+    <shader type="GLSLES">shaders\sdrRedColorShader.shader</shader>
+    <shader type="GLSLES">shaders\sdrRedGreyscaleShader.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\fDefault30</font>
@@ -5046,6 +5337,7 @@
         <object>objects\objOptionsMenu</object>
         <object>objects\objKeyboardControlsMenu</object>
         <object>objects\objControllerMenu</object>
+        <object>objects\objSelfDestroy</object>
       </objects>
       <objects name="player">
         <object>objects\objPlayerStart</object>
@@ -5073,6 +5365,10 @@
         <object>objects\objBossBlock</object>
         <object>objects\objSaveBlocker</object>
         <object>objects\objBlockBoss7A</object>
+        <object>objects\objBossRushAbyssBlock</object>
+        <object>objects\objBossRushAbyssBlockA</object>
+        <object>objects\objBossRushAbyssBlockB</object>
+        <object>objects\objBossRushAbyssBlockC</object>
       </objects>
       <objects name="slopes">
         <object>objects\objSlope</object>
@@ -5913,6 +6209,7 @@
         <object>objects\objPortalShard</object>
         <object>objects\objKK</object>
         <object>objects\objComputer</object>
+        <object>objects\objComputerShutdown</object>
         <object>objects\objBossRushSwitch</object>
         <object>objects\obj4chPortal</object>
       </objects>
@@ -6266,6 +6563,237 @@
         <object>objects\objFinalDeadRoomControl</object>
         <object>objects\objFinalDeadRoomLaser</object>
       </objects>
+      <objects name="RedAbyss">
+        <objects name="PreAbyss">
+          <object>objects\objRedAbyssBlockTrap</object>
+          <object>objects\objRedAbyssButton</object>
+        </objects>
+        <objects name="S1_Intro">
+          <object>objects\oRedS1Bullet</object>
+          <object>objects\oRedS1CurvedBullet</object>
+          <object>objects\oRedS1Backdrop</object>
+        </objects>
+        <objects name="S2_Bloom">
+          <object>objects\oRedS2Bullet</object>
+          <object>objects\oRedS2SeedBullet</object>
+          <object>objects\oRedS2TrailBullet</object>
+          <object>objects\oRedS2Impulse</object>
+        </objects>
+        <objects name="S3_Jitter">
+          <object>objects\oRedS3JitterSpawner</object>
+          <object>objects\oRedS3JitterBullet</object>
+        </objects>
+        <objects name="S4_SlicedCircles">
+          <object>objects\oRedS4SourceBullet</object>
+          <object>objects\oRedS4CircleBullet</object>
+          <object>objects\oRedS4LeheeBullet</object>
+          <object>objects\oRedS4SlidingSpike</object>
+          <object>objects\oRedS4SectorController</object>
+          <object>objects\oRedS4WallImpulseController</object>
+          <object>objects\oRedS4LineImpulse</object>
+        </objects>
+        <objects name="S5_TwinDownpour">
+          <object>objects\oRedS5SourceBullet</object>
+          <object>objects\oRedS5BarrageBullet</object>
+          <object>objects\oRedS5BurstBullet</object>
+          <object>objects\oRedS5Spike</object>
+          <object>objects\oRedS5Backdrop</object>
+          <object>objects\oRedS5BulletFadeParticle</object>
+        </objects>
+        <objects name="S6_WarmWelcome">
+          <object>objects\oRedS6AbyssSource</object>
+          <object>objects\oRedS6TargetSource</object>
+          <object>objects\oRedS6SpiralSource</object>
+          <object>objects\oRedS6AbyssRay</object>
+          <object>objects\oRedS6TargetBullet</object>
+          <object>objects\oRedS6SpiralBullet</object>
+          <object>objects\oRedS6WaveSpike</object>
+          <object>objects\oRedS6FloorSpike</object>
+          <object>objects\oRedS6TargetSpike</object>
+          <object>objects\oRedS6RandomBullet</object>
+        </objects>
+        <objects name="S7_Claustrophobia">
+          <object>objects\oRedS7FanSpike</object>
+          <object>objects\oRedS7SpiralSpike</object>
+          <object>objects\oRedS7TargetCircleSpike</object>
+          <object>objects\oRedS7FuzzySpike</object>
+          <object>objects\oRedS7InnerFuzzySpike</object>
+          <object>objects\oRedS7OuterFuzzySpike</object>
+          <object>objects\oRedS7CircleSpike</object>
+          <object>objects\oRedS7TargetBullet</object>
+          <object>objects\oRedS7LeftWallSpike</object>
+          <object>objects\oRedS7RightWallSpike</object>
+        </objects>
+        <objects name="S8_RedMarch">
+          <object>objects\oRedS8WallSpike</object>
+          <object>objects\oRedS8TargetBullet</object>
+          <object>objects\oRedS8CircleBullet</object>
+          <object>objects\oRedS8GravitySpike</object>
+          <object>objects\oRedS8FloorSpike</object>
+          <object>objects\oRedS8CircleSpike</object>
+          <object>objects\oRedS8CeilingSpike</object>
+        </objects>
+        <objects name="S9_Duality">
+          <object>objects\oRedS9SurfaceDrawInitiator</object>
+          <object>objects\oRedS9DualBullet</object>
+          <object>objects\oRedS9SpikeHitbox</object>
+          <object>objects\oRedS9DualSource</object>
+          <object>objects\oRedS9DualRay</object>
+          <object>objects\oRedS9SurfaceDrawFinalizer</object>
+          <object>objects\oRedS9ScreenSeparator</object>
+        </objects>
+        <objects name="S10_Waterfall">
+          <object>objects\oRedS10DiagonalBullet</object>
+          <object>objects\oRedS10VerticalBullet</object>
+        </objects>
+        <objects name="S11_Tide">
+          <object>objects\oRedS11TideBullet</object>
+        </objects>
+        <objects name="S12_Relapse">
+          <object>objects\oRedS12Source</object>
+          <object>objects\oRedS12Bullet</object>
+          <object>objects\oRedS12BurstBullet</object>
+          <object>objects\oRedS12EdgeSpikeMover</object>
+          <object>objects\oRedS12BgDrawMechanism</object>
+          <object>objects\oRedS12CircleBullet</object>
+        </objects>
+        <objects name="S13_CorruptedInfinity">
+          <object>objects\oRedS13Source</object>
+          <object>objects\oRedS13CircleSpike</object>
+          <object>objects\oRedS13Bullet</object>
+          <object>objects\oRedS13CircleBullet</object>
+          <object>objects\oRedS13BurstBullet</object>
+          <object>objects\oRedS13TargetSpike</object>
+          <object>objects\oRedS13CircleController</object>
+          <object>objects\oRedS13WallSpike</object>
+          <object>objects\oRedS13SphincterSpike</object>
+          <object>objects\oRedS13SphincterController</object>
+          <object>objects\oRedS13AntiTargetBullet</object>
+        </objects>
+        <objects name="S14_IrrevocableDamage">
+          <object>objects\oRedS14Source</object>
+          <object>objects\oRedS14Bullet</object>
+          <object>objects\oRedS14BurstBullet</object>
+          <object>objects\oRedS14BarrageBullet</object>
+          <object>objects\oRedS14PolygonBullet</object>
+          <object>objects\oRedS14Spike</object>
+          <object>objects\oRedS14BarrageSpike</object>
+          <object>objects\oRedS14FastCircleSpike</object>
+          <object>objects\oRedS14SlowCircleSpike</object>
+          <object>objects\oRedS14TargetSpike</object>
+          <object>objects\oRedS14LineSpike</object>
+          <object>objects\oRedS14TimedSpike</object>
+        </objects>
+        <objects name="S15_TwistedMaze">
+          <object>objects\oRedS15Source</object>
+          <object>objects\oRedS15RandomWallSpike</object>
+          <object>objects\oRedS15VerticalSpike</object>
+          <object>objects\oRedS15BurstBullet</object>
+          <object>objects\oRedS15MiddleBurstBullet</object>
+          <object>objects\oRedS15FinalBurstBullet</object>
+          <object>objects\oRedS15SpiralBullet</object>
+          <object>objects\oRedS15WallSpike</object>
+          <object>objects\oRedS15DoomSpike</object>
+        </objects>
+        <objects name="S16_Agony">
+          <object>objects\oRedS16Source</object>
+          <object>objects\oRedS16AbyssRay</object>
+          <object>objects\oRedS16AbyssLRay</object>
+          <object>objects\oRedS16AbyssRRay</object>
+          <object>objects\oRedS16LineBullet</object>
+          <object>objects\oRedS16BarrageBullet</object>
+          <object>objects\oRedS16TrailBullet</object>
+          <object>objects\oRedS16CircleBullet</object>
+          <object>objects\oRedS16TargetSpike</object>
+          <object>objects\oRedS16ExplosionBullet</object>
+          <object>objects\oRedS16BarrageSpike</object>
+          <object>objects\oRedS16PathSpawner</object>
+          <object>objects\oRedS16PathSpike</object>
+          <object>objects\oRedS16PlayerDummy</object>
+          <object>objects\oRedS16BorderSpike</object>
+          <object>objects\oRedS16GreyscaleDrawMechanism</object>
+        </objects>
+        <objects name="S17_Bottom">
+          <object>objects\oRedS17Teardrop</object>
+          <object>objects\oRedS17Bullet</object>
+          <object>objects\oRedS17FinalBullet</object>
+          <object>objects\oRedS17OrbitBullet</object>
+          <object>objects\oRedS17BarrageBullet</object>
+          <object>objects\oRedS17SweepLine</object>
+          <object>objects\oRedS17FinalParticle</object>
+          <object>objects\oRedS17FinalFade</object>
+          <object>objects\oRedS17ColorController</object>
+        </objects>
+        <objects name="BlockLight">
+          <object>objects\oRedLightLine</object>
+          <object>objects\oRedLightLineDrawMechanism</object>
+          <object>objects\oRedLineImpulse</object>
+          <object>objects\oRedMovingImpulse</object>
+          <object>objects\oRedFadingImpulse</object>
+        </objects>
+        <object>objects\oRedAbyssAvoidanceController</object>
+        <object>objects\oRedBaseSpawner</object>
+        <object>objects\oRedProjectileSpawner</object>
+        <object>objects\oRedAttachedSpawner</object>
+        <object>objects\oRedScriptSpawner</object>
+        <object>objects\oRedAttachedScriptSpawner</object>
+        <object>objects\oRedBoundProjectile</object>
+        <object>objects\oRedColoredFruit</object>
+        <object>objects\oRedBoundColoredFruit</object>
+        <object>objects\oRedAbyssSpikeBullet</object>
+        <object>objects\oRedAbyssBoundSpikeBullet</object>
+        <object>objects\oRedGradBullet</object>
+        <object>objects\oRedBoundGradBullet</object>
+        <object>objects\oRedAbyssEdgeSpike</object>
+        <object>objects\oRedAbyssEdgeTwin</object>
+        <object>objects\oRedDebugInfo</object>
+        <object>objects\oRedAbyssBackground</object>
+        <object>objects\oRedBulletCircle</object>
+        <object>objects\oRedDummyObj</object>
+        <object>objects\oRedViewAngleShaker</object>
+        <object>objects\oRedViewXShaker</object>
+        <object>objects\oRedViewYShaker</object>
+        <object>objects\oRedInstanceActivationCommand</object>
+        <object>objects\oRedInstanceFadeCommand</object>
+        <object>objects\oRedMoveXCommand</object>
+        <object>objects\oRedMoveYCommand</object>
+        <object>objects\oRedRotateCommand</object>
+        <object>objects\oRedImageRotateCommand</object>
+        <object>objects\oRedBulletTrail</object>
+        <object>objects\oRedAbyssBlock</object>
+        <object>objects\oRedLeftBlock</object>
+        <object>objects\oRedRightBlock</object>
+        <object>objects\oRedFloorBlock</object>
+        <object>objects\oRedBlCornerBlock</object>
+        <object>objects\oRedBrCornerBlock</object>
+        <object>objects\oRedScreenFlash</object>
+        <object>objects\oRedInfiniteJump</object>
+        <object>objects\oRedColoredFruitDrawMechanism</object>
+        <object>objects\oRedInstanceChangeAlphaCommand</object>
+        <object>objects\oRedInstanceChangeXScaleCommand</object>
+        <object>objects\oRedInstanceChangeYScaleCommand</object>
+        <object>objects\oRedInstanceChangeColorCommand</object>
+        <object>objects\oRedLineImpulseTester</object>
+        <object>objects\oRedMoveCommand</object>
+        <object>objects\oRedProjectile</object>
+        <object>objects\oRedS1LCurvedBullet</object>
+        <object>objects\oRedS1RCurvedBullet</object>
+        <object>objects\oRedS3JitterSpawnerBullet</object>
+        <object>objects\oRedS4CircleSpawner</object>
+        <object>objects\oRedS4LeheeSpawner</object>
+        <object>objects\oRedS5BurstBulletSpawner</object>
+        <object>objects\oRedS6AntiTargetSpawner</object>
+        <object>objects\oRedS7FastCircleSpike</object>
+        <object>objects\oRedS7SlowCircleSpike</object>
+        <object>objects\oRedS7TargetSpike</object>
+        <object>objects\oRedS9BlockAlphaController</object>
+        <object>objects\oRedS12BottomSpike</object>
+        <object>objects\oRedS12LeftSpike</object>
+        <object>objects\oRedS12RightSpike</object>
+        <object>objects\oRedS12Spike</object>
+        <object>objects\oRedS12TopSpike</object>
+        <object>objects\oRedS17PrefinalFade</object>
+      </objects>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -6476,6 +7004,8 @@
       <room>rooms\rExtraStageBloodFestivalStage</room>
       <room>rooms\rExtraStageBloodFestivalBoss</room>
       <room>rooms\rExtraStageFinalDeadRoom</room>
+      <room>rooms\rPreAbyss</room>
+      <room>rooms\rRedLunarAbyss</room>
     </rooms>
   </rooms>
   <help>

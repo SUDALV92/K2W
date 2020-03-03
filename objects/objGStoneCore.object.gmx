@@ -76,8 +76,8 @@ if(instance_exists(tan2))
 //if(x &gt; 1000 || x &lt; -200 || y &gt; 800 || y &lt; -200)
 if(i &gt; 200)
 {
- instance_destroy(tan1);
- instance_destroy(tan2);
+ scrObjectDestroy(tan1);
+ scrObjectDestroy(tan2);
  instance_destroy();
 }
 

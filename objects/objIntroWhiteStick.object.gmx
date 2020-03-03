@@ -31,7 +31,7 @@ with(objIntroWhiteStick)
  if(id != other.id)
  {
   if(abs(x - other.x) &lt; 32)
-   instance_destroy(other);
+   scrObjectDestroy(other);
  }
 }
 </string>

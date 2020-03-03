@@ -549,8 +549,8 @@ if(i == 700 || i == 750 || i == 800 || i == 850)
 
 if(i == 1000)
 {
- instance_destroy(objCRCherry2);
- instance_destroy(objDPCherry1);
+ scrObjectDestroy(objCRCherry2);
+ scrObjectDestroy(objDPCherry1);
  with(objMagicCircle) event_user(0);
 }
 i++

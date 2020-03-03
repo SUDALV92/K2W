@@ -94,7 +94,7 @@ goombaChallengeEnd = false;
             <string>audio_play_sound(global.sndGeezer2,0,0);
 
 if(instance_exists(objGeezer3))
- instance_destroy(objGeezer3);
+ scrObjectDestroy(objGeezer3);
 
 A=instance_create(16,choose(544,512,480,448),objKtgBullet);
 A.speed=5;//random_range(3,5);

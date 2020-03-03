@@ -78,7 +78,7 @@ else {instance_destroy();}
 with(objStageMessage){instance_destroy();}
 with(objNumberMessage){instance_destroy();}
 with(objClearMessage){instance_destroy();}
-instance_destroy(objPlayer);
+scrObjectDestroy(objPlayer);
 global.stageUnlocked[71] = true;
 room_goto(rBoss6Death);
 //objStage7Door.hspeed=2;

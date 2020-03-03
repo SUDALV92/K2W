@@ -84,7 +84,7 @@ else
             <kind>1</kind>
             <string>if(image_index == 2)
 {
- instance_destroy(other);
+ scrObjectDestroy(other);
  hp--;
  if(hp &gt; 0)
  {
@@ -95,13 +95,13 @@ else
  }
  else
  {
-  instance_destroy(objTetran);
-  instance_destroy(objTetranHP);
-  instance_destroy(objTetranHand);
-  instance_destroy(objLaserBeam);
-  instance_destroy(objBoss6Laser3);
-  instance_destroy(dBlock1);
-  instance_destroy(dBlock2);
+  scrObjectDestroy(objTetran);
+  scrObjectDestroy(objTetranHP);
+  scrObjectDestroy(objTetranHand);
+  scrObjectDestroy(objLaserBeam);
+  scrObjectDestroy(objBoss6Laser3);
+  scrObjectDestroy(dBlock1);
+  scrObjectDestroy(dBlock2);
   with(objTetranBlueBall) 
   {
    sprite_index = sprTetranExplosion;
@@ -133,7 +133,7 @@ else
 }
 else
 {
- instance_destroy(other);
+ scrObjectDestroy(other);
  with(objB6Gradius)
 {
  event_user(0);

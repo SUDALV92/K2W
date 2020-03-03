@@ -522,7 +522,7 @@ if(t &gt;= 6130 &amp;&amp; t &lt; 6250)
 }
 if(t == 6250) //конец бла-бла-бла (взрыв)
 {
- instance_destroy(core);
+ scrObjectDestroy(core);
  with(objExtraStageBloodFestivalApple)
  {
   if(mode == 7)
@@ -816,7 +816,7 @@ if(t &gt;= 8850 &amp;&amp; t &lt; 8880)
 }
 if(t == 8880)
 {
- instance_destroy(centerApple);
+ scrObjectDestroy(centerApple);
  with(objExtraStageBloodFestivalApple)
  {
   direction = point_direction(400,304,x,y);

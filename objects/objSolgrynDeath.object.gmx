@@ -87,7 +87,7 @@ alarm[3]=60;
 else
 {
  alarm[5] = 0;
- instance_destroy(objShakelow);
+ scrObjectDestroy(objShakelow);
 }
 </string>
           </argument>

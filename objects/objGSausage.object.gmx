@@ -73,7 +73,7 @@ isKiller = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy(other);
+            <string>scrObjectDestroy(other);
 audio_play_sound(global.sndHit,0,0);
 instance_destroy();
 </string>

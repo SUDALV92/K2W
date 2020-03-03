@@ -115,7 +115,7 @@ i++;
           <argument>
             <kind>1</kind>
             <string>if(visible &amp;&amp; !global.godMode)
- instance_destroy(other);
+ scrObjectDestroy(other);
 </string>
           </argument>
         </arguments>

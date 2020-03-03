@@ -259,7 +259,7 @@ if(warp)
   backgroundPulse = false;
   background_visible[0] = false;
   background_visible[2] = true;
-  instance_destroy(objGridSource);
+  scrObjectDestroy(objGridSource);
   background_hspeed[2] = -1.5;
   background_vspeed[2] = -1.5;
  }
@@ -292,7 +292,7 @@ if(warp)
  }
  if(i == 1250)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
  }
  if(i == 1300)
  {
@@ -321,7 +321,7 @@ if(warp)
  }
  if(i == 1420)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
  }
  if(i == 1410)
  {
@@ -333,7 +333,7 @@ if(warp)
    miniCherry.speed = 2;
    temp+=360/12;
   }
-  instance_destroy(cherry);
+  scrObjectDestroy(cherry);
  }
  if(i == 1440)
  {
@@ -365,7 +365,7 @@ if(warp)
  }
  if(i == 1530)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
   objPlayerDoll.hspeed = -3;
   with(objPlayerDoll) event_user(0);
  }
@@ -457,7 +457,7 @@ if(warp)
   objPlayerDoll.speed = dollTempSpeed;
   objPlayerDoll.hspeed = 3;
   view_yview[0] = 304;
-  instance_destroy(objIntroFakeBlock);
+  scrObjectDestroy(objIntroFakeBlock);
   random_set_seed(1);
  }
  if(i &gt; 1970 &amp;&amp; i &lt; 2080 &amp;&amp; i % 4 == 0)
@@ -573,7 +573,7 @@ if(warp)
  }
  if(i == 2365) 
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
   objPlayerDoll.hspeed = 0;
   trap1 = instance_create(view_xview[0],-32,objIntroTrapDown);
   trap1.gravity = 0.9;
@@ -644,7 +644,7 @@ if(warp)
  }
  if(i == 2700)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
   with(objPlayerDoll)
   {
    move_towards_point(100,250,5);
@@ -658,7 +658,7 @@ if(warp)
  }
  if(i == 2990)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
   with(objPlayerDoll)
   {
    move_towards_point(700,200,8.5);
@@ -696,7 +696,7 @@ if(warp)
  }
  if(i == 3600)
  {
-  instance_destroy(objIntroText);
+  scrObjectDestroy(objIntroText);
  }
  if(i == 3610)
  {
@@ -932,7 +932,7 @@ if(backgroundPulse)
           <argument>
             <kind>1</kind>
             <string>//unfreeze screen
-instance_destroy(objIntroScreenFreeze);
+scrObjectDestroy(objIntroScreenFreeze);
 background_hspeed[0] = -1.5;
 background_vspeed[0] = -1.5;
 </string>

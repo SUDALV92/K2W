@@ -287,7 +287,7 @@ if (global.gameStarted)
             audio_stop_sound(global.sndGameList);
             audio_stop_sound(global.curDanmaku);
             scrStopSFX();
-            instance_destroy(objEnergy);
+            scrObjectDestroy(objEnergy);
             for(var temp = 0; temp &lt; 100; temp++)
             {
              global.energy[temp] = global.saveEnergy[temp];
@@ -627,7 +627,7 @@ if(f5pressed)
                 global.lastRunStart[13] = -1; global.lastRunEnd[13] = -1; break;
         }
         global.currentSegmentIndex = -1;
-        instance_destroy(objEnergy);
+        scrObjectDestroy(objEnergy);
         for(var temp = 0; temp &lt; 100; temp++)
         {
          global.energy[temp] = global.saveEnergy[temp];

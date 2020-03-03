@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -54,13 +54,6 @@ background_vspeed[0] = -1.5;</code>
   <instances>
     <instance objName="objSave" x="400" y="512" name="inst_F2428F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFadeOut" x="0" y="0" name="inst_4EE2C13A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="0" y="0" name="inst_510B7B42" locked="0" code="" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="32" y="0" name="inst_454637FA" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="32" y="576" name="inst_814D8539" locked="0" code="" scaleX="24" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="768" y="32" name="inst_C89BC6A8" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="32" y="288" name="inst_411BB339" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="512" y="288" name="inst_5B837772" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="320" y="416" name="inst_E230CACE" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="400" y="512" name="inst_A608C3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="400" y="368" name="inst_63AFA76B" locked="0" code="roomTo = rBoss6Phase1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKK" x="768" y="272" name="inst_D6761804" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -68,14 +61,128 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="obj4chPortal" x="240" y="464" name="inst_9E895BFE" locked="0" code="roomTo = rBoss6Crimson;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="560" y="464" name="inst_DDA803EB" locked="0" code="roomTo = rBoss6Nue;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="688" y="464" name="inst_1DBAAC6B" locked="0" code="roomTo = rBoss6GravityMan;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="64" y="512" name="inst_9458C0CE" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="192" y="512" name="inst_18FB4712" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="512" y="512" name="inst_22F9AB71" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="640" y="512" name="inst_67039A19" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objComputer" x="40" y="96" name="inst_9ED01CD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergyTrigger" x="384" y="96" name="inst_D304DF9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="400" y="272" name="inst_9D83630E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergy" x="400" y="464" name="inst_C853CE32" locked="0" code="energyID = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="32" name="inst_B27121F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="64" name="inst_DB85BB3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="96" name="inst_B179B0D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="128" name="inst_85ED05F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="160" name="inst_ED944F5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="192" name="inst_528643B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="224" name="inst_DE1071F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="256" name="inst_2B35BC06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="320" name="inst_E627FDF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="352" name="inst_2A4F20E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="384" name="inst_C0354CCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="416" name="inst_55545BD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="448" name="inst_BE2102C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="480" name="inst_824E06B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="512" name="inst_BE17237D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="0" y="544" name="inst_B2DABD15" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="32" name="inst_D7643248" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="64" name="inst_69EA4F9B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="96" name="inst_81A8F38C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="128" name="inst_A988FEC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="160" name="inst_28B909B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="192" name="inst_AB00704C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="224" name="inst_F54157CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="256" name="inst_8D9FFE03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="320" name="inst_EBF6F510" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="352" name="inst_CB89AFC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="384" name="inst_4E9CC368" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="416" name="inst_9FEFFF5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="448" name="inst_009E5018" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="480" name="inst_28D09859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="512" name="inst_5F2D2F90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockA" x="768" y="544" name="inst_9B73BFE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="32" y="576" name="inst_460CD83E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="64" y="576" name="inst_F9BA9D3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="96" y="576" name="inst_9FBFDBD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="128" y="576" name="inst_18549860" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="160" y="576" name="inst_1D35EBA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="192" y="576" name="inst_02EC6E0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="224" y="576" name="inst_DB51030B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="256" y="576" name="inst_83B0E007" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="288" y="576" name="inst_D29B9582" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="320" y="576" name="inst_3D4A936E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="352" y="576" name="inst_2FDDA07D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="384" y="576" name="inst_FE0E301A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="416" y="576" name="inst_9C10AE82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="448" y="576" name="inst_D65D6CE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="480" y="576" name="inst_6ABA7B0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="512" y="576" name="inst_642A6A61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="544" y="576" name="inst_D541412D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="576" y="576" name="inst_E7E5CF0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="608" y="576" name="inst_AC73CE73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="640" y="576" name="inst_8690C7DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="672" y="576" name="inst_337C7986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="704" y="576" name="inst_EF939173" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="736" y="576" name="inst_4AB4F0C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="544" y="512" name="inst_8E82413E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="672" y="512" name="inst_7D99B0E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="352" y="416" name="inst_FA7832E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="384" y="416" name="inst_1687942A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="416" y="416" name="inst_78C9088C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="96" y="512" name="inst_A001008F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="224" y="512" name="inst_632B9876" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="32" y="288" name="inst_3E94093E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="64" y="288" name="inst_E287E5A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="96" y="288" name="inst_AFBEF502" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="128" y="288" name="inst_07A28F21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="160" y="288" name="inst_0287B3B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="192" y="288" name="inst_A326E225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="224" y="288" name="inst_5946D0E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="544" y="288" name="inst_2AFC2DC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="576" y="288" name="inst_E84FCB5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="608" y="288" name="inst_4CFA0278" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="640" y="288" name="inst_A460ADBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="672" y="288" name="inst_2E2DECD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="704" y="288" name="inst_EE071A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="736" y="288" name="inst_6F13BE81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="32" y="0" name="inst_54887C29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="64" y="0" name="inst_723861B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="96" y="0" name="inst_D496A404" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="128" y="0" name="inst_5371264E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="160" y="0" name="inst_899A4F71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="192" y="0" name="inst_394A41D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="224" y="0" name="inst_D256875A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="256" y="0" name="inst_3A7122EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="288" y="0" name="inst_108E2DEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="320" y="0" name="inst_D07E4F2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="352" y="0" name="inst_11E82453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="384" y="0" name="inst_88566E31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="416" y="0" name="inst_49D4A194" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="448" y="0" name="inst_D24E26B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="480" y="0" name="inst_71095D7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="512" y="0" name="inst_35B17E33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="544" y="0" name="inst_A6B9EEF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="576" y="0" name="inst_CF467BE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="608" y="0" name="inst_87BAE5B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="640" y="0" name="inst_E9F6743F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="672" y="0" name="inst_A111EE98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="704" y="0" name="inst_136B54AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockB" x="736" y="0" name="inst_5D01F8E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="0" y="0" name="inst_986CE5DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="768" y="0" name="inst_32BF90E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="768" y="288" name="inst_F8CB5C16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="512" y="288" name="inst_F98CFE3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="256" y="288" name="inst_CD3F2F10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="0" y="288" name="inst_78765F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="0" y="576" name="inst_B39E51C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="64" y="512" name="inst_91243161" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="128" y="512" name="inst_C3C270C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="192" y="512" name="inst_78A98D4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="256" y="512" name="inst_977F148F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="320" y="416" name="inst_28B6A8C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="448" y="416" name="inst_8CC6CB2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="512" y="512" name="inst_FCFC48A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="576" y="512" name="inst_383F1048" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="640" y="512" name="inst_53F800E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="704" y="512" name="inst_99A50040" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBossRushAbyssBlockC" x="768" y="576" name="inst_2AC1014D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOutsideRoomChanger" x="0" y="608" name="inst_0C70CB88" locked="0" code="roomTo = rPreAbyss;&#xA;smoothTransition = true;&#xA;" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgPortalTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10052134" name="inst_15F2A3FB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

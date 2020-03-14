@@ -233,3 +233,4 @@ global.sndBokuBoku = audio_create_stream("Music\BokuBoku.ogg");
 global.sndFinalDeadRoom = audio_create_stream("Music\Distrust.ogg");
 global.sndShutdownInterrupted = audio_create_stream("Music\ShutdownInterrupted.ogg");
 global.sndAbyss = audio_create_stream("Music\LunarAbyss.ogg");
+global.sndTrueEnding = audio_create_stream("Music\TrueEnding.ogg");

@@ -28,8 +28,11 @@
             <string>image_speed=0.75;
 image_xscale=1.5;
 image_yscale=1.5;
-audio_stop_sound(global.sndGustavLaser);
-audio_play_sound(global.sndGustavLaser,0,0);
+if(room != rTrueEnding)
+{
+ audio_stop_sound(global.sndGustavLaser);
+ audio_play_sound(global.sndGustavLaser,0,0);
+}
 </string>
           </argument>
         </arguments>

@@ -117,25 +117,6 @@ gravity = 0.2;
         {
             speed-=0.1;
         }
-        //direction=point_direction(x,y,objPlayer.x,objPlayer.y);
-        
-        /*newDistance = point_distance(x,y,sonicX,sonicY);
-        if(newDistance &gt;= oldDistance)
-        {
-          sonicX = objPlayer.x;
-          sonicY = objPlayer.y;
-        }
-        gravity_direction = point_direction(x,y,sonicX,sonicY);
-        oldDistance = newDistance;*/
-        
-        /*if(direction - point_direction(x,y,objPlayer.x,objPlayer.y) &gt; 0)
-        {
-         direction -= 1;
-        }
-        else if(direction - point_direction(x,y,objPlayer.x,objPlayer.y) &lt; 0)
-        {
-         direction += 1;
-        }*/
         
         gravity_direction = point_direction(x,y,objPlayer.x,objPlayer.y);
         

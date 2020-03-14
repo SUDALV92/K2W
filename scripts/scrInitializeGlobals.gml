@@ -48,7 +48,6 @@ for (var i = global.secretItemTotal-1; i >= 0; i--)
 //useless for K2W
 global.gameClear = 0;
 global.extra = 0;
-global.extraClear = 0;
 global.extra = 0;
 global.saveGameClear = 0;
 global.saveExtraClear = 0;
@@ -59,6 +58,7 @@ global.finalBossFaded = 0;
 global.selectedStage = 0;
 global.autoFire = 1;
 global.saveAutoFire = 1;
+global.extraClear = 0;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {

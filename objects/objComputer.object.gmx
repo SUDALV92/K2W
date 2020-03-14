@@ -68,6 +68,17 @@ for(var temp = 0; temp &lt; 100; temp++)
    totalEnergy++;
 }
 
+currentString1 = "";
+currentString2 = "";
+currentString3 = "";
+if(global.extraClear == 1)
+{
+ global.stageRoom[76] = rHomeGood;
+}
+else
+{
+ global.stageRoom[76] = rHomeBad;
+}
 </string>
           </argument>
         </arguments>
@@ -129,6 +140,93 @@ alarm[0] = mainTextScrollSpd;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw event
+if(mainTextLength &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText,mainTextLength-4,5) != "     ")
+    {
+     mainNewText = mainText + "     ";
+     mainTextLength = string_length(mainNewText);
+    }
+    currentString1 = string_copy(mainNewText,mainTextStartPos,mainDisplayWidth);    
+    
+    currentLength = string_length(currentString1);
+    if(currentLength &lt; mainDisplayWidth)
+    {  
+     copied = string_copy(mainNewText,1,mainDisplayWidth - currentLength); 
+     currentString1 = scrStringAdd(currentString1,copied);
+    }
+}
+else
+{
+    currentString1 = mainText;
+}
+
+//main text 2
+if(mainText2Length &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText2,mainText2Length-4,5) != "     ")
+    {
+     mainNewText2 = mainText2 + "     ";
+     mainText2Length = string_length(mainNewText2);
+    }
+    currentString2 = string_copy(mainNewText2,mainText2StartPos,mainDisplayWidth);
+    
+    currentLength = string_length(currentString2);
+    if(currentLength &lt; mainDisplayWidth)
+    {  
+     copied = string_copy(mainNewText2,1,mainDisplayWidth - currentLength); 
+     currentString2 = scrStringAdd(currentString2,copied);
+    }
+}
+else
+{
+    currentString2 = mainText2;
+}
+
+//main text 3
+if(mainText3Length &gt; mainDisplayWidth)
+{
+    if(string_copy(mainText3,mainText3Length-4,5) != "     ")
+    {
+     mainNewText3 = mainText3 + "     ";
+     mainText3Length = string_length(mainNewText3);
+    }
+    currentString3 = string_copy(mainNewText3,mainText3StartPos,mainDisplayWidth);
+    
+    currentLength = string_length(currentString3);
+    if(currentLength &lt; mainDisplayWidth)
+    {  
+     copied = string_copy(mainNewText3,1,mainDisplayWidth - currentLength); 
+     currentString3 = scrStringAdd(currentString3,copied);
+    }
+}
+else
+{
+    currentString3 = mainText3;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -149,7 +247,7 @@ alarm[0] = mainTextScrollSpd;
             <string>if(place_meeting(x,y,objPlayer) || shutdown)
 {
  global.noShoot = true;
- var temp = "Select destination point";
+ temp = "Select destination point";
  if(mainText != temp)
  {
   mainText = temp;
@@ -344,96 +442,14 @@ draw_set_font(fJoystix8);
 draw_set_valign(fa_top);
 draw_set_halign(fa_center);
 draw_set_color(c_green);
-if(mainTextLength &gt; mainDisplayWidth)
-{
-    if(string_copy(mainText,mainTextLength-4,5) != "     ")
-    {
-     mainNewText = mainText + "     ";
-     mainTextLength = string_length(mainNewText);
-    }
-    currentString = string_copy(mainNewText,mainTextStartPos,mainDisplayWidth);
-    
-    var notFilled = true;
-    while(notFilled)
-    {
-        currentLength = string_length(currentString);
-        if(currentLength &lt; mainDisplayWidth)
-        {
-         currentString += string_copy(mainNewText,1,mainDisplayWidth - currentLength);
-        }
-        else
-        {
-         notFilled = false;
-        }
-    }    
-}
-else
-{
-    currentString = mainText;
-}
-draw_text(x+118,y+8,currentString);
 
-//main text 2
-if(mainText2Length &gt; mainDisplayWidth)
-{
-    if(string_copy(mainText2,mainText2Length-4,5) != "     ")
-    {
-     mainNewText2 = mainText2 + "     ";
-     mainText2Length = string_length(mainNewText2);
-    }
-    currentString = string_copy(mainNewText2,mainText2StartPos,mainDisplayWidth);
-    
-    var notFilled = true;
-    while(notFilled)
-    {
-        currentLength = string_length(currentString);
-        if(currentLength &lt; mainDisplayWidth)
-        {
-         currentString += string_copy(mainNewText2,1,mainDisplayWidth - currentLength);
-        }
-        else
-        {
-         notFilled = false;
-        }
-    }    
-}
-else
-{
-    currentString = mainText2;
-}
+draw_text(x+118,y+8,currentString1);
+
 draw_set_halign(fa_left);
-draw_text(x+15,y+24,currentString);
+draw_text(x+15,y+24,currentString2);
 
-//main text 3
-if(mainText3Length &gt; mainDisplayWidth)
-{
-    if(string_copy(mainText3,mainText3Length-4,5) != "     ")
-    {
-     mainNewText3 = mainText3 + "     ";
-     mainText3Length = string_length(mainNewText3);
-    }
-    currentString = string_copy(mainNewText3,mainText3StartPos,mainDisplayWidth);
-    
-    var notFilled = true;
-    while(notFilled)
-    {
-        currentLength = string_length(currentString);
-        if(currentLength &lt; mainDisplayWidth)
-        {
-         currentString += string_copy(mainNewText3,1,mainDisplayWidth - currentLength);
-        }
-        else
-        {
-         notFilled = false;
-        }
-    }    
-}
-else
-{
-    currentString = mainText3;
-}
 draw_set_halign(fa_center);
-draw_text(x+118,y+40,currentString);
+draw_text(x+118,y+40,currentString3);
 
 draw_set_font(fJoystix12);
 draw_set_halign(fa_left);

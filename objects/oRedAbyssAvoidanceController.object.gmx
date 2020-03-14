@@ -142,7 +142,7 @@ if( instance_exists( objPlayer ) ) {
 if( Step == MusicStartStep ) {
     // Start the music.
     MusicId = audio_play_sound( global.sndAbyss, 0, false );
-    Duration = 11569.2695617676; //audio_sound_length( MusicId ) * 50;
+    Duration = 11650; //audio_sound_length( MusicId ) * 50;
 } else if( Step &gt; MusicStartStep ) {
     // Stop the music if necessary.
     if( !instance_exists( objPlayer ) || ( Step - MusicStartStep ) &gt;= Duration ) {

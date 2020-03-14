@@ -179,6 +179,8 @@ switch (room)                       //determines which song to play
         roomSong = global.sndFinalDeadRoom; break;
     case rPreAbyss:
         roomSong = global.sndShutdownInterrupted; break;
+    case rTrueEnding:
+        roomSong = global.sndTrueEnding; loop = false; break;
     default:                        //default option in case the room does not have a song set
         roomSong = -1;
         break;

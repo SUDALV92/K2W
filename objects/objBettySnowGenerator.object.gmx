@@ -130,6 +130,7 @@ else
     case rStage3HeavenTrap:
     case rStage3SeeTheMoon:
     case rStage3WhiteCherry:
+    case rTrueEnding:
      ttt = false;
      repeat(12)
         {
@@ -158,7 +159,7 @@ else
        start_gravity = random_range(0.02,0.16);
       }
      }
-     break;
+     break;    
     default:
      with(objBettySnow)
       instance_destroy();

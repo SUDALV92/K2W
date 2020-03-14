@@ -84,7 +84,7 @@ if( file_exists( DebugFileName ) ) {
             <string>/// Save settings to file
 var debugFile = file_text_open_write( DebugFileName );
 file_text_write_real( debugFile, StartStep );
-file_text_write_real( debugFile, global.debugNoDeath );
+file_text_write_real( debugFile, true );
 file_text_close( debugFile );
 
 </string>

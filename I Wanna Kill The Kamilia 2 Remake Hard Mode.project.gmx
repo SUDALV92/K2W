@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="542" name="datafiles">
-    <datafiles number="542" name="Music">
+  <datafiles number="543" name="datafiles">
+    <datafiles number="543" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -889,9 +889,26 @@
         </ConfigOptions>
         <filename>ShutdownInterrupted.ogg</filename>
       </datafile>
+      <datafile>
+        <name>TrueEnding.ogg</name>
+        <exists>-1</exists>
+        <size>13183821</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>TrueEnding.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="542" name="SFX">
-      <datafiles number="542" name="Common">
+    <datafiles number="543" name="SFX">
+      <datafiles number="543" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1386,7 +1403,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="542" name="Stage">
+      <datafiles number="543" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1847,8 +1864,8 @@
           <filename>sndShake.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="542" name="Boss">
-        <datafiles number="542" name="Solgryn">
+      <datafiles number="543" name="Boss">
+        <datafiles number="543" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3499,7 +3516,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="542" name="ExtraBoss2">
+        <datafiles number="543" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -3931,7 +3948,7 @@
         <sprite>sprites\sprGustavLock</sprite>
         <sprite>sprites\sprGustavExplosion</sprite>
       </sprites>
-      <sprites name="Betty">
+      <sprites name="Stage3">
         <sprite>sprites\sprBlockBettyA</sprite>
         <sprite>sprites\sprBlockBettyB</sprite>
         <sprite>sprites\sprBlockBettyC</sprite>
@@ -3939,6 +3956,7 @@
         <sprite>sprites\sprBettySave</sprite>
         <sprite>sprites\sprShatteredBlock</sprite>
         <sprite>sprites\sprBettyPlatform</sprite>
+        <sprite>sprites\sprBlockDoruppi</sprite>
       </sprites>
       <sprites name="S5">
         <sprite>sprites\sprSecret5PortalFX</sprite>
@@ -3971,6 +3989,8 @@
       <sprites name="Stage6">
         <sprite>sprites\sprBlockBakaA</sprite>
         <sprite>sprites\sprBlockLeeheA</sprite>
+        <sprite>sprites\sprBlockBakaB</sprite>
+        <sprite>sprites\sprBlockBakaC</sprite>
       </sprites>
       <sprites name="BossRush">
         <sprite>sprites\sprK3WarpA</sprite>
@@ -4084,6 +4104,7 @@
           <sprite>sprites\sprFinalDeadRoomHand</sprite>
           <sprite>sprites\sprFinalDeadRoomCircle</sprite>
           <sprite>sprites\sprFinalDeadRoomPointer</sprite>
+          <sprite>sprites\sprFinalDeadRoomBlock</sprite>
         </sprites>
         <sprites name="RedAbyss">
           <sprite>sprites\sprRedAbyssBackground</sprite>
@@ -4118,6 +4139,13 @@
           <sprite>sprites\sprRedVerticalBlock</sprite>
           <sprite>sprites\sprRedAbyssButton</sprite>
         </sprites>
+        <sprites name="TrueEnding">
+          <sprite>sprites\sprExEndingBlackHole</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="HomeGood">
+        <sprite>sprites\sprKidHomeFloorBlock</sprite>
+        <sprite>sprites\sprExtraCloud</sprite>
       </sprites>
     </sprites>
     <sprites name="Engine">
@@ -4276,6 +4304,7 @@
         <sprite>sprites\sprOpeningKamilia</sprite>
       </sprites>
       <sprite>sprites\sprBlack</sprite>
+      <sprite>sprites\sprBlackCentered</sprite>
       <sprite>sprites\sprBlacksquare</sprite>
       <sprite>sprites\sprBossTitle</sprite>
       <sprite>sprites\sprFadelight</sprite>
@@ -4780,45 +4809,16 @@
       <sprite>sprites\sprJirachistarBold</sprite>
     </sprites>
     <sprites name="ExtraOld">
-      <sprite>sprites\sprChaseTiles</sprite>
       <sprite>sprites\sprWhiteCircle</sprite>
-      <sprite>sprites\sprExtraItem</sprite>
       <sprite>sprites\sprElectricity</sprite>
       <sprite>sprites\sprMagic2</sprite>
-      <sprite>sprites\sprExBoss3_GreenBullet</sprite>
-      <sprite>sprites\sprExBoss3_GreenLaser</sprite>
-      <sprite>sprites\sprTTTBlock</sprite>
-      <sprite>sprites\sprRunTerminalBlock1</sprite>
-      <sprite>sprites\sprRunTerminalBlock2</sprite>
       <sprite>sprites\sorCQBlock</sprite>
       <sprite>sprites\sprSkygSpikeDown</sprite>
       <sprite>sprites\sprSkyrSpikeDown</sprite>
       <sprite>sprites\sprSkyrSpikeLeft</sprite>
       <sprite>sprites\sprSkybSpikeRight</sprite>
-      <sprite>sprites\sprDarkBlueBlock</sprite>
-      <sprite>sprites\sprDTBlock</sprite>
-      <sprite>sprites\sprUhuhuBlockUp</sprite>
-      <sprite>sprites\sprUhuhuBlockRight</sprite>
-      <sprite>sprites\sprUhuhuBlock</sprite>
-      <sprite>sprites\sprExTributeBlockTop</sprite>
-      <sprite>sprites\sprExTributeBlockBottom</sprite>
-      <sprite>sprites\sprExGalaxyBlock</sprite>
-      <sprite>sprites\sprExHTBlockVertical</sprite>
-      <sprite>sprites\sprExHTBlockHorizontal</sprite>
-      <sprite>sprites\sprExHTBlock</sprite>
-      <sprite>sprites\sprDiverseTriforceUp</sprite>
-      <sprite>sprites\sprDiverseTriforceDown</sprite>
-      <sprite>sprites\sprDiverseTriforceLeft</sprite>
-      <sprite>sprites\sprDiverseTriforceRight</sprite>
-      <sprite>sprites\sprScapegoatBlock</sprite>
-      <sprite>sprites\sprSyBlock</sprite>
-      <sprite>sprites\sprExtraEntranceBlock</sprite>
       <sprite>sprites\sprLightning</sprite>
-      <sprite>sprites\sprExtra</sprite>
-      <sprite>sprites\sprExtraCloud</sprite>
       <sprite>sprites\sprFinalSaveCrashed</sprite>
-      <sprite>sprites\sprExKTGFakeBlock</sprite>
-      <sprite>sprites\sprExKTGDeathBlock</sprite>
     </sprites>
     <sprites name="Intro">
       <sprite>sprites\sprIntroHouseInside</sprite>
@@ -5116,6 +5116,7 @@
       <script>scripts\scrRandomAppleColor.gml</script>
       <script>scripts\scrObjectDestroy.gml</script>
       <script>scripts\scrArrayCreate.gml</script>
+      <script>scripts\scrStringAdd.gml</script>
     </scripts>
     <scripts name="Extra">
       <script>scripts\scrCreateWarp.gml</script>
@@ -5294,6 +5295,11 @@
         <script>scripts\scrRedTweenSineInOut.gml</script>
         <script>scripts\scrRedTweenSineOut.gml</script>
         <script>scripts\scrRedWrapInstance.gml</script>
+      </scripts>
+      <scripts name="TrueEnding">
+        <script>scripts\scrTrueEndingSetBlackBlocks.gml</script>
+        <script>scripts\scrTrueEndingAddLine.gml</script>
+        <script>scripts\scrTrueEndingFadeIn.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -6581,6 +6587,7 @@
         </objects>
         <objects name="S3_Jitter">
           <object>objects\oRedS3JitterSpawner</object>
+          <object>objects\oRedS3JitterSpawnerBullet</object>
           <object>objects\oRedS3JitterBullet</object>
         </objects>
         <objects name="S4_SlicedCircles">
@@ -6773,27 +6780,41 @@
         <object>objects\oRedInstanceChangeXScaleCommand</object>
         <object>objects\oRedInstanceChangeYScaleCommand</object>
         <object>objects\oRedInstanceChangeColorCommand</object>
-        <object>objects\oRedLineImpulseTester</object>
-        <object>objects\oRedMoveCommand</object>
         <object>objects\oRedProjectile</object>
-        <object>objects\oRedS1LCurvedBullet</object>
-        <object>objects\oRedS1RCurvedBullet</object>
-        <object>objects\oRedS3JitterSpawnerBullet</object>
-        <object>objects\oRedS4CircleSpawner</object>
-        <object>objects\oRedS4LeheeSpawner</object>
-        <object>objects\oRedS5BurstBulletSpawner</object>
-        <object>objects\oRedS6AntiTargetSpawner</object>
-        <object>objects\oRedS7FastCircleSpike</object>
-        <object>objects\oRedS7SlowCircleSpike</object>
-        <object>objects\oRedS7TargetSpike</object>
-        <object>objects\oRedS9BlockAlphaController</object>
-        <object>objects\oRedS12BottomSpike</object>
-        <object>objects\oRedS12LeftSpike</object>
-        <object>objects\oRedS12RightSpike</object>
-        <object>objects\oRedS12Spike</object>
-        <object>objects\oRedS12TopSpike</object>
-        <object>objects\oRedS17PrefinalFade</object>
       </objects>
+    </objects>
+    <objects name="TrueEnding">
+      <object>objects\objTrueEndingTimeline</object>
+      <object>objects\objTrueEndingBlackHole</object>
+      <object>objects\objTrueEndingBlack</object>
+      <object>objects\objTrueEndingBlock</object>
+      <object>objects\objTrueEndingText</object>
+      <object>objects\objTrueEndingShatteredBlack</object>
+      <object>objects\objTrueEndingFlash</object>
+      <objects name="SceneA">
+        <object>objects\objTrueEndingAComputer</object>
+        <object>objects\objTrueEndingAGridSource</object>
+      </objects>
+      <objects name="SceneLast">
+        <object>objects\objTrueEndingJirachi</object>
+        <object>objects\objTrueEndingLaserSpawner</object>
+        <object>objects\objTrueEndingLukaSpawner</object>
+        <object>objects\objTrueEndingBat</object>
+        <object>objects\objTrueEndingCurvingSpawner</object>
+        <object>objects\objTureEndingBlueBall</object>
+        <object>objects\objTrueEndingKamiliaBullet</object>
+        <object>objects\objTrueEndingKamiliaBulletTail</object>
+        <object>objects\objTrueEndingMLaserController</object>
+        <object>objects\objTrueEndingFDRLaser</object>
+        <object>objects\objTrueEndingClock</object>
+        <object>objects\objTrueEndingClockHand</object>
+      </objects>
+    </objects>
+    <objects name="HomeGood">
+      <object>objects\objHomeGoodHouse</object>
+      <object>objects\objHomeGoodFloorBlock</object>
+      <object>objects\objHomeGoodCloud</object>
+      <object>objects\objHomeGoodCloudGenerator</object>
     </objects>
     <objects name="killers">
       <object>objects\objPlayerKiller</object>
@@ -7006,6 +7027,8 @@
       <room>rooms\rExtraStageFinalDeadRoom</room>
       <room>rooms\rPreAbyss</room>
       <room>rooms\rRedLunarAbyss</room>
+      <room>rooms\rTrueEnding</room>
+      <room>rooms\rHomeGood</room>
     </rooms>
   </rooms>
   <help>

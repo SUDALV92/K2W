@@ -35,6 +35,10 @@ alarm[0]=1;
 D = 0;
 B = 0;
 start_gravity=random_range(0.005,0.04);
+switch(room)
+{
+ case rTrueEnding: depth = -1; break;
+}
 </string>
           </argument>
         </arguments>

@@ -2,7 +2,6 @@
 var t = argument0;
 
 if( t == 0 ) {
-    
     scrRedBulletFadeOut( oRedS1Backdrop, 0.005 );
 }
 

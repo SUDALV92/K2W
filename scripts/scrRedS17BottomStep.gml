@@ -84,4 +84,9 @@ if( t == 10442 - 50 ) {
     // Clear.
 
 }
+else if(t == 11650)
+{
+ scrObjectDestroy(objPlayer);
+ room_goto(rTrueEnding);
+}
 

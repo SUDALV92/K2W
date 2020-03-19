@@ -48,6 +48,7 @@ self.y=objMagicCircle.y;
           <argument>
             <kind>1</kind>
             <string>c=0;
+audio_stop_sound(global.sndLuka1);
 audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
@@ -216,6 +217,7 @@ audio_play_sound(global.sndLuka1,0,0);
           <argument>
             <kind>1</kind>
             <string>c=0;
+audio_stop_sound(global.sndLuka1);
 audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
@@ -384,6 +386,7 @@ audio_play_sound(global.sndLuka1,0,0);
           <argument>
             <kind>1</kind>
             <string>c=0;
+audio_stop_sound(global.sndLuka1);
 audio_play_sound(global.sndLuka1,0,0);
 if(instance_exists(objPlayer))
 {
@@ -567,6 +570,7 @@ if(instance_exists(objPlayer))
           <argument>
             <kind>1</kind>
             <string>c=0;
+audio_stop_sound(global.sndLuka1);
 audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
@@ -735,6 +739,7 @@ audio_play_sound(global.sndLuka1,0,0);
           <argument>
             <kind>1</kind>
             <string>c=0;
+audio_stop_sound(global.sndLuka1);
 audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>

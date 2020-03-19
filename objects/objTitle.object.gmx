@@ -202,11 +202,11 @@ saveStatus = 0; // 0 = not exists, 1 = loaded, -1 = broken
     if !instance_exists(objTitlefadeout)
      room_goto(rOptions);
 }
-else if(scrButtonCheckPressed(global.skipButton))
+/*else if(scrButtonCheckPressed(global.skipButton))
 {
     if !instance_exists(objTitlefadeout)
      room_goto(rAchievements);
-}
+}*/
 else if(scrButtonCheckPressed(global.menuAcceptButton))
 {
     if !instance_exists(objTitlefadeout)
@@ -285,28 +285,28 @@ else if(scrButtonCheckPressed(global.menuAcceptButton))
             <kind>1</kind>
             <string>draw_self();
 draw_set_halign(fa_left);
-draw_set_font(fDefault20);
+draw_set_font(fJoystix20);
 draw_set_colour(c_white);
-scrDrawTextOutline(110,538,"Deaths: " + string(death[0]),c_white,c_black);
-scrDrawTextOutline(110,568,"Time  : " + timeStr[0],c_white,c_black);
-draw_set_font(fDefault10);
+scrDrawTextOutline(100,542,"Deaths: " + string(death[0]),c_white,c_black);
+scrDrawTextOutline(100,572,"Time  : " + timeStr[0],c_white,c_black);
+draw_set_font(fJoystix10);
 draw_set_halign(fa_right);
-scrDrawTextOutline(675,576,global.gameVersion,c_white,c_black);
+scrDrawTextOutline(614,550,global.gameVersion,c_white,c_black);
 draw_set_halign(fa_left);
-draw_set_font(fDefault12);
+draw_set_font(fJoystix12);
 
 //check whether to display keyboard or controller buttons
 if (!global.controllerMode)
 {
     scrDrawTextOutline(100,20,"Start: " + scrGetKeybind(global.jumpButton[0]),c_white,c_black);
-    scrDrawTextOutline(100,40,"Achievements: " + scrGetKeybind(global.skipButton[0]),c_white,c_black);
-    scrDrawTextOutline(100,60,"Options: " + scrGetKeybind(global.suicideButton[0]),c_white,c_black);
+    //scrDrawTextOutline(100,40,"Achievements: " + scrGetKeybind(global.skipButton[0]),c_white,c_black);
+    scrDrawTextOutline(100,40,"Options: " + scrGetKeybind(global.suicideButton[0]),c_white,c_black);
 }
 else
 {
     scrDrawTextOutline(100,20,"Start: " + scrGetControllerBind(global.jumpButton[1]),c_white,c_black);
-    scrDrawTextOutline(100,40,"Achievements: " + scrGetControllerBind(global.skipButton[1]),c_white,c_black);
-    scrDrawTextOutline(100,60,"Options: " + scrGetControllerBind(global.suicideButton[1]),c_white,c_black);
+    //scrDrawTextOutline(100,40,"Achievements: " + scrGetControllerBind(global.skipButton[1]),c_white,c_black);
+    scrDrawTextOutline(100,40,"Options: " + scrGetControllerBind(global.suicideButton[1]),c_white,c_black);
 }
 
 </string>

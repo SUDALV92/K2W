@@ -220,7 +220,7 @@ strKey[10] = "";
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white);
-draw_set_font(fDefault24);
+draw_set_font(fJoystix20);
 
 for(var i = 0; i &lt; 11; i += 1)
 {

@@ -139,7 +139,7 @@ else
         b.speed = 1;
         }
      break;
-    case rStage3TimeMachine:
+    /*case rStage3TimeMachine:
     case rStage3TimeMachine2:
     case rBoss3Avoid1:
     case rBoss3Avoid2:
@@ -159,7 +159,7 @@ else
        start_gravity = random_range(0.02,0.16);
       }
      }
-     break;    
+     break; */   
     default:
      with(objBettySnow)
       instance_destroy();

@@ -27,19 +27,20 @@
             <kind>1</kind>
             <string>if (global.TitleCard)
 {
+    cardName = "";
     switch(room)
     {
-        case rStage0: image_index=67; break;
-        case rStage1Chocko: image_index = 0; break;
-        case rStage1GGM: image_index = 1; break;
-        case rStage1EnjoyTheGame: image_index = 2; break;
-        case rStage1CTB1: image_index = 3; break;
-        case rStage1MysHouse: image_index = 4; break;
-        case rStage1YellowStar: image_index = 5; break;
-        case rStage1DarkBlue: image_index = 6; break;
-        case rStage1Exp: image_index = 7; break;
-        case rStage1Fortress: image_index = 8; break;
-        case rStage1Fangame: image_index = 9; break;
+        case rStage0: image_index=1; cardName = "Kill The Kamilia"; break;
+        case rStage1Chocko: image_index = 2; cardName = "Choko Choko"; break;
+        case rStage1GGM: image_index = 3; cardName = "GGM"; break;
+        case rStage1EnjoyTheGame: image_index = 4; cardName = "Enjoy The Game"; break;
+        case rStage1CTB1: image_index = 5; cardName = "Conquer#The Blow Game"; break;
+        case rStage1MysHouse: image_index = 6; cardName = "Mysterious house"; break;
+        case rStage1YellowStar: image_index = 7; cardName = "Yellow star"; break;
+        case rStage1DarkBlue: image_index = 8; cardName = "Dark Blue"; break;
+        case rStage1Exp: image_index = 9; cardName = "Experience"; break;
+        case rStage1Fortress: image_index = 10; cardName = "Fortress Returns"; break;
+        case rStage1Fangame: image_index = 11; cardName = "Fangame"; break;
         case rBoss1Save:
         case rStage2GuyTower2: 
         case rBoss2Save:
@@ -50,47 +51,47 @@
         case rBoss6Phase2:
         case rStage7B:
         case rPreAbyss:
-          image_index = 10; break;
+          image_index = 0; break;
           
-        case rBoss1Volcano: image_index = 11; break;
+        case rBoss1Volcano: image_index = 12; cardName = "Volcano zone"; break;
         
-        case rStage2CTB2: image_index = 12; break;
-        case rStage2DT: image_index = 13; break;
-        case rStage2GreenMoon: image_index = 14; break;
-        case rStage2Showdown: image_index = 15; break;
-        case rStage2Green: image_index = 16; break;
-        case rStage2Tribute: image_index = 17; break;
-        case rStage2Yassan: image_index = 18; break;
-        case rStage2RunTerminal: image_index = 19; break;
-        case rStage2BestGuy: image_index = 20; break;
-        case rStage2GuyTower: image_index = 21; break;        
-        case rBoss2Guy: image_index = 22; break;
+        case rStage2CTB2: image_index = 13; cardName = "Conquer#The Blow Game 2"; break;
+        case rStage2DT: image_index = 14; cardName = "Graduate from DT"; break;
+        case rStage2GreenMoon: image_index = 15; cardName = "Green moon"; break;
+        case rStage2Showdown: image_index = 16; cardName = "Showdown"; break;
+        case rStage2Green: image_index = 17; cardName = "Greeeen"; break;
+        case rStage2Tribute: image_index = 18; cardName = "Tribute"; break;
+        case rStage2Yassan: image_index = 19; cardName = "Yassan(21)"; break;
+        case rStage2RunTerminal: image_index = 20; cardName = "Run The Terminal"; break;
+        case rStage2BestGuy: image_index = 21; cardName = "Best guy"; break;
+        case rStage2GuyTower: image_index = 22; cardName = "Guy"; break;        
+        case rBoss2Guy: image_index = 23; cardName = "Guy's Castle"; break;
         
-        case rStage3500: image_index = 23; break;
-        case rStage3Uhuhu: image_index = 24; break;
-        case rStage3Skyclad: image_index = 25; break;
-        case rStage3CQ: image_index = 26; break;
-        case rStage3Rukimin: image_index = 27; break;
-        case rStage3Diverse: image_index = 28; break;
-        case rStage3HeavenTrap: image_index = 29; break;
-        case rStage3SeeTheMoon: image_index = 30; break;
-        case rStage3WhiteCherry: image_index = 31; break;
-        case rStage3TimeMachine: image_index = 32; break;
-        case rStage3TimeMachine2: image_index = 32; break;
-        case rBoss3Phase1: image_index = 33; break;
+        case rStage3500: image_index = 24; cardName = "500"; break;
+        case rStage3Uhuhu: image_index = 25; cardName = "Uhuhu spike"; break;
+        case rStage3Skyclad: image_index = 26; cardName = "Skyclad"; break;
+        case rStage3CQ: image_index = 27; cardName = "CQ"; break;
+        case rStage3Rukimin: image_index = 28; cardName = "Rukimin!7"; break;
+        case rStage3Diverse: image_index = 29; cardName = "Diverse"; break;
+        case rStage3HeavenTrap: image_index = 30; cardName = "Heaven Trap 2"; break;
+        case rStage3SeeTheMoon: image_index = 31; cardName = "See The Moon"; break;
+        case rStage3WhiteCherry: image_index = 32; cardName = "White Cherry"; break;
+        case rStage3TimeMachine: 
+        case rStage3TimeMachine2: image_index = 33; cardName = "Take#The Timemachine"; break;
+        case rBoss3Phase1: image_index = 34; cardName = "Influka room"; break;
         
-        case rStage4Galaxy: image_index = 34; break;
-        case rStage4GB: image_index = 35; break;
-        case rStage4Phantom: image_index = 36; break;
-        case rStage4Device: image_index = 37; break;
-        case rStage4HeavenTrap: image_index = 38; break;
+        case rStage4Galaxy: image_index = 35; cardName = "Galaxy"; break;
+        case rStage4GB: image_index = 36; cardName = "GB"; break;
+        case rStage4Phantom: image_index = 37; cardName = "Phantom"; break;
+        case rStage4Device: image_index = 38; cardName = "Device"; break;
+        case rStage4HeavenTrap: image_index = 39; cardName = "Heaven Trap 1"; break;
         case rStage4ShinySparkA: 
         case rStage4ShinySparkB:
         case rStage4ShinySparkC:
-            image_index = 39; break;
-        case rStage4Conscience: image_index = 40; break;
-        case rStage4Explorer: image_index = 41; break;
-        case rStage4Competitor: image_index = 42; break;
+            image_index = 40; cardName = "Shiny spark"; break;
+        case rStage4Conscience: image_index = 41; cardName = "Conscience"; break;
+        case rStage4Explorer: image_index = 42; cardName = "Explorer"; break;
+        case rStage4Competitor: image_index = 43; cardName = "Competitor"; break;
         case rStage4KTGA:
         case rStage4KTGB:
         case rExtraKTGA:
@@ -104,67 +105,85 @@
         case rExtraKTGJ:      
         case rExtraStageKTG:
         case rExtraStageKTGSray:
-          image_index = 43; break;
-        case rBoss4Phase1: image_index = 44; break;
+          image_index = 44; cardName = "Kill The Guy"; break;
+        case rBoss4Phase1: image_index = 45; cardName = "Geezer Room"; break;
 
-        case rStage5Color: image_index = 45; break;
-        case rStage5Scapegoat: image_index = 46; break;
-        case rStage5Symetry: image_index = 47; break;
-        case rStage5RainbowMiku: image_index = 48; break;
-        case rStage5Unknown: image_index = 49; break;
+        case rStage5Color: image_index = 46; cardName = "Color"; break;
+        case rStage5Scapegoat: image_index = 47; cardName = "Scapegoat"; break;
+        case rStage5Symetry: image_index = 48; cardName = "Symmetry"; break;
+        case rStage5RainbowMiku: image_index = 49; cardName = "Rainbow MIKU"; break;
+        case rStage5Unknown: image_index = 50; cardName = "Unknown"; break;
         case rStage5BloodFestival: 
         case rExtraStageBloodFestivalStage:
         case rExtraStageBloodFestivalBoss:
-             image_index = 50; break;
+             image_index = 51; cardName = "End#The Blood Festival"; break;
         case rStage5Dieary: 
         case rExtraStageDieary:        
-         image_index = 51; break;
+         image_index = 52; cardName = "Dieary"; break;
         case rExtraStageMaze:
              if(x &gt; 2500)
-              image_index = 54;
+             {
+              image_index = 55;
+              cardName = "BOSHY";
+             }
              else
-              image_index = 51;
+             {
+              image_index = 52;
+              cardName = "Dieary";
+             }
              break;
-        case rStage5PYF: image_index = 52; break;
-        case rStage5Locus: image_index = 53; break;
+        case rStage5PYF: image_index = 53; cardName = "PYF"; break;
+        case rStage5Locus: image_index = 54; cardName = "Locus"; break;
         case rStage5Boshy: 
         case rExtraStageBoshy:
-         image_index = 54; break;
-        case rBoss5Phase1: image_index = 56; break;
+         image_index = 55; cardName = "BOSHY"; break;
+        case rBoss5Phase1: image_index = 56; cardName = "Solgryn room"; break;
         
-        case rStage6GR: image_index = 57; break;
-        case rStage6DotKid: image_index = 58; break;
+        case rStage6GR: image_index = 57; cardName = "GR"; break;
+        case rStage6DotKid: image_index = 58; cardName = "Go the DotKid"; break;
         case rStage6Crimson:
         case rBoss6Crimson:
-          image_index = 59; break;
+          image_index = 62; cardName = "Crimson"; break;
         case rStage6Destination: 
         case rBoss6Destination:
-         image_index = 60; break;
+        case rExtraStageDestinationChase:
+        case rExtraStageDestinationBananas:
+         image_index = 63; cardName = "Destination"; break;
         case rStage6BreakingOut: 
         case rBoss6Nue:    
-         image_index = 61; break;
-        case rStage6SevenTrials: image_index = 62; break;
-        case rStage6Sadist: image_index = 63; break;
-        case rStage6Catastrophe: image_index = 64; break;
+         image_index = 64; cardName = "Breaking Out"; break;
+        case rStage6SevenTrials: image_index = 59; cardName = "Seven Trials"; break;
+        case rStage6Sadist: image_index = 60; cardName = "Sadist"; break;
+        case rStage6Catastrophe: image_index = 61; cardName = "Catastrophe"; break;
         case rStage6Popularity: 
         case rBoss6GravityMan:
-         image_index = 65; break;
+         image_index = 65; cardName = "Popularity"; break;
         case rStage6LoveTrap: 
         case rBoss6Phase1: 
-             image_index = 66; break;
+             image_index = 66; cardName = "LoveTrap"; break;
         
         case rBoss6Death:
         case rStage7: 
-             image_index = 68; break;
+             image_index = 67; cardName = "M-Stage"; break;
              
-        case rExtraStageDestinationChase:
-        case rExtraStageDestinationBananas:
-             image_index = 60; break;
-        
+        case rBoss7Phase1:
+             image_index = 68; cardName = "Kamilia"; break;
+             
+        case rEscapeA:
+        case rEscapeB:
+        case rEscapeC:
+             image_index = 69; cardName = "Escape"; break;
+                     
+        case rHomeBad:
+             image_index = 70; cardName = "Home"; break;
+             
         case rExtraStageFinalDeadRoom:
-             image_index = 69; break;
+             image_index = 71; cardName = "The hands of time"; break;
         case rRedLunarAbyss:
-             image_index = 70; break;
+             image_index = 72; cardName = "Bottomless Abyss"; break;
+        case rHomeGood:
+             image_index = 73; cardName = "Home"; break;
+             
         default: instance_destroy(); break;
     }
 
@@ -343,16 +362,46 @@ else
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprGamelist,image_index,view_xview[0] + x,view_yview[0] + y);
-cardName = "";
-switch(image_index)
+blackScale  = 20;
+for(var i = 1; i &lt;= string_length(cardName); ++i)
 {
- case 69: cardName = "The hands of time"; break;
- case 70: cardName = "Bottomless Abyss"; break;
+ var c = string_char_at(cardName,i);
+ if(c == "#")
+ {
+  blackScale = 40;
+  break;
+ }
 }
+draw_sprite_ext(sprBlackLine,0,view_xview[0] + x,view_yview[0] + y - 8,1,blackScale,0,c_white,0.6);
+
 draw_set_font(fJoystix10);
 draw_set_halign(fa_center);
 draw_set_valign(fa_bottom);
-scrDrawTextOutline(view_xview[0] + x - 100,view_yview[0] + y - 10,cardName,c_white,c_black);
+draw_set_color(c_white);
+draw_text(view_xview[0] + x - 100,view_yview[0] + y - 10,cardName);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///nothing
 </string>
           </argument>
         </arguments>

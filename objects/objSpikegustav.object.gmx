@@ -100,8 +100,11 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_sound(global.sndExplosion);
-audio_play_sound(global.sndExplosion,0,0);
+            <string>if(global.sfxDelay[0] &lt;= 0)
+{
+ audio_play_sound(global.sndExplosion,0,0);
+ global.sfxDelay[0] = 1;
+}
 a=instance_create(x,y,objShake);
 a.shake=3;
 a.timer=120;

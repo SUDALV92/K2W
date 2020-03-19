@@ -247,7 +247,7 @@ if (strButton[0] == "-1") strButton[0] = "Disabled";
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white);
-draw_set_font(fDefault20);
+draw_set_font(fJoystix14);
 
 for(var i = 0; i &lt; 13; i += 1)
 {

@@ -33,6 +33,7 @@ spin = startSpin;
 startAngle = 45;
 spinnerAngle = startAngle;
 spinChangedCount = 0;
+sfxGun = 0;
 switch(room)
 {
  case rBoss7Phase2:
@@ -70,8 +71,8 @@ switch(room)
     {
         bullet = instance_create(objPlayer.x,-50,objViridianTan2);
         bullet.direction = 270; 
-        audio_stop_sound(global.sndGuyGun);
-        audio_play_sound(global.sndGuyGun,0,0);
+        audio_stop_sound(sfxGun);
+        sfxGun = audio_play_sound(global.sndGuyGun,0,0);
         alarm[2] = 5;
     }
 }
@@ -113,8 +114,8 @@ bullet = instance_create(x,y,objViridianTan2);
 bullet.speed = 6;
 bullet.direction = spinnerAngle + 270;
 
-audio_stop_sound(global.sndGuyGun);
-audio_play_sound(global.sndGuyGun,0,0);
+audio_stop_sound(sfxGun);
+sfxGun = audio_play_sound(global.sndGuyGun,0,0);
 
 spinnerAngle += spin*8;
 if(spinChangedCount == 0 &amp;&amp; abs(spinnerAngle-startAngle) &gt;= 130)
@@ -167,8 +168,8 @@ bullet = instance_create(x,y,objViridianTan1);
 bullet.speed = 6;
 bullet.direction = spinnerAngle + 270;
 
-audio_stop_sound(global.sndGuyGun);
-audio_play_sound(global.sndGuyGun,0,0);
+audio_stop_sound(sfxGun);
+sfxGun = audio_play_sound(global.sndGuyGun,0,0);
 
 spinnerAngle += spin*6;
 if(spinChangedCount == 0 &amp;&amp; abs(spinnerAngle-startAngle) &gt;= 130)
@@ -691,7 +692,8 @@ if A=2{image_angle+=15;}
           <argument>
             <kind>1</kind>
             <string>a+=25;
-audio_play_sound(global.sndGuyGun,0,0);
+audio_stop_sound(sfxGun);
+sfxGun = audio_play_sound(global.sndGuyGun,0,0);
 </string>
           </argument>
         </arguments>

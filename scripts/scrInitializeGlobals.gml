@@ -59,6 +59,8 @@ global.selectedStage = 0;
 global.autoFire = 1;
 global.saveAutoFire = 1;
 global.extraClear = 0;
+global.titleViewed = false;
+global.partSys = -1;
 
 for(var i = global.stagesTotal; i >= 0; i--)
 {

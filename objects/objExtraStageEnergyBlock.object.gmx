@@ -68,7 +68,7 @@ else if(hp == 0)
  hp = -1;
  with(objGlitchController)
  {
-  energyBlocksCrashed+=4;
+  energyBlocksCrashed+=1;
  }
 }
 </string>

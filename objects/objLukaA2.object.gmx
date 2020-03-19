@@ -65,7 +65,7 @@ WD=0;
 loop = 1;
 i = 0;
 score = hp; //DeadSplit support
-
+currentSFX = 0;
 </string>
           </argument>
         </arguments>
@@ -146,8 +146,9 @@ bullet.image_yscale = 0.5;
 bullet.gravity = 0.1;
 bullet.gravity_direction = random_range(80,110);
 bullet.mode = 2;
-audio_stop_sound(global.sndLuka1);
-audio_play_sound(global.sndLuka1,0,0);
+
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 alarm[2] = 10;
 </string>
           </argument>
@@ -184,8 +185,8 @@ if(instance_exists(objPlayer))
    if(i mod 20 == 0)
    {   
     instance_create(x-205,y-205,objLukaEffect1);
-    audio_stop_sound(global.sndLuka1);
-    audio_play_sound(global.sndLuka1,0,0);
+    audio_stop_sound(currentSFX)
+    currentSFX = audio_play_sound(global.sndLuka1,0,0);
    }
    bullet = instance_create(x-205,y-205,objLukaTan3);
    bullet.direction = random_range(100,150);
@@ -231,7 +232,11 @@ if(instance_exists(objPlayer))
  {
   sprite_index = sprLukaA3;
   angle = irandom(360);
-  audio_play_sound(global.sndLuka1,0,0);
+  if(global.sfxDelay[0] &lt;= 0)
+  {
+   audio_play_sound(global.sndLuka1,0,0);
+   global.sfxDelay[0] = 2;
+  }
   //instance_create(x-205,y-205,objLukaEffect1);
  }
  if(i &lt;= 500 &amp;&amp; i mod 10 == 0)
@@ -246,8 +251,8 @@ if(instance_exists(objPlayer))
    side+=45;
   }
   angle += 15;
-  audio_stop_sound(global.sndLuka1);
-  audio_play_sound(global.sndLuka1,0,0);
+  audio_stop_sound(currentSFX)
+  currentSFX = audio_play_sound(global.sndLuka1,0,0);
  }
  if(i == 500)
  {
@@ -261,7 +266,11 @@ if(instance_exists(objPlayer))
  }
  if(i &gt;= 550 &amp;&amp; i &lt;= 1050 &amp;&amp; i mod 50 == 0)
  {
-  audio_play_sound(global.sndLuka3,0,0);
+  if(global.sfxDelay[0] &lt;= 0)
+  {
+   audio_play_sound(global.sndLuka3,0,0);
+   global.sfxDelay[0] = 2;
+  }
   instance_create(x-205,y-205,objLukaMagicC);
  }
  if(i == 1000)
@@ -271,7 +280,11 @@ if(instance_exists(objPlayer))
  if(i == 1150)
  {
   sprite_index = sprLukaA3;
-  audio_play_sound(global.sndLuka1,0,0);
+  if(global.sfxDelay[0] &lt;= 0)
+  {
+   audio_play_sound(global.sndLuka1,0,0);
+   global.sfxDelay[0] = 2;
+  }
   instance_create(x-205,y-205,objLukaEffect1);
  }
  if(i == 1150)

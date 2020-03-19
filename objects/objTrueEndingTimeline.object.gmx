@@ -28,6 +28,7 @@
             <string>t = 0;
 fade = SceneFade;
 global.extraClear = 1;
+global.stageUnlocked[85] = true;
 scrSaveGame(true);
 bg = -1;
 bg_back = -1;
@@ -341,7 +342,8 @@ if(t == 0)
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("Title",c_orange);
  scrTrueEndingAddLine("");
- scrTrueEndingAddLine("");
+ scrTrueEndingAddLine("AKI, H. Kobayashi, M. Yamane",c_orange);
+ scrTrueEndingAddLine("Charshoe X");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("Stage 1",c_orange);
@@ -370,8 +372,8 @@ if(t == 0)
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("The Guy boss",c_orange);
  scrTrueEndingAddLine("");
- scrTrueEndingAddLine("");
- scrTrueEndingAddLine("");
+ scrTrueEndingAddLine("Vicarious Visions Audio",c_orange);
+ scrTrueEndingAddLine("Dingodile");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("REO",c_orange);
  scrTrueEndingAddLine("[Spiral Template]");
@@ -440,8 +442,8 @@ if(t == 0)
  scrTrueEndingAddLine("ZUN",c_orange);
  scrTrueEndingAddLine("Hartmann's Youkai Girl");
  scrTrueEndingAddLine("");
- scrTrueEndingAddLine("");
- scrTrueEndingAddLine("");
+ scrTrueEndingAddLine("Nobuo Uematsu",c_orange);
+ scrTrueEndingAddLine("Battle With The Four Fiends");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("DJ the S",c_orange);
  scrTrueEndingAddLine("Wicked Child");
@@ -469,6 +471,9 @@ if(t == 0)
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("Kamilia boss",c_orange);
+ scrTrueEndingAddLine("");
+ scrTrueEndingAddLine("Vicarious Visions Audio",c_orange);
+ scrTrueEndingAddLine("Dr. Neo Cortex");
  scrTrueEndingAddLine("");
  scrTrueEndingAddLine("Vicarious Visions Audio",c_orange);
  scrTrueEndingAddLine("Dr. Neo Cortex Warped");
@@ -2050,7 +2055,7 @@ if(t &gt;= 13740 &amp;&amp; t &lt; 13840)
   fade.image_alpha += 0.01;
 }
 
-if(t == 14700)
+if(t == 14800)
 {
  with(objTrueEndingText)
  {

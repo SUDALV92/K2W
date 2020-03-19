@@ -286,7 +286,15 @@ else
    downDelayDecreaser += 0.2;
    upDelay = 0;
    upDelayDecreaser = 0;
-   if(global.stageUnlocked[77])
+   if(global.stageUnlocked[85])
+   {
+    maxStage = 85;
+   }
+   else if(global.stageUnlocked[84])
+   {
+    maxStage = 84;
+   }
+   else if(global.stageUnlocked[77])
    {
     maxStage = 83;
    }

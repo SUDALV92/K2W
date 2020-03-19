@@ -735,6 +735,7 @@ if(instance_exists(objPlayer) &amp;&amp; ready &amp;&amp; !phase3)
             gwaterOption = 0;
             gwaterDirection = 0;
             audio_play_sound(global.sndWater,0,0);
+            
             e1=instance_create(16+gwaterOption,496,objGWater1);
             e1.direction=gwaterDirection;
             e1.speed=5;

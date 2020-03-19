@@ -23,7 +23,7 @@ else
 }
 
 //button info
-draw_set_font(fDefault12);
+draw_set_font(fJoystix10);
 draw_set_halign(fa_left);
 draw_text(34,20,"["+backButton+"] Back");
 draw_set_halign(fa_right);

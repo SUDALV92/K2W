@@ -295,6 +295,9 @@ if (canSave &amp;&amp; instance_exists(objPlayer) &amp;&amp; global.grav == grav
            global.stageUnlocked[80] = true;
           }
           break;
+         case rPreAbyss:
+          global.stageUnlocked[84] = true;
+          break;
         }
         scrSaveGame(true);
     }

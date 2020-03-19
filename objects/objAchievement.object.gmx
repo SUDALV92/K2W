@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprAchievement</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-1000000</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -30,8 +30,8 @@
 x = 0;
 y = 0;
 phase = 1;
-audio_play_sound(global.sndKamilia,1,0);
-scrSaveAchievements();
+//audio_play_sound(global.sndKamilia,1,0);
+//scrSaveAchievements();
 if (instance_number(object_index) &gt; 1)
 {
  phase = -1;
@@ -62,7 +62,8 @@ index = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (instance_number(object_index) &gt; 1)
+            <string>instance_destroy();
+if (instance_number(object_index) &gt; 1)
 {
  alarm[1] = 1;
 }

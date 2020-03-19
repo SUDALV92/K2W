@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprUhuhuequilizer</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>1200000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed=1/2;
+            <string>image_speed=1/4;
 </string>
           </argument>
         </arguments>

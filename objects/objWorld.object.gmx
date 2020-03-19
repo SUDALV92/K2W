@@ -704,6 +704,12 @@ if(f5pressed)
             <string>///music loops
 switch(room)
 {
+ case rBoss6Crimson:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 175.976)
+      {
+       audio_sound_set_track_position(global.currentMusic, 7.708);
+      }
+      break;
  case rBoss6Phase2:
       if(global.currentMusicID == global.sndBoss6B)
       {
@@ -718,6 +724,12 @@ switch(room)
       if(audio_sound_get_track_position(global.currentMusic) &gt;= 111.712)
       {
        audio_sound_set_track_position(global.currentMusic, 0.934);
+      }
+      break;
+ case rStage7B:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 33.767)
+      {
+       audio_sound_set_track_position(global.currentMusic, 0.067);
       }
       break;
  case rBoss7Phase1:

@@ -82,3 +82,5 @@ global.stageName[80] = "Ex Destination"; global.stageRoom[80] = rExtraStageDesti
 global.stageName[81] = "Ex Blood Fetival Boss"; global.stageRoom[81] = rExtraStageBloodFestivalBoss;
 global.stageName[82] = "The Hands of Time"; global.stageRoom[82] = rExtraStageFinalDeadRoom;
 global.stageName[83] = "Shutdown";
+global.stageName[84] = "Bottomless abyss"; global.stageRoom[84] = rRedLunarAbyss;
+global.stageName[85] = "Ending"; global.stageRoom[85] = rTrueEnding;

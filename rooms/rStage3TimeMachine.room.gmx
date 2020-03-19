@@ -209,7 +209,6 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objWarp" x="192" y="608" name="inst_AA937799" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="352" y="224" name="inst_81AA29C8" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="720" y="24" name="inst_50BC2E2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBettySnowGenerator" x="-64" y="-16" name="inst_E5ADA833" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="416" y="592" name="inst_EC18829D" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="608" y="432" name="inst_794AA6BB" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="448" y="272" name="inst_04A9B717" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
@@ -222,6 +221,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSpikeUp" x="96" y="560" name="inst_86E614D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergyTrigger" x="32" y="208" name="inst_64400125" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergy" x="112" y="416" name="inst_3DC4574B" locked="0" code="energyID = 73;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBettyParticleSnowGenerator" x="-48" y="-32" name="inst_1E481420" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="768" y="0" w="32" h="32" xo="0" yo="0" id="10042939" name="inst_6A2135A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

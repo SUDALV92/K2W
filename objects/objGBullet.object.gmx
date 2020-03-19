@@ -51,7 +51,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndGravBullet,0,0);
+            <string>with(objGravityMan)
+{
+ audio_stop_sound(gbulletSFX);
+ gbulletSFX = audio_play_sound(global.sndGravBullet,0,0);
+}
 </string>
           </argument>
         </arguments>

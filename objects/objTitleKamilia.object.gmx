@@ -25,13 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrStopMusic();
-speed=9;
-direction=180;
-friction=0.2;
-audio_play_sound(global.sndKamilia,0,0);
-alarm[1]=120;
-A=0;
+            <string>if(global.titleViewed)
+{
+ //objTitleMessage.image_alpha=1;
+ x = 37;
+ y = 0;
+ depth = -5;
+ scrObjectDestroy(objTitlefadeout);
+ global.titleViewed = false;
+}
+else
+{
+    scrStopMusic();
+    speed=9;
+    direction=180;
+    friction=0.2;
+    audio_play_sound(global.sndKamilia,0,0);
+    alarm[1]=120;
+    A=0;
+    
+}
+increasing = false;
 </string>
           </argument>
         </arguments>
@@ -78,7 +92,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>objTitleMessage.image_alpha=1;
+            <string>//objTitleMessage.image_alpha=1;
 scrPlayMusic(global.sndTitle,1);
 </string>
           </argument>
@@ -211,7 +225,7 @@ alarm[2]=42;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=1
+            <string>/*if A=1
 {
     if background_alpha[0]&lt;1
     {
@@ -221,10 +235,46 @@ alarm[2]=42;
 if background_alpha[0]&gt;1
 {
     A=2;
-}
+}*/
 if objTitle.image_alpha&lt;1
 {
     objTitle.image_alpha+=0.02;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///BG
+background_alpha[0] = 0.1;
+if(increasing)
+{
+ if(background_alpha[1] &lt; 1)
+  background_alpha[1]+= 0.005;
+ else
+  increasing = false;
+}
+else
+{
+ if(background_alpha[1] &gt; 0)
+  background_alpha[1] -= 0.005;
+ else
+  increasing = true;
 }
 </string>
           </argument>

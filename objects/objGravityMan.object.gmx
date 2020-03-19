@@ -41,6 +41,8 @@ i = 0;
 scrFlipGrav(true);
 audio_play_sound(global.sndVVVVVV,0,false);
 score = hp; //DeadSplit support
+
+gbulletSFX = 0;
 </string>
           </argument>
         </arguments>

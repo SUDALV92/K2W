@@ -228,6 +228,6 @@ if(global.currentSegmentID != global.saveCurrentSegmentID)
 if(global.savePlayerType == 0)
  instance_create(global.savePlayerX,global.savePlayerY,objPlayer);
 
-scrLoadAchievements();
+//scrLoadAchievements();
 
 room_goto(asset_get_index(global.saveRoom));

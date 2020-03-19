@@ -80,8 +80,11 @@
             <kind>1</kind>
             <string>if A=1
 {
-    if(!audio_is_playing(global.sndBreakVeryLow))
+    if(global.sfxDelay[0] &lt;= 0)
+    {
         audio_play_sound(global.sndBreakVeryLow,0,0); 
+        global.sfxDelay[0] = 1;
+    }
     instance_destroy();
 }
 </string>

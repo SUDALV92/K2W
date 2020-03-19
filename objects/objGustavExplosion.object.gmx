@@ -26,8 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 2;
-audio_stop_sound(global.sndGustavTargetExplosion);
-audio_play_sound(global.sndGustavTargetExplosion,0,0);
+if(global.sfxDelay[0] &lt;= 0)
+{
+ sfx = audio_play_sound(global.sndGustavTargetExplosion,0,0);
+ audio_sound_gain(sfx,0.5,0);
+ global.sfxDelay[0] = 10;
+}
 </string>
           </argument>
         </arguments>

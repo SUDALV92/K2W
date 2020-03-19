@@ -29,8 +29,11 @@
 if(instance_exists(objPlayer))
 {
     move_towards_point(objPlayer.x,objPlayer.y,speed);
-    audio_stop_sound(global.sndGuyGun);
-    audio_play_sound(global.sndGuyGun,0,0);
+    if(global.sfxDelay[0] &lt;= 0)
+{
+ audio_play_sound(global.sndGuyGun,0,0);
+ global.sfxDelay[0] = 1;
+}
 }
 else instance_destroy();
 

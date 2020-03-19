@@ -2875,7 +2875,8 @@ objPlayer.frozen=false;
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>
@@ -3012,7 +3013,8 @@ with(objLukaTan1)
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>
@@ -3204,7 +3206,8 @@ A1.a=12;
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>
@@ -3374,7 +3377,8 @@ with(objLukaTan1)
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>
@@ -3511,7 +3515,8 @@ with(objLukaTan1)
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>
@@ -3648,7 +3653,8 @@ with(objLukaTan1)
           <argument>
             <kind>1</kind>
             <string>c=irandom(40);
-audio_play_sound(global.sndLuka1,0,0);
+audio_stop_sound(currentSFX)
+currentSFX = audio_play_sound(global.sndLuka1,0,0);
 </string>
           </argument>
         </arguments>

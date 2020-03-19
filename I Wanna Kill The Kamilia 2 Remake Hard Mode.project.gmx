@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="543" name="datafiles">
-    <datafiles number="543" name="Music">
+  <datafiles number="549" name="datafiles">
+    <datafiles number="549" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -21,23 +21,6 @@
           </Config>
         </ConfigOptions>
         <filename>Intro.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>Options.ogg</name>
-        <exists>-1</exists>
-        <size>1629878</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Options.ogg</filename>
       </datafile>
       <datafile>
         <name>GameOver.ogg</name>
@@ -178,7 +161,7 @@
       <datafile>
         <name>Boss2.ogg</name>
         <exists>-1</exists>
-        <size>6599851</size>
+        <size>6475400</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -450,7 +433,7 @@
       <datafile>
         <name>BossRushCrimson.ogg</name>
         <exists>-1</exists>
-        <size>11694750</size>
+        <size>8459906</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -635,23 +618,6 @@
         <filename>Boss7C.ogg</filename>
       </datafile>
       <datafile>
-        <name>Defeated.ogg</name>
-        <exists>-1</exists>
-        <size>233040</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Defeated.ogg</filename>
-      </datafile>
-      <datafile>
         <name>Ending.ogg</name>
         <exists>-1</exists>
         <size>12771849</size>
@@ -686,9 +652,9 @@
         <filename>Escape.ogg</filename>
       </datafile>
       <datafile>
-        <name>LastWind.ogg</name>
+        <name>EndRoom.ogg</name>
         <exists>-1</exists>
-        <size>221793</size>
+        <size>3993324</size>
         <exportAction>2</exportAction>
         <exportDir></exportDir>
         <overwrite>0</overwrite>
@@ -700,7 +666,7 @@
             <CopyToMask>9223372036854775807</CopyToMask>
           </Config>
         </ConfigOptions>
-        <filename>LastWind.ogg</filename>
+        <filename>EndRoom.ogg</filename>
       </datafile>
       <datafile>
         <name>ExtraStage.ogg</name>
@@ -906,9 +872,43 @@
         </ConfigOptions>
         <filename>TrueEnding.ogg</filename>
       </datafile>
+      <datafile>
+        <name>Title.ogg</name>
+        <exists>-1</exists>
+        <size>7436942</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>Title.ogg</filename>
+      </datafile>
+      <datafile>
+        <name>DayAfter.ogg</name>
+        <exists>-1</exists>
+        <size>12953130</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>DayAfter.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="543" name="SFX">
-      <datafiles number="543" name="Common">
+    <datafiles number="549" name="SFX">
+      <datafiles number="549" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1403,7 +1403,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="543" name="Stage">
+      <datafiles number="549" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1863,9 +1863,26 @@
           </ConfigOptions>
           <filename>sndShake.ogg</filename>
         </datafile>
+        <datafile>
+          <name>sndWarpFX.ogg</name>
+          <exists>-1</exists>
+          <size>81993</size>
+          <exportAction>2</exportAction>
+          <exportDir></exportDir>
+          <overwrite>0</overwrite>
+          <freeData>-1</freeData>
+          <removeEnd>0</removeEnd>
+          <store>0</store>
+          <ConfigOptions>
+            <Config name="Default">
+              <CopyToMask>9223372036854775807</CopyToMask>
+            </Config>
+          </ConfigOptions>
+          <filename>sndWarpFX.ogg</filename>
+        </datafile>
       </datafiles>
-      <datafiles number="543" name="Boss">
-        <datafiles number="543" name="Solgryn">
+      <datafiles number="549" name="Boss">
+        <datafiles number="549" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3516,7 +3533,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="543" name="ExtraBoss2">
+        <datafiles number="549" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -4310,6 +4327,7 @@
       <sprite>sprites\sprFadelight</sprite>
       <sprite>sprites\sprFadelight2</sprite>
       <sprite>sprites\sprGamelist</sprite>
+      <sprite>sprites\sprBlackLine</sprite>
       <sprite>sprites\sprHPBar</sprite>
       <sprite>sprites\sprHPBarfull</sprite>
       <sprite>sprites\sprHPLBar</sprite>
@@ -4908,12 +4926,6 @@
       <background>background\background118</background>
       <background>background\background119</background>
       <background>background\bgBoss7GRID</background>
-    </backgrounds>
-    <backgrounds name="Extra">
-      <background>background\bgExBoss1GMan</background>
-      <background>background\bgExBoss1Miku</background>
-      <background>background\bgExStageCQ</background>
-      <background>background\bgTributePlatform</background>
     </backgrounds>
     <backgrounds name="HardMode">
       <backgrounds name="Stage1">
@@ -5764,6 +5776,7 @@
       <object>objects\objBettySnow</object>
       <object>objects\objBettySnowGenerator</object>
       <object>objects\objBettyInvisBlock</object>
+      <object>objects\objBettyParticleSnowGenerator</object>
     </objects>
     <objects name="Boss3">
       <object>objects\objAriel</object>
@@ -6441,6 +6454,7 @@
       <object>objects\objKamiliaSpike</object>
       <object>objects\objKamiliaMoon</object>
       <object>objects\objKamiliaPhase4Laser</object>
+      <object>objects\objExBoss2_Lava</object>
     </objects>
     <objects name="Ending">
       <object>objects\objEnding</object>

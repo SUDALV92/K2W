@@ -172,6 +172,7 @@ done = false;
           <argument>
             <kind>1</kind>
             <string>audio_sound_gain(global.currentMusic,1,10000);
+audio_sound_set_track_position(global.currentMusic,106);
 </string>
           </argument>
         </arguments>

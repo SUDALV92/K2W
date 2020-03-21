@@ -189,6 +189,19 @@ if(global.extra &amp;&amp; instance_place(x,y,objPlayer))
     showSkipText = true;
 }
 else showSkipText = false;
+
+switch(room)
+{
+ case rStage3SeeTheMoon:
+  if(place_meeting(x,y,objPlayer))
+  {
+   depth = -1001;  
+  }
+  else
+   depth = 1;
+  break;
+}
+
 </string>
           </argument>
         </arguments>

@@ -75,6 +75,7 @@ switch(room)
   clockControl = false;
   break;
 }
+event_user(0);
 </string>
           </argument>
         </arguments>
@@ -897,7 +898,7 @@ if (!place_free(x+hspeed,y+vspeed)) {hspeed = 0;}
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="4">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -971,14 +972,36 @@ switch(room)
         scrSetPlayerMask();
         break;
 }
-
-if(room == rBoss6Phase2)
- instance_destroy();
-
 if(global.infJump)
 {
  infJump = true;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>event_user(0);
+
+if(room == rBoss6Phase2)
+ instance_destroy();
 </string>
           </argument>
         </arguments>

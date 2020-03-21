@@ -74,6 +74,39 @@ goombaChallengeEnd = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(global.sfxDelay[0] &lt;= 10)
+{
+ audio_play_sound(global.sndGeezer2,0,0);
+ global.sfxDelay[0] = 10;
+}
+
+G=instance_create(x,y,objHammer);
+G.speed=5;
+G.direction=random_range(40,140);
+
+alarm[3] = 30;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="2">
       <action>
         <libid>1</libid>
@@ -91,17 +124,21 @@ goombaChallengeEnd = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndGeezer2,0,0);
+            <string>if(global.sfxDelay[0] &lt;= 10)
+{
+ audio_play_sound(global.sndGeezer2,0,0);
+ global.sfxDelay[0] = 10;
+}
 
 if(instance_exists(objGeezer3))
  scrObjectDestroy(objGeezer3);
 
-A=instance_create(16,choose(544,512,480,448),objKtgBullet);
+A=instance_create(16,choose(544,512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 0;
 A.image_xscale = 1;
 
-A=instance_create(784,choose(544,512,480,448),objKtgBullet);
+A=instance_create(784,choose(544,512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 180;
 A.image_xscale = -1;
@@ -183,13 +220,17 @@ alarm[0]=10;}}
 if view_angle&lt;0{view_angle[0]+=1;}
 
 if A=1{
-if !instance_exists(objGumba){timeline_speed=1; A=2;}}
+if !instance_exists(objGumba) &amp;&amp; !instance_exists(objGumbaB2)
+{
+ timeline_speed=1; A=2;
+}
+}
 if B=1{
 if !instance_exists(objGumba) and
 !instance_exists(objGumbaB1) and !instance_exists(objGumbaB2)
 {timeline_speed=1; B=2;}}
 if C=1{
-if !instance_exists(objGumba) {timeline_speed=1; C=2; alarm[2] = 0; }}
+if !instance_exists(objGumba) {timeline_speed=1; C=2; alarm[2] = 0; alarm[3] = 0; }}
 if D=1{
 if !instance_exists(objCrystal) {
 with(objZeldaSpider){instance_destroy();} timeline_speed=1; D=2;}}
@@ -244,6 +285,28 @@ with(objZeldaBat){instance_destroy();} timeline_speed=1; F=2;}}
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[2] = 0;
+alarm[3] = 0;
+</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>

@@ -305,7 +305,7 @@ if (global.gameStarted)
     
     if (!global.gamePaused) //check if the game is currently paused
     {
-        if (scrButtonCheckPressed(global.restartButton) &amp;&amp; room != rEnding)
+        if (scrButtonCheckPressed(global.restartButton) &amp;&amp; !global.noReset)
         {
             //stop death sound/music
             audio_stop_sound(global.deathSound);
@@ -651,6 +651,25 @@ if(f5pressed)
             case rBoss7Phase2:
             case rBoss7Phase4:
                 global.lastRunStart[13] = -1; global.lastRunEnd[13] = -1; break;
+            case rEscapeA:
+            case rEscapeB:
+            case rEscapeC:
+                instance_create(0,0,objExTransition); exit; break;
+            case rInit:
+            case rIntro:
+            case rIntro2:
+            case rIntro3:
+            case rIntro4:
+            case rIntro5:
+            case rTitle:
+            case rOptions:
+            case rEnding:
+            case rEnding2:
+            case rEnding3:
+            case rEnding4:
+            case rEnding5:
+            case rTrueEnding:
+             exit; break;
         }
         global.currentSegmentIndex = -1;
         scrObjectDestroy(objEnergy);
@@ -704,10 +723,96 @@ if(f5pressed)
             <string>///music loops
 switch(room)
 {
+ case rTitle:
+ case rOptions:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 124.191)
+      {
+       audio_sound_set_track_position(global.currentMusic, 1.034);
+      }
+      break;
+ case rStage1Chocko:
+    case rStage1GGM:
+    case rStage1EnjoyTheGame:
+    case rStage1CTB1:
+    case rStage1MysHouse:
+    case rStage1YellowStar:
+    case rStage1DarkBlue:
+    case rStage1Exp:
+    case rStage1Fortress:
+    case rStage1Fangame:
+        if(audio_sound_get_track_position(global.currentMusic) &gt;= 134.835)
+      {
+       audio_sound_set_track_position(global.currentMusic, 8.675);
+      }
+      break;
+ case rStage2GuyTower:
+    case rStage2GuyTower2:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 282.883)
+      {
+       audio_sound_set_track_position(global.currentMusic, 8.609);
+      }
+      break;
+ case rBoss2Guy:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 105.472)
+      {
+       audio_sound_set_track_position(global.currentMusic, 4.671);
+      }
+      break;
+ case rStage4Galaxy:
+    case rStage4GB:
+    case rStage4Phantom:
+    case rStage4Device:
+    case rStage4HeavenTrap:
+    case rStage4ShinySparkA:
+    case rStage4ShinySparkB:
+    case rStage4ShinySparkC:
+    case rStage4Conscience:
+    case rStage4Explorer:
+    case rStage4Competitor:
+    case rStage4KTGA:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 179.980)
+      {
+       audio_sound_set_track_position(global.currentMusic, 16.049);
+      }
+      break;
+ case rStage5Color:
+    case rStage5Scapegoat:
+    case rStage5Symetry:
+    case rStage5RainbowMiku:
+    case rStage5Unknown:
+    case rStage5BloodFestival:
+    case rStage5Dieary:
+    case rStage5PYF:
+    case rStage5Locus:
+    case rStage5Boshy:
+    case rExtraRainbowMiku:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 170.704)
+      {
+       audio_sound_set_track_position(global.currentMusic, 10.711);
+      }
+      break;
  case rBoss6Crimson:
       if(audio_sound_get_track_position(global.currentMusic) &gt;= 175.976)
       {
        audio_sound_set_track_position(global.currentMusic, 7.708);
+      }
+      break;
+ case rBoss6Destination:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 218.885)
+      {
+       audio_sound_set_track_position(global.currentMusic, 87.921);
+      }
+      break;
+ case rBoss6GravityMan:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 253.220)
+      {
+       audio_sound_set_track_position(global.currentMusic, 6.607);
+      }
+      break;
+ case rBoss5Phase1:
+    if(audio_sound_get_track_position(global.currentMusic) &gt;= 215.549)
+      {
+       audio_sound_set_track_position(global.currentMusic, 0.767);
       }
       break;
  case rBoss6Phase2:
@@ -727,9 +832,9 @@ switch(room)
       }
       break;
  case rStage7B:
-      if(audio_sound_get_track_position(global.currentMusic) &gt;= 33.767)
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 23.223)
       {
-       audio_sound_set_track_position(global.currentMusic, 0.067);
+       audio_sound_set_track_position(global.currentMusic, 3.337);
       }
       break;
  case rBoss7Phase1:
@@ -777,6 +882,37 @@ switch(room)
           {
            audio_sound_set_track_position(global.currentMusic, 68.936);
           }
+      }
+      break;
+ case rExtraStageBoshy:
+    if(global.currentMusicID == global.sndMarioPhase2)
+    {
+        if(audio_sound_get_track_position(global.currentMusic) &gt;= 54.254)
+          {
+           audio_sound_set_track_position(global.currentMusic, 3.237);
+          }
+    }
+    break;
+ case rStage6BossRush:
+ case rPreAbyss:
+    if(global.currentMusicID == global.sndShutdownInterrupted)
+    {
+     if(audio_sound_get_track_position(global.currentMusic) &gt;= 95.395)
+          {
+           audio_sound_set_track_position(global.currentMusic, 7.441);
+          }
+    }
+    break;
+ case rHomeBad:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 245.278)
+      {
+       audio_sound_set_track_position(global.currentMusic, 5.339);
+      }
+      break;
+ case rHomeGood:
+      if(audio_sound_get_track_position(global.currentMusic) &gt;= 223.223)
+      {
+       audio_sound_set_track_position(global.currentMusic, 111.511);
       }
       break;
 }
@@ -960,6 +1096,8 @@ switch(room)
     case rExtraStageDestinationBananas:
     case rExtraStageBloodFestivalBoss:
     case rExtraStageFinalDeadRoom:
+    case rRedLunarAbyss:
+    case rTrueEnding:
         global.noPause = true; 
         break;    
     default: 
@@ -1032,6 +1170,18 @@ switch(room)
  default:
   global.noShoot = false;
   break;
+}
+
+switch(room)
+{
+ case rEnding:
+ case rEnding2:
+ case rEnding3:
+ case rEnding4:
+ case rEnding5:
+ case rTrueEnding:
+  global.noReset = true; break;
+ default: global.noReset = false; break;
 }
 
 switch(room)

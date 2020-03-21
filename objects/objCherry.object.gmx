@@ -26,11 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1/10;
-switch(room)
-{
-    case rStage1CTB1: sprite_index=sprWhiteCherry; break;
-    case rStage1Exp: sprite_index=sprGrayCherry; break;
-}
+
 </string>
           </argument>
         </arguments>

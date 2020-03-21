@@ -85,11 +85,15 @@ if(instance_exists(objLastTimer))
         {
          depth = 1200000;
          if(invincible)
+         {
           escape = true;
+          bulletSpawn = false; //bugfix
+         }
         }
         with(objChaost)
         {
          destroying = true;
+         killer = false;
          speed = 0;
         }
         audio_play_sound(global.sndEnep,0,0);

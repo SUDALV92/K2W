@@ -35,6 +35,7 @@ i = 0;
 j = 0;
 image_speed = 0;
 destroying = false;
+angleShift = 0;
 </string>
           </argument>
         </arguments>
@@ -77,12 +78,14 @@ if(mode == 2)
   y = 488;
   laser = instance_create(x,y,objKamiliaPhase4Laser);
   laser.image_xscale = 0.5;
+  laser.image_index = image_index;
   laser.mode = 3;
   laser.gravity_direction = 0;
   laser.gravity = 0.2;
   
   laser = instance_create(x,y,objKamiliaPhase4Laser);
   laser.image_xscale = 0.5;
+  laser.image_index = image_index;
   laser.mode = 3;
   laser.gravity_direction = 180;
   laser.gravity = 0.2;
@@ -111,7 +114,7 @@ if(mode == 5)
 {
  if(instance_exists(parent))
  {
-  image_angle = parent.image_angle;
+  image_angle = parent.image_angle + angleShift;
   image_alpha = parent.image_alpha;
   if(image_alpha &lt; 1)
    killer = false;
@@ -129,7 +132,7 @@ if(mode == 5)
   }
   if(shootPhase == 1)
   {
-   if(image_xscale &lt; 10)
+   if(image_xscale &lt; 15)
     image_xscale += 1;
    else
     shootPhase = 2;

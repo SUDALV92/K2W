@@ -1812,7 +1812,8 @@ if(t == 8400)
  
  for(var temp = leftX+32; temp &lt; rightX; temp += 32)
  {
-  instance_create(temp,y,objMLaser);
+  laser = instance_create(temp,y,objMLaser);
+  laser.depth = 1;
  }
  mlaserController = instance_create(0,nextY-32*5,objTrueEndingMLaserController);
  mlaserController.vspeed = 0.73;

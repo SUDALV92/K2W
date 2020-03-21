@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -121,7 +121,6 @@ for(var i = xx;i&gt;=0;i-=8)
  }
  for(var j = 0;j&lt;608;j+=32)
  {
-  
   draw_sprite_ext(sprShatteredBlock,0,i,j,1,1,0,c_white,tempAlpha);
  }
 }

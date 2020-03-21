@@ -124,7 +124,7 @@ background_hspeed[1]+=0.1;</code>
     <instance objName="objBestrap3" x="640" y="480" name="inst_7CE169E4" locked="0" code="trap = 10;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBestrap3" x="704" y="480" name="inst_B2DB9BDF" locked="0" code="trap = 11;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="320" y="544" name="inst_02D7BA9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCherry" x="416" y="544" name="inst_B82A84C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objCherry" x="411" y="544" name="inst_B82A84C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="32" y="384" name="inst_623F3E22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="448" name="inst_E1EDB840" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="192" name="inst_AF358AC6" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>

@@ -52,6 +52,10 @@ A=0;
             <string>if A=0
 {
 //objStmtrap1.hspeed=1;
+if(!instance_exists(objStmtrap1))
+{
+ instance_create(-32,0,objStmtrap1);
+}
 objStmtrap1.alarm[0] = 1;
 objStmtrap5.vspeed=8; 
 objStmtrap5.alarm[0]=5; 

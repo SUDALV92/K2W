@@ -392,7 +392,7 @@ G3.image_index=0;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=8;
-G=instance_create(x,y,objGumba);
+G=instance_create(x,y,choose(objGumba,objGumbaB2));
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -424,7 +424,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=-8;
-G=instance_create(x,y,objGumba);
+G=instance_create(x,y,choose(objGumba,objGumbaB2));
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -456,7 +456,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=8;
-G=instance_create(x,y,objGumba);
+G=instance_create(x,y,choose(objGumba,objGumbaB2));
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -488,7 +488,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=-8;
-G=instance_create(x,y,objGumba);
+G=instance_create(x,y,choose(objGumba,objGumbaB2));
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -520,7 +520,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=8;
-G=instance_create(x,y,objGumba);
+G=instance_create(x,y,objSpiny);
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -681,6 +681,7 @@ timeline_speed=0;
           <argument>
             <kind>1</kind>
             <string>score = 1; //DeadSplit support
+timeline_position = 579;
 </string>
           </argument>
         </arguments>
@@ -1310,12 +1311,12 @@ G=instance_create(x,y,objHammer);
 G.speed=5;
 G.direction=random_range(40,140);
 
-A=instance_create(16,choose(544,512,480,448),objKtgBullet);
+A=instance_create(16,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 0;
 A.image_xscale = 1;
 
-A=instance_create(784,choose(544,512,480,448),objKtgBullet);
+A=instance_create(784,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 180;
 A.image_xscale = -1;
@@ -1351,12 +1352,12 @@ G=instance_create(x,y,objHammer);
 G.speed=5;
 G.direction=random_range(40,140);
 
-A=instance_create(16,choose(544,512,480,448),objKtgBullet);
+A=instance_create(16,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 0;
 A.image_xscale = 1;
 
-A=instance_create(784,choose(544,512,480,448),objKtgBullet);
+A=instance_create(784,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 180;
 A.image_xscale = -1;
@@ -1392,12 +1393,12 @@ G=instance_create(x,y,objHammer);
 G.speed=5;
 G.direction=random_range(40,140);
 
-A=instance_create(16,choose(544,512,480,448),objKtgBullet);
+A=instance_create(16,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 0;
 A.image_xscale = 1;
 
-A=instance_create(784,choose(544,512,480,448),objKtgBullet);
+A=instance_create(784,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 180;
 A.image_xscale = -1;
@@ -1433,12 +1434,12 @@ G=instance_create(x,y,objHammer);
 G.speed=5;
 G.direction=random_range(40,140);
 
-A=instance_create(16,choose(544,512,480,448),objKtgBullet);
+A=instance_create(16,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 0;
 A.image_xscale = 1;
 
-A=instance_create(784,choose(544,512,480,448),objKtgBullet);
+A=instance_create(784,choose(512,464,416,368),objKtgBullet);
 A.speed=5;//random_range(3,5);
 A.direction = 180;
 A.image_xscale = -1;
@@ -1764,6 +1765,7 @@ G.gravity_direction=270;
             <string>timeline_speed=0;
 C=1;
 alarm[2] = 10;
+alarm[3] = 10;
 G3=instance_create(x,y,objGeezer3);
 G3.image_index=3;
 

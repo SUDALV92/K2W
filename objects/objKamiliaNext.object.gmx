@@ -143,6 +143,7 @@ if A=10
     instance_create(604,208,objKamiliaAttack2);
     laser = instance_create(192,208,objKamiliaPhase4Laser);
     laser.image_xscale = 0.5;
+    laser.image_index = 0;
     laser.direction = irandom_range(50,120);
     laser.speed = 4;
     laser.gravity = 0.2;
@@ -150,6 +151,7 @@ if A=10
     
     laser = instance_create(604,208,objKamiliaPhase4Laser);
     laser.image_xscale = 0.5;
+    laser.image_index = 1;
     laser.direction = irandom_range(50,120);
     laser.speed = 4;
     laser.gravity = 0.2;
@@ -214,7 +216,7 @@ if A=9
      instance_create(604,208,objKamiliaAttack2);
      audio_play_sound(global.sndTanmakLow,0,0);
      a1=instance_create(spawnerX,16,objEyeTanTypeB);
-     a1.image_index=0;
+     a1.image_index=choose(0,1);
      a1.image_angle = random(360);
      a1.vspeed=3;
      a1.mode = 3;
@@ -231,32 +233,32 @@ scrObjectDestroy(objKamiliaAttack2);
 instance_create(192,208,objKamiliaAttack2);
 instance_create(604,208,objKamiliaAttack2);
 
-repeat(2)
+repeat(1)
 {
     a1=instance_create(192,208,objEyeTanTypeB);
     a1.image_xscale = 0.5;
     a1.image_yscale = 0.5;
     a1.image_index=0;
-    a1.speed=10;
+    a1.speed=9;
     a1.friction = 0.2;
     a1.direction=irandom_range(210,330);
     a1.mode = 2;
     a1.alarm[0] = 1;
 }
 
-repeat(2)
+repeat(1)
 {
     b1=instance_create(604,208,objEyeTanTypeB);
     b1.image_xscale = 0.5;
     b1.image_yscale = 0.5;
-    b1.image_index=0;
-    b1.speed=10;
+    b1.image_index=1;
+    b1.speed=9;
     b1.friction = 0.2;
     b1.direction=irandom_range(190,350);
     b1.mode = 2;
     b1.alarm[0] = 1;
 }
-alarm[0]=40;
+alarm[0]=30;
 }
 
 if A=7
@@ -526,7 +528,8 @@ if(death)
  {
     if(global.sfxDelay[0] &lt;= 0)
     {
-     audio_play_sound(global.sndContraExplosion,0,0);
+     sfx = audio_play_sound(global.sndContraExplosion,0,0);
+     audio_sound_gain(sfx,0.7,0);
      global.sfxDelay[0] = 4;
     }
     explosion = instance_create(irandom_range(32,768),irandom_range(64,488),objExplosionB);

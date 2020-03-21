@@ -40,6 +40,7 @@ invincible = false;
 spikesUp = false;
 spikeI=0;
 spikesActivated = false;
+bulletSpawn = true; //bugfix
 </string>
           </argument>
         </arguments>
@@ -122,7 +123,7 @@ spikesActivated = false;
         }        
         i++;
     }
-    if(invincible &amp;&amp; !escape)
+    if(invincible &amp;&amp; !escape &amp;&amp; bulletSpawn)
     {
      if(instance_number(objChaost) &lt; 100)
      {

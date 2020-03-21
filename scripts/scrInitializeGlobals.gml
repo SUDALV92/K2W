@@ -114,6 +114,7 @@ global.saveGlobalSegmentID = 0;
 global.gameStarted = false;     //determines whether the game is in progress (enables saving, restarting, etc.)
 global.noPause = false;         //sets whether or not to allow pausing (useful for bosses to prevent desync)
 global.noShoot = false;
+global.noReset = false;
 global.autosave = false;        //keeps track of whether or not to autosave the next time the player is created
 global.noDeath = false;         //keeps track of whether to give the player god mode
 global.infJump = false;         //keeps track of whether to give the player infinite jump

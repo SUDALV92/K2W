@@ -78,8 +78,19 @@ if(mode == 2)
 {
     laser = instance_create(x,y,objKamiliaPhase4Laser);
     laser.sprite_index = sprNueLaser3;
+    laser.image_index = image_index;
     laser.image_yscale = 0.5;
     laser.image_xscale = 3;
+    laser.parent = id;
+    laser.mode = 5;
+    
+    laser = instance_create(x,y,objKamiliaPhase4Laser);
+    laser.sprite_index = sprNueLaser3;
+    laser.image_index = image_index;
+    laser.image_yscale = 0.5;
+    laser.image_xscale = 3;
+    laser.image_angle = 90;
+    laser.angleShift = 90;
     laser.parent = id;
     laser.mode = 5;
 }
@@ -108,6 +119,7 @@ if(mode == 3)
 {
     laser = instance_create(x,y,objKamiliaPhase4Laser);
     laser.sprite_index = sprNueLaser3;
+    laser.image_index = image_index;
     laser.image_angle = image_angle;
     laser.image_yscale = 0.5;
     laser.mode = 4;
@@ -275,7 +287,7 @@ if(mode == 7)
             <string>switch(mode)
 {
  case 2:
-  if(speed &gt; 3)
+  if(speed &gt; 4)
    image_angle+=b;
   break;
  case 4:

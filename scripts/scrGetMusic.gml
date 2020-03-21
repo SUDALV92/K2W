@@ -111,7 +111,6 @@ switch (room)                       //determines which song to play
     case rStage5PYF:
     case rStage5Locus:
     case rStage5Boshy:
-    case rExtraSymetry:
     case rExtraRainbowMiku:
         roomSong = global.sndStage5; break;
     case rBoss5Phase1:

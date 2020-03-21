@@ -652,6 +652,8 @@ switch(room)
             }
         }
         break;
+    case rBoss6Phase1:
+        global.stageUnlocked[70] = true; break;
     case rBoss6Death:         
         global.lastRunStart[12] = global.time; 
         global.currentSegmentID = irandom(1000000);

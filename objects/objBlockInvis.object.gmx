@@ -61,7 +61,6 @@
     case rStage5PYF:
     case rStage5Locus:
     case rStage5Boshy:
-    case rExtraSymetry:
     case rExtraRainbowMiku:
      sprite_index = sprBlockRukito;
      break;

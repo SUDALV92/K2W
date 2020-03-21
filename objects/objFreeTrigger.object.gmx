@@ -601,6 +601,10 @@ switch(room)
                   if(trap == 4) go = true;
                  }
                  break;
+            case 7:
+                objStmtrap5.vspeed=-8; 
+                objStmtrap5.alarm[0]=5; 
+                break;
         }
         break;
     case rStage3TimeMachine:
@@ -1013,6 +1017,17 @@ switch(room)
           d = 0;
          }
          break;
+        case 43:
+         with(objBlock)
+         {
+          if(tag == 1)
+          {
+           tile_delete(tile_layer_find(1000000,x,y));
+           instance_destroy();
+          }
+         }
+         with(objSymetryTrapUp) if(trap == 21) instance_destroy(); 
+         break;
      }
      break;    
     case rStage5RainbowMiku:
@@ -1252,9 +1267,6 @@ switch(room)
                break;          
          }
          break;
-    case rExtraSymetry:
-        global.tempTrigger[5] = true;
-        break;
     case rExtraRainbowMiku:
         global.tempTrigger[4] = true;
         break;

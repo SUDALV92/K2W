@@ -90,7 +90,7 @@ if instance_exists(objPlayer)
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="1">
+    <event eventtype="9" enumb="1">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -107,7 +107,7 @@ if instance_exists(objPlayer)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(scrButtonCheckReleased(global.shootButton))
+            <string>if(scrButtonCheckPressed(global.shootButton))
 {
     visible = !visible;
 }

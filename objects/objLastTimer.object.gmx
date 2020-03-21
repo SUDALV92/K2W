@@ -53,6 +53,7 @@ with(objChaosTan1){instance_destroy();}}
             <string>draw_set_font(global.lastfonts);
 draw_set_color(c_white);
 draw_set_halign(fa_center);
+draw_set_valign(fa_top);
 draw_text_transformed(self.x+26, self.y,string(Timer),image_xscale,image_yscale,image_angle);
 </string>
           </argument>

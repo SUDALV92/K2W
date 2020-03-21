@@ -200,6 +200,20 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock1BHM" x="432" y="480" name="inst_FFDB80BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="64" y="448" name="inst_3DFDFA42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="64" y="567" name="inst_E5B8DF6D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="32" y="576" name="inst_9B47CF93" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="96" y="544" name="inst_FA7BCBBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="128" y="576" name="inst_4FAF2DE8" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="224" y="544" name="inst_07A77095" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="256" y="576" name="inst_A89A8BB7" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="704" y="576" name="inst_3BECFC99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="416" y="480" name="inst_2A464B10" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="288" y="384" name="inst_6352A20E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="320" y="416" name="inst_6210515E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="224" y="352" name="inst_ADB95471" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="96" y="352" name="inst_9A68EF66" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="128" y="160" name="inst_2A06B95D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="224" y="64" name="inst_BF870CBF" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock1CHM" x="544" y="192" name="inst_9C77A981" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBlock1AHM" x="0" y="544" w="32" h="32" xo="0" yo="0" id="10036342" name="inst_24171C1D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

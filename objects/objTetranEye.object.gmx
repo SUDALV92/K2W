@@ -127,6 +127,7 @@ else
       rngAngle += 360/3;
      }
     }
+  global.noPause = true; 
   instance_destroy();
  }
  

@@ -49,6 +49,7 @@
             <kind>1</kind>
             <string>view_angle[0]=8;
 score = 10; //DeadSplit support
+
 </string>
           </argument>
         </arguments>

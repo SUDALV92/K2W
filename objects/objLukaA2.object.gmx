@@ -3,7 +3,7 @@
   <spriteName>sprLukaA2</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>1000001</depth>
   <persistent>-1</persistent>
   <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>

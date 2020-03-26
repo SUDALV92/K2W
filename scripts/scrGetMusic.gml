@@ -2,6 +2,7 @@
 
 var roomSong;
 var loop = true;
+var volume = 1;
 
 switch (room)                       //determines which song to play
 {
@@ -17,7 +18,7 @@ switch (room)                       //determines which song to play
         break;
     case rAchievements:
     case rOptions:
-        roomSong = global.sndTitle;
+        roomSong = global.sndTitle; volume = 0.7;
         break;
     case rStage1Chocko:
     case rStage1GGM:
@@ -188,4 +189,4 @@ switch (room)                       //determines which song to play
 }
 
 if (roomSong != -2)
-    scrPlayMusic(roomSong,loop); //play the song for the current room
+    scrPlayMusic(roomSong,loop,volume); //play the song for the current room

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>random_set_seed(1); //а вы думали я с рандомом тестировал?
+            <string>//random_set_seed(1); //а вы думали я с рандомом тестировал?
 for(var i = 0; i &lt; 12; i++)
 {
  cells[i] = -1;

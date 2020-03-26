@@ -53,6 +53,7 @@ if objPlayer.maxSpeed != 6
 {
     if B=0
     {
+        audio_stop_sound(global.sndTrap);
         audio_play_sound(global.sndTrap,0,0);
     } 
     objPlayer.maxSpeed=6; 

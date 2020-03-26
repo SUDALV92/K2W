@@ -84,6 +84,14 @@ gravity_direction = direction;
           <argument>
             <kind>1</kind>
             <string>image_angle=direction;
+if(room == rBoss7Phase1 &amp;&amp; speed &gt; 0)
+{
+ bullet = instance_create(x,y,objBulletTailFX);
+ bullet.sprite_index = sprite_index;
+ bullet.image_xscale = image_xscale;
+ bullet.image_yscale = image_yscale;
+ bullet.image_alpha = 0.5;
+}
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>factor = 0.1;
+            <string>alphaFactor = 0.05;
+scaleFactor = 0.05;
 </string>
           </argument>
         </arguments>
@@ -48,9 +49,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha -= factor;
-image_xscale -= factor;
-image_yscale -= factor;
+            <string>image_alpha -= alphaFactor;
+image_xscale -= scaleFactor;
+image_yscale -= scaleFactor;
 if(image_alpha &lt;= 0)
  instance_destroy();
 </string>

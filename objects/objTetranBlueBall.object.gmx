@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_xscale = 4;
 image_yscale = 4;
+t = 0;
 </string>
           </argument>
         </arguments>
@@ -55,6 +56,38 @@ if(sprite_index == objTetranBlueBall)
  if(place_meeting(x,y,objB6Gradius))
   scrObjectDestroy(objB6Gradius);
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///tail
+if(t mod 2 == 0)
+{
+    bullet = instance_create(x,y,objBulletTailFX);
+    bullet.sprite_index = sprite_index;
+    bullet.image_xscale = image_xscale;
+    bullet.image_yscale = image_yscale;
+    bullet.image_alpha = 0.8;
+    bullet.alphaFactor = 0.03;
+    bullet.scaleFactor = 0.15;
+}
+t++;
 </string>
           </argument>
         </arguments>

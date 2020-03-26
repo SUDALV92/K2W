@@ -393,7 +393,7 @@ with(other){instance_destroy();}
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_sprite_ext(sprButton,0,780,y-32,1,2,0,c_white,0.2);
+draw_sprite_ext(sprButton,0,778,y-32,1,2,0,c_white,0.5);
 </string>
           </argument>
         </arguments>

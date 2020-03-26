@@ -166,11 +166,10 @@ draw_set_font(fJoystix8);
 draw_set_valign(fa_top);
 draw_set_halign(fa_center);
 draw_set_color(c_green);
-draw_text(x+118,y+8,"WARP ENGINE");
+draw_text(x+100,y+8,"WARP ENGINE");
+draw_text(x+100,y+24,"GRID WORLD");
 
 draw_set_halign(fa_left);
-draw_text(x+15,y+24,"GRID WORLD");
-
 var binLength = ds_list_size(binData);
 
 

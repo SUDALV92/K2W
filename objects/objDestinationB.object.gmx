@@ -524,11 +524,13 @@ if(instance_exists(objPlayer))
  {
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
+  gravity = 0;
  }
  with(objDBCherry2) 
  {
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
+  gravity = 0;
  }
 }
 audio_play_sound(global.sndTrap,0,0);

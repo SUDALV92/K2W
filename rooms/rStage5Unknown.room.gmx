@@ -441,9 +441,6 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgRukitoTileset" x="704" y="32" w="32" h="32" xo="0" yo="0" id="10047579" name="inst_5DBEDA7D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="736" y="32" w="32" h="32" xo="0" yo="0" id="10047580" name="inst_B0F13336" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="160" y="370" w="32" h="32" xo="0" yo="0" id="10047587" name="inst_E59F4AC2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgRukitoSlopeA" x="448" y="496" w="32" h="32" xo="0" yo="32" id="10047590" name="inst_CBEECDEC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgRukitoSlopeA" x="416" y="432" w="32" h="32" xo="0" yo="32" id="10047591" name="inst_F4E781BF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgRukitoSlopeA" x="480" y="544" w="32" h="32" xo="0" yo="32" id="10047592" name="inst_608A537B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeA" x="448" y="624" w="32" h="32" xo="0" yo="32" id="10047593" name="inst_8E05B7FF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeA" x="416" y="544" w="32" h="32" xo="0" yo="0" id="10047594" name="inst_07D69D2D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeA" x="544" y="576" w="32" h="32" xo="0" yo="0" id="10047595" name="inst_FE395A0F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -471,11 +468,11 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgRukitoSlopeD" x="224" y="128" w="32" h="32" xo="0" yo="0" id="10047617" name="inst_F0655AA7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="256" y="160" w="32" h="32" xo="0" yo="0" id="10047618" name="inst_15793417" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="352" y="416" w="32" h="32" xo="0" yo="0" id="10047619" name="inst_5D85716A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgRukitoSlopeD" x="448" y="416" w="32" h="32" xo="0" yo="0" id="10047620" name="inst_FABCFE25" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="480" y="448" w="32" h="32" xo="0" yo="0" id="10047621" name="inst_3870C096" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="512" y="480" w="32" h="32" xo="0" yo="0" id="10047622" name="inst_0F3B5568" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="544" y="512" w="32" h="32" xo="0" yo="0" id="10047623" name="inst_203114A3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoSlopeD" x="672" y="288" w="32" h="32" xo="0" yo="0" id="10047624" name="inst_A5D647D4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoSlopeD" x="448" y="416" w="32" h="32" xo="0" yo="0" id="10064394" name="inst_80CE1686" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

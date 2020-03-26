@@ -55,8 +55,8 @@
     <instance objName="objIntroComputer" x="654" y="829" name="inst_BAA2ED4F" locked="0" code="" scaleX="0.806722700595856" scaleY="0.833333313465118" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerDoll" x="686" y="973" name="inst_CFB11BBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="636" y="982" name="inst_A008478A" locked="0" code="" scaleX="9.75" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroTrees" x="448" y="832" name="inst_C9ACB6E2" locked="0" code="" scaleX="2" scaleY="1.77777779102325" colour="4294967295" rotation="0"/>
-    <instance objName="objIntroTrees" x="0" y="832" name="inst_D273FFF9" locked="0" code="" scaleX="2" scaleY="1.77777779102325" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroTrees" x="352" y="832" name="inst_C9ACB6E2" locked="0" code="" scaleX="2" scaleY="1.77777779102325" colour="4294967295" rotation="0"/>
+    <instance objName="objIntroTrees" x="-32" y="832" name="inst_D273FFF9" locked="0" code="" scaleX="2" scaleY="1.77777779102325" colour="4294967295" rotation="0"/>
     <instance objName="objIntroTrees" x="1376" y="832" name="inst_1A2B4B02" locked="0" code="" scaleX="2" scaleY="1.77777779102325" colour="4294967295" rotation="0"/>
     <instance objName="objIntroTitle" x="1024" y="544" name="inst_1964CBE8" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objIntro" x="736" y="864" name="inst_107670C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

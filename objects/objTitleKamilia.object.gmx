@@ -93,7 +93,7 @@ increasing = false;
           <argument>
             <kind>1</kind>
             <string>//objTitleMessage.image_alpha=1;
-scrPlayMusic(global.sndTitle,1);
+scrPlayMusic(global.sndTitle,1,0.7);
 </string>
           </argument>
         </arguments>

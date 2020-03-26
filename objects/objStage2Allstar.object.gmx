@@ -876,7 +876,8 @@ repeat(1)
           <argument>
             <kind>1</kind>
             <string>a+=25;
-audio_play_sound(global.sndGuyGun,0,0);
+sfx = audio_play_sound(global.sndGuyGun,0,0);
+audio_sound_gain(sfx,0.6,0);
 </string>
           </argument>
         </arguments>

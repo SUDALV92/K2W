@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="549" name="datafiles">
-    <datafiles number="549" name="Music">
+  <datafiles number="550" name="datafiles">
+    <datafiles number="550" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -38,23 +38,6 @@
           </Config>
         </ConfigOptions>
         <filename>GameOver.ogg</filename>
-      </datafile>
-      <datafile>
-        <name>Clear.ogg</name>
-        <exists>-1</exists>
-        <size>41387</size>
-        <exportAction>2</exportAction>
-        <exportDir></exportDir>
-        <overwrite>0</overwrite>
-        <freeData>-1</freeData>
-        <removeEnd>0</removeEnd>
-        <store>0</store>
-        <ConfigOptions>
-          <Config name="Default">
-            <CopyToMask>9223372036854775807</CopyToMask>
-          </Config>
-        </ConfigOptions>
-        <filename>Clear.ogg</filename>
       </datafile>
       <datafile>
         <name>Stage1.ogg</name>
@@ -906,9 +889,26 @@
         </ConfigOptions>
         <filename>DayAfter.ogg</filename>
       </datafile>
+      <datafile>
+        <name>StageClear.ogg</name>
+        <exists>-1</exists>
+        <size>421007</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>StageClear.ogg</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="549" name="SFX">
-      <datafiles number="549" name="Common">
+    <datafiles number="550" name="SFX">
+      <datafiles number="550" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -976,23 +976,6 @@
             </Config>
           </ConfigOptions>
           <filename>sndBullet.ogg</filename>
-        </datafile>
-        <datafile>
-          <name>sndCOCO.ogg</name>
-          <exists>-1</exists>
-          <size>115960</size>
-          <exportAction>2</exportAction>
-          <exportDir></exportDir>
-          <overwrite>0</overwrite>
-          <freeData>-1</freeData>
-          <removeEnd>0</removeEnd>
-          <store>0</store>
-          <ConfigOptions>
-            <Config name="Default">
-              <CopyToMask>9223372036854775807</CopyToMask>
-            </Config>
-          </ConfigOptions>
-          <filename>sndCOCO.ogg</filename>
         </datafile>
         <datafile>
           <name>sndExplosion.ogg</name>
@@ -1403,7 +1386,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="549" name="Stage">
+      <datafiles number="550" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1881,8 +1864,8 @@
           <filename>sndWarpFX.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="549" name="Boss">
-        <datafiles number="549" name="Solgryn">
+      <datafiles number="550" name="Boss">
+        <datafiles number="550" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3533,7 +3516,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="549" name="ExtraBoss2">
+        <datafiles number="550" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -5314,6 +5297,12 @@
         <script>scripts\scrTrueEndingFadeIn.gml</script>
       </scripts>
     </scripts>
+    <scripts name="Intro">
+      <script>scripts\scrIntroGetRNGValues.gml</script>
+    </scripts>
+    <scripts name="BossRush">
+      <script>scripts\scrGravityManShoot.gml</script>
+    </scripts>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\GrayscaleShader.shader</shader>
@@ -5471,6 +5460,7 @@
       <object>objects\objSaveEffect</object>
       <object>objects\objShake</object>
       <object>objects\objShakelow</object>
+      <object>objects\objStageClearLetter</object>
       <object>objects\objStageMessage</object>
       <object>objects\objBossTitle</object>
       <object>objects\objPortal</object>
@@ -6505,7 +6495,7 @@
       <object>objects\objExKTGCamera</object>
     </objects>
     <objects name="ExtraStage">
-      <objects name="Dieary">
+      <objects name="ShinySpark">
         <object>objects\objExtraStageBallSpawner</object>
         <object>objects\objExtraStageRedEnergy</object>
         <object>objects\objExtraStageRedEnergyGlitched</object>

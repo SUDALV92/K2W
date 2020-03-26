@@ -47,7 +47,8 @@ switch(room)
 {
  case rStage3TimeMachine:
  case rStage3TimeMachine2:
-  part_type_alpha1(ptype,0.4);
+  part_type_alpha1(ptype,0.6);
+  break;
  default:
   part_type_alpha1(ptype,0.2);
   break;

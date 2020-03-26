@@ -54,7 +54,9 @@ audio_play_sound(global.sndTrap,0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=0{
+            <string>if(!instance_exists(objPlayer)) exit; 
+
+if A=0{
 instance_create(x,y,objDiversetrap2);
 image_angle+=30;
 audio_play_sound(global.sndVVVVVV2,0,0);

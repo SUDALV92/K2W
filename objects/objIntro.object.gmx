@@ -41,9 +41,8 @@ dollX = 0;
 dollY = 0;
 blockCrashed = false;
 
-//i = 1680;
-//t = 1680;
-
+i = 0;
+t = 0;
 </string>
           </argument>
         </arguments>
@@ -130,8 +129,8 @@ if(warp)
   background_colour = c_black;
   view_wview[0]+=200;
   view_hview[0] = view_wview[0]*19/25;
-  view_xview[0]-=100;
-  view_yview[0]-=100;
+  view_xview[0]-=110;
+  view_yview[0]-=90;
   with(objIntroWhiteStick)
   {
    image_alpha -= 0.02;
@@ -330,7 +329,8 @@ if(warp)
   {
    miniCherry = instance_create(cherry.x,cherry.y,objIntroOrangeCherry);
    miniCherry.direction = temp;
-   miniCherry.speed = 2;
+   miniCherry.speed = 6;
+   miniCherry.curving = 4;
    temp+=360/12;
   }
   scrObjectDestroy(cherry);
@@ -348,6 +348,7 @@ if(warp)
    //curving = random_range(-2,2);
    sprite_index = sprCyberBulletA;
    image_angle = direction;
+   event_user(0);
   }
  }
  if(i == 1495)
@@ -357,9 +358,9 @@ if(warp)
   {
    direction = point_direction(x,y,objPlayerDoll.x,objPlayerDoll.y);
    image_angle = direction;
-   speed = -7;
+   speed = -10;
    gravity_direction = direction;
-   gravity = 0.4;
+   gravity = 0.8;
    curving = 0;
   }  
  }
@@ -369,7 +370,7 @@ if(warp)
   objPlayerDoll.hspeed = -3;
   with(objPlayerDoll) event_user(0);
  }
- if(i == 1550)
+ if(i == 1540)
  {
     objPlayerDoll.hspeed = 3;
     with(objPlayerDoll) event_user(0);
@@ -387,7 +388,11 @@ if(warp)
   view_wview[0] -= 6;
   view_hview[0] = view_wview[0]*19/25;
  }
- if(i == 1650)
+ if(i == 1640)
+ {
+  with(objPlayerDoll) event_user(0);
+ }
+ if(i == 1670)
  {
   with(objPlayerDoll) event_user(0);
  }
@@ -458,19 +463,25 @@ if(warp)
   objPlayerDoll.hspeed = 3;
   view_yview[0] = 304;
   scrObjectDestroy(objIntroFakeBlock);
-  random_set_seed(1);
+  //random_set_seed(1);
+  rngList = scrIntroGetRNGValues();
+  rngListIndex = 0;
  }
  if(i &gt; 1970 &amp;&amp; i &lt; 2080 &amp;&amp; i % 4 == 0)
  {
-  bullet = instance_create(irandom_range(-100,100),280,objIntroBullet);
+  bullet = instance_create(rngList[| rngListIndex],280,objIntroBullet);
+  rngListIndex++;
   bullet.speed = 6;
   bullet.direction = 300;
-  bullet.curving = random_range(-1,1); 
+  bullet.curving = rngList[| rngListIndex]; 
+  rngListIndex++;
   
-  bullet = instance_create(irandom_range(300,500),280,objIntroBullet);
+  bullet = instance_create(rngList[| rngListIndex],280,objIntroBullet);
+  rngListIndex++;
   bullet.speed = 6;
   bullet.direction = 240;
-  bullet.curving = random_range(-1,1); 
+  bullet.curving = rngList[| rngListIndex]; 
+  rngListIndex++;
  }
  if(i == 2018)
  {
@@ -673,25 +684,25 @@ if(warp)
  if(i == 3100)
  {
   text = instance_create(370,200,objIntroText);
-  text.text = "KAYIN (IWBTG)";
+  text.text = "GOGIBESTYEAH (FEEDBACK)";
   text.font = fJoystix20;
  }
  if(i == 3220)
  {
   text = instance_create(370,250,objIntroText);
-  text.text = "KTK2 TEAM (ORIGINAL K2)";
+  text.text = "KARINAKO (SPRITE HELPING)";
   text.font = fJoystix20;
  }
  if(i == 3330)
  {
   text = instance_create(370,300,objIntroText);
-  text.text = "K2R TEAM (REMAKE DEV HELP)";
+  text.text = "KTK2 TEAM (ORIGINAL K2)";
   text.font = fJoystix20;
  }
  if(i == 3440)
  {
   text = instance_create(370,350,objIntroText);
-  text.text = "YOYOYODUDE (PROJECT TEMPLATE)";
+  text.text = "K2R TEAM (REMAKE DEV HELP)";
   text.font = fJoystix20;
  }
  if(i == 3600)
@@ -1019,10 +1030,14 @@ background_vspeed[0] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_set_halign(fa_right);
-//scrDrawTextOutline(view_wview[0],view_yview[0]+50,string(i),c_white,c_black);
-/*if(scrButtonCheckPressed(global.jumpButton))
- scrDrawTextOutline(view_wview[0],view_yview[0]+70,"jump",c_white,c_black);*/
+            <string>/*draw_set_halign(fa_right);
+scrDrawTextOutline(view_wview[0],view_yview[0]+50,string(i),c_white,c_black);
+if(scrButtonCheck(global.jumpButton))
+ scrDrawTextOutline(view_wview[0],view_yview[0]+70,"jump",c_white,c_black);
+if(scrButtonCheck(global.leftButton))
+ scrDrawTextOutline(view_wview[0],view_yview[0]+90,"left",c_white,c_black);
+if(scrButtonCheck(global.rightButton))
+ scrDrawTextOutline(view_wview[0],view_yview[0]+110,"right",c_white,c_black);*/
 </string>
           </argument>
         </arguments>

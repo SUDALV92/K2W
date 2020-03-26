@@ -48,12 +48,12 @@ for (var i = global.secretItemTotal-1; i >= 0; i--)
 //useless for K2W
 global.gameClear = 0;
 global.extra = 0;
-global.extra = 0;
 global.saveGameClear = 0;
 global.saveExtraClear = 0;
 
 //actuals
-global.portalAvailable = 1;
+global.portalAvailable = 0;
+global.savePortalAvailable = 0;
 global.finalBossFaded = 0;
 global.selectedStage = 0;
 global.autoFire = 1;

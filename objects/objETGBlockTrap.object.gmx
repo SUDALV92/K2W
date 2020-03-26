@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>1000001</depth>
   <persistent>0</persistent>
-  <parentName>objBlock</parentName>
+  <parentName>objBlock1AHM</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>go = false;
+h = -4;
 image_speed = 1/2;
 </string>
           </argument>

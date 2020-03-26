@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprStageMessage</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-99</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,6 +26,88 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+t = 0;
+wordA = "STAGE";
+wordB = "RAELC";
+scale = -1;
+for(var i = 0; i &lt;= 4; i++)
+{
+ letterB[i] = instance_create(850+i*60,304,objStageClearLetter);
+ letterB[i].letter = string_char_at(wordB,5-i);
+ 
+ letterA[i] = instance_create(-50-i*60,304,objStageClearLetter);
+ letterA[i].letter = string_char_at(wordA,5-i);
+}
+N = 1;
+scrPlayMusic(global.sndClear,0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(t == 100)
+ scale = 1;
+
+if(t == 0)
+{
+ number = instance_create(400,-50,objStageClearLetter);
+ number.letter = string(N);
+ number.vspeed = point_distance(number.x,number.y,400,304)/120; 
+ 
+ for(var i = 0; i &lt;= 4; i++)
+ {
+  letterA[i].hspeed = point_distance(letterA[i].x,304,460+i*60,304)/120;
+  letterB[i].hspeed = -point_distance(letterB[i].x,304,340-i*60,304)/120;
+ }
+}
+if(t == 120)
+{
+ with(objStageClearLetter)
+ {
+  speed = 0;
+ }
+}
+if(t == 200)
+{
+ for(var i = 0; i &lt;= 4; i++)
+ {  
+  letterA[i].hspeed = -point_distance(letterA[i].x,304,340-i*60,304)/50;
+  letterB[i].hspeed = point_distance(letterB[i].x,304,460+i*60,304)/50;
+ }
+}
+if(t == 225)
+{
+ with(objStageClearLetter)
+ {
+  image_xscale = 1;
+ }
+}
+if(t == 250)
+{
+ with(objStageClearLetter)
+ {
+  speed = 0;
+ }
+}
+
+t++;
 </string>
           </argument>
         </arguments>

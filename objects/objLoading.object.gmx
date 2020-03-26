@@ -26,9 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_colour(c_white);
-draw_set_font(fBold12);
-draw_set_halign(fa_left);
-draw_text(x-75,y+20,"LOADING...");
+draw_set_font(fJoystix10);
+draw_set_halign(fa_right);
+if(global.controllerMode)
+ keyText = scrGetControllerBind(global.jumpButton[0]);
+else
+ keyText = scrGetKeybind(global.jumpButton[0]);
+ 
+draw_text(x,y+20,"Press " + keyText + " key");
 </string>
           </argument>
         </arguments>

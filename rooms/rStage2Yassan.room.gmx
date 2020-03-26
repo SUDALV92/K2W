@@ -355,9 +355,9 @@
     <instance objName="objSaveBlocker" x="144" y="96" name="inst_CEBAB540" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="208" y="96" name="inst_FE4713B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="704" y="96" name="inst_646D94E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="160" y="479" name="inst_49A3DED8" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="192" y="475" name="inst_62C91C89" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="224" y="477" name="inst_90F13EBF" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="160" y="479" name="inst_49A3DED8" locked="0" code="depth = 1000001;&#xA;sprite_index = sprWhiteSpikeUp;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="192" y="475" name="inst_62C91C89" locked="0" code="depth = 1000001;sprite_index = sprWhiteSpikeUp;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="224" y="477" name="inst_90F13EBF" locked="0" code="depth = 1000001;sprite_index = sprWhiteSpikeUp;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="287" y="544" name="inst_98A656F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="80" y="224" name="inst_079DCBE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="96" y="224" name="inst_4E8DA457" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

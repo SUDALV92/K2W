@@ -205,6 +205,7 @@ switch(image_index)
  case 2: textColor = c_green; break;
 }
 draw_set_halign(fa_center);
+draw_set_valign(fa_top);
 scrDrawTextOutline(x,y+25,string(seconds) + "." + string(decimals),textColor,c_black);
 </string>
           </argument>

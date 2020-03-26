@@ -127,8 +127,8 @@ room_goto(rStage6GR);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(400,440,objClearMessage);
-alarm[10]=100;
+            <string>//instance_create(400,440,objClearMessage);
+alarm[10]=250;
 </string>
           </argument>
         </arguments>
@@ -151,9 +151,7 @@ alarm[10]=100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>abc=instance_create(400,294,objNumberMessage);
-abc.a=4;
-alarm[9]=60;
+            <string>alarm[9]=60;
 </string>
           </argument>
         </arguments>
@@ -176,7 +174,7 @@ alarm[9]=60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(400,160,objStageMessage);
+            <string>
 alarm[8]=60;
 </string>
           </argument>
@@ -200,8 +198,9 @@ alarm[8]=60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndCOCO,0,0);
-audio_play_sound(global.sndClear,0,0);
+            <string>//audio_play_sound(global.sndClear,0,0);
+message = instance_create(400,160,objStageMessage);
+message.N = 5;
 alarm[7]=60;
 </string>
           </argument>
@@ -228,6 +227,7 @@ alarm[7]=60;
             <string>shake=0;
 A=5;
 alarm[6]=100;
+
 </string>
           </argument>
         </arguments>

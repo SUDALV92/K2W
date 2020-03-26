@@ -810,7 +810,7 @@ A1.a=5;
     </event>
   </entry>
   <entry>
-    <step>3000</step>
+    <step>2900</step>
     <event>
       <action>
         <libid>1</libid>
@@ -828,34 +828,8 @@ A1.a=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndCOCO,0,0);
-scrPlayMusic(global.sndClear,0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>3060</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(400,160,objStageMessage);
+            <string>message = instance_create(400,160,objStageMessage);
+message.N = 1;
 </string>
           </argument>
         </arguments>
@@ -881,8 +855,8 @@ scrPlayMusic(global.sndClear,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>abc=instance_create(400,294,objNumberMessage);
-abc.a=0;
+            <string>//abc=instance_create(400,294,objNumberMessage);
+//abc.a=0;
 </string>
           </argument>
         </arguments>
@@ -908,7 +882,7 @@ abc.a=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(400,440,objClearMessage);
+            <string>//instance_create(400,440,objClearMessage);
 </string>
           </argument>
         </arguments>

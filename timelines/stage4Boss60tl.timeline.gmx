@@ -2476,7 +2476,7 @@ for(var i = 15; i &lt; 20; i++)
     </event>
   </entry>
   <entry>
-    <step>3230</step>
+    <step>3130</step>
     <event>
       <action>
         <libid>1</libid>
@@ -2494,8 +2494,9 @@ for(var i = 15; i &lt; 20; i++)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndCOCO,0,0);
-audio_play_sound(global.sndClear,0,0);
+            <string>//audio_play_sound(global.sndClear,0,0);
+message = instance_create(400,160,objStageMessage);
+message.N = 4;
 </string>
           </argument>
         </arguments>
@@ -2521,62 +2522,7 @@ audio_play_sound(global.sndClear,0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(400,160,objStageMessage);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>3350</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>abc=instance_create(400,294,objNumberMessage);
-abc.a=3;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-  </entry>
-  <entry>
-    <step>3410</step>
-    <event>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_create(400,440,objClearMessage);
-
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -2609,7 +2555,7 @@ abc.a=3;
     </event>
   </entry>
   <entry>
-    <step>3500</step>
+    <step>3600</step>
     <event>
       <action>
         <libid>1</libid>

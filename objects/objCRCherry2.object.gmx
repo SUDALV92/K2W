@@ -36,6 +36,7 @@ yy = y;
 factor = 1;
 alarm[0] = 50;
 outsideDelete = false;
+tail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>

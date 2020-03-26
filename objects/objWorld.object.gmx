@@ -669,6 +669,8 @@ if(f5pressed)
             case rEnding4:
             case rEnding5:
             case rTrueEnding:
+            case rHomeBad:
+            case rHomeGood:
              exit; break;
         }
         global.currentSegmentIndex = -1;
@@ -1211,6 +1213,7 @@ switch(room)
           <argument>
             <kind>1</kind>
             <string>///title card
+scrObjectDestroy(objGamelist);
 instance_create(view_xview[0]+view_wview[0],0,objGamelist);
 </string>
           </argument>
@@ -1399,6 +1402,8 @@ if(global.timerEnabled &amp;&amp; global.currentSegmentIndex != -1)
             <string>///debug
 if(global.debug)
 {
+ draw_set_halign(fa_left);
+ draw_set_valign(fa_top);
  scrDrawTextOutline(10,10,"Real FPS: " + string(fps_real),c_white,c_black);
 }
 </string>

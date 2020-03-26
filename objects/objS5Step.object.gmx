@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(5,5,string(step));
+            <string>//draw_text(50,50,string(step));
 </string>
           </argument>
         </arguments>

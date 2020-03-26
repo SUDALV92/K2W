@@ -320,7 +320,7 @@ if(t &gt;= 3755 &amp;&amp; t &lt; 4020 &amp;&amp; t % 5 == 0)
  apple.vspeed = -7;
  apple.mode = 4;
 }
-if(t &gt;= 4060 &amp;&amp; t &lt; 4350 &amp;&amp; choose(0,1,2,3) != 0) //серые яблоки из мику
+if(t &gt;= 4060 &amp;&amp; t &lt; 4350 &amp;&amp; choose(0,1,2,3) != 0) //серые яблоки из мику (75%)
 {
  angle = 0;
  repeat(5)

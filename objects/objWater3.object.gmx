@@ -3,7 +3,7 @@
   <spriteName>sprWater</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-50</depth>
+  <depth>-1000</depth>
   <persistent>0</persistent>
   <parentName>objWater2</parentName>
   <maskName>&lt;undefined&gt;</maskName>

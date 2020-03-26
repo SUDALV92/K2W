@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -56,7 +56,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objFadeOut" x="0" y="0" name="inst_4EE2C13A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="400" y="512" name="inst_A608C3DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="400" y="368" name="inst_63AFA76B" locked="0" code="roomTo = rBoss6Phase1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKK" x="768" y="272" name="inst_D6761804" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKK" x="640" y="192" name="inst_D6761804" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="112" y="464" name="inst_950DA909" locked="0" code="roomTo = rBoss6Destination;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="240" y="464" name="inst_9E895BFE" locked="0" code="roomTo = rBoss6Crimson;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj4chPortal" x="560" y="464" name="inst_DDA803EB" locked="0" code="roomTo = rBoss6Nue;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

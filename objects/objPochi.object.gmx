@@ -739,6 +739,8 @@ audio_play_sound(global.sndPochi,0,0);
           <argument>
             <kind>1</kind>
             <string>///Вертушка
+if(!instance_exists(objPlayer)) exit;
+
 if(A == 0)
 {
     repeat(15)

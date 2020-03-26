@@ -33,6 +33,7 @@ DD = 0;
 curving = 0;
 len = 0;
 angle = 0;
+tail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>

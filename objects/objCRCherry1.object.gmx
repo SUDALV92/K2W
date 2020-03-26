@@ -29,6 +29,7 @@
 i=0;
 targetX = 400;
 targetY = 304;
+tail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>
@@ -75,7 +76,7 @@ if(instance_exists(objPlayer))
     i++;
 }
 
-instance_create(x,y,objCRCherryFX);
+//instance_create(x,y,objCRCherryFX);
 </string>
           </argument>
         </arguments>

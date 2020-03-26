@@ -438,7 +438,8 @@ else if(!global.godMode)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndGradiusDeath,0,0);
+            <string>audio_stop_sound(global.sndGradiusDeath);
+audio_play_sound(global.sndGradiusDeath,0,0);
 landing = true;
 vspeed = -2;
 gravity = 0.2;

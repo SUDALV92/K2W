@@ -36,6 +36,7 @@ alarm[0] = 200;
 
 blend = true;
 alarm[1] = 5;
+alarm[4] = 1; //set tail
 tailIndex = 0;
 dir = 0;
 len = 0;
@@ -48,6 +49,30 @@ xx = x;
 yy = y;
 
 finalSpawn = true;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>
@@ -512,15 +537,7 @@ switch(mode)
           <argument>
             <kind>1</kind>
             <string>///tail
-if(speed &gt; 0 &amp;&amp; speed &lt; 3)
-{
- bullet = instance_create(x,y,objBulletTailFX);
- bullet.sprite_index = sprite_index;
- bullet.image_xscale = image_xscale * 0.8;
- bullet.image_yscale = image_yscale * 0.8;
- bullet.image_alpha = 0.5;
-}
-if(speed &gt;= 3 &amp;&amp; speed &lt; 6)
+/*if(speed &gt; 0 &amp;&amp; speed &lt; 6)
 {
  bullet = instance_create(x,y,objBulletTailFX);
  bullet.sprite_index = sprite_index;
@@ -537,7 +554,7 @@ if(speed &gt;= 6 || mode == 7)
  bullet.image_alpha = 0.5;
 }
 
-tailIndex++;
+tailIndex++;*/
 </string>
           </argument>
         </arguments>

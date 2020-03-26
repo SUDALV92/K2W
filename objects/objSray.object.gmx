@@ -47,7 +47,7 @@ for(var temp = 0; temp &lt; 25; temp++)
 dead = false;
 deadI = -1;
 finalMovement = false;
-
+tile_layer_delete(1000000);
 </string>
           </argument>
         </arguments>
@@ -1107,6 +1107,11 @@ if(party == 0)
  for(var temp = 0; temp &lt; 25; temp++)
  {
   draw_sprite(sprBlockBossRush,0,temp*32,576);
+ }
+ for(var temp = 0; temp &lt; 19; temp++)
+ {
+  draw_sprite(sprBlockBossRush,0,768,temp*32);
+  draw_sprite(sprBlockBossRush,0,0,temp*32);
  }
 }
 else if(party == 1)

@@ -55,7 +55,7 @@ if (loadFile)
         //destroy the map
         ds_map_destroy(timeMap);
     }
-    /*if (!saveValid) //check if the save is invalid
+    if (!saveValid) //check if the save is invalid
     {
         //save is invalid, restart the game
         
@@ -64,7 +64,7 @@ if (loadFile)
         scrRestartGame();
         
         exit;
-    }*/
+    }
 
     //load the save map
     var saveMap;
@@ -135,6 +135,7 @@ if (loadFile)
         global.saveGameClear = ds_map_find_value(saveMap,"saveGameClear");
         global.saveExtra = ds_map_find_value(saveMap,"saveExtra");
         global.saveExtraClear = ds_map_find_value(saveMap,"saveExtraClear");
+        global.savePortalAvailable = ds_map_find_value(saveMap,"portalAvailable");
         
         //load md5 string from the save map
         var mapMd5 = ds_map_find_value(saveMap,"mapMd5");
@@ -159,7 +160,7 @@ if (loadFile)
         saveValid = false;
     }
     
-    /*if (!saveValid) //check if the save is invalid
+    if (!saveValid) //check if the save is invalid
     {
         //save is invalid, restart the game
         
@@ -168,7 +169,7 @@ if (loadFile)
         scrRestartGame();
         
         exit;
-    }*/
+    }
 }
 
 //set game variables and set the player's position
@@ -210,6 +211,7 @@ global.autoFire = global.saveAutoFire;
 global.gameClear = global.saveGameClear;
 global.extra = global.saveExtra;
 global.extraClear = global.saveExtraClear;
+global.portalAvailable = global.savePortalAvailable;
 
 if(global.globalSegmentID != global.saveGlobalSegmentID)
 {

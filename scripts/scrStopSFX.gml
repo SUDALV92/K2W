@@ -2,7 +2,6 @@ audio_stop_sound(global.sndBreak);
 audio_stop_sound(global.sndBreakLow);
 audio_stop_sound(global.sndBreakVeryLow);
 audio_stop_sound(global.sndBullet);
-audio_stop_sound(global.sndCOCO);
 audio_stop_sound(global.sndExplosion);
 audio_stop_sound(global.sndExplosion2);
 audio_stop_sound(global.sndExplosion3);

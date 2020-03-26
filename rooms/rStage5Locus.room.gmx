@@ -3,8 +3,8 @@
   <caption></caption>
   <width>800</width>
   <height>608</height>
-  <vsnap>16</vsnap>
-  <hsnap>16</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>50</speed>
   <persistent>0</persistent>
@@ -119,7 +119,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="32" y="224" name="inst_08793C99" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="96" y="320" name="inst_A0A6DCCD" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="352" y="224" name="inst_2D77411E" locked="0" code="" scaleX="3" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="320" y="128" name="inst_3EB64B49" locked="0" code="" scaleX="1.03225803375244" scaleY="6" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="320" y="128" name="inst_3EB64B49" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="128" name="inst_9F966D02" locked="0" code="" scaleX="1.03225803375244" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="144" y="160" name="inst_0047CD20" locked="0" code="" scaleX="1.03225803375244" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="112" y="128" name="inst_875A5D41" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>

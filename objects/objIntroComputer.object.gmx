@@ -144,7 +144,10 @@ if(isWarping)
 draw_set_font(fJoystix8);
 draw_set_colour(c_green);
 draw_set_halign(fa_left);
+
+draw_set_alpha(image_alpha);
 draw_text(x+10,y+8,currentString+"_");
+
 
 var binLength = string_length(binData);
 var row = 5;
@@ -155,6 +158,7 @@ for(var temp = binLength-1; temp &gt;= 0; temp-=5)
  if(row &lt; 0)
   break;
 }
+draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

@@ -54,10 +54,7 @@ background_vspeed[0] = -1.5;</code>
   <instances>
     <instance objName="objSave" x="88" y="288" name="inst_39387E06" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="80" y="528" name="inst_3C41E387" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="432" y="560" name="inst_9F05B8F1" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="688" y="320" name="inst_1E691B1B" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="336" y="112" name="inst_A065EDF2" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="444" y="432" name="inst_2D739752" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="16" y="128" name="inst_6430D256" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="120" y="192" name="inst_2250078B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="96" y="224" name="inst_0D524347" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -113,9 +110,6 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeDown" x="400" y="320" name="inst_0F3B6A70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="416" y="256" name="inst_D56E1232" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="448" y="192" name="inst_05D923AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="480" y="160" name="inst_E3EA86FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="512" y="160" name="inst_CB4D46AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeDown" x="544" y="160" name="inst_56815E67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="480" y="96" name="inst_3D0702A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="544" y="96" name="inst_056D810B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="576" y="128" name="inst_9D59A4D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -297,6 +291,12 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objPlayerStart" x="64" y="536" name="inst_2E4C65E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergyTrigger" x="712" y="296" name="inst_68ECE680" locked="0" code="" scaleX="0.75" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="objEnergy" x="720" y="216" name="inst_1353EE04" locked="0" code="energyID = 85;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="512" y="160" name="inst_8A8793C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="528" y="160" name="inst_39F592F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="480" y="160" name="inst_8EF54E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="496" y="160" name="inst_442F8230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="544" y="160" name="inst_863B6DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMiniDown" x="560" y="160" name="inst_29E977BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBakaTileset" x="736" y="304" w="32" h="32" xo="0" yo="32" id="10050111" name="inst_DD1E8DFB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

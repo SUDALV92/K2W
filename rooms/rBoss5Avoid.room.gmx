@@ -57,44 +57,16 @@ background_hspeed[1]=-1.5;</code>
     <instance objName="objCQBlock" x="0" y="576" name="inst_7C255118" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="768" y="576" name="inst_04A263FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="768" y="0" name="inst_C26EE54E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="96" name="inst_1C73B556" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="96" name="inst_84C8BF2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="96" name="inst_ABC38762" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="96" name="inst_C7C7AFAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="192" name="inst_052D0A93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="192" name="inst_D65446D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="192" name="inst_BE2ED3C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="192" name="inst_E475DB08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="288" name="inst_F852CAF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="288" name="inst_161806F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="384" name="inst_D25D07E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="384" name="inst_307E8C33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="224" y="480" name="inst_AAF8C75D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="96" y="480" name="inst_8AA57F34" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="288" name="inst_DCFC978C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="288" name="inst_AF0B2859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="224" y="384" name="inst_9A7A3E27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="96" y="384" name="inst_32AF8391" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="96" y="480" name="inst_71295A0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="224" y="480" name="inst_92ACDE0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="0" y="576" name="inst_94E95F29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="768" y="576" name="inst_FB3EEEDC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="768" y="0" name="inst_79C2997F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="0" y="0" name="inst_6A4235ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="96" name="inst_6C3E8ED9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="96" name="inst_BD95A777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="96" name="inst_DDB324E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="96" name="inst_F3E80322" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="224" name="inst_D2A95E2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="224" name="inst_F94CDAA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="224" name="inst_623F5E71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="224" name="inst_F264A458" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="448" y="480" name="inst_734C3422" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="320" y="480" name="inst_917B231F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="352" name="inst_289A3B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="352" name="inst_D6C4D99A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="320" y="352" name="inst_241EFADD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlock" x="448" y="352" name="inst_6A1B9C16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="448" y="480" name="inst_A61AA9DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlock" x="320" y="480" name="inst_DBB45D44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWFadeOut" x="-32" y="-32" name="inst_0BA82929" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -178,27 +150,6 @@ background_hspeed[1]=-1.5;</code>
     <instance objName="objCQBlockC" x="672" y="0" name="inst_FF8B4B1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlockC" x="704" y="0" name="inst_498DB190" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlockC" x="736" y="0" name="inst_15A24293" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="128" y="96" name="inst_CDD4FD90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="160" y="96" name="inst_1C44A600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="192" y="96" name="inst_8AAD86F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="352" y="96" name="inst_DB94233E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="384" y="96" name="inst_9AEC77B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="416" y="96" name="inst_0F635AE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="128" y="192" name="inst_FA7D7EBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="160" y="192" name="inst_86BED60D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="192" y="192" name="inst_D4002B23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="352" y="224" name="inst_43D64DFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="384" y="224" name="inst_097F4B21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="416" y="224" name="inst_432CB383" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="128" y="288" name="inst_E841348E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="160" y="288" name="inst_A4356952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="192" y="288" name="inst_8FE46EF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="128" y="384" name="inst_A73D0D70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="160" y="384" name="inst_15D8AEFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="192" y="384" name="inst_0A302067" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="352" y="352" name="inst_E601D09D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="384" y="352" name="inst_408A19D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objCQBlockC" x="416" y="352" name="inst_DFC1D9BC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlockC" x="128" y="480" name="inst_BB856DBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlockC" x="160" y="480" name="inst_D8EE78B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCQBlockC" x="192" y="480" name="inst_307BB894" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

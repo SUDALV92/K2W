@@ -155,6 +155,8 @@
     <instance objName="objIntroBlock" x="704" y="576" name="inst_8274F253" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="736" y="576" name="inst_F5BEBC00" locked="0" code="sprite_index = sprIntroBlockH;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIntroBlock" x="768" y="576" name="inst_91163FD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlack" x="800" y="0" name="inst_30419579" locked="0" code="depth = 1000002;&#xA;" scaleX="4" scaleY="21" colour="4294967295" rotation="0"/>
+    <instance objName="objBlack" x="0" y="-96" name="inst_43C16FB5" locked="0" code="depth = 1000002;&#xA;" scaleX="25" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgLineBlockTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10054802" name="inst_BCAF92A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

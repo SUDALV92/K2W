@@ -87,7 +87,7 @@
         case rStage4HeavenTrap: image_index = 39; cardName = "Heaven Trap 1"; break;
         case rStage4ShinySparkA: 
         case rStage4ShinySparkB:
-        case rStage4ShinySparkC:
+        case rStage4ShinySparkC:        
             image_index = 40; cardName = "Shiny spark"; break;
         case rStage4Conscience: image_index = 41; cardName = "Conscience"; break;
         case rStage4Explorer: image_index = 42; cardName = "Explorer"; break;
@@ -128,8 +128,8 @@
              }
              else
              {
-              image_index = 52;
-              cardName = "Dieary";
+              image_index = 40; 
+              cardName = "Shiny spark";
              }
              break;
         case rStage5PYF: image_index = 53; cardName = "PYF"; break;
@@ -222,7 +222,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndGameList,0,0);
+            <string>audio_stop_sound(global.sndGameList);
+audio_play_sound(global.sndGameList,0,0);
 </string>
           </argument>
         </arguments>

@@ -51,6 +51,7 @@
             <string>if(instance_exists(objPlayer))
     if objPlayer.maxSpeed != 9
     {
+        audio_stop_sound(global.sndTrap);
         audio_play_sound(global.sndTrap,0,0); 
         objPlayer.maxSpeed=9; 
     }

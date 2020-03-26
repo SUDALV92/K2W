@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=25;
+            <string>hp=30;
 fullhp=30;
 image_speed=1/5;
 alarm[10]=60;
@@ -38,7 +38,8 @@ start=0;
 PP=0;
 justStarted = true;
 i = 0;
-scrFlipGrav(true);
+count = 1;
+
 audio_play_sound(global.sndVVVVVV,0,false);
 score = hp; //DeadSplit support
 
@@ -229,41 +230,53 @@ alarm[11]=180;
         until(attack[choosenAttack] == 0)
         
         attack[choosenAttack] = 1;
-        
+        maxAlarm = 0;
         switch(choosenAttack)
         {
          case 0:
             P3 = 1;
             i = 0;
+            if(maxAlarm &lt; 200)
+             maxAlarm = 200;
             break;
          case 1:
             audio_play_sound(global.sndFire,0,0);
             gstoneCore = instance_create(x,y,objGStoneCore);
             gstoneCore.direction = point_direction(x,y,objPlayer.x,objPlayer.y);
-            //gstoneCore.gravity_direction = gstoneCore.direction;
-            //gstoneCore.gravity = 0.1;
+            if(maxAlarm &lt; 200)
+             maxAlarm = 200;
             break;
          case 2:
-            d1=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
-            d1.direction=90;
-            d1.gravity_direction = 270;
-            d1.gravity = 0.3;
-            d1.speed=14;
+            if(count &lt; 4)
+            {
+                d1=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
+                d1.direction=90;
+                d1.gravity_direction = 270;
+                d1.gravity = 0.3;
+                d1.speed=14;
+                
+                d3=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
+                d3.direction=270;
+                d3.gravity_direction = 90;
+                d3.gravity = 0.3;
+                d3.speed=14;
+            }
+                
             d2=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
             d2.direction=180;
             d2.gravity_direction = 0;
             d2.gravity = 0.3;
             d2.speed=14;
-            d3=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
-            d3.direction=270;
-            d3.gravity_direction = 90;
-            d3.gravity = 0.3;
-            d3.speed=14;
+            
             d4=instance_create(self.x,self.y+(20*global.grav),objGPropeller);
             d4.direction=0;
             d4.gravity_direction = 180;
             d4.gravity = 0.3;
             d4.speed=14;
+            
+            
+            if(maxAlarm &lt; 100)
+             maxAlarm = 100;
             break;
          case 3:
             asd=0;
@@ -281,88 +294,112 @@ alarm[11]=180;
              {
               meteo.gdirection = 270;
              }
-             asd+=80;
+             if(count == 4)
+              asd += 160;
+             else
+              asd+=80;
             }
+            if(maxAlarm &lt; 100)
+             maxAlarm = 100;
             break;
          case 4:
             audio_play_sound(global.sndWater,0,0);
-            var waterDirection = choose(-1,1);
-            if(waterDirection == -1)
+            if(count &lt; 4)
+             waterCount = 2;
+            else waterCount = 1;
+            waterChoose = choose(0,1);
+            
+            if(waterCount == 2 || waterChoose == 0)
             {
-                e1=instance_create(784,576,objGWater1);
-                e1.direction=180;
-                e1.speed=5;
-                e1.image_index=0;
-                e2=instance_create(800,576,objGWater1);
-                e2.direction=180;
-                e2.speed=5;
-                e2.image_index=1;
-                e3=instance_create(816,576,objGWater1);
-                e3.direction=180;
-                e3.speed=5;
-                e3.image_index=3;
+                var waterDirection = choose(-1,1);
+                if(waterDirection == -1)
+                {
+                    e1=instance_create(784,576,objGWater1);
+                    e1.direction=180;
+                    e1.speed=5;
+                    e1.image_index=0;
+                    e2=instance_create(800,576,objGWater1);
+                    e2.direction=180;
+                    e2.speed=5;
+                    e2.image_index=1;
+                    e3=instance_create(816,576,objGWater1);
+                    e3.direction=180;
+                    e3.speed=5;
+                    e3.image_index=3;
+                }
+                else
+                {
+                    e1=instance_create(16,576,objGWater1);
+                    e1.direction=0;
+                    e1.speed=5;
+                    e1.image_index=0;
+                    e2=instance_create(0,576,objGWater1);
+                    e2.direction=0;
+                    e2.speed=5;
+                    e2.image_index=1;
+                    e3=instance_create(-16,576,objGWater1);
+                    e3.direction=0;
+                    e3.speed=5;
+                    e3.image_index=3;
+                }
             }
-            else
+            
+            if(waterCount == 2 || waterChoose == 1)
             {
-                e1=instance_create(16,576,objGWater1);
-                e1.direction=0;
-                e1.speed=5;
-                e1.image_index=0;
-                e2=instance_create(0,576,objGWater1);
-                e2.direction=0;
-                e2.speed=5;
-                e2.image_index=1;
-                e3=instance_create(-16,576,objGWater1);
-                e3.direction=0;
-                e3.speed=5;
-                e3.image_index=3;
+                waterDirection = choose(-1,1);
+                if(waterDirection == -1)
+                {
+                    e4=instance_create(784,32,objGWater2);
+                    e4.direction=180;
+                    e4.speed=5;
+                    e4.image_index=0;
+                    e5=instance_create(800,32,objGWater2);
+                    e5.direction=180;
+                    e5.speed=5;
+                    e5.image_index=1;
+                    e6=instance_create(816,32,objGWater2);
+                    e6.direction=180;
+                    e6.speed=5;
+                    e6.image_index=3;
+                }
+                else
+                {
+                    e4=instance_create(16,32,objGWater2);
+                    e4.direction=0;
+                    e4.speed=5;
+                    e4.image_index=0;
+                    e5=instance_create(0,32,objGWater2);
+                    e5.direction=0;
+                    e5.speed=5;
+                    e5.image_index=1;
+                    e6=instance_create(-16,32,objGWater2);
+                    e6.direction=0;
+                    e6.speed=5;
+                    e6.image_index=3;
+                }
             }
-            waterDirection = choose(-1,1);
-            if(waterDirection == -1)
-            {
-                e4=instance_create(784,32,objGWater2);
-                e4.direction=180;
-                e4.speed=5;
-                e4.image_index=0;
-                e5=instance_create(800,32,objGWater2);
-                e5.direction=180;
-                e5.speed=5;
-                e5.image_index=1;
-                e6=instance_create(816,32,objGWater2);
-                e6.direction=180;
-                e6.speed=5;
-                e6.image_index=3;
-            }
-            else
-            {
-                e4=instance_create(16,32,objGWater2);
-                e4.direction=0;
-                e4.speed=5;
-                e4.image_index=0;
-                e5=instance_create(0,32,objGWater2);
-                e5.direction=0;
-                e5.speed=5;
-                e5.image_index=1;
-                e6=instance_create(-16,32,objGWater2);
-                e6.direction=0;
-                e6.speed=5;
-                e6.image_index=3;
-            }
+            
+            if(maxAlarm &lt; 200)
+             maxAlarm = 200;
             break;
          case 5:
             var rngAngle = random(360);
             audio_play_sound(global.sndTanmak2,0,0);
-            repeat(6)
+            repeat(5)
             {
              f1=instance_create(x,y,objGCrystal);
              f1.speed=6; 
              f1.direction=rngAngle+ssa; 
-             ssa+=60;
+             ssa+=360/5;
             }
+            
+            if(maxAlarm &lt; 300)
+             maxAlarm = 300;
             break;
         }
+        alarm[9] = maxAlarm;
     }
-    alarm[9] = 200;
+    
 }
 </string>
           </argument>
@@ -678,21 +715,27 @@ alarm[0]=5;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if(!justStarted &amp;&amp; audio_is_playing(global.currentMusic))
+            <string>if(i == 1 &amp;&amp; start == 0)
 {
-    if(audio_sound_get_track_position(global.currentMusic) &lt;= 10.3)
-    {
-        audio_sound_set_track_position(global.currentMusic,10.3);
-    }
+ scrFlipGrav(true);
 }
 
-if(i == 1000)
+switch(count)
 {
- justStarted = false;
+ case 1:
+ case 2:
+ default:
+  modFactor = 10;
+  break;
+ case 3:
+  modFactor = 15;
+  break;
+ case 4:
+  modFactor = 20;
+  break;
 }
-i++;*/
 
-if(P3 == 1 &amp;&amp; i % 10 == 0)
+if(P3 == 1 &amp;&amp; i % modFactor == 0 &amp;&amp; i &lt;= 150)
 {
     audio_play_sound(global.sndBomb,0,0);
     e1=instance_create(x,y,objGSausage);

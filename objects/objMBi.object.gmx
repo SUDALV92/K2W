@@ -26,10 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_colour(c_white);
-draw_set_font(fBold12);
+draw_set_font(fJoystix10);
 draw_set_halign(fa_left);
-draw_text(x-95,y-10,"ORIGINAL GAME by INFLUKA (2012)");
-draw_text(x-95,y+20,"REMAKE by SUDALV (2019)");
+draw_text(x-95,y-40,"ORIGINAL GAME by INFLUKA (2012)");
+draw_text(x-95,y-10,"K2R by SUDALV (2019)");
+draw_text(x-95,y+20,"K2W by SUDALV (2020)");
+
 </string>
           </argument>
         </arguments>

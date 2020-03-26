@@ -245,11 +245,11 @@ rngAngle = irandom_range(-10,10);
 repeat(5)
 {
 asdh=instance_create(400,236,objChaosss);
-asdh.speed=random_range(9,11);
+asdh.speed=random_range(8,11);
 if(instance_exists(objPlayer))
     asdh.direction=point_direction(400,236,objPlayer.x,objPlayer.y)+rngAngle-15+asdfa;
 else asdh.direction = asdfa;
-asdfa+=8;
+asdfa+=10;
 }
 alarm[7] = 30;
 

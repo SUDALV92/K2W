@@ -483,12 +483,15 @@ if(instance_exists(objPlayer))
     fireball2 = instance_create(x,y,objExtraStageBoshyFireball);
     fireball2.direction = image_angle-10//+random_range(-25,-5);
     fireball2.speed = 8;
-    
-    coin = instance_create(x,y,objExtraStageBoshyCoin);
-    coin.direction = image_angle// + random_range(-10,10);
-    coin.image_angle = image_angle;
-    coin.speed = 5;
-    coin.curving = random_range(0.5,0.8);
+     
+    if(i mod 2 == 0)
+    {
+     coin = instance_create(x,y,objExtraStageBoshyCoin);
+     coin.direction = image_angle// + random_range(-10,10);
+     coin.image_angle = image_angle;
+     coin.speed = 5;
+     coin.curving = random_range(0.5,0.8);
+    }
    }
    if(i == 450)
    {

@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = 0;
-hp = 300;
-fullhp = 300;
+hp = 200;
+fullhp = 200;
 </string>
           </argument>
         </arguments>

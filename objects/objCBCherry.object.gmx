@@ -31,6 +31,7 @@ centerY = 304;
 len = 430;
 angle = 0;
 alarm[0] = 400;
+tail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>

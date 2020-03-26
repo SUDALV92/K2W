@@ -54,16 +54,18 @@ gravity_direction=270;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y+vspeed,objBlock) &amp;&amp; 
+            <string>if(place_meeting(x,y,objBlock) &amp;&amp; 
 (instance_exists(objDestinationB) &amp;&amp; objDestinationB.A == 1 || room == rBoss7Phase1))
 {
  i = -0.5;
  repeat(2)
  {
-  b = instance_create(x,y,objDBCherry1);
+  b = instance_create(x+i*10,y+5,objDBCherry1);
   b.vspeed = -vspeed;
   b.hspeed = i
   b.gravity = gravity;
+  b.blend = true;
+  b.alarm[0] = 5;
   i+=1;
  }
  instance_destroy();

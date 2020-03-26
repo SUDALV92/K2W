@@ -30,6 +30,7 @@ mode = 1;
 bounce = false;
 firstCheck = true;
 curving = 0;
+tail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>

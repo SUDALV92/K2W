@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp=60;
-fullhp=60;
+            <string>hp=50;
+fullhp=50;
 A=0;
 </string>
           </argument>

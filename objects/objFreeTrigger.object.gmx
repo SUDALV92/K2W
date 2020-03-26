@@ -469,7 +469,8 @@ switch(room)
             case 3:
                 with(objSkybSpikeLeft)
                 {
-                    hspeed = -14;
+                    if(trap == 1)
+                     hspeed = -14;
                 }
                 break;
             case 4:
@@ -910,7 +911,10 @@ switch(room)
                 with(objColortrap3) if(trap == other.trg) go = true; 
                 with(objColortrap4) if(trap == other.trg) go = true;
              }
-             else { d = 0; }
+             else 
+             { 
+              d = 0; 
+             }
              break;
         }        
         break;
@@ -981,7 +985,7 @@ switch(room)
          with(objSymetryTrapDown) if(trap == other.trg) go = true;
          break;
         case 30:
-         warp = instance_create(464,64,objWarp);
+         warp = instance_create(1264,64,objWarp);
          warp.roomTo = rStage5RainbowMiku;
          warp.autosave = true;
          audio_play_sound(global.sndTrap,0,0);
@@ -1770,6 +1774,7 @@ switch(room)
             break;
       }
       break;
+ default: d = 0; break;
 }
 if(d == 1)
     instance_destroy();
@@ -1802,6 +1807,7 @@ switch(room)
        case 1:
         with(objExtraStageTrapUp) if(trap == 1) go = true;
         instance_create(0,0,objExtraStageKTGController);
+        d = 1;
         break;
       }
       break;
@@ -1813,11 +1819,13 @@ switch(room)
       {
        event_user(0);
       }
+      d = 1;
       break;
  case rExtraStageDestinationChase:
       with(objExtraStageDestinationTrap1) go = true;
       with(objExtraStageDestinationTrap2) go = true;
       break;
+ default: d = 0; break;
 }
 if(d == 1)
     instance_destroy();

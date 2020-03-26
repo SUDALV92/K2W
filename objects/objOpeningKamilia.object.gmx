@@ -58,10 +58,10 @@ audio_play_sound(global.sndWarp,0,0);
 else
 {
     instance_create(0,0,objFadeOutGS);
+    
+    scrObjectDestroy(objPlayer);
+    global.autosave = true;
     room_goto(rStage1Chocko);
-    objPlayer.x = 384;
-    objPlayer.y = 480; 
-    objPlayer.frozen=false;
 }
 </string>
           </argument>

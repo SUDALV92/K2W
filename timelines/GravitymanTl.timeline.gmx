@@ -260,10 +260,7 @@ image_index=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -289,10 +286,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -318,10 +312,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -462,10 +453,7 @@ image_speed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -491,10 +479,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -520,10 +505,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y+18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -666,10 +648,7 @@ image_speed=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -695,10 +674,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -724,10 +700,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -994,10 +967,7 @@ vspeed=24;
           <argument>
             <kind>1</kind>
             <string>image_yscale=1;
-if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -1023,10 +993,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -1055,10 +1022,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
             <string>vspeed=0;
 hspeed=5;
 sprite_index=sprGravityman3;
-if instance_exists(objPlayer){
-a1=instance_create(x+38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -1086,10 +1050,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
             <kind>1</kind>
             <string>hspeed=0;
 sprite_index=sprGravityman4;
-if instance_exists(objPlayer){
-a1=instance_create(x-38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+scrGravityManShoot();
 image_xscale=1;
 </string>
           </argument>
@@ -1116,10 +1077,7 @@ image_xscale=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x-38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>
@@ -1145,10 +1103,7 @@ a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists(objPlayer){
-a1=instance_create(x-38,y-18,objGBullet);
-a1.speed=16;
-a1.direction=point_direction(a1.x,a1.y,objPlayer.x,objPlayer.y);}
+            <string>scrGravityManShoot();
 </string>
           </argument>
         </arguments>

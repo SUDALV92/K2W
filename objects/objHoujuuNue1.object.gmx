@@ -225,15 +225,16 @@ alarm[2] = 200;
             <kind>1</kind>
             <string>start=1;
 
-for(i=1;i&lt;=16;i+=1)
+for(i=1;i&lt;=32;i+=1)
 {
  a=instance_create(x,y,objNueTan1)
- a.direction = direction + i * 30;
- a.speed = 2;
+ a.direction = direction + i * 15;
+ a.speed = random_range(2,3);
+ a.curving = choose(-0.2,0.2);
 }
 
 
-alarm[1] = 12;
+alarm[1] = 24;
 </string>
           </argument>
         </arguments>
@@ -341,7 +342,7 @@ with(other){instance_destroy();}
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_sprite_ext(sprButton,0,780,y-32,1,2,0,c_white,0.2);
+draw_sprite_ext(sprButton,0,778,y-32,1,2,0,c_white,0.5);
 </string>
           </argument>
         </arguments>

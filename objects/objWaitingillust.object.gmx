@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>A = 0;
+image_alpha = 0.1;
 </string>
           </argument>
         </arguments>
@@ -54,30 +55,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>A = 1;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -95,12 +72,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=1
+            <string>if(scrButtonCheckPressed(global.jumpButton))
+{
+ A = 1;
+}
+if A=1
 {
     if image_alpha&gt;0
     {
         image_alpha-=0.02;
     }
+}
+else if A == 0
+{
+ if(image_alpha &lt; 1)
+  image_alpha += 0.01;
 }
 if image_alpha &lt; 0.01
 {

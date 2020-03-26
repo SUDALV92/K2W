@@ -171,7 +171,6 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeRight" x="32" y="64" name="inst_D61659E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="352" y="192" name="inst_4BF57F22" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="288" y="160" name="inst_592CA16D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="384" y="288" name="inst_D5A71507" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="144" y="288" name="inst_B0B71CE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="176" y="288" name="inst_C69A3AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="208" y="288" name="inst_446A61E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -190,6 +189,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeRight" x="448" y="512" name="inst_3248EC66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="112" y="288" name="inst_C703200A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="784" y="544" name="inst_797271B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeDown" x="384" y="288" name="inst_2E8FA1BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBakaTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10049163" name="inst_FFC79BF8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

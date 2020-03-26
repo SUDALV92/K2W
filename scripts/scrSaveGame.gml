@@ -94,6 +94,7 @@ if (savePosition)
     global.saveGameClear = global.gameClear;
     global.saveExtra = global.extra;
     global.saveExtraClear = global.extraClear;
+    global.savePortalAvailable = global.portalAvailable;
 }
 
 //create a map for time data
@@ -160,6 +161,7 @@ ds_map_add(saveMap,"autoFire",global.saveAutoFire);
 ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
 ds_map_add(saveMap,"saveExtra",global.saveExtra);
 ds_map_add(saveMap,"saveExtraClear",global.saveExtraClear);
+ds_map_add(saveMap,"portalAvailable",global.savePortalAvailable);
 
 //add md5 hash to verify saves and make them harder to hack
 ds_map_add(saveMap,"mapMd5",md5_string_unicode(json_encode(saveMap)+global.md5StrAdd));
@@ -183,7 +185,7 @@ else    //use text file
 //destroy the map
 ds_map_destroy(saveMap);
 
-//check if extra item collected, then throw achievement
+/*//check if extra item collected, then throw achievement
 if(secretItemCollected)
 {
  if(global.achievement[27] == 0)
@@ -208,6 +210,6 @@ if(allItemsCollected)
   achievement = instance_create(0,0,objAchievement);
   achievement.index = 59;
  }
-}
+}*/
 
 //scrSaveAchievements();

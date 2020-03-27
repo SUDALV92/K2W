@@ -35,62 +35,6 @@ hspd = hspeed;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///hbounce
-/*var hcollision = !place_free( x + hspeed, y );
-var vcollision = !place_free( x, y + vspeed );
-var collision = !place_free( x + hspeed, y + vspeed );
-if( collision ) 
-{
-    if( hcollision ) 
-    {            
-        if(vspeed &gt; 0.4)
-        {
-         if(hspeed != 0)
-         {
-          hspd = hspeed;
-          hspeed = 0;
-         }
-        }
-        else
-        {
-          hspeed = -hspeed;
-        }        
-    }
-    if( vcollision ) 
-    {            
-        vspeed = 0;
-        if(hspeed == 0)
-         hspeed = hspd;
-    }
-    if( !hcollision &amp;&amp; !vcollision ) 
-    {
-        vspeed = 0;
-        hspeed = -hspeed;
-    }
-}*/
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objBlock">
       <action>
         <libid>1</libid>
@@ -116,8 +60,7 @@ if( collision )
      vspeed = 0;   
     }
     
-    
-    if(hspeed == 0)
+    if(round(hspeed) == 0)
      hspeed = hspd;
 }
 if (!place_free(x+hspeed,y))
@@ -128,7 +71,7 @@ if (!place_free(x+hspeed,y))
     if(vspeed &gt; 0.4)
     {
      hspd = hspeed;
-     hspeed = 0;     
+     hspeed = 0;
     }
     else
      hspeed = -hspeed;

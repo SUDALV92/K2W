@@ -56,7 +56,7 @@
     <instance objName="objTrueEndingBlack" x="0" y="0" name="inst_44A8D446" locked="0" code="" scaleX="15.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objTrueEndingBlack" x="496" y="0" name="inst_ABEC5BFB" locked="0" code="" scaleX="9.5" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objTrueEndingBlack" x="0" y="480" name="inst_FB73D14D" locked="0" code="" scaleX="15.5" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="objTrueEndingBlack" x="0" y="144" name="SceneFade" locked="0" code="" scaleX="14.5" scaleY="9.80645179748535" colour="4294967295" rotation="0"/>
+    <instance objName="objTrueEndingBlack" x="0" y="112" name="SceneFade" locked="0" code="//useWhite = false;&#xA;" scaleX="15.5649995803833" scaleY="11.6549997329712" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

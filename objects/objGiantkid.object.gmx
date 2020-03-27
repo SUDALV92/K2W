@@ -81,7 +81,6 @@ ND=0;
             <kind>1</kind>
             <string>with(objGiantkCherry){instance_destroy();}
 with(objGiantkCherryR){instance_destroy();}
-global.bossRushRerun[4] = true;
 </string>
           </argument>
         </arguments>

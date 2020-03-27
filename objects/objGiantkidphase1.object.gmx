@@ -39,12 +39,6 @@ E=0;
 bulletSpeed = -2;
 bulletsCount = 2;
 lastBullet = noone;
-if(global.extra &amp;&amp;
-!(global.bossRushRerun[0] &amp;&amp; 
-global.bossRushRerun[1] &amp;&amp; 
-global.bossRushRerun[2] &amp;&amp; 
-global.bossRushRerun[3]))
- global.currentSegmentIndex = -1;
 
 score = hp; //DeadSplit support
 </string>

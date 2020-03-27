@@ -26,11 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1/3;
-switch(room)
-{
-    default: image_index=irandom(11); break;
-}
-
+image_index=irandom(11);
 </string>
           </argument>
         </arguments>

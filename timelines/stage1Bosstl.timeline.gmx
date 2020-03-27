@@ -937,45 +937,16 @@ message.N = 1;
             <kind>1</kind>
             <string>if(instance_exists(objPlayer))
 {
+ if(global.currentSegmentIndex == 1)
+ {
     global.lastRunEnd[1] = global.time; 
     global.lastRunStart[2] = global.time;
-    global.currentSegmentID = irandom(1000000);
+    //global.currentSegmentID = irandom(1000000);
     global.currentSegmentIndex = 2;
-    var clearTime = global.lastRunEnd[1] - global.lastRunStart[1];
-    
-    if(global.bestRun[1] == -1 || global.bestRun[1] &gt; clearTime)
-         global.bestRun[1] = clearTime;
-    
-    if(clearTime &lt;= 69)
-    {
-        if(global.achievement[7] == 0 || global.achievement[7] &gt; 1)
-        {
-            global.achievement[7] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 21;
-        }
-    }
-    else if(clearTime &lt;= 120)
-    {
-        if(global.achievement[7] == 0 || global.achievement[7] &gt; 2)
-        {
-            global.achievement[7] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 22;
-        }
-    }
-    else if(clearTime &lt;= 300)
-    {
-        if(global.achievement[7] == 0)
-        {
-            global.achievement[7] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 23;
-        }
-    }    
-    room_goto(rStage2CTB2);
-    objPlayer.x=48;
-    objPlayer.y=16;
+ }
+ room_goto(rStage2CTB2);
+ objPlayer.x=48;
+ objPlayer.y=16;
 }
 </string>
           </argument>

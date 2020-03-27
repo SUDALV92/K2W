@@ -41,7 +41,6 @@ w=0;
 a=1; b=2; c=3; d=4;
 purpleCurving = 1;
 firstWeaponDeathTime = 0;
-achievement = false;
 delay = 0;
 score = 0; //DeadSplit support
 </string>
@@ -73,13 +72,9 @@ wc=instance_create(400,416,objWarp);
 wc.roomTo = rStage6BossRush;
 wc.autosave = true;
 global.bossRush[0] = true;
-global.bossRushRerun[0] = true;
 if(!global.gameClear)
     global.crashPortal[0] = true;
-if(achievement == true)
-{
-    global.tempTrigger[0] = 22;
-}
+
 var rngAngle = random(360);
 for(var i = 30; i &lt; 35; i++)
 {
@@ -503,34 +498,46 @@ if(instance_exists(objPlayer))
  {
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
+  gravity = 0;
  }
  with(objDYCherry2) 
  {
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
+  gravity = 0;
  }
  with(objDPCherry1) 
  { 
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   curving = 0;
   speed = 10;
+  gravity = 0;
  }
  with(objDRCherry1) 
  {
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
+  gravity = 0;
  }
  with(objDBCherry1) 
  {
+  if(y &lt; 0) instance_destroy();
   direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
   gravity = 0;
  }
  with(objDBCherry2) 
  {
-  direction = point_direction(objPlayer.x,objPlayer.y,x,y);
-  speed = 10;
-  gravity = 0;
+  repeat(2)
+  {
+   b = instance_create(x+i*10,y+5,objDBCherry1);
+   b.direction = point_direction(objPlayer.x,objPlayer.y,x,y);
+   b.speed = 10;
+   b.gravity = 0; 
+   b.blend = true;
+   b.alarm[0] = 5;
+  }
+  instance_destroy();
  }
 }
 audio_play_sound(global.sndTrap,0,0);
@@ -563,10 +570,6 @@ alarm[5]=10; alarm[6]=10; alarm[7]=10;
 alarm[8]=10; alarm[9]=10; B=600;}}}}}
 
 if D=0{if a=-1 and b=-1 and c=-1 and d=-1 {
-if(global.time - firstWeaponDeathTime &lt;= 10)
-{
-    achievement = true;
-}
 A=5; with(objDYCherry2){instance_change(objDYCherry1,1);}
 audio_play_sound(global.sndTrap,0,0);
 score = A*100+hp; //DeadSplit support

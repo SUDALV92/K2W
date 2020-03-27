@@ -56,19 +56,9 @@ alarm[0]=120;
     audio_play_sound(global.sndKirby,0,0);
     if(room == rStage3TimeMachine)
         instance_create(self.x,self.y+16,objJetkirby);
-    else if(room == rExStage1)
+    else
     {
-     if(objPlayer.x &gt; 400)
-     {
-      kirby = instance_create(-32,self.y+16,objJetkirby);
-      kirby.direction = 0;
-      kirby.speed = 20;
-      kirby.image_xscale = -1;
-     }
-     else
-     {
       instance_create(832,self.y+16,objJetkirby);
-     }
     }
     alarm[0]=60;
 }

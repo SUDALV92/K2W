@@ -67,6 +67,10 @@ for(var temp = 0; temp &lt; 100; temp++)
   if(global.energy[temp])
    totalEnergy++;
 }
+if(totalEnergy &gt;= 95)
+{
+ global.stageUnlocked[77] = true;
+}
 
 currentString1 = "";
 currentString2 = "";

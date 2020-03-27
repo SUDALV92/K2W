@@ -171,6 +171,7 @@ alarm[11]=3;
           <argument>
             <kind>1</kind>
             <string>///AK == 6
+audio_stop_sound(global.sndTanmak);
 audio_play_sound(global.sndTanmak,0,0);
 repeat(15){
 asd=instance_create(400,236,objChaosss);
@@ -205,6 +206,7 @@ alarm[9] = 35;
           <argument>
             <kind>1</kind>
             <string>///AK == 5
+audio_stop_sound(global.sndTanmak);
 audio_play_sound(global.sndTanmak,0,0);
 curving = choose(-1,1);
 repeat(30)
@@ -239,6 +241,7 @@ alarm[8] = 30;
           <argument>
             <kind>1</kind>
             <string>///AK == 4
+audio_stop_sound(global.sndTanmak2);
 audio_play_sound(global.sndTanmak2,0,0);
 asdfa = 0;
 rngAngle = irandom_range(-10,10);
@@ -276,6 +279,7 @@ alarm[7] = 30;
           <argument>
             <kind>1</kind>
             <string>///AK == 3
+audio_stop_sound(global.sndTanmak);
 audio_play_sound(global.sndTanmak,0,0);
 repeat(30)
 {
@@ -306,7 +310,8 @@ alarm[6] = 50;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.sndTanmak,0,0);
+            <string>audio_stop_sound(global.sndTanmak);
+audio_play_sound(global.sndTanmak,0,0);
 angle = random(360);
 repeat(30)
 {
@@ -535,6 +540,7 @@ else
             <string>if Q=1{
 if(instance_exists(objPlayer))
 {
+    audio_stop_sound(global.sndTanmak2);
     audio_play_sound(global.sndTanmak2,0,0);
     repeat(1)
     {
@@ -734,7 +740,9 @@ if(instance_exists(objPlayer) &amp;&amp; ready &amp;&amp; !phase3)
         {
             gwaterOption = 0;
             gwaterDirection = 0;
-            audio_play_sound(global.sndWater,0,0);
+            audio_stop_sound(global.sndWater);
+            sfx = audio_play_sound(global.sndWater,0,0);
+            audio_sound_gain(sfx,0.6,0);
             
             e1=instance_create(16+gwaterOption,496,objGWater1);
             e1.direction=gwaterDirection;

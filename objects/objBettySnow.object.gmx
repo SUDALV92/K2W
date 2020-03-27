@@ -97,13 +97,10 @@ else
  }
 }
 
-gravity = abs(start_gravity) * global.grav;
+gravity = abs(start_gravity)// * global.grav;
 
-if(global.grav == 1 &amp;&amp; y &gt; view_yview[0] + 680)
+if(y &gt; view_yview[0] + 680)
      instance_destroy();
-     
-if(global.grav == -1 &amp;&amp; y &lt; -72)
- instance_destroy();
 </string>
           </argument>
         </arguments>

@@ -26,44 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(global.sndTimeMachine,0,0);
-global.lastRunEnd[4] = global.time; global.lastRunStart[5] = global.time;
-global.currentSegmentID = irandom(1000000);
-global.currentSegmentIndex = 5;
-
-if(global.lastRunStart[4] != -1)
-{        
-    var clearTime = global.lastRunEnd[4] - global.lastRunStart[4];
-    
-    if(global.bestRun[4] == -1 || global.bestRun[4] &gt; clearTime)
-             global.bestRun[4] = clearTime;
-    
-    if(clearTime &lt;= 420)
-    {
-        if(global.achievement[2] == 0 || global.achievement[2] &gt; 1)
-        {
-            global.achievement[2] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 6;
-        }
-    }
-    else if(clearTime &lt;= 720)
-    {
-        if(global.achievement[2] == 0 || global.achievement[2] &gt; 2)
-        {
-            global.achievement[2] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 7;
-        }
-    }
-    else if(clearTime &lt;= 1800)
-    {
-        if(global.achievement[2] == 0)
-        {
-            global.achievement[2] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 8;
-        }
-    }
+if(global.currentSegmentIndex == 4)
+{
+ global.lastRunEnd[4] = global.time; 
+ global.lastRunStart[5] = global.time;
+ //global.currentSegmentID = irandom(1000000);
+ global.currentSegmentIndex = 5;
 }
 room_goto(rBoss3Save);
 objPlayer.x = 80;

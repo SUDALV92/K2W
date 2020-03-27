@@ -29,7 +29,7 @@
 alarm[1] = irandom_range(50,120);
 
 
-if(!part_system_exists(global.partSys))
+//if(!part_system_exists(global.partSys))
  global.partSys = part_system_create();
  
 part_system_depth(global.partSys,3);

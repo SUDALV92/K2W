@@ -22,16 +22,9 @@ global.extraSkip = false;
 global.extraMusicLoop = 0;
 global.skin = 0; //default player skin, 1 = dotkid
 
-
-for(var i = 0; i < global.achievementTotal; i++)
-{
- global.achievement[i] = 0;
-}
-
 for(var i = 0; i < 11; i++)
 {
  global.bossRush[i] = 0;
- global.bossRushRerun[i] = 0; 
  global.crashPortal[i] = 0;
  global.caution[i] = 0;
  global.checkpoint[i] = 0;
@@ -44,12 +37,6 @@ for (var i = global.secretItemTotal-1; i >= 0; i--)
     global.saveSecretItem[i] = 0;
     global.tempItem[i] = 0;
 }
-
-//useless for K2W
-global.gameClear = 0;
-global.extra = 0;
-global.saveGameClear = 0;
-global.saveExtraClear = 0;
 
 //actuals
 global.portalAvailable = 0;
@@ -105,8 +92,8 @@ for(var i = 0; i < 16; i++)
 }
 
 global.timerEnabled = true;
-global.currentSegmentIndex = -1; //current segment index for speedrun timer
-global.currentSegmentID = 0;
+global.currentSegmentIndex = 0; //current segment index for speedrun timer
+global.currentSegmentID = -1;
 global.globalSegmentID = 0;
 global.saveCurrentSegmentID = 0;
 global.saveGlobalSegmentID = 0;

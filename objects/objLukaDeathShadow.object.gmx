@@ -88,45 +88,16 @@ for(var i = 10; i &lt; 15; i++)
             <kind>1</kind>
             <string>if instance_exists(objPlayer)
 {
+ if(global.currentSegmentIndex == 5)
+ {
     global.lastRunEnd[5] = global.time; 
     global.lastRunStart[6] = global.time;
-    global.currentSegmentID = irandom(1000000);
+    //global.currentSegmentID = irandom(1000000);
     global.currentSegmentIndex = 6;
-    var clearTime = global.lastRunEnd[5] - global.lastRunStart[5];
-    
-    if(global.bestRun[5] == -1 || global.bestRun[5] &gt; clearTime)
-         global.bestRun[5] = clearTime;
-    
-    if(clearTime &lt;= 120)
-    {
-        if(global.achievement[9] == 0 || global.achievement[9] &gt; 1)
-        {
-            global.achievement[9] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 27;
-        }
-    }
-    else if(clearTime &lt;= 360)
-    {
-        if(global.achievement[9] == 0 || global.achievement[9] &gt; 2)
-        {
-            global.achievement[9] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 28;
-        }
-    }
-    else if(clearTime &lt;= 1200)
-    {
-        if(global.achievement[9] == 0)
-        {
-            global.achievement[9] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 29;
-        }
-    }
-    room_goto(rStage4Galaxy);
-    objPlayer.x=32;
-    objPlayer.y=544;
+ }
+ room_goto(rStage4Galaxy);
+ objPlayer.x=32;
+ objPlayer.y=544;
 }
 </string>
           </argument>

@@ -1118,7 +1118,7 @@ if(clockControl)
           <argument>
             <kind>1</kind>
             <string>//audio_stop_all();
-game_load("savestate");
+//game_load("savestate");
 </string>
           </argument>
         </arguments>
@@ -1141,7 +1141,7 @@ game_load("savestate");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_save("savestate");
+            <string>//game_save("savestate");
 </string>
           </argument>
         </arguments>
@@ -1164,7 +1164,7 @@ game_load("savestate");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrSaveGame(true);
+            <string>//scrSaveGame(true);
 </string>
           </argument>
         </arguments>
@@ -1187,7 +1187,7 @@ game_load("savestate");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
+            <string>//audio_stop_all();
 </string>
           </argument>
         </arguments>

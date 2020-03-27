@@ -74,6 +74,12 @@ if(global.grav == -1)
     scrFlipGrav(true); 
 
 global.stageUnlocked[82] = true;
+if(global.currentSegmentIndex ==  14)
+{
+ global.lastRunEnd[14] = global.time; 
+ global.lastRunStart[15] = global.time; 
+ global.currentSegmentIndex = 15;
+}    
 room_goto(rExtraStageFinalDeadRoom);
 </string>
           </argument>

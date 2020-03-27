@@ -202,11 +202,6 @@ saveStatus = 0; // 0 = not exists, 1 = loaded, -1 = broken
     if !instance_exists(objTitlefadeout)
      room_goto(rOptions);
 }
-/*else if(scrButtonCheckPressed(global.skipButton))
-{
-    if !instance_exists(objTitlefadeout)
-     room_goto(rAchievements);
-}*/
 else if(scrButtonCheckPressed(global.menuAcceptButton))
 {
     if !instance_exists(objTitlefadeout)
@@ -219,9 +214,10 @@ else if(scrButtonCheckPressed(global.menuAcceptButton))
                 global.autosave = true;
                 global.lastRunStart[0] = 0;
                 global.currentSegmentIndex = 0;
-                global.currentSegmentID = irandom(1000000);
-                global.lastRunStart[14] = 0;
-                global.globalSegmentID = irandom(1000000);
+                //useless for K2W
+                //global.currentSegmentID = irandom(1000000);
+                //global.lastRunStart[14] = 0;
+                //global.globalSegmentID = irandom(1000000);
                 break;
             case 1: 
                 scrLoadGame(true); 
@@ -299,13 +295,11 @@ draw_set_font(fJoystix12);
 if (!global.controllerMode)
 {
     scrDrawTextOutline(100,20,"Start: " + scrGetKeybind(global.jumpButton[0]),c_white,c_black);
-    //scrDrawTextOutline(100,40,"Achievements: " + scrGetKeybind(global.skipButton[0]),c_white,c_black);
     scrDrawTextOutline(100,40,"Options: " + scrGetKeybind(global.suicideButton[0]),c_white,c_black);
 }
 else
 {
     scrDrawTextOutline(100,20,"Start: " + scrGetControllerBind(global.jumpButton[1]),c_white,c_black);
-    //scrDrawTextOutline(100,40,"Achievements: " + scrGetControllerBind(global.skipButton[1]),c_white,c_black);
     scrDrawTextOutline(100,40,"Options: " + scrGetControllerBind(global.suicideButton[1]),c_white,c_black);
 }
 

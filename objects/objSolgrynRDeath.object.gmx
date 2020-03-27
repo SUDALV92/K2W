@@ -37,15 +37,6 @@ view_enabled=1;
 view_visible[0]=1;
 shake=0;
 A=0;
-if(global.tempTrigger[0] == 1 &amp;&amp; global.currentSegmentIndex != -1)
-{
-    if(global.achievement[20] == 0)
-    {
-        global.achievement[20] = 1;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 51;
-    }
-}
 </string>
           </argument>
         </arguments>
@@ -68,42 +59,13 @@ if(global.tempTrigger[0] == 1 &amp;&amp; global.currentSegmentIndex != -1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.lastRunEnd[9] = global.time; 
-global.lastRunStart[10] = global.time;
-global.currentSegmentID = irandom(1000000);
-global.currentSegmentIndex = 10;
-var clearTime = global.lastRunEnd[9] - global.lastRunStart[9];
-
-if(global.bestRun[9] == -1 || global.bestRun[9] &gt; clearTime)
-         global.bestRun[9] = clearTime;
-
-    if(clearTime &lt;= 260)
-    {
-        if(global.achievement[11] == 0 || global.achievement[11] &gt; 1)
-        {
-            global.achievement[11] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 33;
-        }
-    }
-    else if(clearTime &lt;= 600)
-    {
-        if(global.achievement[11] == 0 || global.achievement[11] &gt; 2)
-        {
-            global.achievement[11] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 34;
-        }
-    }
-    else if(clearTime &lt;= 1800)
-    {
-        if(global.achievement[11] == 0)
-        {
-            global.achievement[11] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 35;
-        }
-    }
+            <string>if(global.currentSegmentIndex == 9)
+{
+ global.lastRunEnd[9] = global.time; 
+ global.lastRunStart[10] = global.time;
+ //global.currentSegmentID = irandom(1000000);
+ global.currentSegmentIndex = 10;
+}
 room_goto(rStage6GR);
 </string>
           </argument>

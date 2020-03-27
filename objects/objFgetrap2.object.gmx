@@ -64,15 +64,6 @@ first = true;
         alarm[0]=50;
     }
 }
-else
-{
-    if(global.achievement[16] == 0)
-    {
-        global.achievement[16] = 1;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 47;
-    }
-}
 </string>
           </argument>
         </arguments>

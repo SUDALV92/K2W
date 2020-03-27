@@ -289,6 +289,12 @@ if(t == 340+50)
 if(t == 380+50)
 {
  scrPlayMusic(global.sndShutdownInterrupted,1);
+ if(global.currentSegmentIndex ==  15)
+ {
+  global.lastRunEnd[15] = global.time; 
+  global.lastRunStart[16] = global.time; 
+  global.currentSegmentIndex = 16;
+ }
 }
 if(t == 400+50)
 {

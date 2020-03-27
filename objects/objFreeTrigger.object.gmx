@@ -35,53 +35,6 @@ step = 0; //secret5
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>switch(room)
-{
- case rExStage6:
-      switch(trg)
-      {
-       case 1:
-            scrCreateWarp(0,0,30,30,3);
-            d = 1;
-            break;
-       case 2:
-            scrCreateWarp(0,0,30,30,5);
-            with(objExStage6Block)
-            {
-             if(trap == 2)
-             {
-              y+=10;
-             }
-            }
-            d = 1;
-            break;
-      }
-      break;
-}
-if(d == 1)
-    instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
@@ -250,13 +203,6 @@ switch(room)
                 break;
         }
         break;
-        case rStage1Fangame:
-            if(!global.achievement[17])
-            {
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 17;
-            }
-            break;
         case rStage2DT:
             switch(trg)
             {
@@ -766,6 +712,13 @@ switch(room)
               path_start(pathS5HeavenTrap,16,0,0);
               audio_play_sound(global.sndTrap,0,0);
              }             
+             with(objFreeTrigger)
+             {
+              if(trg == 5)
+              {
+               instance_destroy();
+              }
+             }
              break;
             case 6:
              scrObjectDestroy(objSave);
@@ -1388,23 +1341,6 @@ switch(room)
             case 9:
             {
                 with(objCrimTrap1) if(trap == 11) go = true;
-                break;
-            }
-            case 12:
-            {
-                if(global.extra &amp;&amp; !global.secretItem[11])
-                {
-                    item = instance_create(265,382,objExtraItem);
-                    item.itemID = 11;
-                    item.image_index = 11;
-                    audio_play_sound(global.sndTrap,0,false);
-                    with(objCrimTrap2)
-                    {
-                        if(trap == 12) go = true;
-                    }
-                    with(objFreeTrigger) if(trg == 13) condition = true;
-                    with(objSave) instance_destroy();
-                }
                 break;
             }
             case 13:

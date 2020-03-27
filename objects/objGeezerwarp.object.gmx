@@ -101,46 +101,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.lastRunEnd[6] = global.time;
-global.lastRunStart[7] = global.time;
-global.currentSegmentID = irandom(1000000);
-global.currentSegmentIndex = 7;
-
-if(global.lastRunStart[6] != -1)
+            <string>if(global.currentSegmentIndex == 6)
 {
-    var clearTime = global.lastRunEnd[6] - global.lastRunStart[6];
-    
-    if(global.bestRun[6] == -1 || global.bestRun[6] &gt; clearTime)
-         global.bestRun[6] = clearTime;
-    
-    if(clearTime &lt;= 480)
-    {
-        if(global.achievement[3] == 0 || global.achievement[3] &gt; 1)
-        {
-            global.achievement[3] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 9;
-        }
-    }
-    else if(clearTime &lt;= 900)
-    {
-        if(global.achievement[3] == 0 || global.achievement[3] &gt; 2)
-        {
-            global.achievement[3] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 10;
-        }
-    }
-    else if(clearTime &lt;= 1800)
-    {
-        if(global.achievement[3] == 0)
-        {
-            global.achievement[3] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 11;
-        }
-    }
+ global.lastRunEnd[6] = global.time;
+ global.lastRunStart[7] = global.time;
+ //global.currentSegmentID = irandom(1000000);
+ global.currentSegmentIndex = 7;
 }
+
 room_goto(rBoss4Save);
 objPlayer.x=400;
 objPlayer.y=400;

@@ -36,7 +36,6 @@ start=0;
 A=0;
 image_alpha = 0;
 fadeout = true;
-achievement = true;
 score = 100 + hp; //DeadSplit support
 alarm[3] = 400; //shifting
 targetY = ystart;
@@ -119,20 +118,10 @@ fade = instance_create(-32,-32,objNueFade);
 fade.warpX = x;
 fade.warpY = y;
 global.bossRush[2] = true;
-global.bossRushRerun[2] = true;
 if(!global.gameClear)
     global.crashPortal[2] = true;
 audio_stop_sound(global.currentMusic);
 
-if(achievement)
-{
- if(global.achievement[34] == 0)
- {
-     global.achievement[34] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 65;
- }
-}
 var rngAngle = random(360);
 for(var i = 40; i &lt; 45; i++)
 {

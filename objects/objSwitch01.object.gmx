@@ -51,16 +51,6 @@
             <string>if(instance_place(x,y-1,objPlayer))
 {
     image_index = 1;
-    if(global.extra)
-    {
-        if(!instance_exists(objExtraItem) &amp;&amp; !global.secretItem[1])
-        {
-            item = instance_create(742,176,objExtraItem);
-            item.itemID = 1;
-            item.image_index = 1;
-            audio_play_sound(global.sndTrap,0,false);
-        }
-    }
 }
 else
 {

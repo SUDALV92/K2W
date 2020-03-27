@@ -48,13 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(lost &amp;&amp; global.achievement[21] == 0)
-{
-    global.achievement[21] = 1;
-    achievement = instance_create(0,0,objAchievement);
-    achievement.index = 52;
-}
-instance_destroy();
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>

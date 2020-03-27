@@ -56,14 +56,14 @@ else num = 40;
 if(instance_number(objBettySnow) &lt; num)
 {
 
-    if(global.grav == 1)
-    {
+    //if(global.grav == 1)
+    //{
      yy = view_yview[0] -72;
-    }
-    else if(global.grav == -1)
-    {
-     yy = 876;
-    }
+    //}
+    //else if(global.grav == -1)
+    //{
+    // yy = 876;
+    //}
     
     if(ttt)
     {
@@ -139,27 +139,6 @@ else
         b.speed = 1;
         }
      break;
-    /*case rStage3TimeMachine:
-    case rStage3TimeMachine2:
-    case rBoss3Avoid1:
-    case rBoss3Avoid2:
-    case rBoss3Avoid3:
-     ttt = true;
-     repeat(40)
-        {
-        b = instance_create(random(800),random(608),objBettySnow);
-        b.b = random_range(0.3,0.8);
-        b.speed = 2;
-        }
-     with(objBettySnow)
-     {
-      if(gravity_direction == 270)
-      {
-       gravity_direction = irandom_range(230,240);
-       start_gravity = random_range(0.02,0.16);
-      }
-     }
-     break; */   
     default:
      with(objBettySnow)
       instance_destroy();

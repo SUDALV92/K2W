@@ -101,6 +101,7 @@ finalSpawn = true;
   apple = instance_create(x,y,objExtraStageBloodFestivalApple);
   apple.gravity_direction = random(360);
   apple.gravity = 0.1;
+  apple.sprite_index = sprite_index;
   apple.mode = 8;
   apple.state = 1;
   apple.outsideDelete = true;

@@ -28,24 +28,6 @@
             <string>image_speed = 1/3;
 switch(room)
 {
-    case rStage1GGM: sprite_index = sprRedSpikeUp; break;
-    case rStage1EnjoyTheGame: sprite_index = sprGraySpikeUp; break;
-    case rStage1CTB1: sprite_index = sprWhiteSpikeUp; break;
-    case rStage1Exp: sprite_index = sprDarkgraySpikeUp; break;
-    case rStage1Fortress: sprite_index = sprBlackSpikeUp; break;
-    
-    case rStage2CTB2: sprite_index=sprCTB2SpikeUp; break;
-    case rStage2DT: sprite_index=sprDTSpikeUp; break;
-    case rStage2GreenMoon: sprite_index=sprGreenSpikeUp; break;
-    case rStage2Yassan: sprite_index=sprBlackSpikeUp; break;
-    case rStage2RunTerminal: sprite_index=sprRTTSpikeUp; break;
-    
-    case rStage3Uhuhu: sprite_index = sprUhuhuSpikeUp; break;
-    case rStage3Rukimin: sprite_index = sprRukiminSpikeUp; break;
-    case rStage3HeavenTrap: sprite_index = sprHv2SpikeUp; image_speed = 0; image_index = irandom(3); break;
-    case rStage3SeeTheMoon: sprite_index = sprStmSpikeUp; break;
-    case rStage3WhiteCherry: sprite_index = sprWcSpikeUp; break;
-    case rStage3TimeMachine: sprite_index = sprTTTSpikeUp; break;
     default: image_index=irandom(11); break;
 }
 go = false;

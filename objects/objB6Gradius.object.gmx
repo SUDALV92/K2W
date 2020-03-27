@@ -631,8 +631,8 @@ draw_sprite_ext(sprGradiusExhaus,0,x-17*image_xscale,y,image_xscale,image_yscale
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_stop_all();
-game_load("savestate");
+            <string>//audio_stop_all();
+//game_load("savestate");
 </string>
           </argument>
         </arguments>
@@ -655,7 +655,7 @@ game_load("savestate");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_save("savestate");
+            <string>//game_save("savestate");
 </string>
           </argument>
         </arguments>

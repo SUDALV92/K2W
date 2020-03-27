@@ -63,8 +63,8 @@ if(t mod 2 == 0)
     bullet.image_xscale = image_xscale;
     bullet.image_yscale = image_yscale;
     bullet.image_alpha = 0.8;
-    bullet.alphaFactor = 0.03;
-    bullet.scaleFactor = 0.15;
+    bullet.alphaFactor = 0.06;
+    bullet.scaleFactor = 0.06;
 }
 t++;
 </string>

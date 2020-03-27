@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>go = false;
+image_speed = 1/3;
+image_index=irandom(11);
 </string>
           </argument>
         </arguments>

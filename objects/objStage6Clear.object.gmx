@@ -80,6 +80,12 @@ with(objNumberMessage){instance_destroy();}
 with(objClearMessage){instance_destroy();}
 scrObjectDestroy(objPlayer);
 global.stageUnlocked[71] = true;
+if(global.currentSegmentIndex == 11)
+{
+ global.lastRunEnd[11] = global.time; 
+ global.lastRunStart[12] = global.time; 
+ global.currentSegmentIndex = 12;
+}
 room_goto(rBoss6Death);
 //objStage7Door.hspeed=2;
 </string>

@@ -96,6 +96,13 @@ if(!instance_exists(objPlayer))
  }
  else if(clear &amp;&amp; outroTimer &gt; 100)
  {
+    if(global.currentSegmentIndex ==  13)
+    {
+     global.lastRunEnd[13] = global.time; 
+     global.lastRunStart[14] = global.time; 
+     //global.currentSegmentID = irandom(1000000);
+     global.currentSegmentIndex = 14;
+    }    
   room_goto(rEnding);
  }
  else

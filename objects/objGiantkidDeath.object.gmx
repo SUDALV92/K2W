@@ -31,15 +31,6 @@ gravity=0.1;
 gravity_direction=270;
 image_speed=1/4;
 b=0;
-if(global.tempTrigger[0] == 1)
-{
-    if(global.achievement[24] == 0)
-    {
-        global.achievement[24] = 1;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 55;
-    }
-}
 
 //k2w logic
 audio_play_sound(global.sndDeath,0,0);

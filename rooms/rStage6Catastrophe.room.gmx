@@ -53,18 +53,13 @@ background_vspeed[0] = -1.5;</code>
   </views>
   <instances>
     <instance objName="objCstptrap1" x="-32" y="0" name="inst_B2550CD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx2" x="64" y="448" name="inst_5B31117E" locked="0" code="B=1;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objSpeedx2" x="64" y="448" name="inst_5B31117E" locked="0" code="B=1;&#xA;hDirection = 1;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="144" y="272" name="inst_508E6715" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="48" y="560" name="inst_5B073580" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumphalf" x="192" y="224" name="inst_BA8F9B43" locked="0" code="B=1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx2" x="32" y="32" name="inst_82787F74" locked="0" code="B=1;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx1" x="32" y="448" name="inst_D521605A" locked="0" code="B=1;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx1" x="128" y="224" name="inst_EADD942F" locked="0" code="B=1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx2" x="96" y="224" name="inst_6AF8C578" locked="0" code="B=1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpone" x="160" y="224" name="inst_F45619AD" locked="0" code="B=1;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="objJumpone" x="96" y="64" name="inst_D003BA8B" locked="0" code="B=1;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objJumphalf" x="128" y="64" name="inst_B0448328" locked="0" code="B=1;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objSpeedx1" x="32" y="64" name="inst_E4A461AA" locked="0" code="B=1;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objJumphalf" x="192" y="224" name="inst_BA8F9B43" locked="0" code="B=1;&#xA;hDirection = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpeedx2" x="32" y="32" name="inst_82787F74" locked="0" code="B=1;&#xA;hDirection = 0;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpeedx1" x="128" y="224" name="inst_EADD942F" locked="0" code="B=1;&#xA;hDirection = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objJumpone" x="96" y="64" name="inst_D003BA8B" locked="0" code="B=1;&#xA;hDirection = -1;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="160" y="96" name="inst_E5007A6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="264" y="96" name="inst_2D7D3E03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="312" y="96" name="inst_A924783E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

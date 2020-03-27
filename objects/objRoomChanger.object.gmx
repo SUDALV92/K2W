@@ -121,24 +121,6 @@ else
     other.y = warpY;
     other.speed = 0;
 }
-if(global.tempTrigger[0] == 22)
-{
- if(global.achievement[22] == 0)
- {
-     global.achievement[22] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 53;
- }
-}
-if(global.tempTrigger[0] = 23)
-{
- if(global.achievement[23] == 0)
- {
-     global.achievement[23] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 54;
- }
-}
 if(tempTrigger != -1)
 {
     global.tempTrigger[tempTrigger] = true;
@@ -147,268 +129,7 @@ if(autosave)
     global.autosave = true;
 if(global.grav == -1)
     scrFlipGrav(true);
-
-switch(room)
-{
-    case rStage1Fangame: global.lastRunEnd[0] = global.time; 
-        global.lastRunStart[1] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 1;
-        
-        if(global.lastRunStart[0] == -1) break;
-                
-        var clearTime = global.lastRunEnd[0] - global.lastRunStart[0];
-        
-        if(global.bestRun[0] == -1 || global.bestRun[0] &gt; clearTime)
-         global.bestRun[0] = clearTime;
-        
-        if(clearTime &lt;= 240)
-        {
-            if(global.achievement[0] == 0 || global.achievement[0] &gt; 1)
-            {
-                global.achievement[0] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 0;
-            }
-        }
-        else if(clearTime &lt;= 480)
-        {
-            if(global.achievement[0] == 0 || global.achievement[0] &gt; 2)
-            {
-                global.achievement[0] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 1;
-            }
-        }
-        else if(clearTime &lt;= 1200)
-        {
-            if(global.achievement[0] == 0)
-            {
-                global.achievement[0] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 2;
-            }
-        }
-        break;
-    case rBoss2Miku: global.lastRunEnd[2] = global.time; 
-        global.lastRunStart[3] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 3;
-        
-        if(global.lastRunStart[2] == -1) break;
-        
-        var clearTime = global.lastRunEnd[2] - global.lastRunStart[2];
-        
-        if(global.bestRun[2] == -1 || global.bestRun[2] &gt; clearTime)
-         global.bestRun[2] = clearTime;
-        
-        if(clearTime &lt;= 360)
-        {
-            if(global.achievement[1] == 0 || global.achievement[1] &gt; 1)
-            {
-                global.achievement[1] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 3;
-            }
-        }
-        else if(clearTime &lt;= 600)
-        {
-            if(global.achievement[1] == 0 || global.achievement[1] &gt; 2)
-            {
-                global.achievement[1] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 4;
-            }
-        }
-        else if(clearTime &lt;= 1500)
-        {
-            if(global.achievement[1] == 0)
-            {
-                global.achievement[1] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 5;
-            }
-        }
-        break;
-    case rStage4Galaxy:
-        if(instance_exists(objGxyBlock) &amp;&amp; objGxyBlock.C &lt;= 2)
-        {
-            if(global.achievement[18] == 0)
-            {
-                global.achievement[18] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 49;
-            }
-        }
-        break;
-    case rStage5BoshyB: global.lastRunEnd[8] = global.time; 
-        global.lastRunStart[9] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 9;
-        
-        if(global.lastRunStart[8] == -1) break;
-        
-        var clearTime = global.lastRunEnd[8] - global.lastRunStart[8];
-        
-        if(global.bestRun[8] == -1 || global.bestRun[8] &gt; clearTime)
-         global.bestRun[8] = clearTime;
-        
-        if(clearTime &lt;= 600)
-        {
-            if(global.achievement[4] == 0 || global.achievement[4] &gt; 1)
-            {
-                global.achievement[4] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 12;
-            }
-        }
-        else if(clearTime &lt;= 1200)
-        {
-            if(global.achievement[4] == 0 || global.achievement[4] &gt; 2)
-            {
-                global.achievement[4] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 13;
-            }
-        }
-        else if(clearTime &lt;= 2400)
-        {
-            if(global.achievement[4] == 0)
-            {
-                global.achievement[4] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 14;
-            }
-        }
-        break;
-    case rStage6LoveTrap: global.lastRunEnd[10] = global.time; 
-        global.lastRunStart[11] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 11;
-        for(var i = 0;i&lt;5;i++)
-        {
-         global.bossRushRerun[i] = 0;
-        }
-        
-        if(global.lastRunStart[10] == -1) break;
-                
-        var clearTime = global.lastRunEnd[10] - global.lastRunStart[10];
-        
-        if(global.bestRun[10] == -1 || global.bestRun[10] &gt; clearTime)
-         global.bestRun[10] = clearTime;
-        
-        if(clearTime &lt;= 1080)
-        {
-            if(global.achievement[5] == 0 || global.achievement[5] &gt; 1)
-            {
-                global.achievement[5] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 15;
-            }
-        }
-        else if(clearTime &lt;= 1800)
-        {
-            if(global.achievement[5] == 0 || global.achievement[5] &gt; 2)
-            {
-                global.achievement[5] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 16;
-            }
-        }
-        else if(clearTime &lt;= 3600)
-        {
-            if(global.achievement[5] == 0)
-            {
-                global.achievement[5] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 17;
-            }
-        }
-        break;
-    case rBoss6Death: 
-        global.lastRunStart[12] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 12;
-        
-        if((global.extra &amp;&amp; global.bossRushRerun[0] &amp;&amp; global.bossRushRerun[1] &amp;&amp; global.bossRushRerun[2] &amp;&amp; global.bossRushRerun[3] &amp;&amp; global.bossRushRerun[4]) || !global.extra)
-        {
-            global.lastRunEnd[11] = global.time;             
-            
-            if(global.lastRunStart[11] == -1) break;
-            
-            var clearTime = global.lastRunEnd[11] - global.lastRunStart[11];
-            
-            if(global.bestRun[11] == -1 || global.bestRun[11] &gt; clearTime)
-             global.bestRun[11] = clearTime;
-            
-            if(clearTime &lt;= 1200)
-            {
-                if(global.achievement[12] == 0 || global.achievement[12] &gt; 1)
-                {
-                    global.achievement[12] = 1;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 36;
-                }
-            }
-            else if(clearTime &lt;= 3600)
-            {
-                if(global.achievement[12] == 0 || global.achievement[12] &gt; 2)
-                {
-                    global.achievement[12] = 2;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 37;
-                }
-            }
-            else if(clearTime &lt;= 9600)
-            {
-                if(global.achievement[12] == 0)
-                {
-                    global.achievement[12] = 3;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 38;
-                }
-            }
-        }        
-        break;
-    case rStage7: global.lastRunEnd[12] = global.time; 
-        global.lastRunStart[13] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 13;
-        var clearTime = global.lastRunEnd[12] - global.lastRunStart[12];
-        
-        if(global.bestRun[12] == -1 || global.bestRun[12] &gt; clearTime)
-         global.bestRun[12] = clearTime;
-        
-        if(clearTime &lt;= 420)
-        {
-            if(global.achievement[6] == 0 || global.achievement[6] &gt; 1)
-            {
-                global.achievement[6] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 18;
-            }
-        }
-        else if(clearTime &lt;= 900)
-        {
-            if(global.achievement[6] == 0 || global.achievement[6] &gt; 2)
-            {
-                global.achievement[6] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 19;
-            }
-        }
-        else if(clearTime &lt;= 1800)
-        {
-            if(global.achievement[6] == 0)
-            {
-                global.achievement[6] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 20;
-            }
-        }
-        break;
-}    
-    
+ 
 room_goto(roomTo);
 </string>
           </argument>
@@ -448,24 +169,6 @@ else
     other.y = warpY;
     other.speed = 0;
 }
-if(global.tempTrigger[0] == 22)
-{
- if(global.achievement[22] == 0)
- {
-     global.achievement[22] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 53;
- }
-}
-if(global.tempTrigger[0] = 23)
-{
- if(global.achievement[23] == 0)
- {
-     global.achievement[23] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 54;
- }
-}
 if(tempTrigger != -1)
 {
     global.tempTrigger[tempTrigger] = true;
@@ -477,266 +180,52 @@ if(global.grav == -1)
 
 switch(room)
 {
-    case rStage1Fangame: global.lastRunEnd[0] = global.time; 
-        global.lastRunStart[1] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 1;
-        
-        if(global.lastRunStart[0] == -1) break;
-                
-        var clearTime = global.lastRunEnd[0] - global.lastRunStart[0];
-        
-        if(global.bestRun[0] == -1 || global.bestRun[0] &gt; clearTime)
-         global.bestRun[0] = clearTime;
-        
-        if(clearTime &lt;= 240)
+    case rStage1Fangame: 
+        if(global.currentSegmentIndex == 0)
         {
-            if(global.achievement[0] == 0 || global.achievement[0] &gt; 1)
-            {
-                global.achievement[0] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 0;
-            }
-        }
-        else if(clearTime &lt;= 480)
-        {
-            if(global.achievement[0] == 0 || global.achievement[0] &gt; 2)
-            {
-                global.achievement[0] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 1;
-            }
-        }
-        else if(clearTime &lt;= 1200)
-        {
-            if(global.achievement[0] == 0)
-            {
-                global.achievement[0] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 2;
-            }
+         global.lastRunEnd[0] = global.time; 
+         global.lastRunStart[1] = global.time; 
+         //global.currentSegmentID = irandom(1000000);
+         global.currentSegmentIndex = 1;
         }
         break;
-    case rBoss2Miku: global.lastRunEnd[2] = global.time; 
-        global.lastRunStart[3] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 3;
-        
-        if(global.lastRunStart[2] == -1) break;
-        
-        var clearTime = global.lastRunEnd[2] - global.lastRunStart[2];
-        
-        if(global.bestRun[2] == -1 || global.bestRun[2] &gt; clearTime)
-         global.bestRun[2] = clearTime;
-        
-        if(clearTime &lt;= 360)
+    case rBoss2Miku: 
+        if(global.currentSegmentIndex == 2)
         {
-            if(global.achievement[1] == 0 || global.achievement[1] &gt; 1)
-            {
-                global.achievement[1] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 3;
-            }
-        }
-        else if(clearTime &lt;= 600)
+         global.lastRunEnd[2] = global.time; 
+         global.lastRunStart[3] = global.time; 
+         //global.currentSegmentID = irandom(1000000);
+         global.currentSegmentIndex = 3;
+        }        
+        break;
+    case rStage5BoshyB: 
+        if(global.currentSegmentIndex == 8)
         {
-            if(global.achievement[1] == 0 || global.achievement[1] &gt; 2)
-            {
-                global.achievement[1] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 4;
-            }
-        }
-        else if(clearTime &lt;= 1500)
-        {
-            if(global.achievement[1] == 0)
-            {
-                global.achievement[1] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 5;
-            }
+         global.lastRunEnd[8] = global.time; 
+         global.lastRunStart[9] = global.time; 
+         //global.currentSegmentID = irandom(1000000);
+         global.currentSegmentIndex = 9;
         }
         break;
-    case rStage4Galaxy:
-        if(instance_exists(objGxyBlock) &amp;&amp; objGxyBlock.C &lt;= 2)
+    case rStage6LoveTrap: 
+        if(global.currentSegmentIndex == 10)
         {
-            if(global.achievement[18] == 0)
-            {
-                global.achievement[18] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 49;
-            }
-        }
-        break;
-    case rStage5BoshyB: global.lastRunEnd[8] = global.time; 
-        global.lastRunStart[9] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 9;
-        
-        if(global.lastRunStart[8] == -1) break;
-        
-        var clearTime = global.lastRunEnd[8] - global.lastRunStart[8];
-        
-        if(global.bestRun[8] == -1 || global.bestRun[8] &gt; clearTime)
-         global.bestRun[8] = clearTime;
-        
-        if(clearTime &lt;= 600)
-        {
-            if(global.achievement[4] == 0 || global.achievement[4] &gt; 1)
-            {
-                global.achievement[4] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 12;
-            }
-        }
-        else if(clearTime &lt;= 1200)
-        {
-            if(global.achievement[4] == 0 || global.achievement[4] &gt; 2)
-            {
-                global.achievement[4] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 13;
-            }
-        }
-        else if(clearTime &lt;= 2400)
-        {
-            if(global.achievement[4] == 0)
-            {
-                global.achievement[4] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 14;
-            }
-        }
-        break;
-    case rStage6LoveTrap: global.lastRunEnd[10] = global.time; 
-        global.lastRunStart[11] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 11;
-        for(var i = 0;i&lt;5;i++)
-        {
-         global.bossRushRerun[i] = 0;
-        }
-        
-        if(global.lastRunStart[10] == -1) break;
-                
-        var clearTime = global.lastRunEnd[10] - global.lastRunStart[10];
-        
-        if(global.bestRun[10] == -1 || global.bestRun[10] &gt; clearTime)
-         global.bestRun[10] = clearTime;
-        
-        if(clearTime &lt;= 1080)
-        {
-            if(global.achievement[5] == 0 || global.achievement[5] &gt; 1)
-            {
-                global.achievement[5] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 15;
-            }
-        }
-        else if(clearTime &lt;= 1800)
-        {
-            if(global.achievement[5] == 0 || global.achievement[5] &gt; 2)
-            {
-                global.achievement[5] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 16;
-            }
-        }
-        else if(clearTime &lt;= 3600)
-        {
-            if(global.achievement[5] == 0)
-            {
-                global.achievement[5] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 17;
-            }
+         global.lastRunEnd[10] = global.time; 
+         global.lastRunStart[11] = global.time; 
+         //global.currentSegmentID = irandom(1000000);
+         global.currentSegmentIndex = 11;
         }
         break;
     case rBoss6Phase1:
-        global.stageUnlocked[70] = true; break;
-    case rBoss6Death:         
-        global.lastRunStart[12] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 12;
-        
-        if((global.extra &amp;&amp; global.bossRushRerun[0] &amp;&amp; global.bossRushRerun[1] &amp;&amp; global.bossRushRerun[2] &amp;&amp; global.bossRushRerun[3] &amp;&amp; global.bossRushRerun[4]) || !global.extra)
-        {
-            global.lastRunEnd[11] = global.time;             
-            
-            if(global.lastRunStart[11] == -1) break;
-            
-            var clearTime = global.lastRunEnd[11] - global.lastRunStart[11];
-            
-            if(global.bestRun[11] == -1 || global.bestRun[11] &gt; clearTime)
-             global.bestRun[11] = clearTime;
-            
-            if(clearTime &lt;= 1200)
-            {
-                if(global.achievement[12] == 0 || global.achievement[12] &gt; 1)
-                {
-                    global.achievement[12] = 1;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 36;
-                }
-            }
-            else if(clearTime &lt;= 3600)
-            {
-                if(global.achievement[12] == 0 || global.achievement[12] &gt; 2)
-                {
-                    global.achievement[12] = 2;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 37;
-                }
-            }
-            else if(clearTime &lt;= 9600)
-            {
-                if(global.achievement[12] == 0)
-                {
-                    global.achievement[12] = 3;
-                    achievement = instance_create(0,0,objAchievement);
-                    achievement.index = 38;
-                }
-            }
-        }    
-        
-        break;
+        global.stageUnlocked[70] = true; break;    
     case rStage7:
         global.stageUnlocked[73] = true;
-        global.lastRunEnd[12] = global.time; 
-        global.lastRunStart[13] = global.time; 
-        global.currentSegmentID = irandom(1000000);
-        global.currentSegmentIndex = 13;
-        var clearTime = global.lastRunEnd[12] - global.lastRunStart[12];
-        
-        if(global.bestRun[12] == -1 || global.bestRun[12] &gt; clearTime)
-         global.bestRun[12] = clearTime;
-        
-        if(clearTime &lt;= 420)
+        if(global.currentSegmentIndex ==  12)
         {
-            if(global.achievement[6] == 0 || global.achievement[6] &gt; 1)
-            {
-                global.achievement[6] = 1;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 18;
-            }
-        }
-        else if(clearTime &lt;= 900)
-        {
-            if(global.achievement[6] == 0 || global.achievement[6] &gt; 2)
-            {
-                global.achievement[6] = 2;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 19;
-            }
-        }
-        else if(clearTime &lt;= 1800)
-        {
-            if(global.achievement[6] == 0)
-            {
-                global.achievement[6] = 3;
-                achievement = instance_create(0,0,objAchievement);
-                achievement.index = 20;
-            }
+         global.lastRunEnd[12] = global.time; 
+         global.lastRunStart[13] = global.time; 
+         //global.currentSegmentID = irandom(1000000);
+         global.currentSegmentIndex = 13;
         }
         break;
     case rExtraStageKTG:

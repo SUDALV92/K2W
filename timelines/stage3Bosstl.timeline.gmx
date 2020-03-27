@@ -2710,12 +2710,6 @@ objHPLBarfull.visible=0;
 {
     if(loop == 2)
     {
-        if(global.achievement[17] == 0)
-        {
-            global.achievement[17] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 48;
-        }
         objPlayer.x = 144;
         objPlayer.y = 407;
         room_goto(rBoss3Phase3);

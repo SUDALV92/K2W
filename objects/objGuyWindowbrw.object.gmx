@@ -153,45 +153,16 @@ A=0;
             <kind>1</kind>
             <string>if instance_exists(objPlayer)
 {
+ if(global.currentSegmentIndex == 3)
+ {
     global.lastRunEnd[3] = global.time; 
     global.lastRunStart[4] = global.time;
-    global.currentSegmentID = irandom(1000000);
+    //global.currentSegmentID = irandom(1000000);
     global.currentSegmentIndex = 4;
-    var clearTime = global.lastRunEnd[3] - global.lastRunStart[3];
-    
-    if(global.bestRun[3] == -1 || global.bestRun[3] &gt; clearTime)
-         global.bestRun[3] = clearTime;
-    
-    if(clearTime &lt;= 69)
-    {
-        if(global.achievement[8] == 0 || global.achievement[8] &gt; 1)
-        {
-            global.achievement[8] = 1;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 24;
-        }
-    }
-    else if(clearTime &lt;= 120)
-    {
-        if(global.achievement[8] == 0 || global.achievement[8] &gt; 2)
-        {
-            global.achievement[8] = 2;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 25;
-        }
-    }
-    else if(clearTime &lt;= 1200)
-    {
-        if(global.achievement[8] == 0)
-        {
-            global.achievement[8] = 3;
-            achievement = instance_create(0,0,objAchievement);
-            achievement.index = 26;
-        }
-    }
-    room_goto(rStage3500);
-    objPlayer.x=80;
-    objPlayer.y=512;
+ }  
+ room_goto(rStage3500);
+ objPlayer.x=80;
+ objPlayer.y=512;
 }
 </string>
           </argument>

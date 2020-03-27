@@ -53,12 +53,9 @@ dir=0;
           <argument>
             <kind>1</kind>
             <string>image_angle=direction;
-if C=0{D=point_distance(x,y,objHoujuuNue2.x,objHoujuuNue2.y); C=1;}
 
 if B=1{speed=2;
 dir+=2;
-x=objHoujuuNue2.x+lengthdir_x(point_distance(x,y,objHoujuuNue2.x,objHoujuuNue2.y),dir);
-y=objHoujuuNue2.y+lengthdir_y(point_distance(x,y,objHoujuuNue2.x,objHoujuuNue2.y),dir);
 if self.x&lt;-50 or self.x&gt;850 or self.y&lt;-50 or self.y&gt;650
 {instance_destroy();}}
 </string>

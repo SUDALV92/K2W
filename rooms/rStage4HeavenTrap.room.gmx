@@ -164,6 +164,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5Switcher" x="480" y="256" name="inst_BB6E9094" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergy" x="48" y="48" name="inst_F2174EE0" locked="0" code="energyID = 76;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="480" y="256" name="inst_411C1736" locked="0" code="trg = 6;&#xA;step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="224" y="384" name="inst_0259895A" locked="0" code="step = 6;&#xA;trg = 5;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSecret5Tileset" x="0" y="320" w="32" h="32" xo="0" yo="0" id="10044569" name="inst_686428C6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

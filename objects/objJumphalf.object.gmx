@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>B=0;
+hDirection = 0;
 </string>
           </argument>
         </arguments>
@@ -48,13 +49,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (objPlayer.gravity != 0.7)
+            <string>if(B == 1)
 {
-    if B=0
+ condition = true;
+ B = 0;
+}
+else condition = false;
+
+if (other.gravity != 0.7 &amp;&amp; condition)
+{
+    if(global.sfxDelay[0] &lt;= 0)
     {
-        audio_play_sound(global.sndTrap,0,0);
-    } 
-    objPlayer.gravity = 0.7;
+     audio_stop_sound(global.sndTrap);
+     audio_play_sound(global.sndTrap,0,0);
+     global.sfxDelay[0] = 10;
+    }
+    other.gravity = 0.7;
 }
 </string>
           </argument>

@@ -53,9 +53,6 @@ A=0;
             <string>if A=0{image_xscale=objHoujuuNue1.hp/objHoujuuNue1.fullhp;
 if objHoujuuNue1.hp=0{instance_destroy(); with(objHoujuuNue1){instance_destroy();}}}
 
-if A=1{image_xscale=objHoujuuNue2.hp/objHoujuuNue2.fullhp;
-if objHoujuuNue2.hp=0{instance_destroy(); with(objHoujuuNue2){instance_destroy();}}}
-
 if A=2{image_xscale=objHoujuuNue3.hp/objHoujuuNue3.fullhp;
 if objHoujuuNue3.hp=0{instance_destroy(); with(objHoujuuNue3){instance_destroy();}}}
 

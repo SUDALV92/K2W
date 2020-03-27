@@ -80,19 +80,9 @@ wc=instance_create(672,480,objWarp);
 wc.roomTo = rStage6BossRush;
 wc.autosave = true;
 global.bossRush[3] = true;
-global.bossRushRerun[3] = true;
 if(!global.gameClear)
     global.crashPortal[3] = true;
-    
-if(i &lt; 3300)
-{
- if(global.achievement[33] == 0)
- {
-     global.achievement[33] = 1;
-     achievement = instance_create(0,0,objAchievement);
-     achievement.index = 64;
- }
-}
+
 var rngAngle = random(360);
 for(var temp = 35; temp &lt; 40; temp++)
 {

@@ -72,7 +72,6 @@ if (savePosition)
     for (var i = 0; i < 5; i++)
     {
         global.saveBossRush[i] = global.bossRush[i];
-        global.saveBossRushRerun[i] = global.bossRushRerun[i];
     }
     
     for(var i = 0; i < 100; i++)
@@ -89,30 +88,23 @@ if (savePosition)
     {
      global.saveStageUnlocked[i] = global.stageUnlocked[i];
     }
-    global.saveAutoFire = global.autoFire;    
-    
-    global.saveGameClear = global.gameClear;
-    global.saveExtra = global.extra;
+    global.saveAutoFire = global.autoFire;        
     global.saveExtraClear = global.extraClear;
     global.savePortalAvailable = global.portalAvailable;
 }
 
 //create a map for time data
+if(savePosition)
+{
+ global.saveCurrentSegmentIndex = global.currentSegmentIndex;
+}
 var timeMap = ds_map_create();
 for (var i = 0; i < 16; i++)
 {
-    ds_map_add(timeMap,"bestRun["+string(i)+"]",global.bestRun[i]);
     ds_map_add(timeMap,"lastRunStart["+string(i)+"]",global.lastRunStart[i]);
     ds_map_add(timeMap,"lastRunEnd["+string(i)+"]",global.lastRunEnd[i]);
 }
-if(savePosition)
-{
- global.globalSegmentID = global.saveGlobalSegmentID;
- global.currentSegmentID = global.saveCurrentSegmentID;
-}
-ds_map_add(timeMap,"currentSegmentIndex",global.currentSegmentIndex);
-ds_map_add(timeMap,"currentSegmentID",global.saveCurrentSegmentID);
-ds_map_add(timeMap,"globalSegmentID",global.saveGlobalSegmentID);
+ds_map_add(timeMap,"currentSegmentIndex",global.saveCurrentSegmentIndex);
 
 //add md5 hash to verify saves and make them harder to hack
 ds_map_add(timeMap,"mapMd5",md5_string_unicode(json_encode(timeMap)+global.md5StrAdd));
@@ -127,21 +119,20 @@ ds_map_add(saveMap,"death",global.death);
 ds_map_add(saveMap,"time",global.time);
 ds_map_add(saveMap,"timeMicro",global.timeMicro);
 
-ds_map_add(saveMap,"saveRoom",global.saveRoom);
-ds_map_add(saveMap,"savePlayerX",global.savePlayerX);
-ds_map_add(saveMap,"savePlayerY",global.savePlayerY);
-ds_map_add(saveMap,"savePlayerType",global.savePlayerType);
-ds_map_add(saveMap,"saveGrav",global.saveGrav);
+ds_map_add(saveMap,"Room",global.saveRoom);
+ds_map_add(saveMap,"PlayerX",global.savePlayerX);
+ds_map_add(saveMap,"PlayerY",global.savePlayerY);
+ds_map_add(saveMap,"PlayerType",global.savePlayerType);
+ds_map_add(saveMap,"Grav",global.saveGrav);
 
 for (var i = 0; i < global.secretItemTotal; i++)
 {
-    ds_map_add(saveMap,"saveSecretItem["+string(i)+"]",global.saveSecretItem[i]);
+    ds_map_add(saveMap,"SecretItem["+string(i)+"]",global.saveSecretItem[i]);
 }
 
 for (var i = 0; i < 5; i++)
 {
-    ds_map_add(saveMap,"saveBossRush["+string(i)+"]",global.saveBossRush[i]);
-    ds_map_add(saveMap,"saveBossRushRerun["+string(i)+"]",global.saveBossRushRerun[i]);
+    ds_map_add(saveMap,"BossRush["+string(i)+"]",global.saveBossRush[i]);
 }
 
 for(var i = 0; i < 100; i++)
@@ -157,10 +148,7 @@ for(var i = global.stagesTotal; i >= 0; i--)
     ds_map_add(saveMap,"stageUnlocked["+string(i)+"]",global.saveStageUnlocked[i]);
 }
 ds_map_add(saveMap,"autoFire",global.saveAutoFire);
-
-ds_map_add(saveMap,"saveGameClear",global.saveGameClear);
-ds_map_add(saveMap,"saveExtra",global.saveExtra);
-ds_map_add(saveMap,"saveExtraClear",global.saveExtraClear);
+ds_map_add(saveMap,"ExtraClear",global.saveExtraClear);
 ds_map_add(saveMap,"portalAvailable",global.savePortalAvailable);
 
 //add md5 hash to verify saves and make them harder to hack
@@ -184,32 +172,3 @@ else    //use text file
 
 //destroy the map
 ds_map_destroy(saveMap);
-
-/*//check if extra item collected, then throw achievement
-if(secretItemCollected)
-{
- if(global.achievement[27] == 0)
- {
-  global.achievement[27] = 1;
-  achievement = instance_create(0,0,objAchievement);
-  achievement.index = 58;
- }
-}
-var allItemsCollected = true;
-for (var i = global.secretItemTotal-1; i >= 0; i--)
-{
-    if(!global.secretItem[i])
-        allItemsCollected = false;
-}
-
-if(allItemsCollected)
-{
- if(global.achievement[28] == 0)
- {
-  global.achievement[28] = 1;
-  achievement = instance_create(0,0,objAchievement);
-  achievement.index = 59;
- }
-}*/
-
-//scrSaveAchievements();

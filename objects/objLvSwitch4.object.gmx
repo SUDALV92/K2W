@@ -124,14 +124,6 @@ with(other){instance_destroy();}
             alarm[0]=9; 
         }
     }
-    
-    if(global.extra &amp;&amp; !global.secretItem[12])
-    {
-        item = instance_create(414,80,objExtraItem);
-        item.itemID = 12;
-        item.image_index = 12;
-        audio_play_sound(global.sndTrap,0,false);
-    }
 }
 </string>
           </argument>

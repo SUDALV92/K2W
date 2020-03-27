@@ -16,7 +16,6 @@ switch (room)                       //determines which song to play
     case rTitle:
         roomSong = -2;
         break;
-    case rAchievements:
     case rOptions:
         roomSong = global.sndTitle; volume = 0.7;
         break;

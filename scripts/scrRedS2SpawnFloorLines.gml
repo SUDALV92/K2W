@@ -1,4 +1,4 @@
-var lineColor = LineColor
+/*var lineColor = LineColor
 
 var lineSpeed = 10;
 var lineScale = 3;
@@ -36,4 +36,4 @@ line7.image_blend = lineColor;
 line7.image_xscale = lineScale;
 var line8 = scrRedCreateMovingImpulse( scrRedGetRFLine(), 608, -lineSpeed );
 line8.image_blend = lineColor;
-line8.image_xscale = lineScale;
+line8.image_xscale = lineScale;*/

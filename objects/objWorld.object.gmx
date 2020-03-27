@@ -448,7 +448,7 @@ if (keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("M")) &amp;
     scrSaveConfig();    //save mute setting
 }
 
-if(keyboard_check_released(ord("G")))
+/*if(keyboard_check_released(ord("G")))
 {
  global.godMode = !global.godMode;
 }
@@ -479,7 +479,7 @@ if(keyboard_check(vk_tab))
 if(keyboard_check_released(vk_backspace))
 {
  global.debug = !global.debug;
-}
+}*/
 </string>
           </argument>
         </arguments>
@@ -513,7 +513,7 @@ else
 
 if(f5pressed)
 {
-    if((global.portalAvailable))
+    if(global.portalAvailable)
     {
         for (var i = global.secretItemTotal-1; i &gt;= 0; i--)
         {
@@ -522,135 +522,6 @@ if(f5pressed)
         
         switch(room)
         {
-            case rStage0:
-            case rStage1Chocko:
-            case rStage1GGM:
-            case rStage1EnjoyTheGame:
-            case rStage1CTB1:
-            case rStage1MysHouse:
-            case rStage1YellowStar:
-            case rStage1DarkBlue:
-            case rStage1Exp:
-            case rStage1Fortress:
-            case rStage1Fangame:
-                global.lastRunStart[0] = -1; global.lastRunEnd[0] = -1; break;
-            
-            case rBoss1Save:
-            case rBoss1Volcano:
-                global.lastRunStart[1] = -1; global.lastRunEnd[1] = -1; break;
-            
-            case rStage2CTB2:
-            case rStage2DT:
-            case rStage2GreenMoon:
-            case rStage2Showdown:
-            case rStage2Green:
-            case rStage2Tribute:
-            case rStage2Yassan:
-            case rStage2RunTerminal:
-            case rStage2BestGuy:
-            case rStage2GuyTower:
-            case rStage2GuyTower2: 
-                global.lastRunStart[2] = -1; global.lastRunEnd[2] = -1; break;
-            
-            case rBoss2Guy:        
-            case rBoss2Save:
-                global.lastRunStart[3] = -1; global.lastRunEnd[3] = -1; break;
-            
-            case rStage3500:
-            case rStage3Uhuhu:
-            case rStage3Skyclad:
-            case rStage3CQ:
-            case rStage3Rukimin:
-            case rStage3Diverse:
-            case rStage3HeavenTrap:
-            case rStage3SeeTheMoon:
-            case rStage3WhiteCherry:
-            case rStage3TimeMachine:
-            case rStage3TimeMachine2:
-                global.lastRunStart[4] = -1; global.lastRunEnd[4] = -1; break;
-            
-            case rBoss3Save:
-            case rBoss3Phase1:
-            case rBoss3Phase2:
-            case rBoss3Phase3:
-            case rBoss3Avoid1:
-            case rBoss3Avoid2:
-            case rBoss3Avoid3:
-            case rBoss3Avoid4:
-            case rBoss3Rip:
-                global.lastRunStart[5] = -1; global.lastRunEnd[5] = -1; break;
-            
-            case rStage4Galaxy:
-            case rStage4GB:
-            case rStage4Phantom:
-            case rStage4Device:
-            case rStage4HeavenTrap:
-            case rStage4ShinySparkA: 
-            case rStage4ShinySparkB:
-            case rStage4ShinySparkC:
-            case rStage4Conscience:
-            case rStage4Explorer:
-            case rStage4Competitor:
-            case rStage4KTGA:
-            case rStage4KTGB:
-                global.lastRunStart[6] = -1; global.lastRunEnd[6] = -1; break;
-                
-            case rBoss4Save:
-            case rBoss4Phase1:
-            case rBoss4Avoid:
-            case rBoss4Phase2:
-                global.lastRunStart[7] = -1; global.lastRunEnd[7] = -1; break;
-            
-            case rStage5Color:
-            case rStage5Scapegoat:
-            case rStage5Symetry:
-            case rStage5RainbowMiku:
-            case rStage5Unknown:
-            case rStage5BloodFestival:
-            case rStage5Dieary:
-            case rStage5PYF:
-            case rStage5Locus:
-            case rStage5Boshy:
-            case rStage5BoshyB:
-                global.lastRunStart[8] = -1; global.lastRunEnd[8] = -1; break;
-                
-            case rBoss5Save:
-            case rBoss5Phase1:
-            case rBoss5Phase2:
-            case rBoss5Avoid:
-            case rBoss5Phase3:
-            case rBoss5Death:
-                global.lastRunStart[9] = -1; global.lastRunEnd[9] = -1; break;
-                
-            case rStage6GR:
-            case rStage6DotKid:
-            case rStage6Crimson:
-            case rStage6Destination: 
-            case rStage6BreakingOut: 
-            case rStage6SevenTrials:
-            case rStage6Sadist:
-            case rStage6Catastrophe:
-            case rStage6Popularity:
-            case rStage6LoveTrap: 
-                global.lastRunStart[10] = -1; global.lastRunEnd[10] = -1; break;
-    
-            case rBoss6GravityMan:
-            case rBoss6Nue:    
-            case rBoss6Crimson:
-            case rBoss6Destination:
-            case rStage6BossRush:
-            case rBoss6Phase1: 
-            case rBoss6Phase2:
-                global.lastRunStart[11] = -1; global.lastRunEnd[11] = -1; break;
-            
-            case rStage7:
-                global.lastRunStart[12] = -1; global.lastRunEnd[12] = -1; break;
-            
-            case rStage7B:
-            case rBoss7Phase1:
-            case rBoss7Phase2:
-            case rBoss7Phase4:
-                global.lastRunStart[13] = -1; global.lastRunEnd[13] = -1; break;
             case rEscapeA:
             case rEscapeB:
             case rEscapeC:
@@ -671,9 +542,9 @@ if(f5pressed)
             case rTrueEnding:
             case rHomeBad:
             case rHomeGood:
+            case rSaveBroken:
              exit; break;
         }
-        global.currentSegmentIndex = -1;
         scrObjectDestroy(objEnergy);
         for(var temp = 0; temp &lt; 100; temp++)
         {
@@ -1262,7 +1133,7 @@ event_user(1);
           <argument>
             <kind>1</kind>
             <string>///draw pause screen
-
+draw_set_valign(fa_top);
 if (global.gamePaused)  //check if game is paused to draw the pause screen
 {
     draw_clear(c_black);
@@ -1317,9 +1188,21 @@ else if(drawEnergy)
      if(global.energy[temp])
       totalEnergy++;
     }
+     if(instance_exists(objPlayer) &amp;&amp; objPlayer.x &lt; 300 &amp;&amp; objPlayer.y &gt; view_yview + 576)
+     {
+      //drawX = view_xview[0] + view_wview[0] - 10;
+      drawX = 760;
+      draw_set_halign(fa_right);
+     }
+     else
+     {
+      //drawX = view_xview[0] + 10;
+      drawX = 40;
+      draw_set_halign(fa_left);
+     }
     draw_set_color(c_white);
-    draw_set_halign(fa_left);
     draw_set_font(fJoystix20);
+    
     scrDrawTextOutline(40,550,"Energy: " + string(totalEnergy) + "%",c_white,c_black);
 }
 </string>
@@ -1343,11 +1226,19 @@ else if(drawEnergy)
           <argument>
             <kind>1</kind>
             <string>///draw timer
+switch(room)
+{
+ case rEnding:
+ case rEnding2:
+ case rEnding3:
+ case rEnding4:
+ case rEnding5:
+  exit; break;
+}
 draw_set_colour(c_white);
+draw_set_font(fJoystix12);
 
-draw_set_font(fDefault12);
-
-if(global.timerEnabled &amp;&amp; global.currentSegmentIndex != -1)
+if(global.gameStarted &amp;&amp; global.timerEnabled &amp;&amp; global.currentSegmentIndex &lt; 17)
 {
  segmentTime = global.time - global.lastRunStart[global.currentSegmentIndex];
  timer = "";
@@ -1375,7 +1266,7 @@ if(global.timerEnabled &amp;&amp; global.currentSegmentIndex != -1)
   drawX = 10;
   draw_set_halign(fa_left);
  }
- 
+ draw_set_valign(fa_top);
  scrDrawTextOutline(drawX,588,string(timer),c_white,c_black);
  //scrDrawTextOutline(100,100,string(instance_number(objGrollaTan2)),c_white,c_black);
 }
@@ -1405,6 +1296,7 @@ if(global.debug)
  draw_set_halign(fa_left);
  draw_set_valign(fa_top);
  scrDrawTextOutline(10,10,"Real FPS: " + string(fps_real),c_white,c_black);
+ scrDrawTextOutline(10,40,"Instances: " + string(instance_count),c_white,c_black);
 }
 </string>
           </argument>

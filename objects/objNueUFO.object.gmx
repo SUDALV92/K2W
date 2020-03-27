@@ -167,10 +167,6 @@ instance_destroy();
             <kind>1</kind>
             <string>if(room == rBoss6Nue)
 {
-    if(instance_exists(objHoujuuNue4))
-    {
-     objHoujuuNue4.achievement = false;
-    }
     instance_destroy();
 }
 </string>

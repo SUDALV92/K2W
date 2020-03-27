@@ -88,6 +88,7 @@ c=random(360);
             <kind>1</kind>
             <string>fadelight = instance_create(0,0,objFadelight);
 fadelight.image_alpha = 0.5;
+audio_stop_sound(global.sndTanmak2);
 audio_play_sound(global.sndTanmak2,0,0);
 factor = 1.5;//choose(-1,1);
 //if(instance_exists(objPlayer))

@@ -14,30 +14,11 @@ if (loadFile)
     {
         for (var i = 0; i < 16; i++)
         {
-            global.bestRun[i] = ds_map_find_value(timeMap,"bestRun["+string(i)+"]");
             global.lastRunStart[i] = ds_map_find_value(timeMap,"lastRunStart["+string(i)+"]");
             global.lastRunEnd[i] = ds_map_find_value(timeMap,"lastRunEnd["+string(i)+"]");
         }
-        global.currentSegmentIndex = ds_map_find_value(timeMap,"currentSegmentIndex");
-        global.saveCurrentSegmentID = ds_map_find_value(timeMap,"currentSegmentID");
-        if(global.currentSegmentID != 0 && global.currentSegmentID != global.saveCurrentSegmentID)
-        {
-         global.currentSegmentIndex = -1;
-         global.currentSegmentID = 0;
-        }
-        else
-        {
-         global.currentSegmentID = global.saveCurrentSegmentID;
-        }
-        global.saveGlobalSegmentID = ds_map_find_value(timeMap, "globalSegmentID");
-        if(global.globalSegmentID != 0 && global.globalSegmentID != global.saveGlobalSegmentID)
-        {
-         global.lastRunStart[14] = -1;
-        }
-        else
-        {
-         global.globalSegmentID = global.saveGlobalSegmentID;
-        }
+        global.saveCurrentSegmentIndex = ds_map_find_value(timeMap,"currentSegmentIndex");       
+        
         //load md5 string from the save map
         var mapMd5 = ds_map_find_value(timeMap,"mapMd5");
         
@@ -90,19 +71,19 @@ if (loadFile)
         global.time = ds_map_find_value(saveMap,"time");
         global.timeMicro = ds_map_find_value(saveMap,"timeMicro");
         
-        global.saveRoom = ds_map_find_value(saveMap,"saveRoom");
-        global.savePlayerX = ds_map_find_value(saveMap,"savePlayerX");
-        global.savePlayerY = ds_map_find_value(saveMap,"savePlayerY");
-        global.savePlayerType = ds_map_find_value(saveMap,"savePlayerType");
-        global.saveGrav = ds_map_find_value(saveMap,"saveGrav");
+        global.saveRoom = ds_map_find_value(saveMap,"Room");
+        global.savePlayerX = ds_map_find_value(saveMap,"PlayerX");
+        global.savePlayerY = ds_map_find_value(saveMap,"PlayerY");
+        global.savePlayerType = ds_map_find_value(saveMap,"PlayerType");
+        global.saveGrav = ds_map_find_value(saveMap,"Grav");
         for (var i = 0; i < global.secretItemTotal; i++)
         {
-            global.saveSecretItem[i] = ds_map_find_value(saveMap,"saveSecretItem["+string(i)+"]");
+            global.saveSecretItem[i] = ds_map_find_value(saveMap,"SecretItem["+string(i)+"]");
         }
+        
         for (var i = 0; i < 5; i++)
         {
-            global.saveBossRush[i] = ds_map_find_value(saveMap,"saveBossRush["+string(i)+"]");
-            global.saveBossRushRerun[i] = ds_map_find_value(saveMap,"saveBossRushRerun["+string(i)+"]");
+            global.saveBossRush[i] = ds_map_find_value(saveMap,"BossRush["+string(i)+"]");
         }
         
         for(var i = 0; i < 100; i++)
@@ -116,8 +97,7 @@ if (loadFile)
         for(var i = global.stagesTotal; i >= 0; i--)
         {
             global.saveStageUnlocked[i] = ds_map_find_value(saveMap,"stageUnlocked["+string(i)+"]");
-        }
-        
+        }        
         
         if (is_string(global.saveRoom))   //check if the saved room loaded properly
         {
@@ -129,12 +109,8 @@ if (loadFile)
             saveValid = false;
         }
         
-        
-        
-        global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");        
-        global.saveGameClear = ds_map_find_value(saveMap,"saveGameClear");
-        global.saveExtra = ds_map_find_value(saveMap,"saveExtra");
-        global.saveExtraClear = ds_map_find_value(saveMap,"saveExtraClear");
+        global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");
+        global.saveExtraClear = ds_map_find_value(saveMap,"ExtraClear");
         global.savePortalAvailable = ds_map_find_value(saveMap,"portalAvailable");
         
         //load md5 string from the save map
@@ -191,7 +167,6 @@ for (var i = 0; i < global.secretItemTotal; i++)
 for (var i = 0; i < 5; i++)
 {
     global.bossRush[i] = global.saveBossRush[i];
-    global.bossRushRerun[i] = global.saveBossRushRerun[i];
 }
 
 for(var i = 0; i < 100; i++)
@@ -207,29 +182,11 @@ for(var i = global.stagesTotal; i >= 0; i--)
  global.stageUnlocked[i] = global.saveStageUnlocked[i];
 }
 global.autoFire = global.saveAutoFire;
-
-global.gameClear = global.saveGameClear;
-global.extra = global.saveExtra;
 global.extraClear = global.saveExtraClear;
 global.portalAvailable = global.savePortalAvailable;
-
-if(global.globalSegmentID != global.saveGlobalSegmentID)
-{
- global.lastRunStart[14] = -1;
- global.globalSegmentID = -1;
-}
-
-if(global.currentSegmentID != global.saveCurrentSegmentID)
-{
- if(global.currentSegmentIndex != -1)
-  global.lastRunStart[global.currentSegmentIndex] = -1;
- global.currentSegmentIndex = -1; 
- global.currentSegmentID = -1;
-}
+global.currentSegmentIndex = global.saveCurrentSegmentIndex;
 
 if(global.savePlayerType == 0)
  instance_create(global.savePlayerX,global.savePlayerY,objPlayer);
-
-//scrLoadAchievements();
 
 room_goto(asset_get_index(global.saveRoom));

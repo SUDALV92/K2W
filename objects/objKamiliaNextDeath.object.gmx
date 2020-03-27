@@ -114,37 +114,6 @@ A=0;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(global.tempTrigger[0] == 1 &amp;&amp; global.currentSegmentIndex != -1)
-{
-    if(global.achievement[26] == 0)
-    {
-        global.achievement[26] = 1;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 57;
-    }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="1">
       <action>
         <libid>1</libid>
@@ -162,43 +131,7 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.lastRunEnd[13] = global.time;
-global.currentSegmentIndex = -1;
-var clearTime = global.lastRunEnd[13] - global.lastRunStart[13];
-
-if(global.bestRun[13] == -1 || global.bestRun[13] &gt; clearTime)
-         global.bestRun[13] = clearTime;
-
-if(clearTime &lt;= 600)
-{
-    if(global.achievement[13] == 0 || global.achievement[13] &gt; 1)
-    {
-        global.achievement[13] = 1;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 39;
-    }
-}
-else if(clearTime &lt;= 2400)
-{
-    if(global.achievement[13] == 0 || global.achievement[13] &gt; 2)
-    {
-        global.achievement[13] = 2;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 40;
-    }
-}
-else if(clearTime &lt;= 6000)
-{
-    if(global.achievement[13] == 0)
-    {
-        global.achievement[13] = 3;
-        achievement = instance_create(0,0,objAchievement);
-        achievement.index = 41;
-    }
-}
-if(global.lastRunStart[14] != -1)
-    global.lastRunEnd[14] = global.time;
-room_goto(rEnding);
+            <string>room_goto(rEnding);
 </string>
           </argument>
         </arguments>

@@ -50,7 +50,7 @@ whiteAlpha = 0;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_sprite_ext(sprEndingHole,0,x+249,y,1,1,0,c_white,objWorld.whiteAlpha);
+//draw_sprite_ext(sprEndingHole,0,x+249,y,1,1,0,c_white,0.2)//objWorld.whiteAlpha);
 </string>
           </argument>
         </arguments>

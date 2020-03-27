@@ -86,6 +86,11 @@ if( t == 10442 - 50 ) {
 }
 else if(t == 11650)
 {
+ if(global.currentSegmentIndex ==  16)
+ {
+  global.lastRunEnd[16] = global.time; 
+  global.currentSegmentIndex = 17;
+ }
  scrObjectDestroy(objPlayer);
  room_goto(rTrueEnding);
 }

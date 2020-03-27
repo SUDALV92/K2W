@@ -147,21 +147,7 @@ if delay&gt;0{delay-=1;}
         if objPlayer.sprite_index!=sprPlayerRunning
         {
             {
-                objPlayer.vspeed=-4; 
-                if(global.goombaChallenge != -1)
-                {
-                    global.goombaChallenge += 1;
-                    if(objGeezer2.goombaChallengeEnd &amp;&amp; instance_number(objGumba) == 1)
-                    {
-                        if(global.achievement[19] == 0)
-                        {
-                            global.achievement[19] = 1;
-                            achievement = instance_create(0,0,objAchievement);
-                            achievement.index = 50;
-                        }
-                    }
-                }
-                
+                objPlayer.vspeed=-4;
                 instance_destroy();
             }
         }

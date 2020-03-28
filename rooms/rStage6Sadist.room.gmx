@@ -72,7 +72,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeUp" x="480" y="528" name="inst_A37CCDA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="512" y="528" name="inst_82317B89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="496" y="496" name="inst_C725B1E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="496" y="480" name="inst_E4B7D064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="496" y="480" name="inst_E4B7D064" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="160" y="96" name="inst_230F2104" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="256" y="448" name="inst_FF9000FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="272" y="480" name="inst_01CA00EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -155,7 +155,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSadistTrap2" x="264" y="256" name="inst_9837D8F7" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSadistTrap1" x="160" y="288" name="inst_AD31426B" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSadistTrap1" x="192" y="288" name="inst_C2AEE844" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="-32" y="-24" name="inst_E1AF0DDA" locked="0" code="sprite_index = sprWaterBlock;&#xA;" scaleX="27" scaleY="21" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="-24" y="-40" name="inst_E1AF0DDA" locked="0" code="sprite_index = sprWaterBlock;&#xA;" scaleX="27" scaleY="21" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="96" y="0" name="inst_AB11AEF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="128" y="0" name="inst_9D7689C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="96" y="96" name="inst_A0044D3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -172,7 +172,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeRight" x="128" y="352" name="inst_B6500992" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="96" y="352" name="inst_63381895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="112" y="432" name="inst_1309B99A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="144" y="432" name="inst_A64E76DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="144" y="432" name="inst_A64E76DE" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="112" y="512" name="inst_689C33B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="144" y="512" name="inst_05A47A7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="64" y="544" name="inst_8397A274" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

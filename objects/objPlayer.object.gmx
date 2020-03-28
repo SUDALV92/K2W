@@ -66,15 +66,7 @@ if (global.autosave) //save the game if currently set to autosave
     scrSaveGame(true);
     global.autosave = false;
 }
-switch(room)
-{
- case rExtraStageFinalDeadRoom:
-  clockControl = true;
-  break;
- default:
-  clockControl = false;
-  break;
-}
+
 event_user(0);
 </string>
           </argument>
@@ -976,6 +968,20 @@ switch(room)
 if(global.infJump)
 {
  infJump = true;
+}
+else
+{
+ infJump = false;
+}
+
+switch(room)
+{
+ case rExtraStageFinalDeadRoom:
+  clockControl = true;
+  break;
+ default:
+  clockControl = false;
+  break;
 }
 </string>
           </argument>

@@ -373,15 +373,17 @@ else
  }
 
  if(scrButtonCheck(global.shootButton) &amp;&amp; !shutdown)
- {
+ {  
   if(global.stageUnlocked[global.selectedStage] &amp;&amp; global.selectedStage != 83)
   {
    scrObjectDestroy(objPlayer);
+   io_clear();
    room_goto(global.stageRoom[global.selectedStage]);
   }
   if(global.selectedStage == 83 &amp;&amp; totalEnergy == 100)
   {   
    audio_sound_gain(global.currentMusic,0,2000);
+   io_clear();
    instance_change(objComputerShutdown,true);
   }
  }

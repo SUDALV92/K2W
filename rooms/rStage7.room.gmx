@@ -61,7 +61,7 @@
     <instance objName="objMorejump1" x="752" y="496" name="inst_33200E8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMorejump1" x="720" y="432" name="inst_274423E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMorejump1" x="752" y="336" name="inst_C0D7A185" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="912" y="80" name="inst_587E5850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="944" y="80" name="inst_587E5850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGravityUp" x="368" y="528" name="inst_4E14A7A4" locked="0" code="C=1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGravityDown" x="880" y="48" name="inst_19BA0AA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGravityDown" x="880" y="80" name="inst_8BD62FA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -330,7 +330,7 @@
     <instance objName="objBlock" x="32" y="96" name="inst_A359E45E" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="0" name="inst_8C2ADA24" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="448" y="0" name="inst_4CD62164" locked="0" code="" scaleX="16" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="928" y="32" name="inst_2E75B81E" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="928" y="96" name="inst_2E75B81E" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="128" name="inst_257FB203" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="160" name="inst_35097FCC" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="416" name="inst_29FD74A8" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
@@ -421,7 +421,7 @@
     <instance objName="objMTrap3" x="32" y="128" name="inst_74F2E3D5" locked="0" code="trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMTrap3" x="32" y="160" name="inst_94922A50" locked="0" code="trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMTrap3" x="32" y="192" name="inst_F005F7CB" locked="0" code="trap = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="832" y="64" name="inst_120514E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="896" y="64" name="inst_120514E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMTrap1" x="448" y="224" name="inst_7BEF35F5" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMTrap1" x="96" y="320" name="inst_EC00EBB4" locked="0" code="trap = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMTrap2" x="832" y="32" name="inst_6E65E8E2" locked="0" code="trap = 22;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -642,6 +642,8 @@
     <instance objName="objMiniLeft" x="2064" y="448" name="inst_EF86502F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="2064" y="464" name="inst_6E0ED149" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMLaserBlocker" x="2272" y="224" name="inst_8D9FE1C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="32" y="496" name="inst_8475AFD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="960" y="0" name="inst_3756E69F" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgMStageTileset" x="0" y="96" w="32" h="32" xo="0" yo="0" id="10055777" name="inst_478F1F1F" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -711,8 +713,6 @@
     <tile bgName="bgMStageTileset" x="896" y="-32" w="32" h="32" xo="0" yo="0" id="10055866" name="inst_110531CD" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgMStageTileset" x="928" y="-32" w="32" h="32" xo="0" yo="0" id="10055867" name="inst_7338D127" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgMStageTileset" x="928" y="0" w="32" h="32" xo="0" yo="0" id="10055868" name="inst_F7BA2402" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgMStageTileset" x="928" y="32" w="32" h="32" xo="0" yo="0" id="10055869" name="inst_C9B63189" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgMStageTileset" x="928" y="64" w="32" h="32" xo="0" yo="0" id="10055870" name="inst_EE401A3C" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgMStageTileset" x="928" y="96" w="32" h="32" xo="0" yo="0" id="10055871" name="inst_81C904B6" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgMStageTileset" x="928" y="128" w="32" h="32" xo="0" yo="0" id="10055872" name="inst_3F29293D" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgMStageTileset" x="896" y="128" w="32" h="32" xo="0" yo="0" id="10055873" name="inst_625B6111" depth="99999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -134,7 +134,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeDown" x="336" y="160" name="inst_A6F72A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="400" y="384" name="inst_13C9C26E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="576" y="224" name="inst_D43CD90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="672" y="352" name="inst_92406603" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="672" y="352" name="inst_92406603" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="704" y="336" name="inst_A11B5751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="736" y="352" name="inst_1BB2665F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="704" y="432" name="inst_6D049B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -233,8 +233,8 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeRight" x="448" y="512" name="inst_03994A51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="512" y="472" name="inst_05FC4F8D" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="576" y="472" name="inst_150AF865" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="320" y="464" name="inst_07C00ACB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeUp" x="384" y="464" name="inst_027AAECE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="320" y="464" name="inst_07C00ACB" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeUp" x="384" y="464" name="inst_027AAECE" locked="0" code="depth=1200000;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="384" y="496" name="inst_BD4335AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="336" y="560" name="inst_335399A7" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="368" y="560" name="inst_65576356" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

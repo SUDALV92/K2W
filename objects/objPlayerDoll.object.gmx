@@ -61,12 +61,12 @@ maxSpeed = 20;
 
 if(frozen) exit;
 
-if(hspeed &gt; 0)
+if(round(hspeed) &gt; 0)
 {
     sprite_index = sprPlayerRunning;
     image_xscale = 1;
 }
-else if(hspeed &lt; 0)
+else if(round(hspeed) &lt; 0)
 {
     sprite_index = sprPlayerRunning;
     image_xscale = -1;

@@ -119,7 +119,7 @@
     <instance objName="objBlock" x="544" y="544" name="inst_29C46346" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="480" y="576" name="inst_53CCCB8D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="704" y="544" name="inst_6F7A5CCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objKillerBlock" x="192" y="608" name="inst_5B79924F" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="192" y="608" name="inst_5B79924F" locked="0" code="" scaleX="19" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="48" y="304" name="inst_F3ADD733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="128" y="304" name="inst_855ED306" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="48" y="112" name="inst_7AC2AFB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -401,6 +401,7 @@
     <instance objName="objBlockFake" x="736" y="576" name="inst_B83E1778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="768" y="576" name="inst_07526E17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="80" y="560" name="inst_D4017806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objKillerBlock" x="800" y="480" name="inst_98302987" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background3" x="80" y="240" w="32" h="32" xo="64" yo="32" id="10004007" name="tile_B1DD2670" depth="999999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

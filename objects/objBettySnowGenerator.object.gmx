@@ -131,14 +131,14 @@ else
     case rStage3SeeTheMoon:
     case rStage3WhiteCherry:
     case rTrueEnding:
-     ttt = false;
-     repeat(12)
+        ttt = false;
+        scrObjectDestroy(objBettySnow);
+        repeat(24)
         {
-        b = instance_create(random(800),random(608),objBettySnow);
-        b.b = random_range(0.3,0.8);
-        b.speed = 1;
+         a1=instance_create(random_range(-32,832),irandom_range(0,608),objBettySnow);
+         a1.speed = 1;
         }
-     break;
+        break;
     default:
      with(objBettySnow)
       instance_destroy();

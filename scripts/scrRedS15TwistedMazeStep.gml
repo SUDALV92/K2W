@@ -90,7 +90,8 @@ if( t == 8357 ) {
     spawner.MinSpeed = 10;
     spawner.MaxSpeed = 10;
     spawner.TrailCount = 3;
-    spawner.DirIndex = 4;
+    spawner.CurrentDir = 0;
+    spawner.DirDelta = 10;
 } else if( t == 9050 ) {
     scrRedDestroy( oRedAttachedSpawner );
     with( oRedS15DoomSpike ) {
@@ -105,3 +106,4 @@ if( t == 8357 ) {
         scrRedShakeViewX( 10, 10 );
     }
 }
+

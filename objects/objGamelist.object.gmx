@@ -31,7 +31,7 @@
     switch(room)
     {
         case rStage0: image_index=1; cardName = "Kill The Kamilia"; break;
-        case rStage1Chocko: image_index = 2; cardName = "Choko Choko"; break;
+        case rStage1Chocko: image_index = 2; cardName = "ChokoChoko"; break;
         case rStage1GGM: image_index = 3; cardName = "GGM"; break;
         case rStage1EnjoyTheGame: image_index = 4; cardName = "Enjoy The Game"; break;
         case rStage1CTB1: image_index = 5; cardName = "Conquer#The Blow Game"; break;

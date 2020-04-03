@@ -83,6 +83,8 @@ with(objYellowCherry1)
 }
 
 depth=0;
+background_hspeed[1]=-1.5;
+background_vspeed[1]=-1.5;
 }
 </string>
           </argument>

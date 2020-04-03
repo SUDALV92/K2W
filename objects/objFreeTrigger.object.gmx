@@ -984,6 +984,7 @@ switch(room)
           }
          }
          with(objSymetryTrapUp) if(trap == 21) instance_destroy(); 
+         with(objSymetryTrapUp) if(trap == other.trg) go = true; 
          break;
      }
      break;    

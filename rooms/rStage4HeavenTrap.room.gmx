@@ -93,7 +93,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlockFake" x="736" y="448" name="inst_15399723" locked="0" code="sprite_index = sprBlockS5C;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="416" y="96" name="inst_363330F7" locked="0" code="trg = 1;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="416" y="124" name="inst_E47BCD32" locked="0" code="trg = 4;&#xA;step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="352" y="480" name="inst_C51DE888" locked="0" code="trg = 2;&#xA;step = 3;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="352" y="480" name="inst_C51DE888" locked="0" code="trg = 2;&#xA;step = 1;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="0" y="512" name="inst_A8D14565" locked="0" code="trg = 3;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="96" y="416" name="inst_7A6386B2" locked="0" code="sprite_index = sprMovingPlatform;&#xA;visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHTrapLeft" x="608" y="128" name="inst_C32D47F1" locked="0" code="trap = 3;&#xA;step = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

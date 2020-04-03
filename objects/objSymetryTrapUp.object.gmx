@@ -106,6 +106,10 @@ switch(trap)
   hspeed = 4;
   alarm[0] = 4;
   break;
+ case 43:
+  vspeed = -2;
+  alarm[0] = 16;
+  break;
  case 27:
   hspeed = -4;
   alarm[0] = 4;

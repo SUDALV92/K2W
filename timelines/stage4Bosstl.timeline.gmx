@@ -4158,7 +4158,8 @@ audio_play_sound(global.sndGeezer1,0,0);
           <argument>
             <kind>1</kind>
             <string>global.curDanmaku=global.sndMoonWings;
-audio_play_sound(global.curDanmaku,0,0);
+if(!global.muteMusic)
+ audio_play_sound(global.curDanmaku,0,0);
 </string>
           </argument>
         </arguments>

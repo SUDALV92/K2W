@@ -57,7 +57,7 @@ speed=5;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="objBlock">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -74,7 +74,10 @@ speed=5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>if(y &gt;= 568)
+{
+ instance_destroy();
+}
 </string>
           </argument>
         </arguments>

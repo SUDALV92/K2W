@@ -55,7 +55,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objCsBlock3" x="192" y="368" name="inst_0A6BC662" locked="0" code="A=-3;&#xA;step = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCsBlock3" x="192" y="240" name="inst_1F5DDF2C" locked="0" code="A=3;&#xA;step = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCsBlock5" x="512" y="176" name="inst_F51FE35F" locked="0" code="step = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSave" x="80" y="80" name="inst_F08C39B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="720" y="64" name="inst_F08C39B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCsBlock1u" x="352" y="288" name="inst_9CB4609E" locked="0" code="step = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCsBlock1d" x="288" y="224" name="inst_0B078EE7" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCsBlock1d" x="480" y="224" name="inst_3230981F" locked="0" code="step = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -135,6 +135,8 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5SpikeLeft" x="704" y="352" name="inst_4AD90D17" locked="0" code="step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="224" y="96" name="inst_67917CA5" locked="0" code="trg = 2;&#xA;step = 5;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeUp" x="384" y="80" name="inst_F3E70718" locked="0" code="step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="736" y="48" name="inst_5AA72181" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="672" y="48" name="inst_B2CA324E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgSecret5Tileset" x="0" y="128" w="32" h="32" xo="0" yo="0" id="10044724" name="inst_33D3A225" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

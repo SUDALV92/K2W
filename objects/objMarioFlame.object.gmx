@@ -50,21 +50,22 @@ A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-if(instance_place(x,y,objBlock))
+            <string>//Geezer logic
+if(room == rBoss4Phase1 &amp;&amp; y &gt;= 502)
 {
-    //Geezer logic
-    if(room == rBoss4Phase1)
+    if A=0
     {
-        if A=0
-        {
-            A1=instance_create(x,576,objExplode3);
-            A1.hspeed=8;
-            A2=instance_create(x,576,objExplode3);
-            A2.hspeed=-8; A=1;
-            instance_destroy();
-        }
+        A1=instance_create(x,576,objExplode3);
+        A1.hspeed=8;
+        A2=instance_create(x,576,objExplode3);
+        A2.hspeed=-8; A=1;
+        scrObjectDestroy(objKtgBullet);
+        instance_destroy();
     }
+}
+
+if(instance_place(x,y,objBlock))
+{    
     //final boss logic
     if(room == rBoss7Phase2)
     {

@@ -166,7 +166,7 @@ score = 10; //DeadSplit support
             <kind>1</kind>
             <string>//50
 view_angle[0]=-8;
-background_alpha[2]=0;
+
 background_alpha[3]=1;
 objGeezerBlock.sprite_index=sprGeezerMetroidBlock;
 objGeezerPlatform.sprite_index=sprGeezerMetroidBlock;
@@ -1980,9 +1980,7 @@ with(objBEP){instance_destroy();}
             <string>sprite_index=sprGeezer3;
 audio_play_sound(global.sndTVstatic,0,0);
 audio_play_sound(global.sndGeezer1,0,0);
-objGeezerBlock.sprite_index=sprBlockKoalaA;
-objGeezerBlockB.sprite_index=sprBlockKoalaB;
-objGeezerPlatform.sprite_index=sprBlockKoalaC;
+
 instance_create(x,y,objFadelight);
 instance_create(x,y,objShakelow);
 if(instance_exists(objPlayer))
@@ -2438,18 +2436,13 @@ a.timer=25;
             <string>objGeezer.A=1;
 with(objGeezerBEffect){instance_destroy();}
 scrObjectDestroy(objGeezerBackground);
-background_alpha[0]=0;
-background_alpha[1]=0;
 background_alpha[2]=0;
 background_alpha[3]=0;
 background_alpha[4]=1;
 visible=0;
-objGeezerBlock.CC=1;
-objGeezerBlock.image_alpha=1;
-objGeezerBlock.sprite_index=sprGeezerGhost2;
-objGeezerPlatform.CC=1;
-objGeezerPlatform.image_alpha=1;
-objGeezerPlatform.sprite_index=sprGeezerGhost1;
+objGeezerBlock.sprite_index=sprBlockKoalaA;
+objGeezerBlockB.sprite_index=sprBlockKoalaB;
+objGeezerPlatform.sprite_index=sprBlockKoalaC;
 
 audio_play_sound(global.sndExplosion2,0,0);
 audio_stop_sound(global.sndTVstatic);

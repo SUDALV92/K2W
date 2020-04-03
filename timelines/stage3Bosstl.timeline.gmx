@@ -48,7 +48,7 @@
           <argument>
             <kind>1</kind>
             <string>//if(loop == 1)
-// timeline_position = 7199;
+// timeline_position = 5320;
 </string>
           </argument>
         </arguments>
@@ -2393,7 +2393,8 @@ if(loop == 2)
             <string>if(loop == 1)
 {
  global.curDanmaku=global.sndObserver;
- audio_play_sound(global.curDanmaku,0,0);
+ if(!global.muteMusic)
+  audio_play_sound(global.curDanmaku,0,0);
  WD=1;
 }
 if(loop == 2)

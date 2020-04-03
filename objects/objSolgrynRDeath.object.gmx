@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(global.currentMusic,0,0);
+            <string>if(!global.muteMusic)
+ audio_play_sound(global.currentMusic,0,0);
+ 
 image_xscale=1.25;
 image_yscale=1.25;
 alarm[0]=10;

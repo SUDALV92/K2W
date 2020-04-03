@@ -373,7 +373,7 @@ if(instance_exists(objPlayer))
 image_alpha = choose(0.4,0.6,0.8,1);
 if(instance_exists(objPlayer))
 {
-    if(!audio_is_playing(global.sndBoss3))
+    if(!audio_is_playing(global.sndBoss3) &amp;&amp; !global.muteMusic)
      global.currentMusic = audio_play_sound(global.sndBoss3,0,0);
     
     if(loop == 1)

@@ -55,8 +55,8 @@ gravity_direction=270;
 speed=5;
 if(instance_exists(objPlayer))
 {
-    if objPlayer.x&gt;self.x {direction=285;}
-    else {direction=255;}
+    if objPlayer.x&gt;self.x {direction=280;}
+    else {direction=260;}
 }
 else direction = 270;
 </string>

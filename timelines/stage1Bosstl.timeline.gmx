@@ -279,7 +279,9 @@ objCrazySpikeBoss.gravity_direction=point_direction(objCrazySpikeBoss.x,objCrazy
           <argument>
             <kind>1</kind>
             <string>global.curDanmaku=global.sndBlackjack;
-audio_play_sound(global.curDanmaku,0,0);
+if(!global.muteMusic)
+ audio_play_sound(global.curDanmaku,0,0);
+ 
 A1=instance_create(0,0,objBossTitle);
 A1.a=2;
 </string>
@@ -308,6 +310,7 @@ A1.a=2;
           <argument>
             <kind>1</kind>
             <string>objBlackjackBoss.C=1;
+objBlackjackBoss.alarm[1] = 0;
 with(objBlackjack)
 {
  if(!curving)
@@ -342,6 +345,7 @@ with(objBlackjack)
           <argument>
             <kind>1</kind>
             <string>objBlackjackBoss.C=0;
+objBlackjackBoss.alarm[1] = 1;
 with(objBlackjack)
 {
  if(!curving)
@@ -623,6 +627,8 @@ objBlueCherry1.image_speed=0;
 objYellowCherry1.speed=0;
 objYellowCherry1.gravity=0;
 objYellowCherry1.image_speed=0;
+background_hspeed[1]=0;
+background_vspeed[1]=0;
 </string>
           </argument>
         </arguments>

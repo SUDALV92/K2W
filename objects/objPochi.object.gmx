@@ -738,7 +738,7 @@ audio_play_sound(global.sndPochi,0,0);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Вертушка
+            <string>///Vertushka
 if(!instance_exists(objPlayer)) exit;
 
 if(A == 0)
@@ -759,7 +759,7 @@ if(A == 0)
      spiralDirection = -spiralDirection;  
      if(C == 0)
       spiralSwitch += irandom_range(8,20);
-     else spiralSwitch += irandom_range(5,10);
+     else spiralSwitch += irandom_range(5,8);
     }
     audio_play_sound(global.sndPochi,0,0);
     alarm[0] = 5;

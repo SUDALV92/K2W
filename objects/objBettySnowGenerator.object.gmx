@@ -135,7 +135,7 @@ else
         scrObjectDestroy(objBettySnow);
         repeat(24)
         {
-         a1=instance_create(random_range(-32,832),irandom_range(0,608),objBettySnow);
+         a1=instance_create(random_range(-32,832),view_yview[0]+irandom_range(0,608),objBettySnow);
          a1.speed = 1;
         }
         break;

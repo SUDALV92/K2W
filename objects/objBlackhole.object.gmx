@@ -58,6 +58,7 @@ a=irandom(360);
 b=a;
 t=0;
 W=0;
+lineNerf = 0;
 if(room != rBoss7Phase1)
 {
  alarm[0] = 6;
@@ -170,78 +171,6 @@ else
       </action>
       <action>
         <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objLukaMagic2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>2+t</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>a</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>206</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_create_object_motion</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>-1</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>10</kind>
-            <object>objLukaMagic2</object>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>7-t</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>180+a</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -256,7 +185,21 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>a+=357;
+            <string>if(lineNerf mod 2 == 0) 
+{
+ magic2 = instance_create(x,y,objLukaMagic2);
+ magic2.speed = 2+t;
+ magic2.direction = a;
+ with(magic2) event_user(0);
+ 
+ magic2 = instance_create(x,y,objLukaMagic2);
+ magic2.speed = 7-t;
+ magic2.direction = 180+a;
+ with(magic2) event_user(0);
+}
+
+lineNerf++;
+a+=357;
 b-=341;
 t+=1;
 if t&gt;6{t=0;}

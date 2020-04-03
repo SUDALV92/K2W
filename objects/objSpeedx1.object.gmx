@@ -59,7 +59,7 @@ else condition = false;
 if(instance_exists(objPlayer))
 {
     if 
-     objPlayer.maxSpeed!=3 &amp;&amp; sign(objPlayer.hspeed) == hDirection
+     objPlayer.maxSpeed!=3 &amp;&amp; condition
     {
         if(global.sfxDelay[0] &lt;= 0)
         {

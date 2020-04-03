@@ -73,7 +73,9 @@ yy=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>surface_copy_part(surf,0,0,application_surface,xx,yy,400,304);
+            <string>if(!surface_exists(surf))
+ surf = surface_create(400,304);
+surface_copy_part(surf,0,0,application_surface,xx,yy,400,304);
 </string>
           </argument>
         </arguments>
@@ -96,8 +98,10 @@ yy=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(surface_exists(surf))
- draw_surface(surf,view_xview[0],view_yview[0]);
+            <string>if(!surface_exists(surf))
+ surf = surface_create(400,304);
+
+draw_surface(surf,view_xview[0],view_yview[0]);
 </string>
           </argument>
         </arguments>

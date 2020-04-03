@@ -68,10 +68,8 @@ background_vspeed[0]=-1;</code>
   </instances>
   <tiles>
     <tile bgName="bgDoruppiBlock" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10043208" name="inst_84F91144" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgDoruppiBlock" x="0" y="288" w="32" h="32" xo="0" yo="0" id="10043209" name="inst_1D661A54" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="160" y="288" w="32" h="32" xo="0" yo="0" id="10043210" name="inst_2F5A34BB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="192" y="416" w="32" h="32" xo="0" yo="0" id="10043211" name="inst_967E9573" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgDoruppiBlock" x="0" y="416" w="32" h="32" xo="0" yo="0" id="10043212" name="inst_3195F308" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="0" y="544" w="32" h="32" xo="0" yo="0" id="10043213" name="inst_A49EB6A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="224" y="544" w="32" h="32" xo="0" yo="0" id="10043214" name="inst_5AF8DE8E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="768" y="576" w="32" h="32" xo="0" yo="0" id="10043215" name="inst_3E4F7568" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -143,6 +141,8 @@ background_vspeed[0]=-1;</code>
     <tile bgName="bgDoruppiBlock" x="96" y="288" w="32" h="32" xo="0" yo="0" id="10052650" name="inst_0273E824" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="64" y="416" w="32" h="32" xo="0" yo="0" id="10052651" name="inst_A2BF5E41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgDoruppiBlock" x="32" y="544" w="32" h="32" xo="0" yo="0" id="10052652" name="inst_1E42B6A5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgDoruppiBlock2" x="0" y="288" w="32" h="32" xo="0" yo="0" id="10064395" name="inst_FB87CC47" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgDoruppiBlock2" x="0" y="416" w="32" h="32" xo="0" yo="0" id="10064396" name="inst_48AE41A1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

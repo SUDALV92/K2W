@@ -12,9 +12,10 @@
   <showcolour>-1</showcolour>
   <code>background_hspeed[1]=-1.5;
 background_vspeed[1]=-1.5;
-background_alpha[0]=0.1;
-background_alpha[1]=0.3;
-background_alpha[4]=0;</code>
+background_alpha[0]=0.3;
+background_alpha[1]=0.5;
+background_alpha[4]=0;
+background_alpha[3]=0;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -37,7 +38,7 @@ background_alpha[4]=0;</code>
   <backgrounds>
     <background visible="-1" foreground="0" name="bgKoalaBG" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="bgKoalaGrid" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="background69" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="0" foreground="0" name="background69" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="background69" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="-1"/>
     <background visible="0" foreground="0" name="background74" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="1" stretch="0"/>

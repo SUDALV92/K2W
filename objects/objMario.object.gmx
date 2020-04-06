@@ -37,7 +37,7 @@ alarm[0]=20;
 alarm[1]=50;
 A=0;
 a=0;
-curving = choose(-1,1);
+curving = -1;//choose(-1,1);
 </string>
           </argument>
         </arguments>

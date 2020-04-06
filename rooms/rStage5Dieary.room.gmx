@@ -197,7 +197,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="160" y="336" name="inst_5DFB4B33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="256" y="336" name="inst_1A1FB081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="96" y="96" name="inst_10C99817" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWater3" x="-368" y="-272" name="inst_DFE83966" locked="0" code="sprite_index = sprDiearyWater;&#xA;" scaleX="50" scaleY="40" colour="4294967295" rotation="0"/>
+    <instance objName="objWater3" x="-432" y="-368" name="inst_DFE83966" locked="0" code="sprite_index = sprDiearyWater;&#xA;" scaleX="50" scaleY="40" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="464" y="32" name="inst_356DE164" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="464" y="64" name="inst_FA2D7EAB" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="496" y="160" name="inst_27424678" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>

@@ -156,7 +156,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objPYFTrap" x="288" y="160" name="inst_8C6349B4" locked="0" code="trap = 21;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="368" y="32" name="inst_CD626CF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="368" y="64" name="inst_C37F591B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPYFTrapLeft" x="480" y="320" name="inst_D756DBB7" locked="0" code="trap = 43;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPYFTrapLeft" x="512" y="320" name="inst_D756DBB7" locked="0" code="trap = 43;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="480" y="192" name="inst_F4320712" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="512" y="192" name="inst_26A2BC1E" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPYFTrapLeft" x="480" y="256" name="inst_DF9EC310" locked="0" code="trap = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -180,8 +180,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objPYFTrapDown" x="608" y="256" name="inst_7987681B" locked="0" code="trap = 42;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="704" y="192" name="inst_2121C7EC" locked="0" code="trg = 41;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="704" y="192" name="inst_9BE5933B" locked="0" code="trg = 42;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="704" y="192" name="inst_57CA53C7" locked="0" code="trg = 43;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objFreeTrigger" x="480" y="352" name="inst_C5C5843E" locked="0" code="trg = 43;&#xA;condition = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="544" y="288" name="inst_57CA53C7" locked="0" code="trg = 43;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="160" y="160" name="inst_3113B779" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="128" y="160" name="inst_CBF1DE67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="672" y="192" name="inst_53E1506E" locked="0" code="trap = 25;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -214,6 +213,13 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objEnergyTrigger" x="800" y="544" name="inst_B9F2642F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergy" x="288" y="458" name="inst_E84726C5" locked="0" code="energyID = 84;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPYFTrap" x="576" y="480" name="inst_F22EFB56" locked="0" code="trap = 28;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSaveBlocker" x="96" y="112" name="inst_52253387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPYFTrap" x="640" y="320" name="inst_2F31B009" locked="0" code="trap = 50;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="544" y="288" name="inst_CFE52503" locked="0" code="trg = 50;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="704" y="192" name="inst_02CFADC2" locked="0" code="trg = 51;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="544" y="288" name="inst_CE1CF440" locked="0" code="trg = 52;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="704" y="192" name="inst_DB182285" locked="0" code="trg = 53;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="480" y="352" name="inst_476CB34D" locked="0" code="trg = 24;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="608" y="16" w="32" h="32" xo="32" yo="0" id="10047987" name="inst_250B8DAB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

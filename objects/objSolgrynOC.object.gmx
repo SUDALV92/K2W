@@ -90,11 +90,14 @@ a.direction=direction-180+random_range(-15,15);}}
             <kind>1</kind>
             <string>if(i % 10 == 0)
 {
+ if(other.C &gt; 0.7)
+ {   
     var mini = instance_create(other.x+irandom_range(-30,30),other.y+irandom_range(-30,30),objSolgrynOCMini);
     //mini.direction = direction + 180 + random_range(-20,20);
     mini.direction = random_range(95,120);
     mini.gravity = 0.1;
     mini.speed = random_range(6,8);
+ }
 }
 i++;
 </string>

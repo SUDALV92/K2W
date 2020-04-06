@@ -164,8 +164,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="680" y="344" name="inst_2174816C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="192" y="96" name="inst_21B27BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="432" y="200" name="inst_2E06D361" locked="0" code="sprite_index = sprBettyPlatform;&#xA;visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlatform" x="528" y="200" name="inst_8A399A15" locked="0" code="sprite_index = sprBettyPlatform;&#xA;visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="80" y="416" name="inst_B0025F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlatform" x="528" y="200" name="inst_8A399A15" locked="0" code="sprite_index = sprBettyPlatform;&#xA;visible = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="736" y="0" name="inst_60A423B0" locked="0" code="roomTo = rStage3TimeMachine;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="528" y="256" name="inst_7F96669D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="624" y="256" name="inst_7CEF9C57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

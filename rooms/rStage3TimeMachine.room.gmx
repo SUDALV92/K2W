@@ -197,13 +197,13 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objWalljumpL" x="224" y="208" name="inst_D9EFE973" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWalljumpL" x="224" y="176" name="inst_0592636E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWalljumpL" x="224" y="144" name="inst_2A591E5B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="256" y="592" name="inst_C3430697" locked="0" code="hspeed=3;&#xA;sprite_index = sprTTTPlatform;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="352" y="504" name="inst_3B543FCC" locked="0" code="hspeed = 2;&#xA;sprite_index = sprTTTPlatform;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="400" y="440" name="inst_0B27542C" locked="0" code="sprite_index = sprTTTPlatform;&#xA;hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="368" y="376" name="inst_D849EB3E" locked="0" code="sprite_index = sprTTTPlatform;&#xA;hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="416" y="312" name="inst_D6EF99FA" locked="0" code="sprite_index = sprTTTPlatform;&#xA;hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="480" y="512" name="inst_F0DEB4E4" locked="0" code="sprite_index = sprTTTPlatform;&#xA;hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMovingPlatform" x="576" y="512" name="inst_9F463B45" locked="0" code="sprite_index = sprTTTPlatform;&#xA;hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="256" y="592" name="inst_C3430697" locked="0" code="hspeed=3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="352" y="504" name="inst_3B543FCC" locked="0" code="hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="400" y="440" name="inst_0B27542C" locked="0" code="hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="368" y="376" name="inst_D849EB3E" locked="0" code="hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="416" y="312" name="inst_D6EF99FA" locked="0" code="hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="480" y="512" name="inst_F0DEB4E4" locked="0" code="hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objMovingPlatform" x="576" y="512" name="inst_9F463B45" locked="0" code="hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="128" y="608" name="inst_0F007554" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="160" y="608" name="inst_3FFBE5C9" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWarp" x="192" y="608" name="inst_AA937799" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

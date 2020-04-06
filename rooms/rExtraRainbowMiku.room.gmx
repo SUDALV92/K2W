@@ -94,7 +94,7 @@ background_hspeed[1] = -0.5;</code>
     <instance objName="objBlock" x="7664" y="88" name="inst_975805AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="7776" y="32" name="inst_66F944C2" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="7776" y="128" name="inst_362E27DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objEnergy" x="7904" y="128" name="inst_9C3C27FF" locked="0" code="energyID = 81;&#xA;active = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnergy" x="7904" y="128" name="inst_9C3C27FF" locked="0" code="if(global.energy[81])&#xA; instance_destroy();&#xA; &#xA;energyID = 81;&#xA;active = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="7968" y="576" w="32" h="32" xo="0" yo="0" id="10060630" name="inst_9C921A36" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

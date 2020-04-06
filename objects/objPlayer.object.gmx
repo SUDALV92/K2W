@@ -965,6 +965,14 @@ switch(room)
         scrSetPlayerMask();
         break;
 }
+
+switch(room)
+{
+ case rBoss5Avoid:
+  instance_create(x,y,objCyberHitbox);
+  break;
+}
+
 if(global.infJump)
 {
  infJump = true;

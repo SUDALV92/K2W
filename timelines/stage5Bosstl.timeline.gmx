@@ -284,7 +284,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>40</string>
+            <string>36</string>
           </argument>
         </arguments>
       </action>
@@ -354,7 +354,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>b+=9;
+            <string>b+=10;
 </string>
           </argument>
         </arguments>
@@ -468,7 +468,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>40</string>
+            <string>36</string>
           </argument>
         </arguments>
       </action>
@@ -538,7 +538,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>b+=9;
+            <string>b+=10;
 </string>
           </argument>
         </arguments>
@@ -652,7 +652,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>40</string>
+            <string>36</string>
           </argument>
         </arguments>
       </action>
@@ -722,7 +722,7 @@ a.timer=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>b+=9;
+            <string>b+=10;
 </string>
           </argument>
         </arguments>

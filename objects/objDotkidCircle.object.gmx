@@ -55,6 +55,10 @@ y=objPlayer.y;}
     x=objPlayer.x;
     y=objPlayer.y;
 }
+else
+{
+ instance_destroy();
+}
 </string>
           </argument>
         </arguments>

@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objPlayerKiller</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -28,6 +28,7 @@
             <string>curving = 0;
 phase = 1;
 alarm[0] = 1; //set tail
+playerKiller = true;
 </string>
           </argument>
         </arguments>
@@ -73,6 +74,34 @@ alarm[0] = 1; //set tail
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///kill player
+if(playerKiller)
+{
+ if(place_meeting(x,y,objPlayer))
+ {
+  scrKillPlayer();
+ }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>if(phase == 1)
 {
  if(vspeed &gt; 0)
@@ -86,6 +115,32 @@ image_angle = direction;
 if(speed &gt; 9)
 {
  speed = 9;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objCyberHitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!global.godMode)
+{
+ scrObjectDestroy(other);
 }
 </string>
           </argument>

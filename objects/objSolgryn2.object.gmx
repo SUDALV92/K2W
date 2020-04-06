@@ -460,6 +460,8 @@ audio_play_sound(global.sndSolgrynDM,0,0);}
 {
     audio_sound_gain(global.currentMusic,1,0);
 }
+//instance_create(0,0,objFadeIn); //aoi kiseki test
+//instance_create(0,0,objFadeIn2); //phase 3 test
 </string>
           </argument>
         </arguments>

@@ -405,7 +405,6 @@ background_vspeed[0] = -1.5;</code>
     <tile bgName="bgBakaTileset" x="288" y="480" w="32" h="32" xo="0" yo="32" id="10050118" name="inst_F4D32B0B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBakaTileset" x="416" y="512" w="32" h="32" xo="0" yo="0" id="10050119" name="inst_C9F5BE22" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBakaTileset" x="416" y="448" w="32" h="32" xo="0" yo="0" id="10050120" name="inst_AF18E8DB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="bgBakaTileset" x="416" y="496" w="32" h="32" xo="0" yo="32" id="10050121" name="inst_AD61BA62" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBakaTileset" x="416" y="480" w="32" h="32" xo="0" yo="32" id="10050122" name="inst_1EBFD0B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBakaTileset" x="448" y="480" w="32" h="32" xo="0" yo="0" id="10050123" name="inst_188641BC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgBakaTileset" x="448" y="448" w="32" h="32" xo="0" yo="0" id="10050124" name="inst_F347A889" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

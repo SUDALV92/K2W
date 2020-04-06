@@ -90,8 +90,8 @@ else direction = 270;
  }
  else
  {
-  dir1 = 285;
-  dir2 = 255;
+  dir1 = 282;
+  dir2 = 258;
  }
  if objPlayer.x&gt;self.x {direction=dir1;}
  else {direction=dir2;}}

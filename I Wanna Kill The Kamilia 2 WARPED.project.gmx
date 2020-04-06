@@ -3985,6 +3985,9 @@
         <sprite>sprites\sprCyberBulletD</sprite>
         <sprite>sprites\sprCyberBulletE</sprite>
         <sprite>sprites\sprPlatformCyber</sprite>
+        <sprite>sprites\sprCyberHitbox</sprite>
+        <sprite>sprites\sprCyberBulletGreenFX</sprite>
+        <sprite>sprites\sprCyberBulletF</sprite>
       </sprites>
       <sprites name="Stage6">
         <sprite>sprites\sprBlockBakaA</sprite>
@@ -4043,7 +4046,11 @@
         <sprite>sprites\sprEndingHole</sprite>
         <sprite>sprites\sprEndingFullBed</sprite>
       </sprites>
-      <sprite>sprites\sprBlockRukito</sprite>
+      <sprites name="Rukito">
+        <sprite>sprites\sprBlockRukito</sprite>
+        <sprite>sprites\sprRukitoCherry</sprite>
+        <sprite>sprites\sprRukitoSave</sprite>
+      </sprites>
       <sprite>sprites\sprShinySpark</sprite>
       <sprite>sprites\sprEnergy</sprite>
       <sprites name="ExtraStage">
@@ -4224,7 +4231,9 @@
       <sprites name="misc">
         <sprite>sprites\sprWater</sprite>
         <sprite>sprites\sprWalljumpR</sprite>
+        <sprite>sprites\sprWalljumpRBetty</sprite>
         <sprite>sprites\sprWalljumpL</sprite>
+        <sprite>sprites\sprWalljumpLBetty</sprite>
         <sprite>sprites\sprJumpRefresher</sprite>
         <sprite>sprites\sprSign</sprite>
         <sprite>sprites\sprGravityUp</sprite>
@@ -4236,6 +4245,9 @@
         <sprite>sprites\sprTriggerMask</sprite>
         <sprite>sprites\sprTriggerMaskCentered</sprite>
         <sprite>sprites\sprButton</sprite>
+        <sprite>sprites\sprBettyButton</sprite>
+        <sprite>sprites\sprBettyButtonD</sprite>
+        <sprite>sprites\sprBettyButtonL</sprite>
         <sprite>sprites\sprSpikeTriggerDown</sprite>
         <sprite>sprites\sprSpikeTriggerLeft</sprite>
         <sprite>sprites\sprSpikeTriggerRight</sprite>
@@ -5345,6 +5357,7 @@
         <object>objects\objBloodEmitter</object>
         <object>objects\objBlood</object>
         <object>objects\objGameOver</object>
+        <object>objects\objCyberHitbox</object>
       </objects>
       <objects name="blocks">
         <object>objects\objBlock</object>

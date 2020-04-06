@@ -59,6 +59,13 @@ image_yscale = 1/2;
     a.speed=random_range(4,6);
     a.direction=direction-180+random_range(-15,15);
 }
+if(instance_exists(objSolgrynShield))
+{
+ if(objSolgrynShield.C &lt;= 0.7)
+ {
+  instance_destroy();
+ }
+}
 </string>
           </argument>
         </arguments>

@@ -56,10 +56,8 @@ switch(room)
      case rStage2RunTerminal:
      case rStage2BestGuy:
      case rStage2GuyTower:
+     case rBoss1Save:
          sprite_index = sprPinkSave; 
-         break;
-    case rBoss1Save:
-         sprite_index = sprBlueSave;
          break;
          
     case rStage3500:
@@ -73,6 +71,17 @@ switch(room)
     case rStage3WhiteCherry:
     case rStage3TimeMachine:
          sprite_index = sprBettySave; break;    
+    
+    case rStage5Color:
+    case rStage5Scapegoat:
+    case rStage5Symetry:
+    case rStage5RainbowMiku:
+    case rStage5Unknown:
+    case rStage5BloodFestival:
+    case rStage5Dieary:
+    case rStage5PYF:
+    case rStage5Locus:
+        sprite_index = sprRukitoSave; break;
 }
 </string>
           </argument>

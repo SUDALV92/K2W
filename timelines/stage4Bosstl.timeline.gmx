@@ -392,7 +392,7 @@ G3.image_index=0;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=8;
-G=instance_create(x,y,choose(objGumba,objGumbaB2));
+G=instance_create(x,y,objGumba);
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -424,7 +424,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=-8;
-G=instance_create(x,y,choose(objGumba,objGumbaB2));
+G=instance_create(x,y,objGumba);
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -456,7 +456,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=8;
-G=instance_create(x,y,choose(objGumba,objGumbaB2));
+G=instance_create(x,y,objGumbaB2);
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;
@@ -488,7 +488,7 @@ G.gravity_direction=270;
             <kind>1</kind>
             <string>audio_play_sound(global.sndGeezer2,0,0);
 view_angle[0]=-8;
-G=instance_create(x,y,choose(objGumba,objGumbaB2));
+G=instance_create(x,y,objGumbaB2);
 G.speed=5;
 G.direction=random_range(60,120);
 G.gravity=0.3;

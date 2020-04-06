@@ -116,12 +116,12 @@ G2.gravity_direction=270;
         A=1; 
         if(instance_exists(objPlayer))
         {
-            if(x &lt; objPlayer.x) hspeed = 3.5;
-            else hspeed = -3.5;
+            if(x &lt; objPlayer.x) hspeed = 2;
+            else hspeed = -2;
         } 
         else 
         {    
-            hspeed=choose(3.5,-3.5);
+            hspeed=choose(2,-2);
         }
 }}
 if delay=0{if self.x&lt;66{hspeed=3; delay=5;}}

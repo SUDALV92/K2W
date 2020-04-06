@@ -54,7 +54,7 @@ background_vspeed[1]=-1.5;</code>
   <instances>
     <instance objName="objStmtrap5" x="256" y="416" name="inst_68E1A0ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="64" y="400" name="inst_7EF04D69" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objStmSwitch" x="128" y="368" name="inst_0A70A752" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objStmSwitch" x="128" y="368" name="inst_0A70A752" locked="0" code="sprite_index = sprBettyButtonL;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStmtrap3" x="416" y="432" name="inst_807A225D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStmtrap2" x="448" y="384" name="inst_D3870524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objStmtrap2" x="448" y="416" name="inst_68D1DAA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

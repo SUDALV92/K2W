@@ -202,6 +202,7 @@ alarm[6]=17;
  keaTan = instance_create(objPlayer.x,614,objKeaTan7);
  keaTan.speed = 10;
  keaTan.direction = 90;
+ keaTan.playerKiller = false; //only dot killer
 }
 </string>
           </argument>
@@ -310,6 +311,7 @@ alarm[6]=17;
  keaTan = instance_create(objPlayer.x,-16,objKeaTan7);
  keaTan.speed = 10;
  keaTan.direction = 270;
+ keaTan.playerKiller = false; //only dot killer
 }
 </string>
           </argument>
@@ -418,6 +420,7 @@ alarm[6]=17;
  keaTan = instance_create(objPlayer.x,614,objKeaTan7);
  keaTan.speed = 10;
  keaTan.direction = 90;
+ keaTan.playerKiller = false; //only dot killer
 }
 </string>
           </argument>
@@ -526,6 +529,7 @@ alarm[6]=17;
  keaTan = instance_create(objPlayer.x,-16,objKeaTan7);
  keaTan.speed = 10;
  keaTan.direction = 270;
+ keaTan.playerKiller = false; //only dot killer
 }
 walls = true;
 </string>
@@ -656,18 +660,22 @@ walls = true;
             <string>if(instance_exists(objPlayer))
 {
     bullet = instance_create(irandom_range(32,768),64,objCyberBullet);
-    bullet.sprite_index = sprCyberBulletA;
+    bullet.sprite_index = sprCyberBulletB;
     bullet.curving = 0;
     bullet.direction = point_direction(bullet.x,bullet.y,objPlayer.x,objPlayer.y);
     bullet.speed = 9;
-    instance_create(bullet.x,bullet.y,objCyberBulletFX);
+    bullet.playerKiller = false; //only dot killer
+    fx = instance_create(bullet.x,bullet.y,objCyberBulletFX);
+    //fx.sprite_index = sprCyberBulletGreenFX;
     
     bullet = instance_create(irandom_range(32,768),64,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
     bullet.curving = 0;
     bullet.direction = point_direction(bullet.x,bullet.y,objPlayer.x,objPlayer.y);
     bullet.speed = 9;
-    instance_create(bullet.x,bullet.y,objCyberBulletFX);
+    bullet.playerKiller = false; //only dot killer
+    fx = instance_create(bullet.x,bullet.y,objCyberBulletFX);
+    //fx.sprite_index = sprCyberBulletGreenFX;
 }
 </string>
           </argument>
@@ -774,43 +782,21 @@ walls = true;
             <string>if(instance_exists(objPlayer))
 {
     bullet = instance_create(x-280,y-346,objCyberBullet);
-    bullet.sprite_index = sprCyberBulletA;
+    bullet.sprite_index = sprCyberBulletB;
     bullet.curving = 1;
     bullet.direction = point_direction(x-280,y-346,objPlayer.x,objPlayer.y)+random_range(-30,30);
     bullet.speed = 7;
-    
+    bullet.playerKiller = false; //only dot killer
     
     bullet = instance_create(x-280,y-346,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
     bullet.curving = -1;
     bullet.direction = point_direction(x-280,y-346,objPlayer.x,objPlayer.y)+random_range(-30,30);
     bullet.speed = 7;
+    bullet.playerKiller = false; //only dot killer
 }
+alarm[1] = 24;
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>24</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
           </argument>
         </arguments>
       </action>
@@ -890,44 +876,30 @@ walls = true;
             <kind>1</kind>
             <string>bullet = instance_create(x-280,y-346,objCyberBullet);
 bullet.sprite_index = sprCyberBulletA;
-bullet.curving = 1.5;
-bullet.direction = random_range(90,150);
-bullet.speed = 9;
+bullet.curving = 0.8;
+bullet.direction = random_range(95,150);
+bullet.speed = 15;
 bullet.gravity = 0.2;
+bullet.playerKiller = false; //only dot killer
 
 bullet = instance_create(x-280,y-346,objCyberBullet);
-bullet.sprite_index = sprCyberBulletB;
-bullet.curving = -1.5;
-bullet.direction = random_range(50,100);
+bullet.sprite_index = sprCyberBulletA;
+bullet.curving = 0.8;
+bullet.direction = random_range(95,150);
+bullet.speed = 15;
+bullet.gravity = 0.2;
+bullet.playerKiller = false; //only dot killer
+
+/*bullet = instance_create(x-280,y-346,objCyberBullet);
+bullet.sprite_index = sprCyberBulletA;
+bullet.curving = -1.6;
+bullet.direction = random_range(60,800);
 bullet.speed = 9;
 bullet.gravity = 0.2;
-
-
+bullet.playerKiller = false; //only dot killer
+*/
+alarm[0] = 10; //17
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>17</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -965,6 +937,8 @@ bullet.gravity = 0.2;
             <kind>1</kind>
             <string>if image_alpha&gt;0{if A=3{image_alpha-=0.01;}}
 
+if(!instance_exists(objPlayer)) exit;
+
 if(walls)
 {
  if(i == 150)
@@ -977,6 +951,7 @@ if(walls)
    wall.gravity_direction = 180;
    wall.gravity = 0.4;
    wall.sprite_index = sprCyberBulletC;
+   wall.playerKiller = false; //only dot killer
    
    yy+=20;
   }
@@ -991,6 +966,7 @@ if(walls)
            wall.gravity_direction = 0;
            wall.gravity = 0.4;
            wall.sprite_index = sprCyberBulletD;
+           wall.playerKiller = false; //only dot killer
            
            yy+=20;
           }
@@ -1005,6 +981,7 @@ if(walls)
        wall.gravity_direction = 180;
        wall.gravity = 0.4;
        wall.sprite_index = sprCyberBulletC;
+       wall.playerKiller = false; //only dot killer
        
        yy+=20;
       }
@@ -1019,6 +996,7 @@ if(walls)
        wall.gravity_direction = 180;
        wall.gravity = 0.4;
        wall.sprite_index = sprCyberBulletC;
+       wall.playerKiller = false; //only dot killer
        
        yy+=20;
       }
@@ -1033,6 +1011,7 @@ if(walls)
            wall.gravity_direction = 0;
            wall.gravity = 0.4;
            wall.sprite_index = sprCyberBulletD;
+           wall.playerKiller = false; //only dot killer
            
            yy+=20;
           }
@@ -1045,10 +1024,12 @@ if(walls)
            wall = instance_create(820,yy,objCyberBullet2);
            wall.mode = 3          
            wall.sprite_index = sprCyberBulletD;
+           wall.playerKiller = false; //only dot killer
            
            wall = instance_create(-20,yy,objCyberBullet2);
            wall.mode = 2;
            wall.sprite_index = sprCyberBulletC;
+           wall.playerKiller = false; //only dot killer
            yy+=20;
           }
      }

@@ -89,6 +89,7 @@ switch(trap)
   hspeed = -2;
   alarm[0] = 16;
   break;
+ 
  case 24:
   if(!triggered)
   {
@@ -119,6 +120,14 @@ switch(trap)
  case 42:
   vspeed = -2;
   alarm[0] = 24;
+  break;
+ case 50:
+  vspeed = -4;
+  alarm[0] = 8;
+  break;
+ case 51:
+  vspeed = 4;
+  alarm[0] = 8;
   break;
 }
 

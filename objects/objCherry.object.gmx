@@ -26,7 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 1/10;
-
+switch(room)
+{
+ case rStage5RainbowMiku:
+ case rExtraRainbowMiku:
+ case rStage5Dieary:
+  sprite_index = sprRukitoCherry;
+  break;
+}
 </string>
           </argument>
         </arguments>

@@ -124,7 +124,7 @@ score = C*100; //DeadSplit support
 if F=0{
 if (C &lt; 0.7 &amp;&amp; instance_exists(objPlayer))
 {
-instance_create(objSolgryn2.x,objSolgryn2.y,objSolgryn3);
+ instance_create(objSolgryn2.x,objSolgryn2.y,objSolgryn3);
 with(objSolgrynDMA){
 if sprite_index!=sprSolgrynDMADeath{
 image_speed=1/2;

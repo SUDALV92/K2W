@@ -11,7 +11,9 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>background_vspeed=0.05;
-background_alpha=0;</code>
+background_alpha=0;
+background_vspeed[1] = -0.5;
+background_hspeed[1] = -0.5;</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -28,6 +28,7 @@
             <string>image_speed = 1/3;
 image_index=irandom(11);
 go = false;
+phase = 1;
 </string>
           </argument>
         </arguments>
@@ -98,8 +99,17 @@ switch(trap)
   alarm[0] = 52;
   break;
  case 43:
-  hspeed = 2;
-  alarm[0] = 16;
+  if(phase == 1)
+  {
+   hspeed = -2;
+   alarm[0] = 16;
+   phase = 2;
+  }
+  else if(phase == 2)
+  {
+   hspeed = 2;
+   alarm[0] = 16;
+  }
   break;
 }
 

@@ -85,10 +85,37 @@ U=scrButtonCheck(global.upButton);
 D=scrButtonCheck(global.downButton);
 if !U and !D {image_index=0;}
 
-if scrButtonCheck(global.upButton){image_index=1; y-=4;}
-if scrButtonCheck(global.downButton){image_index=2; y+=4;}
-if scrButtonCheck(global.leftButton){x-=4;}
-if scrButtonCheck(global.rightButton){x+=4;}
+if scrButtonCheck(global.upButton)
+{
+ image_index=1; 
+ if(scrButtonCheck(global.jumpButton))
+  y -= 2;
+ else
+  y-=4;
+}
+if scrButtonCheck(global.downButton)
+{
+ image_index=2; 
+ if(scrButtonCheck(global.jumpButton))
+  y += 2;
+ else
+  y+=4;
+}
+if scrButtonCheck(global.leftButton)
+{
+ if(scrButtonCheck(global.jumpButton))
+  x -= 2;
+ else
+  x-=4;
+}
+if scrButtonCheck(global.rightButton)
+{
+ if(scrButtonCheck(global.jumpButton))
+  x += 2;
+ else
+  x+=4;
+}
+
 if delay=0{
 if scrButtonCheck(global.shootButton){audio_play_sound(global.sndShoot,0,0);
 a=instance_create(x+28,y,objBullet);

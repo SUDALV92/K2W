@@ -1153,7 +1153,8 @@ switch(room)
            with(objPYFTrapRight) if(trap == other.trg) go = true;
            break;
           case 28:
-           with(objPYFTrap) if(trap == other.trg || trap == 25 || trap == 24) go = true;
+           with(objPYFTrap) if(trap == other.trg || trap == 25) go = true;
+           with(objPYFTrap) if(trap == 24 &amp;&amp; round(y) != round(ystart)) go = true;
            with(objPYFTrapDown) if(trap == other.trg) go = true;
            with(objPYFTrapLeft) if(trap == other.trg || trap == 25) go = true;
            with(objPYFTrapRight) if(trap == other.trg || trap == 25) go = true;
@@ -1172,7 +1173,11 @@ switch(room)
           case 44:
            if(condition)
            {
-               with(objPYFTrap) if(trap == other.trg) go = true;
+               with(objPYFTrap)
+               {
+                if(trap == other.trg) go = true;
+                if(trap == 23) { trap = 43; go = true; }
+               }
                with(objPYFTrapDown) if(trap == other.trg) go = true;
                with(objPYFTrapLeft) if(trap == other.trg) go = true;
                with(objPYFTrapRight) if(trap == other.trg) go = true;
@@ -1188,12 +1193,69 @@ switch(room)
                 if(trap == 24 &amp;&amp; !triggered) go = true;
                }
                with(objPYFTrapDown) if(trap == other.trg) go = true;
-               with(objPYFTrapLeft) if(trap == other.trg) go = true;
+               with(objPYFTrapLeft) 
+               {
+                if(trap == other.trg) 
+                {
+                  go = true;
+                }
+               }
                with(objPYFTrapRight) if(trap == other.trg) go = true;
                with(objFreeTrigger) if(trg == 43) instance_destroy();
            }
            else { d = 0 }
            break; 
+          case 50:
+           with(objPYFTrap)
+           {
+            if(trap == other.trg) go = true;              
+           }           
+           with(objFreeTrigger) if(trg == 51) condition = true;
+           break;
+          case 51:
+           if(condition)
+           {
+               with(objPYFTrap)
+               {
+                if(trap == 50)
+                {
+                 trap = 51;
+                 go = true;
+                }
+               }
+           }
+           else { d = 0; }
+           break;
+          case 52:
+           with(objPYFTrapLeft)
+           {
+            if(trap == 43) 
+            {
+             go = true;          
+            }
+           }
+           with(objFreeTrigger)
+           {
+            if(trg == 53)
+            {
+             condition = true;
+            }
+           }
+           break;
+          case 53:
+              if(condition)
+              {
+               with(objPYFTrapLeft)
+               {
+                if(trap == 43) 
+                {
+                 go = true;          
+                }
+               }
+              }
+              else { d = 0; }
+              break;
+             
          }
          break;
     case rStage5Locus:

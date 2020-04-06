@@ -154,13 +154,16 @@ if(x &lt; 130)
             <kind>1</kind>
             <string>with(other){instance_destroy();}
 audio_play_sound(global.sndBossHit,0,0);
-if(hp mod 5 == 0 &amp;&amp; hp != 5)
+if(instance_exists(objGradius))
 {
- mini = instance_create(x-40,y+irandom_range(-100,100),objSolgrynCGSmini);
- mini.direction = 180;
- mini.hspeed = 0;
- mini.gravity_direction = 180;
- mini.gravity = 0.3;
+    if(hp mod 5 == 0 &amp;&amp; hp != 4)
+    {
+     mini = instance_create(x-40,objGradius.y+irandom_range(-100,100),objSolgrynCGSmini);
+     mini.direction = 180;
+     mini.hspeed = 0;
+     mini.gravity_direction = 180;
+     mini.gravity = 0.2;
+    }
 }
 hp-=1;
 

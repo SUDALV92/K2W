@@ -219,7 +219,8 @@ if A=2
           a1.direction=irandom_range(240,270);
           break;
         }
-        
+        if(irandom(5) == 0)
+         scrObjectDestroy(a1);
         //CY=160+ak;
         i++;
         //if CD=0{ak-=24;} if CD=1{ak+=30;}

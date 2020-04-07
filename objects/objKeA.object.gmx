@@ -943,94 +943,102 @@ if(walls)
 {
  if(i == 150)
  {
-  yy = 10;
-  repeat(30)
+  yy = 3;
+  repeat(22)
   {
    wall = instance_create(-20,yy,objCyberBullet2);
    wall.hspeed = 16;
    wall.gravity_direction = 180;
    wall.gravity = 0.4;
-   wall.sprite_index = sprCyberBulletC;
+   wall.sprite_index = sprCyberWallRed;
    wall.playerKiller = false; //only dot killer
+   wall.tail = true;
    
-   yy+=20;
+   yy+=29;
   }
  }
     if(i == 250)
     {
-          yy = 10;
-          repeat(30)
+          yy = 3;
+          repeat(22)
           {
            wall = instance_create(820,yy,objCyberBullet2);
            wall.hspeed = -18;
            wall.gravity_direction = 0;
            wall.gravity = 0.4;
-           wall.sprite_index = sprCyberBulletD;
+           wall.sprite_index = sprCyberWallBlue;
            wall.playerKiller = false; //only dot killer
-           
-           yy+=20;
+           wall.tail = true;
+   
+           yy+=29;
           }
      }
   if(i == 400)
   {
-      yy = 10;
-      repeat(30)
+      yy = 3;
+      repeat(22)
       {
        wall = instance_create(-20,yy,objCyberBullet2);
        wall.hspeed = 16;
        wall.gravity_direction = 180;
        wall.gravity = 0.4;
-       wall.sprite_index = sprCyberBulletC;
+       wall.sprite_index = sprCyberWallRed;
        wall.playerKiller = false; //only dot killer
-       
-       yy+=20;
+       wall.tail = true;
+   
+       yy+=29;
       }
   }
   if(i == 500)
   {
-      yy = 10;
-      repeat(30)
+      yy = 3;
+      repeat(22)
       {
        wall = instance_create(-20,yy,objCyberBullet2);
        wall.hspeed = 20;
        wall.gravity_direction = 180;
        wall.gravity = 0.4;
-       wall.sprite_index = sprCyberBulletC;
+       wall.sprite_index = sprCyberWallRed;
        wall.playerKiller = false; //only dot killer
-       
-       yy+=20;
+       wall.tail = true;
+   
+       yy+=29;
       }
   }
     if(i == 700)
     {
-          yy = 10;
-          repeat(30)
+          yy = 3;
+          repeat(22)
           {
            wall = instance_create(820,yy,objCyberBullet2);
            wall.hspeed = -22;
            wall.gravity_direction = 0;
            wall.gravity = 0.4;
-           wall.sprite_index = sprCyberBulletD;
+           wall.sprite_index = sprCyberWallBlue;
            wall.playerKiller = false; //only dot killer
-           
-           yy+=20;
+           wall.tail = true;
+   
+           yy+=29;
           }
      }
      if(i == 1000)
     {
-          yy = 10;
-          repeat(30)
+          yy = 3;
+          repeat(22)
           {
            wall = instance_create(820,yy,objCyberBullet2);
            wall.mode = 3          
-           wall.sprite_index = sprCyberBulletD;
+           wall.sprite_index = sprCyberWallBlue;
            wall.playerKiller = false; //only dot killer
-           
+           wall.tail = true;
+   
            wall = instance_create(-20,yy,objCyberBullet2);
            wall.mode = 2;
-           wall.sprite_index = sprCyberBulletC;
+           wall.sprite_index = sprCyberWallRed;
            wall.playerKiller = false; //only dot killer
-           yy+=20;
+           wall.tail = true;
+   
+           yy+=29;
           }
      }
  i++;

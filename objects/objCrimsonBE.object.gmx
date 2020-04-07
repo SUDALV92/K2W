@@ -148,16 +148,19 @@ if CE=1
     water1.hspeed = 1;
     water1.image_xscale = 2;
     water1.image_yscale = 2;
+    water1.image_alpha = 0.5;
     
     water2 = instance_create(800,288,objWater3);
     water2.hspeed = -1;
     water2.image_xscale = 2;
     water2.image_yscale = 2;
+    water2.image_alpha = 0.5;
     
     water3 = instance_create(-64,416,objWater3);
     water3.hspeed = 1;
     water3.image_xscale = 2;
     water3.image_yscale = 2;
+    water3.image_alpha = 0.5;
 }
 alarm[11]=choose(150,180,200,220,240);
 </string>

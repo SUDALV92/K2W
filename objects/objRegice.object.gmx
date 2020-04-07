@@ -83,11 +83,11 @@ image_yscale=3;
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random_range(4,8)</string>
+            <string>random_range(4,7)</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random_range(30,80)</string>
+            <string>random_range(30,80) </string>
           </argument>
         </arguments>
       </action>

@@ -157,7 +157,7 @@ if(i == 0)
 }
 if(i &lt; 500)
 {
- if(i mod 20 == 0)
+ if(i mod 30 == 0)
  {
   bullet = instance_create(irandom_range(0,800),-20,objLukaMagic2);
   bullet.speed = 1;
@@ -187,11 +187,13 @@ if(i &lt; 500)
   {
    direction = point_direction(x,y,other.x,other.y);
    gravity_direction = direction;
+   gravity = 0.03;
   }
   with(objLukaMagic3)
   {
    direction = point_direction(x,y,other.x,other.y);
    gravity_direction = direction;
+   gravity = 0.03;
   }
  }
 }

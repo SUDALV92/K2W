@@ -609,6 +609,10 @@ hspeed = -3;
             <kind>1</kind>
             <string>draw_self();
 draw_sprite_ext(sprGradiusExhaus,0,x-17*image_xscale,y,image_xscale,image_yscale,image_angle,c_white,random_range(0.1,1));
+if(scrButtonCheck(global.jumpButton))
+{
+ draw_sprite_ext(sprGradiusHitbox,0,x,y,image_xscale,image_yscale,image_angle,c_white,0.8);
+}
 </string>
           </argument>
         </arguments>

@@ -3988,6 +3988,8 @@
         <sprite>sprites\sprCyberHitbox</sprite>
         <sprite>sprites\sprCyberBulletGreenFX</sprite>
         <sprite>sprites\sprCyberBulletF</sprite>
+        <sprite>sprites\sprCyberWallRed</sprite>
+        <sprite>sprites\sprCyberWallBlue</sprite>
       </sprites>
       <sprites name="Stage6">
         <sprite>sprites\sprBlockBakaA</sprite>
@@ -4603,6 +4605,7 @@
       <sprite>sprites\sprFreudiaTan</sprite>
       <sprite>sprites\sprGradiusExhaus</sprite>
       <sprite>sprites\sprGradius</sprite>
+      <sprite>sprites\sprGradiusHitbox</sprite>
       <sprite>sprites\sprGrolla</sprite>
       <sprite>sprites\sprGrollaTan1</sprite>
       <sprite>sprites\sprGrollaTan2</sprite>

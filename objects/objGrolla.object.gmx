@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>1</depth>
   <persistent>0</persistent>
-  <parentName>objPlayerKiller</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -116,7 +116,15 @@ A=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=0
+            <string>if(image_alpha &gt; 0.9)
+{
+ if(place_meeting(x,y,objPlayer))
+ {
+  scrKillPlayer();
+ }
+}
+
+if A=0
 {
     if(instance_exists(objPlayer))
     {    

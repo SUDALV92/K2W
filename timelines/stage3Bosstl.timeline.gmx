@@ -47,8 +47,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if(loop == 1)
-// timeline_position = 5320;
+            <string>/*if(loop == 1)
+{
+ loop = 2;
+ timeline_position = 3150;
+}*/
 </string>
           </argument>
         </arguments>

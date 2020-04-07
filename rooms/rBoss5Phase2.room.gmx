@@ -88,6 +88,10 @@
     <tile bgName="bgCyberTileB" x="768" y="288" w="32" h="32" xo="0" yo="0" id="10048981" name="inst_9E2AB190" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgCyberTileA" x="0" y="256" w="32" h="32" xo="0" yo="0" id="10048982" name="inst_87E5498F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgCyberTileA" x="768" y="256" w="32" h="32" xo="0" yo="0" id="10048983" name="inst_9D974272" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgCyberTileB" x="0" y="608" w="32" h="32" xo="0" yo="0" id="10064404" name="inst_91028B73" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgCyberTileB" x="0" y="640" w="32" h="32" xo="0" yo="0" id="10064405" name="inst_B5285534" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgCyberTileB" x="768" y="608" w="32" h="32" xo="0" yo="0" id="10064406" name="inst_22DACA97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgCyberTileB" x="768" y="640" w="32" h="32" xo="0" yo="0" id="10064407" name="inst_B48866B7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

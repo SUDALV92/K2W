@@ -85,7 +85,7 @@ i=0;
 }
  
 image_angle+=5;
-a+=26;
+a+=30;//26
 
 if(objLukaA2.loop == 2 &amp;&amp; i mod 2 == 0)
 {

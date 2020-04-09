@@ -175,7 +175,6 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objSpikeDown" x="256" y="32" name="inst_0FB55353" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="528" y="80" name="inst_E656C8A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniUp" x="544" y="80" name="inst_DEF07BAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSaveBlocker" x="256" y="64" name="inst_F1181D3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="512" y="64" name="inst_2ADA134C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="400" y="312" name="inst_D349200C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objEnergyTrigger" x="480" y="512" name="inst_264B16A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

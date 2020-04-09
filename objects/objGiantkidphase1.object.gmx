@@ -350,7 +350,7 @@ if delay=-1
     }    
     if(hp &lt;= 50 &amp;&amp; hp &gt; 40)
     {
-     count = 3; bulletSpeed = -4; bulletsCount = 2;
+     count = 3; bulletSpeed = -3.5; bulletsCount = 2;
     }
     if(hp == 40)
     {

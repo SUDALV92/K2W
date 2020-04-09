@@ -208,7 +208,7 @@ hb.A=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>targetY = irandom_range(64,544);
+            <string>targetY = irandom_range(100,500);
 if(abs(y-targetY) &lt; 50)
  alarm[1] = 1;
 else

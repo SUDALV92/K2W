@@ -4221,6 +4221,7 @@
         <sprite>sprites\sprGreenCherry</sprite>
         <sprite>sprites\sprOrangeCherry</sprite>
         <sprite>sprites\sprPinkCherry</sprite>
+        <sprite>sprites\sprLeheeCherry</sprite>
         <sprite>sprites\sprSkyCherry</sprite>
         <sprite>sprites\sprWhiteCherry</sprite>
         <sprite>sprites\sprYellowCherry</sprite>
@@ -4258,6 +4259,7 @@
       <sprites name="saves">
         <sprite>sprites\sprSaveMask</sprite>
         <sprite>sprites\sprSave</sprite>
+        <sprite>sprites\sprLeheeSave</sprite>
         <sprite>sprites\sprSaveMediumFlip</sprite>
         <sprite>sprites\sprSaveFlip</sprite>
         <sprite>sprites\sprSaveVHardFlip</sprite>
@@ -4466,6 +4468,7 @@
       <sprite>sprites\sprFlameEffectB</sprite>
       <sprite>sprites\sprGod</sprite>
       <sprite>sprites\sprGodTan</sprite>
+      <sprite>sprites\sprGotTanTargeting</sprite>
       <sprite>sprites\sprLKroom1</sprite>
       <sprite>sprites\sprLukaA1</sprite>
       <sprite>sprites\sprLukaA2</sprite>
@@ -5363,6 +5366,9 @@
         <object>objects\objCyberHitbox</object>
       </objects>
       <objects name="blocks">
+        <object>objects\objNumberOneBlock</object>
+        <object>objects\objNumberTwoBlock</object>
+        <object>objects\objNumberThreeBlock</object>
         <object>objects\objBlock</object>
         <object>objects\objMiniBlock</object>
         <object>objects\objSlipBlock</object>
@@ -5586,11 +5592,8 @@
       <object>objects\objGreentrap1</object>
       <object>objects\objHighjump1</object>
       <object>objects\objNumberOne</object>
-      <object>objects\objNumberOneBlock</object>
       <object>objects\objNumberThree</object>
-      <object>objects\objNumberThreeBlock</object>
       <object>objects\objNumberTwo</object>
-      <object>objects\objNumberTwoBlock</object>
       <object>objects\objResetShoot</object>
       <object>objects\objRTTCloud</object>
       <object>objects\objRTTCloudcreater</object>

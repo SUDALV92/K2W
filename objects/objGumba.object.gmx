@@ -153,9 +153,13 @@ if delay&gt;0{delay-=1;}
         }
     }
 
-    if objPlayer.sprite_index=sprPlayerIdle or objPlayer.sprite_index=sprPlayerRunning
-    {with(objPlayer){scrKillPlayer();}}
+    with(other)
+    {
+     if(place_meeting(x,y+1,objBlock) &amp;&amp; sprite_index != sprPlayerJump &amp;&amp; sprite_index != sprPlayerFall)
+      scrKillPlayer();
+    }
 }
+
 </string>
           </argument>
         </arguments>

@@ -98,7 +98,11 @@ if visible=1{solid=true;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if A=0{alarm[0]=50; A=1;}
+            <string>if A == 0
+{
+ alarm[0]=50; 
+ A = 1;
+}
 </string>
           </argument>
         </arguments>

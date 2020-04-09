@@ -52,7 +52,8 @@ active = false;
             <string>if(!go) exit;
 
 solid = false;
-instance_create(176,432,objCherry);
+apple = instance_create(176,432,objCherry);
+apple.sprite_index = sprLeheeCherry;
 active = true;
 
 go = false;

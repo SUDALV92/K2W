@@ -1465,9 +1465,13 @@ switch(room)
         }
         break;
     }
+    case rStage6SevenTrials:
+        with(objSave) if(data == 1) instance_destroy();
+        break;
     case rStage6Destination:
     {
-        with(objDestrap1) go = true; break;
+        with(objDestrap1) go = true; 
+        break;
     }
     case rStage6Sadist:
     {
@@ -1485,6 +1489,9 @@ switch(room)
         with(objCstptrap1) go = true;
         break;
     }
+    case rStage6BreakingOut:
+        scrObjectDestroy(objSave);
+        break;
     case rBoss6Phase2:
     {
         instance_create(0,0,objStage6Clear);

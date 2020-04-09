@@ -83,7 +83,7 @@ a=irandom(360);
  image_alpha-=0.1;
 }
 image_angle+=5;
-a-=65;
+a-=70; //65
 if(objLukaA2.loop == 2)
 {
  bullet = instance_create(x,y,objLukaMagic2);
@@ -142,7 +142,7 @@ if(objLukaA2.loop == 2)
           </argument>
           <argument>
             <kind>0</kind>
-            <string>3</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>0</kind>

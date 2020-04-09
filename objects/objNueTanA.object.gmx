@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>A=0;
-ny = objHoujuuNuea.y;
-direction = point_direction(x,y,objHoujuuNuea.x,choose(irandom_range(60,ny)-60,irandom_range(ny,550)+60));
+//ny = objHoujuuNuea.y;
+//direction = point_direction(x,y,objHoujuuNuea.x,choose(irandom_range(60,ny)-60,irandom_range(ny,550)+60));
+direction = irandom_range(-20,20);
 </string>
           </argument>
         </arguments>

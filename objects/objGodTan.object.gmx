@@ -51,6 +51,8 @@
             <string>image_angle-=8;
 if(targeting &amp;&amp; vspeed &gt; 0)
 {
+ sprite_index = sprGotTanTargeting;
+ scrRedAttachTrail(id,5);
  targeting = false;
  if(instance_exists(objPlayer))
  {

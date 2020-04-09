@@ -52,7 +52,7 @@ background_vspeed[0] = -1.5;</code>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objSave" x="88" y="288" name="inst_39387E06" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSave" x="88" y="288" name="inst_39387E06" locked="0" code="Z = true;&#xA;data = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="80" y="528" name="inst_3C41E387" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSave" x="688" y="320" name="inst_1E691B1B" locked="0" code="Z = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="16" y="128" name="inst_6430D256" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -297,6 +297,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objMiniDown" x="496" y="160" name="inst_442F8230" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="544" y="160" name="inst_863B6DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="560" y="160" name="inst_29E977BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="712" y="296" name="inst_DBC40C65" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBakaTileset" x="736" y="304" w="32" h="32" xo="0" yo="32" id="10050111" name="inst_DD1E8DFB" depth="1000001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

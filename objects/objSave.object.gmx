@@ -82,6 +82,13 @@ switch(room)
     case rStage5PYF:
     case rStage5Locus:
         sprite_index = sprRukitoSave; break;
+        
+    case rStage6Crimson:
+    case rStage6Destination:
+    case rStage6BreakingOut:
+    case rStage6Popularity:
+    case rStage6LoveTrap:
+        sprite_index = sprLeheeSave; break;
 }
 </string>
           </argument>

@@ -182,8 +182,12 @@ if objPlayer.sprite_index!=sprPlayerRunning{
         global.goombaChallenge += 1;
     instance_destroy();}}}
 
-if objPlayer.sprite_index=sprPlayerIdle or objPlayer.sprite_index=sprPlayerRunning
-{with(objPlayer){scrKillPlayer();}}}
+    with(other)
+    {
+     if(place_meeting(x,y+1,objBlock) &amp;&amp; sprite_index != sprPlayerJump &amp;&amp; sprite_index != sprPlayerFall)
+      scrKillPlayer();
+    }
+}
 </string>
           </argument>
         </arguments>

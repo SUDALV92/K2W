@@ -34,6 +34,7 @@ alarm[11]=50;
 A=0;
 B=0;
 delay=0;
+nerf = false;
 </string>
           </argument>
         </arguments>
@@ -148,7 +149,10 @@ if delay=0
         switch(room)
         {
          case rBoss7Phase1:
-          delay=16;
+          if(nerf)
+           delay = 30;
+          else
+           delay = 16;
           break;
          default:
           delay=8;

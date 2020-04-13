@@ -80,7 +80,8 @@ if(mode == 1)
 {
  if(hspeed &gt;= -0.1)
  {
-  vspeed = 10;
+  //vspeed = 10;
+  gravity = 0.4;
  }
 }
 </string>

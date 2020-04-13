@@ -72,8 +72,6 @@ wc=instance_create(400,416,objWarp);
 wc.roomTo = rStage6BossRush;
 wc.autosave = true;
 global.bossRush[0] = true;
-if(!global.gameClear)
-    global.crashPortal[0] = true;
 
 var rngAngle = random(360);
 for(var i = 30; i &lt; 35; i++)

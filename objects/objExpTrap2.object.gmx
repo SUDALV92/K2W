@@ -58,7 +58,6 @@ switch(trap)
     case 5: solid = false; gravity = 0.2; gravity_direction = irandom_range(240,300);
     case 6: solid = false; gravity = 0.2; gravity_direction = irandom_range(240,300);
     case 7: solid = false; 
-            if(global.extra) global.tempTrigger[0] = true; 
             break;
     case 8: vspeed = -5; audio_play_sound(global.sndBreak,0,0); break;
 }

@@ -49,8 +49,8 @@
             <kind>1</kind>
             <string>/*if(loop == 1)
 {
- loop = 2;
- timeline_position = 3150;
+ //loop = 2;
+ timeline_position = 5329;
 }*/
 </string>
           </argument>
@@ -156,8 +156,8 @@ if(loop == 2)
    bullet.alarm[0] = 25;
    first = false;
   }
-  bullet.image_xscale = 0.5;
-  bullet.image_yscale = 0.5;
+  bullet.image_xscale = lineBulletScale;
+  bullet.image_yscale = lineBulletScale;
  }
 }
 </string>
@@ -454,8 +454,8 @@ if(loop == 2)
   bullet = instance_create(x-212,y-405,objLukaTan4);
   bullet.hspeed = -(14-i*1.28);
   bullet.alarm[0] = 25;
-  bullet.image_xscale = 0.5;
-  bullet.image_yscale = 0.5;
+  bullet.image_xscale = lineBulletScale;
+  bullet.image_yscale = lineBulletScale;
  }
 }
 </string>
@@ -664,8 +664,8 @@ if(loop == 2)
   bullet = instance_create(x-212,y-405,objLukaTan4);
   bullet.hspeed = -(14-i*1.28);
   bullet.alarm[0] = 25;
-  bullet.image_xscale = 0.5;
-  bullet.image_yscale = 0.5;
+  bullet.image_xscale = lineBulletScale;
+  bullet.image_yscale = lineBulletScale;
  }
 }
 </string>
@@ -713,8 +713,8 @@ if(loop == 2)
   bullet = instance_create(x-212,y-405,objLukaTan4);
   bullet.hspeed = -(14-i*1.28);
   bullet.alarm[0] = 25;
-  bullet.image_xscale = 0.5;
-  bullet.image_yscale = 0.5;
+  bullet.image_xscale = lineBulletScale;
+  bullet.image_yscale = lineBulletScale;
  }
 }
 </string>
@@ -762,8 +762,8 @@ if(loop == 2)
   bullet = instance_create(x-212,y-405,objLukaTan4);
   bullet.hspeed = -(14-i*1.28);
   bullet.alarm[0] = 25;
-  bullet.image_xscale = 0.5;
-  bullet.image_yscale = 0.5;
+  bullet.image_xscale = lineBulletScale;
+  bullet.image_yscale = lineBulletScale;
  }
 }
 </string>

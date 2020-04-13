@@ -80,8 +80,6 @@ wc=instance_create(672,480,objWarp);
 wc.roomTo = rStage6BossRush;
 wc.autosave = true;
 global.bossRush[3] = true;
-if(!global.gameClear)
-    global.crashPortal[3] = true;
 
 var rngAngle = random(360);
 for(var temp = 35; temp &lt; 40; temp++)
@@ -301,7 +299,14 @@ alarm[11]=180;
             
             if(waterCount == 2 || waterChoose == 0)
             {
-                var waterDirection = choose(-1,1);
+                if(objPlayer.x &lt;= 400)
+                {
+                 waterDirection = -1;
+                }
+                else
+                {
+                 waterDirection = 1;
+                }
                 if(waterDirection == -1)
                 {
                     e1=instance_create(784,576,objGWater1);
@@ -336,7 +341,14 @@ alarm[11]=180;
             
             if(waterCount == 2 || waterChoose == 1)
             {
-                waterDirection = choose(-1,1);
+                if(objPlayer.x &lt;= 400)
+                {
+                 waterDirection = -1;
+                }
+                else
+                {
+                 waterDirection = 1;
+                }
                 if(waterDirection == -1)
                 {
                     e4=instance_create(784,32,objGWater2);

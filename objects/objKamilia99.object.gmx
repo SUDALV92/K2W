@@ -1047,11 +1047,7 @@ if Wg=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!instance_exists(objPlayer) &amp;&amp; global.extra)
-{
- instance_create(16,240,objPlayer);
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>

@@ -64,6 +64,11 @@ if(f &amp;&amp; y &gt; defY - 60)
   vspeed -= 0.2;
  }
 else f = false;
+
+if(hspeed &lt; 0)
+ image_angle = 180;
+else
+ image_angle = 0;
 </string>
           </argument>
         </arguments>

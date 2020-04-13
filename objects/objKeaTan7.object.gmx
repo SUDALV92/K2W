@@ -92,7 +92,9 @@ if(instance_exists(objPlayer))
 else
     b1.direction = c;
 b1.sprite_index=sprite_index;
-b1.playerKiller = false; //only dot killer
+if(room == rBoss5Avoid)
+ b1.playerKiller = false; //only dot killer
+ 
 c+=45;}
 instance_destroy();}
 </string>

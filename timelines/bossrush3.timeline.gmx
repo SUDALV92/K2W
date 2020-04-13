@@ -149,8 +149,10 @@ instance_create(736,384,objZeldaBat);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(1208,304,objBigheadA);
-instance_create(-408,304,objBigheadB);
+            <string>head = instance_create(1208,304,objBigheadA);
+head.nerf = true; //аааа нет времени нормально делать FASF ждёт
+head = instance_create(-408,304,objBigheadB);
+head.nerf = true;;
 asd=0;
 </string>
           </argument>

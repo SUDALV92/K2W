@@ -118,8 +118,6 @@ fade = instance_create(-32,-32,objNueFade);
 fade.warpX = x;
 fade.warpY = y;
 global.bossRush[2] = true;
-if(!global.gameClear)
-    global.crashPortal[2] = true;
 audio_stop_sound(global.currentMusic);
 
 var rngAngle = random(360);

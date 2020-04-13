@@ -352,6 +352,12 @@ if(landing)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
+  if(!instance_exists(objPlayer))
+  {
+   instance_create(x,y-16,objPlayer);
+   with(objPlayer){vspeed = -6;}
+  }
+
   scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
@@ -381,7 +387,13 @@ else if(!global.godMode)
             <string>if(landing)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
-  instance_create(x,y,objExplosionB);   
+  instance_create(x,y,objExplosionB);  
+  if(!instance_exists(objPlayer))
+  {
+   instance_create(x,y-16,objPlayer);
+   with(objPlayer){vspeed = -6;}
+  }
+ 
   scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
@@ -411,7 +423,13 @@ else if(!global.godMode)
             <string>if(landing)
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
-  instance_create(x,y,objExplosionB);   
+  instance_create(x,y,objExplosionB);  
+  if(!instance_exists(objPlayer))
+  {
+   instance_create(x,y-16,objPlayer);
+   with(objPlayer){vspeed = -6;}
+  }
+ 
   scrObjectDestroy(id,false);
 }
 else if(!global.godMode)
@@ -471,6 +489,11 @@ global.godMode = false;
 {  
   audio_play_sound(global.sndGradiusDeath,0,0);
   instance_create(x,y,objExplosionB);   
+  if(!instance_exists(objPlayer))
+  {
+   instance_create(x,y-16,objPlayer);
+   with(objPlayer){vspeed = -6;}
+  }
   scrObjectDestroy(id,false);
 }
 else if(!global.godMode)

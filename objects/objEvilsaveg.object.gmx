@@ -50,10 +50,7 @@ image_speed=1/2;
           <argument>
             <kind>1</kind>
             <string>audio_play_sound(global.sndDeath,0,0);
-if(!global.extra)
- instance_create(560,336,objSave);
-else
- instance_create(x,y,objSave);
+instance_create(560,336,objSave);
 </string>
           </argument>
         </arguments>

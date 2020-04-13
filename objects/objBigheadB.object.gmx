@@ -34,6 +34,7 @@ alarm[11]=50;
 delay=0;
 A=0;
 B=0;
+nerf = false;
 </string>
           </argument>
         </arguments>
@@ -132,7 +133,7 @@ if delay=0
     dead = instance_create(self.x+97,self.y-16,objDeadItems);
     dead.direction = random(360);
     dead.xFactor = 1;
-    while(abs(dead.direction - prevDirection) &lt; 8)
+    while(abs(dead.direction - prevDirection) &lt; 15)
     {
         dead.direction = random(360);
     }
@@ -141,12 +142,15 @@ if delay=0
     dead = instance_create(self.x+35,self.y-16,objDeadItems); 
     dead.direction = random(360);
     dead.xFactor = 1;
-    while(abs(dead.direction - prevDirection) &lt; 8)
+    while(abs(dead.direction - prevDirection) &lt; 15)
     {
         dead.direction = random(360);
     }
     prevDirection = dead.direction;
-    delay=16;
+    if(nerf)
+     delay = 30;
+    else
+     delay = 16;
     }
 }
 </string>

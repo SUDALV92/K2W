@@ -77,7 +77,7 @@ direction += curving;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if image_alpha&gt;=1
+            <string>if(image_alpha&gt;=1 || A == 0)
 {
     with(objPlayer)
     {

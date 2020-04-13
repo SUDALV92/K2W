@@ -89,6 +89,8 @@ else if(instance_exists(objPlayer))
     var yFollow = objPlayer.y;
     if(xFollow &gt;= room_width)
      xFollow = room_width-1;
+    if(yFollow &gt;= room_height)
+     yFollow = room_height-1;
     
     if (!leaveRoom)
     {

@@ -102,8 +102,6 @@ wc=instance_create(384,416,objWarp);
 wc.roomTo = rStage6BossRush;
 wc.autosave = true;
 global.bossRush[1] = true;
-if(!global.gameClear)
-    global.crashPortal[1] = true;
 
 if(global.tempTrigger[0] == 1)
 {

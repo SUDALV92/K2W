@@ -334,6 +334,14 @@ else
  {
   stageName = global.stageName[global.selectedStage];
   temp = "UNLOCKED";  
+  if(global.selectedStage == 78 &amp;&amp; global.extraBossCleared[0] == 1 ||
+     global.selectedStage == 79 &amp;&amp; global.extraBossCleared[1] == 1 ||
+     global.selectedStage == 80 &amp;&amp; global.extraBossCleared[2] == 1 ||
+     global.selectedStage == 81 &amp;&amp; global.extraBossCleared[3] == 1 ||
+     global.selectedStage == 82 &amp;&amp; totalEnergy == 100)
+  {
+   temp = "CLEARED";
+  }
  }
  else
  {
@@ -378,6 +386,11 @@ else
   {
    scrObjectDestroy(objPlayer);
    io_clear();
+   if(global.selectedStage == 58 ||
+      global.selectedStage == 70 ||
+      global.selectedStage == 74 ||
+      global.selectedStage == 82)
+      global.autosave = true;
    room_goto(global.stageRoom[global.selectedStage]);
   }
   if(global.selectedStage == 83 &amp;&amp; totalEnergy == 100)

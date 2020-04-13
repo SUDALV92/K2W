@@ -31,6 +31,32 @@
 len = 64;
 dir = 0;
 setDir = true;
+laserSpeed = 0.3
+speedLocked = true;
+alarm[0] = 100;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>speedLocked = false;
 </string>
           </argument>
         </arguments>
@@ -64,11 +90,24 @@ with(objSmoothCameraPersistent)
   view_xview[0] = x - 400;
 }
 
+with(objPlayer)
+{
+ if(place_meeting(x,y,objMLaserBlocker))
+ {
+  if(!other.speedLocked)
+   other.laserSpeed = 0.6;
+ }
+ else
+ {
+  other.laserSpeed = 0.3;
+ }
+}
+
 with(objMLaser)
 {
  y = 378 + lengthdir_y(272,other.dir);
 }
-dir-= 0.3;
+dir-= laserSpeed;
 </string>
           </argument>
         </arguments>

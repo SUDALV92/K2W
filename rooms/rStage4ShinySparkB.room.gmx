@@ -79,7 +79,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="0" y="0" name="inst_4A1B99F0" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="-32" y="0" name="inst_9C69C2AF" locked="0" code="roomTo = rStage4ShinySparkB;&#xA;warpX = 736;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="19" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="800" y="544" name="inst_C68BEA73" locked="0" code="roomTo = rStage4ShinySparkC;&#xA;warpX = 736;&#xA;warpY = 64;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBlock" x="512" y="256" name="inst_AD27A297" locked="0" code="if(global.extra)&#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBlock" x="512" y="256" name="inst_AD27A297" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="320" name="inst_7E7F4AAE" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="832" y="256" name="inst_E6B1CE5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRoomChanger" x="800" y="256" name="inst_DCAB7385" locked="0" code="tempTrigger = 3;&#xA;roomTo = rStage4ShinySparkC;&#xA;warpX = 736;&#xA;warpY = 64;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

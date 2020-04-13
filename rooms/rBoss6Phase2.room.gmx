@@ -342,7 +342,7 @@
     <instance objName="objSpikeUp" x="5696" y="416" name="inst_68445653" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="7408" y="448" name="inst_F213778A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="5184" y="160" name="inst_254A8FEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objSpikeRight" x="5184" y="96" name="inst_6FD03474" locked="0" code="if(global.extra)&#xA;{&#xA;    instance_destroy();&#xA;}&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSpikeRight" x="5184" y="96" name="inst_6FD03474" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="5184" y="448" name="inst_2ECB1F41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="5232" y="448" name="inst_551114F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="5472" y="352" name="inst_54325344" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

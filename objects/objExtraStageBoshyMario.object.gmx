@@ -41,6 +41,7 @@ phase3Damaged = false;
 phase3Hits = 1;
 jump3 = -8.5;
 attdelay = 0;
+canDie = false;
 </string>
           </argument>
         </arguments>
@@ -146,6 +147,7 @@ if(instance_exists(objPlayer))
    if(i == 210)
    {
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     gravity = 0.4;
     vspeed = -6;
    }
@@ -159,6 +161,7 @@ if(instance_exists(objPlayer))
     vspeed = 0;
     y = objExtraStageBoshyKoopa.y - 16;
     sprite_index = sprMarioStopped;   
+    mask_index = -1;
     with(objExtraStageBoshyKoopa)
     {
      be = instance_create(x,y,objExtraStageBoshyBloodEmitter);
@@ -183,6 +186,7 @@ if(instance_exists(objPlayer))
     hspeed = 0;
     vspeed = -18;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     audio_play_sound(global.sndMarioHereICome,0,0);
     shakeScreen = instance_create(x,y,objShake);
     shakeScreen.timer = 10;
@@ -208,6 +212,7 @@ if(instance_exists(objPlayer))
     }
     hspeed = 0;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     image_angle = 0;
     image_xscale = 4;
     image_yscale = 4;
@@ -254,6 +259,9 @@ if(instance_exists(objPlayer))
    if(i == 0)
    {
     sprite_index = sprMarioWalking;
+    instance_create(x,y,objExtraStageBoshyMarioDamagebox);
+    objExtraStageBoshyMarioDamagebox.image_xscale = image_xscale;
+    objExtraStageBoshyMarioDamagebox.image_yscale = image_yscale;
     image_speed = 0.5;
    }
    i++;
@@ -305,7 +313,9 @@ if(instance_exists(objPlayer))
    {
     hspeed = 0;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     vspeed = -15;
+    scrObjectDestroy(objExtraStageBoshyMarioDamagebox);
    }
    if(y &lt; -50)
    {
@@ -360,6 +370,7 @@ if(instance_exists(objPlayer))
     x = objPlayer.x;
     y = 900;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     image_xscale = -10;
     image_yscale = 10;
     gravity = 0.0;
@@ -412,6 +423,7 @@ if(instance_exists(objPlayer))
     x = objPlayer.x;
     y = 900;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     image_xscale = -10;
     image_yscale = 10;
     gravity = 0.0;
@@ -574,6 +586,7 @@ if(instance_exists(objPlayer))
    {
     i = 0;
     phase = 2;
+    canDie = true;
    }
    break;
   case 100:
@@ -586,6 +599,7 @@ if(instance_exists(objPlayer))
     hspeed = 0;
     gravity = 0;
     sprite_index = sprMarioDying;
+    mask_index = -1;
    }
    i++;
    if(i == 30)
@@ -604,6 +618,7 @@ if(instance_exists(objPlayer))
    {
     scrPlayMusic(global.sndMarioPhase2,false);
     sprite_index = sprMarioWalking;
+    //mask_index = sprMarioWalkingMask;
     image_angle = 0;
     image_xscale = -3;
     image_yscale = 3;
@@ -619,20 +634,24 @@ if(instance_exists(objPlayer))
    {
     hspeed = 0;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
    }
    if(i == 60)
    {
     hspeed = -6;
     sprite_index = sprMarioWalking;
+    mask_index = sprMarioWalkingMask;
    }
    if(i == 100)
    {
     hspeed = 0;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
    }
    if(i == 120)
    {
     sprite_index = sprMarioDying;
+    mask_index = -1;
     gravity = 0.4;
     vspeed = -6.5;
     hspeed = -6;
@@ -738,6 +757,7 @@ if(instance_exists(objPlayer))
    {
     scrPlayMusic(global.sndMarioPhase3,true);
     sprite_index = sprMarioStopped;
+    mask_index = -1;
     image_xscale = abs(image_xscale);
    } 
    i++;
@@ -770,6 +790,7 @@ if(instance_exists(objPlayer))
     j = 0;
     phase = 103;
     sprite_index = sprMarioJumping;
+    mask_index = sprMarioJumpingMask;
     if(objPlayer.x &lt; x)
     {
      hspeed = -4;
@@ -855,19 +876,52 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(phase &gt; 0)
+            <string>with(other)
+{
+ instance_destroy();
+}
+event_user(0);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///deal damage
+if(phase &gt; 0)
 {    
     if attdelay=0
     {
         attdelay = 5;
         if(!deathFlag)
-        {
-            with(other)
+        {            
+            if(nowHP &gt; 1 || canDie)
             {
-             instance_destroy();
+             nowHP -= 1;
+             audio_play_sound(global.sndBossHit,0,0);
             }
-            nowHP -= 1;
-            audio_play_sound(global.sndBossHit,0,0);
+            else
+            {
+             shield = instance_create(x,y,objBossShield);
+             shield.image_xscale = image_xscale/2;
+             shield.image_yscale = image_yscale/2;             
+            }
         }
         if (nowHP &lt;= 0 &amp;&amp; !deathFlag) 
         {   

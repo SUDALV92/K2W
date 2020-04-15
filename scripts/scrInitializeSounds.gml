@@ -178,6 +178,7 @@ global.sndMarioHaaa = audio_create_stream("SFX\Boss\ExtraBoss2\sndMarioHaaa.ogg"
 global.sndMarioBrothers = audio_create_stream("SFX\Boss\ExtraBoss2\sndMarioBrothers.ogg");
 global.sndYoshiJump = audio_create_stream("SFX\Boss\ExtraBoss2\sndYoshiJump.ogg");
 global.sndMarioForBoshy = audio_create_stream("SFX\Boss\ExtraBoss2\sndMarioForBoshy.ogg");
+global.sndReflection = audio_create_stream("SFX\Boss\ExtraBoss2\sndReflection.ogg");
 
 // load music
 global.sndIntro = audio_create_stream("Music\Intro.ogg");

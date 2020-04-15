@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>timerMax = 5200;
+            <string>timerMax = 6000;
 time = timerMax;
 scale = 5;
 image_alpha = 0;

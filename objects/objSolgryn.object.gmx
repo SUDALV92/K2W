@@ -193,6 +193,7 @@ b1=instance_create(x,y,objSolgrynDMP); b1.image_angle=90;}
 a1=instance_create(x,y+30,objSolgrynDMA);
 a1.speed=9;
 a1.direction=CY+CYOffset;
+a1.image_angle = a1.direction;
 CY=330+ak;
 if CD=0{ak-=24;} if CD=1{ak+=18;}
 if CY&lt;210{CD=1;} if CY&gt;330{CD=0;}}
@@ -243,6 +244,7 @@ if(final)
  {
      var dma = instance_create(x,y+irandom_range(-50,50),objSolgrynDMA);
      dma.direction = 180;
+     dma.image_angle = dma.direction;
      dma.speed = 2;
  }
  i++;

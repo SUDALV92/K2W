@@ -76,10 +76,20 @@ dir = 0;
       {
        instance_destroy();
       }
-      else if(place_meeting(x,y,objBlock) || place_meeting(x,y,objBoss6BSoftBlock))
+      else
       {
-       other.yDel = y;
-       instance_destroy();
+       softBlock = instance_place(x,y,objBoss6BSoftBlock);
+       blocked = false;
+       if(softBlock != noone)
+       {
+        if(softBlock.solid)
+         blocked = true;
+       }
+       if(place_meeting(x,y,objBlock) || blocked)
+       {
+        other.yDel = y;
+        instance_destroy();
+       }
       }
      }
     }

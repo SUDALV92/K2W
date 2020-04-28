@@ -114,12 +114,12 @@ alarm[0]=12;
             <kind>1</kind>
             <string>if(objStickyKeysA.x &gt; 400)
 {
- xx = -200;
+ xx = -150;
  xDirection = -1;
 }
 else
 {
- xx = 1000;
+ xx = 950;
 }
 </string>
           </argument>
@@ -128,7 +128,7 @@ else
     </event>
   </entry>
   <entry>
-    <step>80</step>
+    <step>60</step>
     <event>
       <action>
         <libid>1</libid>

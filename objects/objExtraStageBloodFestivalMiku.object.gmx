@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>1000001</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>objPlayerKiller</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -50,7 +50,6 @@ state = 0;
           <argument>
             <kind>1</kind>
             <string>if(!instance_exists(objPlayer)) exit;
-
 if(t == 30)
 {
  targetX = random_range(-32,0);
@@ -59,6 +58,7 @@ if(t == 30)
   apple = instance_create(targetX,16,objExtraStageBloodFestivalApple);
   apple.targetX = targetX+i*64;
   apple.mode = 1;
+  apple.tag = 0;
   apple.direction = 0;
  }
 }
@@ -74,11 +74,12 @@ if(t == 150) //shoot wall and spawn another wall
   }
  }
  targetY = random_range(-32,0);
- for(var i = 0; i &lt;= 9; i++)
+ for(var i = 0; i &lt;= 8; i++)
  {
   apple = instance_create(784,targetY,objExtraStageBloodFestivalApple);
-  apple.targetY = targetY+i*64;
+  apple.targetY = targetY+i*72;
   apple.mode = 1;
+  apple.tag = 1;
   apple.direction = 270;
  }
 }
@@ -99,6 +100,7 @@ if(t == 280)
   apple = instance_create(targetX,592,objExtraStageBloodFestivalApple);
   apple.targetX = targetX-i*64;
   apple.mode = 1;
+  apple.tag = 2;
   apple.direction = 180;
  }
 }
@@ -114,11 +116,12 @@ if(t == 410)
   }
  }
  targetY = random_range(608,640);
- for(var i = 0; i &lt;= 9; i++)
+ for(var i = 0; i &lt;= 8; i++)
  {
   apple = instance_create(16,targetY,objExtraStageBloodFestivalApple);
-  apple.targetY = targetY-i*64;
+  apple.targetY = targetY-i*72;
   apple.mode = 1;
+  apple.tag = 3;
   apple.direction = 90;
  }
 }
@@ -134,34 +137,85 @@ if(t == 540)
   }
  }
 }
-if(t &gt;= 740 &amp;&amp; t &lt; 1100 &amp;&amp; t % 10 == 0)
+if(t &lt;= 730 &amp;&amp; t % 5 == 0)
+{
+    var count = 0;
+    var chosenID = noone;
+    with(objExtraStageBloodFestivalApple) 
+    {
+        if(mode != 0 &amp;&amp; state == 1 &amp;&amp; speed &gt; 1 &amp;&amp; distance_to_object(objPlayer) &gt; 50) 
+        {
+            if(irandom(count) == 0) 
+            {
+                chosenID = id
+            }
+            count++
+        }
+    }
+    with(chosenID) 
+    {
+        apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+        apple.mode = 0;
+        apple.state = 1;
+        apple.gravity_direction = random(360);
+        apple.gravity = 0.040;
+        apple.image_xscale = 0.7;
+        apple.image_yscale = 0.7;
+        apple.outsideDelete = true;
+        
+        if(vspeed != 0)
+        {
+         apple = instance_nearest(800-x,y,objExtraStageBloodFestivalApple);         
+        }
+        else
+        {
+         apple = instance_nearest(x,608-y,objExtraStageBloodFestivalApple);
+        }
+         with(apple)
+         {
+            if(distance_to_object(objPlayer) &gt; 50)
+            {
+                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+                apple.mode = 0;
+                apple.state = 1;
+                apple.gravity_direction = random(360);
+                apple.gravity = 0.025;
+                apple.image_xscale = 0.7;
+                apple.image_yscale = 0.7;
+                apple.outsideDelete = true;
+            }
+         }
+    }
+    
+}
+if(t == 740 || (t &gt;= 740 &amp;&amp; t &lt; 1100 &amp;&amp; t % 12 == 0))
 {
  apple = instance_create(irandom_range(0,800),-16,objExtraStageBloodFestivalApple);
  apple.direction = random_range(180,360);
  apple.curving = 1;
- apple.speed = 5;
- apple.friction = 0.02;
+ apple.speed = random_range(2,6);
+ apple.friction = 0.008;
  apple.sprite_index = scrRandomAppleColor();
  
  apple = instance_create(irandom_range(0,800),624,objExtraStageBloodFestivalApple);
  apple.direction = random_range(0,180);
  apple.curving = -1;
- apple.speed = 5;
- apple.friction = 0.02;
+ apple.speed = random_range(2,6);
+ apple.friction = 0.008;
  apple.sprite_index = scrRandomAppleColor();
  
  apple = instance_create(-16,irandom_range(0,608),objExtraStageBloodFestivalApple);
- apple.direction = random_range(90,270);
+ apple.direction = random_range(270,450);
  apple.curving = 1;
- apple.speed = 5;
- apple.friction = 0.02;
+ apple.speed = random_range(2,6);
+ apple.friction = 0.008;
  apple.sprite_index = scrRandomAppleColor();
  
  apple = instance_create(816,irandom_range(0,608),objExtraStageBloodFestivalApple);
- apple.direction = random_range(270,450);
+ apple.direction = random_range(90,270);
  apple.curving = -1;
- apple.speed = 5;
- apple.friction = 0.02;
+ apple.speed = random_range(2,6);
+ apple.friction = 0.008;
  apple.sprite_index = scrRandomAppleColor();
 }
 if(t == 1120)
@@ -170,14 +224,14 @@ if(t == 1120)
  {
   curving = 0;
   friction = 0;
-  move_towards_point(800,0,1);
+  move_towards_point(objPlayer.x,objPlayer.y,1);
  }
 }
 if(t == 1260)
 {
  with(objExtraStageBloodFestivalApple)
  {
-  direction = point_direction(800,0,x,y);
+  direction = point_direction(objPlayer.x,objPlayer.y,x,y);
   speed = 10;
  }
 }
@@ -294,6 +348,8 @@ if(t == 2760)
   mode = 0;
   sprite_index = sprGrayCherry;
   vspeed = 3;
+  scrObjectDestroy(trail);
+  alarm[4] = 1;
  }
 }
 if(t &gt;= 3050 &amp;&amp; t &lt; 3555 &amp;&amp; t % 5 == 0) //начало бла-бла-бла, атака с оригинала

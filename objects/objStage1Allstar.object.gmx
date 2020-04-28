@@ -154,8 +154,16 @@ alarm[1] = 70;
 {
  if(instance_exists(objPlayer))
  {
-    a=instance_create(xx + lengthdir_x(200,dir),-32,objCrazySpike);
-    dir+=40;
+    if(xx &gt; 400)
+    {
+     a=instance_create(xx + lengthdir_x(200,dir),-32,objCrazySpike);
+     dir+=10;
+    }
+    else
+    {
+     a=instance_create(xx - lengthdir_x(200,dir),-32,objCrazySpike);
+     dir-=10;
+    }
     a.speed=random_range(3,8);
     if(xDirection == 1)
      a.direction = 225;

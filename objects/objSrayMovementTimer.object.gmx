@@ -82,14 +82,6 @@ switch(move)
  case 2: audio_play_sound(global.sndSrayRight2,0,0); break;
  case 3: audio_play_sound(global.sndSrayDown2,0,0); break;
 }
-if(nextCameraSelfie)
-{
-    with(objSray)
-    {
-     cameraSelfie = true;
-     cameraDelay = 1;
-    }
-}
 if(finalMovement)
 {
  with(objSray)

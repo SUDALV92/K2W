@@ -491,7 +491,6 @@
     <instance objName="objMiniDown" x="2272" y="288" name="inst_980B02F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="2288" y="288" name="inst_5DAF4B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniLeft" x="2288" y="424" name="inst_EEF087C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objMiniRight" x="2272" y="360" name="inst_419F4960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="2272" y="480" name="inst_2D63EED0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="2336" y="544" name="inst_45F59109" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="1728" y="512" name="inst_A0AF7489" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

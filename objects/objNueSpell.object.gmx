@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>image_alpha=0.7;
 hspeed=10;
-alarm[0]=81;
+alarm[0]=80;
 D=0;
 </string>
           </argument>

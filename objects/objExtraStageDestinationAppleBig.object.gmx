@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objPlayerKiller</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -36,6 +36,34 @@ mode = 1;
 //7 - player contact locus
 image_xscale = 2;
 image_yscale = 2;
+killer = true;
+targetX = 0;
+targetY = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///killer = true
+killer = true;
+image_alpha = 1;
 </string>
           </argument>
         </arguments>
@@ -63,19 +91,19 @@ image_yscale = 2;
  case 1:
     if(instance_exists(objPlayer))
     {
-     angle = point_direction(x,y,objPlayer.x,objPlayer.y);
+     angle = point_direction(x,y,targetX,targetY);
     }
     else
     {
      angle = random(360);
     }
-     repeat(8)
+     repeat(12)
      {
       apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
       apple.direction = angle;
       apple.sprite_index = sprite_index;
       apple.speed = 8;
-      angle+= 360/8;
+      angle+= 360/12;
      }      
     instance_destroy();  
     break;
@@ -86,7 +114,7 @@ image_yscale = 2;
       apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
       apple.direction = angle;
       apple.sprite_index = sprite_index;
-      apple.speed = 8;
+      apple.speed = 9;
       angle+= 360/8;
      } 
      instance_destroy();
@@ -116,6 +144,7 @@ image_yscale = 2;
       break;
  case 5:
       speed = 0;
+      alarm[1] = 50;
       predictor = instance_nearest(x,y,objExtraStageDestinationApplePredictor);
       scrObjectDestroy(predictor);
       break;
@@ -131,6 +160,53 @@ image_yscale = 2;
      } 
      instance_destroy();
      break;
+ case 9:
+     angle = random(360);
+     var N = 12;
+     repeat(N)
+     {
+      apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
+      apple.direction = angle;
+      apple.sprite_index = sprite_index;
+      apple.speed = 9;
+      angle+= 360/N;
+     } 
+     instance_destroy();
+     break;
+ case 10:
+     angle = random(360);
+     var N = 10;
+     var tempCurving = choose(-0.5,0.5);
+     repeat(N)
+     {
+      apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
+      apple.direction = angle;
+      apple.sprite_index = sprite_index;
+      apple.speed = 9;
+      apple.curving = tempCurving;
+      angle+= 360/N;
+     } 
+     instance_destroy();
+     break;
+ case 11:
+    if(instance_exists(objPlayer))
+    {
+     angle = point_direction(x,y,objPlayer.x,objPlayer.y);
+    }
+    else
+    {
+     angle = random(360);
+    }
+     repeat(8)
+     {
+      apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
+      apple.direction = angle;
+      apple.sprite_index = sprite_index;
+      apple.speed = 8;
+      angle+= 360/8;
+     }      
+    instance_destroy();  
+    break;
 }
 
 </string>
@@ -155,6 +231,34 @@ image_yscale = 2;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///killer logic
+if(killer)
+{
+ if(instance_place(x,y,objPlayer))
+ {
+  scrKillPlayer();
+ }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>switch(mode)
 {
  case 7:
@@ -162,13 +266,13 @@ image_yscale = 2;
     {
      if(abs(objPlayer.x - x) &lt; 20)
      {
-      mode = 1;
+      mode = 11;
       alarm[0] = 20;
      }
     }
     if(hspeed &lt; 0 &amp;&amp; x &lt; 50) || (hspeed &gt; 0 &amp;&amp; x &gt; 750)
     {
-     mode = 1;
+     mode = 11;
      alarm[0] = 1;
     }
     break;

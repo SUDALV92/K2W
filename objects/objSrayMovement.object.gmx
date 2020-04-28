@@ -30,7 +30,7 @@ xShift = random(5)*choose(-1,1);
 alpha = 1;
 alarm[0] = 1;
 alarm[1] = 11;
-alarm[2] = 66;
+alarm[2] = 60;
 N = 0;
 nextCameraSelfie = false;
 finalMovement = false;
@@ -59,7 +59,6 @@ finalMovement = false;
             <string>timer = instance_create(0,0,objSrayMovementTimer);
 timer.move = move;
 timer.N = N;
-timer.nextCameraSelfie = nextCameraSelfie;
 timer.finalMovement = finalMovement;
 instance_destroy();
 </string>
@@ -87,14 +86,6 @@ instance_destroy();
             <string>if(instance_number(objSrayMovement) == 1)
 {
  with(objSray) image_index = 0;
-}
-if(nextCameraSelfie)
-{
- with(objSray)
- {
-  cameraDelay = 1;
-  cameraSelfie = false;
- }
 }
 </string>
           </argument>

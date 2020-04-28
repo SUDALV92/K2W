@@ -954,6 +954,7 @@ switch(room)
         case 26:        
         case 28:
         case 29:
+        case 50:
          with(objSymetryTrapUp) if(trap == other.trg) go = true; 
          with(objSymetryTrapRight) if(trap == other.trg) go = true; 
          with(objSymetryTrapLeft) if(trap == other.trg) go = true; 

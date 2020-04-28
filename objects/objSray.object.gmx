@@ -140,6 +140,18 @@ var time1_8 = 16;
 var time1_4 = 33;
 var time1_2 = 66;
 
+if(i &gt;= 0 &amp;&amp; i &lt; time4 * 15) 
+{
+    if(i % time1 &lt;= time1_2) 
+    {
+        cameraSelfie = true
+    } 
+    else 
+    {
+        cameraSelfie = false
+    }
+}
+
 if(i == 0)   { nextCameraSelfie = true; event_user(3); image_speed = 0; }
 if(i == time1) { nextCameraSelfie = true; event_user(3); }
 if(i == time2) { nextCameraSelfie = true; event_user(3); }
@@ -601,13 +613,15 @@ if(!instance_exists(objPlayer)) exit;
 firstResponse = noone;
 firstResponseN = ds_list_size(movements);
 firstResponseMove = -1;
+var minimalTimer = 999;
 with(objSrayMovementTimer)
 {
- if(N &lt; other.firstResponseN)
- {
-  other.firstResponse = id;
-  other.firstResponseMove = move;
- }
+    if(N &lt; other.firstResponseN &amp;&amp; alarm[0] &lt; minimalTimer)
+    {
+        other.firstResponse = id;
+        other.firstResponseMove = move;
+        minimalTimer = alarm[0];
+    }
 }
 if(firstResponseMove != -1)
 {
@@ -706,27 +720,19 @@ if(firstResponseMove != -1)
           <argument>
             <kind>1</kind>
             <string>///camera movement
-//cameraSelfie = true; //DEBUG
-if(false)
+if(cameraSelfie)
 {
- cameraDelay--;
+ if(view_xview[0] &gt; 0)
+ {
+  view_xview[0] -= 50;
+ }
 }
 else
 {
-    if(cameraSelfie)
-    {
-     if(view_xview[0] &gt; 0)
-     {
-      view_xview[0] -= 25;
-     }
-    }
-    else
-    {
-     if(view_xview[0] &lt; 250)
-     {
-      view_xview[0] += 25;
-     }
-    }
+ if(view_xview[0] &lt; 250)
+ {
+  view_xview[0] += 50;
+ }
 }
 </string>
           </argument>
@@ -756,6 +762,34 @@ if( instance_exists(objPlayer) ) {
     }
 } else {
     scrStopMusic();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Intro skip
+if(instance_exists(objPlayer) &amp;&amp; scrButtonCheckPressed(global.skipButton))
+{
+ if(i &lt; 0)
+ {
+  i = 0;
+ }
 }
 </string>
           </argument>

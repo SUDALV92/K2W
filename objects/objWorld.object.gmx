@@ -742,6 +742,10 @@ switch(room)
       }
       break;
  case rExtraStageMaze:
+ case rExtraStageKTG:
+ case rExtraStageDestinationChase:
+ case rExtraStageDieary:
+ case rExtraStageBloodFestivalStage:
       if(global.currentMusicID == global.sndExtraStage)
       {
           if(audio_sound_get_track_position(global.currentMusic) &gt;= 398.832)
@@ -967,6 +971,7 @@ switch(room)
     case rEnding4:
     case rEnding5:
     case rExtraStageKTGSray:
+    case rExtraStageBoshy:
     case rExtraStageDestinationBananas:
     case rExtraStageBloodFestivalBoss:
     case rExtraStageFinalDeadRoom:

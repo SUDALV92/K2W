@@ -337,6 +337,8 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objMiniDown" x="360" y="320" name="inst_879060A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="376" y="320" name="inst_30FD8A36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMiniDown" x="392" y="320" name="inst_DB60C463" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objSymetryTrapUp" x="1504" y="384" name="inst_36123E36" locked="0" code="trap = 50;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFreeTrigger" x="1248" y="320" name="inst_03B72349" locked="0" code="trg = 50;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgRukitoTileset" x="1376" y="512" w="32" h="32" xo="0" yo="0" id="10046229" name="inst_1E73F9C0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -645,6 +647,7 @@ background_vspeed[1]=-1.5;</code>
     <tile bgName="bgRukitoTileset" x="704" y="576" w="32" h="32" xo="0" yo="0" id="10064388" name="inst_1D93EB3A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="736" y="576" w="32" h="32" xo="0" yo="0" id="10064389" name="inst_D54D0B64" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bgRukitoTileset" x="768" y="576" w="32" h="32" xo="0" yo="0" id="10064390" name="inst_225C9963" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bgRukitoTileset" x="1568" y="384" w="32" h="32" xo="0" yo="0" id="10064573" name="inst_6AF752B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

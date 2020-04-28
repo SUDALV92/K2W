@@ -7,8 +7,13 @@ var loadFile = argument0;
 //only load save data from the save file if the script is currently set to (we should only need to load these on first load because the game stores them afterwards)
 if (loadFile)
 {
-    var timeMap = ds_map_secure_load("Data\timedata");
-    var saveValid = true;   //keeps track of whether or not the save being loaded is valid
+    var f = file_text_open_read("Data\timedata");        
+    timeMap = json_decode(base64_decode(file_text_read_string(f)));    
+    file_text_close(f);
+    if(timeMap == -1)
+    {
+     timeMap = ds_map_secure_load("Data\timedata");
+    }
     
     if (timeMap != -1)  //check if the save map loaded correctly
     {
@@ -18,33 +23,9 @@ if (loadFile)
             global.lastRunEnd[i] = ds_map_find_value(timeMap,"lastRunEnd["+string(i)+"]");
         }
         global.saveCurrentSegmentIndex = ds_map_find_value(timeMap,"currentSegmentIndex");       
-        
-        //load md5 string from the save map
-        var mapMd5 = ds_map_find_value(timeMap,"mapMd5");
-        
-        //check if md5 is not a string in case the save was messed with or got corrupted
-        if (!is_string(mapMd5))
-            mapMd5 = "";   //make it a string for the md5 comparison
-        
-        //generate md5 string to compare with
-        ds_map_delete(timeMap,"mapMd5");
-        var genMd5 = md5_string_unicode(json_encode(timeMap)+global.md5StrAdd);
-        
-        if (mapMd5 != genMd5)   //check if md5 hash is invalid
-            saveValid = false;
-        
+                
         //destroy the map
         ds_map_destroy(timeMap);
-    }
-    if (!saveValid) //check if the save is invalid
-    {
-        //save is invalid, restart the game
-        
-        show_message("Save invalid!");
-        
-        scrRestartGame();
-        
-        exit;
     }
 
     //load the save map
@@ -63,7 +44,7 @@ if (loadFile)
         file_text_close(f);
     }
     
-    saveValid = true;   //keeps track of whether or not the save being loaded is valid
+    var saveValid = true;   //keeps track of whether or not the save being loaded is valid
     
     if (saveMap != -1)  //check if the save map loaded correctly
     {

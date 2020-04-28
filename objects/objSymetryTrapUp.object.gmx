@@ -115,6 +115,10 @@ switch(trap)
   alarm[0] = 4;
   trap = 42;
   break;
+ case 50: //skipfix
+  vspeed = 4;
+  alarm[0] = 8;
+  break;
 }
 
 go = false;

@@ -381,7 +381,7 @@ else
  }
 
  if(scrButtonCheck(global.shootButton) &amp;&amp; !shutdown)
- {  
+ {
   if(global.stageUnlocked[global.selectedStage] &amp;&amp; global.selectedStage != 83)
   {
    scrObjectDestroy(objPlayer);

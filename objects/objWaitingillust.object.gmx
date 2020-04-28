@@ -50,6 +50,8 @@ image_alpha = 0.1;
           <argument>
             <kind>1</kind>
             <string>room_goto(rIntro);
+//global.selectedStage = 81;
+//room_goto(rExtraStageBloodFestivalBoss);
 </string>
           </argument>
         </arguments>

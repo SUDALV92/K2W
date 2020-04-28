@@ -30,6 +30,7 @@ targetX = 0;
 targetY = 0;
 mode = 0;
 state = 0;
+tag = 0;
 curving = 0;
 outsideDelete = false;
 alarm[0] = 200;
@@ -37,6 +38,7 @@ alarm[0] = 200;
 blend = true;
 alarm[1] = 5;
 alarm[4] = 1; //set tail
+trail = noone;
 tailIndex = 0;
 dir = 0;
 len = 0;
@@ -72,7 +74,8 @@ finalSpawn = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scrRedAttachTrail(id,5);
+            <string>///tail
+trail = scrRedAttachTrail(id,5);
 </string>
           </argument>
         </arguments>
@@ -354,25 +357,129 @@ switch(mode)
   {
    case 0:    
     if(x &gt;= targetX)
-     hspeed = 0;
+    {
+        hspeed = 0; 
+        /*if(speed &gt; 0)
+        {    
+            var count = 0;
+            var chosenID = 0;
+            with(objExtraStageBloodFestivalApple) 
+            {
+                if(tag == 3) 
+                {
+                    if(irandom(count) == 0) 
+                    {
+                        chosenID = id
+                    }
+                    count++
+                }
+            }
+            with(chosenID) 
+            {
+                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+                apple.mode = 0;
+                apple.gravity_direction = random(360);
+                apple.gravity = 0.1;
+            }      
+            
+        }*/
+    }
     else
      hspeed = lerp(16,3,x/targetX);
     break;
    case 90:
     if(y &lt;= targetY)
-     vspeed = 0;
+    {
+        vspeed = 0;
+        /*if(speed != 0)
+        {
+            var count = 0;
+            var chosenID = 0;
+            with(objExtraStageBloodFestivalApple) 
+            {
+                if(tag == 2) 
+                {
+                    if(irandom(count) == 0) 
+                    {
+                        chosenID = id
+                    }
+                    count++
+                }
+            }
+            with(chosenID) 
+            {
+                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+                apple.mode = 0;
+                apple.gravity_direction = random(360);
+                apple.gravity = 0.1;
+            }
+            vspeed = 0;
+        }*/
+    }
     else
      vspeed = -lerp(10,3,targetY/y);    
     break;
    case 180:
     if(x &lt;= targetX)
-     hspeed = 0;
+    {
+        hspeed = 0;
+        /*if(speed != 0)
+        {
+            var count = 0;
+            var chosenID = 0;
+            with(objExtraStageBloodFestivalApple) 
+            {
+                if(tag == 1) 
+                {
+                    if(irandom(count) == 0) 
+                    {
+                        chosenID = id
+                    }
+                    count++
+                }
+            }
+            with(chosenID) 
+            {
+                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+                apple.mode = 0;
+                apple.gravity_direction = random(360);
+                apple.gravity = 0.1;
+            }
+            hspeed = 0;
+        }*/
+    }
     else
      hspeed = -lerp(16,3,targetX/x);
     break;
    case 270:
     if(y &gt;= targetY)
-     vspeed = 0;
+    {
+        vspeed = 0;
+        /*if(speed != 0)
+        {
+            var count = 0;
+            var chosenID = 0;
+            with(objExtraStageBloodFestivalApple) 
+            {
+                if(tag == 0) 
+                {
+                    if(irandom(count) == 0) 
+                    {
+                        chosenID = id
+                    }
+                    count++
+                }
+            }
+            with(chosenID) 
+            {
+                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+                apple.mode = 0;
+                apple.gravity_direction = random(360);
+                apple.gravity = 0.1;
+            }
+            vspeed = 0;
+        }*/
+    }
     else
      vspeed = lerp(10,3,y/targetY);
     break;
@@ -517,45 +624,6 @@ switch(mode)
       image_alpha += 0.01;
       break;
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///tail
-/*if(speed &gt; 0 &amp;&amp; speed &lt; 6)
-{
- bullet = instance_create(x,y,objBulletTailFX);
- bullet.sprite_index = sprite_index;
- bullet.image_xscale = image_xscale * 0.8;
- bullet.image_yscale = image_yscale * 0.8;
- bullet.image_alpha = 0.5;
-}
-if(speed &gt;= 6 || mode == 7)
-{
- bullet = instance_create(x,y,objBulletTailFX);
- bullet.sprite_index = sprite_index;
- bullet.image_xscale = image_xscale * 0.8;
- bullet.image_yscale = image_yscale * 0.8;
- bullet.image_alpha = 0.5;
-}
-
-tailIndex++;*/
 </string>
           </argument>
         </arguments>

@@ -62,6 +62,11 @@ if(mode == 1)
  direction += curving;
  x += 3*xFactor;
 }
+if(room == rBoss7Phase1)
+{
+ if(y &gt; 500)
+  gravity = 0.1;
+}
 </string>
           </argument>
         </arguments>

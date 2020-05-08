@@ -22,7 +22,8 @@
             <string>if instance_exists(objPlayer){
 c=0;
 AK=choose(1,2,3,4,5,6);
-alarm[0]=10;}
+alarm[0]=10;
+}
 </string>
           </argument>
         </arguments>

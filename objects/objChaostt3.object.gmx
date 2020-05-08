@@ -38,7 +38,7 @@ delay=0;
 destroy = false;
 hp = 20;
 angle = random(360);
-attackDelay = 8;
+attackDelay = 9;
 attackRotation = 35;
 attackSpeed = 6;
 </string>

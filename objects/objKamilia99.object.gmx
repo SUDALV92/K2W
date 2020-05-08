@@ -93,8 +93,8 @@ with(objChaost){instance_destroy();}
 
 instance_create(x,y,objKamiliaFace);
 //objKamiliaFace.image_index=2;
-hp=100;
-fullhp=100;
+fullhp=130;
+hp=fullhp;
 alarm[11]=3;
 attdelay=0;
 QS=0;
@@ -209,13 +209,13 @@ alarm[9] = 35;
 audio_stop_sound(global.sndTanmak);
 audio_play_sound(global.sndTanmak,0,0);
 curving = choose(-1,1);
-repeat(30)
+repeat(24)
 {
  asd=instance_create(400,236,objChaosss);
  asd.speed=6;
  asd.direction=random(12)+d;
  asd.curving = curving;
- d+=12;
+ d+=15;
 }
 alarm[8] = 30;
 </string>
@@ -281,11 +281,17 @@ alarm[7] = 30;
             <string>///AK == 3
 audio_stop_sound(global.sndTanmak);
 audio_play_sound(global.sndTanmak,0,0);
-repeat(30)
+repeat(13)
 {
- asdg=instance_create(irandom_range(350,450),236,objChaossg);
+ asdg=instance_create(irandom_range(390,500),236,objChaossg);
  asdg.speed=random_range(3,9);
- asdg.direction=random_range(40,140);
+ asdg.direction=random_range(40,85);
+}
+repeat(13)
+{
+ asdg=instance_create(irandom_range(300,390),236,objChaossg);
+ asdg.speed=random_range(3,9);
+ asdg.direction=random_range(85,140);
 }
 alarm[6] = 50;
 </string>
@@ -454,6 +460,7 @@ if(attackType[3])
 if(attackType[4])
 {
     with(objSpaceInvaders) instance_destroy();
+    scrObjectDestroy(objSpaceInvaderl);
     attackType[4] = false;
 }
 if(attackType[5])
@@ -901,11 +908,11 @@ if(phase3)
        with(objChaostt5) { attackDelay = 70; attackSpeed = 5; }//100
        break; 
       case 4:
-       with(objChaostt1) attackDelay = 60;
+       with(objChaostt1) attackDelay = 70;
        with(objChaostt2) { attackDelay = 14; attackSpeed = 6; attackCurving = 0.6; }//30
-       with(objChaostt3) { attackDelay = 6; attackRotation = 35; attackSpeed = 6; }//20
-       with(objChaostt4) { attackDelay = 70; attackDensity = 10; attackSpeed = 2; }//150
-       with(objChaostt5) { attackDelay = 85; attackSpeed = 5; }//100
+       with(objChaostt3) { attackDelay = 7; attackRotation = 35; attackSpeed = 6; }//20
+       with(objChaostt4) { attackDelay = 70; attackDensity = 8; attackSpeed = 2; }//150
+       with(objChaostt5) { attackDelay = 100; attackSpeed = 5; }//100
        break;
      }
     }

@@ -36,7 +36,7 @@ b=0;
 delay=0;
 hp = 20;
 destroy = false;
-attackDelay = 70;
+attackDelay = 80;
 attackAcceleration = 0.1;
 </string>
           </argument>
@@ -93,6 +93,7 @@ alarm[3]=1;
     bullet.direction = point_direction(x,y,objPlayer.x,objPlayer.y);
     bullet.gravity_direction = bullet.direction;
     bullet.gravity = attackAcceleration;    
+    bullet.mode = 4;
 }
 </string>
           </argument>

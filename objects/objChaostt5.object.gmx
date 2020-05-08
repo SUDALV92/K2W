@@ -37,7 +37,7 @@ K=1;
 delay=0;
 destroy = false;
 hp = 20;
-attackDelay = 100;
+attackDelay = 120;
 attackSpeed = 5;
 </string>
           </argument>

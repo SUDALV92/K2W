@@ -39,7 +39,7 @@ destroy = false;
 hp = 20;
 attackDelay = 90;
 attackSpeed = 2;
-attackDensity = 8;
+attackDensity = 6;
 </string>
           </argument>
         </arguments>

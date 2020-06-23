@@ -10,7 +10,7 @@ if (loadFile)
     var f = file_text_open_read("Data\timedata");        
     timeMap = json_decode(base64_decode(file_text_read_string(f)));    
     file_text_close(f);
-    if(timeMap == -1)
+    if(timeMap == -1) //в старых версиях по случайности было оставлено шифрование, так что если timedata не грузится, то видимо надо снять шифрование
     {
      timeMap = ds_map_secure_load("Data\timedata");
     }
@@ -93,21 +93,7 @@ if (loadFile)
         global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");
         global.saveExtraClear = ds_map_find_value(saveMap,"ExtraClear");
         global.savePortalAvailable = ds_map_find_value(saveMap,"portalAvailable");
-        
-        //load md5 string from the save map
-        var mapMd5 = ds_map_find_value(saveMap,"mapMd5");
-        
-        //check if md5 is not a string in case the save was messed with or got corrupted
-        if (!is_string(mapMd5))
-            mapMd5 = "";   //make it a string for the md5 comparison
-        
-        //generate md5 string to compare with
-        ds_map_delete(saveMap,"mapMd5");
-        var genMd5 = md5_string_unicode(json_encode(saveMap)+global.md5StrAdd);
-        
-        if (mapMd5 != genMd5)   //check if md5 hash is invalid
-            saveValid = false;
-        
+                
         //destroy the map
         ds_map_destroy(saveMap);
     }

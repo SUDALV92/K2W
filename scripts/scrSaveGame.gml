@@ -105,7 +105,6 @@ for (var i = 0; i < 16; i++)
     ds_map_add(timeMap,"lastRunEnd["+string(i)+"]",global.lastRunEnd[i]);
 }
 ds_map_add(timeMap,"currentSegmentIndex",global.saveCurrentSegmentIndex);
-//ds_map_secure_save(timeMap,"Data\timedata");
 var f = file_text_open_write("Data\timedata");
 file_text_write_string(f,base64_encode(json_encode(timeMap)));
 file_text_close(f);
@@ -150,9 +149,6 @@ for(var i = global.stagesTotal; i >= 0; i--)
 ds_map_add(saveMap,"autoFire",global.saveAutoFire);
 ds_map_add(saveMap,"ExtraClear",global.saveExtraClear);
 ds_map_add(saveMap,"portalAvailable",global.savePortalAvailable);
-
-//add md5 hash to verify saves and make them harder to hack
-ds_map_add(saveMap,"mapMd5",md5_string_unicode(json_encode(saveMap)+global.md5StrAdd));
 
 //save the map to a file
 if (global.extraSaveProtection) //use ds_map_secure function

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>t = 0;
+realT = 0;
 fade = SceneFade;
 global.extraClear = 1;
 global.stageUnlocked[85] = true;
@@ -43,31 +44,6 @@ endingY = 658;
       </action>
     </event>
     <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///audio sync
-if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 10 ) 
-{     
- audio_sound_set_track_position(global.currentMusic, t/50);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -2067,7 +2043,6 @@ if(t == 15100)
 {
  room_goto(rHomeGood);
 }
-t++;
 </string>
           </argument>
         </arguments>
@@ -2091,6 +2066,28 @@ t++;
             <string>///bg_speed
 bg_x += bg_speed;
 bg_y += bg_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///audio sync
+scrAdvanceT(global.currentMusic);
 </string>
           </argument>
         </arguments>

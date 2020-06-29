@@ -67,6 +67,8 @@ i = 0;
 score = hp; //DeadSplit support
 currentSFX = 0;
 lineBulletScale = 0.4; //0.5
+t = 0;
+realT = 0;
 </string>
           </argument>
         </arguments>
@@ -378,13 +380,10 @@ if(instance_exists(objPlayer))
      global.currentMusic = audio_play_sound(global.sndBoss3,0,0);
     
     if(loop == 1)
-     position = timeline_position+26;
-    else position = timeline_position + 7227;
+     t = timeline_position+26;
+    else t = timeline_position + 7227;
         
-    if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - position ) &gt; 10 ) 
-    {     
-     audio_sound_set_track_position(global.currentMusic, position/50);
-    }
+    scrAdvanceT(global.currentMusic);
 }
 </string>
           </argument>

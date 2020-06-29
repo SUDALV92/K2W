@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>go = false;
 i = -555;
+t = 0;
+realT = 0;
 image_speed = 0;
 movements = ds_list_create();
 event_user(1); //generate movements
@@ -756,10 +758,8 @@ else
             <kind>1</kind>
             <string>///music sync
 if( instance_exists(objPlayer) ) {
-    var t = i + 555
-    if( t &gt; 0 &amp;&amp;  abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 5 ) {
-        audio_sound_set_track_position(global.currentMusic, t/50);
-    }
+    t = i + 555;
+    scrAdvanceT(global.currentMusic);
 } else {
     scrStopMusic();
 }

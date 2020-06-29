@@ -585,7 +585,7 @@ if(instance_exists(objPlayer))
    if(i == 800)
    {
     i = 0;
-    phase = 2;
+    phase = 1;
     canDie = true;
    }
    break;

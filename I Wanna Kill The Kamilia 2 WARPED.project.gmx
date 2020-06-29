@@ -5148,6 +5148,7 @@
       <script>scripts\scrObjectDestroy.gml</script>
       <script>scripts\scrArrayCreate.gml</script>
       <script>scripts\scrStringAdd.gml</script>
+      <script>scripts\scrAdvanceT.gml</script>
     </scripts>
     <scripts name="Extra">
       <scripts name="RedAbyss">

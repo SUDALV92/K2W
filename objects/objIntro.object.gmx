@@ -31,7 +31,6 @@ j = 0;
 warp = false;
 background_alpha[0] = 0;
 background_yscale = 2;
-t = 0;
 backgroundPulse = false;
 bgPulseI = 0;
 freezeX = 0;
@@ -42,6 +41,7 @@ dollY = 0;
 blockCrashed = false;
 
 i = 0;
+realT = 0;
 t = 0;
 </string>
           </argument>
@@ -879,11 +879,7 @@ if(warp)
           <argument>
             <kind>1</kind>
             <string>///music sync
-if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 10 ) 
-{
- audio_sound_set_track_position(global.currentMusic, t/50);
-}
-t++;
+scrAdvanceT(global.currentMusic);
 </string>
           </argument>
         </arguments>

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>t = 0;
+realT = 0;
 state = 0;
 </string>
           </argument>
@@ -927,7 +928,6 @@ if(t == 9100)
     audio_play_sound(global.sndDeath,0,0);
     instance_destroy();
 }
-t++;
 </string>
           </argument>
         </arguments>
@@ -949,10 +949,7 @@ t++;
           <argument>
             <kind>1</kind>
             <string>///Sync
-if( abs( audio_sound_get_track_position(global.currentMusic) * 50 - t ) &gt; 10 ) 
-{     
- audio_sound_set_track_position(global.currentMusic, t/50);
-}
+scrAdvanceT(global.currentMusic);
 </string>
           </argument>
         </arguments>

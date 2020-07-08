@@ -149,6 +149,7 @@ for(var i = global.stagesTotal; i >= 0; i--)
 ds_map_add(saveMap,"autoFire",global.saveAutoFire);
 ds_map_add(saveMap,"ExtraClear",global.saveExtraClear);
 ds_map_add(saveMap,"portalAvailable",global.savePortalAvailable);
+ds_map_add(saveMap,"selectedStage",global.selectedStage);
 
 //save the map to a file
 if (global.extraSaveProtection) //use ds_map_secure function

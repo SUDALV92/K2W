@@ -93,6 +93,9 @@ if (loadFile)
         global.saveAutoFire = ds_map_find_value(saveMap,"autoFire");
         global.saveExtraClear = ds_map_find_value(saveMap,"ExtraClear");
         global.savePortalAvailable = ds_map_find_value(saveMap,"portalAvailable");
+        var tempStage = ds_map_find_value(saveMap,"selectedStage"); //загружаем selectedStage ТОЛЬКО если загрузка происходит из файла
+        if(!is_undefined(tempStage)) //совместимость со старыми сейвами
+             global.selectedStage = tempStage;
                 
         //destroy the map
         ds_map_destroy(saveMap);

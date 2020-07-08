@@ -51,7 +51,9 @@ xx = x;
 yy = y;
 
 finalSpawn = true;
-
+dirSpeed = 0;
+collapsing = 0;
+shooted = false;
 </string>
           </argument>
         </arguments>
@@ -197,6 +199,18 @@ switch(mode)
   }
   alarm[2] = irandom_range(20,50);
   break;
+ case 12:
+    apple = instance_create(x,y,objExtraStageBloodFestivalApple);
+    apple.sprite_index = sprite_index;
+    apple.image_xscale = 1;
+    apple.image_yscale = 1;
+    apple.direction = 270
+    apple.mode = 13;
+    apple.depth = 1;
+    apple.alarm[2] = 1;
+    
+    alarm[2] = irandom_range(10,70);
+    break;
  case 13:
   image_alpha = 1;
   if(finalSpawn)
@@ -358,31 +372,7 @@ switch(mode)
    case 0:    
     if(x &gt;= targetX)
     {
-        hspeed = 0; 
-        /*if(speed &gt; 0)
-        {    
-            var count = 0;
-            var chosenID = 0;
-            with(objExtraStageBloodFestivalApple) 
-            {
-                if(tag == 3) 
-                {
-                    if(irandom(count) == 0) 
-                    {
-                        chosenID = id
-                    }
-                    count++
-                }
-            }
-            with(chosenID) 
-            {
-                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
-                apple.mode = 0;
-                apple.gravity_direction = random(360);
-                apple.gravity = 0.1;
-            }      
-            
-        }*/
+        hspeed = 0;
     }
     else
      hspeed = lerp(16,3,x/targetX);
@@ -391,30 +381,6 @@ switch(mode)
     if(y &lt;= targetY)
     {
         vspeed = 0;
-        /*if(speed != 0)
-        {
-            var count = 0;
-            var chosenID = 0;
-            with(objExtraStageBloodFestivalApple) 
-            {
-                if(tag == 2) 
-                {
-                    if(irandom(count) == 0) 
-                    {
-                        chosenID = id
-                    }
-                    count++
-                }
-            }
-            with(chosenID) 
-            {
-                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
-                apple.mode = 0;
-                apple.gravity_direction = random(360);
-                apple.gravity = 0.1;
-            }
-            vspeed = 0;
-        }*/
     }
     else
      vspeed = -lerp(10,3,targetY/y);    
@@ -423,30 +389,6 @@ switch(mode)
     if(x &lt;= targetX)
     {
         hspeed = 0;
-        /*if(speed != 0)
-        {
-            var count = 0;
-            var chosenID = 0;
-            with(objExtraStageBloodFestivalApple) 
-            {
-                if(tag == 1) 
-                {
-                    if(irandom(count) == 0) 
-                    {
-                        chosenID = id
-                    }
-                    count++
-                }
-            }
-            with(chosenID) 
-            {
-                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
-                apple.mode = 0;
-                apple.gravity_direction = random(360);
-                apple.gravity = 0.1;
-            }
-            hspeed = 0;
-        }*/
     }
     else
      hspeed = -lerp(16,3,targetX/x);
@@ -455,30 +397,6 @@ switch(mode)
     if(y &gt;= targetY)
     {
         vspeed = 0;
-        /*if(speed != 0)
-        {
-            var count = 0;
-            var chosenID = 0;
-            with(objExtraStageBloodFestivalApple) 
-            {
-                if(tag == 0) 
-                {
-                    if(irandom(count) == 0) 
-                    {
-                        chosenID = id
-                    }
-                    count++
-                }
-            }
-            with(chosenID) 
-            {
-                apple = instance_create(x,y,objExtraStageBloodFestivalApple);
-                apple.mode = 0;
-                apple.gravity_direction = random(360);
-                apple.gravity = 0.1;
-            }
-            vspeed = 0;
-        }*/
     }
     else
      vspeed = lerp(10,3,y/targetY);
@@ -561,66 +479,8 @@ switch(mode)
     
     x = xx + lengthdir_x(shift,direction + 90*state);
     y = yy + lengthdir_y(shift,direction + 90*state);
-    break;
- case 12:
-      if(image_alpha &lt; 1)
-      {
-       image_alpha += 0.01;
-      }
-      x = 400 + lengthdir_x(len,dir);
-      y = 304 + lengthdir_y(len,dir);
-      
-      if(len &lt; -60)
-       maxLen = 60;
-       
-      if(state == 0)
-      {
-       if(len &gt; -maxLen)
-       {
-        if(maxLen &gt; 60)
-         len -= 8
-        else
-        len -= 4;
-       }
-       else
-       {
-        state = 1;
-        depth = choose(0,-1,-2,-3);
-       }
-      }
-      else if(state == 1)
-      {
-       if(len &lt; maxLen)
-       {
-        len += 4;
-       }
-       else
-       {
-        state = 0;
-        depth = choose(0,-1,-2,-3);
-       }
-      }
-      if(len == 0 &amp;&amp; finalSpawn)
-      {
-       repeat(12)
-       {
-        apple = instance_create(irandom_range(150,650),irandom_range(150,458),objExtraStageBloodFestivalApple);
-        apple.sprite_index = scrRandomAppleColor();
-        apple.image_alpha = 0.5;
-        apple.image_xscale = 0.8;
-        apple.image_yscale = 0.8;
-        apple.direction = point_direction(400,304,apple.x,apple.y);
-        apple.mode = 13;
-        apple.depth = 1;
-        apple.alarm[2] = 50;
-       }
-      }
-      break;
+    break; 
  case 13:
-      if(distance_to_point(400,304) &lt;= 1)
-      {
-       instance_destroy();
-      }
       image_alpha += 0.01;
       break;
 }

@@ -447,39 +447,6 @@ if (keyboard_check(vk_control) &amp;&amp; keyboard_check_pressed(ord("M")) &amp;
     
     scrSaveConfig();    //save mute setting
 }
-
-if(keyboard_check_released(ord("G")))
-{
- global.godMode = !global.godMode;
-}
-if(keyboard_check_released(vk_pageup))
-{
- room_goto_previous();
-}
-if(keyboard_check_released(vk_pagedown))
-{
- room_goto_next();
-}
-if(keyboard_check_released(vk_home))
-{
- global.worldSpeed = 50;
-}
-if(keyboard_check_released(vk_end))
-{
- global.worldSpeed = 500;
-}
-if(keyboard_check(vk_tab))
-{
- with(objPlayer)
- {
-  x = mouse_x;
-  y = mouse_y;
- }
-}
-if(keyboard_check_released(vk_backspace))
-{
- global.debug = !global.debug;
-}
 </string>
           </argument>
         </arguments>
@@ -817,6 +784,58 @@ switch(room)
 for(var temp = 0; temp &lt; sfxCount; temp++)
 {
  global.sfxDelay[temp]--;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if(false)
+{
+    if(keyboard_check_released(ord("G")))
+    {
+     global.godMode = !global.godMode;
+    }
+    if(keyboard_check_released(vk_pageup))
+    {
+     room_goto_previous();
+    }
+    if(keyboard_check_released(vk_pagedown))
+    {
+     room_goto_next();
+    }
+    if(keyboard_check_released(vk_home))
+    {
+     global.worldSpeed = 50;
+    }
+    if(keyboard_check_released(vk_end))
+    {
+     global.worldSpeed = 500;
+    }
+    if(keyboard_check(vk_tab))
+    {
+     with(objPlayer)
+     {
+      x = mouse_x;
+      y = mouse_y;
+     }
+    }
 }
 </string>
           </argument>

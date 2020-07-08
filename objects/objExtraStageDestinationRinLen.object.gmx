@@ -37,6 +37,7 @@ horizontalLocus = 1;
 j = 0;
 pathX = 200;
 pathY = 590;
+practice = false;
 </string>
           </argument>
         </arguments>
@@ -210,6 +211,7 @@ if(t &gt;= 1850 &amp;&amp; t &lt;= 2200 &amp;&amp; t % 30 == 0)
 if(t &gt; 2200 &amp;&amp; t &lt; 2450 &amp;&amp; t % 20 == 0)
 {
  apple = instance_create(-48,irandom_range(100,200),objExtraStageDestinationAppleBig);
+ apple.sprite_index = sprOrangeCherry;
  apple.mode = 4;
  apple.direction = 0;
  apple.speed = 4;
@@ -217,6 +219,7 @@ if(t &gt; 2200 &amp;&amp; t &lt; 2450 &amp;&amp; t % 20 == 0)
  
  apple = instance_create(848,irandom_range(100,200),objExtraStageDestinationAppleBig);
  apple.mode = 4;
+ apple.sprite_index = sprOrangeCherry;
  apple.direction = 180;
  apple.speed = 4;
  apple.alarm[0] = irandom_range(20,100);
@@ -382,11 +385,11 @@ if(t &gt; 4170 &amp;&amp; t &lt; 4850) //intro 3
 {
  if(t &lt; 4510)
  {
-  pathY-=1.3;
+  pathY-=1.11;
  }
  else
  {
-  pathY+=1.3;
+  pathY+=1.11;
  }
  if(t % 5 == 0)
  {
@@ -560,7 +563,7 @@ if(t == 5960)
      instance_destroy();
  }
 }
-if(t &gt;= 6000 &amp;&amp; t &lt; 6150)
+if(!practice &amp;&amp; t &gt;= 6000 &amp;&amp; t &lt; 6150)
 {
  repeat(2)
  {
@@ -905,6 +908,63 @@ if(t == 9800)
     audio_play_sound(global.sndDeath,0,0);
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///practice
+/*if(keyboard_check_pressed(ord('1')))
+{
+ scrObjectDestroy(objExtraStageDestinationAppleSmall);
+ scrObjectDestroy(objExtraStageDestinationAppleBig);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
+ t = 1850;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('2')))
+{
+ scrObjectDestroy(objExtraStageDestinationAppleSmall);
+ scrObjectDestroy(objExtraStageDestinationAppleBig);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
+ t = 2570;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('3')))
+{
+ scrObjectDestroy(objExtraStageDestinationAppleSmall);
+ scrObjectDestroy(objExtraStageDestinationAppleBig);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
+ t = 4170;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('4')))
+{
+ scrObjectDestroy(objExtraStageDestinationAppleSmall);
+ scrObjectDestroy(objExtraStageDestinationAppleBig);
+ scrObjectDestroy(objExtraStageDestinationApplePredictor);
+ t = 4920;
+ practice = true;
+}
+if(practice &amp;&amp; t == 6050)
+{
+ scrKillPlayer();
+}*/
 </string>
           </argument>
         </arguments>

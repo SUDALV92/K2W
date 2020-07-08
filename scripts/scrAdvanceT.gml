@@ -10,7 +10,7 @@ if( room_speed < 100 ) {
        realT = t;   
     } else if( deltaT > 0 ) {
         //show_debug_message( "Bad sync" );
-        room_speed = 53;
+        room_speed = 51;
     } else {
         // All is good.
         room_speed = 50;

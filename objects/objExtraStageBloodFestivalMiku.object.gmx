@@ -28,6 +28,7 @@
             <string>t = 0;
 realT = 0;
 state = 0;
+practice = false;
 </string>
           </argument>
         </arguments>
@@ -377,7 +378,7 @@ if(t &gt;= 3755 &amp;&amp; t &lt; 4020 &amp;&amp; t % 5 == 0)
  apple.vspeed = -7;
  apple.mode = 4;
 }
-if(t &gt;= 4060 &amp;&amp; t &lt; 4350 &amp;&amp; choose(0,1,2,3) != 0) //серые яблоки из мику (75%)
+if(!practice &amp;&amp; t &gt;= 4060 &amp;&amp; t &lt; 4350 &amp;&amp; choose(0,1,2,3) != 0) //серые яблоки из мику (75%)
 {
  angle = 0;
  repeat(5)
@@ -762,105 +763,28 @@ if(t == 8050)
   }
  }
 }
-if(t == 8100)
+if(t &gt;= 8100 &amp;&amp; t &lt;= 8650 &amp;&amp; t % 4 == 0) //final
 {
- dir = 45;
- repeat(4)
- {
-  apple = instance_create(400,304,objExtraStageBloodFestivalApple);
-  apple.image_alpha = 0.1;
-  apple.len = 420;
-  apple.maxLen = 420;
-  apple.dir = dir;
-  apple.image_xscale = 2;
-  apple.image_yscale = 2;
-  apple.sprite_index = scrRandomAppleColor();
-  apple.mode = 12;
-  apple.x = 400 + lengthdir_x(apple.len,apple.dir);
-  apple.y = 304 + lengthdir_y(apple.len,apple.dir);
-  
-  dir+=90;
- }
+    apple = instance_create(820,irandom_range(40,140),objExtraStageBloodFestivalApple);
+    apple.image_xscale = 2;
+    apple.image_yscale = 2;
+    apple.sprite_index = scrRandomAppleColor();
+    apple.mode = 12;
+    apple.alarm[2] = irandom_range(20,70);
+    apple.hspeed = -10;
 }
-/*if(t &gt;= 8100 &amp;&amp; t &lt; 8650)
-{
- with(objExtraStageBloodFestivalApple)
- {
-  dir += 0.5;
- }
-}*/
 if(t == 8650)
 {
- with(objExtraStageBloodFestivalApple)
- {
-  finalSpawn = false;
-  if(mode == 13)
-  {
-   move_towards_point(400,304,2);
-  }
- }
  centerApple = instance_create(400,304,objExtraStageBloodFestivalApple);
  centerApple.image_xscale = 0;
  centerApple.image_yscale = 0;
  centerApple.sprite_index = scrRandomAppleColor();
  centerApple.depth = -1;
+ centerApple.alarm[4] = 0;
 }
-if(t &gt;= 8650 &amp;&amp; t &lt; 8850 &amp;&amp; t % 50 == 0)
-{
- if(t == 8650)
-  alpha = 0.5;
- else if(t == 8700)
-  alpha = 1;
- repeat(15)
- {
-  apple = instance_create(irandom_range(-100,900),640,objExtraStageBloodFestivalApple);
-  apple.sprite_index = scrRandomAppleColor();
-  apple.mode = 13;
-  apple.image_xscale = 0.8;
-  apple.image_yscale = 0.8;
-  apple.direction = point_direction(apple.x,apple.y,400,304);
-  apple.speed = 2;
-  apple.image_alpha = alpha;
- }
- repeat(15)
- {
-  apple = instance_create(irandom_range(-100,900),-32,objExtraStageBloodFestivalApple);
-  apple.sprite_index = scrRandomAppleColor();
-  apple.mode = 13;
-  apple.image_xscale = 0.8;
-  apple.image_yscale = 0.8;
-  apple.direction = point_direction(apple.x,apple.y,400,304);
-  apple.speed = 2;
-  apple.image_alpha = alpha;
- }
- repeat(15)
- {
-  apple = instance_create(-32,irandom_range(-100,700),objExtraStageBloodFestivalApple);
-  apple.sprite_index = scrRandomAppleColor();
-  apple.mode = 13;
-  apple.image_xscale = 0.8;
-  apple.image_yscale = 0.8;
-  apple.direction = point_direction(apple.x,apple.y,400,304);
-  apple.speed = 2;
-  apple.image_alpha = alpha;
- }
- repeat(15)
- {
-  apple = instance_create(832,irandom_range(-100,700),objExtraStageBloodFestivalApple);
-  apple.sprite_index = scrRandomAppleColor();
-  apple.mode = 13;
-  apple.direction = point_direction(apple.x,apple.y,400,304);
-  apple.speed = 1;
- }
-}
+
 if(t &gt;= 8650 &amp;&amp; t &lt; 8850)
 {
- with(objExtraStageBloodFestivalApple)
- {
-  dir += 3;
-  if(maxLen &gt; 5)
-   maxLen-=0.5;
- }
  centerApple.image_xscale += 0.02;
  centerApple.image_yscale += 0.02;
  
@@ -887,7 +811,7 @@ if(t == 8880)
   apple.image_xscale = 0.5;
   apple.image_yscale = 0.5;
   apple.sprite_index = scrRandomAppleColor();
-  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.direction = random(360);
   apple.speed = random_range(1,4);
  }
  repeat(30)
@@ -896,7 +820,7 @@ if(t == 8880)
   apple.image_xscale = 0.5;
   apple.image_yscale = 0.5;
   apple.sprite_index = scrRandomAppleColor();
-  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.direction = random(360);
   apple.speed = random_range(1,4);
  }
  repeat(30)
@@ -905,7 +829,7 @@ if(t == 8880)
   apple.image_xscale = 0.5;
   apple.image_yscale = 0.5;
   apple.sprite_index = scrRandomAppleColor();
-  apple.direction = random(360); //point_direction(400,304,apple.x,apple.y);
+  apple.direction = random(360);
   apple.speed = random_range(1,4);
  }
 }
@@ -928,6 +852,58 @@ if(t == 9100)
     audio_play_sound(global.sndDeath,0,0);
     instance_destroy();
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///practice
+/*if(keyboard_check_pressed(ord('1')))
+{
+ scrObjectDestroy(objExtraStageBloodFestivalApple);
+ t = 1330;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('2')))
+{
+ scrObjectDestroy(objExtraStageBloodFestivalApple);
+ t = 3050;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('3')))
+{
+ scrObjectDestroy(objExtraStageBloodFestivalApple);
+ t = 7830;
+ practice = true;
+}
+if(keyboard_check_pressed(ord('4')))
+{
+ scrObjectDestroy(objExtraStageBloodFestivalApple);
+ t = 8050;
+ practice = true;
+}
+if(practice)
+{
+ if(t == 4100)
+ {
+  scrKillPlayer();
+ }
+}*/
 </string>
           </argument>
         </arguments>

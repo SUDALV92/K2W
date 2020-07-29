@@ -79,6 +79,7 @@ switch(mode)
    apple.targetY = targetY;
    apple.mode = 2;
    apple.sprite_index = sprite_index;
+   apple.outsideDelete = true;
    angle+= 360/8;
   }
   instance_destroy();

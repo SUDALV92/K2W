@@ -28,6 +28,31 @@
             <string>move = 0;
 xShift = random(5)*choose(-1,1);
 alpha = 1;
+active = false;
+soundPlayed = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>active = true;
 </string>
           </argument>
         </arguments>
@@ -50,11 +75,25 @@ alpha = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y -= 10;
-x+=xShift;
-alpha -= 0.05;
-if(alpha &lt;= 0)
- instance_destroy();
+            <string>if(active)
+{
+ if(!soundPlayed)
+ {
+  switch(move)
+  {
+   case 0: audio_play_sound(global.sndSrayLeft2,0,0); break;
+   case 1: audio_play_sound(global.sndSrayUp2,0,0); break;
+   case 2: audio_play_sound(global.sndSrayRight2,0,0); break;
+   case 3: audio_play_sound(global.sndSrayDown2,0,0); break;
+  }
+  soundPlayed = true;
+ }
+ y -= 10;
+ x+=xShift;
+ alpha -= 0.05;
+ if(alpha &lt;= 0)
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -77,18 +116,21 @@ if(alpha &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fJoystix42);
-draw_set_halign(fa_center);
-draw_set_valign(fa_top);
-draw_set_alpha(alpha);
-switch(move)
+            <string>if(active)
 {
- case 0: scrDrawTextOutline(x,y,"LEFT",c_white,c_black); break;
- case 1: scrDrawTextOutline(x,y,"UP",c_white,c_black); break;
- case 2: scrDrawTextOutline(x,y,"RIGHT",c_white,c_black); break;
- case 3: scrDrawTextOutline(x,y,"DOWN",c_white,c_black); break;
+ draw_set_font(fJoystix42);
+ draw_set_halign(fa_center);
+ draw_set_valign(fa_top);
+ draw_set_alpha(alpha);
+ switch(move)
+ {
+  case 0: scrDrawTextOutline(x,y,"LEFT",c_white,c_black); break;
+  case 1: scrDrawTextOutline(x,y,"UP",c_white,c_black); break;
+  case 2: scrDrawTextOutline(x,y,"RIGHT",c_white,c_black); break;
+  case 3: scrDrawTextOutline(x,y,"DOWN",c_white,c_black); break;
+ }
+ draw_set_alpha(1);
 }
-draw_set_alpha(1);
 </string>
           </argument>
         </arguments>

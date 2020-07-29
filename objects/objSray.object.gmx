@@ -38,6 +38,7 @@ cameraSelfie = false;
 nextCameraSelfie = false;
 cameraDelay = 10;
 auto = false;
+practice = false;
 show = false;
 party = 0;
 partyBlocksI = 0;
@@ -582,6 +583,10 @@ if(dead &amp;&amp; i == (deadI + 205))
     warp.autosave = true;    
     image_alpha = 0;
     scrStopMusic();
+    if(practice)
+    {
+     scrKillPlayer();
+    }
 }
 if(dead &amp;&amp; i == (deadI + 225))
 {
@@ -791,6 +796,36 @@ if(instance_exists(objPlayer) &amp;&amp; scrButtonCheckPressed(global.skipButton
   i = 0;
  }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///practice
+/*if(instance_exists(objPlayer) &amp;&amp; keyboard_check_pressed(ord('1')))
+{
+ practice = true;
+ i = 533 * 7;
+ currentMovement = 70;
+ responseMovement = 70;
+ scrObjectDestroy(objSrayDialog);
+ scrObjectDestroy(objGamelist);
+}*/
 </string>
           </argument>
         </arguments>

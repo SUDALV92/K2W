@@ -930,6 +930,9 @@ switch(room)
        djump = true;
       }
       break;
+ case rExtraStageKTGSray:
+      xScale = -1;
+      break;
 }
 
 switch(room)

@@ -61,6 +61,7 @@ value = 1;
     } 
     global.noDJump = value;
 }
+instance_destroy();
 </string>
           </argument>
         </arguments>

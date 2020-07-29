@@ -42,6 +42,9 @@ phase3Hits = 1;
 jump3 = -8.5;
 attdelay = 0;
 canDie = false;
+practice = false;
+scrPlayMusic(global.sndMarioPhase1,0);
+audio_sound_set_track_position( global.currentMusic, 0 );
 </string>
           </argument>
         </arguments>
@@ -100,6 +103,38 @@ if(scrButtonCheck(global.skipButton))
 {
  alarm[0] = 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///practice
+/*if(keyboard_check_pressed(ord('1')))
+{
+ alarm[0] = 1;
+ phase = 102;
+ x = 200;
+ y = 500;
+ hspeed = 0;
+ sprite_index = sprMarioStopped;
+ image_xscale = abs(image_xscale);
+ practice = true;
+}*/
 </string>
           </argument>
         </arguments>
@@ -958,7 +993,7 @@ if(phase == 103 &amp;&amp; !phase3Damaged)
   hspeed+=0.5;
 
  if(abs(image_xscale) &lt; 1)
- {
+ {    
   phase = 104;
   with(objExtraStageBoshyMarioDancer)
    instance_destroy();
@@ -968,6 +1003,8 @@ if(phase == 103 &amp;&amp; !phase3Damaged)
   be.direction = other.direction;
   audio_stop_all();
   audio_play_sound(global.sndMarioThankYou,0,0);
+  if!(practice)
+  {
     if(!global.energy[96])
     {
       energy = instance_create(x,y,objEnergy);
@@ -978,10 +1015,10 @@ if(phase == 103 &amp;&amp; !phase3Damaged)
       energy.alarm[0] = 20;
       energy.active = true;
     }
-  global.extraBossCleared[0] = 1;
-  objExtraStageBoshyTubeWarp.alarm[1] = 1;
+    global.extraBossCleared[0] = 1;
+    objExtraStageBoshyTubeWarp.alarm[1] = 1;
+  }
   instance_destroy();
-  //CheetahmenWarpToBoss.alarm[2] = 1;
  }
  phase3Damaged = true;
 }

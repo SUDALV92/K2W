@@ -526,6 +526,7 @@ if(instance_exists(objPlayer))
  }
  with(objDBCherry2) 
  {
+  i = -0.5;
   repeat(2)
   {
    b = instance_create(x+i*10,y+5,objDBCherry1);
@@ -534,6 +535,7 @@ if(instance_exists(objPlayer))
    b.gravity = 0; 
    b.blend = true;
    b.alarm[0] = 5;
+   i+=1;
   }
   instance_destroy();
  }

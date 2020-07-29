@@ -59,7 +59,7 @@ background_hspeed = -1.5;</code>
     <instance objName="objBlock" x="768" y="32" name="inst_DEB8F029" locked="0" code="" scaleX="1" scaleY="17" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="576" y="384" name="inst_600FB501" locked="0" code="depth = 101;&#xA;" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="577" y="416" name="inst_4E6BD366" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayerStart" x="739" y="567" name="inst_4389461F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayerStart" x="613" y="567" name="inst_4389461F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgPortalTileset" x="0" y="576" w="32" h="32" xo="0" yo="0" id="10064193" name="inst_76B7E59B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

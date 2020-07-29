@@ -70,22 +70,6 @@ gravity_direction=270;
  }
  instance_destroy();
 }
-/*if(place_meeting(x-1,y,objBlock) || place_meeting(x+1,y,objBlock))
-{
- var rng = random(360);
- z = 0;
- repeat(5)
- {
-    a1 = instance_create(x,y,objDBCherry1);
-    a1.speed = 6;
-    if(instance_exists(objPlayer))
-        a1.direction = point_direction(x,y,objPlayer.x,objPlayer.y) + z;
-    else
-        a1.direction = rng + z;
-    z += 72;
- }
- instance_destroy();
-}*/
 </string>
           </argument>
         </arguments>

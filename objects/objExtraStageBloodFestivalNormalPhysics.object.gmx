@@ -49,18 +49,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-    if B=0
+            <string>if B=0
+{
+    if(global.sfxDelay[0] &lt;= 0)
     {
-        if(global.sfxDelay[0] &lt;= 0)
-        {
-         audio_play_sound(global.sndTrap,0,0);
-         global.sfxDelay[0] = 10;
-        }
-        B = 1;
-    } 
-    objPlayer.gravity = 0.4;
-    global.noDJump = false;
+     audio_play_sound(global.sndTrap,0,0);
+     global.sfxDelay[0] = 10;
+    }
+    B = 1;
+} 
+objPlayer.gravity = 0.4;
+global.noDJump = false;
+instance_destroy();
 </string>
           </argument>
         </arguments>

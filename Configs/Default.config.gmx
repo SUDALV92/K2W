@@ -520,7 +520,7 @@ K2 Warped made by SUDALV
     <option_version_copyright>SUDALV</option_version_copyright>
     <option_version_description></option_version_description>
     <option_version_major>2</option_version_major>
-    <option_version_minor>20</option_version_minor>
+    <option_version_minor>21</option_version_minor>
     <option_version_product></option_version_product>
     <option_version_release>0</option_version_release>
     <option_win8_advertising_appid></option_win8_advertising_appid>
@@ -603,7 +603,7 @@ K2 Warped made by SUDALV
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
-    <option_windows_mainor_version>20</option_windows_mainor_version>
+    <option_windows_mainor_version>21</option_windows_mainor_version>
     <option_windows_major_version>2</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info></option_windows_product_info>
@@ -611,7 +611,7 @@ K2 Warped made by SUDALV
     <option_windows_runner_finished>Configs\Default\windows\Runner_finish.bmp</option_windows_runner_finished>
     <option_windows_runner_header>Configs\Default\windows\Runner_header.bmp</option_windows_runner_header>
     <option_windows_save_location>0</option_windows_save_location>
-    <option_windows_sleep_margin>20</option_windows_sleep_margin>
+    <option_windows_sleep_margin>1</option_windows_sleep_margin>
     <option_windows_splash_background_colour>#000000</option_windows_splash_background_colour>
     <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
     <option_windows_steam_app_id>0</option_windows_steam_app_id>

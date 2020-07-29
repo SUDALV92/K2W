@@ -171,9 +171,9 @@ switch (room)                       //determines which song to play
     case rExtraStageDieary:
         roomSong = global.sndExtraStage; break;
     case rExtraStageBoshy:
-        roomSong = global.sndMarioPhase1; break;
+        roomSong = -2; break;
     case rExtraStageBloodFestivalBoss:
-        roomSong = global.sndBokuBoku; loop = false; break;
+        roomSong = -2; break;
     case rExtraStageFinalDeadRoom:
         roomSong = global.sndFinalDeadRoom; break;
     case rPreAbyss:

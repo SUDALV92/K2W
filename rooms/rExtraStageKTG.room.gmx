@@ -60,7 +60,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objPlayerStart" x="785" y="55" name="inst_66FA0467" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSmoothCamera" x="768" y="-32" name="inst_45265852" locked="0" code="snapDiv = 8;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="0" name="inst_2695EA1F" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="-32" y="960" name="inst_513FBB6D" locked="0" code="roomTo = rExtraStageKTGSray;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="-32" y="960" name="inst_513FBB6D" locked="0" code="roomTo = rExtraStageKTGSray;&#xA;warpX = 739;&#xA;warpY = 567;&#xA;" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objExtraStageTrapUp" x="768" y="96" name="inst_1DCE3A96" locked="0" code="depth = 1000001;&#xA;trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

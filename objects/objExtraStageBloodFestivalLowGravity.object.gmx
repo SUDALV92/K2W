@@ -60,6 +60,7 @@ value = 0.1;
         }
     } 
     objPlayer.gravity = value;
+    instance_destroy();
 }
 </string>
           </argument>

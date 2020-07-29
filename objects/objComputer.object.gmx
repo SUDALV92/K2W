@@ -389,6 +389,10 @@ else
    if(global.selectedStage == 58 ||
       global.selectedStage == 70 ||
       global.selectedStage == 74 ||
+      global.selectedStage == 78 ||
+      global.selectedStage == 79 ||
+      global.selectedStage == 80 ||
+      global.selectedStage == 81 ||
       global.selectedStage == 82)
       global.autosave = true;
    room_goto(global.stageRoom[global.selectedStage]);

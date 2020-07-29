@@ -24,7 +24,7 @@ audio_stop_sound(global.sndBossHit);
 
 audio_stop_sound(global.sndWarp);
 audio_stop_sound(global.sndTribute);
-//audio_stop_sound(global.sndNone);
+audio_stop_sound(global.sndSrayAww);
 audio_stop_sound(global.sndGreatBreak);
 audio_stop_sound(global.sndRukimingun);
 audio_stop_sound(global.sndVVVVVV);

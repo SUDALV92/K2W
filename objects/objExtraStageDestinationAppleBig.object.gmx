@@ -150,13 +150,13 @@ image_alpha = 1;
       break;
  case 6:
      angle = random(360);
-     repeat(8)
+     repeat(7)
      {
       apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
       apple.direction = angle;
       apple.sprite_index = sprite_index;
-      apple.speed = 6;
-      angle+= 360/8;
+      apple.speed = 7;
+      angle+= 360/7;
      } 
      instance_destroy();
      break;

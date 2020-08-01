@@ -207,6 +207,18 @@ image_alpha = 1;
      }      
     instance_destroy();  
     break;
+ case 12:
+     angle = random(360);
+     repeat(8)
+     {
+      apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
+      apple.direction = angle;
+      apple.sprite_index = sprite_index;
+      apple.speed = 6;
+      angle+= 360/8;
+     } 
+     instance_destroy();
+     break;
 }
 
 </string>
@@ -282,7 +294,7 @@ if(killer)
      if((hspeed != 0 &amp;&amp; abs(objPlayer.x - x) &lt; 10) || 
         (vspeed != 0 &amp;&amp; abs(objPlayer.y - y) &lt; 10))
      {
-      mode = 2;
+      mode = 12;
       alarm[0] = 1;
      }     
     }
@@ -291,7 +303,7 @@ if(killer)
       (vspeed &lt; 0 &amp;&amp; y &lt; 50) ||
       (vspeed &gt; 0 &amp;&amp; y &gt; 558)
     {
-     mode = 2;
+     mode = 12;
      alarm[0] = 1;
     }    
     break;

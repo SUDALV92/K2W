@@ -183,8 +183,10 @@ switch(mode)
   {
    apple = instance_create(x,y,objExtraStageBloodFestivalApple);
    apple.sprite_index = sprite_index;
+   apple.image_xscale = 0.8;
+   apple.image_yscale = 0.8;
    apple.hspeed = -6;
-   apple.vspeed = random_range(6.5,8);
+   apple.vspeed = random_range(6.5,7);
    apple.gravity_direction = 90;
    apple.gravity = 0.1;
   }
@@ -192,8 +194,10 @@ switch(mode)
   {
    apple = instance_create(x,y,objExtraStageBloodFestivalApple);
    apple.sprite_index = sprite_index;
+   apple.image_xscale = 0.8;
+   apple.image_yscale = 0.8;
    apple.hspeed = -6;
-   apple.vspeed = -random_range(6.5,8);
+   apple.vspeed = -random_range(6.5,7);
    apple.gravity_direction = 270;
    apple.gravity = 0.1;
   }

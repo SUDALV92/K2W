@@ -713,12 +713,12 @@ if(t == 6820)
  with(objExtraStageBloodFestivalApple)
  {
   angle = random(360);
-  repeat(5)
+  repeat(4)
   {
    apple = instance_create(x,y,objExtraStageBloodFestivalApple);
    apple.gravity_direction = angle;
    apple.gravity = 0.1;
-   angle+=360/5;
+   angle+=360/4;
   }
   instance_destroy();
  }
@@ -795,6 +795,8 @@ if(t &gt; 7830 &amp;&amp; t &lt; 8050 &amp;&amp; t % 5 == 0)
  apple = instance_create(850,536,objExtraStageBloodFestivalApple);
  apple.mode = 11;
  apple.sprite_index = scrRandomAppleColor();
+ apple.image_xscale = 0.8;
+ apple.image_yscale = 0.8;
  apple.hspeed = -10;
  apple.state = 1;
  apple.alarm[0] = 50;
@@ -807,6 +809,8 @@ if(t &gt; 7830 &amp;&amp; t &lt; 8050 &amp;&amp; t % 5 == 0)
  apple = instance_create(850,72,objExtraStageBloodFestivalApple);
  apple.mode = 11;
  apple.sprite_index = scrRandomAppleColor();
+ apple.image_xscale = 0.8;
+ apple.image_yscale = 0.8;
  apple.hspeed = -10;
  apple.state = -1;
  apple.alarm[0] = 50;

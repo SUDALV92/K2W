@@ -152,11 +152,15 @@ if( Step == MusicStartStep ) {
     
     // Correct the game time if it desyncs from real time.
     var deltaStep = RealStep - Step;
-    if( abs( deltaStep ) &gt; 5 ) {
+    if( abs( deltaStep ) &gt; 10 ) {
         // A big lag spike, adjust music to game time.
        audio_sound_set_track_position( MusicId, ( Step - MusicStartStep ) / 50 );
        //show_debug_message( "Music sync" );
        RealStep = Step;
+    } else if( deltaStep &gt; 0 ) {
+        room_speed = 51;
+    } else {
+        room_speed = 50;
     }
 }
 

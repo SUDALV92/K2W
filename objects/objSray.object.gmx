@@ -821,8 +821,8 @@ if(instance_exists(objPlayer) &amp;&amp; scrButtonCheckPressed(global.skipButton
 {
  practice = true;
  i = 533 * 7;
- currentMovement = 70;
- responseMovement = 70;
+ currentMovement = 71;
+ responseMovement = 71;
  scrObjectDestroy(objSrayDialog);
  scrObjectDestroy(objGamelist);
 }*/

@@ -17,10 +17,15 @@ if (loadFile)
     
     if (timeMap != -1)  //check if the save map loaded correctly
     {
-        for (var i = 0; i < 16; i++)
+        for (var i = 0; i < 20; i++)
         {
             global.lastRunStart[i] = ds_map_find_value(timeMap,"lastRunStart["+string(i)+"]");
+            if(is_undefined(global.lastRunStart[i]))
+             global.lastRunStart[i] = -1;
+             
             global.lastRunEnd[i] = ds_map_find_value(timeMap,"lastRunEnd["+string(i)+"]");
+            if(is_undefined(global.lastRunEnd[i]))
+             global.lastRunEnd[i] = -1;
         }
         global.saveCurrentSegmentIndex = ds_map_find_value(timeMap,"currentSegmentIndex");       
                 

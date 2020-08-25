@@ -84,7 +84,7 @@ for(var temp = 0; temp < sfxCount; temp++)
  global.sfxDelay[temp] = 0;
 }
 
-for(var i = 0; i < 16; i++)
+for(var i = 0; i < 20; i++)
 {
     global.bestRun[i] = -1;         //best times for segments (14 = whole game);
     global.lastRunStart[i] = -1;    //last times for segments, segment start time (14 = whole game);

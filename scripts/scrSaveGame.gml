@@ -99,7 +99,7 @@ if(savePosition)
  global.saveCurrentSegmentIndex = global.currentSegmentIndex;
 }
 var timeMap = ds_map_create();
-for (var i = 0; i < 16; i++)
+for (var i = 0; i < 20; i++)
 {
     ds_map_add(timeMap,"lastRunStart["+string(i)+"]",global.lastRunStart[i]);
     ds_map_add(timeMap,"lastRunEnd["+string(i)+"]",global.lastRunEnd[i]);

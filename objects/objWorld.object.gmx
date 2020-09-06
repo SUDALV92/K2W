@@ -649,12 +649,6 @@ switch(room)
        audio_sound_set_track_position(global.currentMusic, 6.607);
       }
       break;
- case rBoss5Phase1:
-    if(audio_sound_get_track_position(global.currentMusic) &gt;= 215.549)
-      {
-       audio_sound_set_track_position(global.currentMusic, 0.767);
-      }
-      break;
  case rBoss6Phase2:
       if(global.currentMusicID == global.sndBoss6B)
       {

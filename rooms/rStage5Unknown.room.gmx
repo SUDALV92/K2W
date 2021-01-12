@@ -120,7 +120,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSlopeUpRight" x="352" y="416" name="inst_7BF13A2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeUpLeft" x="416" y="416" name="inst_69C9031D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeDownRight" x="672" y="384" name="inst_583039DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="352" name="inst_AA5D5FCF" locked="0" code="roomTo = rStage5BloodFestival;&#xA;warpX = 64;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="352" name="inst_AA5D5FCF" locked="0" code="roomTo = rStage5BloodFestival;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="320" y="384" name="inst_A59398C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="544" y="608" name="inst_4669142E" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlopeUpLeft" x="576" y="512" name="inst_E7091404" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

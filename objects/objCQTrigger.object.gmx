@@ -88,8 +88,6 @@
             audio_play_sound(global.sndTrap,0,0);
             warp = instance_create(464,608,objWarp);
             warp.roomTo = rStage3Rukimin;
-            warp.warpX = 32;
-            warp.warpY = 544;
             break;
         case 7:
              scrObjectDestroy(objSave);

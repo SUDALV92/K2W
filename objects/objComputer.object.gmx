@@ -387,7 +387,12 @@ else
   {
    scrObjectDestroy(objPlayer);
    io_clear();
-   if(global.selectedStage == 58 ||
+   if(
+      global.selectedStage == 15 || //showdown
+      global.selectedStage == 16 || //greeeen
+      global.selectedStage == 40 || //shinyspark
+      global.selectedStage == 56 || //boshy      
+      global.selectedStage == 58 ||
       global.selectedStage == 70 ||
       global.selectedStage == 74 ||
       global.selectedStage == 78 ||

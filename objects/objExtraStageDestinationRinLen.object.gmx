@@ -84,7 +84,7 @@ practice = false;
           <argument>
             <kind>1</kind>
             <string>///practice
-/*if(keyboard_check_pressed(ord('1')))
+if(keyboard_check_pressed(ord('1')))
 {
  scrObjectDestroy(objExtraStageDestinationAppleSmall);
  scrObjectDestroy(objExtraStageDestinationAppleBig);
@@ -148,7 +148,7 @@ if(keyboard_check_pressed(ord('8')))
  t = 9020;
  //practice = true;
 }
-if(practice &amp;&amp; t == 6050)
+/*if(practice &amp;&amp; t == 6050)
 {
  scrKillPlayer();
 }*/
@@ -456,7 +456,7 @@ if(t == 3425)
 }
 if(t &gt; 3425 &amp;&amp; t &lt; 4100 &amp;&amp; t % 10 == 0)
 {
- apple = instance_create(irandom_range(32,500+spawnYMax),-32,objExtraStageDestinationAppleBig);
+ apple = instance_create(irandom_range(32,500),-32,objExtraStageDestinationAppleBig);
  apple.sprite_index = sprBlueCherry;
  apple.mode = 6;
  apple.alarm[0] = 25;
@@ -473,10 +473,10 @@ if(t &gt; 3425 &amp;&amp; t &lt; 4100 &amp;&amp; t % 10 == 0)
  apple = instance_create(768,irandom_range(32,spawnYMax),objExtraStageDestinationAppleBig);
  apple.sprite_index = sprBlueCherry;
  apple.mode = 6;
- apple.alarm[0] = 25;
+ apple.alarm[0] = 70;
  apple.direction = 180;
  apple.speed = 4;
- spawnYMax += 2;
+ spawnYMax += 4;
 }
 if(t = 4170)
 {
@@ -517,7 +517,7 @@ if(t &gt; 4170 &amp;&amp; t &lt; 4850) //intro 3
   apple.alarm[0] = 50;
  }
 }
-if(t &gt;= 4920 &amp;&amp; t &lt;= 5220 &amp;&amp; t % 20 == 0)
+if(t &gt;= 4920 &amp;&amp; t &lt;= 5220 &amp;&amp; t % 25 == 0)
 {
  banana = instance_create(irandom_range(-96,-32),irandom_range(26,580),objExtraStageDestinationAppleSmall);
  banana.sprite_index = sprExtraStageDestinationBananas;
@@ -537,11 +537,13 @@ if(t == 5280)
 {
  with(objExtraStageDestinationAppleSmall)
  {
-  mode = 1;
-  speed = 0;
+  //mode = 1;
+  hspeed = 1 * sign(hspeed);
+  vspeed = 1 * sign(vspeed);
+  increment = increment/3;
  }
 }
-if(t &gt; 5305 &amp;&amp; t &lt; 5550 &amp;&amp; t % 15 == 0)
+if(t &gt; 5305 &amp;&amp; t &lt; 5550 &amp;&amp; t % 20 == 0)
 {
  banana = instance_create(-32,irandom_range(26,580),objExtraStageDestinationAppleSmall);
  banana.sprite_index = sprExtraStageDestinationBananas;
@@ -563,6 +565,7 @@ if(t == 5555)
   direction = random_range(80,110);
   speed = 6;
   gravity = 0.2;
+  mode = 1;
  }
 }
 if(t == 5600)
@@ -662,13 +665,13 @@ if(t == 5960)
       apple = instance_create(x,y,objExtraStageDestinationAppleSmall);
       apple.direction = angle;
       apple.sprite_index = sprite_index;
-      apple.speed = 4;
+      apple.speed = random_range(3.5,5.5);
       angle+= 360/8;
      } 
      instance_destroy();
  }
 }
-if(!practice &amp;&amp; t &gt;= 6000 &amp;&amp; t &lt; 6150)
+if(t &gt;= 6000 &amp;&amp; t &lt; 6150)
 {
  repeat(2)
  {
@@ -677,7 +680,7 @@ if(!practice &amp;&amp; t &gt;= 6000 &amp;&amp; t &lt; 6150)
      apple.direction = random(360);
      apple.outsideDelete = false;
      apple.alarm[1] = 100;
-     apple.speed = 6;
+     apple.speed = 7;
      apple.curving = choose(random_range(-0.8,0.4),random_range(0.4,0.8));
  }
 }
@@ -737,7 +740,7 @@ if(t == 6480)
  bananasCanShootToPlayer = true;
  applesCanShootToPlayer = true;
 }
-if(t &gt;= 6480 &amp;&amp; t &lt; 7220 &amp;&amp; t % 2 == 0)
+if(t &gt;= 6480 &amp;&amp; t &lt; 7120 &amp;&amp; t % 2 == 0)
 {
  if(t &lt; 6900 || t % 4 == 0)
  {
@@ -748,44 +751,57 @@ if(t &gt;= 6480 &amp;&amp; t &lt; 7220 &amp;&amp; t % 2 == 0)
      until(abs(rngAngleOld - angle) &gt; 20);
      rngAngleOld = angle;
      
-     if(!applesCanShootToPlayer)
+     /*if(!applesCanShootToPlayer)
      {
       playerDirection = point_direction(xx,yy,objPlayer.x,objPlayer.y);
       if(angle_difference(angle,playerDirection) &lt; 20)
       {
        angle = playerDirection + (irandom_range(20,25) * choose(-1,1));
       }
-     }
+     }*/
      
      apple = instance_create(xx,yy,objExtraStageDestinationAppleSmall);
      apple.sprite_index = sprSkyCherry;
      apple.direction = angle
      apple.speed = appleSpeed;
+     apple.mode = 6;
  } 
  appleSpeed += 0.02;
 }
-if(t &gt;= 6860 &amp;&amp; t &lt; 7220 &amp;&amp; t % 8 == 0)
+if(t &gt;= 6860 &amp;&amp; t &lt; 7120 &amp;&amp; t % 8 == 0)
 {
  apple = instance_create(irandom(800),-32,objExtraStageDestinationAppleSmall);
  apple.sprite_index = sprExtraStageDestinationBananas;
  apple.direction = 270;
  apple.speed = 10;
+ apple.mode = 6;
  
- if(!bananasCanShootToPlayer)
+ /*if(!bananasCanShootToPlayer)
  {
   if(abs(apple.x - objPlayer.x) &lt; 250)
   {
    apple.x = objPlayer.x + (random_range(250,300) * choose(-1,1));
   }
- }
+ }*/
 }
-if(t == 7020)
+/*if(t == 7020)
 {
   bananasCanShootToPlayer = false;
 }
 if(t == 7100)
 {
  applesCanShootToPlayer = false;
+}*/
+if(t == 7120)
+{
+ with(objExtraStageDestinationAppleSmall)
+ {
+  if(mode == 6)
+  {
+   speed = 0;
+   image_alpha = 0.5;
+  }
+ }
 }
 if((t == 7120 || t == 7140 || t == 7160) || (t &gt; 7180 &amp;&amp; t &lt; 7210 &amp;&amp; t % 2 == 0))
 {
@@ -806,6 +822,7 @@ if(t == 7220)
   {
    direction = point_direction(objPlayer.x,objPlayer.y,x,y);
    speed = 10;
+   image_alpha = 1;
   }
  }
 }
@@ -897,7 +914,7 @@ if(t &gt;= 7945 &amp;&amp; t &lt; 8600) //припев 2
  if(t % 30 == 0)
  {
   apple = instance_create(objPlayer.x,-32,objExtraStageDestinationAppleBig);
-  apple.mode = 1;
+  apple.mode = 13;
   apple.direction = 270;
   apple.speed = 6;
   apple.alarm[0] = 25;

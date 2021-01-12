@@ -133,7 +133,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5SpikeUp" x="384" y="160" name="inst_F0CE5F00" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeDown" x="512" y="64" name="inst_6100365C" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeDown" x="384" y="64" name="inst_CBD26E20" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="736" y="112" name="inst_B1068F2D" locked="0" code="roomTo = rStage4KTGB;&#xA;warpX = 788;&#xA;warpY = 1399;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="736" y="112" name="inst_B1068F2D" locked="0" code="roomTo = rStage4KTGB;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeRight" x="192" y="32" name="inst_C943AC9E" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeLeft" x="352" y="32" name="inst_57C069D9" locked="0" code="step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="640" y="192" name="inst_015321B4" locked="0" code="step = 4;&#xA;trg = 1;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>

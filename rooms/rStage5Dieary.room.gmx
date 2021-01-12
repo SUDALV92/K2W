@@ -202,7 +202,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objFreeTrigger" x="464" y="64" name="inst_FA2D7EAB" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="496" y="160" name="inst_27424678" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="592" y="64" name="inst_76DEE82A" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="512" y="512" name="inst_C50C86AD" locked="0" code="roomTo = rStage5PYF;&#xA;warpX = 64;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="512" y="512" name="inst_C50C86AD" locked="0" code="roomTo = rStage5PYF;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="224" y="96" name="inst_5628892B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="224" y="224" name="inst_D40EAE55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="112" y="288" name="inst_08C671C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -122,14 +122,14 @@ if(y &gt; view_yview[0] + 680)
           <argument>
             <kind>1</kind>
             <string>///kirby collision
-if(instance_exists(objJetkirby))
+/*if(instance_exists(objJetkirby))
 {
  var dist = distance_to_object(objJetkirby);
  if(dist &lt;= 50)
  {
   hspeed -= 2 - dist/25;
  }
-}
+}*/
 </string>
           </argument>
         </arguments>

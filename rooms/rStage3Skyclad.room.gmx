@@ -108,7 +108,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="800" y="0" name="inst_B2273C02" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="384" y="608" name="inst_AA4CD260" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="800" y="320" name="inst_A971D3B9" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="32" name="inst_1808A5AA" locked="0" code="roomTo = rStage3CQ;&#xA;warpX = 112;&#xA;warpY = 1152;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="32" name="inst_1808A5AA" locked="0" code="roomTo = rStage3CQ;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSkyFakeBlock" x="128" y="288" name="inst_B3C8492D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSkyFakeBlock" x="96" y="288" name="inst_5BF0BE2D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSkyFakeBlock" x="96" y="256" name="inst_5A8AC249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

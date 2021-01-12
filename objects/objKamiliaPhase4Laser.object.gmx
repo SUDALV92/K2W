@@ -76,19 +76,22 @@ if(mode == 2)
  if(y &gt;= 488)
  {
   y = 488;
-  laser = instance_create(x,y,objKamiliaPhase4Laser);
-  laser.image_xscale = 0.5;
-  laser.image_index = image_index;
-  laser.mode = 3;
-  laser.gravity_direction = 0;
-  laser.gravity = 0.2;
-  
-  laser = instance_create(x,y,objKamiliaPhase4Laser);
-  laser.image_xscale = 0.5;
-  laser.image_index = image_index;
-  laser.mode = 3;
-  laser.gravity_direction = 180;
-  laser.gravity = 0.2;
+  if(!destroying)
+  {
+      laser = instance_create(x,y,objKamiliaPhase4Laser);
+      laser.image_xscale = 0.5;
+      laser.image_index = image_index;
+      laser.mode = 3;
+      laser.gravity_direction = 0;
+      laser.gravity = 0.2;
+      
+      laser = instance_create(x,y,objKamiliaPhase4Laser);
+      laser.image_xscale = 0.5;
+      laser.image_index = image_index;
+      laser.mode = 3;
+      laser.gravity_direction = 180;
+      laser.gravity = 0.2;
+  }
   
   instance_destroy();
  }

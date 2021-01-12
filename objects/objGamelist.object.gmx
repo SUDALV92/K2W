@@ -73,7 +73,7 @@
         case rStage3CQ: image_index = 27; cardName = "CQ"; break;
         case rStage3Rukimin: image_index = 28; cardName = "Rukimin!7"; break;
         case rStage3Diverse: image_index = 29; cardName = "Diverse"; break;
-        case rStage3HeavenTrap: image_index = 30; cardName = "Heaven Trap 2"; break;
+        case rStage3HeavenTrap: image_index = 30; cardName = "HeavenTrap 2"; break;
         case rStage3SeeTheMoon: image_index = 31; cardName = "See The Moon"; break;
         case rStage3WhiteCherry: image_index = 32; cardName = "White Cherry"; break;
         case rStage3TimeMachine: 
@@ -84,7 +84,7 @@
         case rStage4GB: image_index = 36; cardName = "GB"; break;
         case rStage4Phantom: image_index = 37; cardName = "Phantom"; break;
         case rStage4Device: image_index = 38; cardName = "Device"; break;
-        case rStage4HeavenTrap: image_index = 39; cardName = "Heaven Trap 1"; break;
+        case rStage4HeavenTrap: image_index = 39; cardName = "HeavenTrap 1"; break;
         case rStage4ShinySparkA: 
         case rStage4ShinySparkB:
         case rStage4ShinySparkC:        

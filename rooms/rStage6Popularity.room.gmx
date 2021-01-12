@@ -135,7 +135,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objBlock" x="480" y="160" name="inst_205A2018" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="320" y="160" name="inst_B8B96FBB" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="32" name="inst_C139FA57" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="560" y="64" name="inst_A58C4233" locked="0" code="roomTo = rStage6LoveTrap;&#xA;warpX = 400;&#xA;warpY = 288;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="560" y="64" name="inst_A58C4233" locked="0" code="roomTo = rStage6LoveTrap;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="400" y="496" name="inst_E370E86D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="640" y="416" name="inst_045D871A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="0" y="288" name="inst_60F86CC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

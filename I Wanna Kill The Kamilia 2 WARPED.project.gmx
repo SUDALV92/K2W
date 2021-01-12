@@ -3,8 +3,8 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="552" name="datafiles">
-    <datafiles number="552" name="Music">
+  <datafiles number="553" name="datafiles">
+    <datafiles number="553" name="Music">
       <datafile>
         <name>Intro.ogg</name>
         <exists>-1</exists>
@@ -907,8 +907,8 @@
         <filename>StageClear.ogg</filename>
       </datafile>
     </datafiles>
-    <datafiles number="552" name="SFX">
-      <datafiles number="552" name="Common">
+    <datafiles number="553" name="SFX">
+      <datafiles number="553" name="Common">
         <datafile>
           <name>sndBreak.ogg</name>
           <exists>-1</exists>
@@ -1386,7 +1386,7 @@
           <filename>sndWeaponChange.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="552" name="Stage">
+      <datafiles number="553" name="Stage">
         <datafile>
           <name>sndBarrel.ogg</name>
           <exists>-1</exists>
@@ -1864,8 +1864,8 @@
           <filename>sndWarpFX.ogg</filename>
         </datafile>
       </datafiles>
-      <datafiles number="552" name="Boss">
-        <datafiles number="552" name="Solgryn">
+      <datafiles number="553" name="Boss">
+        <datafiles number="553" name="Solgryn">
           <datafile>
             <name>sndAmond.ogg</name>
             <exists>-1</exists>
@@ -3516,7 +3516,7 @@
           </ConfigOptions>
           <filename>sndSrayAww.ogg</filename>
         </datafile>
-        <datafiles number="552" name="ExtraBoss2">
+        <datafiles number="553" name="ExtraBoss2">
           <datafile>
             <name>sndMarioThankYou.ogg</name>
             <exists>-1</exists>
@@ -3946,9 +3946,9 @@
       </datafiles>
     </datafiles>
     <datafile>
-      <name>DBGHELP.dll</name>
+      <name>scheduler.dll</name>
       <exists>-1</exists>
-      <size>80920</size>
+      <size>3072</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -3960,7 +3960,7 @@
           <CopyToMask>9223372036854775807</CopyToMask>
         </Config>
       </ConfigOptions>
-      <filename>DBGHELP.dll</filename>
+      <filename>scheduler.dll</filename>
     </datafile>
   </datafiles>
   <NewExtensions/>
@@ -4081,6 +4081,7 @@
         <sprite>sprites\sprKidHouseNight</sprite>
         <sprite>sprites\sprEndingHole</sprite>
         <sprite>sprites\sprEndingFullBed</sprite>
+        <sprite>sprites\sprRainDrop</sprite>
       </sprites>
       <sprites name="Rukito">
         <sprite>sprites\sprBlockRukito</sprite>
@@ -5469,6 +5470,7 @@
         <object>objects\objK3WarpFX1</object>
         <object>objects\objK3WarpFX2</object>
       </objects>
+      <object>objects\oScheduler</object>
     </objects>
     <objects name="misc">
       <object>objects\objSegmentTime</object>
@@ -6524,6 +6526,7 @@
       <object>objects\objEndingHomeBullet</object>
       <object>objects\objEndingHomeBed</object>
       <object>objects\objEndingHomeComputer</object>
+      <object>objects\objRainDrop</object>
     </objects>
     <objects name="Extra">
       <object>objects\objExTransition</object>

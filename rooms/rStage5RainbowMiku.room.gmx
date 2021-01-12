@@ -231,7 +231,7 @@ background_hspeed[1] = -0.5;</code>
     <instance objName="objCherry" x="3536" y="240" name="inst_4E2C8936" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="3664" y="240" name="inst_AEF6CEDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCherry" x="3792" y="240" name="inst_27D1BC8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="7648" y="96" name="inst_10491B08" locked="0" code="roomTo = rStage5Unknown;&#xA;warpX = 16;&#xA;warpY = 96;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="7648" y="96" name="inst_10491B08" locked="0" code="roomTo = rStage5Unknown;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="304" y="192" name="inst_755E975D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3776" y="288" name="inst_573306BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="3840" y="224" name="inst_B24C13EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

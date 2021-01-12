@@ -134,7 +134,7 @@
     <instance objName="objSpikeRight" x="1344" y="128" name="inst_35B2695B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="1056" y="320" name="inst_9CBF39D3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSmoothCamera" x="48" y="478" name="inst_41E430FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="1568" y="64" name="inst_8D6009A2" locked="0" code="roomTo = rStage2GreenMoon;&#xA;warpX = 64;&#xA;warpY = 480;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="1568" y="64" name="inst_8D6009A2" locked="0" code="roomTo = rStage2GreenMoon;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDTtrap" x="544" y="384" name="inst_8E9ECFCD" locked="0" code="trap = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDTtrap" x="576" y="384" name="inst_EF4E4530" locked="0" code="trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDTtrap" x="608" y="384" name="inst_1E116C57" locked="0" code="trap = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

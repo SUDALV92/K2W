@@ -28,8 +28,8 @@
             <string>alarm[0] = irandom_range(50,120);
 alarm[1] = irandom_range(50,120);
 
+/* NO THANKS, NO PARTICLE SYSTEM
 
-//if(!part_system_exists(global.partSys))
  global.partSys = part_system_create();
  
 part_system_depth(global.partSys,3);
@@ -55,6 +55,15 @@ part_emitter_region(global.partSys, emitter, -100, room_width+100, 0, 0, ps_shap
 part_emitter_stream(global.partSys,emitter,ptype,20);
 repeat (room_speed * 3) {
 part_system_update(global.partSys)
+}
+*/
+N = 200;
+if(instance_number(objRainDrop) == 0)
+{
+ repeat(N)
+ {
+  rainDrop = instance_create(irandom_range(-400,780),irandom_range(-32,600),objRainDrop);
+ }
 }
 </string>
           </argument>
@@ -111,6 +120,35 @@ alarm[0] = irandom_range(50,120);
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(instance_number(objRainDrop) &lt; N)
+{
+ repeat(50)
+ {
+  rainDrop = instance_create(irandom_range(-400,780),-32,objRainDrop);
+ }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="5">
       <action>
         <libid>1</libid>
@@ -128,9 +166,11 @@ alarm[0] = irandom_range(50,120);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>part_type_destroy(global.partSys);
+            <string>/*
+part_type_destroy(global.partSys);
 part_emitter_destroy_all(global.partSys);
 part_system_destroy(global.partSys);
+*/
 
 </string>
           </argument>

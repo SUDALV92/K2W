@@ -81,7 +81,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objSlipBlock" x="352" y="352" name="inst_002A4D60" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="320" y="480" name="inst_A8FB35B2" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="416" y="480" name="inst_8BDC0A63" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBettyParticleSnowGenerator" x="-32" y="0" name="inst_A6AC28C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBettyParticleSnowGenerator" x="-32" y="0" name="inst_500E9138" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bgBettyTileset" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10043420" name="inst_202666B3" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

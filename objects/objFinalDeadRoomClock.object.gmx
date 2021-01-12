@@ -44,33 +44,18 @@ while(fillN &lt; 12)
     value = irandom_range(1,6);
     shift = choose(-1,1);
     nextN = N+value*shift;
-    if(nextN &gt; 11)
-     nextN = 0;
-    else if(nextN &lt; 0)
-     nextN = 11;
+    if(nextN &gt;= 12)
+     nextN = nextN-12;
+    else if(nextN &lt;= -1)
+     nextN = nextN + 12;
+     
     if(cells[nextN] == -1)
     {
      cells[nextN] = value;
      fillN++;
      N = nextN;
     }
-    if(oldFillN == fillN)
-    {
-     iterations++;
-     if(iterations == 15) //невозможный рандом, начнём с начала
-     {
-        for(var i = 0; i &lt; 12; i++)
-        {
-         cells[i] = -1;
-        }
-        N = irandom(11);
-        value = irandom_range(1,6);
-        cells[N] = value;
-        fillN = 1;
-        iterations = 0;
-        oldFillN = 1;
-     }
-    }
+    else continue;
 }
 handL = 3;
 handLAngle = 0;

@@ -141,7 +141,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objBlock" x="480" y="384" name="inst_2C65E91D" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="320" y="288" name="inst_7A7E4B50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="416" y="64" name="inst_C8076E82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="0" y="548" name="inst_0AC1F2DE" locked="0" code="roomTo = rStage6SevenTrials;&#xA;warpX = 80;&#xA;warpY = 512;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="0" y="548" name="inst_0AC1F2DE" locked="0" code="roomTo = rStage6SevenTrials;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="32" y="224" name="inst_576510A8" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="480" y="224" name="inst_67069841" locked="0" code="" scaleX="9" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="704" y="544" name="inst_41141DFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

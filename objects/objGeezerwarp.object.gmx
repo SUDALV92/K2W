@@ -109,9 +109,8 @@
  global.currentSegmentIndex = 7;
 }
 
+scrObjectDestroy(objPlayer);
 room_goto(rBoss4Save);
-objPlayer.x=400;
-objPlayer.y=400;
 </string>
           </argument>
         </arguments>

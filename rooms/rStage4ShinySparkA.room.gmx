@@ -110,7 +110,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objS5Switcher" x="-32" y="32" name="inst_E814EB46" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShinySpark" x="0" y="32" name="inst_A2A021ED" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShinySpark" x="736" y="544" name="inst_71A1ADAA" locked="0" code="step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="272" y="96" name="inst_919F9F34" locked="0" code="roomTo = rStage4Conscience;&#xA;warpX = 16;&#xA;warpY = 80;&#xA;step = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="272" y="96" name="inst_919F9F34" locked="0" code="roomTo = rStage4Conscience;&#xA;step = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeUp" x="640" y="96" name="inst_56A65B77" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeLeft" x="736" y="32" name="inst_9094489B" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5SpikeLeft" x="736" y="64" name="inst_41D74F57" locked="0" code="step = 5;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

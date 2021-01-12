@@ -135,7 +135,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objFgetrap1" x="112" y="144" name="inst_BAB7B7EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFgetrap1" x="144" y="176" name="inst_7DE05733" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFgetrap1" x="144" y="112" name="inst_C8D53A1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="64" name="inst_A92772EF" locked="0" code="roomTo = rBoss1Save;&#xA;warpX = 400;&#xA;warpY = -16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="64" name="inst_A92772EF" locked="0" code="roomTo = rBoss1Save;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFgetrap2" x="0" y="0" name="inst_4C24CC8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="288" y="464" name="inst_69FFF95B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1AHM" x="0" y="512" name="inst_007F1DA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

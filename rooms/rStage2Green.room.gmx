@@ -94,8 +94,8 @@
     <instance objName="objSpikeUp" x="608" y="544" name="inst_506D276C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="640" y="544" name="inst_DAA7DC84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeUp" x="672" y="544" name="inst_734B57FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="736" y="544" name="inst_8948A1A7" locked="0" code="roomTo = rStage2Tribute;&#xA;warpX = 32;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="736" y="256" name="inst_8E0F6A40" locked="0" code="roomTo = rStage2Tribute;&#xA;warpX = 32;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="736" y="544" name="inst_8948A1A7" locked="0" code="roomTo = rStage2Tribute;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="736" y="256" name="inst_8E0F6A40" locked="0" code="roomTo = rStage2Tribute;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="576" name="inst_4394C9E3" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="288" name="inst_ABF0C0DB" locked="0" code="" scaleX="1" scaleY="9" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="48" y="512" name="inst_6F80FBEC" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>

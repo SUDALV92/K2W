@@ -105,7 +105,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="704" y="544" name="inst_975329B9" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="706" y="224" name="inst_17201639" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="706" y="352" name="inst_38E45264" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="48" y="592" name="inst_39C8B121" locked="0" code="roomTo = rStage4Device;&#xA;warpX = 80;&#xA;warpY = 64;&#xA;step = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="48" y="592" name="inst_39C8B121" locked="0" code="roomTo = rStage4Device;&#xA;step = 13;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="608" name="inst_F5E858B2" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="224" y="64" name="inst_BD77DCC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objS5Step" x="-32" y="16" name="inst_E9F4A611" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

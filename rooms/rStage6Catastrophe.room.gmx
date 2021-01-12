@@ -164,7 +164,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objBlock" x="480" y="448" name="inst_D9DC6342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="480" y="512" name="inst_61D90A35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="64" y="544" name="inst_31728874" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="544" name="inst_7C62AC27" locked="0" code="roomTo = rStage6Crimson;&#xA;warpX = 784;&#xA;warpY = 560;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="544" name="inst_7C62AC27" locked="0" code="roomTo = rStage6Crimson;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="96" y="0" name="inst_BB5B8AFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeLeft" x="160" y="464" name="inst_23B7A5FB" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeRight" x="192" y="464" name="inst_84A9C789" locked="0" code="depth = 1000001;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

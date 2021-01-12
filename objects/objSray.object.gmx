@@ -134,18 +134,18 @@ if(i == -10)
  cameraSelfie = true;
 }
 
-var time4 = 533;
-var time2 = 266;
-var time1 = 133;
+var time1 = 133 + 1/3;
+var time2 = time1 * 2;
+var time4 = time1 * 4;
 
-var time1_16 = 8;
-var time1_8 = 16;
-var time1_4 = 33;
-var time1_2 = 66;
+var time1_16 = time1 / 16;
+var time1_8 = time1_16 * 2;
+var time1_4 = time1_16 * 4;
+var time1_2 = time1_16 * 8;
 
-if(i &gt;= 0 &amp;&amp; i &lt; time4 * 15) 
+if(i &gt;= 0 &amp;&amp; i &lt; floor(time4) * 15) 
 {
-    if(i % time1 &lt;= time1_2) 
+    if(i % floor(time1) &lt;= floor(time1_2)) 
     {
         cameraSelfie = true
     } 
@@ -156,384 +156,384 @@ if(i &gt;= 0 &amp;&amp; i &lt; time4 * 15)
 }
 
 if(i == 0)   { nextCameraSelfie = true; event_user(3); image_speed = 0; }
-if(i == time1) { nextCameraSelfie = true; event_user(3); }
-if(i == time2) { nextCameraSelfie = true; event_user(3); }
-if(i == time1 + time2) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(time1)) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(time2)) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(time1 + time2)) { nextCameraSelfie = true; event_user(3); }
 //next group
 var gs = time4
-if(i == gs) { event_user(3); party = 1;}
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); party = 1;}
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //UP, UP
 gs = time4 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_4) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_4)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 2 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //UP, UP UP UP
 gs = time4 * 2 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 3
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 3 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 3 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 3 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //UP UP, UP
 gs = time4 * 4
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 4 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 4 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 4 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 5
-if(i == gs) { party = 0; nextCameraSelfie = true; event_user(3); }
-if(i == gs + time1) { nextCameraSelfie = true; event_user(3); }
-if(i == gs + time2) { nextCameraSelfie = true; event_user(3); }
-if(i == gs + time2 + time1) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { party = 0; nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs + time1)) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs + time2)) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs + time2 + time1)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 6
-if(i == gs) { nextCameraSelfie = true; event_user(3);
+if(i == floor(gs)) { nextCameraSelfie = true; event_user(3);
                 dialog = instance_create(x+50,y-30,objSrayDialog);
                 dialog.text = "Your moves are good...";
                 dialog.snap = -1; }
-if(i == gs + time1) { nextCameraSelfie = true; event_user(3); 
+if(i == floor(gs + time1)) { nextCameraSelfie = true; event_user(3); 
                 dialog = instance_create(x+50,y-30,objSrayDialog);
                 dialog.text = "I know why you're here..."; 
                 dialog.snap = -1; }
-if(i == gs + time2) { nextCameraSelfie = true; event_user(3); 
+if(i == floor(gs + time2)) { nextCameraSelfie = true; event_user(3); 
                 dialog = instance_create(x+50,y-30,objSrayDialog);
                 dialog.text = "But...";
                 dialog.snap = -1; }
-if(i == gs + time2 + time1) { nextCameraSelfie = true; event_user(3); 
+if(i == floor(gs + time2 + time1)) { nextCameraSelfie = true; event_user(3); 
                 dialog = instance_create(x+50,y-30,objSrayDialog);
                 dialog.text = "I'll never let that happen!";
                 dialog.snap = -1; }
 //LEFT RIGHT, LEFT RIGHT, LEFT
 gs = time4 * 7
-if(i == gs) { event_user(3); party = 1; }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); party = 1; }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 7 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 7 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 7 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 8
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 8 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 8 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 8 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //Up, Up Down, Down
 gs = time4 * 9
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 9 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 9 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 9 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //Up Down Left Right
 gs = time4 * 10
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 10 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 10 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 10 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 11
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 11 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 11 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 11 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //Up Down Left, Up Down Right
 gs = time4 * 12
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 12 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 12 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 12 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 13
-if(i == gs) { party = 2; event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { party = 2; event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 13 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 13 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 13 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 14
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 14 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 14 + time2
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { nextCameraSelfie = true; event_user(3); }
 //next group
 gs = time4 * 14 + time2 + time1
-if(i == gs) { event_user(3); }
-if(i == gs + time1_16) { event_user(3); }
-if(i == gs + time1_8) { event_user(3); }
-if(i == gs + time1_8 + time1_16) { event_user(3); }
-if(i == gs + time1_4) { event_user(3); }
-if(i == gs + time1_4 + time1_16) { event_user(3); }
-if(i == gs + time1_4 + time1_8) { event_user(3); }
-if(i == gs + time1_4 + time1_8 + time1_16) { finalMovement = true; nextCameraSelfie = true; event_user(3); }
+if(i == floor(gs)) { event_user(3); }
+if(i == floor(gs + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_8 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_16)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8)) { event_user(3); }
+if(i == floor(gs + time1_4 + time1_8 + time1_16)) { finalMovement = true; nextCameraSelfie = true; event_user(3); }
 
 if(dead &amp;&amp; i == (deadI+1))
 {
@@ -793,6 +793,7 @@ if(instance_exists(objPlayer) &amp;&amp; scrButtonCheckPressed(global.skipButton
 {
  if(i &lt; 0)
  {
+  instance_destroy(objSrayDialog);
   i = 0;
  }
 }

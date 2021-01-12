@@ -1163,8 +1163,6 @@ switch(room)
            with(objPYFTrapMiniUp) if(trap == other.trg) go = true;
            warp = instance_create(736,32,objWarp);
            warp.roomTo = rStage5Locus;
-           warp.warpX = 48;
-           warp.warpY = 544;
            audio_play_sound(global.sndTrap,0,0);
            with(objFreeTrigger) instance_destroy();
            break;

@@ -84,7 +84,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="0" y="-32" name="inst_94D4053D" locked="0" code="" scaleX="26" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="0" name="inst_6797BE37" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="608" y="512" name="inst_8D575CF8" locked="0" code="trg = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="0" name="inst_E90FDCE9" locked="0" code="roomTo = rStage1DarkBlue;&#xA;warpX = 16;&#xA;warpY = 64;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="0" name="inst_E90FDCE9" locked="0" code="roomTo = rStage1DarkBlue;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="32" y="528" name="inst_27A23AF9" locked="0" code="sprite_index = sprPinkPlatform;&#xA;visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="32" y="416" name="inst_00AEF80F" locked="0" code="sprite_index = sprPinkPlatform;&#xA;visible = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlatform" x="32" y="176" name="inst_BBE84259" locked="0" code="sprite_index = sprPinkPlatform;&#xA;visible = true;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

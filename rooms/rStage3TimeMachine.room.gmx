@@ -204,9 +204,9 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objMovingPlatform" x="416" y="312" name="inst_D6EF99FA" locked="0" code="hspeed = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMovingPlatform" x="480" y="512" name="inst_F0DEB4E4" locked="0" code="hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMovingPlatform" x="576" y="512" name="inst_9F463B45" locked="0" code="hspeed = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="128" y="608" name="inst_0F007554" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="160" y="608" name="inst_3FFBE5C9" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="192" y="608" name="inst_AA937799" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;warpX = 128;&#xA;warpY = 16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="128" y="608" name="inst_0F007554" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="160" y="608" name="inst_3FFBE5C9" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="192" y="608" name="inst_AA937799" locked="0" code="roomTo = rStage3TimeMachine2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="352" y="224" name="inst_81AA29C8" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="720" y="24" name="inst_50BC2E2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSlipBlock" x="416" y="592" name="inst_EC18829D" locked="0" code="" scaleX="11" scaleY="1" colour="4294967295" rotation="0"/>

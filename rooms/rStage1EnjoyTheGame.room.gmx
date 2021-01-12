@@ -131,7 +131,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objETGSpikeTrapUp" x="416" y="160" name="inst_E47C5FDB" locked="0" code="trap = 20;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objETGSpikeTrapRight" x="0" y="96" name="inst_460F4A24" locked="0" code="trap = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objETGSpikeTrapRight" x="0" y="128" name="inst_803393FC" locked="0" code="trap = 23;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="32" y="64" name="inst_89C1E763" locked="0" code="roomTo = rStage1CTB1;&#xA;warpX = 80;&#xA;warpY = 536;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="32" y="64" name="inst_89C1E763" locked="0" code="roomTo = rStage1CTB1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1AHM" x="32" y="576" name="inst_34AF7644" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1AHM" x="48" y="576" name="inst_EA1AFC61" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1AHM" x="64" y="576" name="inst_1F908F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

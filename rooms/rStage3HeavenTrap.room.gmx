@@ -109,7 +109,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="800" y="352" name="inst_FAF7F1E1" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="256" y="608" name="inst_32B82F4B" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="576" y="608" name="inst_C84C6035" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="416" name="inst_CA7DFB45" locked="0" code="roomTo = rStage3SeeTheMoon;&#xA;warpX = 64;&#xA;warpY = 432;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="416" name="inst_CA7DFB45" locked="0" code="roomTo = rStage3SeeTheMoon;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="128" y="320" name="inst_B674EC9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHv2trap1" x="192" y="32" name="inst_934616F9" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHv2trap1" x="224" y="32" name="inst_FFFD3B42" locked="0" code="trap = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

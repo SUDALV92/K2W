@@ -100,7 +100,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="96" y="448" name="inst_1F208F3D" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="64" y="544" name="inst_CC8336B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="0" y="608" name="inst_C0D7CE4D" locked="0" code="" scaleX="3.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="752" y="432" name="inst_0211C405" locked="0" code="roomTo = rStage4Competitor;&#xA;warpX = 64;&#xA;warpY = 560;&#xA;step = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="752" y="432" name="inst_0211C405" locked="0" code="roomTo = rStage4Competitor;&#xA;step = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="288" y="128" name="inst_D3EE97CF" locked="0" code="sprite_index = sprBlockS5C;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="96" y="160" name="inst_D2D5056C" locked="0" code="sprite_index = sprBlockS5B;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="96" y="64" name="inst_AF75D405" locked="0" code="sprite_index = sprBlockS5A;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

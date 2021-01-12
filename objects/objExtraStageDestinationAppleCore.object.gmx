@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>dir = random(360);
-for(var temp = 0; temp &lt; 9; temp++)
+N = 7;
+for(var temp = 0; temp &lt; N; temp++)
 {
     apple[temp] = instance_create(x,y,objExtraStageDestinationAppleSmall);
     apple[temp].sprite_index = sprYellowCherry;
@@ -34,7 +35,7 @@ for(var temp = 0; temp &lt; 9; temp++)
     apple[temp].outsideDelete = false;
     apple[temp].alarm[1] = 100;
     apple[temp].direction = dir;
-    dir+=360/9;
+    dir+=360/N;
 }
 t = 0;
 len = 4;
@@ -61,7 +62,7 @@ lenAdd = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>for(var temp = 0; temp &lt; 9; temp++)
+            <string>for(var temp = 0; temp &lt; N; temp++)
 {
  if(instance_exists(apple[temp]))
  {

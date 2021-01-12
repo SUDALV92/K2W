@@ -128,7 +128,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="704" y="480" name="inst_BAAE203D" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="768" y="512" name="inst_C58DECFD" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="176" y="240" name="inst_6CFDC628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="784" y="456" name="inst_1131FBEE" locked="0" code="roomTo = rStage4GB;&#xA;warpX = 16;&#xA;warpY = 128;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="784" y="456" name="inst_1131FBEE" locked="0" code="roomTo = rStage4GB;&#xA;step = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="416" y="352" name="inst_3B6E66FF" locked="0" code="trg = 1;&#xA;step = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="544" y="416" name="inst_D256860F" locked="0" code="trg = 2;&#xA;step = 4;" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="objS5Step" x="-32" y="32" name="inst_F8BB2D24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

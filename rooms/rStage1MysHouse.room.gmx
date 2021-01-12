@@ -125,7 +125,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objFreeTrigger" x="288" y="128" name="inst_B697579E" locked="0" code="trg = 1;&#xA;" scaleX="2" scaleY="12" colour="4294967295" rotation="0"/>
     <instance objName="objMysHouseTrap" x="288" y="96" name="inst_71E1A39C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSaveBlocker" x="640" y="480" name="inst_BF5B0C77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="0" y="448" name="inst_67A0D4B7" locked="0" code="roomTo = rStage1YellowStar;&#xA;warpX = 720;&#xA;warpY = 544;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="0" y="448" name="inst_67A0D4B7" locked="0" code="roomTo = rStage1YellowStar;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="416" name="inst_15D4FF46" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1CHM" x="96" y="160" name="inst_957FAA48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock1CHM" x="576" y="192" name="inst_D23768DF" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>

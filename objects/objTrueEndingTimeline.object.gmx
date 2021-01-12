@@ -522,7 +522,7 @@ if(t == 0)
  scrTrueEndingAddLine("I wanna kill the Kamilia 2 Remake",c_orange);
  scrTrueEndingAddLine("by SUDALV");
  scrTrueEndingAddLine("");
- scrTrueEndingAddLine("Secial thanks to",c_orange);
+ scrTrueEndingAddLine("Special thanks to",c_orange);
  scrTrueEndingAddLine("INFLUKA and Kamilia");
  scrTrueEndingAddLine("for the original game");
  scrTrueEndingAddLine("");

@@ -33,9 +33,8 @@ if(global.currentSegmentIndex == 4)
  //global.currentSegmentID = irandom(1000000);
  global.currentSegmentIndex = 5;
 }
+scrObjectDestroy(objPlayer);
 room_goto(rBoss3Save);
-objPlayer.x = 80;
-objPlayer.y = 384;
 </string>
           </argument>
         </arguments>

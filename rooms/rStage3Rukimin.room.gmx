@@ -121,7 +121,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="768" y="192" name="inst_5A05FA1A" locked="0" code="" scaleX="1" scaleY="12.75" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="416" y="384" name="inst_2FAC83CB" locked="0" code="" scaleX="3" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="512" y="384" name="inst_ED319C71" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="128" name="inst_9DD863C6" locked="0" code="roomTo = rStage3Diverse;&#xA;warpX = 16;&#xA;warpY = 272;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="128" name="inst_9DD863C6" locked="0" code="roomTo = rStage3Diverse;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="288" y="384" name="inst_FB5CFAA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="288" y="544" name="inst_C050D189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlockInvis" x="288" y="448" name="inst_B3CE0983" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

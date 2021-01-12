@@ -165,7 +165,7 @@ background_vspeed[0] = -1.5;</code>
     <instance objName="objFreeTrigger" x="256" y="192" name="inst_B758F522" locked="0" code="trg = 5;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="160" y="256" name="inst_A9AD0714" locked="0" code="trg = 6;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="672" y="32" name="inst_5932BC8A" locked="0" code="trg = 9;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="768" y="32" name="inst_0F585F66" locked="0" code="roomTo = rStage6Destination;&#xA;warpX = 784;&#xA;warpY = 192;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="768" y="32" name="inst_0F585F66" locked="0" code="roomTo = rStage6Destination;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap4" x="256" y="384" name="inst_A0FFDA4B" locked="0" code="trap = 13;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="256" y="416" name="inst_5F6A49C6" locked="0" code="trg = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCrimTrap1" x="480" y="224" name="inst_F11B78E2" locked="0" code="trap = 13;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

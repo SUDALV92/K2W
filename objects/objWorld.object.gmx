@@ -36,6 +36,8 @@ oldPlayerExists = 0;
 deadSplitFlag = 0;
 drawEnergy = false;
 whiteAlpha = 0;
+
+instance_create(0,0,oScheduler);
 </string>
           </argument>
         </arguments>
@@ -478,7 +480,7 @@ else
  f5pressed = keyboard_check_released(global.alignRightButton[0]);
 }
 
-if(f5pressed)
+if(f5pressed &amp;&amp; !global.gamePaused)
 {
     if(global.portalAvailable)
     {
@@ -522,6 +524,7 @@ if(f5pressed)
          global.stageUnlocked[i] = global.saveStageUnlocked[i];
         }
         audio_stop_sound(global.sndGameOver);
+        audio_stop_sound(global.gameOverMusic);
         scrStopSFX();
         ///return to old gain if music is being faded out
         if (global.musicFading)

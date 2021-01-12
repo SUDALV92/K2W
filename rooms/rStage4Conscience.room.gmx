@@ -109,7 +109,7 @@ background_vspeed[0]=-1.5;</code>
     <instance objName="objBlock" x="416" y="256" name="inst_A2519FF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="608" y="112" name="inst_E9123AC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="544" y="288" name="inst_118261B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objWarp" x="256" y="64" name="inst_D33DA12C" locked="0" code="step = 4;roomTo = rStage4Explorer;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objWarp" x="256" y="64" name="inst_D33DA12C" locked="0" code="step = 4;&#xA;roomTo = rStage4Explorer;&#xA;autosave = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objFreeTrigger" x="480" y="32" name="inst_3F4F3472" locked="0" code="step = 4;&#xA;trg = 1;&#xA;" scaleX="1" scaleY="1.54838705062866" colour="4294967295" rotation="0"/>
     <instance objName="objBlockFake" x="640" y="272" name="inst_D6CE9531" locked="0" code="sprite_index = sprBlockS5A;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="16" y="80" name="inst_F9673778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

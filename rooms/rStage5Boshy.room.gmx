@@ -59,7 +59,7 @@ background_vspeed[1]=-1.5;</code>
     <instance objName="objBlock" x="848" y="256" name="inst_3B5C3AED" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="800" y="352" name="inst_22DD267B" locked="0" code="" scaleX="2.5" scaleY="0.8125" colour="4294967295" rotation="0"/>
     <instance objName="objBlock" x="-32" y="240" name="inst_D6E9AFA0" locked="0" code="" scaleX="1" scaleY="4.5" colour="4294967295" rotation="0"/>
-    <instance objName="objRoomChanger" x="816" y="272" name="inst_D19B5BA4" locked="0" code="roomTo = rStage5BoshyB;&#xA;warpX = 16;&#xA;warpY = 324;&#xA;" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="objRoomChanger" x="816" y="272" name="inst_D19B5BA4" locked="0" code="roomTo = rStage5BoshyB;&#xA;" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="objPlayerStart" x="16" y="288" name="inst_7716F78D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objKillerBlock" x="-6" y="624" name="inst_850D6F7D" locked="0" code="" scaleX="26" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objSpikeDown" x="0" y="224" name="inst_1B0356F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

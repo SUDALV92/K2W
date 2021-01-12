@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objPlayerKiller</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -42,6 +42,7 @@ factor = 1;
 dir = 0;
 len = 0;
 angle = 0;
+
 </string>
           </argument>
         </arguments>
@@ -111,6 +112,32 @@ outsideDelete = true;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///killer
+if(image_alpha &gt;= 1)
+{
+ if(place_meeting(x,y,objPlayer))
+  scrKillPlayer();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>if(outsideDelete)
 {
  if(x &lt; -sprite_width || x &gt; 800+sprite_width || y &lt; -sprite_height || y &gt; 608+sprite_height)
@@ -121,10 +148,7 @@ if(speed &gt; maxSpeed)
 {
  speed = maxSpeed;
 }
-if(image_alpha &lt; 1)
-{
- image_alpha += 0.04;
-}
+
 switch(mode)
 {
  case 2:
@@ -146,6 +170,16 @@ switch(mode)
  case 4:
       image_angle += 60*dir;
       break;
+}
+
+switch(mode)
+{
+ case 6: break;
+ default:
+  if(image_alpha &lt; 1)
+  {
+   image_alpha += 0.04;
+  }
 }
 </string>
           </argument>

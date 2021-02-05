@@ -416,7 +416,7 @@ switch(mode)
  case 5:
   if(x &lt;= 40 || x &gt;= 760 || y &lt; 40)
   {
-   repeat(2)
+   repeat(1)
    {
     apple = instance_create(x,y,objExtraStageBloodFestivalApple);
     apple.sprite_index = scrRandomAppleColor();
@@ -446,14 +446,14 @@ switch(mode)
     {
      apple.direction = random_range(180,360);
      apple.speed = random_range(5,10);
+     apple.gravity = 0.1;
     }
     else
     {
-     apple.direction = random_range(40,140);     
-     apple.speed = random_range(10,15);
-    }   
-    
-    apple.gravity = 0.1;
+     apple.direction = random_range(60,120);     
+     apple.speed = random_range(11,14);
+     apple.gravity = 0.2;
+    }
    }
    instance_destroy();
   }  

@@ -520,29 +520,29 @@ if(t &gt;= 5750 &amp;&amp; t &lt; 5990)
       apple.direction = dir-90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple2.x,apple2.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+90-90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple3.x,apple3.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+180-90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple4.x,apple4.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+270-90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
   }
  }
 }
@@ -565,29 +565,29 @@ if(t &gt;= 6000 &amp;&amp; t &lt; 6250)
       apple.direction = dir+90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple2.x,apple2.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+90+90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple3.x,apple3.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+180+90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
       
       apple = instance_create(apple4.x,apple4.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+270+90+random_range(-30,30);
       apple.speed = 7;
       apple.sprite_index = scrRandomAppleColor();
-      apple.image_xscale = 0.8;
-      apple.image_yscale = 0.8;
+      apple.image_xscale = 0.9;
+      apple.image_yscale = 0.9;
   }
  }
 }

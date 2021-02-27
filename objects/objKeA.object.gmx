@@ -661,21 +661,23 @@ walls = true;
 {
     bullet = instance_create(irandom_range(32,768),64,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
+    bullet.image_blend = make_colour_rgb(100,255,100);
     bullet.curving = 0;
     bullet.direction = point_direction(bullet.x,bullet.y,objPlayer.x,objPlayer.y);
     bullet.speed = 9;
     bullet.playerKiller = false; //only dot killer
     fx = instance_create(bullet.x,bullet.y,objCyberBulletFX);
-    //fx.sprite_index = sprCyberBulletGreenFX;
+    fx.image_blend = make_colour_rgb(50,255,50);
     
     bullet = instance_create(irandom_range(32,768),64,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
+    bullet.image_blend = make_colour_rgb(100,255,100);
     bullet.curving = 0;
     bullet.direction = point_direction(bullet.x,bullet.y,objPlayer.x,objPlayer.y);
     bullet.speed = 9;
     bullet.playerKiller = false; //only dot killer
     fx = instance_create(bullet.x,bullet.y,objCyberBulletFX);
-    //fx.sprite_index = sprCyberBulletGreenFX;
+    fx.image_blend = make_colour_rgb(50,255,50);
 }
 </string>
           </argument>
@@ -783,6 +785,7 @@ walls = true;
 {
     bullet = instance_create(x-280,y-346,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
+    bullet.image_blend = make_colour_rgb(255,100,100);
     bullet.curving = 1;
     bullet.direction = point_direction(x-280,y-346,objPlayer.x,objPlayer.y)+random_range(-30,30);
     bullet.speed = 7;
@@ -790,6 +793,7 @@ walls = true;
     
     bullet = instance_create(x-280,y-346,objCyberBullet);
     bullet.sprite_index = sprCyberBulletB;
+    bullet.image_blend = make_colour_rgb(255,100,100);
     bullet.curving = -1;
     bullet.direction = point_direction(x-280,y-346,objPlayer.x,objPlayer.y)+random_range(-30,30);
     bullet.speed = 7;
@@ -875,7 +879,8 @@ alarm[1] = 24;
           <argument>
             <kind>1</kind>
             <string>bullet = instance_create(x-280,y-346,objCyberBullet);
-bullet.sprite_index = sprCyberBulletA;
+bullet.sprite_index = sprCyberBulletB;
+bullet.image_blend = make_colour_rgb(100,100,255);
 bullet.curving = 0.8;
 bullet.direction = random_range(95,150);
 bullet.speed = 15;
@@ -883,21 +888,13 @@ bullet.gravity = 0.2;
 bullet.playerKiller = false; //only dot killer
 
 bullet = instance_create(x-280,y-346,objCyberBullet);
-bullet.sprite_index = sprCyberBulletA;
+bullet.sprite_index = sprCyberBulletB;
+bullet.image_blend = make_colour_rgb(100,100,255);
 bullet.curving = 0.8;
 bullet.direction = random_range(95,150);
 bullet.speed = 15;
 bullet.gravity = 0.2;
 bullet.playerKiller = false; //only dot killer
-
-/*bullet = instance_create(x-280,y-346,objCyberBullet);
-bullet.sprite_index = sprCyberBulletA;
-bullet.curving = -1.6;
-bullet.direction = random_range(60,800);
-bullet.speed = 9;
-bullet.gravity = 0.2;
-bullet.playerKiller = false; //only dot killer
-*/
 alarm[0] = 10; //17
 </string>
           </argument>

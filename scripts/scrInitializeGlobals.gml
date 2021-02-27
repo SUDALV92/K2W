@@ -17,6 +17,7 @@ global.CautionM = 1;
 
 global.worldSpeed = 50;
 global.phaseSave = false;
+global.phaseSaveRoom = false;
 global.solgrynSkip = false;
 global.extraSkip = false;
 global.extraMusicLoop = 0;

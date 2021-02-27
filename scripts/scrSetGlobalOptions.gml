@@ -1,6 +1,6 @@
 ///sets configurable global options
 
-global.gameVersion = "v2.24-beta9";
+global.gameVersion = "v2.24-beta11";
 
 global.roomCaptionDef = "I Wanna Kill The Kamilia 2 WARPED";  //sets default window caption (only works with the Professional version of Studio)
 global.roomCaptionLast = global.roomCaptionDef;

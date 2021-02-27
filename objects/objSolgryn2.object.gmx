@@ -371,7 +371,7 @@ repeat(2)
     k6.image_xscale=0; k6.image_yscale=0;
     k7.image_xscale=0; k7.image_yscale=0;
 }
-alarm[2]=40; alarm[3]=563; B=2;
+alarm[2]=40; alarm[3]=283; B=2; //563
 }}}}
 
 if W=1{y=YY+lengthdir_y(200,BY); BY+=2;}

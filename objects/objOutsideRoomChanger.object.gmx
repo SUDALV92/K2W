@@ -57,8 +57,9 @@ transitionVShift = 0;
           <argument>
             <kind>1</kind>
             <string>if(phaseSave)
-{
+{    
     global.phaseSave = true;
+    global.phaseSaveRoom = phaseSaveRoom;
 }
 if (other.x &lt; 0 || other.x &gt; room_width || other.y &lt; 0 || other.y &gt; roomHeight)  //check if player has left the room
 {

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed=0.24;
+scrRedCheckShader( sdrRedColorShader );
 </string>
           </argument>
         </arguments>
@@ -87,9 +88,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_blend_mode(bm_add);
+            <string>shader_set( sdrRedColorShader );
+draw_set_blend_mode(bm_add);
 draw_sprite_ext(sprite_index,-1,x,y,image_xscale,image_yscale,image_angle,image_blend,1);
 draw_set_blend_mode(bm_normal);
+shader_reset();
 </string>
           </argument>
         </arguments>

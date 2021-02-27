@@ -871,7 +871,7 @@ if (!place_free(x,y+vspeed))
     {
         if(vspeed &lt;= 0){move_contact_solid(90,abs(vspeed)); Upp = false;}
         if(vspeed &gt; 0){move_contact_solid(270,abs(vspeed));djump=1;}
-        if(global.phaseSave)
+        if(global.phaseSave &amp;&amp; global.phaseSaveRoom == room)
         {
             scrSaveGame(true);
             global.phaseSave = false;

@@ -176,6 +176,7 @@ with(KillerWarp)
     roomTo = rBoss5Phase2;
     smoothTransition = true;
     phaseSave = true;
+    phaseSaveRoom = rBoss5Phase2;
 }
 global.tempTrigger[0] = 1;
 audio_resume_sound(global.currentMusic);

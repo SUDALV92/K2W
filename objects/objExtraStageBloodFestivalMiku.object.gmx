@@ -529,7 +529,9 @@ if(t &gt;= 5750 &amp;&amp; t &lt; 5990)
       apple.sprite_index = scrRandomAppleColor();
       apple.image_xscale = 0.9;
       apple.image_yscale = 0.9;
-      
+  }
+  else if(other.t % 2 == 0)
+  {
       apple = instance_create(apple3.x,apple3.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+180-90+random_range(-30,30);
       apple.speed = 7;
@@ -559,7 +561,7 @@ if(t &gt;= 6000 &amp;&amp; t &lt; 6250)
  with(core)
  {
   dir += other.dirDelta;
-  if(other.t % 3 == 0)
+  if(other.t % 2 == 0)
   {
       apple = instance_create(apple1.x,apple1.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+90+random_range(-30,30);
@@ -574,7 +576,9 @@ if(t &gt;= 6000 &amp;&amp; t &lt; 6250)
       apple.sprite_index = scrRandomAppleColor();
       apple.image_xscale = 0.9;
       apple.image_yscale = 0.9;
-      
+  }
+  else
+  {
       apple = instance_create(apple3.x,apple3.y,objExtraStageBloodFestivalApple);
       apple.direction = dir+180+90+random_range(-30,30);
       apple.speed = 7;
@@ -929,7 +933,7 @@ scrAdvanceT(global.currentMusic);
           <argument>
             <kind>1</kind>
             <string>///practice
-/*if(keyboard_check_pressed(ord('1')))
+if(keyboard_check_pressed(ord('1')))
 {
  scrObjectDestroy(objExtraStageBloodFestivalApple);
  t = 1330;
@@ -958,7 +962,7 @@ if(keyboard_check_pressed(ord('5')))
  scrObjectDestroy(objExtraStageBloodFestivalApple);
  t = 8050;
  practice = true;
-}*/
+}
 </string>
           </argument>
         </arguments>

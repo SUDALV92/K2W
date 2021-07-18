@@ -487,6 +487,27 @@ switch(mode)
  case 13:
       image_alpha += 0.01;
       break;
+ case 14:
+      if(i &gt;= 50)
+      {
+       if(instance_exists(trail))
+       {
+        instance_destroy(trail);
+       }
+       if(image_alpha &gt; 0.1)
+       { 
+        image_alpha -= 0.01;
+        if(image_xscale &gt; 0)
+        {
+         image_xscale -= 0.05;
+         image_yscale -= 0.05;
+        }
+       }
+       else
+        instance_destroy(); 
+      }
+      i++;
+      break;
 }
 </string>
           </argument>

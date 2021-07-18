@@ -84,7 +84,7 @@ practice = false;
           <argument>
             <kind>1</kind>
             <string>///practice
-if(keyboard_check_pressed(ord('1')))
+/*if(keyboard_check_pressed(ord('1')))
 {
  scrObjectDestroy(objExtraStageDestinationAppleSmall);
  scrObjectDestroy(objExtraStageDestinationAppleBig);
@@ -147,7 +147,7 @@ if(keyboard_check_pressed(ord('8')))
  scrObjectDestroy(objExtraStageDestinationApplePredictor);
  t = 9020;
  //practice = true;
-}
+}*/
 /*if(practice &amp;&amp; t == 6050)
 {
  scrKillPlayer();

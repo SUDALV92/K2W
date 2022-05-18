@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if(objFinalDeadRoomClock.phase &lt; -1) exit;
+if(!instance_exists(objPlayer)) exit;
 
 if(scrButtonCheckPressed(global.upButton))
 {

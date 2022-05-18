@@ -39,7 +39,9 @@ nowHP = maxHP;
 deathFlag = false;
 phase3Damaged = false;
 phase3Hits = 1;
-jump3 = -8.5;
+phase3YoshiSpawnDelay = 400;
+phase3YoshiSpawnTimer = 0;
+jump3 = -10;
 attdelay = 0;
 canDie = false;
 practice = false;
@@ -132,7 +134,9 @@ if(scrButtonCheck(global.skipButton))
  y = 500;
  hspeed = 0;
  sprite_index = sprMarioStopped;
- image_xscale = abs(image_xscale);
+ image_xscale = abs(3);
+ image_yscale = 3;
+ vspeed = 0;
  practice = true;
 }*/
 </string>
@@ -842,7 +846,7 @@ if(instance_exists(objPlayer))
   case 103:
    if(y &gt; objExtraStageBoshyMarioFloor.y - sprite_height/2)
    {
-    vspeed = jump3*random_range(1,1.5);
+    vspeed = jump3;
    }
    if(x + abs(sprite_width)/2 &gt; 800 || x - abs(sprite_width)/2 &lt; 0)
    {
@@ -864,8 +868,9 @@ if(instance_exists(objPlayer))
      i = 0;
     }
    }
-   if(j &gt; 0 &amp;&amp; j % floor(400/phase3Hits) == 0)
+   if(j &gt; 0 &amp;&amp; phase3YoshiSpawnTimer &lt;= 0)
    {
+    phase3YoshiSpawnTimer = phase3YoshiSpawnDelay;
     if(choose(0,1))
     {
      yoshy = instance_create(820,100,objExtraStageBoshyYoshy);
@@ -880,6 +885,7 @@ if(instance_exists(objPlayer))
      yoshy.nosound = true;
     }
    }
+   phase3YoshiSpawnTimer--;
    j++; 
    break;
  }
@@ -985,8 +991,13 @@ if(phase == 103 &amp;&amp; !phase3Damaged)
   image_xscale++;
  else image_xscale--;
  phase3Hits+=0.5;
+ phase3YoshiSpawnDelay -= 25;
+ if( phase3YoshiSpawnDelay &lt; 50 )
+ {
+    phase3YoshiSpawnDelay = 50;
+ }
  image_yscale-=1;
- jump3-=0.2;
+ jump3-=0.3;
  if(hspeed &lt; 0)
   hspeed-=0.5;
  else

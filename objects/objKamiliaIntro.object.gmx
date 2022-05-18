@@ -147,7 +147,7 @@ bulletSpawn = true; //bugfix
             with(objKamiliaSpike)
             {
                 instance_destroy();
-            }            
+            }
             gravity = 0;
             objKamiliaMoon.vspeed = vspeed;
             objKamiliaMoon.down = false;

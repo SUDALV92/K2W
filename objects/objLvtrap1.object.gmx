@@ -69,7 +69,7 @@ alarm[0]=16;
             <kind>1</kind>
             <string>vspeed=2;
 hspeed=0;
-alarm[2]=17;
+alarm[2]=15;
 </string>
           </argument>
         </arguments>
@@ -94,7 +94,7 @@ alarm[2]=17;
             <kind>1</kind>
             <string>vspeed=0;
 hspeed=-2;
-alarm[1]=129;
+alarm[1]=128;
 </string>
           </argument>
         </arguments>

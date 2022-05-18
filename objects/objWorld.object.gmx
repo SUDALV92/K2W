@@ -802,7 +802,8 @@ for(var temp = 0; temp &lt; sfxCount; temp++)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(false)
+            <string>/// debug
+if(false)
 {
     if(keyboard_check_released(ord("G")))
     {
